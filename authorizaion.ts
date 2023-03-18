@@ -1,53 +1,55 @@
-let userData:Array<string[]> = [
-  ['Oksana','010101']
-]
+type T = [string[],string[]];
+type K = string[];
 
-let activeSession:string|null = userData[2][0];
+const data = <T> [['0','0'],['0','0']];
+const session = <K> []
 
-function whoami(currentSession:string|null):string{
-  if(currentSession != null){
-    return `User ${currentSession} is currently login`
+const register = (name: string, pass: string, data: T, session: K): T | string =>{
+  if(session.length != 0){
+    return 'Unable to register during an active session'
+  }
+  else if(name.length<5 || pass.length<6){
+    return 'Error, username must be at least 5 characters, password at least 6 characters'
+  }
+  else if(data[0][0]=='0'){
+    return data[0][0] = name,data[0][1] = pass, `Registration of user ${name} was successful!`
+  }
+  else if(data[1][0]=='0'){
+    return data[1][0] = name,data[1][1] = pass, `Registration of user ${name} was successful!`
   }
   else{
-    return 'There are no authorized users in the system!'
-  }
-}
+    return 'Error, maximum number of users exceeded'
+  }}
 
-function login(username:string,password:string,storage:string[][]):string{
-  if(storage[0][0] === username && storage[0][1] === password){
-    return `Welcome to the system, ${username}!`
+const login = (name: string, pass: string, data: T, session: K): string =>{
+  if(data[0][0]=='0' && data[1][0]=='0'){
+    return 'No registered users'
+  }
+  else if(session.length != 0){
+    return 'Unable to login during an active session'
+  }
+  else if(data[0][0] == name && data[0][1] == pass){
+    return session.push(name,pass), `Welcome to the system,${name}!`
+  }
+  else if(data[1][0] == name && data[1][1] == pass){
+    return session.push(name,pass), `Welcome to the system,${name}!`
   }
   else{
-    return 'Wrong username or password!'
-  }
-}
+    return 'User - not found'
+  }}
 
-function logout(currentSession:string|null):string{
-  if(currentSession != null){
-    return `You are logout of the session of user ${currentSession}`
+const whoami = (session: K): string =>{
+  if(session.length != 0){
+    return `${session[0]} session is active`
   }
   else{
-    return'No active session!'
-  }
-}
+    return 'Error, no active session'
+  }}
 
-function register(username:string,password:string,storage:string[][],currentSession:string|null):string{
-  if(currentSession != null){
-    return 'User registration is not possible during an active session!'
-  }
-  else if(username == ''){
-    return 'Enter your name.'
-  }
-  else if(username.length<5){
-    return 'Username must be at least 5 characters long.'
-  }  
-  else if(password == ''){
-    return 'Enter password.'
-  }
-  else if(password.length<6){
-    return 'Password must be at least 6 characters long.'
+const logout = (session: K):number | string =>{
+  if(session.length != 0){
+    return session.length = 0
   }
   else{
-    return storage.push([username,password]), `User ${username} successfully registered in the system!`
-  }
-}
+    return 'Error, no active session'
+  }}
