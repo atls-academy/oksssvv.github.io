@@ -1,55 +1,45 @@
-type T = [string[],string[]];
-type K = string[];
+interface User {
+  username: string
+  password: string
+  session: boolean
+}
 
-const data = <T> [['0','0'],['0','0']];
-const session = <K> []
+const user1: User = {
+  username: '',
+  password: '',
+  session: false,
+}
 
-const register = (name: string, pass: string, data: T, session: K): T | string =>{
-  if(session.length != 0){
-    return 'Unable to register during an active session'
-  }
-  else if(name.length<5 || pass.length<6){
-    return 'Error, username must be at least 5 characters, password at least 6 characters'
-  }
-  else if(data[0][0]=='0'){
-    return data[0][0] = name,data[0][1] = pass, `Registration of user ${name} was successful!`
-  }
-  else if(data[1][0]=='0'){
-    return data[1][0] = name,data[1][1] = pass, `Registration of user ${name} was successful!`
-  }
-  else{
-    return 'Error, maximum number of users exceeded'
-  }}
+const user2: User = {
+  username: '',
+  password: '',
+  session: false,
+}
 
-const login = (name: string, pass: string, data: T, session: K): string =>{
-  if(data[0][0]=='0' && data[1][0]=='0'){
-    return 'No registered users'
+const register = (username: string, password: string, us1: User, us2: User): string => {
+  if (username.length >= 5 && password.length >= 6) {
+    if (us1.session === false && us2.session === false) {
+      if (us1.username === '') {
+        return (
+          (us1.username = username) && (us1.password = password),
+          `Registration successful,${username}`
+        )
+      } else if (us2.username === '') {
+        return (
+          (us2.username = username) && (us2.password = password),
+          `Registration successful,${username}`
+        )
+      } else {
+        return 'Err. maximum number of users registered'
+      }
+    } else {
+      return 'Err. now active session'
+    }
+  } else {
+    return 'Err. Username at least 5 characters, password at least 6 characters'
   }
-  else if(session.length != 0){
-    return 'Unable to login during an active session'
-  }
-  else if(data[0][0] == name && data[0][1] == pass){
-    return session.push(name,pass), `Welcome to the system,${name}!`
-  }
-  else if(data[1][0] == name && data[1][1] == pass){
-    return session.push(name,pass), `Welcome to the system,${name}!`
-  }
-  else{
-    return 'User - not found'
-  }}
+}
 
-const whoami = (session: K): string =>{
-  if(session.length != 0){
-    return `${session[0]} session is active`
-  }
-  else{
-    return 'Error, no active session'
-  }}
-
-const logout = (session: K):number | string =>{
-  if(session.length != 0){
-    return session.length = 0
-  }
-  else{
-    return 'Error, no active session'
-  }}
+register('Admin1', '101010', user1, user2)
+register('Admin2', '101010', user1, user2)
+register('Admin3', '101010', user1, user2)
