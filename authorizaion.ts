@@ -1,45 +1,54 @@
 interface User {
-  username: string
-  password: string
-  session: boolean
+  username?: string
+  password?: string
+  session?: boolean
 }
 
-const user1: User = {
-  username: '',
-  password: '',
-  session: false,
+const user: User = {}
+
+const error = {
+  1: 'Error. Name must be at least 5 characters.',
+  2: 'Error. Password must be at least 6.',
+  3: 'Error. User is not found.',
+  4: 'Error. There is currently no active session.',
+  5: 'Error. There is already an active session at the moment.',
 }
 
-const user2: User = {
-  username: '',
-  password: '',
-  session: false,
+const register = (name: string, pass: string): string => {
+  if (user.session !== true) {
+    if (name.length >= 5) {
+      user.username = name
+    } else throw error[1]
+    if (pass.length >= 6) {
+      user.password = pass
+    } else throw error[2]
+  } else throw error[5]
+  return `Registration of user ${name} was successful`
 }
 
-const register = (username: string, password: string, us1: User, us2: User): string => {
-  if (username.length >= 5 && password.length >= 6) {
-    if (us1.session === false && us2.session === false) {
-      if (us1.username === '') {
-        return (
-          (us1.username = username) && (us1.password = password),
-          `Registration successful,${username}`
-        )
-      } else if (us2.username === '') {
-        return (
-          (us2.username = username) && (us2.password = password),
-          `Registration successful,${username}`
-        )
-      } else {
-        return 'Err. maximum number of users registered'
-      }
-    } else {
-      return 'Err. now active session'
-    }
-  } else {
-    return 'Err. Username at least 5 characters, password at least 6 characters'
-  }
+const login = (name: string, pass: string): string => {
+  if (user.session !== true) {
+    if (name === user.username && pass === user.password) {
+      user.session = true
+    } else throw error[3]
+  } else throw error[5]
+  return `You have successfully login as ${name}`
 }
 
-register('Admin1', '101010', user1, user2)
-register('Admin2', '101010', user1, user2)
-register('Admin3', '101010', user1, user2)
+const whoami = (us: User): string => {
+  if (us.session === undefined) throw error[4]
+  return `${us.username} session is currently active`
+}
+
+const logout = (us: User): string => {
+  if (us.session === true) {
+    delete us.session
+  } else throw error[4]
+  return `You have successfully logout of ${us.username} session`
+}
+
+//  test
+register('Admin', '101010')
+login('Admin', '101010')
+whoami(user)
+logout(user)
