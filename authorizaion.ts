@@ -1,12 +1,11 @@
 interface User {
-  username: string | undefined
-  password: string | undefined
-  session?: boolean
+  username?: string
+  password?: string
+  session: boolean
 }
 
 const user: User = {
-  username: undefined,
-  password: undefined,
+  session: false,
 }
 
 const error = {
@@ -18,36 +17,52 @@ const error = {
 }
 
 const register = (name: string, pass: string): string => {
-  if (user.session !== true) {
-    if (name.length >= 5) {
-      user.username = name
-    } else throw error[1]
-    if (pass.length >= 6) {
-      user.password = pass
-    } else throw error[2]
-  } else throw error[5]
-  return `Registration of user ${name} was successful`
+  try {
+    if (user.session !== true) {
+      if (name.length >= 5) {
+        user.username = name
+      } else throw error[1]
+      if (pass.length >= 6) {
+        user.password = pass
+      } else throw error[2]
+    } else throw error[5]
+    return `Registration of user ${name} was successful`
+  } catch (Error) {
+    return 'Registration failed.'
+  }
 }
 
 const login = (name: string, pass: string): string => {
-  if (user.session !== true) {
-    if (name === user.username && pass === user.password) {
-      user.session = true
-    } else throw error[3]
-  } else throw error[5]
-  return `You have successfully login as ${name}`
+  try {
+    if (user.session !== true) {
+      if (name === user.username && pass === user.password) {
+        user.session = true
+      } else throw error[3]
+    } else throw error[5]
+    return `You have successfully login as ${name}`
+  } catch (Error) {
+    return 'Login failed.'
+  }
 }
 
 const whoami = (): string => {
-  if (user.session === undefined || user.session === false) throw error[4]
-  return `${user.username} session is currently active`
+  try {
+    if (user.session === false) throw error[4]
+    return `${user.username} session is currently active`
+  } catch (Error) {
+    return 'Login to the user session and retry the command.'
+  }
 }
 
 const logout = (): string => {
-  if (user.session === true) {
-    user.session = false
-  } else throw error[4]
-  return `You have successfully logout of ${user.username} session`
+  try {
+    if (user.session === true) {
+      user.session = false
+    } else throw error[4]
+    return `You have successfully logout of ${user.username} session`
+  } catch (Error) {
+    return 'Logout of the session is possible only if the session is login.'
+  }
 }
 
 //  test
