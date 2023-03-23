@@ -1,10 +1,13 @@
 interface User {
-  username?: string
-  password?: string
+  username: string | undefined
+  password: string | undefined
   session?: boolean
 }
 
-const user: User = {}
+const user: User = {
+  username: undefined,
+  password: undefined,
+}
 
 const error = {
   1: 'Error. Name must be at least 5 characters.',
@@ -35,20 +38,21 @@ const login = (name: string, pass: string): string => {
   return `You have successfully login as ${name}`
 }
 
-const whoami = (us: User): string => {
-  if (us.session === undefined) throw error[4]
-  return `${us.username} session is currently active`
+const whoami = (): string => {
+  if (user.session === undefined || user.session === false) throw error[4]
+  return `${user.username} session is currently active`
 }
 
-const logout = (us: User): string => {
-  if (us.session === true) {
-    delete us.session
+const logout = (): string => {
+  if (user.session === true) {
+    user.session = false
   } else throw error[4]
-  return `You have successfully logout of ${us.username} session`
+  return `You have successfully logout of ${user.username} session`
 }
 
 //  test
+
 register('Admin', '101010')
 login('Admin', '101010')
-whoami(user)
-logout(user)
+whoami()
+logout()
