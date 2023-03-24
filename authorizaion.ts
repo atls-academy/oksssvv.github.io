@@ -36,7 +36,7 @@ const login = (name: string, pass: string): string => {
   }
 }
 
-const whoami = (): string | void => {
+const whoami = (): string => {
   try {
     if (user.session !== true) throw new Error('There is currently no active session.')
     console.log(`${user.username}`)
