@@ -4,69 +4,58 @@ interface User {
   session: boolean
 }
 
-const user: User = {
-  session: false,
-}
+const user: User = { session: false }
 
-const error = {
-  1: 'Error. Name must be at least 5 characters.',
-  2: 'Error. Password must be at least 6.',
-  3: 'Error. User is not found.',
-  4: 'Error. There is currently no active session.',
-  5: 'Error. There is already an active session at the moment.',
-}
+const credentials: [string[]?] = []
 
 const register = (name: string, pass: string): string => {
   try {
-    if (user.session !== true) {
-      if (name.length >= 5) {
-        user.username = name
-      } else throw error[1]
-      if (pass.length >= 6) {
-        user.password = pass
-      } else throw error[2]
-    } else throw error[5]
+    if (user.session === true) throw new Error('There is already an active session at the moment.')
+    if (name.length < 5) throw new Error('Name must be at least 5 characters.')
+    if (pass.length < 6) throw new Error('Password must be at least 6.')
+    user.username = name
+    user.password = pass
+    credentials.push([name, pass])
     return `Registration of user ${name} was successful`
   } catch (Error) {
-    return 'Registration failed.'
+    return `Registration failed. ${Error}`
   }
 }
 
 const login = (name: string, pass: string): string => {
   try {
-    if (user.session !== true) {
-      if (name === user.username && pass === user.password) {
-        user.session = true
-      } else throw error[3]
-    } else throw error[5]
+    if (user.session === true) throw new Error('There is already an active session at the moment.')
+    if (user.username !== name && user.password !== pass)
+      throw new Error(`User with login ${name} not found`)
+    user.session = true
     return `You have successfully login as ${name}`
   } catch (Error) {
-    return 'Login failed.'
+    return `Login failed. ${Error}`
   }
 }
 
 const whoami = (): string => {
   try {
-    if (user.session === false) throw error[4]
+    if (user.session !== true) throw new Error('There is currently no active session.')
     return `${user.username} session is currently active`
   } catch (Error) {
-    return 'Login to the user session and retry the command.'
+    return `Unable to determine user. ${Error}`
   }
 }
 
 const logout = (): string => {
   try {
-    if (user.session === true) {
+    if (user.session !== true) throw new Error('There is currently no active session.')
+    else {
       user.session = false
-    } else throw error[4]
+    }
     return `You have successfully logout of ${user.username} session`
   } catch (Error) {
-    return 'Logout of the session is possible only if the session is login.'
+    return `Failed to logout. ${Error}`
   }
 }
 
-//  test
-
+// test
 register('Admin', '101010')
 login('Admin', '101010')
 whoami()
