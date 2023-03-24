@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 interface User {
   username?: string
   password?: string
@@ -16,6 +17,7 @@ const register = (name: string, pass: string): string => {
     user.username = name
     user.password = pass
     credentials.push([name, pass])
+    console.log(`${name}`, `${pass}`, credentials)
     return `Registration of user ${name} was successful`
   } catch (Error) {
     return `Registration failed. ${Error}`
@@ -25,18 +27,19 @@ const register = (name: string, pass: string): string => {
 const login = (name: string, pass: string): string => {
   try {
     if (user.session === true) throw new Error('There is already an active session at the moment.')
-    if (user.username !== name && user.password !== pass)
-      throw new Error(`User with login ${name} not found`)
+    if (user.username !== name && user.password !== pass) throw new Error(`User not found`)
     user.session = true
+    console.log(`${user.session}`)
     return `You have successfully login as ${name}`
   } catch (Error) {
     return `Login failed. ${Error}`
   }
 }
 
-const whoami = (): string => {
+const whoami = (): string | void => {
   try {
     if (user.session !== true) throw new Error('There is currently no active session.')
+    console.log(`${user.username}`)
     return `${user.username} session is currently active`
   } catch (Error) {
     return `Unable to determine user. ${Error}`
@@ -49,6 +52,7 @@ const logout = (): string => {
     else {
       user.session = false
     }
+    console.log(`${user.session}`)
     return `You have successfully logout of ${user.username} session`
   } catch (Error) {
     return `Failed to logout. ${Error}`
