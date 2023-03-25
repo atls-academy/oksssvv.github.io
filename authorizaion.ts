@@ -7,7 +7,7 @@ interface User {
 
 const user: User = { session: false }
 
-const credentials: [string[]?] = []
+const credentials: User[] = []
 
 const register = (name: string, pass: string): string => {
   try {
@@ -16,7 +16,7 @@ const register = (name: string, pass: string): string => {
     if (pass.length < 6) throw new Error('Password must be at least 6.')
     user.username = name
     user.password = pass
-    credentials.push([name, pass])
+    credentials.push(user)
     console.log(`Registration of user ${name} was successful`)
     return `Registration of user ${name} was successful`
   } catch (Error) {
@@ -28,8 +28,10 @@ const register = (name: string, pass: string): string => {
 const login = (name: string, pass: string): string => {
   try {
     if (user.session === true) throw new Error('There is already an active session at the moment.')
-    if (user.username !== name && user.password !== pass) throw new Error(`User not registered`)
+    user.username = name
+    user.password = pass
     user.session = true
+    credentials.push(user)
     console.log(`You have successfully login as ${name}`)
     return `You have successfully login as ${name}`
   } catch (Error) {
@@ -65,6 +67,6 @@ const logout = (): string => {
 
 // test
 register('Admin', '101010')
-login('Admin', '101010')
+login('Admi', '101010')
 whoami()
 logout()
