@@ -16,6 +16,7 @@ const register = (name: string, pass: string): string => {
     if (pass.length < 6) throw new Error('Password must be at least 6.')
     user.username = name
     user.password = pass
+    user.session = true
     credentials.push(user)
     console.log(`Registration of user ${name} was successful`)
     return `Registration of user ${name} was successful`
