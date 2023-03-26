@@ -55,9 +55,7 @@ const whoami = (): string => {
 const logout = (): string => {
   try {
     if (user.session !== true) throw new Error('There is currently no active session.')
-    else {
-      user.session = false
-    }
+    user.session = false
     console.log(`You have successfully logout of ${user.username} session`)
     return `You have successfully logout of ${user.username} session`
   } catch (Error) {
