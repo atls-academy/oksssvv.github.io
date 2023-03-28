@@ -1,17 +1,17 @@
 import { User }     from './interface'
-import { register } from './functions'
-import { login }    from './functions'
-import { whoami }   from './functions'
-import { logout }   from './functions'
+import { login }    from './login'
+import { logout }   from './logout'
+import { register } from './register'
+import { whoami }   from './whoami'
 
 const user: User = { session: false }
 
 const credentials: User[] = []
 
 // test
-register('Admin', '101010')
-login('Admin1', '101010')
-whoami()
-logout()
+register(user, credentials, 'Admin', '101010')
+login(user, credentials, 'Admin', '101010')
+whoami(user)
+logout(user)
 
 export { user, credentials }
