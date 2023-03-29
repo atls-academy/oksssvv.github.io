@@ -13,5 +13,3 @@ register(user, credentials, 'Admin', '101010')
 login(user, credentials, 'Admin', '101010')
 whoami(user)
 logout(user)
-
-export { user, credentials }
