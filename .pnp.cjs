@@ -19,11 +19,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "template",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "auth",\
+        "reference": "workspace:auth"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["auth", ["workspace:auth"]],\
       ["template", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -3233,6 +3238,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["asap", "npm:2.0.6"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["auth", [\
+        ["workspace:auth", {\
+          "packageLocation": "./auth/",\
+          "packageDependencies": [\
+            ["auth", "workspace:auth"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["babel-jest", [\
