@@ -142,6 +142,9 @@ __metadata:
 "@auth/auth-mechanism@workspace:auth/auth-mechanism":
   version: 0.0.0-use.local
   resolution: "@auth/auth-mechanism@workspace:auth/auth-mechanism"
+  dependencies:
+    "@atls/code-service": ^0.0.16
+    "@atls/config-jest": ^0.0.4
   languageName: unknown
   linkType: soft
 

@@ -210,7 +210,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:auth/auth-mechanism", {\
           "packageLocation": "./auth/auth-mechanism/",\
           "packageDependencies": [\
-            ["@auth/auth-mechanism", "workspace:auth/auth-mechanism"]\
+            ["@auth/auth-mechanism", "workspace:auth/auth-mechanism"],\
+            ["@atls/code-service", "npm:0.0.16"],\
+            ["@atls/config-jest", "npm:0.0.4"]\
           ],\
           "linkType": "SOFT"\
         }]\
