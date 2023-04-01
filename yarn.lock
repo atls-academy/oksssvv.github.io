@@ -139,6 +139,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@auth/auth-mechanism@workspace:auth/auth-mechanism":
+  version: 0.0.0-use.local
+  resolution: "@auth/auth-mechanism@workspace:auth/auth-mechanism"
+  languageName: unknown
+  linkType: soft
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.12.13, @babel/code-frame@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/code-frame@npm:7.16.7"
@@ -2336,12 +2342,6 @@ __metadata:
   checksum: b296c92c4b969e973260e47523207cd5769abd27c245a68c26dc7a0fe8053c55bb04360237cb51cab1df52be939da77150ace99ad331fb7fb13b3423ed73ff3d
   languageName: node
   linkType: hard
-
-"auth@workspace:auth":
-  version: 0.0.0-use.local
-  resolution: "auth@workspace:auth"
-  languageName: unknown
-  linkType: soft
 
 "babel-jest@npm:^28.1.0":
   version: 28.1.0

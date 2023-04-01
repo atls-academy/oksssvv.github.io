@@ -21,14 +21,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "auth",\
-        "reference": "workspace:auth"\
+        "name": "@auth/auth-mechanism",\
+        "reference": "workspace:auth/auth-mechanism"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["auth", ["workspace:auth"]],\
+      ["@auth/auth-mechanism", ["workspace:auth/auth-mechanism"]],\
       ["template", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -204,6 +204,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:687efeee7bf930f30b703428582d9cdaf5d9d0d27091f33e56339ce192e31e2777d25a6c4c2caf77238495962f1a355645bb01cc373f3e6ca5683e0b8f27ad75#npm:5.74.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@auth/auth-mechanism", [\
+        ["workspace:auth/auth-mechanism", {\
+          "packageLocation": "./auth/auth-mechanism/",\
+          "packageDependencies": [\
+            ["@auth/auth-mechanism", "workspace:auth/auth-mechanism"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@babel/code-frame", [\
@@ -3238,15 +3247,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["asap", "npm:2.0.6"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["auth", [\
-        ["workspace:auth", {\
-          "packageLocation": "./auth/",\
-          "packageDependencies": [\
-            ["auth", "workspace:auth"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["babel-jest", [\
