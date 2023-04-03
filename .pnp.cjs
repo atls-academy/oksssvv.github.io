@@ -21,14 +21,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "@auth/main",\
-        "reference": "workspace:auth/main"\
+        "name": "@auth",\
+        "reference": "workspace:auth"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@auth/main", ["workspace:auth/main"]],\
+      ["@auth", ["workspace:auth"]],\
       ["template", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -206,11 +206,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@auth/main", [\
-        ["workspace:auth/main", {\
-          "packageLocation": "./auth/main/",\
+      ["@auth", [\
+        ["workspace:auth", {\
+          "packageLocation": "./auth/",\
           "packageDependencies": [\
-            ["@auth/main", "workspace:auth/main"]\
+            ["@auth", "workspace:auth"]\
           ],\
           "linkType": "SOFT"\
         }]\

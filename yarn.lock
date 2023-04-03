@@ -139,9 +139,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@auth/main@workspace:auth/main":
+"@auth@workspace:auth":
   version: 0.0.0-use.local
-  resolution: "@auth/main@workspace:auth/main"
+  resolution: "@auth@workspace:auth"
   languageName: unknown
   linkType: soft
 

@@ -1,4 +1,4 @@
-import { User } from './interface'
+import { User } from './auth.interface'
 
 const user: User = { session: false }
 
