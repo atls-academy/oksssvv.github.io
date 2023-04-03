@@ -1,5 +1,5 @@
 {
-  "name": "@auth/auth-mechanism",
+  "name": "@auth/main",
   "version": "0.0.1",
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
@@ -7,9 +7,5 @@
     "build": "yarn service build",
     "dev": "yarn service dev",
     "start": "node dist/index.js"
-  },
-  "devDependencies": {
-    "@atls/code-service": "^0.0.16",
-    "@atls/config-jest": "^0.0.4"
   }
 }
