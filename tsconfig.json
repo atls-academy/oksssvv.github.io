@@ -1,5 +1,4 @@
 {
-  "include": ["auth/*"],
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": false,
