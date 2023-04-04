@@ -1,4 +1,4 @@
-import { User } from './entity.interface'
+import { User } from './user.interface'
 
 const user: User = { session: false }
 

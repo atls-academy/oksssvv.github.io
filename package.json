@@ -2,6 +2,9 @@
   "name": "template",
   "private": true,
   "license": "BSD 3-Clause",
+  "workspaces": [
+    "auth"
+  ],
   "resolutions": {
     "typescript": "4.4.4"
   },
