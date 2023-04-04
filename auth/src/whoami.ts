@@ -1,4 +1,4 @@
-import { User } from './auth.interface'
+import { User } from './user.interface'
 
 const whoami = (user: User): string => {
   if (user.session !== true) throw new Error('There is currently no active session.')

@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 
-import { User } from './auth.interface'
+import { User } from './user.interface'
 
 const login = (user: User, cred: User[], name: string, pass: string): string => {
   if (user.session === true) throw new Error('There is already an active session at the moment.')
