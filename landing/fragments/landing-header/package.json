@@ -1,0 +1,15 @@
+{
+  "name": "@landing/header-fragment",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/react": "18.0.21",
+    "react-intl": "^6.1.2",
+    "styled-system": "^5.1.5",
+    "styled-tools": "^1.7.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-intl": "*"
+  }
+}
