@@ -4,7 +4,8 @@ import { Hero } from '@landing/hero-fragment'
 
 export const IndexPage = () => (
   <>
-    Hello world
-  <Hero/>
+    <Hero />
   </>
 )
+
+export default IndexPage

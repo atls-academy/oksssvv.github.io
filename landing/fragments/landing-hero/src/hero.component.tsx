@@ -2,6 +2,7 @@ import React from 'react'
 
 import { HeaderBlock } from '@landing/header-fragment'
 import { Box } from '@ui/layout'
+import { Layout } from '@ui/layout'
 import { Row } from '@ui/layout'
 import { Column } from '@ui/layout'
 import { Text } from '@ui/text'
@@ -12,28 +13,23 @@ const Hero = () => {
     <>
       <Box>
         <Column>
-          <HeaderBlock/>
+          <Box>
+              <HeaderBlock/>
+          </Box>
           <Box>
             <Row>
+              <Text/>
+            </Row>
+            <Row>
               <Box>
-                <Column>
-                  <Text></Text>
-                  <Text></Text>
-                </Column>
-              </Box>
-              <Box>
-                <Column>
-                  <Button></Button>
-                  <Button></Button>
-                  <Button></Button>
-                </Column>
+                <Button/>
+                <Button/>
+                <Button/>
               </Box>
             </Row>
           </Box>
         </Column>
       </Box>
-
-
     </>
   )
 }

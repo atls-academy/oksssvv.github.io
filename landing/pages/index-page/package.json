@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@landing/header-fragment": "workspace:0.0.1",
     "@landing/hero-fragment": "workspace:0.0.1"
   },
   "devDependencies": {
-    "@types/react": "^17"
+    "@types/react": "^18.0.35"
   },
   "peerDependencies": {
     "next": "^12.1.0",

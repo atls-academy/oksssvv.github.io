@@ -1,17 +1,20 @@
 import styled                   from '@emotion/styled'
+import { createBaseStyles }     from '@atls-ui-parts/link'
 
 import { Text }                 from '@ui/text'
 
-import { shapeLinkStyles }      from './link.styles'
-import { baseStyles }           from './link.styles'
+import { BaseLinkProps }        from './link.interfaces'
 import { appearanceLinkStyles } from './link.styles'
+import { shapeLinkStyles }      from './link.styles'
+import { activeLinkStyles }     from './link.styles'
 import { transitionStyles }     from './link.styles'
-import { underlineStyles }      from './link.styles'
 
-export const Link = styled(Text.withComponent('a'))<any>(
-  baseStyles,
-  shapeLinkStyles,
+const Link = styled(Text.withComponent('a'))<BaseLinkProps>(
+  createBaseStyles(),
   appearanceLinkStyles,
-  transitionStyles,
-  underlineStyles
+  shapeLinkStyles,
+  activeLinkStyles,
+  transitionStyles
 )
+
+export { Link }
