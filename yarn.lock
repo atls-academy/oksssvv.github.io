@@ -80,12 +80,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-parts/link@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@atls-ui-parts/link@npm:0.0.5"
+  dependencies:
+    "@atls-ui-parts/text": 0.0.6
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    next: "*"
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  checksum: c11912f1bd908a64896ea31a5d321bad948d724b1027ff9b3d8feb75c8410e146315c99495e44926c13cffe82aa648b0f6d030da3957e5fa0fca0d49597b0103
+  languageName: node
+  linkType: hard
+
 "@atls-ui-parts/styles@npm:0.0.1":
   version: 0.0.1
   resolution: "@atls-ui-parts/styles@npm:0.0.1"
   peerDependencies:
     styled-system: ^5.1.5
   checksum: 06a333d67bd87ec26ceb21bc48a670365fe93789e5bec457a9a389a679345693d4bf34d1557c8668c8c9a6495cddf5d38a2dedd610c3310a19f97ef72bb8f5d0
+  languageName: node
+  linkType: hard
+
+"@atls-ui-parts/text@npm:0.0.6":
+  version: 0.0.6
+  resolution: "@atls-ui-parts/text@npm:0.0.6"
+  dependencies:
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+  checksum: c6f2b47fff82236c8fe3b376151b820be7b7138f43c41dd15a6d62598a4790ab7b57ddc530d8c70d42b0eb4ab6dddbc740f42cc0b9f5ac4bd8484bea67620f3b
   languageName: node
   linkType: hard
 
@@ -1414,12 +1440,14 @@ __metadata:
   resolution: "@landing/header-fragment@workspace:landing/fragments/landing-header"
   dependencies:
     "@types/react": 18.0.21
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/logo": "workspace:0.0.1"
     react-intl: ^6.1.2
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
   peerDependencies:
     react: "*"
-    react-intl: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
@@ -1445,22 +1473,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
     "@landing/header-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@types/react": ^17
-    "@types/react-dom": ^17
-    "@types/react-helmet": ^6
-    react: 17
-    react-dom: 17
-    react-helmet: ^6.1.0
   peerDependencies:
-    "@emotion/react": "*"
-    "@emotion/styled": "*"
-    next: "*"
-    react: 17
-    react-dom: 17
+    next: ^12.1.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -1478,8 +1497,7 @@ __metadata:
     next: ^12.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-intl: ^6.1.2
-    typescript: ^4.8.4
+    typescript: ^4.4.4
   languageName: unknown
   linkType: soft
 
@@ -2073,15 +2091,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-helmet@npm:^6":
-  version: 6.1.6
-  resolution: "@types/react-helmet@npm:6.1.6"
-  dependencies:
-    "@types/react": "*"
-  checksum: 81560c56bfe854b6a43aee31360862588ac875d1177b975da5ce049ac9aa2f7c98dcde65d4397bfaa04e468f40cf3ab2975a2ef966a69d64a60493422898698d
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:17":
   version: 17.0.56
   resolution: "@types/react@npm:17.0.56"
@@ -2208,6 +2217,51 @@ __metadata:
     react: ^17
     react-dom: ^17
     styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/link@workspace:0.0.1, @ui/link@workspace:ui/link":
+  version: 0.0.0-use.local
+  resolution: "@ui/link@workspace:ui/link"
+  dependencies:
+    "@atls-ui-parts/link": ^0.0.5
+    "@emotion/react": ^11.9.3
+    "@emotion/styled": ^11.9.3
+    "@types/react": ^17
+    "@types/react-dom": ^17
+    "@types/styled-system": ^5
+    "@ui/text": "workspace:0.0.1"
+    next: ^12.2.0
+    react: ^17
+    react-dom: ^17
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/logo@workspace:0.0.1, @ui/logo@workspace:ui/logo":
+  version: 0.0.0-use.local
+  resolution: "@ui/logo@workspace:ui/logo"
+  dependencies:
+    "@emotion/react": ^11.9.3
+    "@emotion/styled": ^11.9.3
+    "@types/react": ^17
+    "@types/react-dom": ^17
+    "@types/styled-system": ^5
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace:0.0.1"
+    next: 12.1.0
+    react: ^17
+    react-dom: ^17
   peerDependencies:
     "@emotion/react": "*"
     "@emotion/styled": "*"
@@ -5627,7 +5681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.1.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -6448,17 +6502,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2":
-  version: 15.8.1
-  resolution: "prop-types@npm:15.8.1"
-  dependencies:
-    loose-envify: ^1.4.0
-    object-assign: ^4.1.1
-    react-is: ^16.13.1
-  checksum: c056d3f1c057cb7ff8344c645450e14f088a915d078dcda795041765047fa080d38e5d626560ccaac94a4e16e3aa15f3557c1a9a8d1174530955e992c675e459
-  languageName: node
-  linkType: hard
-
 "property-expr@npm:^2.0.4":
   version: 2.0.5
   resolution: "property-expr@npm:2.0.5"
@@ -6554,27 +6597,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-fast-compare@npm:^3.1.1":
-  version: 3.2.1
-  resolution: "react-fast-compare@npm:3.2.1"
-  checksum: 209b4dc3a9cc79c074a26ec020459efd8be279accaca612db2edb8ada2a28849ea51cf3d246fc0fafb344949b93a63a43798b6c1787559b0a128571883fe6859
-  languageName: node
-  linkType: hard
-
-"react-helmet@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "react-helmet@npm:6.1.0"
-  dependencies:
-    object-assign: ^4.1.1
-    prop-types: ^15.7.2
-    react-fast-compare: ^3.1.1
-    react-side-effect: ^2.1.0
-  peerDependencies:
-    react: ">=16.3.0"
-  checksum: a4998479dab7fc1c2799eddefb1870a9d881b5f71cfdf97979a9882e42f4bb50402d55335f308f461e735e01a06f46b16cc7b4e6bcb22c7a4a6f85a753c5c106
-  languageName: node
-  linkType: hard
-
 "react-intl@npm:^6.1.2":
   version: 6.3.2
   resolution: "react-intl@npm:6.3.2"
@@ -6599,7 +6621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1, react-is@npm:^16.7.0":
+"react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -6610,15 +6632,6 @@ __metadata:
   version: 18.1.0
   resolution: "react-is@npm:18.1.0"
   checksum: d206a0fe6790851bff168727bfb896de02c5591695afb0c441163e8630136a3e13ee1a7ddd59fdccddcc93968b4721ae112c10f790b194b03b35a3dc13a355ef
-  languageName: node
-  linkType: hard
-
-"react-side-effect@npm:^2.1.0":
-  version: 2.1.2
-  resolution: "react-side-effect@npm:2.1.2"
-  peerDependencies:
-    react: ^16.3.0 || ^17.0.0 || ^18.0.0
-  checksum: c5eb1f42b464fb093bca59aaae0f1b2060373a2aaff95275b8781493628cdbbb6acdd6014e7883782c65c361f35a30f28cc515d68a1263ddb39cbbc47110be53
   languageName: node
   linkType: hard
 
