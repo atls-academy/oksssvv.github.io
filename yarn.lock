@@ -1527,6 +1527,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@landing/block1-fragment@workspace:0.0.1, @landing/block1-fragment@workspace:landing/fragments/landing-1-block":
+  version: 0.0.0-use.local
+  resolution: "@landing/block1-fragment@workspace:landing/fragments/landing-1-block"
+  dependencies:
+    "@types/react": "npm:^18.0.35"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react-intl: "npm:^6.1.2"
+    styled-system: "npm:^5.1.5"
+    styled-tools: "npm:^1.7.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@landing/header-fragment@workspace:0.0.1, @landing/header-fragment@workspace:landing/fragments/landing-header":
   version: 0.0.0-use.local
   resolution: "@landing/header-fragment@workspace:landing/fragments/landing-header"
@@ -1547,6 +1564,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
   dependencies:
+    "@landing/block1-fragment": "workspace:0.0.1"
     "@landing/header-fragment": "workspace:0.0.1"
     "@types/react": "npm:^18.0.35"
     "@types/react-dom": "npm:^17"
