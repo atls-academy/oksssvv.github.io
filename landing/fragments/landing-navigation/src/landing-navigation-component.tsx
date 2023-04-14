@@ -6,20 +6,23 @@ import { Column } from "@ui/layout"
 import { Row } from "@ui/layout"
 import { Logo } from "@ui/logo";
 
-const Header = () => {
+const LandingNavigation = () => {
   return(
     <>
-      <Box>
-        <Column width='100%' alignItems='center'>
+      <Box backgroundColor='#616161'>
+        <Column width='100%'>
           <Layout flexBasis={[35]}/>
           <Box width='100%'>
             <Layout flexBasis={[40]}/>
-            <Row justifyContent={['space-between']} alignItems=''>
-              <Box width={[56]} flexShrink={0}>
-                *Logo*
+            <Row>
+              <Box
+                width={[56]}
+                height={[50]}
+                alignItems='center'
+              >
+                <Logo/>
               </Box>
             </Row>
-            <Layout flexBasis={[40]}/>
           </Box>
           <Layout flexBasis={[35]}/>
         </Column>
@@ -28,4 +31,4 @@ const Header = () => {
   )
 }
 
-export { Header }
+export { LandingNavigation }

@@ -1,5 +1,5 @@
 {
-  "name": "@landing/header-fragment",
+  "name": "@landing/navigation-fragment",
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.35",
-    "react-intl": "^6.1.2",
     "styled-system": "^5.1.5",
     "styled-tools": "^1.7.2"
   },

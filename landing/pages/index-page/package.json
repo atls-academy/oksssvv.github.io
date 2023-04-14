@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@landing/hero-fragment": "workspace:0.0.1"
+    "@landing/hero-fragment": "workspace:0.0.1",
+    "@landing/navigation-fragment": "workspace:0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.35"
