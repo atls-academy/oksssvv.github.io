@@ -6,26 +6,21 @@ import { SocialLink } from "./social-link-component";
 import { Box } from "@ui/layout"
 import { Layout } from "@ui/layout"
 import { Column } from "@ui/layout"
-import { Row } from "@ui/layout"
 
 const LandingHero = () => {
   return(
     <>
-      <Box height='960px' backgroundColor='lightGray'>
+      <Box height='960px' backgroundColor='#616161'>
         <Layout flexBasis={[230]}/>
         <Column>
           <Layout flexBasis={[415]}/>
-          <Box width='1160px' height='497px' backgroundColor='gray'>
-            <Lead/>
-          </Box>
+          <Lead/>
         </Column>
         <Layout flexBasis={[394]}/>
         <Column>
           <Layout flexBasis={[712]}/>
-          <Box width='56px' height='200px' backgroundColor='gray'>
-            <SocialLink/>
-          </Box>
-      </Column>
+          <SocialLink/>
+        </Column>
       <Layout flexBasis={[80]}/>
       </Box>
     </>

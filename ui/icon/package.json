@@ -1,0 +1,15 @@
+{
+  "name": "@ui/icon",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react": "*"
+  }
+}

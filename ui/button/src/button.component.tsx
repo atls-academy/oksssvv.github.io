@@ -1,33 +1,35 @@
-import styled               from '@emotion/styled'
-import { Content }          from '@atls-ui-parts/button'
+import React from "react";
+import { FC } from 'react'
+import { forwardRef } from 'react'
+import { useState } from 'react'
 
-import React                from 'react'
-import { FC }               from 'react'
-import { layout }           from 'styled-system'
-import { space }            from 'styled-system'
+import styled from '@emotion/styled'
 
-import { ButtonProps }      from './button.interfaces'
-import { baseStyles }       from './button.styles'
-import { shapeStyles }      from './button.styles'
-import { appearanceStyles } from './button.styles'
+import { ButtonProps } from "./button.interfaces";
+import { Content } from '@atls-ui-parts/button'
+import { shapeStyles } from "./shape";
+import { appearanceStyles } from "./appearance";
+import { baseStyles } from "./base";
 
-export const ButtonElement = styled.button<any>(
+export const ButtonElement = styled('button')(
   baseStyles,
   shapeStyles,
   appearanceStyles,
-  layout,
-  space
 )
 
-export const Button: FC<ButtonProps> = ({
-  divider = 12,
-  rounded = false,
-  children,
-  dotted = false,
-  active = false,
-  ...props
-}) => (
-  <ButtonElement rounding={rounded && 20} active={active} {...props}>
-    <Content divider={divider}>{children}</Content>
-  </ButtonElement>
-)
+export const Button: FC<ButtonProps> = forwardRef(({ children, active, ...props }, ref) => {
+
+  const [pressed, setPressed] = useState<boolean>(false)
+
+  return (
+    <ButtonElement
+      pressed={pressed || active}
+      onMouseDown={() => setPressed(true)}
+      onMouseUp={() => setPressed(false)}
+      {...props}
+      ref={ref}
+    >
+      <Content divider={8}>{children}</Content>
+    </ButtonElement>
+  )
+})

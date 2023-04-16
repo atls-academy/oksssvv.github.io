@@ -1,26 +1,23 @@
-import { ButtonProps as BaseButtonProps } from '@atls-ui-parts/button'
 
-import { LayoutProps }                    from 'styled-system'
-import { SpaceProps }                     from 'styled-system'
+export type ButtonVariant = '*' | '*' | '*'
 
-type ButtonColors =
-  | 'primary'
-  | 'secondary'
-  | 'tertiary'
-  | 'transparent'
-  | 'clipboard'
-  | 'social'
-  | 'tag'
-  | 'greyTag'
-type ButtonSizes = 'normal' | 'big' | 'rounded' | 'medium'
+export type ButtonShape =
+   'iconPaddingRounding'
+  | 'formPaddingRounding'
+  | 'formBorder'
+export type ButtonAppearance =
+   'iconBackgroundGhost'
+  | 'formBackgroundGhost'
+  | 'formBorder'
 
-export interface ButtonProps extends BaseButtonProps, LayoutProps, SpaceProps {
-  divider?: number
-  rounded?: boolean
-  width?: number | string | number[] | string[]
-  height?: number | string | number[] | string[]
-  colors?: ButtonColors
-  size?: ButtonSizes
-  dotted?: boolean
+export interface ButtonProps {
+  variant?: ButtonVariant
+  shape?: ButtonShape
+  appearance?: ButtonAppearance
   active?: boolean
+  ref?: any
+  iconSvg?: object
+  valueRadius?: object
+  valueWidth?: object
+  valueHeight?: object
 }
