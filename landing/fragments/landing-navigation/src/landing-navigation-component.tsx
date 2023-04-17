@@ -9,22 +9,23 @@ import { Logo } from "@ui/logo";
 const LandingNavigation = () => {
   return(
     <>
-      <Box backgroundColor='#616161'>
+      <Box width='100%' backgroundColor='#616161'>
         <Column width='100%'>
-          <Layout flexBasis={[35]}/>
+          <Layout flexBasis={[22,35]}/>
           <Box width='100%'>
-            <Layout flexBasis={[40]}/>
+            <Layout flexBasis={[20,40]}/>
             <Row>
               <Box
-                width={[56]}
-                height={[50]}
+                width={[40,56]}
+                flexShrink={[0]}
                 alignItems='center'
               >
                 <Logo/>
               </Box>
             </Row>
+            <Layout flexBasis={[20,40]}/>
           </Box>
-          <Layout flexBasis={[35]}/>
+          <Layout flexBasis={[22,35]}/>
         </Column>
       </Box>
     </>

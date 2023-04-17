@@ -12,25 +12,22 @@ import { IconEmail } from "@ui/icon"
 const SocialLink = () => {
   return(
     <>
-      <Box width='56px' height='200px'>
-        <Column alignItems='center'>
-          <Box width={[56]} height={[56]} alignItems='center' justifyContent='center'>
+      <Box width={['100%']} justifyContent='center'>
+      <Box width={[335,56]} height={[44,200]}  justifyContent='space-between' >
+        <Column alignItems='center' width={['100%']}>
+          <Box flexDirection={['row','column']} width={['100%']} justifyContent={['space-between']} >
             <Link href='https://telegram.org/' target='_blank'>
               <Button shape='iconPaddingRounding' appearance='iconBackgroundGhost'>
                 <IconTelegram />
               </Button>
             </Link>
-          </Box>
-          <Layout flexBasis={[16]}/>
-          <Box width={[56]} height={[56]} alignItems='center' justifyContent='center'>
+            <Layout flexBasis={[16]}/>
             <Link href='https://github.com/atls-academy' target='_blank'>
               <Button shape='iconPaddingRounding' appearance='iconBackgroundGhost'>
                 <IconGitHub />
               </Button>
             </Link>
-          </Box>
-          <Layout flexBasis={[16]}/>
-          <Box width={[56]} height={[56]} alignItems='center' justifyContent='center'>
+            <Layout flexBasis={[16]}/>
             <Link href='mailto:me@atls.academy' target='_blank'>
               <Button shape='iconPaddingRounding' appearance='iconBackgroundGhost' >
                 <IconEmail />
@@ -39,6 +36,7 @@ const SocialLink = () => {
           </Box>
         </Column>
       </Box>
+    </Box>
     </>
   )
 }

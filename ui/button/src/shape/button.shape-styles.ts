@@ -10,6 +10,13 @@ const iconPaddingRounding = createShapeStyles({
   rounding: 16,
 })
 
+const iconSmallPaddingRounding = createShapeStyles({
+  size: 44,
+  paddingRight: 44.33,
+  paddingLeft: 44.33,
+  rounding: 12,
+})
+
 const formPaddingRounding = createShapeStyles({
   size: 96,
   paddingRight: 32,
@@ -26,6 +33,7 @@ const formBorder = createShapeStyles({
 
 export const shapeStyles = switchProp(prop('shape','normal'), {
   iconPaddingRounding: iconPaddingRounding,
+  iconSmallPaddingRounding: iconSmallPaddingRounding,
   formPaddingRounding: formPaddingRounding,
   formBorder: formBorder
 })
