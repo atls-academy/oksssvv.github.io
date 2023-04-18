@@ -2,11 +2,7 @@ import React                     from 'react'
 
 import { Text as TextComponent } from './index'
 
-const Text = (props) => {
-  return(
-  <TextComponent {...props} />
-)
-}
+const Text = (props) => <TextComponent {...props} />
 
 Text.args = {
   children: 'Almost before we knew it, we had left the ground.',
@@ -41,4 +37,4 @@ Text.argTypes = {
   },
 }
 
-export {Text}
+export { Text }

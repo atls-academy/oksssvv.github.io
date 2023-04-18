@@ -1,15 +1,13 @@
-import React from 'react'
+import React                 from 'react'
 
+import { LandingHero }       from '@landing/hero-fragment'
 import { LandingNavigation } from '@landing/navigation-fragment'
-import { LandingHero } from '@landing/hero-fragment'
 
-const Fragments = () => (
-  <LandingHero/>
-)
+const Fragments = () => <LandingHero />
 export const IndexPage = () => (
   <>
-    <LandingNavigation/>
-    <Fragments/>
+    <LandingNavigation />
+    <Fragments />
   </>
 )
 

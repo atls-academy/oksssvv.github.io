@@ -1,3 +1,3 @@
-import { createBaseStyles }    from '@atls-ui-parts/button'
+import { createBaseStyles } from '@atls-ui-parts/button'
 
 export const baseStyles = createBaseStyles()

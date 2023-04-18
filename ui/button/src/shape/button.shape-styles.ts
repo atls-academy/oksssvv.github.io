@@ -1,7 +1,7 @@
-import { createShapeStyles } from "@atls-ui-parts/button"
+import { createShapeStyles } from '@atls-ui-parts/button'
 
-import { prop }                from 'styled-tools'
-import { switchProp }          from 'styled-tools'
+import { prop }              from 'styled-tools'
+import { switchProp }        from 'styled-tools'
 
 const iconPaddingRounding = createShapeStyles({
   size: 56,
@@ -12,8 +12,8 @@ const iconPaddingRounding = createShapeStyles({
 
 const iconSmallPaddingRounding = createShapeStyles({
   size: 44,
-  paddingRight: 44.33,
-  paddingLeft: 44.33,
+  paddingRight: 42,
+  paddingLeft: 42,
   rounding: 12,
 })
 
@@ -31,9 +31,9 @@ const formBorder = createShapeStyles({
   rounding: 12,
 })
 
-export const shapeStyles = switchProp(prop('shape','normal'), {
-  iconPaddingRounding: iconPaddingRounding,
-  iconSmallPaddingRounding: iconSmallPaddingRounding,
-  formPaddingRounding: formPaddingRounding,
-  formBorder: formBorder
+export const shapeStyles = switchProp(prop('shape', 'normal'), {
+  iconPaddingRounding,
+  iconSmallPaddingRounding,
+  formPaddingRounding,
+  formBorder,
 })

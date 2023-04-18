@@ -1,12 +1,13 @@
-
 export type ButtonVariant = '*' | '*' | '*'
 
 export type ButtonShape =
-   'iconPaddingRounding'
+  | 'iconPaddingRounding'
+  | 'iconSmallPaddingRounding'
   | 'formPaddingRounding'
   | 'formBorder'
 export type ButtonAppearance =
-   'iconBackgroundGhost'
+  | 'iconBackgroundGhost'
+  | 'iconSmallPaddingRounding'
   | 'formBackgroundGhost'
   | 'formBorder'
 

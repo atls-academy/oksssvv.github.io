@@ -1530,6 +1530,7 @@ __metadata:
     "@types/node": "npm:^17.0.0"
     "@types/react": "npm:^18.0.35"
     "@types/react-dom": "npm:^17.0.11"
+    "@ui/theme": "workspace:0.0.1"
     next: "npm:^12.1.0"
     react: "npm:^17.0.2"
     react-dom: "npm:^17.0.2"
@@ -2337,6 +2338,20 @@ __metadata:
     react: "*"
     react-dom: "*"
     styled-system: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/theme@workspace:0.0.1, @ui/theme@workspace:ui/theme":
+  version: 0.0.0-use.local
+  resolution: "@ui/theme@workspace:ui/theme"
+  dependencies:
+    "@emotion/react": "npm:^11.10.4"
+    react: "npm:^17.0.2"
+    react-dom: "npm:^17.0.2"
+  peerDependencies:
+    "@emotion/react": "*"
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
