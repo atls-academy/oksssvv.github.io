@@ -1,1 +1,1 @@
-export * from './landing-hero-component'
+export * from './landing-hero.component'

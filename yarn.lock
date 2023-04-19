@@ -1577,6 +1577,8 @@ __metadata:
     react: "npm:17"
     react-dom: "npm:17"
     react-intl: "npm:^6.1.2"
+  peerDependencies:
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 

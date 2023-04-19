@@ -1,12 +1,13 @@
-import React          from 'react'
+import React                from 'react'
 
-import { Box }        from '@ui/layout'
-import { Layout }     from '@ui/layout'
-import { Column }     from '@ui/layout'
-import { Row }        from '@ui/layout'
+import { Box }              from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Row }              from '@ui/layout'
 
-import { Lead }       from './lead-component'
-import { SocialLink } from './social-link-component'
+import { Lead }             from './content/index'
+
+import { SocialLink } from './content/index'
 
 const LandingHero = () => (
   <Box width={['100%']} backgroundColor='#616161' flexDirection={['column']} margin={['none']}>
