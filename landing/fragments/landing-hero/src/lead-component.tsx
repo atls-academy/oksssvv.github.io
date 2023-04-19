@@ -1,61 +1,65 @@
-import React          from 'react'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import { Button }     from '@ui/button'
-import { Divider }    from '@ui/divider'
-import { IconScroll } from '@ui/icon'
-import { Box }        from '@ui/layout'
-import { Layout }     from '@ui/layout'
-import { Column }     from '@ui/layout'
-import { Row }        from '@ui/layout'
-import { Text }       from '@ui/text'
+import { Button }           from '@ui/button'
+import { Divider }          from '@ui/divider'
+import { IconScroll }       from '@ui/icon'
+import { Box }              from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { Text }             from '@ui/text'
 
 const Lead = () => (
   <Box width={['none', 1166]}>
     <Column>
       <Row flexWrap={['wrap']}>
         <Text
-          fontFamily='Helvetica'
-          fontSize={[40, 96]}
-          lineHeight={['48px', '115px']}
+          fontFamily='main'
+          fontSize={['large', 'huge']}
+          lineHeight={['medium', 'normal']}
           color='white'
         >
-          Обучаем профессионалов
+          <FormattedMessage
+            id='landing_hero_lead.teach_professionals'
+            defaultMessage='Обучаем профессионалов'
+          />
         </Text>
       </Row>
       <Row flexWrap={['wrap']}>
         <Text
-          fontFamily='Helvetica'
-          fontSize={[40, 96]}
-          lineHeight={['48px', '115px']}
+          fontFamily={['main']}
+          fontSize={['large', 'huge']}
+          lineHeight={['medium', 'normal']}
           color='white'
         >
-          для революции
+          <FormattedMessage id='landing_hero_lead.for_revolution' defaultMessage='для революции' />
         </Text>
         <Layout flexBasis={[30, 28]} />
         <Text
-          fontFamily='Helvetica'
-          fontSize={[40, 96]}
-          lineHeight={['48px', '115px']}
+          fontFamily='main'
+          fontSize={['large', 'huge']}
+          lineHeight={['medium', 'normal']}
           color='white'
         >
-          в
+          <FormattedMessage id='landing_hero_lead.in' defaultMessage='в' />
         </Text>
         <Layout flexBasis={[12, 28]} />
         <Box display={['none', 'flex']}>
-          <Button shape='formPaddingRounding' appearance='formBackgroundGhost'>
+          <Button size='formBig' variant='iconTransparent'>
             <Text
-              fontFamily='Helvetica'
-              fontSize={[40, 80]}
-              lineHeight={['48px', '96px']}
+              fontFamily='main'
+              fontSize={['large', 'big']}
+              lineHeight={['medium', 'normal']}
               color='white'
             >
-              IT
+              <FormattedMessage id='landing_hero_lead.it' defaultMessage='IT' />
             </Text>
           </Button>
         </Box>
         <Box display={['flex', 'none']}>
-          <Text fontFamily='Helvetica' fontSize={[40]} lineHeight={['48px']} color='white'>
-            IT
+          <Text fontFamily='main' fontSize={['large']} lineHeight={['normal']} color='white'>
+            <FormattedMessage id='landing_hero_lead.it' defaultMessage='IT' />
           </Text>
         </Box>
       </Row>
@@ -67,19 +71,21 @@ const Lead = () => (
       <Row>
         <Column flexBasis={['100%', 640]} flexShrink={[0]}>
           <Text
-            fontFamily='Helvetica'
-            lineHeight={['19.6px', '28px']}
-            fontSize={[14, 20]}
+            fontFamily='main'
+            lineHeight={['medium', 'medium']}
+            fontSize={['small', 'medium']}
             color='white'
           >
-            Мы не учим программированию и дизайну, мы учим мышлению способному релизовывывать
-            невозможные идеи.
+            <FormattedMessage
+              id='landing_hero_lead.we_dont_teach_programming'
+              defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению способному релизовывывать невозможные идеи.'
+            />
           </Text>
         </Column>
         <Layout flexBasis={[448]} />
         <Column justifyContent='center'>
           <Box display={['none', 'flex']}>
-            <Button shape='formBorder' appearance='formBorder'>
+            <Button size='formNormal' variant='iconBorder'>
               <IconScroll />
             </Button>
           </Box>

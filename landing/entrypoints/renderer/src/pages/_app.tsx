@@ -1,15 +1,16 @@
-import { ThemeProvider } from '@emotion/react'
+import * as messages     from '../../locales/ru.json'
 
 import React             from 'react'
+import { IntlProvider }  from 'react-intl'
 
-import { GlobalStyles }  from '@ui/theme/src/global.styles'
-import { theme }         from '@ui/theme'
+import { ThemeProvider } from '@ui/theme'
 
-const App = ({ Component, pageProps, ...props }) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    <Component {...pageProps} {...props} />
-  </ThemeProvider>
+const App = ({ Component, pageProps, props }) => (
+  <IntlProvider messages={messages} locale='ru' defaultLocale='ru'>
+    <ThemeProvider>
+      <Component {...props} {...pageProps} />
+    </ThemeProvider>
+  </IntlProvider>
 )
 
 export default App

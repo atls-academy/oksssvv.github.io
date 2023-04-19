@@ -1,1 +1,6 @@
-export * from './background'
+export * from './backgrounds'
+export * from './colors'
+export * from './fonts'
+export * from './fontSizes'
+export * from './fontWeights'
+export * from './lineHeights'

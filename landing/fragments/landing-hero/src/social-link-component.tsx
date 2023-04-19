@@ -16,12 +16,12 @@ const SocialLink = () => (
         <Box flexDirection={['row', 'column']} width={['100%']} justifyContent={['space-between']}>
           <Link href='https://telegram.org/' target='_blank'>
             <Box display={['none', 'flex']}>
-              <Button shape='iconPaddingRounding' appearance='iconBackgroundGhost'>
+              <Button size='iconNormal' variant='iconTransparent'>
                 <IconTelegram />
               </Button>
             </Box>
             <Box display={['flex', 'none']}>
-              <Button shape='iconSmallPaddingRounding' appearance='iconBackgroundGhost'>
+              <Button size='iconWide' variant='iconTransparent'>
                 <IconTelegram />
               </Button>
             </Box>
@@ -29,12 +29,12 @@ const SocialLink = () => (
           <Layout flexBasis={[12, 16]} flexShrink={[0]} />
           <Link href='https://github.com/atls-academy' target='_blank'>
             <Box display={['none', 'flex']}>
-              <Button shape='iconPaddingRounding' appearance='iconBackgroundGhost'>
+              <Button size='iconNormal' variant='iconTransparent'>
                 <IconGitHub />
               </Button>
             </Box>
             <Box display={['flex', 'none']}>
-              <Button shape='iconSmallPaddingRounding' appearance='iconBackgroundGhost'>
+              <Button size='iconWide' variant='iconTransparent'>
                 <IconGitHub />
               </Button>
             </Box>
@@ -42,12 +42,12 @@ const SocialLink = () => (
           <Layout flexBasis={[12, 16]} flexShrink={[0]} />
           <Link href='mailto:me@atls.academy' target='_blank'>
             <Box display={['none', 'flex']}>
-              <Button shape='iconPaddingRounding' appearance='iconBackgroundGhost'>
+              <Button size='iconNormal' variant='iconTransparent'>
                 <IconEmail />
               </Button>
             </Box>
             <Box display={['flex', 'none']}>
-              <Button shape='iconSmallPaddingRounding' appearance='iconBackgroundGhost'>
+              <Button size='iconWide' variant='iconTransparent'>
                 <IconEmail />
               </Button>
             </Box>

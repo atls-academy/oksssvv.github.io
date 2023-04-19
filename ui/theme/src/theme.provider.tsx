@@ -8,7 +8,7 @@ import { GlobalStyles }                          from './global.styles'
 
 export const ThemeProvider = ({ children }) => (
   <>
-    <EmotionThemeProvider theme={theme}>{children}</EmotionThemeProvider>
     <GlobalStyles />
+    <EmotionThemeProvider theme={theme}>{children}</EmotionThemeProvider>
   </>
 )

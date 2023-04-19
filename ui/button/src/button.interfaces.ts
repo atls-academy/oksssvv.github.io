@@ -1,24 +1,10 @@
-export type ButtonVariant = '*' | '*' | '*'
+import { ButtonProps as BaseButtonProps } from '@atls-ui-parts/button'
 
-export type ButtonShape =
-  | 'iconPaddingRounding'
-  | 'iconSmallPaddingRounding'
-  | 'formPaddingRounding'
-  | 'formBorder'
-export type ButtonAppearance =
-  | 'iconBackgroundGhost'
-  | 'iconSmallPaddingRounding'
-  | 'formBackgroundGhost'
-  | 'formBorder'
+export type ButtonSize = 'default' | 'iconNormal' | 'iconWide' | 'formBig' | 'formNormal'
 
-export interface ButtonProps {
+export type ButtonVariant = 'default' | 'iconTransparent' | 'iconBorder'
+
+export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
-  shape?: ButtonShape
-  appearance?: ButtonAppearance
-  active?: boolean
-  ref?: any
-  iconSvg?: object
-  valueRadius?: object
-  valueWidth?: object
-  valueHeight?: object
+  size?: ButtonSize
 }
