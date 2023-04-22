@@ -10,15 +10,15 @@ import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
-const Lead = () => (
+const AboutUs = () => (
   <Box width={['none', 1166]}>
     <Column>
-      <Row flexWrap={['wrap']}>
+      <Row flexWrap='wrap'>
         <Text
-          fontFamily='main'
+          fontFamily='primary'
           fontSize={['large', 'huge']}
-          lineHeight={['medium', 'normal']}
-          color='white'
+          lineHeight='normal'
+          color='text.white'
         >
           <FormattedMessage
             id='landing_hero_lead.teach_professionals'
@@ -26,39 +26,34 @@ const Lead = () => (
           />
         </Text>
       </Row>
-      <Row flexWrap={['wrap']}>
+      <Row flexWrap='wrap'>
         <Text
-          fontFamily={['main']}
+          fontFamily='primary'
           fontSize={['large', 'huge']}
-          lineHeight={['medium', 'normal']}
-          color='white'
+          lineHeight='normal'
+          color='text.white'
         >
           <FormattedMessage id='landing_hero_lead.for_revolution' defaultMessage='для революции' />
         </Text>
         <Layout flexBasis={[30, 28]} />
         <Text
-          fontFamily='main'
+          fontFamily='primary'
           fontSize={['large', 'huge']}
-          lineHeight={['medium', 'normal']}
-          color='white'
+          lineHeight='normal'
+          color='text.white'
         >
           <FormattedMessage id='landing_hero_lead.in' defaultMessage='в' />
         </Text>
         <Layout flexBasis={[12, 28]} />
-        <Box display={['none', 'flex']}>
-          <Button size='formBig' variant='iconTransparent'>
-            <Text
-              fontFamily='main'
-              fontSize={['large', 'big']}
-              lineHeight={['medium', 'normal']}
-              color='white'
-            >
+        <Box display={['none', 'flex']} alignItems='center'>
+          <Button size='big' colors='transparent'>
+            <Text fontFamily='primary' fontSize='big' lineHeight='normal' color='text.white'>
               <FormattedMessage id='landing_hero_lead.it' defaultMessage='IT' />
             </Text>
           </Button>
         </Box>
-        <Box display={['flex', 'none']}>
-          <Text fontFamily='main' fontSize={['large']} lineHeight={['normal']} color='white'>
+        <Box display={['flex', 'none']} alignItems='center'>
+          <Text fontFamily='primary' fontSize='large' lineHeight='normal' color='text.white'>
             <FormattedMessage id='landing_hero_lead.it' defaultMessage='IT' />
           </Text>
         </Box>
@@ -69,12 +64,12 @@ const Lead = () => (
       </Box>
       <Layout flexBasis={[24, 48]} />
       <Row>
-        <Column flexBasis={['100%', 640]} flexShrink={[0]}>
+        <Column width={['100%', 640]} flexShrink='0'>
           <Text
-            fontFamily='main'
-            lineHeight={['medium', 'medium']}
-            fontSize={['small', 'medium']}
-            color='white'
+            fontFamily='primary'
+            lineHeight='medium'
+            fontSize={['medium', 'regular']}
+            color='text.white'
           >
             <FormattedMessage
               id='landing_hero_lead.we_dont_teach_programming'
@@ -82,10 +77,10 @@ const Lead = () => (
             />
           </Text>
         </Column>
-        <Layout flexBasis={[448]} />
+        <Layout flexBasis={448} />
         <Column justifyContent='center'>
           <Box display={['none', 'flex']}>
-            <Button size='formNormal' variant='iconBorder'>
+            <Button size='medium' colors='border'>
               <IconScroll />
             </Button>
           </Box>
@@ -96,4 +91,4 @@ const Lead = () => (
   </Box>
 )
 
-export { Lead }
+export { AboutUs }

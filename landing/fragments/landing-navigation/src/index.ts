@@ -1,1 +1,1 @@
-export * from './landing-navigation.component'
+export * from './navigation.component'

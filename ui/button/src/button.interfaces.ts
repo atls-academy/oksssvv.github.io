@@ -1,10 +1,10 @@
 import { ButtonProps as BaseButtonProps } from '@atls-ui-parts/button'
 
-export type ButtonSize = 'default' | 'iconNormal' | 'iconWide' | 'formBig' | 'formNormal'
+type ButtonColors = 'transparent' | 'border'
 
-export type ButtonVariant = 'default' | 'iconTransparent' | 'iconBorder'
+type ButtonSizes = 'normal' | 'big' | 'wide' | 'medium'
 
 export interface ButtonProps extends BaseButtonProps {
-  variant?: ButtonVariant
-  size?: ButtonSize
+  colors?: ButtonColors
+  size?: ButtonSizes
 }

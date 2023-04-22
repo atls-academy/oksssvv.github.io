@@ -1,5 +1,5 @@
 const backgrounds = {
-  gray: '#616161',
+  darkGray: 'rgba(97, 97, 97, 1)',
 }
 
 export { backgrounds }

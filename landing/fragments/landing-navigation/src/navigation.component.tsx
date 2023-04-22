@@ -6,14 +6,14 @@ import { Column } from '@ui/layout'
 import { Row }    from '@ui/layout'
 import { Logo }   from '@ui/logo'
 
-const LandingNavigation = () => (
-  <Box width='100%' backgroundColor='#616161'>
+const Navigation = () => (
+  <Box width='100%' backgroundColor='background.darkGray'>
     <Column width='100%'>
       <Layout flexBasis={[22, 35]} />
       <Box width='100%'>
         <Layout flexBasis={[20, 40]} />
         <Row>
-          <Box width={[40, 56]} flexShrink={[0]} alignItems='center'>
+          <Box width={[40, 56]} flexShrink={0} alignItems='center'>
             <Logo />
           </Box>
         </Row>
@@ -24,4 +24,4 @@ const LandingNavigation = () => (
   </Box>
 )
 
-export { LandingNavigation }
+export { Navigation }

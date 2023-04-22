@@ -1,5 +1,5 @@
 const fonts = {
-  main: 'Helvetica',
+  primary: 'Helvetica',
 }
 
 export { fonts }
