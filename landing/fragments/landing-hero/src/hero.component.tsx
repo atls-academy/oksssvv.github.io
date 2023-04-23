@@ -13,7 +13,7 @@ const Hero = () => (
     <Column>
       <Layout flexBasis={[252, 415]} />
     </Column>
-    <Row width='100%'>
+    <Row>
       <Box width='100%' flexDirection={['column', 'row']}>
         <Layout flexBasis={[0, 230]} />
         <Box>

@@ -13,7 +13,7 @@ import { Text }             from '@ui/text'
 const AboutUs = () => (
   <Box width={['none', 1166]}>
     <Column>
-      <Row flexWrap='wrap'>
+      <Row>
         <Text
           fontFamily='primary'
           fontSize={['large', 'huge']}
@@ -21,7 +21,7 @@ const AboutUs = () => (
           color='text.white'
         >
           <FormattedMessage
-            id='landing_hero_lead.teach_professionals'
+            id='about_us.teach_professionals'
             defaultMessage='Обучаем профессионалов'
           />
         </Text>
@@ -33,7 +33,7 @@ const AboutUs = () => (
           lineHeight='normal'
           color='text.white'
         >
-          <FormattedMessage id='landing_hero_lead.for_revolution' defaultMessage='для революции' />
+          <FormattedMessage id='about_us.for_revolution' defaultMessage='для революции' />
         </Text>
         <Layout flexBasis={[30, 28]} />
         <Text
@@ -42,19 +42,19 @@ const AboutUs = () => (
           lineHeight='normal'
           color='text.white'
         >
-          <FormattedMessage id='landing_hero_lead.in' defaultMessage='в' />
+          <FormattedMessage id='about_us.in' defaultMessage='в' />
         </Text>
         <Layout flexBasis={[12, 28]} />
         <Box display={['none', 'flex']} alignItems='center'>
-          <Button size='big' colors='transparent'>
+          <Button size='mediumPaddingBigHeight' variant='transparentBackground'>
             <Text fontFamily='primary' fontSize='big' lineHeight='normal' color='text.white'>
-              <FormattedMessage id='landing_hero_lead.it' defaultMessage='IT' />
+              <FormattedMessage id='about_us.it' defaultMessage='IT' />
             </Text>
           </Button>
         </Box>
         <Box display={['flex', 'none']} alignItems='center'>
           <Text fontFamily='primary' fontSize='large' lineHeight='normal' color='text.white'>
-            <FormattedMessage id='landing_hero_lead.it' defaultMessage='IT' />
+            <FormattedMessage id='about_us.it' defaultMessage='IT' />
           </Text>
         </Box>
       </Row>
@@ -72,7 +72,7 @@ const AboutUs = () => (
             color='text.white'
           >
             <FormattedMessage
-              id='landing_hero_lead.we_dont_teach_programming'
+              id='about_us.we_dont_teach_programming'
               defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению способному релизовывывать невозможные идеи.'
             />
           </Text>
@@ -80,7 +80,7 @@ const AboutUs = () => (
         <Layout flexBasis={448} />
         <Column justifyContent='center'>
           <Box display={['none', 'flex']}>
-            <Button size='medium' colors='border'>
+            <Button size='bigPaddingMediumHeight' variant='transparentBorder'>
               <IconScroll />
             </Button>
           </Box>
