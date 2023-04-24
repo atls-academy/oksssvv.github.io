@@ -63,8 +63,8 @@ const AboutUs = () => (
         <Divider />
       </Box>
       <Layout flexBasis={[24, 48]} />
-      <Row>
-        <Column width={['100%', 640]} flexShrink='0'>
+      <Row justifyContent='space-between'>
+        <Box width={['100%', 640]} flexShrink='0'>
           <Text
             fontFamily='primary'
             lineHeight='medium'
@@ -73,18 +73,15 @@ const AboutUs = () => (
           >
             <FormattedMessage
               id='about_us.we_dont_teach_programming'
-              defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению способному релизовывывать невозможные идеи.'
+              defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи.'
             />
           </Text>
-        </Column>
-        <Layout flexBasis={448} />
-        <Column justifyContent='center'>
-          <Box display={['none', 'flex']}>
-            <Button size='bigPaddingMediumHeight' variant='transparentBorder'>
-              <IconScroll />
-            </Button>
-          </Box>
-        </Column>
+        </Box>
+        <Box display={['none', 'flex']} alignItems='center'>
+          <Button size='bigPaddingMediumHeight' variant='transparentBorder'>
+            <IconScroll />
+          </Button>
+        </Box>
       </Row>
       <Layout flexBasis={[0, 48]} />
     </Column>

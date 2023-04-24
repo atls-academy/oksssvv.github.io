@@ -9,7 +9,6 @@ import { useState }         from 'react'
 import { useHover }         from '@ui/utils'
 
 import { ButtonProps }      from './button.interfaces'
-import { IconAttachment }   from './icon-attachment'
 import { baseStyles }       from './button.styles'
 import { shapeStyles }      from './button.styles'
 import { contentStyles }    from './button.styles'
@@ -24,63 +23,18 @@ export const ButtonElement = styled('button')<any>(
   fillStyles
 )
 
-export const Button: FC<ButtonProps> = forwardRef(({ children, active, ...props }, ref) => {
+export const Button: FC<ButtonProps> = forwardRef(({ children, ...props }) => {
   const [hover, hoverProps] = useHover()
   const [pressed, setPressed] = useState<boolean>(false)
 
-  if (props.horizontalLocation === 'right') {
-    return (
-      <ButtonElement
-        hover={hover}
-        pressed={pressed || active}
-        onMouseDown={() => setPressed(true)}
-        onMouseUp={() => setPressed(false)}
-        {...hoverProps}
-        {...props}
-        ref={ref}
-      >
-        <Content divider={8}>{children}</Content>
-        <IconAttachment
-          iconSvg={props.iconSvg}
-          valueRadius={props.valueRadius}
-          valueWidth={props.valueWidth}
-          valueHeight={props.valueHeight}
-          valueBackground={props.valueBackground}
-        />
-      </ButtonElement>
-    )
-  }
-  if (props.horizontalLocation === 'left') {
-    return (
-      <ButtonElement
-        hover={hover}
-        pressed={pressed || active}
-        onMouseDown={() => setPressed(true)}
-        onMouseUp={() => setPressed(false)}
-        {...hoverProps}
-        {...props}
-        ref={ref}
-      >
-        <IconAttachment
-          iconSvg={props.iconSvg}
-          valueRadius={props.valueRadius}
-          valueWidth={props.valueWidth}
-          valueHeight={props.valueHeight}
-          valueBackground={props.valueBackground}
-        />
-        <Content divider={8}>{children}</Content>
-      </ButtonElement>
-    )
-  }
   return (
     <ButtonElement
       hover={hover}
-      pressed={pressed || active}
+      pressed={pressed}
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => setPressed(false)}
       {...hoverProps}
       {...props}
-      ref={ref}
     >
       <Content divider={8}>{children}</Content>
     </ButtonElement>

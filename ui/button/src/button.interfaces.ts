@@ -11,12 +11,4 @@ export type ButtonSize =
 export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
   size?: ButtonSize
-  active?: boolean
-  ref?: any
-  iconSvg?: object
-  valueRadius?: string | object
-  valueWidth?: string | object
-  valueHeight?: string | object
-  valueBackground?: string | object
-  horizontalLocation?: 'left' | 'right'
 }
