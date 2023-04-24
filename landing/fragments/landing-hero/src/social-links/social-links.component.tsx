@@ -4,13 +4,14 @@ import { Button }       from '@ui/button'
 import { IconTelegram } from '@ui/icon'
 import { IconGitHub }   from '@ui/icon'
 import { IconEmail }    from '@ui/icon'
+import { Layout }       from '@ui/layout'
 import { Box }          from '@ui/layout'
 import { Row }          from '@ui/layout'
 import { Link }         from '@ui/link'
 
 const SocialLink = () => (
   <Row justifyContent='center' width={[335, 56]} height={[44, 200]}>
-    <Box flexDirection={['row', 'column']} width='100%' justifyContent='space-between'>
+    <Box flexDirection={['row', 'column']} width='100%'>
       <Box display={['none', 'flex']}>
         <Link href='https://telegram.org/' target='_blank'>
           <Button size='normalPaddingNormalHeight' variant='transparentBackground'>
@@ -25,6 +26,7 @@ const SocialLink = () => (
           </Button>
         </Link>
       </Box>
+      <Layout flexBasis={[12, 16]} />
       <Box display={['none', 'flex']}>
         <Link href='https://github.com/atls-academy' target='_blank'>
           <Button size='normalPaddingNormalHeight' variant='transparentBackground'>
@@ -39,6 +41,7 @@ const SocialLink = () => (
           </Button>
         </Link>
       </Box>
+      <Layout flexBasis={[12, 16]} />
       <Box display={['none', 'flex']}>
         <Link href='mailto:me@atls.academy' target='_blank'>
           <Button size='normalPaddingNormalHeight' variant='transparentBackground'>

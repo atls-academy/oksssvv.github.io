@@ -21,7 +21,7 @@ const AboutUs = () => (
           color='text.white'
         >
           <FormattedMessage
-            id='about_us.teach_professionals'
+            id='landing_hero.teach_professionals'
             defaultMessage='Обучаем профессионалов'
           />
         </Text>
@@ -33,7 +33,7 @@ const AboutUs = () => (
           lineHeight='normal'
           color='text.white'
         >
-          <FormattedMessage id='about_us.for_revolution' defaultMessage='для революции' />
+          <FormattedMessage id='landing_hero.for_revolution' defaultMessage='для революции' />
         </Text>
         <Layout flexBasis={[30, 28]} />
         <Text
@@ -42,7 +42,7 @@ const AboutUs = () => (
           lineHeight='normal'
           color='text.white'
         >
-          <FormattedMessage id='about_us.in' defaultMessage='в' />
+          <FormattedMessage id='landing_hero.in' defaultMessage='в' />
         </Text>
         <Layout flexBasis={[12, 28]} />
         <Box display={['none', 'flex']} alignItems='center'>
@@ -54,7 +54,7 @@ const AboutUs = () => (
         </Box>
         <Box display={['flex', 'none']} alignItems='center'>
           <Text fontFamily='primary' fontSize='large' lineHeight='normal' color='text.white'>
-            <FormattedMessage id='about_us.it' defaultMessage='IT' />
+            <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
           </Text>
         </Box>
       </Row>
@@ -63,7 +63,7 @@ const AboutUs = () => (
         <Divider />
       </Box>
       <Layout flexBasis={[24, 48]} />
-      <Row justifyContent='space-between'>
+      <Row>
         <Box width={['100%', 640]} flexShrink='0'>
           <Text
             fontFamily='primary'
@@ -72,11 +72,12 @@ const AboutUs = () => (
             color='text.white'
           >
             <FormattedMessage
-              id='about_us.we_dont_teach_programming'
+              id='landing_hero.we_dont_teach_programming'
               defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи.'
             />
           </Text>
         </Box>
+        <Layout flexBasis={448} />
         <Box display={['none', 'flex']} alignItems='center'>
           <Button size='bigPaddingMediumHeight' variant='transparentBorder'>
             <IconScroll />
