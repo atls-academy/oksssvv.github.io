@@ -10,7 +10,7 @@ import { Row }          from '@ui/layout'
 import { Link }         from '@ui/link'
 
 const SocialLink = () => (
-  <Row justifyContent='center' width={[335, 56]} height={[44, 200]}>
+  <Row width={[335, 56]} height={[44, 200]}>
     <Box flexDirection={['row', 'column']} width='100%'>
       <Box display={['none', 'flex']}>
         <Link href='https://telegram.org/' target='_blank'>

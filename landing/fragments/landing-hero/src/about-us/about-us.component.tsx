@@ -13,7 +13,7 @@ import { Text }             from '@ui/text'
 const AboutUs = () => (
   <Box width={['none', 1166]}>
     <Column>
-      <Row>
+      <Box>
         <Text
           fontFamily='primary'
           fontSize={['large', 'huge']}
@@ -25,25 +25,29 @@ const AboutUs = () => (
             defaultMessage='Обучаем профессионалов'
           />
         </Text>
-      </Row>
-      <Row flexWrap='wrap'>
-        <Text
-          fontFamily='primary'
-          fontSize={['large', 'huge']}
-          lineHeight='normal'
-          color='text.white'
-        >
-          <FormattedMessage id='landing_hero.for_revolution' defaultMessage='для революции' />
-        </Text>
+      </Box>
+      <Box flexWrap='wrap'>
+        <Box>
+          <Text
+            fontFamily='primary'
+            fontSize={['large', 'huge']}
+            lineHeight='normal'
+            color='text.white'
+          >
+            <FormattedMessage id='landing_hero.for_revolution' defaultMessage='для революции' />
+          </Text>
+        </Box>
         <Layout flexBasis={[30, 28]} />
-        <Text
-          fontFamily='primary'
-          fontSize={['large', 'huge']}
-          lineHeight='normal'
-          color='text.white'
-        >
-          <FormattedMessage id='landing_hero.in' defaultMessage='в' />
-        </Text>
+        <Box>
+          <Text
+            fontFamily='primary'
+            fontSize={['large', 'huge']}
+            lineHeight='normal'
+            color='text.white'
+          >
+            <FormattedMessage id='landing_hero.in' defaultMessage='в' />
+          </Text>
+        </Box>
         <Layout flexBasis={[12, 28]} />
         <Box display={['none', 'flex']} alignItems='center'>
           <Button size='mediumPaddingBigHeight' variant='transparentBackground'>
@@ -57,7 +61,7 @@ const AboutUs = () => (
             <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
           </Text>
         </Box>
-      </Row>
+      </Box>
       <Layout flexBasis={[24, 48]} />
       <Box width={[335, 1160]}>
         <Divider />
