@@ -48,7 +48,7 @@ const AboutUs = () => (
         <Box display={['none', 'flex']} alignItems='center'>
           <Button size='mediumPaddingBigHeight' variant='transparentBackground'>
             <Text fontFamily='primary' fontSize='big' lineHeight='normal' color='text.white'>
-              <FormattedMessage id='about_us.it' defaultMessage='IT' />
+              <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
             </Text>
           </Button>
         </Box>

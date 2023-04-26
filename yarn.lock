@@ -341,67 +341,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls/next-app-with-emotion@npm:^0.2.67":
-  version: 0.2.68
-  resolution: "@atls/next-app-with-emotion@npm:0.2.68"
-  peerDependencies:
-    "@emotion/cache": "*"
-    "@emotion/react": "*"
-    next: "*"
-    react: "*"
-  checksum: ccf5afb68a37fbdd59b994f6e17f38cbfaa03d005204ad2926ee0cc49ca6cdd2bd9fbc269e0bd76bc2d36f2532ecf622ae4888686123544c73a6f474566aa5bd
-  languageName: node
-  linkType: hard
-
-"@atls/next-app-with-helmet@npm:^0.2.64":
-  version: 0.2.65
-  resolution: "@atls/next-app-with-helmet@npm:0.2.65"
-  peerDependencies:
-    next: "*"
-    react: ^16.12.0
-    react-helmet: ^6.0.0
-  checksum: 0955d4a278712792b6a676cd6391bd1a9e530f923fcc676d299793cdf9a6e5113febd6f7ec3f0cf85dafdccd22ba3e3b7fc4e79d0fbc14012ce4f1bf1534bef5
-  languageName: node
-  linkType: hard
-
-"@atls/next-config-with-pnp-workspaces@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@atls/next-config-with-pnp-workspaces@npm:0.0.1"
-  checksum: faf907323c8ade8d5df2d020ed6bbcd298015482d198ec0a10ef71979490a7ee35603b2df03a37b2ca2be2c72c85d613394dcc11f659cf742f3e01b1723faf8d
-  languageName: node
-  linkType: hard
-
-"@atls/next-document-with-gtag@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@atls/next-document-with-gtag@npm:0.0.4"
-  peerDependencies:
-    next: "*"
-    react: ^16.12.0
-  checksum: b1e54d14421a361b21f4759bbd3f202d3c0ed1d765ca3bd0a21cab02e248491fcfea5239a8bd3e31a5028d790d835c6ba0de959361c64b591c0254ab4b46880c
-  languageName: node
-  linkType: hard
-
-"@atls/next-document-with-helmet@npm:^0.2.64":
-  version: 0.2.67
-  resolution: "@atls/next-document-with-helmet@npm:0.2.67"
-  peerDependencies:
-    next: "*"
-    react: ^16.12.0
-    react-helmet: ^6.0.0
-  checksum: 533cb66c0b04d722a141dbb1a84856ba4c5b7e73e71a0f91666bb5fd94ca599c102ca7c0cbf6f70f7f8bfb12f778b7f14a00c570e05b5f010cf130238c356eee
-  languageName: node
-  linkType: hard
-
-"@atls/next-document-with-icons@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@atls/next-document-with-icons@npm:0.0.2"
-  peerDependencies:
-    next: ^9.1.2
-    react: ^16.12.0
-  checksum: 04fe9620ecc344fc1175ece6e6e1d55d5c98334a483d074a358fffd0e3f56865dd47969c5d88f7389bc9d6c10684a1cc1121605b5c46bd1c085af07dde419751
-  languageName: node
-  linkType: hard
-
 "@atls/prettier-plugin@npm:^0.0.5":
   version: 0.0.5
   resolution: "@atls/prettier-plugin@npm:0.0.5"
@@ -1024,7 +963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/cache@npm:^11.10.5, @emotion/cache@npm:^11.4.0":
+"@emotion/cache@npm:^11.10.5":
   version: 11.10.7
   resolution: "@emotion/cache@npm:11.10.7"
   dependencies:
@@ -1733,13 +1672,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/renderer-entrypoint@workspace:landing/entrypoints/renderer"
   dependencies:
-    "@atls/next-app-with-emotion": "npm:^0.2.67"
-    "@atls/next-app-with-helmet": "npm:^0.2.64"
-    "@atls/next-config-with-pnp-workspaces": "npm:^0.0.1"
-    "@atls/next-document-with-gtag": "npm:^0.0.4"
-    "@atls/next-document-with-helmet": "npm:^0.2.64"
-    "@atls/next-document-with-icons": "npm:^0.0.2"
-    "@emotion/cache": "npm:^11.4.0"
     "@emotion/css": "npm:^11.9.0"
     "@emotion/react": "npm:^11.4.1"
     "@emotion/styled": "npm:^11.3.0"
@@ -1753,9 +1685,7 @@ __metadata:
     "@types/recompose": "npm:^0"
     "@types/styled-system": "npm:^5"
     "@ui/theme": "workspace:0.0.1"
-    events: "npm:^3.3.0"
     express: "npm:^4.17.1"
-    graphql: "npm:^15.5.1"
     next: "npm:^12.1.0"
     next-compose-plugins: "npm:^2.2.0"
     react: "npm:^17.0.2"
@@ -4925,7 +4855,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"events@npm:^3.2.0, events@npm:^3.3.0":
+"events@npm:^3.2.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: ef0af671f7bdc20f14274c77925c3e47a4df7991563ee1827dff577f66a9ed1a5b63d9adab8bc5949a16a1341883abdaf9df7a1841f8d5d2fc65ab4f5570b32b
@@ -5509,13 +5439,6 @@ __metadata:
   version: 1.0.4
   resolution: "grapheme-splitter@npm:1.0.4"
   checksum: c67a8e522758dd907770a78ad750e6dfdcce327b0696fdd82f4b7acb8bb22b0574c88f806afb3c6597a536fa9016e6e3486071535fd0e9226b8505c67cf2fb01
-  languageName: node
-  linkType: hard
-
-"graphql@npm:^15.5.1":
-  version: 15.8.0
-  resolution: "graphql@npm:15.8.0"
-  checksum: e09073b981965b99d22717ed219c55086375075db0870a5a934e1d777d645a155f10141dfe1d0d9713b35765790fb257d6d198d75a53e02ba0126f16befc899c
   languageName: node
   linkType: hard
 
