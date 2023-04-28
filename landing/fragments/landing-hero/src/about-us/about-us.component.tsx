@@ -32,7 +32,7 @@ const AboutUs = () => (
             fontFamily='primary'
             fontSize={['large', 'huge']}
             lineHeight='normal'
-            color='text.white'
+            color='text.primary'
           >
             <FormattedMessage id='landing_hero.for_revolution' defaultMessage='для революции' />
           </Text>
@@ -88,7 +88,6 @@ const AboutUs = () => (
           </Button>
         </Box>
       </Row>
-      <Layout flexBasis={[0, 48]} />
     </Column>
   </Box>
 )

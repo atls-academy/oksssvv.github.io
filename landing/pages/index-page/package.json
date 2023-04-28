@@ -4,6 +4,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@landing/hero-fragment": "workspace:0.0.1",
+    "@landing/info-fragment": "workspace:0.0.1",
     "@landing/navigation-fragment": "workspace:0.0.1"
   },
   "devDependencies": {

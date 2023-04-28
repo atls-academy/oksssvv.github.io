@@ -1643,12 +1643,31 @@ __metadata:
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
     "@landing/hero-fragment": "workspace:0.0.1"
+    "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
     "@types/react": "npm:^18.0.35"
   peerDependencies:
     next: ^12.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/info-fragment@workspace:0.0.1, @landing/info-fragment@workspace:landing/fragments/landing-info":
+  version: 0.0.0-use.local
+  resolution: "@landing/info-fragment@workspace:landing/fragments/landing-info"
+  dependencies:
+    "@types/react": "npm:^18.0.35"
+    "@types/react-dom": "npm:^17"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/theme": "workspace:0.0.1"
+    react: "npm:17"
+    react-dom: "npm:17"
+    react-intl: "npm:^6.1.2"
+  peerDependencies:
     react-intl: "*"
   languageName: unknown
   linkType: soft

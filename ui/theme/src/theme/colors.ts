@@ -48,6 +48,7 @@ const colors = {
   },
   text: {
     white: 'rgba(255, 255, 255, 1)',
+    primary: 'rgba(58, 55, 93, 1)',
   },
   background: {
     darkGray: 'rgba(97, 97, 97, 1)',

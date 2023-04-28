@@ -26,7 +26,6 @@ const Hero = () => (
         </Column>
         <Layout flexBasis={[20, 0]} flexShrink='0' />
       </Box>
-      <Layout flexBasis={[20, 80]} />
     </Box>
   </Box>
 )
