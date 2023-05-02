@@ -52,6 +52,7 @@ const colors = {
   },
   background: {
     darkGray: 'rgba(97, 97, 97, 1)',
+    transparent: 'rgba(255, 255, 255, 0.08)',
   },
   divider: {
     transparent: 'rgba(255, 255, 255, 0.25)',
