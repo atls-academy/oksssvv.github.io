@@ -6,6 +6,7 @@ import { Box }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
+import { ImageBlock }       from '@ui/image'
 
 const Info = () => (
   <Background
@@ -43,14 +44,18 @@ const Info = () => (
               />
             </Text>
             <Box
-              display='inline-block'
+              display='inline-flex'
               width={[52, 76]}
               height={[36, 52]}
               backgroundColor='background.transparent'
               borderRadius={['10px', '12px']}
-              verticalAlign='top'
+              justifyContent='center'
+              alignItems='center'
+              verticalAlign='sub'
             >
-              O
+              <Box width={['28px','40px']} height={['28px','40px']}>
+              <ImageBlock src='/info-icon-sphere.png'/>
+              </Box>
             </Box>
             <Text
               display='inline'
@@ -82,14 +87,18 @@ const Info = () => (
               />
             </Text>
             <Box
-              display='inline-block'
+              display='inline-flex'
               width={[52, 76]}
               height={[36, 52]}
               backgroundColor='background.transparent'
               borderRadius={['10px', '12px']}
-              verticalAlign='top'
+              verticalAlign='sub'
+              justifyContent='center'
+              alignItems='center'
             >
-              O
+              <Box width={['28px','40px']} height={['28px','40px']}>
+              <ImageBlock src='/info-icon-sphere.png'/>
+              </Box>
             </Box>
           </Box>
           <Layout flexBasis={[24, 40]} flexShrink='0' />
@@ -158,14 +167,18 @@ const Info = () => (
               />
             </Text>
             <Box
-              display='inline-block'
+              display='inline-flex'
               width={[52, 76]}
               height={[36, 52]}
               backgroundColor='background.transparent'
               borderRadius={['10px', '12px']}
-              verticalAlign='top'
+              justifyContent='center'
+              alignItems='center'
+              verticalAlign='sub'
             >
-              O
+              <Box width={['28px','40px']} height={['28px','40px']}>
+              <ImageBlock src='/info-icon-sphere.png'/>
+              </Box>
             </Box>
           </Box>
         </Column>

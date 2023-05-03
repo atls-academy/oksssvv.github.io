@@ -1697,6 +1697,7 @@ __metadata:
     "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
     "@types/react": "npm:^18.0.35"
+    "@ui/background": "workspace:0.0.1"
   peerDependencies:
     next: ^12.1.0
     react: ^17.0.2
