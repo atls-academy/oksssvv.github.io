@@ -2,20 +2,19 @@ import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
 import { Background }       from '@ui/background'
+import { ImageBlock }       from '@ui/image'
 import { Box }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
-import { ImageBlock }       from '@ui/image'
 
 const Info = () => (
   <Background
     position='relative'
-    display='flex'
     gradient='bgInfoDesktop'
-    backgroundSize='cover'
+    backgroundSize={['cover,0', '0,cover']}
     backgroundRepeat='no-repeat'
-    backgroundPosition=''
+    backgroundPosition={['right top 0 0, 0', 'right top 0,0 0']}
   >
     <Box width='100%' flexDirection='column'>
       <Layout flexBasis={[0, 160]} flexShrink='0' />
@@ -53,8 +52,8 @@ const Info = () => (
               alignItems='center'
               verticalAlign='sub'
             >
-              <Box width={['28px','40px']} height={['28px','40px']}>
-              <ImageBlock src='/info-icon-sphere.png'/>
+              <Box width={['28px', '40px']} height={['28px', '40px']}>
+                <ImageBlock src='/info-icon-sphere.png' />
               </Box>
             </Box>
             <Text
@@ -96,8 +95,8 @@ const Info = () => (
               justifyContent='center'
               alignItems='center'
             >
-              <Box width={['28px','40px']} height={['28px','40px']}>
-              <ImageBlock src='/info-icon-sphere.png'/>
+              <Box width={['28px', '40px']} height={['28px', '40px']}>
+                <ImageBlock src='/info-icon-sphere.png' />
               </Box>
             </Box>
           </Box>
@@ -176,8 +175,8 @@ const Info = () => (
               alignItems='center'
               verticalAlign='sub'
             >
-              <Box width={['28px','40px']} height={['28px','40px']}>
-              <ImageBlock src='/info-icon-sphere.png'/>
+              <Box width={['28px', '40px']} height={['28px', '40px']}>
+                <ImageBlock src='/info-icon-sphere.png' />
               </Box>
             </Box>
           </Box>

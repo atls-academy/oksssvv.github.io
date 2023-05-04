@@ -49,16 +49,18 @@ const AboutUs = () => (
           </Text>
         </Box>
         <Layout flexBasis={[12, 28]} />
-        <Box display={['none', 'flex']}
-        alignItems='center' 
-        justifyContent='center'
-        width='148px' 
-        height='115px' 
-        backgroundColor='background.transparent'
-        borderRadius='24px'>
-            <Text fontFamily='primary' fontSize='big' lineHeight='normal' color='text.white'>
-              <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
-            </Text>
+        <Box
+          display={['none', 'flex']}
+          alignItems='center'
+          justifyContent='center'
+          width='148px'
+          height='115px'
+          backgroundColor='background.transparent'
+          borderRadius='24px'
+        >
+          <Text fontFamily='primary' fontSize='big' lineHeight='normal' color='text.white'>
+            <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
+          </Text>
         </Box>
         <Box display={['flex', 'none']} alignItems='center'>
           <Text fontFamily='primary' fontSize='large' lineHeight='normal' color='text.white'>
