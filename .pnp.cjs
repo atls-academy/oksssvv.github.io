@@ -92,12 +92,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@atls/code-service", "npm:0.0.18"],\
-          ["@emotion/css", "npm:11.11.0"],\
           ["@types/eslint", "npm:8.4.6"],\
           ["@types/node", "npm:18.16.5"],\
-          ["@types/react", "npm:18.2.6"],\
-          ["@types/react-dom", "npm:18.2.4"],\
-          ["csstype", "npm:3.1.2"],\
           ["eslint", "npm:8.12.0"],\
           ["husky", "npm:8.0.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
@@ -366,11 +362,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@atls-ui-parts-layout-virtual-008e5a23ae/4/.yarn/berry/cache/@atls-ui-parts-layout-npm-0.0.7-ea4d3f1780-9.zip/node_modules/@atls-ui-parts/layout/",\
         "packageDependencies": [\
           ["@atls-ui-parts/layout", "virtual:71444e496c2b31f9487be3a302de83f480a9ab14ef70123c7f60ead124dc6fbba1bdeff322d45123e88fee1a348b287ba535b23b04efa442dc0d98b74af19d72#npm:0.0.7"],\
+          ["@emotion/css", "npm:11.11.0"],\
           ["@emotion/is-prop-valid", "npm:1.2.0"],\
           ["@emotion/styled", "virtual:2feb9cc9c125883d3a6b04f32f2a84354799208a4ed521d0c3f302e72125a16d693884f557876b86c9ead87c08d5a3eb6329abe93af10ea8b33ac31410df4ce1#npm:11.11.0"],\
           ["@types/emotion__styled", null],\
           ["@types/react", null],\
           ["@types/styled-system", "npm:5.1.16"],\
+          ["csstype", "npm:3.1.2"],\
           ["react", "npm:18.2.0"],\
           ["styled-system", "npm:5.1.5"]\
         ],\
@@ -388,11 +386,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@atls-ui-parts-layout-virtual-317d8c1489/4/.yarn/berry/cache/@atls-ui-parts-layout-npm-0.0.7-ea4d3f1780-9.zip/node_modules/@atls-ui-parts/layout/",\
         "packageDependencies": [\
           ["@atls-ui-parts/layout", "virtual:c7cc4d857679754f40c69a70a6c24547877bb67a2be372678b307a1503e1ee9ff57e61d60d78b2b02477945a337a5fc4bfdb4be9dcd68a827bd44bb929aa755e#npm:0.0.7"],\
+          ["@emotion/css", "npm:11.11.0"],\
           ["@emotion/is-prop-valid", "npm:1.2.0"],\
           ["@emotion/styled", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:11.11.0"],\
           ["@types/emotion__styled", null],\
           ["@types/react", "npm:18.2.6"],\
           ["@types/styled-system", "npm:5.1.16"],\
+          ["csstype", "npm:3.1.2"],\
           ["react", "npm:18.2.0"],\
           ["styled-system", "npm:5.1.5"]\
         ],\
@@ -420,6 +420,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@atls-ui-parts/link", "virtual:080f79e90ffcb5bd0794c153957554ff09dc7b6464d4e6a1f03aac2486b509a930d2046dfcc826515249b5937161bcb6ead0fc73427d95f4972fadfbeeaadf0e#npm:0.0.10"],\
           ["@atls-ui-parts/text", "virtual:d7da388bf8b853690aaac490e0337b021d100312e0d78c7d45a0da8d4f1734f0d983d050a60ce98c49f5277d493d620c8ae1e74095bb87b3d0efae0f7f086cc2#npm:0.0.10"],\
+          ["@emotion/css", "npm:11.11.0"],\
           ["@emotion/styled", "virtual:2feb9cc9c125883d3a6b04f32f2a84354799208a4ed521d0c3f302e72125a16d693884f557876b86c9ead87c08d5a3eb6329abe93af10ea8b33ac31410df4ce1#npm:11.11.0"],\
           ["@types/emotion__styled", null],\
           ["@types/next", null],\
@@ -446,6 +447,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@atls-ui-parts/link", "virtual:5c0ecb987f743b90bbd595f5225c155e8c5a4b9271bdfc36111ad209bfaaef5f71556636423443e79162d7d04247aa30c2d74a883ca9507683ee8e3842edd6d8#npm:0.0.10"],\
           ["@atls-ui-parts/text", "virtual:c3e1193117696da11187b76b97fe1ce278affa7f8f2500bbafaef407c1d6fb18b902406b700081f68da40fcf80b1e1def850e194ebb06ae4c8fd03a2a18286c6#npm:0.0.10"],\
+          ["@emotion/css", "npm:11.11.0"],\
           ["@emotion/styled", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:11.11.0"],\
           ["@types/emotion__styled", null],\
           ["@types/next", null],\
@@ -472,6 +474,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@atls-ui-parts/link", "virtual:77bf311a6543a80f771d580a75afd24454320054d1db30ce3ab911d3ca55fb188f2309ad8aa7dcfbcd75ff583d1144d26b9b446895bb8207e17bbd250129d96a#npm:0.0.10"],\
           ["@atls-ui-parts/text", "virtual:d7da388bf8b853690aaac490e0337b021d100312e0d78c7d45a0da8d4f1734f0d983d050a60ce98c49f5277d493d620c8ae1e74095bb87b3d0efae0f7f086cc2#npm:0.0.10"],\
+          ["@emotion/css", "npm:11.11.0"],\
           ["@emotion/styled", "virtual:2feb9cc9c125883d3a6b04f32f2a84354799208a4ed521d0c3f302e72125a16d693884f557876b86c9ead87c08d5a3eb6329abe93af10ea8b33ac31410df4ce1#npm:11.11.0"],\
           ["@types/emotion__styled", null],\
           ["@types/next", null],\
@@ -498,6 +501,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@atls-ui-parts/link", "virtual:c691e294e27fcc4fc8bf7132032ff4d8bfe9575d412937d908c0bc72c0406c1d02ba4a9d4155dd650d4600a11282d76b569e49bfbcf4890fe67ffa1b88e6738e#npm:0.0.10"],\
           ["@atls-ui-parts/text", "virtual:c3e1193117696da11187b76b97fe1ce278affa7f8f2500bbafaef407c1d6fb18b902406b700081f68da40fcf80b1e1def850e194ebb06ae4c8fd03a2a18286c6#npm:0.0.10"],\
+          ["@emotion/css", "npm:11.11.0"],\
           ["@emotion/styled", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:11.11.0"],\
           ["@types/emotion__styled", null],\
           ["@types/next", null],\
@@ -8093,12 +8097,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["template", "workspace:."],\
           ["@atls/code-service", "npm:0.0.18"],\
-          ["@emotion/css", "npm:11.11.0"],\
           ["@types/eslint", "npm:8.4.6"],\
           ["@types/node", "npm:18.16.5"],\
-          ["@types/react", "npm:18.2.6"],\
-          ["@types/react-dom", "npm:18.2.4"],\
-          ["csstype", "npm:3.1.2"],\
           ["eslint", "npm:8.12.0"],\
           ["husky", "npm:8.0.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
