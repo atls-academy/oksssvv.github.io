@@ -3,21 +3,17 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@ui/background": "workspace:0.0.1",
-    "@ui/button": "workspace:0.0.1",
     "@ui/image": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
-    "@ui/text": "workspace:0.0.1",
-    "@ui/theme": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.35",
-    "@types/react-dom": "^17",
-    "react": "17",
-    "react-dom": "17",
-    "react-intl": "^6.1.2"
+    "react": "^18.2.0",
+    "react-intl": "^6.4.2"
   },
   "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
     "react-intl": "*"
   }
 }

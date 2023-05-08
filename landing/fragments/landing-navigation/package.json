@@ -3,14 +3,11 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@ui/background": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
     "@ui/logo": "workspace:0.0.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.35",
-    "styled-system": "^5.1.5",
-    "styled-tools": "^1.7.2"
+    "react": "^18.2.0"
   },
   "peerDependencies": {
     "react": "*",
