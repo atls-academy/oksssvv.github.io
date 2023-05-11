@@ -35,18 +35,28 @@ const Info = () => (
             />
           </Text>
           <Box
-            display='inline-flex'
-            width={[52, 76]}
-            height={[36, 52]}
+            display={['none', 'inline-flex']}
+            width={['52px', '76px']}
+            height={['36px', '52px']}
             backgroundColor='background.transparent'
             borderRadius={['10px', '12px']}
             justifyContent='center'
             alignItems='center'
             verticalAlign='sub'
           >
-            <Box width={['28px', '40px']} height={['28px', '40px']}>
-              <ImageBlock src='/info-icon-sphere.png' />
-            </Box>
+            <ImageBlock src='/info-icon-sphere.png' width={40} height={40} />
+          </Box>
+          <Box
+            display={['inline-flex', 'none']}
+            width={['52px', '76px']}
+            height={['36px', '52px']}
+            backgroundColor='background.transparent'
+            borderRadius={['10px', '12px']}
+            justifyContent='center'
+            alignItems='center'
+            verticalAlign='sub'
+          >
+            <ImageBlock src='/info-icon-sphere.png' width={28} height={28} />
           </Box>
           <Text
             display='inline'
@@ -78,18 +88,28 @@ const Info = () => (
             />
           </Text>
           <Box
-            display='inline-flex'
-            width={[52, 76]}
-            height={[36, 52]}
+            display={['none', 'inline-flex']}
+            width={['52px', '76px']}
+            height={['36px', '52px']}
             backgroundColor='background.transparent'
             borderRadius={['10px', '12px']}
-            verticalAlign='sub'
             justifyContent='center'
             alignItems='center'
+            verticalAlign='sub'
           >
-            <Box width={['28px', '40px']} height={['28px', '40px']}>
-              <ImageBlock src='/info-icon-sphere.png' />
-            </Box>
+            <ImageBlock src='/info-icon-sphere.png' width={40} height={40} />
+          </Box>
+          <Box
+            display={['inline-flex', 'none']}
+            width={['52px', '76px']}
+            height={['36px', '52px']}
+            backgroundColor='background.transparent'
+            borderRadius={['10px', '12px']}
+            justifyContent='center'
+            alignItems='center'
+            verticalAlign='sub'
+          >
+            <ImageBlock src='/info-icon-sphere.png' width={28} height={28} />
           </Box>
         </Box>
         <Layout flexBasis={[24, 40]} flexShrink='0' />
@@ -102,24 +122,28 @@ const Info = () => (
           >
             <FormattedMessage id='landing_info.' defaultMessage='Atlantis Academy' />
           </Text>
-          <Text
-            display={['none', 'inline']}
-            fontFamily='primary'
-            fontSize={['major', 'great']}
-            lineHeight='medium'
-            color='text.white'
-          >
-            <FormattedMessage id='landing_info.' defaultMessage=' обучает и формирует ' />
-          </Text>
-          <Text
-            display={['inline', 'none']}
-            fontFamily='primary'
-            fontSize={['major', 'great']}
-            lineHeight='medium'
-            color='text.white'
-          >
-            <FormattedMessage id='landing_info.' defaultMessage=' формирует ' />
-          </Text>
+          <Box display={['none', 'inline']}>
+            <Text
+              display='inline'
+              fontFamily='primary'
+              fontSize={['major', 'great']}
+              lineHeight='medium'
+              color='text.white'
+            >
+              <FormattedMessage id='landing_info.' defaultMessage=' обучает и формирует ' />
+            </Text>
+          </Box>
+          <Box display={['inline', 'none']}>
+            <Text
+              display='inline'
+              fontFamily='primary'
+              fontSize={['major', 'great']}
+              lineHeight='medium'
+              color='text.white'
+            >
+              <FormattedMessage id='landing_info.' defaultMessage=' формирует ' />
+            </Text>
+          </Box>
           <Text
             fontFamily='primary'
             fontSize={['major', 'great']}
@@ -158,18 +182,28 @@ const Info = () => (
             />
           </Text>
           <Box
-            display='inline-flex'
-            width={[52, 76]}
-            height={[36, 52]}
+            display={['none', 'inline-flex']}
+            width={['52px', '76px']}
+            height={['36px', '52px']}
             backgroundColor='background.transparent'
             borderRadius={['10px', '12px']}
             justifyContent='center'
             alignItems='center'
             verticalAlign='sub'
           >
-            <Box width={['28px', '40px']} height={['28px', '40px']}>
-              <ImageBlock src='/info-icon-sphere.png' />
-            </Box>
+            <ImageBlock src='/info-icon-sphere.png' width={40} height={40} />
+          </Box>
+          <Box
+            display={['inline-flex', 'none']}
+            width={['52px', '76px']}
+            height={['36px', '52px']}
+            backgroundColor='background.transparent'
+            borderRadius={['10px', '12px']}
+            justifyContent='center'
+            alignItems='center'
+            verticalAlign='sub'
+          >
+            <ImageBlock src='/info-icon-sphere.png' width={28} height={28} />
           </Box>
         </Box>
       </Column>

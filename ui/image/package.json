@@ -1,21 +1,26 @@
 {
   "name": "@ui/image",
   "version": "0.0.1",
+  "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "dependencies": {
     "@atls-ui-parts/image": "^0.0.4",
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
-    "@types/react": "18.2.6",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
-    "@types/styled-system": "^5.1.16"
+    "@types/styled-system": "^5.1.16",
+    "react": "^18.0.2",
+    "react-dom": "^18.0.2"
   },
   "peerDependencies": {
-    "react": "*"
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "react": "*",
+    "react-dom": "*",
+    "styled-system": "*"
   }
 }
