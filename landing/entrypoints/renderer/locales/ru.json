@@ -2,6 +2,18 @@
   "landing_hero.teach_professionals": "Обучаем профессионалов",
   "landing_hero.for_revolution": "для революции",
   "landing_hero.in": "в",
-  "landing_hero.IT": "IT",
-  "landing_hero.we_dont_teach_programming": "Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи."
+  "landing_hero.it": "IT",
+  "landing_hero.we_dont_teach_programming": "Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи.",
+  "landing_info.digital": "Digital",
+  "landing_info.getting_more_crowded": "становится всё более многолюдным, востребованность по направлениям при этом не снижается",
+  "landing_info.but": "Но,",
+  "landing_info.specialists": "специалистов",
+  "landing_info.ready_take_responsibility": ", готовых нести ответсвенность за свои решения по прежднему мало",
+  "landing_info.atlantis_academy": "Atlantis Academy",
+  "landing_info.teaches_and_shapes": "обучает и формирует",
+  "landing_info.shapes": "формирует",
+  "landing_info.engineers": "инженеров",
+  "landing_info.and": "и",
+  "landing_info.architects": "архитекторов",
+  "landing_info.not_programmers_and_designers": ", а не программистов и дизайнеров"
 }

@@ -11,7 +11,7 @@ import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
 const AboutUs = () => (
-  <Column width={['none', 1166]}>
+  <Column width={[335, 1166]}>
     <Box>
       <Text
         fontFamily='primary'
