@@ -24,7 +24,7 @@ const Info = () => (
             <Text>
               <FormattedMessage id='landing_info.digital' defaultMessage='Digital' />
             </Text>
-            <Space />
+            <Space /> 
             <Text display='inline' color='text.white'>
               <FormattedMessage
                 id='landing_info.getting_more_crowded'
