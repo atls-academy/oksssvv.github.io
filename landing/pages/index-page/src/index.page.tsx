@@ -8,7 +8,7 @@ import { Background } from '@ui/background'
 export const IndexPage = () => (
   <Background
     position='relative'
-    gradient='bgPage'
+    gradient='bgHeroInfo'
     backgroundSize={['100%,170%,cover,0,0,0', '0,90%,0,100% 200px, 100% 1080px, 100% 670px']}
     backgroundRepeat='no-repeat'
     backgroundPosition={[

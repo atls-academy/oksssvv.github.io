@@ -21,22 +21,11 @@ const Info = () => (
             fontSize={['major', 'great']}
             lineHeight='medium'
           >
-            <Text
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.primary'
-            >
+            <Text>
               <FormattedMessage id='landing_info.digital' defaultMessage='Digital' />
             </Text>
             <Space />
-            <Text
-              display='inline'
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.white'
-            >
+            <Text display='inline' color='text.white'>
               <FormattedMessage
                 id='landing_info.getting_more_crowded'
                 defaultMessage='становится всё более многолюдным, востребованность по направлениям при этом не снижается'
@@ -44,7 +33,7 @@ const Info = () => (
             </Text>
             <Space />
             <Box
-              display={['none', 'inline-flex']}
+              display='inline-flex'
               width={['52px', '76px']}
               height={['36px', '52px']}
               backgroundColor='background.transparent'
@@ -52,45 +41,19 @@ const Info = () => (
               justifyContent='center'
               alignItems='center'
             >
-              <ImageBlock src='/info-icon-sphere.png' width={40} height={40} />
-            </Box>
-            <Box
-              display={['inline-flex', 'none']}
-              width={['52px', '76px']}
-              height={['36px', '52px']}
-              backgroundColor='background.transparent'
-              borderRadius={['10px', '12px']}
-              justifyContent='center'
-              alignItems='center'
-            >
-              <ImageBlock src='/info-icon-sphere.png' width={28} height={28} />
+              <Box width={[28, 40]} height={[28, 40]}>
+                <ImageBlock src='/info-icon-sphere.png' />
+              </Box>
             </Box>
             <Space />
-            <Text
-              display='inline'
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.white'
-            >
+            <Text display='inline' color='text.white'>
               <FormattedMessage id='landing_info.but' defaultMessage=' Но, ' />
             </Text>
             <Space />
-            <Text
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.primary'
-            >
+            <Text>
               <FormattedMessage id='landing_info.specialists' defaultMessage='специалистов' />
             </Text>
-            <Text
-              display='inline'
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.white'
-            >
+            <Text display='inline' color='text.white'>
               <FormattedMessage
                 id='landing_info.ready_take_responsibility'
                 defaultMessage=', готовых нести ответсвенность за свои решения по прежднему мало'
@@ -98,7 +61,7 @@ const Info = () => (
             </Text>
             <Space />
             <Box
-              display={['none', 'inline-flex']}
+              display='inline-flex'
               width={['52px', '76px']}
               height={['36px', '52px']}
               backgroundColor='background.transparent'
@@ -106,18 +69,9 @@ const Info = () => (
               justifyContent='center'
               alignItems='center'
             >
-              <ImageBlock src='/info-icon-sphere.png' width={40} height={40} />
-            </Box>
-            <Box
-              display={['inline-flex', 'none']}
-              width={['52px', '76px']}
-              height={['36px', '52px']}
-              backgroundColor='background.transparent'
-              borderRadius={['10px', '12px']}
-              justifyContent='center'
-              alignItems='center'
-            >
-              <ImageBlock src='/info-icon-sphere.png' width={28} height={28} />
+              <Box width={[28, 40]} height={[28, 40]}>
+                <ImageBlock src='/info-icon-sphere.png' />
+              </Box>
             </Box>
           </Text>
         </Box>
@@ -129,12 +83,7 @@ const Info = () => (
             fontSize={['major', 'great']}
             lineHeight='medium'
           >
-            <Text
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color={['text.white', 'text.primary']}
-            >
+            <Text color={['text.white', 'text.primary']}>
               <FormattedMessage
                 id='landing_info.atlantis_academy'
                 defaultMessage='Atlantis Academy'
@@ -142,13 +91,7 @@ const Info = () => (
             </Text>
             <Space />
             <Box display={['none', 'inline']}>
-              <Text
-                display='inline'
-                fontFamily='primary'
-                fontSize={['major', 'great']}
-                lineHeight='medium'
-                color='text.white'
-              >
+              <Text display='inline' color='text.white'>
                 <FormattedMessage
                   id='landing_info.teaches_and_shapes'
                   defaultMessage='обучает и формирует'
@@ -157,51 +100,23 @@ const Info = () => (
             </Box>
             <Space />
             <Box display={['inline', 'none']}>
-              <Text
-                display='inline'
-                fontFamily='primary'
-                fontSize={['major', 'great']}
-                lineHeight='medium'
-                color='text.white'
-              >
+              <Text display='inline' color='text.white'>
                 <FormattedMessage id='landing_info.shapes' defaultMessage='формирует' />
               </Text>
               <Space />
             </Box>
-            <Text
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.primary'
-            >
+            <Text>
               <FormattedMessage id='landing_info.engineers' defaultMessage='инженеров' />
             </Text>
             <Space />
-            <Text
-              display='inline'
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.white'
-            >
+            <Text display='inline' color='text.white'>
               <FormattedMessage id='landing_info.and' defaultMessage='и' />
             </Text>
             <Space />
-            <Text
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.primary'
-            >
+            <Text>
               <FormattedMessage id='landing_info.architects' defaultMessage='архитекторов' />
             </Text>
-            <Text
-              display='inline'
-              fontFamily='primary'
-              fontSize={['major', 'great']}
-              lineHeight='medium'
-              color='text.white'
-            >
+            <Text display='inline' color='text.white'>
               <FormattedMessage
                 id='landing_info.not_programmers_and_designers'
                 defaultMessage=', а не программистов и дизайнеров'
@@ -209,7 +124,7 @@ const Info = () => (
             </Text>
             <Space />
             <Box
-              display={['none', 'inline-flex']}
+              display='inline-flex'
               width={['52px', '76px']}
               height={['36px', '52px']}
               backgroundColor='background.transparent'
@@ -217,18 +132,9 @@ const Info = () => (
               justifyContent='center'
               alignItems='center'
             >
-              <ImageBlock src='/info-icon-sphere.png' width={40} height={40} />
-            </Box>
-            <Box
-              display={['inline-flex', 'none']}
-              width={['52px', '76px']}
-              height={['36px', '52px']}
-              backgroundColor='background.transparent'
-              borderRadius={['10px', '12px']}
-              justifyContent='center'
-              alignItems='center'
-            >
-              <ImageBlock src='/info-icon-sphere.png' width={28} height={28} />
+              <Box width={[28, 40]} height={[28, 40]}>
+                <ImageBlock src='/info-icon-sphere.png' />
+              </Box>
             </Box>
           </Text>
         </Box>
