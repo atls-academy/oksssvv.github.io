@@ -21,10 +21,10 @@ const Info = () => (
             fontSize={['major', 'great']}
             lineHeight='medium'
           >
-            <Text>
+            <Text color='text.indigo'>
               <FormattedMessage id='landing_info.digital' defaultMessage='Digital' />
             </Text>
-            <Space /> 
+            <Space />
             <Text display='inline' color='text.white'>
               <FormattedMessage
                 id='landing_info.getting_more_crowded'
@@ -50,7 +50,7 @@ const Info = () => (
               <FormattedMessage id='landing_info.but' defaultMessage=' Но, ' />
             </Text>
             <Space />
-            <Text>
+            <Text color='text.indigo'>
               <FormattedMessage id='landing_info.specialists' defaultMessage='специалистов' />
             </Text>
             <Text display='inline' color='text.white'>
@@ -105,7 +105,7 @@ const Info = () => (
               </Text>
               <Space />
             </Box>
-            <Text>
+            <Text color='text.indigo'>
               <FormattedMessage id='landing_info.engineers' defaultMessage='инженеров' />
             </Text>
             <Space />
@@ -113,7 +113,7 @@ const Info = () => (
               <FormattedMessage id='landing_info.and' defaultMessage='и' />
             </Text>
             <Space />
-            <Text>
+            <Text color='text.indigo'>
               <FormattedMessage id='landing_info.architects' defaultMessage='архитекторов' />
             </Text>
             <Text display='inline' color='text.white'>

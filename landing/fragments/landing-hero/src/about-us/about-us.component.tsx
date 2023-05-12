@@ -22,7 +22,7 @@ const AboutUs = () => (
     </Box>
     <Box flexWrap='wrap'>
       <Box>
-        <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.primary'>
+        <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.indigo'>
           <FormattedMessage id='landing_hero.for_revolution' defaultMessage='для революции' />
         </Text>
       </Box>
