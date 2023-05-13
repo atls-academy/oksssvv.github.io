@@ -1,10 +1,15 @@
-import React      from 'react'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import { Box }    from '@ui/layout'
-import { Layout } from '@ui/layout'
-import { Column } from '@ui/layout'
-import { Row }    from '@ui/layout'
-import { Logo }   from '@ui/logo'
+import { Button }           from '@ui/button'
+import { IconArrowDown }    from '@ui/icon'
+import { Box }              from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { Link }             from '@ui/link'
+import { Logo }             from '@ui/logo'
+import { Text }             from '@ui/text'
 
 const Navigation = () => (
   <Column width='100%'>
@@ -14,6 +19,92 @@ const Navigation = () => (
       <Row>
         <Box width={[40, 56]} flexShrink={0} alignItems='center'>
           <Logo />
+        </Box>
+        <Layout flexBasis={[195, 241]} />
+        <Box display={['flex', 'none']}>
+          <Button size='wideButtonSmallPaddingMediumHeight' variant='transparentLightBackground'>
+            <Text fontSize='medium' lineHeight='small'>
+              <FormattedMessage id='/' defaultMessage='Курсы' />
+            </Text>
+            <Layout flexBasis={12} />
+            <IconArrowDown />
+          </Button>
+        </Box>
+        <Box display={['none', 'flex']}>
+          <Box
+            width={217}
+            height={55}
+            justifyContent='center'
+            alignItems='center'
+            borderBottom='transparentWhite'
+            flexShrink='0'
+          >
+            <Link href='/'>
+              <Text fontSize='standard' lineHeight='small' color='text.white'>
+                <FormattedMessage id='/' defaultMessage='Academy' />
+              </Text>
+            </Link>
+          </Box>
+          <Layout flexBasis={20} flexShrink='0' />
+          <Box
+            width={217}
+            height={55}
+            justifyContent='center'
+            alignItems='center'
+            borderBottom='transparentWhite'
+            flexShrink='0'
+          >
+            <Link href='/'>
+              <Text fontSize='standard' lineHeight='small' color='text.white'>
+                <FormattedMessage id='/' defaultMessage='Курсы' />
+              </Text>
+            </Link>
+          </Box>
+          <Layout flexBasis={20} flexShrink='0' />
+          <Box
+            width={217}
+            height={55}
+            justifyContent='center'
+            alignItems='center'
+            borderBottom='transparentWhite'
+            flexShrink='0'
+          >
+            <Link href='/'>
+              <Text fontSize='standard' lineHeight='small' color='text.white'>
+                <FormattedMessage id='/' defaultMessage='Обучение' />
+              </Text>
+            </Link>
+          </Box>
+          <Layout flexBasis={20} flexShrink='0' />
+          <Box
+            width={217}
+            height={55}
+            justifyContent='center'
+            alignItems='center'
+            borderBottom='transparentWhite'
+            flexShrink='0'
+          >
+            <Link href='/'>
+              <Text fontSize='standard' lineHeight='small' color='text.white'>
+                <FormattedMessage id='/' defaultMessage='Стипендия' />
+              </Text>
+            </Link>
+          </Box>
+          <Layout flexBasis={20} flexShrink='0' />
+          <Box
+            width={217}
+            height={55}
+            justifyContent='center'
+            alignItems='center'
+            borderBottom='transparentWhite'
+            flexShrink='0'
+          >
+            <Link href='/'>
+              <Text fontSize='standard' lineHeight='small' color='text.white'>
+                <FormattedMessage id='/' defaultMessage='FAQ' />
+              </Text>
+            </Link>
+          </Box>
         </Box>
       </Row>
       <Layout flexBasis={[20, 40]} />

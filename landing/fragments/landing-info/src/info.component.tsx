@@ -21,11 +21,11 @@ const Info = () => (
             fontSize={['major', 'great']}
             lineHeight='medium'
           >
-            <Text color='text.indigo'>
+            <Text color='text.indigo' fontSize={['major', 'great']}>
               <FormattedMessage id='landing_info.digital' defaultMessage='Digital' />
             </Text>
             <Space />
-            <Text display='inline' color='text.white'>
+            <Text display='inline' color='text.white' fontSize={['major', 'great']}>
               <FormattedMessage
                 id='landing_info.getting_more_crowded'
                 defaultMessage='становится всё более многолюдным, востребованность по направлениям при этом не снижается'
@@ -46,14 +46,14 @@ const Info = () => (
               </Box>
             </Box>
             <Space />
-            <Text display='inline' color='text.white'>
+            <Text display='inline' color='text.white' fontSize={['major', 'great']}>
               <FormattedMessage id='landing_info.but' defaultMessage=' Но, ' />
             </Text>
             <Space />
-            <Text color='text.indigo'>
+            <Text color='text.indigo' fontSize={['major', 'great']}>
               <FormattedMessage id='landing_info.specialists' defaultMessage='специалистов' />
             </Text>
-            <Text display='inline' color='text.white'>
+            <Text display='inline' color='text.white' fontSize={['major', 'great']}>
               <FormattedMessage
                 id='landing_info.ready_take_responsibility'
                 defaultMessage=', готовых нести ответсвенность за свои решения по прежднему мало'
@@ -83,7 +83,7 @@ const Info = () => (
             fontSize={['major', 'great']}
             lineHeight='medium'
           >
-            <Text color={['text.white', 'text.primary']}>
+            <Text color={['text.white', 'text.indigo']} fontSize={['major', 'great']}>
               <FormattedMessage
                 id='landing_info.atlantis_academy'
                 defaultMessage='Atlantis Academy'
@@ -91,7 +91,7 @@ const Info = () => (
             </Text>
             <Space />
             <Box display={['none', 'inline']}>
-              <Text display='inline' color='text.white'>
+              <Text display='inline' color='text.white' fontSize='great'>
                 <FormattedMessage
                   id='landing_info.teaches_and_shapes'
                   defaultMessage='обучает и формирует'
@@ -100,23 +100,23 @@ const Info = () => (
             </Box>
             <Space />
             <Box display={['inline', 'none']}>
-              <Text display='inline' color='text.white'>
+              <Text display='inline' color='text.white' fontSize='major'>
                 <FormattedMessage id='landing_info.shapes' defaultMessage='формирует' />
               </Text>
               <Space />
             </Box>
-            <Text color='text.indigo'>
+            <Text color='text.indigo' fontSize={['major', 'great']}>
               <FormattedMessage id='landing_info.engineers' defaultMessage='инженеров' />
             </Text>
             <Space />
-            <Text display='inline' color='text.white'>
+            <Text display='inline' color='text.white' fontSize={['major', 'great']}>
               <FormattedMessage id='landing_info.and' defaultMessage='и' />
             </Text>
             <Space />
-            <Text color='text.indigo'>
+            <Text color='text.indigo' fontSize={['major', 'great']}>
               <FormattedMessage id='landing_info.architects' defaultMessage='архитекторов' />
             </Text>
-            <Text display='inline' color='text.white'>
+            <Text display='inline' color='text.white' fontSize={['major', 'great']}>
               <FormattedMessage
                 id='landing_info.not_programmers_and_designers'
                 defaultMessage=', а не программистов и дизайнеров'

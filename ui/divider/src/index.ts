@@ -1,1 +1,1 @@
-export * from './divider.styles'
+export * from '@atls-ui-proto/divider'

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
+    "@landing/courses-fragment": "workspace:0.0.1",
     "@landing/hero-fragment": "workspace:0.0.1",
     "@landing/info-fragment": "workspace:0.0.1",
     "@landing/navigation-fragment": "workspace:0.0.1",

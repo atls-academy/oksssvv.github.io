@@ -695,6 +695,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@landing/courses-fragment@workspace:0.0.1, @landing/courses-fragment@workspace:landing/fragments/landing-courses":
+  version: 0.0.0-use.local
+  resolution: "@landing/courses-fragment@workspace:landing/fragments/landing-courses"
+  dependencies:
+    "@ui/background": "workspace:0.0.1"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace: 0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react: "npm:^18.2.0"
+    react-intl: "npm:^6.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "@landing/hero-fragment@workspace:0.0.1, @landing/hero-fragment@workspace:landing/fragments/landing-hero":
   version: 0.0.0-use.local
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
@@ -718,6 +738,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
+    "@landing/courses-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
@@ -750,12 +771,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/navigation-fragment@workspace:landing/fragments/landing-navigation"
   dependencies:
+    "@ui/button": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace: 0.0.1"
     "@ui/logo": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
     react: "npm:^18.2.0"
+    react-intl: "npm:^6.4.2"
   peerDependencies:
     react: "*"
     react-dom: "*"
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 

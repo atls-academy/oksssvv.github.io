@@ -54,7 +54,7 @@ const AboutUs = () => (
     </Box>
     <Layout flexBasis={[24, 48]} />
     <Box width={[335, 1160]}>
-      <Divider />
+      <Divider weight={1} backgroundColor='divider.transparent' />
     </Box>
     <Layout flexBasis={[24, 48]} />
     <Row width={['100%', 1160]} flexShrink='0'>
