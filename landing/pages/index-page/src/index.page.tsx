@@ -30,7 +30,7 @@ export const IndexPage = () => (
       gradient='bgDecorativeElement'
       backgroundSize='contein'
       backgroundRepeat='no-repeat'
-      backgroundPosition='0 600px'
+      backgroundPosition={['0 -500px', '0 600px']}
     >
       <Courses />
     </Background>

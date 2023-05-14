@@ -17,6 +17,13 @@ const wideButtonSmallPaddingMediumHeightStyles = createShapeStyles({
   rounding: prop('theme.radii.normal') as unknown as number,
 })
 
+const longButtonNormalPaddingMediumHeightStyles = createShapeStyles({
+  size: 56,
+  paddingRight: 12,
+  paddingLeft: 16,
+  rounding: prop('theme.radii.medium') as unknown as number,
+})
+
 const longButtonSmallPaddingMediumHeightStyles = createShapeStyles({
   size: 72,
   paddingRight: 12,
@@ -70,4 +77,5 @@ export const shapeStyles = switchProp(prop('size', 'normal'), {
   smallPaddingSmallHeight: smallPaddingSmallHeightStyles,
   longButtonSmallPaddingMediumHeight: longButtonSmallPaddingMediumHeightStyles,
   wideButtonSmallPaddingMediumHeight: wideButtonSmallPaddingMediumHeightStyles,
+  longButtonNormalPaddingMediumHeight: longButtonNormalPaddingMediumHeightStyles,
 })

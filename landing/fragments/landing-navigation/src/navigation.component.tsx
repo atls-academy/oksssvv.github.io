@@ -2,7 +2,6 @@ import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
 import { Button }           from '@ui/button'
-import { IconArrowDown }    from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
@@ -26,8 +25,6 @@ const Navigation = () => (
             <Text fontSize='medium' lineHeight='small'>
               <FormattedMessage id='/' defaultMessage='Курсы' />
             </Text>
-            <Layout flexBasis={12} />
-            <IconArrowDown />
           </Button>
         </Box>
         <Box display={['none', 'flex']}>

@@ -3,13 +3,14 @@ import { FormattedMessage } from 'react-intl'
 
 import { Button }           from '@ui/button'
 import { Divider }          from '@ui/divider'
-import { IconArrowRight }   from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
+
+import { Cards }            from './cards'
 
 const Courses = () => (
   <Row>
@@ -28,13 +29,12 @@ const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[0, 344]} flexShrink='0' />
-        <Box display={['none', 'flex']} flexShrink='0' alignItems='center'>
+        <Box display={['none', 'flex']} width={253} flexShrink='0' alignItems='center'>
           <Button size='longButtonSmallPaddingMediumHeight' variant='darkPurpleBackground'>
-            <Text fontSize='regular' lineHeight='regular' letterSpacing='0.03em'>
+            <Text fontSize='regular' lineHeight='regular' letterSpacing='0.03em' flexShrink='0'>
               <FormattedMessage id='/' defaultMessage='Все материалы' />
             </Text>
             <Layout flexBasis={24} />
-            <IconArrowRight />
           </Button>
         </Box>
       </Box>
@@ -90,6 +90,16 @@ const Courses = () => (
         </Box>
       </Box>
       <Layout flexBasis={[40, 80]} />
+      <Cards />
+      <Layout flexBasis={[20, 141]} />
+      <Box display={['flex', 'none']} flexShrink='0' alignItems='center'>
+        <Button size='longButtonNormalPaddingMediumHeight' variant='darkPurpleBackground'>
+          <Text fontSize='middle' lineHeight='regular' letterSpacing='0.03em'>
+            <FormattedMessage id='/' defaultMessage='Все материалы' />
+          </Text>
+        </Button>
+      </Box>
+      <Layout flexBasis={64} />
     </Column>
   </Row>
 )
