@@ -11,13 +11,7 @@ import { Text }             from '@ui/text'
 import { CardDetailsProps } from './card-details.interface'
 
 const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
-  <Box
-    height={[192, 660]}
-    border='lightGray'
-    overflow='hidden'
-    borderRadius={['medium', 'big']}
-    style={{ backdropFilter: 'blur(5px)' }}
-  >
+  <Box height={[192, 660]} border='lightGray' overflow='hidden' borderRadius={['medium', 'big']}>
     <Background gradient='transparentWhite'>
       <Box>
         <Layout flexBasis={[16, 32]} flexShrink='0' />

@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl'
 
 import { Button }           from '@ui/button'
 import { Divider }          from '@ui/divider'
+import { IconArrowRight }   from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
@@ -23,18 +24,26 @@ const Courses = () => (
             fontSize={['large', 'huge']}
             lineHeight='normal'
             color='text.indigo'
-            letterSpacing='-0.011em'
+            letterSpacing='-0.01em'
           >
             <FormattedMessage id='/' defaultMessage='Курсы и материалы' />
           </Text>
         </Box>
         <Layout flexBasis={[0, 344]} flexShrink='0' />
-        <Box display={['none', 'flex']} width={253} flexShrink='0' alignItems='center'>
-          <Button size='longButtonSmallPaddingMediumHeight' variant='darkPurpleBackground'>
-            <Text fontSize='regular' lineHeight='regular' letterSpacing='0.03em' flexShrink='0'>
+        <Box display={['none', 'flex']} width={253} alignItems='center'>
+          <Button
+            size='longButtonSmallPaddingMediumHeight'
+            variant='darkPurpleBackground'
+            gap={23}
+            iconSVG={<IconArrowRight />}
+            iconWidth={48}
+            iconHeight={48}
+            iconRadius='medium'
+            fill
+          >
+            <Text fontSize='regular' lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Все материалы' />
             </Text>
-            <Layout flexBasis={24} />
           </Button>
         </Box>
       </Box>
@@ -93,7 +102,16 @@ const Courses = () => (
       <Cards />
       <Layout flexBasis={[20, 141]} />
       <Box display={['flex', 'none']} flexShrink='0' alignItems='center'>
-        <Button size='longButtonNormalPaddingMediumHeight' variant='darkPurpleBackground'>
+        <Button
+          size='longButtonNormalPaddingMediumHeight'
+          variant='darkPurpleBackground'
+          gap={151}
+          iconSVG={<IconArrowRight />}
+          iconWidth={32}
+          iconHeight={32}
+          iconRadius='little'
+          fill
+        >
           <Text fontSize='middle' lineHeight='regular' letterSpacing='0.03em'>
             <FormattedMessage id='/' defaultMessage='Все материалы' />
           </Text>

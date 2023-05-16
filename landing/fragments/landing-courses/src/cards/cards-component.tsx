@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl'
 import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
+import { IconPlus }         from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
@@ -15,8 +16,8 @@ import { CardExtended }     from './card-extended'
 const Cards = () => {
   const intl = useIntl()
   return (
-    <Box>
-      <Column>
+    <Box flexDirection={['column', 'row']}>
+      <Column order={[1, 0]}>
         <CardExtended
           category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
           gap={[148, 216]}
@@ -61,8 +62,8 @@ const Cards = () => {
           />
         </Box>
       </Column>
-      <Layout flexBasis={40} />
-      <Column>
+      <Layout flexBasis={[0, 40]} />
+      <Column order={[0, 1]}>
         <Box>
           <CardDetails
             info={intl.formatMessage({
@@ -78,14 +79,39 @@ const Cards = () => {
           />
         </Box>
         <Layout flexBasis={20} />
-        <Box display={['none', 'flex']} width={410} flexShrink='0' alignItems='center'>
-          <Button size='longButtonSmallPaddingMediumHeight' variant='darkPurpleBackground'>
-            <Text fontSize='regular' lineHeight='regular' letterSpacing='0.03em' flexShrink='0'>
-              <FormattedMessage id='/' defaultMessage='Все материалы' />
+        <Box display={['none', 'flex']} width={410} alignItems='center'>
+          <Button
+            size='longButtonSmallPaddingMediumHeight'
+            variant='darkPurpleBackground'
+            gap={117}
+            iconSVG={<IconPlus />}
+            iconWidth={48}
+            iconHeight={48}
+            iconRadius='normal'
+            fill
+          >
+            <Text fontSize='regular' lineHeight='regular'>
+              <FormattedMessage id='/' defaultMessage='Процесс поступления' />
             </Text>
-            <Layout flexBasis={24} />
           </Button>
         </Box>
+        <Box display={['flex', 'none']} width={335} alignItems='center'>
+          <Button
+            size='longButtonNormalPaddingMediumHeight'
+            variant='darkPurpleBackground'
+            gap={110}
+            iconSVG={<IconPlus />}
+            iconWidth={32}
+            iconHeight={32}
+            iconRadius='little'
+            fill
+          >
+            <Text fontSize='middle' lineHeight='small'>
+              <FormattedMessage id='/' defaultMessage='Процесс поступления' />
+            </Text>
+          </Button>
+        </Box>
+        <Layout flexBasis={[40, 0]} />
       </Column>
     </Box>
   )

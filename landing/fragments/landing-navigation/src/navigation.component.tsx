@@ -2,6 +2,7 @@ import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
 import { Button }           from '@ui/button'
+import { IconArrowDown }    from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
@@ -20,8 +21,17 @@ const Navigation = () => (
           <Logo />
         </Box>
         <Layout flexBasis={[195, 241]} />
-        <Box display={['flex', 'none']}>
-          <Button size='wideButtonSmallPaddingMediumHeight' variant='transparentLightBackground'>
+        <Box display={['flex', 'none']} width={100}>
+          <Button
+            size='wideButtonSmallPaddingMediumHeight'
+            variant='transparentLightBackground'
+            gap={12}
+            iconSVG={<IconArrowDown />}
+            iconWidth={28}
+            iconHeight={28}
+            iconRadius='micro'
+            fill
+          >
             <Text fontSize='medium' lineHeight='small'>
               <FormattedMessage id='/' defaultMessage='Курсы' />
             </Text>
@@ -104,9 +114,7 @@ const Navigation = () => (
           </Box>
         </Box>
       </Row>
-      <Layout flexBasis={[20, 40]} />
     </Row>
-    <Layout flexBasis={[22, 35]} />
   </Column>
 )
 
