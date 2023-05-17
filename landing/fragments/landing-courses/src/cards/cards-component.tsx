@@ -50,7 +50,7 @@ const Cards = () => {
           })}
         />
         <Layout flexBasis={[20, 40]} />
-        <Box>
+        <Box overflow='hidden'>
           <CardConcise
             category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
