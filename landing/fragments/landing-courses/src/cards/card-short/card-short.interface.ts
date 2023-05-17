@@ -1,4 +1,4 @@
-export interface CardConciseProps {
+export interface CardShortProps {
   category: string
   title: string
 }

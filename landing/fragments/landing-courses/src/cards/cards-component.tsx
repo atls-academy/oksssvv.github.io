@@ -9,9 +9,9 @@ import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import { CardConcise }      from './card-concise'
 import { CardDetails }      from './card-details'
 import { CardExtended }     from './card-extended'
+import { CardShort }        from './card-short'
 
 const Cards = () => {
   const intl = useIntl()
@@ -51,12 +51,12 @@ const Cards = () => {
         />
         <Layout flexBasis={[20, 40]} />
         <Box overflow='hidden'>
-          <CardConcise
+          <CardShort
             category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
           />
           <Layout flexBasis={[20, 40]} flexShrink='0' />
-          <CardConcise
+          <CardShort
             category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
           />
