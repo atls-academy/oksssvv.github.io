@@ -7,21 +7,19 @@ import { Row }    from '@ui/layout'
 import { Logo }   from '@ui/logo'
 
 const Navigation = () => (
-  <Box backgroundColor='background.darkGray'>
-    <Column width='100%'>
-      <Layout flexBasis={[22, 35]} />
+  <Column width='100%'>
+    <Layout flexBasis={[22, 35]} />
+    <Row>
+      <Layout flexBasis={[20, 40]} />
       <Row>
-        <Layout flexBasis={[20, 40]} />
-        <Row>
-          <Box width={[40, 56]} flexShrink={0} alignItems='center'>
-            <Logo />
-          </Box>
-        </Row>
-        <Layout flexBasis={[20, 40]} />
+        <Box width={[40, 56]} flexShrink={0} alignItems='center'>
+          <Logo />
+        </Box>
       </Row>
-      <Layout flexBasis={[22, 35]} />
-    </Column>
-  </Box>
+      <Layout flexBasis={[20, 40]} />
+    </Row>
+    <Layout flexBasis={[22, 35]} />
+  </Column>
 )
 
 export { Navigation }

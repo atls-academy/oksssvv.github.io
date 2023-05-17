@@ -189,6 +189,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-parts/image@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@atls-ui-parts/image@npm:0.0.4"
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  checksum: ea6c4ef122152a5a3e8662c14e371e0bd7e049e31715686bb0a05a9cd0942b78d8086b13a6ce8c698ce186edda2c81696e19b6aa97eb7a17186803053a930d81
+  languageName: node
+  linkType: hard
+
 "@atls-ui-parts/layout@npm:0.0.7, @atls-ui-parts/layout@npm:^0.0.7":
   version: 0.0.7
   resolution: "@atls-ui-parts/layout@npm:0.0.7"
@@ -688,17 +699,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
   dependencies:
-    "@types/react": "npm:^18.2.5"
-    "@types/react-dom": "npm:^18.2.4"
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace: 0.0.1"
     "@ui/text": "workspace:0.0.1"
-    "@ui/theme": "workspace:0.0.1"
     react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
     react-intl: "npm:^6.4.2"
   peerDependencies:
     react: "*"
@@ -712,12 +719,29 @@ __metadata:
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
     "@landing/hero-fragment": "workspace:0.0.1"
+    "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
-    "@types/react": "npm:^18.2.5"
+    "@ui/background": "workspace:0.0.1"
+    react: "npm:^18.2.0"
   peerDependencies:
-    next: ^13.4.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/info-fragment@workspace:0.0.1, @landing/info-fragment@workspace:landing/fragments/landing-info":
+  version: 0.0.0-use.local
+  resolution: "@landing/info-fragment@workspace:landing/fragments/landing-info"
+  dependencies:
+    "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react: "npm:^18.2.0"
+    react-intl: "npm:^6.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -726,11 +750,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/navigation-fragment@workspace:landing/fragments/landing-navigation"
   dependencies:
-    "@types/react": "npm:^18.2.5"
     "@ui/layout": "workspace:0.0.1"
     "@ui/logo": "workspace:0.0.1"
-    styled-system: "npm:^5.1.5"
-    styled-tools: "npm:^1.7.2"
+    react: "npm:^18.2.0"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -746,14 +768,13 @@ __metadata:
     "@emotion/styled": "npm:^11.11.0"
     "@landing/index-page": "workspace:0.0.1"
     "@types/express": "npm:^4.17.17"
-    "@types/node": "npm:18"
-    "@types/react": "npm:18.2.6"
+    "@types/node": "npm:^18"
+    "@types/react": "npm:^18.2.6"
     "@types/react-dom": "npm:^18.2.4"
     "@types/styled-system": "npm:^5.1.16"
     "@ui/theme": "workspace:0.0.1"
     express: "npm:^4.17.1"
     next: "npm:^13.4.1"
-    next-compose-plugins: "npm:^2.2.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-intl: "npm:^6.4.2"
@@ -1162,7 +1183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18, @types/node@npm:^18, @types/node@npm:^18.11.11":
+"@types/node@npm:^18, @types/node@npm:^18.11.11":
   version: 18.16.5
   resolution: "@types/node@npm:18.16.5"
   checksum: 0c4ad24cc35669dd6ad8c4e7fcb12362235e8be3a8daf1c095ebe0ab4a2cf35f6b2c041808d3c5743eeddb8756b3aac03427868754c4ed90122c3e646af46fc7
@@ -1206,7 +1227,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.2.6, @types/react@npm:^18.2.5, @types/react@npm:^18.2.6":
+"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:^18.2.6":
   version: 18.2.6
   resolution: "@types/react@npm:18.2.6"
   dependencies:
@@ -1273,6 +1294,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ui/background@workspace:0.0.1, @ui/background@workspace:ui/background":
+  version: 0.0.0-use.local
+  resolution: "@ui/background@workspace:ui/background"
+  dependencies:
+    "@emotion/react": "npm:^11.11.0"
+    "@emotion/styled": "npm:^11.11.0"
+    "@types/styled-system": "npm:^5.1.16"
+    next: "npm:13.4.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    styled-system: "npm:^5.1.5"
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
+    styled-system: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/button@workspace:0.0.1, @ui/button@workspace:ui/button":
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
@@ -1310,6 +1352,7 @@ __metadata:
     "@ui/layout": "workspace:0.0.1"
     react: "npm:^18.2.0"
     styled-system: "npm:^5.1.5"
+    styled-tools: "npm:^1.7.2"
   peerDependencies:
     "@emotion/react": "*"
     "@emotion/styled": "*"
@@ -1328,6 +1371,28 @@ __metadata:
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/image@workspace:0.0.1, @ui/image@workspace:ui/image":
+  version: 0.0.0-use.local
+  resolution: "@ui/image@workspace:ui/image"
+  dependencies:
+    "@atls-ui-parts/image": "npm:^0.0.4"
+    "@emotion/react": "npm:^11.11.0"
+    "@emotion/styled": "npm:^11.11.0"
+    "@types/react": "npm:^18.2.6"
+    "@types/react-dom": "npm:^18.2.4"
+    "@types/styled-system": "npm:^5.1.16"
+    react: "npm:^18.0.2"
+    react-dom: "npm:^18.0.2"
+    styled-system: "npm:^5.1.5"
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
+    styled-system: "*"
   languageName: unknown
   linkType: soft
 
@@ -4333,14 +4398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-compose-plugins@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "next-compose-plugins@npm:2.2.1"
-  checksum: ee2cd96e8471a36f315e153086af7b6d385c0078d7f9ae51bec3c65f9a91c9547a50b171c2a1e41de62a6b23b1cb957a180e5f6f519df8f2d89d955a739886ad
-  languageName: node
-  linkType: hard
-
-"next@npm:^13.4.1":
+"next@npm:13.4.1, next@npm:^13.4.1":
   version: 13.4.1
   resolution: "next@npm:13.4.1"
   dependencies:
@@ -4780,7 +4838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:^18.0.2, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -4859,7 +4917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:^18.0.2, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:

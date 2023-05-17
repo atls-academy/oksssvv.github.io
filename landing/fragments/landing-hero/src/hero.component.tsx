@@ -8,8 +8,8 @@ import { AboutUs }    from './about-us'
 import { SocialLink } from './social-links'
 
 const Hero = () => (
-  <Box width='100%' backgroundColor='background.darkGray' flexDirection='column'>
-    <Layout flexBasis={[252, 415]} />
+  <Box width='100%' flexDirection='column'>
+    <Layout flexBasis={[172, 415]} />
     <Box width='100%' flexDirection={['column', 'row']}>
       <Layout flexBasis={[0, 230]} />
       <Box>
@@ -26,8 +26,8 @@ const Hero = () => (
         </Column>
         <Layout flexBasis={[20, 0]} flexShrink='0' />
       </Box>
-      <Layout flexBasis={[20, 80]} />
     </Box>
+    <Layout flexBasis={[20, 48]} />
   </Box>
 )
 

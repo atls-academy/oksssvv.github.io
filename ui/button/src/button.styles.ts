@@ -10,13 +10,6 @@ import { getBaseStyles }       from './styles'
 
 export const fillStyles: styleFn = ifProp(prop('fill', false), { width: '100%' })
 
-const mediumPaddingBigHeightStyles = createShapeStyles({
-  size: 96,
-  paddingRight: 32,
-  paddingLeft: 32,
-  rounding: prop('theme.radii.big') as unknown as number,
-})
-
 const bigPaddingMediumHeightStyles = createShapeStyles({
   size: 48,
   paddingRight: 30,
@@ -38,12 +31,27 @@ const bigPaddingSmallHeightStyles = createShapeStyles({
   rounding: prop('theme.radii.normal') as unknown as number,
 })
 
+const normalPaddingSmallHeightStyles = createShapeStyles({
+  size: 52,
+  paddingRight: 17,
+  paddingLeft: 19,
+  rounding: prop('theme.radii.normal') as unknown as number,
+})
+
+const smallPaddingSmallHeightStyles = createShapeStyles({
+  size: 36,
+  paddingRight: 11.3,
+  paddingLeft: 12.7,
+  rounding: prop('theme.radii.small') as unknown as number,
+})
+
 export const baseStyles = getBaseStyles()
 export const contentStyles = createContentStyles()
 
 export const shapeStyles = switchProp(prop('size', 'normal'), {
-  mediumPaddingBigHeight: mediumPaddingBigHeightStyles,
   bigPaddingMediumHeight: bigPaddingMediumHeightStyles,
   normalPaddingNormalHeight: normalPaddingNormalHeightStyles,
   bigPaddingSmallHeight: bigPaddingSmallHeightStyles,
+  normalPaddingSmallHeight: normalPaddingSmallHeightStyles,
+  smallPaddingSmallHeight: smallPaddingSmallHeightStyles,
 })

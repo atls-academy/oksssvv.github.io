@@ -48,9 +48,11 @@ const colors = {
   },
   text: {
     white: 'rgba(255, 255, 255, 1)',
+    indigo: 'rgba(58, 55, 93, 1)',
   },
   background: {
     darkGray: 'rgba(97, 97, 97, 1)',
+    transparent: 'rgba(255, 255, 255, 0.08)',
   },
   divider: {
     transparent: 'rgba(255, 255, 255, 0.25)',
