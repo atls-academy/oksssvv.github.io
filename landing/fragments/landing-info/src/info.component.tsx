@@ -18,7 +18,7 @@ const Info = () => (
           <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
             <FormattedMessage id='landing_info.digital' defaultMessage='Digital' />
           </Text>
-          <Space />
+          <Space count={3} />
           <Text
             display='inline'
             color='text.white'
@@ -30,7 +30,7 @@ const Info = () => (
               defaultMessage='становится всё более многолюдным, востребованность по направлениям при этом не снижается'
             />
           </Text>
-          <Space />
+          <Space count={3} />
           <Box
             display='inline-flex'
             width={['52px', '76px']}
@@ -44,7 +44,7 @@ const Info = () => (
               <ImageBlock src='/info-icon-sphere.png' />
             </Box>
           </Box>
-          <Space />
+          <Space count={3} />
           <Text
             display='inline'
             color='text.white'
@@ -53,7 +53,7 @@ const Info = () => (
           >
             <FormattedMessage id='landing_info.but' defaultMessage=' Но, ' />
           </Text>
-          <Space />
+          <Space count={3} />
           <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
             <FormattedMessage id='landing_info.specialists' defaultMessage='специалистов' />
           </Text>
@@ -68,7 +68,7 @@ const Info = () => (
               defaultMessage=', готовых нести ответсвенность за свои решения по прежднему мало'
             />
           </Text>
-          <Space />
+          <Space count={3} />
           <Box
             display='inline-flex'
             width={['52px', '76px']}
@@ -95,7 +95,7 @@ const Info = () => (
               defaultMessage='Atlantis Academy'
             />
           </Text>
-          <Space />
+          <Space count={3} />
           <Box display={['none', 'inline']}>
             <Text display='inline' color='text.white' fontSize='great' lineHeight='medium'>
               <FormattedMessage
@@ -104,17 +104,17 @@ const Info = () => (
               />
             </Text>
           </Box>
-          <Space />
+          <Space count={3} />
           <Box display={['inline', 'none']}>
             <Text display='inline' color='text.white' fontSize='major' lineHeight='medium'>
               <FormattedMessage id='landing_info.shapes' defaultMessage='формирует' />
             </Text>
-            <Space />
+            <Space count={3} />
           </Box>
           <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
             <FormattedMessage id='landing_info.engineers' defaultMessage='инженеров' />
           </Text>
-          <Space />
+          <Space count={3} />
           <Text
             display='inline'
             color='text.white'
@@ -123,7 +123,7 @@ const Info = () => (
           >
             <FormattedMessage id='landing_info.and' defaultMessage='и' />
           </Text>
-          <Space />
+          <Space count={3} />
           <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
             <FormattedMessage id='landing_info.architects' defaultMessage='архитекторов' />
           </Text>
@@ -138,7 +138,7 @@ const Info = () => (
               defaultMessage=', а не программистов и дизайнеров'
             />
           </Text>
-          <Space />
+          <Space count={3} />
           <Box
             display='inline-flex'
             width={['52px', '76px']}

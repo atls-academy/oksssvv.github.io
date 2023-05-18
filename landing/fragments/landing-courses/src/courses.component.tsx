@@ -55,11 +55,11 @@ const Courses = () => (
           <Text color='text.indigo' fontSize={['averaged', 'normal']} lineHeight='medium'>
             <FormattedMessage id='/' defaultMessage='Являясь серым кардиналом,' />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text fontSize={['averaged', 'normal']} color='text.accent' lineHeight='medium'>
             <FormattedMessage id='/' defaultMessage='Atlantis' />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text
             fontSize={['averaged', 'normal']}
             display='inline'
@@ -68,7 +68,7 @@ const Courses = () => (
           >
             <FormattedMessage id='/' defaultMessage='имеет влияние на' />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text
             fontSize={['averaged', 'normal']}
             display='inline'
@@ -77,7 +77,7 @@ const Courses = () => (
           >
             <FormattedMessage id='/' defaultMessage='сферу IT' />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text
             fontSize={['averaged', 'normal']}
             display='inline'
@@ -86,7 +86,7 @@ const Courses = () => (
           >
             <FormattedMessage id='/' defaultMessage='и неограниченные возможности в' />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text
             fontSize={['averaged', 'normal']}
             display='inline'
@@ -109,11 +109,11 @@ const Courses = () => (
               defaultMessage='Эффективность обучение заметно вырастает из-за'
             />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text fontSize={['averaged', 'normal']} color='text.accent' lineHeight='medium'>
             <FormattedMessage id='/' defaultMessage=' практики ' />
           </Text>
-          <Space />
+          <Space count={2} />
           <Text
             fontSize={['averaged', 'normal']}
             display='inline'
