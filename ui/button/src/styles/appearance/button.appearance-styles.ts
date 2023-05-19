@@ -52,6 +52,48 @@ const appearanceTransparentBorderDisabledStyles = createAppearanceStyles({
   borderColor: prop('theme.colors.button.transparentBorder.disabled.border'),
 })
 
+const appearanceDarkPurpleBackgroundDefaultStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.darkPurpleBackground.default.font'),
+  backgroundColor: prop('theme.colors.button.darkPurpleBackground.default.background'),
+  borderColor: prop('theme.colors.button.darkPurpleBackground.default.border'),
+})
+
+const appearanceDarkPurpleBackgroundHoverStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.darkPurpleBackground.hover.font'),
+  backgroundColor: prop('theme.colors.button.darkPurpleBackground.hover.background'),
+  borderColor: prop('theme.colors.button.darkPurpleBackground.hover.border'),
+})
+
+const appearanceDarkPurpleBackgroundPressedStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.darkPurpleBackground.pressed.font'),
+  backgroundColor: prop('theme.colors.button.darkPurpleBackground.pressed.background'),
+  borderColor: prop('theme.colors.button.darkPurpleBackground.pressed.border'),
+})
+
+const appearanceDarkPurpleBackgroundDisabledStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.darkPurpleBackground.disabled.font'),
+  backgroundColor: prop('theme.colors.button.darkPurpleBackground.disabled.background'),
+  borderColor: prop('theme.colors.button.darkPurpleBackground.disabled.border'),
+})
+
+const appearanceTransparentLightBackgroundDefaultStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.transparentLightBackground.default.font'),
+  backgroundColor: prop('theme.colors.button.transparentLightBackground.default.background'),
+  borderColor: prop('theme.colors.button.transparentLightBackground.default.border'),
+})
+
+const appearanceTransparentLightBackgroundPressedStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.transparentLightBackground.pressed.font'),
+  backgroundColor: prop('theme.colors.button.transparentLightBackground.pressed.background'),
+  borderColor: prop('theme.colors.button.transparentLightBackground.pressed.border'),
+})
+
+const appearanceTransparentLightBackgroundDisabledStyles = createAppearanceStyles({
+  fontColor: prop('theme.colors.button.transparentLightBackground.disabled.font'),
+  backgroundColor: prop('theme.colors.button.transparentLightBackground.disabled.background'),
+  borderColor: prop('theme.colors.button.transparentLightBackground.disabled.border'),
+})
+
 const appearanceStyles = switchProp(prop('variant', 'primary'), {
   transparentBackground: ifProp(
     prop('disabled', false),
@@ -76,6 +118,32 @@ const appearanceStyles = switchProp(prop('variant', 'primary'), {
         prop('hover', false),
         appearanceTransparentBorderHoverStyles,
         appearanceTransparentBorderDefaultStyles
+      )
+    )
+  ),
+  darkPurpleBackground: ifProp(
+    prop('disabled', false),
+    appearanceDarkPurpleBackgroundDisabledStyles,
+    ifProp(
+      prop('pressed', false),
+      appearanceDarkPurpleBackgroundPressedStyles,
+      ifProp(
+        prop('hover', false),
+        appearanceDarkPurpleBackgroundHoverStyles,
+        appearanceDarkPurpleBackgroundDefaultStyles
+      )
+    )
+  ),
+  transparentLightBackground: ifProp(
+    prop('disabled', false),
+    appearanceTransparentLightBackgroundDisabledStyles,
+    ifProp(
+      prop('pressed', false),
+      appearanceTransparentLightBackgroundPressedStyles,
+      ifProp(
+        prop('hover', false),
+        appearanceTransparentLightBackgroundDefaultStyles,
+        appearanceTransparentLightBackgroundDefaultStyles
       )
     )
   ),

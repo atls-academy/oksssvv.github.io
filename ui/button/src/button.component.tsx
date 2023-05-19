@@ -6,9 +6,11 @@ import { FC }               from 'react'
 import { forwardRef }       from 'react'
 import { useState }         from 'react'
 
+import { Layout }           from '@ui/layout'
 import { useHover }         from '@ui/utils'
 
 import { ButtonProps }      from './button.interfaces'
+import { IconAttachment }   from './icon-attachment'
 import { baseStyles }       from './button.styles'
 import { shapeStyles }      from './button.styles'
 import { contentStyles }    from './button.styles'
@@ -23,7 +25,7 @@ export const ButtonElement = styled('button')<any>(
   fillStyles
 )
 
-export const Button: FC<ButtonProps> = forwardRef(({ children, ...props }) => {
+export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }) => {
   const [hover, hoverProps] = useHover()
   const [pressed, setPressed] = useState<boolean>(false)
 
@@ -37,6 +39,13 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, ...props }) => {
       {...props}
     >
       <Content divider={8}>{children}</Content>
+      <Layout flexBasis={gap} />
+      <IconAttachment
+        iconSVG={props.iconSVG}
+        iconRadius={props.iconRadius}
+        iconWidth={props.iconWidth}
+        iconHeight={props.iconHeight}
+      />
     </ButtonElement>
   )
 })
