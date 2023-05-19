@@ -41,7 +41,7 @@ const Info = () => (
             alignItems='center'
           >
             <Box width={[28, 40]} height={[28, 40]}>
-              <ImageBlock src='/info-icon-sphere.png' />
+              <ImageBlock src='/sphere-white.png' />
             </Box>
           </Box>
           <Space count={3} />
@@ -79,7 +79,7 @@ const Info = () => (
             alignItems='center'
           >
             <Box width={[28, 40]} height={[28, 40]}>
-              <ImageBlock src='/info-icon-sphere.png' />
+              <ImageBlock src='/sphere-white.png' />
             </Box>
           </Box>
         </Box>
@@ -149,7 +149,7 @@ const Info = () => (
             alignItems='center'
           >
             <Box width={[28, 40]} height={[28, 40]}>
-              <ImageBlock src='/info-icon-sphere.png' />
+              <ImageBlock src='/sphere-white.png' />
             </Box>
           </Box>
         </Box>

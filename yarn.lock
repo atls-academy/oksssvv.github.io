@@ -742,6 +742,7 @@ __metadata:
     "@landing/hero-fragment": "workspace:0.0.1"
     "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
+    "@landing/process-fragment": "workspace:0.0.1"
     "@ui/background": "workspace:0.0.1"
     react: "npm:^18.2.0"
   peerDependencies:
@@ -777,6 +778,22 @@ __metadata:
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace: 0.0.1"
     "@ui/logo": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react: "npm:^18.2.0"
+    react-intl: "npm:^6.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/process-fragment@workspace:0.0.1, @landing/process-fragment@workspace:landing/fragments/landing-process":
+  version: 0.0.0-use.local
+  resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
+  dependencies:
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:^18.2.0"
     react-intl: "npm:^6.4.2"

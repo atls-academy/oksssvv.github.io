@@ -4,13 +4,14 @@ import { Courses }    from '@landing/courses-fragment'
 import { Hero }       from '@landing/hero-fragment'
 import { Info }       from '@landing/info-fragment'
 import { Navigation } from '@landing/navigation-fragment'
+import { Process }    from '@landing/process-fragment'
 import { Background } from '@ui/background'
 
 export const IndexPage = () => (
   <>
     <Background
       position='relative'
-      gradient='bgPurpleGradientTransitionSymbol'
+      gradient='purpleGradientTransitionSymbol'
       backgroundSize={[
         '0,736px 240px,170%,cover,0,0,0',
         '100% 400px,contain,90%,0,contain,100% 1080px,100% 690px',
@@ -27,12 +28,21 @@ export const IndexPage = () => (
     </Background>
     <Background
       position='relative'
-      gradient='bgDecorativeElement'
-      backgroundSize='contein'
+      gradient='decorativeElement'
+      backgroundSize='100%'
       backgroundRepeat='no-repeat'
-      backgroundPosition={['0 -500px', '0 600px']}
+      backgroundPosition={['0 -500px', '0 650px']}
     >
       <Courses />
+    </Background>
+    <Background
+      position='relative'
+      gradient='veryDarkPurpleAndDecorativeElement'
+      backgroundSize={['0,100%,cover', '400px,100%,cover']}
+      backgroundRepeat='no-repeat'
+      backgroundPosition={['0,0 215px,0 0', '750px 310px,0 200px,0 0']}
+    >
+      <Process />
     </Background>
   </>
 )

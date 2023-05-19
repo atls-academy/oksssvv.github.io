@@ -34,7 +34,7 @@ const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
         <Layout flexBasis={[0, 74]} />
         <Box width={[240]} height={[240]} display={['none', 'flex']}>
           <Layout flexBasis={55} flexShrink='0' />
-          <ImageBlock src='/courses-icon-sphere.png' />
+          <ImageBlock src='/sphere-pink.png' />
         </Box>
         <Layout flexBasis={[20, 62]} />
         <Box flexDirection={['row', 'column']} alignItems={['center', 'start']}>

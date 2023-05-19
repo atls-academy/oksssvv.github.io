@@ -15,13 +15,13 @@ const Navigation = () => (
   <Column width='100%'>
     <Layout flexBasis={[22, 35]} />
     <Row>
-      <Layout flexBasis={[20, 40]} />
+      <Layout flexBasis={[20, 40]} flexShrink='0' />
       <Row>
         <Box width={[40, 56]} flexShrink={0} alignItems='center'>
           <Logo />
         </Box>
         <Layout flexBasis={[195, 241]} />
-        <Box display={['flex', 'none']} width={100}>
+        <Box display={['flex', 'none']} width={100} alignItems='center'>
           <Button
             size='wideButtonSmallPaddingMediumHeight'
             variant='transparentLightBackground'
@@ -37,7 +37,7 @@ const Navigation = () => (
             </Text>
           </Button>
         </Box>
-        <Box display={['none', 'flex']}>
+        <Box display={['none', 'flex']} width={1166} alignItems='end'>
           <Box
             width={217}
             height={55}
@@ -112,6 +112,23 @@ const Navigation = () => (
               </Text>
             </Link>
           </Box>
+        </Box>
+        <Layout display={['none', 'flex']} flexBasis={241} flexShrink='0' />
+        <Box display={['none', 'flex']} width={136} alignItems='center'>
+          <Button
+            size='wideButtonSmallPaddingNormalHeight'
+            variant='transparentLightBackground'
+            gap={20}
+            iconSVG={<IconArrowDown />}
+            iconWidth={40}
+            iconHeight={40}
+            iconRadius='normal'
+            fill
+          >
+            <Text fontSize='middle' lineHeight='small'>
+              <FormattedMessage id='/' defaultMessage='Курсы' />
+            </Text>
+          </Button>
         </Box>
       </Row>
     </Row>

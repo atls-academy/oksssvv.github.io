@@ -10,6 +10,13 @@ import { getBaseStyles }       from './styles'
 
 export const fillStyles: styleFn = ifProp(prop('fill', false), { width: '100%' })
 
+const wideButtonSmallPaddingNormalHeightStyles = createShapeStyles({
+  size: 56,
+  paddingRight: 8,
+  paddingLeft: 20,
+  rounding: prop('theme.radii.medium') as unknown as number,
+})
+
 const wideButtonSmallPaddingMediumHeightStyles = createShapeStyles({
   size: 40,
   paddingRight: 6,
@@ -78,4 +85,5 @@ export const shapeStyles = switchProp(prop('size', 'normal'), {
   longButtonSmallPaddingMediumHeight: longButtonSmallPaddingMediumHeightStyles,
   wideButtonSmallPaddingMediumHeight: wideButtonSmallPaddingMediumHeightStyles,
   longButtonNormalPaddingMediumHeight: longButtonNormalPaddingMediumHeightStyles,
+  wideButtonSmallPaddingNormalHeight: wideButtonSmallPaddingNormalHeightStyles,
 })
