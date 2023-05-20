@@ -1,4 +1,4 @@
 export interface ItemsProps {
-  quantity: string
-  title: string
+  quantity?: string
+  title?: string
 }

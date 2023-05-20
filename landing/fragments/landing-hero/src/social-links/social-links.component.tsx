@@ -8,7 +8,7 @@ import { Layout }       from '@ui/layout'
 import { Box }          from '@ui/layout'
 import { Link }         from '@ui/link'
 
-const SocialLink = () => (
+export const SocialLink = () => (
   <Box flexDirection={['row', 'column']} width={[335, 56]} height={[44, 200]}>
     <Box display={['none', 'flex']}>
       <Link href='https://telegram.org/' target='_blank'>
@@ -56,5 +56,3 @@ const SocialLink = () => (
     </Box>
   </Box>
 )
-
-export { SocialLink }

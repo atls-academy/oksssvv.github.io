@@ -1,2 +1,2 @@
-export * from './hero-icons'
-export * from './courses-icons'
+export * from './social-icons'
+export * from './attachment-icons'

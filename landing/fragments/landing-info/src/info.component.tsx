@@ -8,7 +8,7 @@ import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
-const Info = () => (
+export const Info = () => (
   <Box width='100%' flexDirection='column'>
     <Layout flexBasis={[64, 160]} flexShrink='0' />
     <Box>
@@ -159,5 +159,3 @@ const Info = () => (
     <Layout flexBasis={[64, 160]} />
   </Box>
 )
-
-export { Info }

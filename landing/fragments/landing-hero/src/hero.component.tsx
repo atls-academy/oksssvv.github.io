@@ -7,7 +7,7 @@ import { Column }     from '@ui/layout'
 import { AboutUs }    from './about-us'
 import { SocialLink } from './social-links'
 
-const Hero = () => (
+export const Hero = () => (
   <Box width='100%' flexDirection='column'>
     <Layout flexBasis={[172, 415]} />
     <Box width='100%' flexDirection={['column', 'row']}>
@@ -30,5 +30,3 @@ const Hero = () => (
     <Layout flexBasis={[20, 48]} />
   </Box>
 )
-
-export { Hero }

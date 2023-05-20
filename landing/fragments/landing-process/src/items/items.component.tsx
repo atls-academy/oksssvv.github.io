@@ -4,12 +4,13 @@ import { FormattedMessage } from 'react-intl'
 
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
+import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
 import { ItemsProps }       from './items.interface'
 
-const Items: FC<ItemsProps> = ({ quantity, title }) => (
-  <Box>
+export const Items: FC<ItemsProps> = ({ quantity, title }) => (
+  <Row>
     <Box
       width={[35, 64]}
       height={[35, 64]}
@@ -30,8 +31,8 @@ const Items: FC<ItemsProps> = ({ quantity, title }) => (
           {title}
         </Text>
       </Box>
-      <Layout flexBasis={[0, 684]} flexShrink='0' />
-      <Box width={[288, 560]} flexShrink='0' alignItems='center'>
+      <Layout flexBasis={[8, 684]} flexShrink='0' />
+      <Box width={[288, 560]} flexShrink='0'>
         <Text
           color='white'
           fontSize={['medium', 'enlarged']}
@@ -45,7 +46,5 @@ const Items: FC<ItemsProps> = ({ quantity, title }) => (
         </Text>
       </Box>
     </Box>
-  </Box>
+  </Row>
 )
-
-export { Items }

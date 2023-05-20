@@ -1,5 +1,5 @@
 const radii = {
-  micro: 5,
+  micro: 6,
   little: 8,
   small: 10,
   normal: 12,

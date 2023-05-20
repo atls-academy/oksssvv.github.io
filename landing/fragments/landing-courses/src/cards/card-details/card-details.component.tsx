@@ -10,7 +10,7 @@ import { Text }             from '@ui/text'
 
 import { CardDetailsProps } from './card-details.interface'
 
-const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
+export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
   <Box
     width={[375, 410]}
     height={[192, 660]}
@@ -62,5 +62,3 @@ const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
     </Background>
   </Box>
 )
-
-export { CardDetails }

@@ -98,11 +98,14 @@ const colors = {
   background: {
     darkGray: 'rgba(97, 97, 97, 1)',
     transparent: 'rgba(255, 255, 255, 0.08)',
-    white: 'background: rgba(255, 255, 255, 1)',
+    white: 'rgba(255, 255, 255, 1)',
   },
   divider: {
     transparent: 'rgba(255, 255, 255, 0.25)',
     lightGray: 'rgba(27, 26, 51, 0.15)',
+  },
+  drawer: {
+    backdrop: 'rgba(0, 0, 0, 0.)',
   },
 }
 
