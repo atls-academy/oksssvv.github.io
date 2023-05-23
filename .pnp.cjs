@@ -132,7 +132,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:18.16.5"],\
           ["eslint", "npm:8.12.0"],\
           ["husky", "npm:8.0.1"],\
-          ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
+          ["typescript", "patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -603,7 +603,7 @@ const RAW_RUNTIME_STATE =
           ["@types/swiper", null],\
           ["nanoid", "npm:4.0.2"],\
           ["react", "npm:18.2.0"],\
-          ["swiper", "npm:8.3.1"]\
+          ["swiper", "virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.3.1"]\
         ],\
         "packagePeers": [\
           "@emotion/css",\
@@ -1335,7 +1335,7 @@ const RAW_RUNTIME_STATE =
           ["@types/typescript", null],\
           ["intl-messageformat", "npm:10.3.5"],\
           ["tslib", "npm:2.5.0"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=ad5954"]\
+          ["typescript", "patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -1824,7 +1824,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:18.2.0"],\
           ["react-intl", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:6.4.2"],\
           ["styled-system", "npm:5.1.5"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=ad5954"]\
+          ["typescript", "patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -2198,7 +2198,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/express", "npm:4.17.17"],\
           ["@types/body-parser", "npm:1.19.2"],\
-          ["@types/express-serve-static-core", "npm:4.17.33"],\
+          ["@types/express-serve-static-core", "npm:4.17.35"],\
           ["@types/qs", "npm:6.9.7"],\
           ["@types/serve-static", "npm:1.15.1"]\
         ],\
@@ -2206,13 +2206,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/express-serve-static-core", [\
-      ["npm:4.17.33", {\
-        "packageLocation": "../../../.yarn/berry/cache/@types-express-serve-static-core-npm-4.17.33-0366bd5654-9.zip/node_modules/@types/express-serve-static-core/",\
+      ["npm:4.17.35", {\
+        "packageLocation": "../../../.yarn/berry/cache/@types-express-serve-static-core-npm-4.17.35-c86e5f6e4a-9.zip/node_modules/@types/express-serve-static-core/",\
         "packageDependencies": [\
-          ["@types/express-serve-static-core", "npm:4.17.33"],\
+          ["@types/express-serve-static-core", "npm:4.17.35"],\
           ["@types/node", "npm:20.1.0"],\
           ["@types/qs", "npm:6.9.7"],\
-          ["@types/range-parser", "npm:1.2.4"]\
+          ["@types/range-parser", "npm:1.2.4"],\
+          ["@types/send", "npm:0.17.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2268,6 +2269,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/mime", [\
+      ["npm:1.3.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@types-mime-npm-1.3.2-ea71878ab3-9.zip/node_modules/@types/mime/",\
+        "packageDependencies": [\
+          ["@types/mime", "npm:1.3.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:3.0.1", {\
         "packageLocation": "../../../.yarn/berry/cache/@types-mime-npm-3.0.1-dec03536dc-9.zip/node_modules/@types/mime/",\
         "packageDependencies": [\
@@ -2390,6 +2398,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@types-semver-npm-7.3.9-eb0d8b7243-9.zip/node_modules/@types/semver/",\
         "packageDependencies": [\
           ["@types/semver", "npm:7.3.9"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/send", [\
+      ["npm:0.17.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@types-send-npm-0.17.1-5f715ca966-9.zip/node_modules/@types/send/",\
+        "packageDependencies": [\
+          ["@types/send", "npm:0.17.1"],\
+          ["@types/mime", "npm:1.3.2"],\
+          ["@types/node", "npm:20.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3449,7 +3468,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:500c1b2554b9653500750ad0264ff83faca3841a98df1910043ad21b7cebe0f368236a68a3f2ff4d6b03356344ecd728233700f2272b6ec73cab736b84d3c766#npm:18.2.0"],\
           ["styled-system", "npm:5.1.5"],\
-          ["swiper", "npm:8.3.1"]\
+          ["swiper", "virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.3.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -8208,7 +8227,7 @@ const RAW_RUNTIME_STATE =
           ["intl-messageformat", "npm:10.3.5"],\
           ["react", "npm:18.2.0"],\
           ["tslib", "npm:2.5.0"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=ad5954"]\
+          ["typescript", "patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66"]\
         ],\
         "packagePeers": [\
           "@types/react",\
@@ -8932,12 +8951,24 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["swiper", [\
       ["npm:8.3.1", {\
-        "packageLocation": "./.yarn/unplugged/swiper-npm-8.3.1-7575c41fae/node_modules/swiper/",\
+        "packageLocation": "./.yarn/unplugged/swiper-virtual-4f79634a4d/node_modules/swiper/",\
         "packageDependencies": [\
-          ["swiper", "npm:8.3.1"],\
+          ["swiper", "npm:8.3.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.3.1", {\
+        "packageLocation": "./.yarn/unplugged/swiper-virtual-4f79634a4d/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.3.1"],\
+          ["@types/react", null],\
           ["dom7", "npm:4.0.6"],\
           ["react", "npm:18.2.0"],\
           ["ssr-window", "npm:4.0.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9002,7 +9033,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:18.16.5"],\
           ["eslint", "npm:8.12.0"],\
           ["husky", "npm:8.0.1"],\
-          ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
+          ["typescript", "patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9257,17 +9288,17 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66", {\
+        "packageLocation": "../../../.yarn/berry/cache/typescript-patch-658ebc5080-9.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A4.6.2#optional!builtin<compat/typescript>::version=4.6.2&hash=5d3a66"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=ad5954", {\
         "packageLocation": "../../../.yarn/berry/cache/typescript-patch-503813fb14-9.zip/node_modules/typescript/",\
         "packageDependencies": [\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=ad5954", {\
-        "packageLocation": "../../../.yarn/berry/cache/typescript-patch-2be6e6969a-9.zip/node_modules/typescript/",\
-        "packageDependencies": [\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=ad5954"]\
         ],\
         "linkType": "HARD"\
       }]\
