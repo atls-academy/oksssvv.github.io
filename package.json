@@ -9,6 +9,7 @@
   ],
   "devDependencies": {
     "@atls/code-service": "^0.0.18",
+    "@atls/config-typescript": "^0.0.2",
     "@types/eslint": "^8",
     "@types/node": "^18",
     "eslint": "8.12.0",

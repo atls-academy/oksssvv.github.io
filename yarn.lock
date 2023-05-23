@@ -311,6 +311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls/config-typescript@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@atls/config-typescript@npm:0.0.2"
+  checksum: f02ccc8b023ff754423e8b22695295c4b516a30af07d8d39498f03fb99c22f9b32039f6c8b8e6bc7113e618df892879f75b538ddeebd02db101b6db49d4806dc
+  languageName: node
+  linkType: hard
+
 "@atls/prettier-plugin@npm:^0.0.5":
   version: 0.0.5
   resolution: "@atls/prettier-plugin@npm:0.0.5"
@@ -5114,7 +5121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:*, react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -5743,6 +5750,7 @@ __metadata:
   resolution: "template@workspace:."
   dependencies:
     "@atls/code-service": "npm:^0.0.18"
+    "@atls/config-typescript": "npm:^0.0.2"
     "@types/eslint": "npm:^8"
     "@types/node": "npm:^18"
     eslint: "npm:8.12.0"
