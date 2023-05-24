@@ -1,2 +1,2 @@
 export * from '@atls-ui-parts/swiper'
-export * from './slider.component'
+export { Autoplay } from 'swiper'

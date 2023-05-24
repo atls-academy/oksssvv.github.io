@@ -12,7 +12,7 @@ import { CardDetailsProps } from './card-details.interface'
 
 export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
   <Box
-    width={[375, 410]}
+    width={[335, 410]}
     height={[192, 660]}
     border='lightGray'
     overflow='hidden'

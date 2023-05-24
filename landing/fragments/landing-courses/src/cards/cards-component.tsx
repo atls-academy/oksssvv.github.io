@@ -7,6 +7,8 @@ import { IconPlus }         from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
+import { Swiper }           from '@ui/slider'
+import { SwiperSlide }      from '@ui/slider'
 import { Text }             from '@ui/text'
 
 import { CardDetails }      from './card-details'
@@ -50,12 +52,31 @@ const Cards = () => {
           })}
         />
         <Layout flexBasis={[20, 40]} />
-        <Box>
+        <Box display={['flex', 'none']}>
+          <Swiper spaceBetween={10} slidesPerView={1.22} slidesOffsetAfter={-10}>
+            <SwiperSlide>
+              <CardShort
+                category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
+                title={intl.formatMessage({
+                  id: '/',
+                  defaultMessage: 'Как использовать библиотеки',
+                })}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CardShort
+                category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
+                title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
+              />
+            </SwiperSlide>
+          </Swiper>
+        </Box>
+        <Box display={['none', 'flex']}>
           <CardShort
             category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
           />
-          <Layout flexBasis={[20, 40]} flexShrink='0' />
+          <Layout flexBasis={40} flexShrink='0' />
           <CardShort
             category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
@@ -64,20 +85,18 @@ const Cards = () => {
       </Column>
       <Layout flexBasis={[0, 40]} />
       <Column order={[0, 1]}>
-        <Box>
-          <CardDetails
-            info={intl.formatMessage({
-              id: '/',
-              defaultMessage:
-                'Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.',
-            })}
-            quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
-            desc={intl.formatMessage({
-              id: '/',
-              defaultMessage: 'студентов обучаются в одной практической группе',
-            })}
-          />
-        </Box>
+        <CardDetails
+          info={intl.formatMessage({
+            id: '/',
+            defaultMessage:
+              'Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.',
+          })}
+          quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
+          desc={intl.formatMessage({
+            id: '/',
+            defaultMessage: 'студентов обучаются в одной практической группе',
+          })}
+        />
         <Layout flexBasis={20} />
         <Box display={['none', 'flex']} width={410} alignItems='center'>
           <Button

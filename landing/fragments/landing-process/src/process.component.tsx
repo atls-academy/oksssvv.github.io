@@ -4,14 +4,14 @@ import { useIntl } from 'react-intl'
 import { Divider } from '@ui/divider'
 import { Layout }  from '@ui/layout'
 import { Column }  from '@ui/layout'
-import { Box }     from '@ui/layout'
+import { Row }     from '@ui/layout'
 
 import { Items }   from './items'
 
 export const Process = () => {
   const intl = useIntl()
   return (
-    <Box>
+    <Row>
       <Layout flexBasis={[20, 80]} />
       <Column width={[335, 1760]}>
         <Layout flexBasis={[64, 160]} />
@@ -49,6 +49,6 @@ export const Process = () => {
         />
         <Layout flexBasis={[24, 160]} />
       </Column>
-    </Box>
+    </Row>
   )
 }

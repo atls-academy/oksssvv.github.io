@@ -802,6 +802,7 @@ __metadata:
     "@ui/icon": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
@@ -1654,7 +1655,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/slider@workspace:ui/slider":
+"@ui/slider@workspace:0.0.1, @ui/slider@workspace:ui/slider":
   version: 0.0.0-use.local
   resolution: "@ui/slider@workspace:ui/slider"
   dependencies:
