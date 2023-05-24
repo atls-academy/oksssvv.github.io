@@ -7,10 +7,11 @@
     "@landing/hero-fragment": "workspace:0.0.1",
     "@landing/info-fragment": "workspace:0.0.1",
     "@landing/navigation-fragment": "workspace:0.0.1",
+    "@landing/process-fragment": "workspace:0.0.1",
     "@ui/background": "workspace:0.0.1"
   },
   "devDependencies": {
-    "react": "^18.2.0"
+    "react": "18.2.0"
   },
   "peerDependencies": {
     "react": "*",

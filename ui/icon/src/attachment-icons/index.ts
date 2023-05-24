@@ -1,3 +1,5 @@
 export * from './icon-arrow-down'
 export * from './icon-arrow-right'
 export * from './icon-plus'
+export * from './icon-scroll'
+export * from './icon-arrow-up'

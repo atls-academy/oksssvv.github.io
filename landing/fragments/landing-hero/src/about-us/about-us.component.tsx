@@ -10,7 +10,7 @@ import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
-const AboutUs = () => (
+export const AboutUs = () => (
   <Column width={[335, 1166]}>
     <Box>
       <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.white'>
@@ -75,5 +75,3 @@ const AboutUs = () => (
     </Row>
   </Column>
 )
-
-export { AboutUs }

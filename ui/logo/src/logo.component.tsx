@@ -6,9 +6,9 @@ import { NextLink }  from '@ui/link'
 import { Icon }      from './icon.component'
 import { LogoProps } from './logo.interfaces'
 
-const Logo: FC<LogoProps> = ({ ...props }) => (
+const Logo: FC<LogoProps> = ({ color }) => (
   <NextLink path='/'>
-    <Icon color={props.color} />
+    <Icon color={color} />
   </NextLink>
 )
 

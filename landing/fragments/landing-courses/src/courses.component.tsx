@@ -13,7 +13,7 @@ import { Space }            from '@ui/text'
 
 import { Cards }            from './cards'
 
-const Courses = () => (
+export const Courses = () => (
   <Row>
     <Layout flexBasis={[20, 230]} />
     <Column width={['335px', '1460px']}>
@@ -147,5 +147,3 @@ const Courses = () => (
     </Column>
   </Row>
 )
-
-export { Courses }

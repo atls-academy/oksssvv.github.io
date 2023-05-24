@@ -1,0 +1,6 @@
+{
+  "extends": "@atls/config-typescript/dist/index.json",
+  "compilerOptions": {
+    "jsx": "react"
+  }
+}

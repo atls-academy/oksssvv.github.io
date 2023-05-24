@@ -10,9 +10,9 @@ import { Text }             from '@ui/text'
 
 import { CardDetailsProps } from './card-details.interface'
 
-const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
+export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
   <Box
-    width={[375, 410]}
+    width={[335, 410]}
     height={[192, 660]}
     border='lightGray'
     overflow='hidden'
@@ -34,7 +34,7 @@ const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
         <Layout flexBasis={[0, 74]} />
         <Box width={[240]} height={[240]} display={['none', 'flex']}>
           <Layout flexBasis={55} flexShrink='0' />
-          <ImageBlock src='/courses-icon-sphere.png' />
+          <ImageBlock src='/sphere-pink.png' />
         </Box>
         <Layout flexBasis={[20, 62]} />
         <Box flexDirection={['row', 'column']} alignItems={['center', 'start']}>
@@ -62,5 +62,3 @@ const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
     </Background>
   </Box>
 )
-
-export { CardDetails }

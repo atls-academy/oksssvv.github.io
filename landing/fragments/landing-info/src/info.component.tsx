@@ -1,14 +1,15 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { ImageBlock }       from '@ui/image'
 import { Box }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
-const Info = () => (
+import { Sphere }           from './sphere'
+
+export const Info = () => (
   <Box width='100%' flexDirection='column'>
     <Layout flexBasis={[64, 160]} flexShrink='0' />
     <Box>
@@ -31,19 +32,7 @@ const Info = () => (
             />
           </Text>
           <Space count={3} />
-          <Box
-            display='inline-flex'
-            width={['52px', '76px']}
-            height={['36px', '52px']}
-            backgroundColor='background.transparent'
-            borderRadius={['10px', '12px']}
-            justifyContent='center'
-            alignItems='center'
-          >
-            <Box width={[28, 40]} height={[28, 40]}>
-              <ImageBlock src='/info-icon-sphere.png' />
-            </Box>
-          </Box>
+          <Sphere />
           <Space count={3} />
           <Text
             display='inline'
@@ -69,19 +58,7 @@ const Info = () => (
             />
           </Text>
           <Space count={3} />
-          <Box
-            display='inline-flex'
-            width={['52px', '76px']}
-            height={['36px', '52px']}
-            backgroundColor='background.transparent'
-            borderRadius={['10px', '12px']}
-            justifyContent='center'
-            alignItems='center'
-          >
-            <Box width={[28, 40]} height={[28, 40]}>
-              <ImageBlock src='/info-icon-sphere.png' />
-            </Box>
-          </Box>
+          <Sphere />
         </Box>
         <Layout flexBasis={[24, 40]} flexShrink='0' />
         <Box width={['335px', '1460px']} display='inline'>
@@ -123,7 +100,9 @@ const Info = () => (
           >
             <FormattedMessage id='landing_info.and' defaultMessage='и' />
           </Text>
-          <Space count={3} />
+          <Box display={['none', 'inline']}>
+            <Space count={3} />
+          </Box>
           <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
             <FormattedMessage id='landing_info.architects' defaultMessage='архитекторов' />
           </Text>
@@ -139,19 +118,7 @@ const Info = () => (
             />
           </Text>
           <Space count={3} />
-          <Box
-            display='inline-flex'
-            width={['52px', '76px']}
-            height={['36px', '52px']}
-            backgroundColor='background.transparent'
-            borderRadius={['10px', '12px']}
-            justifyContent='center'
-            alignItems='center'
-          >
-            <Box width={[28, 40]} height={[28, 40]}>
-              <ImageBlock src='/info-icon-sphere.png' />
-            </Box>
-          </Box>
+          <Sphere />
         </Box>
       </Column>
       <Layout flexBasis={[20, 230]} flexShrink='0' />
@@ -159,5 +126,3 @@ const Info = () => (
     <Layout flexBasis={[64, 160]} />
   </Box>
 )
-
-export { Info }
