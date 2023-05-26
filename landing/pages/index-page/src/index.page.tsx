@@ -5,6 +5,7 @@ import { Hero }       from '@landing/hero-fragment'
 import { Info }       from '@landing/info-fragment'
 import { Navigation } from '@landing/navigation-fragment'
 import { Process }    from '@landing/process-fragment'
+import { Ticker }     from '@landing/ticker-fragment'
 import { Background } from '@ui/background'
 
 export const IndexPage = () => (
@@ -43,6 +44,7 @@ export const IndexPage = () => (
       backgroundPosition={['0,0 215px,0 0', '750px 310px,0 200px,0 0']}
     >
       <Process />
+      <Ticker />
     </Background>
   </>
 )

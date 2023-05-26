@@ -47,7 +47,7 @@ export const Process = () => {
           quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в проект' })}
         />
-        <Layout flexBasis={[24, 160]} />
+        <Layout flexBasis={[56, 160]} />
       </Column>
     </Row>
   )
