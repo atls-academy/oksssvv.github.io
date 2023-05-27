@@ -12,7 +12,7 @@ import { Sphere }           from './sphere'
 export const Info = () => (
   <Box width='100%' flexDirection='column'>
     <Layout flexBasis={[64, 160]} flexShrink='0' />
-    <Box>
+    <Box justifyContent='center'>
       <Layout flexBasis={[20, 230]} flexShrink='0' />
       <Column>
         <Box width={['335px', '1460px']} flexShrink='0' display='inline'>

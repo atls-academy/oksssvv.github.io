@@ -88,7 +88,7 @@ const Cards = () => {
           />
         </Box>
       </Column>
-      <Layout flexBasis={[0, 40]} />
+      <Layout flexBasis={[0, 40]} flexShrink='0'/>
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({

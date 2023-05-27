@@ -43,7 +43,7 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
         <Layout flexBasis={[255, 40]} flexShrink='0' />
         <Column width='100%'>
           <Layout flexBasis={[23, 35]} />
-          <Row alignItems='center'>
+          <Row alignItems='center' justifyContent='center'>
             <Box display={['none', 'flex']} width={56}>
               <Logo color='rgba(58, 55, 93, 1)' />
             </Box>
@@ -84,6 +84,7 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
             </Box>
           </Row>
         </Column>
+        <Layout flexBasis={[40, 40]} flexShrink='0' />
       </Box>
     </motion.div>
   </Renderer>

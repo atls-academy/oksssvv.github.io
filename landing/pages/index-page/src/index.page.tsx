@@ -39,9 +39,9 @@ export const IndexPage = () => (
     <Background
       position='relative'
       gradient='veryDarkPurpleAndDecorativeElement'
-      backgroundSize={['0,100%,cover', '400px,100%,cover']}
+      backgroundSize={['100%,cover', '100%,cover']}
       backgroundRepeat='no-repeat'
-      backgroundPosition={['0,0 215px,0 0', '750px 310px,0 200px,0 0']}
+      backgroundPosition={['0 215px,0 0', '0 200px,0 0']}
     >
       <Process />
       <Ticker />

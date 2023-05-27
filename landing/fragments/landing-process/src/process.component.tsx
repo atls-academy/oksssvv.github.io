@@ -11,8 +11,8 @@ import { Items }   from './items'
 export const Process = () => {
   const intl = useIntl()
   return (
-    <Row>
-      <Layout flexBasis={[20, 80]} />
+    <Row width='100%' justifyContent='center'>
+      <Layout flexBasis={[20, 80]} flexShrink='0'/>
       <Column width={[335, 1760]}>
         <Layout flexBasis={[64, 160]} />
         <Items
@@ -49,6 +49,7 @@ export const Process = () => {
         />
         <Layout flexBasis={[56, 160]} />
       </Column>
+      <Layout flexBasis={[20,80]} flexShrink='0'/>
     </Row>
   )
 }

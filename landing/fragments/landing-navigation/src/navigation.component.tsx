@@ -23,9 +23,8 @@ export const Navigation = () => {
       <Drawer active={visible} onClose={() => setVisible(false)} />
       <Column>
         <Layout flexBasis={[20, 35]} />
-        <Row>
+        <Row width='100%' justifyContent='center'>
           <Layout flexBasis={[20, 40]} flexShrink='0' />
-          <Row>
             <Box width={[40, 56]} flexShrink={0} alignItems='center'>
               <Logo color='white' />
             </Box>
@@ -47,6 +46,7 @@ export const Navigation = () => {
                 </Text>
               </Button>
             </Box>
+            <Layout flexBasis={[20,0]}/>
             <Box display={['none', 'flex']} alignItems='end'>
               <NavBlock
                 title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })}
@@ -67,8 +67,8 @@ export const Navigation = () => {
               <Layout flexBasis={20} flexShrink='0' />
               <NavBlock title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} link='/' />
             </Box>
-            <Layout display={['none', 'flex']} flexBasis={310} />
-            <Box display={['none', 'flex']} width={136} alignItems='center'>
+            <Layout flexBasis={[0,310]} />
+            <Box display={['none', 'flex']} width={136} alignItems='center' flexShrink='0'>
               <Button
                 size='wideButtonSmallPaddingNormalHeight'
                 variant='transparentLightBackground'
@@ -85,7 +85,7 @@ export const Navigation = () => {
                 </Text>
               </Button>
             </Box>
-          </Row>
+            <Layout flexBasis={[0,40]} flexShrink='0'/>
         </Row>
       </Column>
     </>

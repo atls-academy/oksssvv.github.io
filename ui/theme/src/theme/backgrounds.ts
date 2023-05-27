@@ -7,7 +7,7 @@ const backgrounds = {
   transparentWhite:
     'linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), rgba(255, 255, 255, 0.08)',
   veryDarkPurpleAndDecorativeElement:
-    'url("/sphere-purple.png"), url("/bg-bend-line.png"), rgba(39, 37, 59, 1)',
+    'url("/bg-bend-line.png"), rgba(39, 37, 59, 1)',
 }
 
 export { backgrounds }
