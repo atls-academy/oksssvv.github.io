@@ -53,7 +53,12 @@ const Cards = () => {
         />
         <Layout flexBasis={[20, 40]} />
         <Box display={['flex', 'none']}>
-          <Swiper spaceBetween={10} slidesPerView={1.22} slidesOffsetAfter={-10}>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1.22}
+            slidesOffsetAfter={-10}
+            className='CardSlider'
+          >
             <SwiperSlide>
               <CardShort
                 category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}

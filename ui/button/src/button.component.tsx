@@ -25,7 +25,7 @@ export const ButtonElement = styled('button')<any>(
   fillStyles
 )
 
-export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }) => {
+export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, ref) => {
   const [hover, hoverProps] = useHover()
   const [pressed, setPressed] = useState<boolean>(false)
 
@@ -37,6 +37,7 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }) 
       onMouseUp={() => setPressed(false)}
       {...hoverProps}
       {...props}
+      ref={ref}
     >
       <Content divider={8}>{children}</Content>
       <Layout flexBasis={gap} />

@@ -55,7 +55,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
           </Box>
           <Box width={64} height={64} display={['flex', 'none']}>
             <Layout flexBasis={65} flexShrink='0' />
-            <ImageBlock src='/courses-icon-sphere.png' />
+            <ImageBlock src='/sphere-pink.png' />
           </Box>
         </Box>
       </Column>

@@ -13,13 +13,13 @@ import { Delimiter } from './delimiter'
 import { LineProps } from './line.interface'
 
 export const Line: FC<LineProps> = ({ tech, font }) => {
-  const infntLine = useMemo(
+  const infinityLine = useMemo(
     () => keyframes`0% { transform: translateX(0) } 100% { transform: translate(-50%) }`,
     []
   )
   const AnimBox = useMemo(
-    () => styled(Box)({ animation: `${infntLine} 400s linear infinite` }),
-    [infntLine]
+    () => styled(Box)({ animation: `${infinityLine} 400s linear infinite` }),
+    [infinityLine]
   )
 
   const techEl = useMemo(
