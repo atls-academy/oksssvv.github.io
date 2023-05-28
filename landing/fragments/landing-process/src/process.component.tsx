@@ -1,18 +1,20 @@
-import React       from 'react'
-import { useIntl } from 'react-intl'
+import React          from 'react'
+import { useIntl }    from 'react-intl'
 
-import { Divider } from '@ui/divider'
-import { Layout }  from '@ui/layout'
-import { Column }  from '@ui/layout'
-import { Row }     from '@ui/layout'
+import { Divider }    from '@ui/divider'
+import { ImageBlock } from '@ui/image'
+import { Layout }     from '@ui/layout'
+import { Column }     from '@ui/layout'
+import { Row }        from '@ui/layout'
+import { Box }        from '@ui/layout'
 
-import { Items }   from './items'
+import { Items }      from './items'
 
 export const Process = () => {
   const intl = useIntl()
   return (
     <Row width='100%' justifyContent='center'>
-      <Layout flexBasis={[20, 80]} flexShrink='0'/>
+      <Layout flexBasis={[20, 80]} flexShrink='0' />
       <Column width={[335, 1760]}>
         <Layout flexBasis={[64, 160]} />
         <Items
@@ -33,6 +35,15 @@ export const Process = () => {
           quantity={intl.formatMessage({ id: '/', defaultMessage: '3' })}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Изучение технологий' })}
         />
+        <Box
+          display={['none', 'flex']}
+          width={400}
+          position='absolute'
+          marginLeft='660px'
+          marginTop='320px'
+        >
+          <ImageBlock src='/sphere-purple.png' />
+        </Box>
         <Layout flexBasis={[28, 48]} />
         <Divider weight={1} backgroundColor='divider.transparent' />
         <Layout flexBasis={[28, 48]} />
@@ -49,7 +60,7 @@ export const Process = () => {
         />
         <Layout flexBasis={[56, 160]} />
       </Column>
-      <Layout flexBasis={[20,80]} flexShrink='0'/>
+      <Layout flexBasis={[20, 80]} flexShrink='0' />
     </Row>
   )
 }

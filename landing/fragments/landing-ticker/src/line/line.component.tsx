@@ -12,19 +12,19 @@ import { Repeater }  from '@ui/utils'
 import { Delimiter } from './delimiter'
 import { LineProps } from './line.interface'
 
-export const Line: FC<LineProps> = ({ tech, font }) => {
+export const Line: FC<LineProps> = ({ technology, font }) => {
   const infinityLine = useMemo(
     () => keyframes`0% { transform: translateX(0) } 100% { transform: translate(-50%) }`,
     []
   )
-  const AnimBox = useMemo(
+  const AnimationBox = useMemo(
     () => styled(Box)({ animation: `${infinityLine} 400s linear infinite` }),
     [infinityLine]
   )
 
-  const techEl = useMemo(
+  const technologyElement = useMemo(
     () =>
-      tech.map((el) => (
+      technology.map((item) => (
         <>
           <Delimiter />
           <Text
@@ -35,18 +35,18 @@ export const Line: FC<LineProps> = ({ tech, font }) => {
             lineHeight='small'
             whiteSpace='nowrap'
           >
-            {el}
+            {item}
           </Text>
         </>
       )),
-    [tech, font]
+    [technology, font]
   )
 
   return (
     <Box>
-      <AnimBox>
-        <Repeater quantity={50}>{() => techEl}</Repeater>
-      </AnimBox>
+      <AnimationBox>
+        <Repeater quantity={50}>{() => technologyElement}</Repeater>
+      </AnimationBox>
     </Box>
   )
 }

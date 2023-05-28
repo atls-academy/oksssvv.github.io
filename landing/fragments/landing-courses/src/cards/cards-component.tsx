@@ -88,7 +88,7 @@ const Cards = () => {
           />
         </Box>
       </Column>
-      <Layout flexBasis={[0, 40]} flexShrink='0'/>
+      <Layout flexBasis={[0, 40]} flexShrink='0' />
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({
@@ -107,7 +107,7 @@ const Cards = () => {
           <Button
             size='longButtonSmallPaddingMediumHeight'
             variant='darkPurpleBackground'
-            gap={117}
+            gap='28%'
             iconSVG={<IconPlus />}
             iconWidth={48}
             iconHeight={48}

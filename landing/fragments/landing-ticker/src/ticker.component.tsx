@@ -1,12 +1,13 @@
-import React             from 'react'
+import React            from 'react'
 
-import { Divider }       from '@ui/divider'
-import { Layout }        from '@ui/layout'
-import { Column }        from '@ui/layout'
-import { Row }           from '@ui/layout'
+import { Divider }      from '@ui/divider'
+import { Layout }       from '@ui/layout'
+import { Column }       from '@ui/layout'
+import { Row }          from '@ui/layout'
 
-import { Line }          from './line'
-import { TechnologyKit } from './technology'
+import { Line }         from './line'
+import { KitWebDev }    from './technology'
+import { KitWorkspace } from './technology'
 
 export const Ticker = () => (
   <Column>
@@ -14,11 +15,11 @@ export const Ticker = () => (
     <Divider weight={1} backgroundColor='divider.transparent' />
     <Layout flexBasis={[36, 64]} />
     <Row overflow='hidden'>
-      <Line tech={TechnologyKit.webDevelopment.split(',')} font='primary' />
+      <Line technology={KitWebDev} font='primary' />
     </Row>
     <Layout flexBasis={[36, 64]} />
     <Row overflow='hidden'>
-      <Line tech={TechnologyKit.workspace.split(',')} font='gellaDisplay' />
+      <Line technology={KitWorkspace} font='gellaDisplay' />
     </Row>
     <Layout flexBasis={[36, 64]} />
     <Divider weight={1} backgroundColor='divider.transparent' />

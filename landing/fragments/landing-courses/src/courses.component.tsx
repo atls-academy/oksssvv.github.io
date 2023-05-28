@@ -14,8 +14,8 @@ import { Space }            from '@ui/text'
 import { Cards }            from './cards'
 
 export const Courses = () => (
-  <Row width='100%' justifyContent='center' >
-    <Layout flexBasis={[20, 230]} flexShrink='0'/>
+  <Row width='100%' justifyContent='center'>
+    <Layout flexBasis={[20, 230]} flexShrink='0' />
     <Column width={['335px', '1460px']} flexShrink='0'>
       <Layout flexBasis={[64, 160]} />
       <Box>
@@ -34,7 +34,7 @@ export const Courses = () => (
           <Button
             size='longButtonSmallPaddingMediumHeight'
             variant='darkPurpleBackground'
-            gap={23}
+            gap='8%'
             iconSVG={<IconArrowRight />}
             iconWidth={48}
             iconHeight={48}
@@ -145,6 +145,6 @@ export const Courses = () => (
       </Box>
       <Layout flexBasis={[64, 0]} />
     </Column>
-    <Layout flexBasis={[20,230]} flexShrink='0'/>
+    <Layout flexBasis={[20, 230]} flexShrink='0' />
   </Row>
 )

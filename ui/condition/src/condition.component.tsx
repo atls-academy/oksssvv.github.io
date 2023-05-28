@@ -1,16 +1,14 @@
-import React               from 'react'
-import { AnimatePresence } from 'framer-motion'
-import { motion }          from 'framer-motion'
+import React                from 'react'
+import { AnimatePresence }  from 'framer-motion'
+import { motion }           from 'framer-motion'
 
-import { ConditionProps }  from './condition.interface'
+import { ConditionProps }   from './condition.interface'
+import { AnimationVariant } from './some-animations'
 
 export const Condition = ({
   match,
   smooth = false,
-  smoothOptions = {
-    duration: 0.3,
-    pattern: 'in-and-out',
-  },
+  smoothOptions = AnimationVariant,
   children,
 }: ConditionProps) => {
   if (smooth) {
@@ -64,6 +62,5 @@ export const Condition = ({
       )
     }
   }
-  if (match) return children
-  return null
+  return children
 }

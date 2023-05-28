@@ -11,13 +11,13 @@ export const Hero = () => (
   <Box width='100%' flexDirection='column'>
     <Layout flexBasis={[172, 415]} />
     <Box width='100%' flexDirection={['column', 'row']} justifyContent='center'>
-      <Layout flexBasis={[0, 230]} flexShrink='0'/>
+      <Layout flexBasis={[0, 230]} flexShrink='0' />
       <Box>
         <Layout flexBasis={[20, 0]} flexShrink='0' />
         <AboutUs />
         <Layout flexBasis={[20, 0]} flexShrink='0' />
       </Box>
-      <Layout flexBasis={[24, 434]} flexShrink='0'/>
+      <Layout flexBasis={[24, 434]} flexShrink='0' />
       <Box>
         <Layout flexBasis={[20, 0]} flexShrink='0' />
         <Column>
