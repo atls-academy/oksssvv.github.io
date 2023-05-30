@@ -65,7 +65,7 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
                 </Text>
               </Button>
             </Box>
-            <Box width={100} display={['flex', 'none']}>
+            <Box width={100} display={['flex', 'none']} flexShrink='0'>
               <Button
                 size='wideButtonSmallPaddingMediumHeight'
                 variant='darkPurpleBackground'
@@ -84,7 +84,7 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
             </Box>
           </Row>
         </Column>
-        <Layout flexBasis={[40, 40]} flexShrink='0' />
+        <Layout flexBasis={[20, 40]} flexShrink='0' />
       </Box>
     </motion.div>
   </Renderer>

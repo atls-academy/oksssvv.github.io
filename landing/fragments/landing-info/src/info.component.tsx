@@ -11,7 +11,7 @@ import { Sphere }           from './sphere'
 
 export const Info = () => (
   <Box width='100%' flexDirection='column'>
-    <Layout flexBasis={[64, 160]} flexShrink='0' />
+    <Layout flexBasis={[84, 160]} flexShrink='0' />
     <Box justifyContent='center'>
       <Layout flexBasis={[20, 230]} flexShrink='0' />
       <Column>

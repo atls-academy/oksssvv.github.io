@@ -29,7 +29,7 @@ export const Navigation = () => {
             <Logo color='white' />
           </Box>
           <Layout flexBasis={[195, 241]} />
-          <Box display={['flex', 'none']} width={100} alignItems='center'>
+          <Box display={['flex', 'none']} width={100} alignItems='center' flexShrink='0'>
             <Button
               size='wideButtonSmallPaddingMediumHeight'
               variant='transparentLightBackground'

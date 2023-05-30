@@ -1,14 +1,14 @@
-import React                from 'react'
-import { AnimatePresence }  from 'framer-motion'
-import { motion }           from 'framer-motion'
+import React               from 'react'
+import { AnimatePresence } from 'framer-motion'
+import { motion }          from 'framer-motion'
 
-import { ConditionProps }   from './condition.interface'
-import { AnimationVariant } from './some-animations'
+import { AnimationStyle }  from './animation-style'
+import { ConditionProps }  from './condition.interface'
 
 export const Condition = ({
   match,
   smooth = false,
-  smoothOptions = AnimationVariant,
+  smoothOptions = AnimationStyle,
   children,
 }: ConditionProps) => {
   if (smooth) {
