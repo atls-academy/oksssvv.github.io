@@ -1,4 +1,4 @@
 export interface LineProps {
-  technology: Array<string>
+  technology: any
   font?: string
 }

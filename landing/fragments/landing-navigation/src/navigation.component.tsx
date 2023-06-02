@@ -33,13 +33,13 @@ export const Navigation = () => {
             <Button
               size='wideButtonSmallPaddingMediumHeight'
               variant='transparentLightBackground'
-              gap={12}
+              gap='12%'
               iconSVG={<IconArrowDown />}
               iconWidth={28}
               iconHeight={28}
               iconRadius='micro'
               onClick={() => setVisible(true)}
-              fill
+              buttonFill
             >
               <Text fontSize='medium'>
                 <FormattedMessage id='/' defaultMessage='Курсы' />
@@ -75,7 +75,7 @@ export const Navigation = () => {
               iconHeight={40}
               iconRadius='normal'
               onClick={() => setVisible(true)}
-              fill
+              buttonFill
             >
               <Text fontSize='middle' lineHeight='small'>
                 <FormattedMessage id='/' defaultMessage='Курсы' />

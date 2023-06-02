@@ -14,7 +14,7 @@ import { IconAttachment }   from './icon-attachment'
 import { baseStyles }       from './button.styles'
 import { shapeStyles }      from './button.styles'
 import { contentStyles }    from './button.styles'
-import { fillStyles }       from './button.styles'
+import { buttonFillStyles } from './button.styles'
 import { appearanceStyles } from './styles'
 
 export const ButtonElement = styled('button')<any>(
@@ -22,7 +22,7 @@ export const ButtonElement = styled('button')<any>(
   contentStyles,
   shapeStyles,
   appearanceStyles,
-  fillStyles
+  buttonFillStyles
 )
 
 export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, ref) => {

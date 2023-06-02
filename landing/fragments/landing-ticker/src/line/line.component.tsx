@@ -25,7 +25,7 @@ export const Line: FC<LineProps> = ({ technology, font }) => {
   const technologyElement = useMemo(
     () =>
       technology.map((item) => (
-        <>
+        <Box key={item.id}>
           <Delimiter />
           <Text
             color='white'
@@ -35,9 +35,9 @@ export const Line: FC<LineProps> = ({ technology, font }) => {
             lineHeight='small'
             whiteSpace='nowrap'
           >
-            {item}
+            {item.name}
           </Text>
-        </>
+        </Box>
       )),
     [technology, font]
   )

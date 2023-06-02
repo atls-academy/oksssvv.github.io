@@ -8,7 +8,7 @@ import { ifProp }              from 'styled-tools'
 
 import { getBaseStyles }       from './styles'
 
-export const fillStyles: styleFn = ifProp(prop('fill', false), { width: '100%' })
+export const buttonFillStyles: styleFn = ifProp(prop('buttonFill', false), { width: '100%' })
 
 const wideButtonSmallPaddingNormalHeightStyles = createShapeStyles({
   size: 56,

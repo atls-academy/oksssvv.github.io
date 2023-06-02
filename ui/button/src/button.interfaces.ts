@@ -27,4 +27,5 @@ export interface ButtonProps extends BaseButtonProps {
   iconHeight?: number
   iconRadius?: string
   ref?: any
+  buttonFill?: any
 }

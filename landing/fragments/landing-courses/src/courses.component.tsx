@@ -39,7 +39,7 @@ export const Courses = () => (
             iconWidth={48}
             iconHeight={48}
             iconRadius='medium'
-            fill
+            buttonFill
           >
             <Text fontSize='regular' lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Все материалы' />
@@ -136,7 +136,7 @@ export const Courses = () => (
           iconWidth={32}
           iconHeight={32}
           iconRadius='little'
-          fill
+          buttonFill
         >
           <Text fontSize='middle' lineHeight='regular'>
             <FormattedMessage id='/' defaultMessage='Все материалы' />

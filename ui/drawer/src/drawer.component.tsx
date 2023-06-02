@@ -48,17 +48,17 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
               <Logo color='rgba(58, 55, 93, 1)' />
             </Box>
             <Layout flexBasis={[0, 1636]} />
-            <Box width={136} display={['none', 'flex']}>
+            <Box width={136} display={['none', 'flex']} flexShrink='0'>
               <Button
                 size='wideButtonSmallPaddingNormalHeight'
                 variant='darkPurpleBackground'
                 iconSVG={<IconArrowUp />}
-                gap={20}
+                gap='14%'
                 iconRadius='12'
                 iconWidth={40}
                 iconHeight={40}
                 onClick={onClose}
-                fill
+                buttonFill
               >
                 <Text fontSize='middle'>
                   <FormattedMessage id='/' defaultMessage='Курсы' />
@@ -70,12 +70,12 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
                 size='wideButtonSmallPaddingMediumHeight'
                 variant='darkPurpleBackground'
                 iconSVG={<IconArrowUp />}
-                gap={12}
+                gap='12%'
                 iconRadius='6'
                 iconWidth={28}
                 iconHeight={28}
                 onClick={onClose}
-                fill
+                buttonFill
               >
                 <Text fontSize='medium'>
                   <FormattedMessage id='/' defaultMessage='Курсы' />

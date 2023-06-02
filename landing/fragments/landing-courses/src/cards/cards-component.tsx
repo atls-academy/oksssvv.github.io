@@ -112,7 +112,7 @@ const Cards = () => {
             iconWidth={48}
             iconHeight={48}
             iconRadius='normal'
-            fill
+            buttonFill
           >
             <Text fontSize='regular' lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />
@@ -128,7 +128,7 @@ const Cards = () => {
             iconWidth={32}
             iconHeight={32}
             iconRadius='little'
-            fill
+            buttonFill
           >
             <Text fontSize='middle' lineHeight='small'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />
