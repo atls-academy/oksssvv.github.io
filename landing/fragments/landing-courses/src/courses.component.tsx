@@ -14,9 +14,9 @@ import { Space }            from '@ui/text'
 import { Cards }            from './cards'
 
 export const Courses = () => (
-  <Row>
-    <Layout flexBasis={[20, 230]} />
-    <Column width={['335px', '1460px']}>
+  <Row width='100%' justifyContent='center'>
+    <Layout flexBasis={[20, 230]} flexShrink='0' />
+    <Column width={['335px', '1460px']} flexShrink='0'>
       <Layout flexBasis={[64, 160]} />
       <Box>
         <Box>
@@ -30,16 +30,16 @@ export const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[0, 344]} />
-        <Box display={['none', 'flex']} width={253} alignItems='center'>
+        <Box display={['none', 'flex']} width={253} alignItems='center' flexShrink='0'>
           <Button
             size='longButtonSmallPaddingMediumHeight'
             variant='darkPurpleBackground'
-            gap={23}
+            gap='8%'
             iconSVG={<IconArrowRight />}
             iconWidth={48}
             iconHeight={48}
             iconRadius='medium'
-            fill
+            buttonFill
           >
             <Text fontSize='regular' lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Все материалы' />
@@ -51,7 +51,7 @@ export const Courses = () => (
       <Divider weight={1} backgroundColor='divider.lightGray' />
       <Layout flexBasis={[40, 80]} />
       <Box flexDirection={['column', 'row']}>
-        <Box width={[335, 710]} display='inline'>
+        <Box width={[335, 710]} display='inline' flexShrink='0'>
           <Text color='text.indigo' fontSize={['averaged', 'normal']} lineHeight='medium'>
             <FormattedMessage id='/' defaultMessage='Являясь серым кардиналом,' />
           </Text>
@@ -97,7 +97,7 @@ export const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[20, 191]} />
-        <Box width={[335, 559]} display='inline'>
+        <Box width={[335, 559]} display='inline' flexShrink='0'>
           <Text
             fontSize={['averaged', 'normal']}
             display='inline'
@@ -136,7 +136,7 @@ export const Courses = () => (
           iconWidth={32}
           iconHeight={32}
           iconRadius='little'
-          fill
+          buttonFill
         >
           <Text fontSize='middle' lineHeight='regular'>
             <FormattedMessage id='/' defaultMessage='Все материалы' />
@@ -145,5 +145,6 @@ export const Courses = () => (
       </Box>
       <Layout flexBasis={[64, 0]} />
     </Column>
+    <Layout flexBasis={[20, 230]} flexShrink='0' />
   </Row>
 )

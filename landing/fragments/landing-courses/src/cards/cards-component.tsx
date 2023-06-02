@@ -53,7 +53,12 @@ const Cards = () => {
         />
         <Layout flexBasis={[20, 40]} />
         <Box display={['flex', 'none']}>
-          <Swiper spaceBetween={10} slidesPerView={1.22} slidesOffsetAfter={-10}>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1.22}
+            slidesOffsetAfter={-10}
+            className='CardSlider'
+          >
             <SwiperSlide>
               <CardShort
                 category={intl.formatMessage({ id: '/', defaultMessage: 'Учебный материал' })}
@@ -83,7 +88,7 @@ const Cards = () => {
           />
         </Box>
       </Column>
-      <Layout flexBasis={[0, 40]} />
+      <Layout flexBasis={[0, 40]} flexShrink='0' />
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({
@@ -102,12 +107,12 @@ const Cards = () => {
           <Button
             size='longButtonSmallPaddingMediumHeight'
             variant='darkPurpleBackground'
-            gap={117}
+            gap='28%'
             iconSVG={<IconPlus />}
             iconWidth={48}
             iconHeight={48}
             iconRadius='normal'
-            fill
+            buttonFill
           >
             <Text fontSize='regular' lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />
@@ -123,7 +128,7 @@ const Cards = () => {
             iconWidth={32}
             iconHeight={32}
             iconRadius='little'
-            fill
+            buttonFill
           >
             <Text fontSize='middle' lineHeight='small'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />

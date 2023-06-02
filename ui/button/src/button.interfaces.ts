@@ -21,9 +21,11 @@ export type ButtonSize =
 export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
   size?: ButtonSize
-  gap?: number
+  gap?: number | string
   iconSVG?: any
   iconWidth?: number
   iconHeight?: number
   iconRadius?: string
+  ref?: any
+  buttonFill?: any
 }

@@ -13,6 +13,10 @@ export const GlobalStyles = () => {
   return (
     <Global
       styles={css`
+      @font-face {
+        font-family: "GellaDisplay";
+        src: url("/font/gella-display.otf")
+      }
       html,
       body,
       #__next {        

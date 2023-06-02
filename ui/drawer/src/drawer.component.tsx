@@ -43,39 +43,39 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
         <Layout flexBasis={[255, 40]} flexShrink='0' />
         <Column width='100%'>
           <Layout flexBasis={[23, 35]} />
-          <Row alignItems='center'>
+          <Row alignItems='center' justifyContent='center'>
             <Box display={['none', 'flex']} width={56}>
               <Logo color='rgba(58, 55, 93, 1)' />
             </Box>
             <Layout flexBasis={[0, 1636]} />
-            <Box width={136} display={['none', 'flex']}>
+            <Box width={136} display={['none', 'flex']} flexShrink='0'>
               <Button
                 size='wideButtonSmallPaddingNormalHeight'
                 variant='darkPurpleBackground'
                 iconSVG={<IconArrowUp />}
-                gap={20}
+                gap='14%'
                 iconRadius='12'
                 iconWidth={40}
                 iconHeight={40}
                 onClick={onClose}
-                fill
+                buttonFill
               >
                 <Text fontSize='middle'>
                   <FormattedMessage id='/' defaultMessage='Курсы' />
                 </Text>
               </Button>
             </Box>
-            <Box width={100} display={['flex', 'none']}>
+            <Box width={100} display={['flex', 'none']} flexShrink='0'>
               <Button
                 size='wideButtonSmallPaddingMediumHeight'
                 variant='darkPurpleBackground'
                 iconSVG={<IconArrowUp />}
-                gap={12}
+                gap='12%'
                 iconRadius='6'
                 iconWidth={28}
                 iconHeight={28}
                 onClick={onClose}
-                fill
+                buttonFill
               >
                 <Text fontSize='medium'>
                   <FormattedMessage id='/' defaultMessage='Курсы' />
@@ -84,6 +84,7 @@ export const Drawer: FC<DrawerProps> = ({ active, onClose }) => (
             </Box>
           </Row>
         </Column>
+        <Layout flexBasis={[20, 40]} flexShrink='0' />
       </Box>
     </motion.div>
   </Renderer>

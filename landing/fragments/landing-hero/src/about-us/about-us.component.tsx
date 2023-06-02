@@ -11,7 +11,7 @@ import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
 export const AboutUs = () => (
-  <Column width={[335, 1166]}>
+  <Column width={[335, 1166]} flexShrink='0'>
     <Box>
       <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.white'>
         <FormattedMessage

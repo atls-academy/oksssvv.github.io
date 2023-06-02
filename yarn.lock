@@ -841,6 +841,7 @@ __metadata:
     "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
     "@landing/process-fragment": "workspace:0.0.1"
+    "@landing/ticker-fragment": "workspace:0.0.1"
     "@ui/background": "workspace:0.0.1"
     react: "npm:18.2.0"
   peerDependencies:
@@ -892,6 +893,7 @@ __metadata:
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
     "@ui/divider": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
@@ -924,6 +926,23 @@ __metadata:
     react-intl: "npm:6.4.2"
     styled-system: "npm:5.1.5"
     typescript: "npm:4.6.2"
+  languageName: unknown
+  linkType: soft
+
+"@landing/ticker-fragment@workspace:0.0.1, @landing/ticker-fragment@workspace:landing/fragments/landing-ticker":
+  version: 0.0.0-use.local
+  resolution: "@landing/ticker-fragment@workspace:landing/fragments/landing-ticker"
+  dependencies:
+    "@emotion/react": "npm:11.11.0"
+    "@emotion/styled": "npm:11.11.0"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    react: "npm:18.2.0"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
@@ -1538,6 +1557,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/condition@workspace: 0.0.1, @ui/condition@workspace:ui/condition":
+  version: 0.0.0-use.local
+  resolution: "@ui/condition@workspace:ui/condition"
+  dependencies:
+    "@emotion/react": "npm:11.11.0"
+    "@emotion/styled": "npm:11.11.0"
+    framer-motion: "npm:10.12.12"
+    react: "npm:18.2.0"
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/divider@workspace:0.0.1, @ui/divider@workspace:ui/divider":
   version: 0.0.0-use.local
   resolution: "@ui/divider@workspace:ui/divider"
@@ -1751,7 +1785,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/utils@workspace:ui/utils"
   dependencies:
-    "@types/react-dom": "npm:18.2.4"
+    "@ui/condition": "workspace: 0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-laag: "npm:2.0.5"

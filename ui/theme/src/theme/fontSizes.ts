@@ -11,6 +11,7 @@ const fontSizes = {
   normal: 32,
   large: 40,
   great: 44,
+  greater: 46,
   solid: 56,
   massive: 64,
   big: 80,
