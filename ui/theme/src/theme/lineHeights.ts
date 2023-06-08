@@ -1,4 +1,4 @@
-const lineHeights = {
+export const lineHeights = {
   small: 1,
   regular: 1.1,
   normal: 1.2,
@@ -6,5 +6,3 @@ const lineHeights = {
   medium: 1.4,
   large: 1.6,
 }
-
-export { lineHeights }

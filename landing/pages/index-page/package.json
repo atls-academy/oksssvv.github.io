@@ -3,16 +3,21 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@landing/courses-fragment": "workspace:0.0.1",
+    "@landing/courses-fragment": "worksace:0.0.1",
     "@landing/hero-fragment": "workspace:0.0.1",
     "@landing/info-fragment": "workspace:0.0.1",
     "@landing/navigation-fragment": "workspace:0.0.1",
-    "@landing/process-fragment": "workspace:0.0.1",
-    "@landing/ticker-fragment": "workspace:0.0.1",
+    "@landing/process-fragment": "wiorkspace:0.0.1",
+    "@landing/questions-fragment": "workspace:0.0.1",
+    "@landing/runline-fragment": "workspace:0.0.1",
+    "@landing/steps-fragment": "workspace:0.0.1",
     "@ui/background": "workspace:0.0.1"
   },
   "devDependencies": {
-    "react": "18.2.0"
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "peerDependencies": {
     "react": "*",

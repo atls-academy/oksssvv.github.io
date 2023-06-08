@@ -1,33 +1,22 @@
-import React          from 'react'
+import React           from 'react'
 
-import { Box }        from '@ui/layout'
-import { Layout }     from '@ui/layout'
-import { Column }     from '@ui/layout'
+import { Box }         from '@ui/layout'
+import { Layout }      from '@ui/layout'
+import { Column }      from '@ui/layout'
 
-import { AboutUs }    from './about-us'
-import { SocialLink } from './social-links'
+import { AboutUs }     from './about-us'
+import { SocialLinks } from './social-links'
 
 export const Hero = () => (
-  <Box width='100%' flexDirection='column'>
-    <Layout flexBasis={[172, 415]} />
-    <Box width='100%' flexDirection={['column', 'row']} justifyContent='center'>
-      <Layout flexBasis={[0, 230]} flexShrink='0' />
-      <Box justifyContent='center'>
-        <Layout flexBasis={[20, 0]} flexShrink='0' />
-        <AboutUs />
-        <Layout flexBasis={[20, 0]} flexShrink='0' />
-      </Box>
-      <Layout flexBasis={[24, 434]} flexShrink='0' />
-      <Box justifyContent='center'>
-        <Layout flexBasis={[20, 0]} flexShrink='0' />
-        <Column>
-          <Layout flexBasis={['none', 297]} flexShrink='0' />
-          <SocialLink />
-        </Column>
-        <Layout flexBasis={[20, 0]} flexShrink='0' />
-      </Box>
+  <Column>
+    <Layout flexBasis={[398, 412]} />
+    <Box flexDirection={['column', 'row']} justifyContent='center' alignItems={['center', 'end']}>
+      <Layout flexBasis={[20, 230]} flexShrink='0' />
+      <AboutUs />
+      <Layout flexBasis={[24, 134]} flexShrink='0' />
+      <SocialLinks />
       <Layout flexBasis={[0, 40]} flexShrink='0' />
     </Box>
-    <Layout flexBasis={[0, 48]} />
-  </Box>
+    <Layout flexBasis={[20, 50]} />
+  </Column>
 )

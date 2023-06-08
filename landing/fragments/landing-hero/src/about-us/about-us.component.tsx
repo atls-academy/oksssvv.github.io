@@ -1,77 +1,37 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { Button }           from '@ui/button'
 import { Divider }          from '@ui/divider'
-import { IconScroll }       from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
-import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
+import { Space }            from '@ui/text'
 
 export const AboutUs = () => (
-  <Column width={[335, 1166]} flexShrink='0'>
-    <Box>
-      <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.white'>
+  <Column width={[335, 1460]} flexShrink='0'>
+    <Box display='inline' width={[335, 1166]}>
+      <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
+        <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
+      </Text>
+      <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
+        <FormattedMessage id='/' defaultMessage='для революции в' />
+      </Text>
+      <Space count={4} />
+      <Text color='white' fontSize={['major', 'big']} lineHeight={['medium', 'normal']}>
+        <FormattedMessage id='/' defaultMessage='IT' />
+      </Text>
+    </Box>
+    <Layout flexBasis={[24, 48]} />
+    <Divider weight={1} backgroundColor='white' />
+    <Layout flexBasis={[24, 48]} />
+    <Box width={[335, 640]}>
+      <Text color='white' fontSize={['medium', 'regular']} lineHeight='medium'>
         <FormattedMessage
-          id='landing_hero.teach_professionals'
-          defaultMessage='Обучаем профессионалов'
+          id='/'
+          defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи.'
         />
       </Text>
     </Box>
-    <Box flexWrap='wrap'>
-      <Box>
-        <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.indigo'>
-          <FormattedMessage id='landing_hero.for_revolution' defaultMessage='для революции' />
-        </Text>
-      </Box>
-      <Layout flexBasis={[30, 28]} />
-      <Box>
-        <Text fontSize={['large', 'huge']} lineHeight='normal' color='text.white'>
-          <FormattedMessage id='landing_hero.in' defaultMessage='в' />
-        </Text>
-      </Box>
-      <Layout flexBasis={[12, 28]} />
-      <Box
-        display={['none', 'flex']}
-        alignItems='center'
-        justifyContent='center'
-        width='148px'
-        height='115px'
-        backgroundColor='background.transparent'
-        borderRadius='24px'
-      >
-        <Text fontSize='big' lineHeight='normal' color='text.white'>
-          <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
-        </Text>
-      </Box>
-      <Box display={['flex', 'none']} alignItems='center'>
-        <Text fontSize='large' lineHeight='normal' color='text.white'>
-          <FormattedMessage id='landing_hero.it' defaultMessage='IT' />
-        </Text>
-      </Box>
-    </Box>
-    <Layout flexBasis={[24, 48]} />
-    <Box width={[335, 1160]}>
-      <Divider weight={1} backgroundColor='divider.transparent' />
-    </Box>
-    <Layout flexBasis={[24, 48]} />
-    <Row width={['100%', 1160]} flexShrink='0'>
-      <Box>
-        <Text lineHeight='medium' fontSize={['medium', 'regular']} color='text.white'>
-          <FormattedMessage
-            id='landing_hero.we_dont_teach_programming'
-            defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи.'
-          />
-        </Text>
-      </Box>
-      <Layout flexBasis={[0, 448]} flexShrink='0' />
-      <Box display={['none', 'flex']} alignItems='center'>
-        <Button size='bigPaddingMediumHeight' variant='transparentBorder'>
-          <IconScroll />
-        </Button>
-      </Box>
-    </Row>
   </Column>
 )

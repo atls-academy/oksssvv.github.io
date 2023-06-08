@@ -1,66 +1,83 @@
-import React          from 'react'
-import { useIntl }    from 'react-intl'
+import React                   from 'react'
+import { FormattedMessage }    from 'react-intl'
 
-import { Divider }    from '@ui/divider'
-import { ImageBlock } from '@ui/image'
-import { Layout }     from '@ui/layout'
-import { Column }     from '@ui/layout'
-import { Row }        from '@ui/layout'
-import { Box }        from '@ui/layout'
+import { SmallArrowLeftIcon }  from '@ui/icon'
+import { SmallArrowRightIcon } from '@ui/icon'
+import { PlugIcon }            from '@ui/icon'
+import { Layout }              from '@ui/layout'
+import { Box }                 from '@ui/layout'
+import { Column }              from '@ui/layout'
+import { Row }                 from '@ui/layout'
+import { Text }                from '@ui/text'
 
-import { Items }      from './items'
-
-export const Process = () => {
-  const intl = useIntl()
-  return (
-    <Row width='100%' justifyContent='center'>
-      <Layout flexBasis={[20, 80]} flexShrink='0' />
-      <Column width={[335, 1760]}>
-        <Layout flexBasis={[64, 160]} />
-        <Items
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '1' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в команду' })}
-        />
-        <Layout flexBasis={[28, 48]} />
-        <Divider weight={1} backgroundColor='divider.transparent' />
-        <Layout flexBasis={[28, 48]} />
-        <Items
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '2' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Создание среды' })}
-        />
-        <Layout flexBasis={[28, 48]} />
-        <Divider weight={1} backgroundColor='divider.transparent' />
-        <Layout flexBasis={[28, 48]} />
-        <Items
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '3' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Изучение технологий' })}
-        />
-        <Box
-          display={['none', 'flex']}
-          width={400}
-          position='absolute'
-          marginLeft='660px'
-          marginTop='320px'
+export const Process = () => (
+  <Row justifyContent='center'>
+    <Layout flexBasis={[0, 492]} flexShrink='0' />
+    <Column alignItems='center'>
+      <Layout flexBasis={[24, 160]} />
+      <Box justifyContent='center'>
+        <Text
+          color='white'
+          fontSize={['small', 'medium']}
+          lineHeight='small'
+          textTransform='uppercase'
         >
-          <ImageBlock src='/sphere-purple.png' />
+          <FormattedMessage id='/' defaultMessage='Процесс создания' />
+        </Text>
+      </Box>
+      <Layout flexBasis={[16, 24]} />
+      <Box width={[335, 850]}>
+        <Text color='white' fontSize={['enlarged', 'large']} textAlign='center'>
+          <FormattedMessage
+            id='/'
+            defaultMessage='Любой процесс перестаёт быть сложным, когда знаешь как он протекает'
+          />
+        </Text>
+      </Box>
+      <Layout flexBasis={[24, 50]} />
+      <Box width={[155, 960]} height={[323, 540]} backgroundColor='black'>
+        <PlugIcon width='100%' height='100%' />
+      </Box>
+      <Layout flexBasis={[26, 32]} />
+      <Box width={[335, 960]} height={[64]} alignItems='center'>
+        <Box
+          width={[40, 48]}
+          height={[60, 64]}
+          flexShrink='0'
+          justifyContent='center'
+          alignItems='center'
+        >
+          <SmallArrowLeftIcon />
         </Box>
-        <Layout flexBasis={[28, 48]} />
-        <Divider weight={1} backgroundColor='divider.transparent' />
-        <Layout flexBasis={[28, 48]} />
-        <Items
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '4' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Практика изученого' })}
-        />
-        <Layout flexBasis={[28, 48]} />
-        <Divider weight={1} backgroundColor='divider.transparent' />
-        <Layout flexBasis={[28, 48]} />
-        <Items
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в проект' })}
-        />
-        <Layout flexBasis={[56, 160]} />
-      </Column>
-      <Layout flexBasis={[20, 80]} flexShrink='0' />
-    </Row>
-  )
-}
+        <Layout flexBasis={[12, 16]} />
+        <Box width='100%' justifyContent='center'>
+          <Layout flexBasis={[28, 0]} flexShrink='0' />
+          <Text
+            color='white'
+            fontSize={['little', 'middle']}
+            lineHeight={['interim', 'large']}
+            textAlign='center'
+          >
+            <FormattedMessage
+              id='/'
+              defaultMessage='Формирование системы базовых фрагментов и компонентов'
+            />
+          </Text>
+          <Layout flexBasis={[28, 0]} flexShrink='0' />
+        </Box>
+        <Layout flexBasis={[12, 16]} />
+        <Box
+          width={[40, 48]}
+          height={[60, 64]}
+          flexShrink='0'
+          justifyContent='center'
+          alignItems='center'
+        >
+          <SmallArrowRightIcon />
+        </Box>
+      </Box>
+      <Layout flexBasis={[64, 160]} />
+    </Column>
+    <Layout flexBasis={[0, 492]} flexShrink='0' />
+  </Row>
+)

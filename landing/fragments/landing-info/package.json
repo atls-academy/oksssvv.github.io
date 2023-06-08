@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@ui/image": "workspace:0.0.1",
+    "@ui/icon": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1"
   },
@@ -13,7 +13,6 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*",
     "react-intl": "*"
   }
 }

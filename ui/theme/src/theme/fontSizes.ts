@@ -1,4 +1,4 @@
-const fontSizes = {
+export const fontSizes = {
   small: 11,
   little: 12,
   medium: 14,
@@ -17,5 +17,3 @@ const fontSizes = {
   big: 80,
   huge: 96,
 }
-
-export { fontSizes }

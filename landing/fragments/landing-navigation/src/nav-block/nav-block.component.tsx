@@ -9,11 +9,11 @@ import { NavBlockProps } from './nav-block.inteface'
 
 export const NavBlock: FC<NavBlockProps> = ({ title, link }) => (
   <Box
-    width={217}
-    height={55}
+    width={200}
+    height={18}
     justifyContent='center'
     alignItems='center'
-    borderBottom='transparentWhite'
+    borderBottom=''
     flexShrink='0'
   >
     <Link href={link}>
