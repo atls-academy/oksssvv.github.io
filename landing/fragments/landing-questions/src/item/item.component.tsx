@@ -9,7 +9,7 @@ import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
-export const Item = () => (
+export const Item = (divider) => (
   <Column width={[343, 1610]}>
     <Layout flexBasis={[16, 40]} flexShrink='0' />
     <Row alignItems='center'>
@@ -25,6 +25,6 @@ export const Item = () => (
       <Layout flexBasis={[26, 0]} flexShrink='0' />
     </Row>
     <Layout flexBasis={[16, 40]} flexShrink='0' />
-    <Divider weight={1} backgroundColor='rgba(0, 0, 0, 1)' />
+    <Divider weight={divider} backgroundColor='rgba(0, 0, 0, 1)' />
   </Column>
 )

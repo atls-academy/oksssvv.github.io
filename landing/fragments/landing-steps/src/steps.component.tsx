@@ -15,7 +15,7 @@ export const Steps = () => {
     <Row justifyContent='center'>
       <Layout flexBasis={[20, 80]} flexShrink='0' />
       <Column width={[335, 1760]}>
-        <Layout flexBasis={[64, 112]} />
+        <Layout flexBasis={[36, 112]} />
         <Item
           quantity={intl.formatMessage({ id: '/', defaultMessage: '1' })}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в команду' })}
@@ -43,7 +43,7 @@ export const Steps = () => {
         <Box display={['none', 'flex']} position='absolute' marginLeft='640px' marginTop='320px'>
           <PlugIcon width={400} height={400} />
         </Box>
-        <Layout flexBasis={[24, 112]} />
+        <Layout flexBasis={[0, 112]} />
       </Column>
       <Layout flexBasis={[20, 80]} flexShrink='0' />
     </Row>

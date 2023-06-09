@@ -15,7 +15,7 @@ export const Info = () => (
     <Column>
       <Layout flexBasis={[64, 160]} />
       <Column width={[335, 1460]}>
-        <Box display='inline'>
+        <Box display={['none', 'inline']}>
           <Text
             display='inline'
             color='text.white'
@@ -49,6 +49,23 @@ export const Info = () => (
             <PlugIcon width={40} height={40} />
           </Box>
         </Box>
+        <Box display={['inline', 'none']} width={320}>
+          <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+            <FormattedMessage
+              id='/'
+              defaultMessage='Digital становится всё более многолюдным, востребованность по направлениям при этом '
+            />
+          </Text>
+          <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+            <FormattedMessage
+              id='/'
+              defaultMessage='не снижается. Но специалистов, готовых нести ответсвенность'
+            />
+          </Text>
+          <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+            <FormattedMessage id='/' defaultMessage='за свои решения по-прежнему мало.' />
+          </Text>
+        </Box>
         <Layout flexBasis={[24, 40]} />
         <Box display='inline'>
           <Text
@@ -66,8 +83,11 @@ export const Info = () => (
             <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
               <FormattedMessage
                 id='/'
-                defaultMessage='Atlantis Academy формирует инженеров и архитекторов, а не программистов и дизайнеров'
+                defaultMessage='Atlantis Academy формирует инженеров и архитекторов,'
               />
+            </Text>
+            <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+              <FormattedMessage id='/' defaultMessage='а не программистов и дизайнеров.' />
             </Text>
           </Box>
           <Box display={['none', 'inline']} verticalAlign='sub'>

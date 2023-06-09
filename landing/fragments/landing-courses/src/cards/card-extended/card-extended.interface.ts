@@ -1,5 +1,6 @@
 export interface CardExtendedProps {
   title: string
   desc?: string
-  descMobile?: string
+  descMobile1?: string
+  descMobile2?: string
 }

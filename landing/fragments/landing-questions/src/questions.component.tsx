@@ -1,7 +1,6 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { Divider }          from '@ui/divider'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
@@ -29,12 +28,11 @@ export const Questions = () => (
         </Box>
       </Row>
       <Layout flexBasis={[30, 80]} />
-      <Divider weight={1} backgroundColor='rgba(0, 0, 0, 1)' />
-      <Item />
-      <Item />
-      <Item />
-      <Item />
-      <Item />
+      <Item divider={1} />
+      <Item divider={1} />
+      <Item divider={1} />
+      <Item divider={1} />
+      <Item divider={1} />
       <Item />
       <Layout flexBasis={[60, 0]} />
       <Box display={['flex', 'none']} flexShrink='0'>

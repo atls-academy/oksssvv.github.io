@@ -23,7 +23,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
       <Box display={['none', 'flex']} justifyContent='center'>
         <PlugIcon width={240} height={240} />
       </Box>
-      <Layout flexBasis={[20, 62]} />
+      <Layout flexBasis={[24, 62]} />
       <Box flexDirection={['row', 'column']} alignItems={['center', 'start']}>
         <Box>
           <Text fontSize={['solid', 'massive']} lineHeight='small'>

@@ -25,11 +25,21 @@ export const AboutUs = () => (
     <Layout flexBasis={[24, 48]} />
     <Divider weight={1} backgroundColor='white' />
     <Layout flexBasis={[24, 48]} />
-    <Box width={[335, 640]}>
+    <Box width={[335, 640]} display='inline'>
       <Text color='white' fontSize={['medium', 'regular']} lineHeight='medium'>
+        <FormattedMessage id='/' defaultMessage='Мы не учим программированию и дизайну,' />
+      </Text>
+      <Space count={2} />
+      <Text
+        color='white'
+        fontSize={['medium', 'regular']}
+        lineHeight='medium'
+        letterSpacing={['-0.008em', '0']}
+        display={['flex', 'inline']}
+      >
         <FormattedMessage
           id='/'
-          defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению, способному реализовывывать невозможные идеи.'
+          defaultMessage='мы учим мышлению, способному реализовывывать невозможные идеи.'
         />
       </Text>
     </Box>

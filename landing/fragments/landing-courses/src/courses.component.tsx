@@ -16,8 +16,8 @@ export const Courses = () => (
     <Column width={['335px', '1610px']} flexShrink='0'>
       <Layout flexBasis={[64, 160]} />
       <Row>
-        <Box flexShrink='0'>
-          <Text fontSize={['large', 'huge']}>
+        <Box width={[335, 868]} flexShrink='0'>
+          <Text fontSize={['large', 'huge']} letterSpacing='-0.009em'>
             <FormattedMessage id='/' defaultMessage='Курсы и материалы' />
           </Text>
         </Box>
@@ -50,9 +50,9 @@ export const Courses = () => (
           </Text>
         </Box>
       </Box>
-      <Layout flexBasis={[40, 80]} />
+      <Layout flexBasis={[56, 80]} />
       <Cards />
-      <Layout flexBasis={[0, 160]} />
+      <Layout flexBasis={[12, 160]} />
       <Box display={['flex', 'none']} alignItems='center'>
         <Text fontSize='middle' lineHeight='regular'>
           <FormattedMessage id='/' defaultMessage='Все материалы' />

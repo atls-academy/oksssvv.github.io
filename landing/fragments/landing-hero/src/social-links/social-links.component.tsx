@@ -8,20 +8,38 @@ import { Box }          from '@ui/layout'
 import { Link }         from '@ui/link'
 
 export const SocialLinks = () => (
-  <Box flexDirection={['row', 'column']} flexShrink='0'>
-    <Box width={[103, 56]} height={[44, 56]} justifyContent='center' alignItems='center'>
+  <Box width={[335, 56]} flexDirection={['row', 'column']} flexShrink='0'>
+    <Box
+      width={[103, 56]}
+      height={[44, 56]}
+      justifyContent='center'
+      alignItems='center'
+      flexShrink='0'
+    >
       <Link href='/'>
         <TelegramIcon />
       </Link>
     </Box>
     <Layout flexBasis={[12, 16]} flexShrink='0' />
-    <Box width={[103, 56]} height={[44, 56]} justifyContent='center' alignItems='center'>
+    <Box
+      width={[103, 56]}
+      height={[44, 56]}
+      justifyContent='center'
+      alignItems='center'
+      flexShrink='0'
+    >
       <Link href='/'>
         <GitHubIcon />
       </Link>
     </Box>
     <Layout flexBasis={[12, 16]} flexShrink='0' />
-    <Box width={[103, 56]} height={[44, 56]} justifyContent='center' alignItems='center'>
+    <Box
+      width={[103, 56]}
+      height={[44, 56]}
+      justifyContent='center'
+      alignItems='center'
+      flexShrink='0'
+    >
       <Link href='/'>
         <EmailIcon />
       </Link>
