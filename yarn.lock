@@ -968,9 +968,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@landing/entrypoint-renderer@workspace:landing/entrypoint/renderer":
+"@landing/entrypoints-renderer@workspace:landing/entrypoints/renderer":
   version: 0.0.0-use.local
-  resolution: "@landing/entrypoint-renderer@workspace:landing/entrypoint/renderer"
+  resolution: "@landing/entrypoints-renderer@workspace:landing/entrypoints/renderer"
   dependencies:
     "@emotion/css": "npm:11.11.0"
     "@emotion/react": "npm:11.11.0"
