@@ -16,13 +16,13 @@ export const Courses = () => (
     <Column width={['335px', '1610px']} flexShrink='0'>
       <Layout flexBasis={[64, 160]} />
       <Row>
-        <Box>
-          <Text fontSize={['large', 'huge']} letterSpacing='-0.01em'>
+        <Box flexShrink='0'>
+          <Text fontSize={['large', 'huge']}>
             <FormattedMessage id='/' defaultMessage='Курсы и материалы' />
           </Text>
         </Box>
         <Layout flexBasis={[596]} />
-        <Box alignItems='center' display={['none', 'flex']}>
+        <Box alignItems='center' display={['none', 'flex']} flexShrink='0'>
           <Text fontSize={['middle', 'regular']}>
             <FormattedMessage id='/' defaultMessage='Все материалы' />
           </Text>
