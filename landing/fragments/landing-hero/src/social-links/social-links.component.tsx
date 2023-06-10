@@ -5,7 +5,7 @@ import { GitHubIcon }   from '@ui/icon'
 import { EmailIcon }    from '@ui/icon'
 import { Layout }       from '@ui/layout'
 import { Box }          from '@ui/layout'
-import { Link }         from '@ui/link'
+import { NextLink }     from '@ui/link'
 
 export const SocialLinks = () => (
   <Box width={[335, 56]} flexDirection={['row', 'column']} flexShrink='0'>
@@ -16,9 +16,9 @@ export const SocialLinks = () => (
       alignItems='center'
       flexShrink='0'
     >
-      <Link href='/'>
+      <NextLink path='/'>
         <TelegramIcon />
-      </Link>
+      </NextLink>
     </Box>
     <Layout flexBasis={[12, 16]} flexShrink='0' />
     <Box
@@ -28,9 +28,9 @@ export const SocialLinks = () => (
       alignItems='center'
       flexShrink='0'
     >
-      <Link href='/'>
+      <NextLink path='/'>
         <GitHubIcon />
-      </Link>
+      </NextLink>
     </Box>
     <Layout flexBasis={[12, 16]} flexShrink='0' />
     <Box
@@ -40,9 +40,9 @@ export const SocialLinks = () => (
       alignItems='center'
       flexShrink='0'
     >
-      <Link href='/'>
+      <NextLink path='/'>
         <EmailIcon />
-      </Link>
+      </NextLink>
     </Box>
   </Box>
 )

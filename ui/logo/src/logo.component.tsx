@@ -1,12 +1,12 @@
-import React    from 'react'
-import { FC }   from 'react'
+import React        from 'react'
+import { FC }       from 'react'
 
-import { Link } from '@ui/link'
+import { NextLink } from '@ui/link'
 
-import { Icon } from './icon.component'
+import { Icon }     from './icon.component'
 
 export const Logo: FC = () => (
-  <Link href='/'>
+  <NextLink path='/'>
     <Icon />
-  </Link>
+  </NextLink>
 )
