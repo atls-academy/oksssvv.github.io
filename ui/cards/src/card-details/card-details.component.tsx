@@ -9,7 +9,7 @@ import { Text }             from '@ui/text'
 
 import { CardDetailsProps } from './card-details.interface'
 
-export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
+export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description }) => (
   <Box width={[335, 410]} height={[192, 660]}>
     <Layout flexBasis={[16, 32]} flexShrink='0' />
     <Column>
@@ -33,7 +33,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, desc }) => (
         <Layout flexBasis={[10, 8]} />
         <Box width={[125, 188]}>
           <Text fontSize={['little', 'medium']} lineHeight={['interim', 'large']}>
-            {desc}
+            {description}
           </Text>
         </Box>
       </Box>

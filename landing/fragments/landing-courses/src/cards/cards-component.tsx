@@ -2,16 +2,15 @@ import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useIntl }          from 'react-intl'
 
+import { CardDetails }      from '@ui/cards'
+import { CardExtended }     from '@ui/cards'
+import { CardShort }        from '@ui/cards'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Swiper }           from '@ui/slider'
 import { SwiperSlide }      from '@ui/slider'
 import { Text }             from '@ui/text'
-
-import { CardDetails }      from './card-details'
-import { CardExtended }     from './card-extended'
-import { CardShort }        from './card-short'
 
 const Cards = () => {
   const intl = useIntl()
@@ -20,17 +19,17 @@ const Cards = () => {
       <Column order={[1, 0]} width={[335, 1160]}>
         <CardExtended
           title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
-          desc={intl.formatMessage({
+          description={intl.formatMessage({
             id: '/',
             defaultMessage:
               'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
           })}
-          descMobile1={intl.formatMessage({
+          descriptionMobileFirst={intl.formatMessage({
             id: '/',
             defaultMessage:
               'Вы изучите фундаментальные знания в ИТ и прокачаетесь в программирование.',
           })}
-          descMobile2={intl.formatMessage({
+          descriptionMobileSecond={intl.formatMessage({
             id: '/',
             defaultMessage: 'Получите востребованную профессию и возможность открыть бизнес.',
           })}
@@ -38,17 +37,17 @@ const Cards = () => {
         <Layout flexBasis={[12, 40]} />
         <CardExtended
           title={intl.formatMessage({ id: '/', defaultMessage: 'Основы разработки' })}
-          desc={intl.formatMessage({
+          description={intl.formatMessage({
             id: '/',
             defaultMessage:
               'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
           })}
-          descMobile1={intl.formatMessage({
+          descriptionMobileFirst={intl.formatMessage({
             id: '/',
             defaultMessage:
               'Вы изучите фундаментальные знания в ИТ и прокачаетесь в программирование.',
           })}
-          descMobile2={intl.formatMessage({
+          descriptionMobileSecond={intl.formatMessage({
             id: '/',
             defaultMessage: 'Получите востребованную профессию и возможность открыть бизнес.',
           })}
@@ -95,7 +94,7 @@ const Cards = () => {
               'Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.',
           })}
           quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
-          desc={intl.formatMessage({
+          description={intl.formatMessage({
             id: '/',
             defaultMessage: 'студентов обучаются в одной практической группе',
           })}

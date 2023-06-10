@@ -9,7 +9,7 @@ import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
 
-import { NavBlock }         from './nav-block'
+import { NavigationItem }   from './navigation-item'
 
 export const Navigation = () => {
   const intl = useIntl()
@@ -22,13 +22,22 @@ export const Navigation = () => {
           <Logo />
         </Box>
         <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
-          <NavBlock title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })} link='/' />
+          <NavigationItem
+            title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })}
+            link='/'
+          />
           <Layout flexBasis={20} flexShrink='0' />
-          <NavBlock title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} link='/' />
+          <NavigationItem
+            title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })}
+            link='/'
+          />
           <Layout flexBasis={20} flexShrink='0' />
-          <NavBlock title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })} link='/' />
+          <NavigationItem
+            title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+            link='/'
+          />
           <Layout flexBasis={20} flexShrink='0' />
-          <NavBlock title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} link='/' />
+          <NavigationItem title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} link='/' />
         </Row>
         <Box display={['none', 'flex']} alignItems='center' flexShrink='0'>
           <Text color='white' fontSize='standard' lineHeight='small'>
