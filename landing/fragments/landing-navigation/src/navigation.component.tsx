@@ -9,7 +9,7 @@ import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
 
-import { NavigationItem }   from './navigation-item'
+import { Item }   from './item'
 
 export const Navigation = () => {
   const intl = useIntl()
@@ -22,22 +22,22 @@ export const Navigation = () => {
           <Logo />
         </Box>
         <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
-          <NavigationItem
+          <Item
             title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })}
-            link='/'
+            path='/'
           />
           <Layout flexBasis={20} flexShrink='0' />
-          <NavigationItem
+          <Item
             title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })}
-            link='/'
+            path='/'
           />
           <Layout flexBasis={20} flexShrink='0' />
-          <NavigationItem
+          <Item
             title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
-            link='/'
+            path='/'
           />
           <Layout flexBasis={20} flexShrink='0' />
-          <NavigationItem title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} link='/' />
+          <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
         </Row>
         <Box display={['none', 'flex']} alignItems='center' flexShrink='0'>
           <Text color='white' fontSize='standard' lineHeight='small'>

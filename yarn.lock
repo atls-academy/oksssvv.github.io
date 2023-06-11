@@ -954,7 +954,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/courses-fragment@workspace:landing/fragments/landing-courses"
   dependencies:
-    "@ui/cards": "workspace:0.0.1"
+    "@ui/card": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -1822,9 +1822,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/cards@workspace:0.0.1, @ui/cards@workspace:ui/cards":
+"@ui/card@workspace:0.0.1, @ui/card@workspace:ui/card":
   version: 0.0.0-use.local
-  resolution: "@ui/cards@workspace:ui/cards"
+  resolution: "@ui/card@workspace:ui/card"
   dependencies:
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"

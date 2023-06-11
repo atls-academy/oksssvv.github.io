@@ -5,11 +5,11 @@ import { Box }                 from '@ui/layout'
 import { NextLink }            from '@ui/link'
 import { Text }                from '@ui/text'
 
-import { NavigationItemProps } from './navigation-item.inteface'
+import { ItemProps } from './item.inteface'
 
-export const NavigationItem: FC<NavigationItemProps> = ({ title, link }) => (
+export const Item: FC<ItemProps> = ({ title, path }) => (
   <Box width={200} height={18} justifyContent='center' alignItems='center' flexShrink='0'>
-    <NextLink path={link}>
+    <NextLink path={path}>
       <Text fontSize='standard' lineHeight='small' color='text.white'>
         {title}
       </Text>
