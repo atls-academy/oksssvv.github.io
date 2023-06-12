@@ -1,11 +1,11 @@
-import React                   from 'react'
-import { FC }                  from 'react'
+import React         from 'react'
+import { FC }        from 'react'
 
-import { Box }                 from '@ui/layout'
-import { NextLink }            from '@ui/link'
-import { Text }                from '@ui/text'
+import { Box }       from '@ui/layout'
+import { NextLink }  from '@ui/link'
+import { Text }      from '@ui/text'
 
-import { ItemProps } from './item.inteface'
+import { ItemProps } from './item.interface'
 
 export const Item: FC<ItemProps> = ({ title, path }) => (
   <Box width={200} height={18} justifyContent='center' alignItems='center' flexShrink='0'>

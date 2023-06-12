@@ -9,7 +9,7 @@ import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
 
-import { Item }   from './item'
+import { Item }             from './item'
 
 export const Navigation = () => {
   const intl = useIntl()
@@ -22,20 +22,11 @@ export const Navigation = () => {
           <Logo />
         </Box>
         <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
-          <Item
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })}
-            path='/'
-          />
+          <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })} path='/' />
           <Layout flexBasis={20} flexShrink='0' />
-          <Item
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })}
-            path='/'
-          />
+          <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} path='/' />
           <Layout flexBasis={20} flexShrink='0' />
-          <Item
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
-            path='/'
-          />
+          <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })} path='/' />
           <Layout flexBasis={20} flexShrink='0' />
           <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
         </Row>
