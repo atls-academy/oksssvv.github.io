@@ -6,7 +6,7 @@ import { Column }            from '@ui/layout'
 import { Layout }            from '@ui/layout'
 import { Text }              from '@ui/text'
 
-import { CardExtendedProps } from './card-extended.interface'
+import { CardExtendedProps } from './card-extended.interfaces'
 
 export const CardExtended: FC<CardExtendedProps> = ({
   title,

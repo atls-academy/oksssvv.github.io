@@ -7,7 +7,7 @@ import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import { CardDetailsProps } from './card-details.interface'
+import { CardDetailsProps } from './card-details.interfaces'
 
 export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description }) => (
   <Box width={[335, 410]} height={[192, 660]}>

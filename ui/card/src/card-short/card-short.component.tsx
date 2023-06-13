@@ -6,7 +6,7 @@ import { Column }         from '@ui/layout'
 import { Layout }         from '@ui/layout'
 import { Text }           from '@ui/text'
 
-import { CardShortProps } from './card-short.interface'
+import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ title }) => (
   <Box width={[228, 485]} borderRadius={['medium', 'big']} flexShrink='0' overflow='hidden'>

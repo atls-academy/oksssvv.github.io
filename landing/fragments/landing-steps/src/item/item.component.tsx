@@ -9,7 +9,7 @@ import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import { ItemProps }        from './item.interface'
+import { ItemProps }        from './item.interfaces'
 
 export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
   <Column>

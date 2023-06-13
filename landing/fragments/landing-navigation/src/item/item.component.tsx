@@ -5,7 +5,7 @@ import { Box }       from '@ui/layout'
 import { NextLink }  from '@ui/link'
 import { Text }      from '@ui/text'
 
-import { ItemProps } from './item.interface'
+import { ItemProps } from './item.interfaces'
 
 export const Item: FC<ItemProps> = ({ title, path }) => (
   <Box width={200} height={18} justifyContent='center' alignItems='center' flexShrink='0'>

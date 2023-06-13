@@ -5,7 +5,7 @@ import { Box }       from '@ui/layout'
 import { Text }      from '@ui/text'
 
 import { Delimiter } from './delimiter'
-import { LineProps } from './line.interface'
+import { LineProps } from './line.interfaces'
 
 export const Line: FC<LineProps> = ({ technology, font }) =>
   technology.map((item) => (
