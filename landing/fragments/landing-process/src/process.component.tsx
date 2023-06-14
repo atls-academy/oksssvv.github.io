@@ -1,7 +1,7 @@
 import React                   from 'react'
 import { FormattedMessage }    from 'react-intl'
 
-import { Button }               from '@ui/button'
+import { Button }              from '@ui/button'
 import { SmallArrowLeftIcon }  from '@ui/icon'
 import { SmallArrowRightIcon } from '@ui/icon'
 import { PlugIcon }            from '@ui/icon'

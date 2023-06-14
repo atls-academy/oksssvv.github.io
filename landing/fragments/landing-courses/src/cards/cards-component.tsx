@@ -20,6 +20,8 @@ const Cards = () => {
     <Box flexDirection={['column', 'row']}>
       <Column order={[1, 0]} width={[335, 1160]}>
         <CardExtended
+          category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+          gap={[148, 214]}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
           description={intl.formatMessage({
             id: '/',
@@ -36,8 +38,10 @@ const Cards = () => {
             defaultMessage: 'Получите востребованную профессию и возможность открыть бизнес.',
           })}
         />
-        <Layout flexBasis={[12, 40]} />
+        <Layout flexBasis={[20, 40]} />
         <CardExtended
+          category={intl.formatMessage({ id: '/', defaultMessage: 'Мини-курс' })}
+          gap={[93, 54]}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Основы разработки' })}
           description={intl.formatMessage({
             id: '/',
@@ -54,16 +58,20 @@ const Cards = () => {
             defaultMessage: 'Получите востребованную профессию и возможность открыть бизнес.',
           })}
         />
-        <Layout flexBasis={[0, 20]} />
+        <Layout flexBasis={[20, 40]} />
         <Box display={['flex', 'none']}>
           <Swiper
-            spaceBetween={0}
-            slidesPerView={1.5}
+            spaceBetween={12}
+            slidesPerView={1.23}
             slidesOffsetAfter={-10}
             className='CardSlider'
           >
             <SwiperSlide>
               <CardShort
+                category={intl.formatMessage({
+                  id: '/',
+                  defaultMessage: 'Учебный материал',
+                })}
                 title={intl.formatMessage({
                   id: '/',
                   defaultMessage: 'Как использовать библиотеки',
@@ -72,6 +80,10 @@ const Cards = () => {
             </SwiperSlide>
             <SwiperSlide>
               <CardShort
+                category={intl.formatMessage({
+                  id: '/',
+                  defaultMessage: 'Учебный материал',
+                })}
                 title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
               />
             </SwiperSlide>
@@ -79,15 +91,23 @@ const Cards = () => {
         </Box>
         <Box display={['none', 'flex']}>
           <CardShort
+            category={intl.formatMessage({
+              id: '/',
+              defaultMessage: 'Учебный материал',
+            })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
           />
           <Layout flexBasis={40} flexShrink='0' />
           <CardShort
+            category={intl.formatMessage({
+              id: '/',
+              defaultMessage: 'Учебный материал',
+            })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
           />
         </Box>
       </Column>
-      <Layout flexBasis={[0, 72]} flexShrink='0' />
+      <Layout flexBasis={[0, 40]} flexShrink='0' />
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({

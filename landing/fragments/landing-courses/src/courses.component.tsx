@@ -63,9 +63,9 @@ export const Courses = () => (
           </Text>
         </Box>
       </Box>
-      <Layout flexBasis={[56, 80]} />
+      <Layout flexBasis={[40, 80]} />
       <Cards />
-      <Layout flexBasis={[12, 160]} />
+      <Layout flexBasis={[20, 160]} />
       <Box width={254} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
