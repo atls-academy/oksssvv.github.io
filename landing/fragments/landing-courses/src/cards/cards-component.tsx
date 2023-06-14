@@ -2,9 +2,11 @@ import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useIntl }          from 'react-intl'
 
+import { Button }           from '@ui/button'
 import { CardDetails }      from '@ui/card'
 import { CardExtended }     from '@ui/card'
 import { CardShort }        from '@ui/card'
+import { ScrollIcon }       from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
@@ -100,10 +102,21 @@ const Cards = () => {
           })}
         />
         <Layout flexBasis={[0, 20]} />
-        <Box display={['none', 'flex']} width={410} alignItems='center'>
-          <Text fontSize='regular' lineHeight='regular'>
-            <FormattedMessage id='/' defaultMessage='Процесс поступления' />
-          </Text>
+        <Box width={[410]} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+          <Button
+            variant='primary'
+            size='bigSizeNormalPadding'
+            gap='29%'
+            icon={<ScrollIcon />}
+            containerWidth={48}
+            containerHeight={48}
+            containerColor='rgba(255, 255, 255, 1)'
+            fill
+          >
+            <Text fontSize='regular' lineHeight='regular'>
+              <FormattedMessage id='/' defaultMessage='Процесс поступления' />
+            </Text>
+          </Button>
         </Box>
         <Layout flexBasis={[40, 0]} />
       </Column>

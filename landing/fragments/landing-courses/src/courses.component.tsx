@@ -1,7 +1,9 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
+import { Button }            from '@ui/button'
 import { Divider }          from '@ui/divider'
+import { ArrowRightIcon }   from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
@@ -22,10 +24,21 @@ export const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[596]} />
-        <Box alignItems='center' display={['none', 'flex']} flexShrink='0'>
-          <Text fontSize={['middle', 'regular']}>
-            <FormattedMessage id='/' defaultMessage='Все материалы' />
-          </Text>
+        <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
+          <Button
+            variant='primary'
+            size='bigSizeNormalPadding'
+            gap='9%'
+            icon={<ArrowRightIcon />}
+            containerWidth={48}
+            containerHeight={48}
+            containerColor='rgba(255, 255, 255, 1)'
+            fill
+          >
+            <Text fontSize={['middle', 'regular']}>
+              <FormattedMessage id='/' defaultMessage='Все материалы' />
+            </Text>
+          </Button>
         </Box>
       </Row>
       <Layout flexBasis={[40, 80]} />
@@ -53,10 +66,21 @@ export const Courses = () => (
       <Layout flexBasis={[56, 80]} />
       <Cards />
       <Layout flexBasis={[12, 160]} />
-      <Box display={['flex', 'none']} alignItems='center'>
-        <Text fontSize='middle' lineHeight='regular'>
-          <FormattedMessage id='/' defaultMessage='Все материалы' />
-        </Text>
+      <Box width={254} display={['flex', 'none']} flexShrink='0'>
+        <Button
+          variant='primary'
+          size='bigSizeNormalPadding'
+          gap='9%'
+          icon={<ArrowRightIcon />}
+          containerWidth={48}
+          containerHeight={48}
+          containerColor='rgba(255, 255, 255, 1)'
+          fill
+        >
+          <Text fontSize='regular' lineHeight='regular'>
+            <FormattedMessage id='/' defaultMessage='Все материалы' />
+          </Text>
+        </Button>
       </Box>
       <Layout flexBasis={[64, 0]} />
     </Column>

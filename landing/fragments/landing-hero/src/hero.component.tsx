@@ -9,7 +9,7 @@ import { SocialLinks } from './social-links'
 
 export const Hero = () => (
   <Column>
-    <Layout flexBasis={[398, 412]} />
+    <Layout flexBasis={[80, 403]} />
     <Box flexDirection={['column', 'row']} justifyContent='center' alignItems={['center', 'end']}>
       <Layout flexBasis={[20, 230]} flexShrink='0' />
       <AboutUs />
