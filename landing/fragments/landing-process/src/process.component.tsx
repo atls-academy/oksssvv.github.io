@@ -1,6 +1,7 @@
 import React                   from 'react'
 import { FormattedMessage }    from 'react-intl'
 
+import { Button }               from '@ui/button'
 import { SmallArrowLeftIcon }  from '@ui/icon'
 import { SmallArrowRightIcon } from '@ui/icon'
 import { PlugIcon }            from '@ui/icon'
@@ -47,7 +48,9 @@ export const Process = () => (
           justifyContent='center'
           alignItems='center'
         >
-          <SmallArrowLeftIcon />
+          <Button size='smallSize'>
+            <SmallArrowLeftIcon />
+          </Button>
         </Box>
         <Layout flexBasis={[12, 16]} />
         <Box width='100%' justifyContent='center'>
@@ -73,7 +76,9 @@ export const Process = () => (
           justifyContent='center'
           alignItems='center'
         >
-          <SmallArrowRightIcon />
+          <Button size='smallSize'>
+            <SmallArrowRightIcon />
+          </Button>
         </Box>
       </Box>
       <Layout flexBasis={[64, 160]} />

@@ -1,7 +1,7 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { Button }            from '@ui/button'
+import { Button }           from '@ui/button'
 import { Divider }          from '@ui/divider'
 import { ArrowRightIcon }   from '@ui/icon'
 import { Box }              from '@ui/layout'
