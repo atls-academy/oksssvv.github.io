@@ -1,0 +1,26 @@
+{
+  "name": "@ui/button",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@atls-ui-parts/button": "0.0.10",
+    "@emotion/is-prop-valid": "1.2.1",
+    "@ui/layout": "workspace:0.0.1"
+  },
+  "devDependencies": {
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
+    "@types/react": "18.2.6",
+    "@types/styled-system": "5.1.15",
+    "react": "18.2.0",
+    "styled-system": "5.1.5",
+    "styled-tools": "1.7.2"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "*",
+    "react": "*",
+    "styled-system": "*",
+    "styled-tools": "*"
+  }
+}

@@ -30,10 +30,10 @@ export const Navigation = () => {
           <Layout flexBasis={20} flexShrink='0' />
           <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
         </Row>
-        <Box display={['none', 'flex']} alignItems='center' flexShrink='0'>
-          <Text color='white' fontSize='standard' lineHeight='small'>
-            <FormattedMessage id='/' defaultMessage='Курсы' />
-          </Text>
+        <Box  display={['none', 'flex']} alignItems='center' flexShrink='0'>
+            <Text color='white' fontSize='regular' lineHeight='small'>
+              <FormattedMessage id='/' defaultMessage='Курсы' />
+            </Text>
         </Box>
         <Layout flexBasis={[0, 40]} flexShrink='0' />
       </Row>
