@@ -16,7 +16,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
     <Layout flexBasis={[28, 48]} />
     <Row>
       <Column justifyContent='center' alignItems={['start', 'center']}>
-        <Layout flexBasis={5} />
+        <Layout flexBasis={[5, 20]} />
         <Text fontSize={['standart', 'enlarged']} color='white'>
           {quantity}
         </Text>
