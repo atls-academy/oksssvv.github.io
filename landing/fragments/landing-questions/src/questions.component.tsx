@@ -7,7 +7,7 @@ import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import { Item }             from './item'
+import { Items }            from './items'
 
 export const Questions = () => (
   <Row justifyContent='center'>
@@ -28,12 +28,7 @@ export const Questions = () => (
         </Box>
       </Row>
       <Layout flexBasis={[30, 80]} />
-      <Item divider={1} />
-      <Item divider={1} />
-      <Item divider={1} />
-      <Item divider={1} />
-      <Item divider={1} />
-      <Item />
+      <Items />
       <Layout flexBasis={[60, 0]} />
       <Box display={['flex', 'none']} flexShrink='0'>
         <Text fontSize='regular'>

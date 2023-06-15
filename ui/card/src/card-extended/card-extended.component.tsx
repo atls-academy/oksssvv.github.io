@@ -29,12 +29,9 @@ export const CardExtended: FC<CardExtendedProps> = ({
         </Text>
       </Box>
       <Box display={['flex', 'none']}>
-        <Text fontSize='medium' lineHeight='large'>
+        <Text display='block' fontSize='medium' lineHeight='large'>
           {descriptionMobileFirst}
-        </Text>
-      </Box>
-      <Box display={['flex', 'none']}>
-        <Text fontSize='medium' lineHeight='large'>
+          <br />
           {descriptionMobileSecond}
         </Text>
       </Box>
