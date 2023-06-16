@@ -1,4 +1,4 @@
-const radii = {
+export const radii = {
   micro: 6,
   little: 8,
   small: 10,
@@ -7,5 +7,3 @@ const radii = {
   large: 20,
   big: 24,
 }
-
-export { radii }

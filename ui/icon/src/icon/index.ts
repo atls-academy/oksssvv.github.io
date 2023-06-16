@@ -1,0 +1,7 @@
+export * from './EmailIcon'
+export * from './GitHubIcon'
+export * from './PlugIcon'
+export * from './SmallArrowLeftIcon'
+export * from './SmallArrowRightIcon'
+export * from './SmallPlusIcon'
+export * from './TelegramIcon'

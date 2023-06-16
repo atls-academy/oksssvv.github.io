@@ -1,15 +1,12 @@
-import React         from 'react'
-import { FC }        from 'react'
+import React        from 'react'
+import { FC }       from 'react'
 
-import { NextLink }  from '@ui/link'
+import { NextLink } from '@ui/link'
 
-import { Icon }      from './icon.component'
-import { LogoProps } from './logo.interfaces'
+import { Icon }     from './icon.component'
 
-const Logo: FC<LogoProps> = ({ color }) => (
+export const Logo: FC = () => (
   <NextLink path='/'>
-    <Icon color={color} />
+    <Icon />
   </NextLink>
 )
-
-export { Logo }

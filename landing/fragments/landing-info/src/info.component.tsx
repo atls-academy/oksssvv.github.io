@@ -1,128 +1,103 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
+import { PlugIcon }         from '@ui/icon'
 import { Box }              from '@ui/layout'
+import { Row }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
-import { Sphere }           from './sphere'
-
 export const Info = () => (
-  <Box width='100%' flexDirection='column'>
-    <Layout flexBasis={[84, 160]} flexShrink='0' />
-    <Box justifyContent='center'>
-      <Layout flexBasis={[20, 230]} flexShrink='0' />
-      <Column>
-        <Box width={['335px', '1460px']} flexShrink='0' display='inline'>
-          <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
-            <FormattedMessage id='landing_info.digital' defaultMessage='Digital' />
-          </Text>
-          <Space count={3} />
+  <Row justifyContent='center'>
+    <Layout flexBasis={[20, 230]} flexShrink='0' />
+    <Column>
+      <Layout flexBasis={[64, 160]} />
+      <Column width={[335, 1460]}>
+        <Box display={['none', 'inline']}>
           <Text
             display='inline'
             color='text.white'
-            fontSize={['major', 'great']}
+            fontSize={['regular', 'great']}
             lineHeight='medium'
           >
             <FormattedMessage
-              id='landing_info.getting_more_crowded'
-              defaultMessage='становится всё более многолюдным, востребованность по направлениям при этом не снижается'
+              id='/'
+              defaultMessage='Digital становится всё более многолюдным, востребованность по направлениям при этом не снижается'
             />
           </Text>
-          <Space count={3} />
-          <Sphere />
+          <Box display={['none', 'inline']} verticalAlign='sub'>
+            <Space count={8} />
+            <PlugIcon width={40} height={40} />
+            <Space count={5} />
+          </Box>
           <Space count={3} />
           <Text
             display='inline'
             color='text.white'
-            fontSize={['major', 'great']}
-            lineHeight='medium'
-          >
-            <FormattedMessage id='landing_info.but' defaultMessage=' Но, ' />
-          </Text>
-          <Space count={3} />
-          <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
-            <FormattedMessage id='landing_info.specialists' defaultMessage='специалистов' />
-          </Text>
-          <Text
-            display='inline'
-            color='text.white'
-            fontSize={['major', 'great']}
+            fontSize={['regular', 'great']}
             lineHeight='medium'
           >
             <FormattedMessage
-              id='landing_info.ready_take_responsibility'
-              defaultMessage=', готовых нести ответсвенность за свои решения по прежднему мало'
+              id='/'
+              defaultMessage='Но специалистов, готовых нести ответсвенность за свои решения по прежднему мало'
             />
           </Text>
-          <Space count={3} />
-          <Sphere />
+          <Box display={['none', 'inline']} verticalAlign='sub'>
+            <Space count={8} />
+            <PlugIcon width={40} height={40} />
+          </Box>
         </Box>
-        <Layout flexBasis={[24, 40]} flexShrink='0' />
-        <Box width={['335px', '1460px']} display='inline'>
+        <Box display={['inline', 'none']} width={320}>
+          <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+            <FormattedMessage
+              id='/'
+              defaultMessage='Digital становится всё более многолюдным, востребованность по направлениям при этом '
+            />
+          </Text>
+          <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+            <FormattedMessage
+              id='/'
+              defaultMessage='не снижается. Но специалистов, готовых нести ответсвенность'
+            />
+          </Text>
+          <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+            <FormattedMessage id='/' defaultMessage='за свои решения по-прежнему мало.' />
+          </Text>
+        </Box>
+        <Layout flexBasis={[24, 40]} />
+        <Box display='inline'>
           <Text
-            color={['text.white', 'text.indigo']}
-            fontSize={['major', 'great']}
+            display={['none', 'inline']}
+            color='text.white'
+            fontSize={['regular', 'great']}
             lineHeight='medium'
           >
             <FormattedMessage
-              id='landing_info.atlantis_academy'
-              defaultMessage='Atlantis Academy'
+              id='/'
+              defaultMessage='Atlantis Academy формирует инженеров и архитекторов, а не программистов и дизайнеров'
             />
           </Text>
-          <Space count={3} />
-          <Box display={['none', 'inline']}>
-            <Text display='inline' color='text.white' fontSize='great' lineHeight='medium'>
+          <Box display={['inline', 'none']}>
+            <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
               <FormattedMessage
-                id='landing_info.teaches_and_shapes'
-                defaultMessage='обучает и формирует'
+                id='/'
+                defaultMessage='Atlantis Academy формирует инженеров и архитекторов,'
               />
             </Text>
-          </Box>
-          <Space count={3} />
-          <Box display={['inline', 'none']}>
-            <Text display='inline' color='text.white' fontSize='major' lineHeight='medium'>
-              <FormattedMessage id='landing_info.shapes' defaultMessage='формирует' />
+            <Text color='text.white' fontSize={['regular', 'great']} lineHeight='medium'>
+              <FormattedMessage id='/' defaultMessage='а не программистов и дизайнеров.' />
             </Text>
-            <Space count={3} />
           </Box>
-          <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
-            <FormattedMessage id='landing_info.engineers' defaultMessage='инженеров' />
-          </Text>
-          <Space count={3} />
-          <Text
-            display='inline'
-            color='text.white'
-            fontSize={['major', 'great']}
-            lineHeight='medium'
-          >
-            <FormattedMessage id='landing_info.and' defaultMessage='и' />
-          </Text>
-          <Box display={['none', 'inline']}>
-            <Space count={3} />
+          <Box display={['none', 'inline']} verticalAlign='sub'>
+            <Space count={8} />
+            <PlugIcon width={40} height={40} />
           </Box>
-          <Text color='text.indigo' fontSize={['major', 'great']} lineHeight='medium'>
-            <FormattedMessage id='landing_info.architects' defaultMessage='архитекторов' />
-          </Text>
-          <Text
-            display='inline'
-            color='text.white'
-            fontSize={['major', 'great']}
-            lineHeight='medium'
-          >
-            <FormattedMessage
-              id='landing_info.not_programmers_and_designers'
-              defaultMessage=', а не программистов и дизайнеров'
-            />
-          </Text>
-          <Space count={3} />
-          <Sphere />
         </Box>
       </Column>
-      <Layout flexBasis={[20, 230]} flexShrink='0' />
-    </Box>
-    <Layout flexBasis={[64, 160]} />
-  </Box>
+      <Layout flexBasis={[64, 160]} />
+    </Column>
+    <Layout flexBasis={[20, 230]} flexShrink='0' />
+  </Row>
 )

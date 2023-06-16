@@ -3,10 +3,6 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@ui/button": "workspace:0.0.1",
-    "@ui/divider": "workspace:0.0.1",
-    "@ui/drawer": "workspace:0.0.1",
-    "@ui/icon": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
     "@ui/link": "workspace: 0.0.1",
     "@ui/logo": "workspace:0.0.1",
@@ -18,7 +14,6 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*",
     "react-intl": "*"
   }
 }
