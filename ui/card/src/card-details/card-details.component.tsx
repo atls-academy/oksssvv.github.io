@@ -10,7 +10,7 @@ import { Text }             from '@ui/text'
 import { CardDetailsProps } from './card-details.interfaces'
 
 export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description }) => (
-  <Box width={[335, 410]} flexShrink='0'>
+  <Box width={[335, 410]} flexShrink='0' backgroundColor='background.lightGray'>
     <Layout flexBasis={[16, 32]} flexShrink='0' />
     <Column>
       <Layout flexBasis={[16, 32]} flexShrink='0' />
@@ -31,7 +31,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description 
         flexShrink='0'
       >
         <Box>
-          <Text fontSize={['solid', 'massive']} lineHeight='small'>
+          <Text fontSize={['solid', 'massive']} lineHeight='small' color='text.accent'>
             {quantity}
           </Text>
         </Box>

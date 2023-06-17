@@ -9,7 +9,7 @@ import { Text }           from '@ui/text'
 import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ category, title }) => (
-  <Box width={[260, 560]} flexShrink='0'>
+  <Box width={[260, 560]} flexShrink='0' backgroundColor='background.lightPurple'>
     <Layout flexBasis={[16, 32]} flexShrink='0' />
     <Column>
       <Layout flexBasis={[16, 32]} />
@@ -19,6 +19,7 @@ export const CardShort: FC<CardShortProps> = ({ category, title }) => (
         flexShrink='0'
         alignItems='center'
         justifyContent='center'
+        backgroundColor='white'
       >
         <Text fontSize={['small', 'medium']} textTransform='uppercase'>
           {category}
