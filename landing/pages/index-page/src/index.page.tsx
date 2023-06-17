@@ -12,13 +12,13 @@ import { Background } from '@ui/background'
 
 const IndexPage = () => (
   <>
-    <Background variant='gray'>
+    <Background variant='accent'>
       <Navigation />
       <Hero />
       <Info />
     </Background>
     <Courses />
-    <Background variant='gray'>
+    <Background variant='purple'>
       <Steps />
       <RunLine />
       <Process />
