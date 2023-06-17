@@ -27,6 +27,18 @@ const shapeSmallSizeStyles = createShapeStyles({
   paddingRight: 16,
 })
 
+const shapeSmallSizeSmallPaddingStyles = createShapeStyles({
+  size: 56,
+  paddingLeft: 18,
+  paddingRight: 18,
+})
+
+const shapeSmallSizeBigPaddingStyles = createShapeStyles({
+  size: 44,
+  paddingLeft: 43,
+  paddingRight: 43,
+})
+
 const appearancePrimaryStyles = createAppearanceStyles({
   fontColor: 'black',
   backgroundColor: 'rgba(0, 0, 0, 0)',
@@ -36,6 +48,8 @@ export const shapeStyles = switchProp(prop('size'), {
   normalSizeNormalPadding: shapeNormalSizeNormalPaddingStyles,
   bigSizeNormalPadding: shapeBigSizeNormalPaddingStyles,
   smallSize: shapeSmallSizeStyles,
+  smallSizeSmallPadding: shapeSmallSizeSmallPaddingStyles,
+  smallSizeBigPadding: shapeSmallSizeBigPaddingStyles,
 })
 
 export const variantStyles = switchProp(prop('variant', 'primary'), {

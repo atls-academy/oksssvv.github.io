@@ -37,7 +37,7 @@ export const Navigation = () => {
             variant='primary'
             size='normalSizeNormalPadding'
             gap='14%'
-            icon={<ArrowDownIcon />}
+            icon={<ArrowDownIcon width={12} height={6} />}
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
