@@ -119,7 +119,7 @@ const Cards = () => {
             variant='primary'
             size='bigSizeNormalPadding'
             gap='29%'
-            icon={<ScrollIcon />}
+            icon={<ScrollIcon width={12} height={18} />}
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'

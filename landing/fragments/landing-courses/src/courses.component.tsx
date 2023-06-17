@@ -29,7 +29,7 @@ export const Courses = () => (
             variant='primary'
             size='bigSizeNormalPadding'
             gap='9%'
-            icon={<ArrowRightIcon />}
+            icon={<ArrowRightIcon width={6} height={12} />}
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
@@ -71,7 +71,7 @@ export const Courses = () => (
           variant='primary'
           size='bigSizeNormalPadding'
           gap='9%'
-          icon={<ArrowRightIcon />}
+          icon={<ArrowRightIcon width={6} height={12} />}
           containerWidth={48}
           containerHeight={48}
           containerColor='rgba(255, 255, 255, 1)'

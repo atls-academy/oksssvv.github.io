@@ -41,17 +41,10 @@ export const Process = () => (
       </Box>
       <Layout flexBasis={[26, 32]} />
       <Box width={[335, 960]} height={[64]} alignItems='center'>
-        <Box
-          width={[40, 48]}
-          height={[60, 64]}
-          flexShrink='0'
-          justifyContent='center'
-          alignItems='center'
-        >
-          <Button size='smallSize'>
-            <SmallArrowLeftIcon />
-          </Button>
-        </Box>
+        <Button size='smallSize'>
+          <SmallArrowLeftIcon />
+        </Button>
+
         <Layout flexBasis={[12, 16]} />
         <Box width='100%' justifyContent='center'>
           <Layout flexBasis={[28, 0]} flexShrink='0' />
@@ -69,18 +62,12 @@ export const Process = () => (
           <Layout flexBasis={[28, 0]} flexShrink='0' />
         </Box>
         <Layout flexBasis={[12, 16]} />
-        <Box
-          width={[40, 48]}
-          height={[60, 64]}
-          flexShrink='0'
-          justifyContent='center'
-          alignItems='center'
-        >
-          <Button size='smallSize'>
-            <SmallArrowRightIcon />
-          </Button>
-        </Box>
+
+        <Button size='smallSize'>
+          <SmallArrowRightIcon />
+        </Button>
       </Box>
+
       <Layout flexBasis={[64, 160]} />
     </Column>
     <Layout flexBasis={[0, 492]} flexShrink='0' />

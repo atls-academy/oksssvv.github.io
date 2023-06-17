@@ -1021,6 +1021,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
   dependencies:
+    "@ui/button": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
