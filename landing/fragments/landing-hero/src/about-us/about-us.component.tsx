@@ -18,9 +18,19 @@ export const AboutUs = () => (
         <FormattedMessage id='/' defaultMessage='для революции в' />
       </Text>
       <Space count={4} />
-      <Text color='white' fontSize={['major', 'big']} lineHeight={['medium', 'normal']}>
-        <FormattedMessage id='/' defaultMessage='IT' />
-      </Text>
+
+      <Box
+        display='inline-flex'
+        width={[49, 134]}
+        height={[39, 116]}
+        justifyContent='center'
+        alignItems='center'
+        backgroundColor='background.ghost'
+      >
+        <Text color='white' fontSize={['major', 'big']} lineHeight={['medium', 'normal']}>
+          <FormattedMessage id='/' defaultMessage='IT' />
+        </Text>
+      </Box>
     </Box>
     <Layout flexBasis={[24, 48]} />
     <Divider weight={1} backgroundColor='white' />

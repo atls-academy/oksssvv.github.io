@@ -10,5 +10,6 @@ export const colors = {
     white: 'rgba(255, 255, 255, 1)',
     lightPurple: 'rgba(244, 242, 255, 1)',
     lightGray: 'rgba(0, 0, 0, 0.03)',
+    ghost: 'rgba(255, 255, 255, 0.08)',
   },
 }

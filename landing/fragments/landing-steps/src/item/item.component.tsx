@@ -16,10 +16,17 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
     <Layout flexBasis={[28, 48]} />
     <Row>
       <Column justifyContent='center' alignItems={['start', 'center']}>
-        <Layout flexBasis={[5, 20]} />
-        <Text fontSize={['standart', 'enlarged']} color='white'>
-          {quantity}
-        </Text>
+        <Box
+          width={[35, 64]}
+          height={[35, 64]}
+          justifyContent='center'
+          alignItems='center'
+          backgroundColor='background.ghost'
+        >
+          <Text fontSize={['standart', 'enlarged']} color='white'>
+            {quantity}
+          </Text>
+        </Box>
       </Column>
       <Layout flexBasis={[12, 32]} flexShrink='0' />
       <Row flexDirection={['column', 'row']} alignItems='center'>
