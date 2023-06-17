@@ -2,6 +2,8 @@ import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useIntl }          from 'react-intl'
 
+import { Button }           from '@ui/button'
+import { ArrowDownIcon }    from '@ui/icon'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
@@ -30,10 +32,21 @@ export const Navigation = () => {
           <Layout flexBasis={20} flexShrink='0' />
           <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
         </Row>
-        <Box display={['none', 'flex']} alignItems='center' flexShrink='0'>
-          <Text color='white' fontSize='standard' lineHeight='small'>
-            <FormattedMessage id='/' defaultMessage='Курсы' />
-          </Text>
+        <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+          <Button
+            variant='primary'
+            size='normalSizeNormalPadding'
+            gap='14%'
+            icon={<ArrowDownIcon width={12} height={6} />}
+            containerWidth={48}
+            containerHeight={48}
+            containerColor='rgba(255, 255, 255, 1)'
+            fill
+          >
+            <Text color='white' fontSize='regular' lineHeight='small'>
+              <FormattedMessage id='/' defaultMessage='Курсы' />
+            </Text>
+          </Button>
         </Box>
         <Layout flexBasis={[0, 40]} flexShrink='0' />
       </Row>

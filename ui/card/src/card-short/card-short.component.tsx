@@ -8,15 +8,28 @@ import { Text }           from '@ui/text'
 
 import { CardShortProps } from './card-short.interfaces'
 
-export const CardShort: FC<CardShortProps> = ({ title }) => (
-  <Box width={[228, 485]} borderRadius={['medium', 'big']} flexShrink='0' overflow='hidden'>
-    <Layout flexBasis={[16, 40]} flexShrink='0' />
+export const CardShort: FC<CardShortProps> = ({ category, title }) => (
+  <Box width={[260, 560]} flexShrink='0'>
+    <Layout flexBasis={[16, 32]} flexShrink='0' />
     <Column>
-      <Layout flexBasis={[12, 40]} />
+      <Layout flexBasis={[16, 32]} />
+      <Box
+        width={[142, 180]}
+        height={[27, 38]}
+        flexShrink='0'
+        alignItems='center'
+        justifyContent='center'
+      >
+        <Text fontSize={['small', 'medium']} textTransform='uppercase'>
+          {category}
+        </Text>
+      </Box>
+      <Layout flexBasis={[62, 126]} />
       <Box>
         <Text fontSize={['regular', 'large']}>{title}</Text>
       </Box>
-      <Layout flexBasis={40} />
+      <Layout flexBasis={[16, 32]} />
     </Column>
+    <Layout flexBasis={[16, 32]} flexShrink='0' />
   </Box>
 )

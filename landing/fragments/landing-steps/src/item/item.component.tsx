@@ -15,11 +15,12 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
   <Column>
     <Layout flexBasis={[28, 48]} />
     <Row>
-      <Box justifyContent='center' alignItems='center'>
+      <Column justifyContent='center' alignItems={['start', 'center']}>
+        <Layout flexBasis={[5, 20]} />
         <Text fontSize={['standart', 'enlarged']} color='white'>
           {quantity}
         </Text>
-      </Box>
+      </Column>
       <Layout flexBasis={[12, 32]} flexShrink='0' />
       <Row flexDirection={['column', 'row']} alignItems='center'>
         <Box width={[288, 420]} flexShrink='0'>
