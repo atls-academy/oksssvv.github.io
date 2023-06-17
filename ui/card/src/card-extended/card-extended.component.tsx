@@ -13,10 +13,9 @@ export const CardExtended: FC<CardExtendedProps> = ({
   gap,
   title,
   description,
-  descriptionMobileFirst,
-  descriptionMobileSecond,
+  descriptionMobile,
 }) => (
-  <Box width={[335, 1160]}>
+  <Box width={[335, 1160]} flexShrink='0'>
     <Layout flexBasis={[16, 42]} flexShrink='0' />
     <Column>
       <Layout flexBasis={[16, 42]} />
@@ -36,22 +35,18 @@ export const CardExtended: FC<CardExtendedProps> = ({
         <Text fontSize={['enlarged', 'large']}>{title}</Text>
       </Box>
       <Layout flexBasis={[12, 16]} />
-      <Box display={['none', 'flex']} width={693}>
+      <Box display={['none', 'flex']} width={693} flexShrink='0'>
         <Text fontSize='regular' lineHeight='medium'>
           {description}
         </Text>
       </Box>
-      <Box display={['flex', 'none']}>
+      <Box display={['flex', 'none']} width={295} flexShrink='0'>
         <Text fontSize='medium' lineHeight='large'>
-          {descriptionMobileFirst}
-        </Text>
-      </Box>
-      <Box display={['flex', 'none']}>
-        <Text fontSize='medium' lineHeight='large'>
-          {descriptionMobileSecond}
+          {descriptionMobile}
         </Text>
       </Box>
       <Layout flexBasis={[16, 40]} />
     </Column>
+    <Layout flexBasis={[16, 40]} flexShrink='0' />
   </Box>
 )

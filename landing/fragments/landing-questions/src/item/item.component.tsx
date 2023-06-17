@@ -25,6 +25,6 @@ export const Item = (divider) => (
       <Layout flexBasis={[26, 0]} flexShrink='0' />
     </Row>
     <Layout flexBasis={[16, 40]} flexShrink='0' />
-    <Divider weight={divider} backgroundColor='rgba(0, 0, 0, 1)' />
+    <Divider weight={divider} backgroundColor='black' />
   </Column>
 )

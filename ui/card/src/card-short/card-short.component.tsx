@@ -30,6 +30,6 @@ export const CardShort: FC<CardShortProps> = ({ category, title }) => (
       </Box>
       <Layout flexBasis={[16, 32]} />
     </Column>
-    <Layout flexBasis={[0, 32]} flexShrink='0' />
+    <Layout flexBasis={[16, 32]} flexShrink='0' />
   </Box>
 )

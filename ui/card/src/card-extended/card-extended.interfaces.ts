@@ -3,6 +3,5 @@ export interface CardExtendedProps {
   gap?: number[] | number
   title: string
   description?: string
-  descriptionMobileFirst?: string
-  descriptionMobileSecond?: string
+  descriptionMobile?: string
 }
