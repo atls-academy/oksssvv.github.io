@@ -9,6 +9,7 @@ import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
+import { Space }             from '@ui/text'
 
 import { Cards }            from './cards'
 
@@ -47,19 +48,44 @@ export const Courses = () => (
       <Box flexDirection={['column', 'row']}>
         <Box width={[335, 710]} display='inline' flexShrink='0'>
           <Text fontSize={['regular', 'normal']} lineHeight='medium'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Являясь серым кардиналом, Atlantis имеет влияние на сферу IT и неограниченные возможности в применении навыков. '
-            />
+            <FormattedMessage id='/' defaultMessage='Являясь серым кардиналом,' />
+          </Text>
+          <Space count={2} />
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
+            <FormattedMessage id='/' defaultMessage='Atlantis' />
+            <Space count={1} />
+          </Text>
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
+            <FormattedMessage id='/' defaultMessage='имеет влияние на' />
+          </Text>
+          <Space count={1} />
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
+            <FormattedMessage id='/' defaultMessage='сферу IT' />
+          </Text>
+          <Space count={2} />
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
+            <FormattedMessage id='/' defaultMessage='и неограниченные возможности в' />
+          </Text>
+          <Space count={2} />
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
+            <FormattedMessage id='/' defaultMessage='применении навыков.' />
           </Text>
         </Box>
         <Layout flexBasis={[20, 341]} />
         <Box width={[335, 559]} display='inline' flexShrink='0'>
-          <Text fontSize={['regular', 'normal']} lineHeight='medium'>
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
             <FormattedMessage
               id='/'
-              defaultMessage='Эффективность обучения заметно вырастает благодаря практике на существующих проектах. '
+              defaultMessage='Эффективность обучения заметно вырастает благодаря'
             />
+          </Text>
+          <Space count={2} />
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
+            <FormattedMessage id='/' defaultMessage='практике' />
+          </Text>
+          <Space count={2} />
+          <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
+            <FormattedMessage id='/' defaultMessage='на существующих проектах. ' />
           </Text>
         </Box>
       </Box>
