@@ -12,4 +12,34 @@ export const colors = {
     lightGray: 'rgba(0, 0, 0, 0.03)',
     ghost: 'rgba(255, 255, 255, 0.08)',
   },
+  button: {
+    primary: {
+      default: {
+        background: 'rgba(58, 55, 93, 1)',
+      },
+      hover: {
+        background: 'rgba(58, 55, 93, 1)',
+      },
+      pressed: {
+        background: 'rgba(58, 55, 93, 1)',
+      },
+      disabled: {
+        background: 'rgba(58, 55, 93, 1)',
+      },
+    },
+    ghost: {
+      default: {
+        background: 'rgba(255, 255, 255, 0.2)',
+      },
+      hover: {
+        background: 'rgba(255, 255, 255, 0.2)',
+      },
+      pressed: {
+        background: 'rgba(255, 255, 255, 0.2)',
+      },
+      disabled: {
+        background: 'rgba(255, 255, 255, 0.2)',
+      },
+    },
+  },
 }

@@ -9,7 +9,7 @@ import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
-import { Space }             from '@ui/text'
+import { Space }            from '@ui/text'
 
 import { Cards }            from './cards'
 
@@ -36,7 +36,7 @@ export const Courses = () => (
             containerColor='rgba(255, 255, 255, 1)'
             fill
           >
-            <Text fontSize={['middle', 'regular']}>
+            <Text fontSize={['middle', 'regular']} color='text.white'>
               <FormattedMessage id='/' defaultMessage='Все материалы' />
             </Text>
           </Button>
@@ -58,11 +58,13 @@ export const Courses = () => (
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
             <FormattedMessage id='/' defaultMessage='имеет влияние на' />
           </Text>
-          <Space count={1} />
+          <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
             <FormattedMessage id='/' defaultMessage='сферу IT' />
           </Text>
-          <Space count={2} />
+          <Box display={['none', 'inline']}>
+            <Space count={2} />
+          </Box>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
             <FormattedMessage id='/' defaultMessage='и неограниченные возможности в' />
           </Text>
@@ -92,18 +94,18 @@ export const Courses = () => (
       <Layout flexBasis={[40, 80]} />
       <Cards />
       <Layout flexBasis={[20, 160]} />
-      <Box width={254} display={['flex', 'none']} flexShrink='0'>
+      <Box width={335} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
           size='bigSizeNormalPadding'
-          gap='9%'
+          gap='34%'
           icon={<ArrowRightIcon width={6} height={12} />}
           containerWidth={48}
           containerHeight={48}
           containerColor='rgba(255, 255, 255, 1)'
           fill
         >
-          <Text fontSize='regular' lineHeight='regular'>
+          <Text fontSize='regular' lineHeight='regular' color='text.white'>
             <FormattedMessage id='/' defaultMessage='Все материалы' />
           </Text>
         </Button>

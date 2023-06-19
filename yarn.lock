@@ -156,6 +156,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-generators/button@npm:0.0.10":
+  version: 0.0.10
+  resolution: "@atls-ui-generators/button@npm:0.0.10"
+  dependencies:
+    "@atls-ui-generators/utils": "npm:0.0.4"
+    "@atls/config-prettier": "npm:^0.0.5"
+    "@atls/prettier-plugin": "npm:^0.0.5"
+    "@babel/standalone": "npm:^7.19.5"
+    camelcase: "npm:^6.3.0"
+    commander: "npm:^9.4.1"
+    prettier: "npm:^2.5.1"
+  bin:
+    generate-styles: dist/generator.js
+  checksum: c41c461a7c9b32d429c688b4ec18e0f2c80aeb12db39c481d503ec809e4efe3fc5b822ec9807a6678d699b060628214034703ff380bbe08c798d677fcfa84613
+  languageName: node
+  linkType: hard
+
 "@atls-ui-generators/icons@npm:0.0.2":
   version: 0.0.2
   resolution: "@atls-ui-generators/icons@npm:0.0.2"
@@ -1864,6 +1881,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
   dependencies:
+    "@atls-ui-generators/button": "npm:0.0.10"
     "@atls-ui-parts/button": "npm:0.0.10"
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@emotion/react": "npm:11.11.0"

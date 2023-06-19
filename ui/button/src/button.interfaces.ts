@@ -1,5 +1,7 @@
 import { ButtonProps as BaseButtonProps } from '@atls-ui-parts/button'
-export type ButtonVariant = 'primary'
+
+export type ButtonVariant = 'primary' | 'ghost'
+
 export type ButtonSize =
   | 'normalSizeNormalPadding'
   | 'bigSizeNormalPadding'

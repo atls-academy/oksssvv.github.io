@@ -34,7 +34,7 @@ export const Navigation = () => {
         </Row>
         <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
           <Button
-            variant='primary'
+            variant='ghost'
             size='normalSizeNormalPadding'
             gap='14%'
             icon={<ArrowDownIcon width={12} height={6} />}

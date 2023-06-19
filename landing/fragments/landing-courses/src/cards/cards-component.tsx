@@ -125,7 +125,7 @@ const Cards = () => {
             containerColor='rgba(255, 255, 255, 1)'
             fill
           >
-            <Text fontSize='regular' lineHeight='regular'>
+            <Text fontSize='regular' lineHeight='regular' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />
             </Text>
           </Button>

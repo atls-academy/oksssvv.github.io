@@ -41,7 +41,7 @@ export const Process = () => (
       </Box>
       <Layout flexBasis={[26, 32]} />
       <Box width={[335, 960]} height={[64]} alignItems='center'>
-        <Button size='smallSize'>
+        <Button size='smallSize' variant='ghost'>
           <SmallArrowLeftIcon />
         </Button>
 
@@ -63,7 +63,7 @@ export const Process = () => (
         </Box>
         <Layout flexBasis={[12, 16]} />
 
-        <Button size='smallSize'>
+        <Button size='smallSize' variant='ghost'>
           <SmallArrowRightIcon />
         </Button>
       </Box>

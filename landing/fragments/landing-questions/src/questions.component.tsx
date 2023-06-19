@@ -39,7 +39,7 @@ export const Questions = () => {
               containerColor='rgba(255, 255, 255, 1)'
               fill
             >
-              <Text fontSize='regular'>
+              <Text fontSize='regular' color='text.white'>
                 <FormattedMessage id='/' defaultMessage='Задать вопрос' />
               </Text>
             </Button>
@@ -48,18 +48,18 @@ export const Questions = () => {
         <Layout flexBasis={[60, 80]} />
         {items}
         <Layout flexBasis={[60, 0]} />
-        <Box width={247} display={['flex', 'none']} flexShrink='0'>
+        <Box width={343} display={['flex', 'none']} flexShrink='0'>
           <Button
             variant='primary'
             size='bigSizeNormalPadding'
-            gap='9%'
+            gap='39%'
             icon={<EnvelopeIcon width={12} height={10} />}
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
             fill
           >
-            <Text fontSize='regular'>
+            <Text fontSize='regular' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Задать вопрос' />
             </Text>
           </Button>

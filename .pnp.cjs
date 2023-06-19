@@ -312,6 +312,22 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@atls-ui-generators/button", [\
+      ["npm:0.0.10", {\
+        "packageLocation": "../.yarn/berry/cache/@atls-ui-generators-button-npm-0.0.10-894245f825-9.zip/node_modules/@atls-ui-generators/button/",\
+        "packageDependencies": [\
+          ["@atls-ui-generators/button", "npm:0.0.10"],\
+          ["@atls-ui-generators/utils", "npm:0.0.4"],\
+          ["@atls/config-prettier", "npm:0.0.5"],\
+          ["@atls/prettier-plugin", "npm:0.0.5"],\
+          ["@babel/standalone", "npm:7.22.4"],\
+          ["camelcase", "npm:6.3.0"],\
+          ["commander", "npm:9.5.0"],\
+          ["prettier", "npm:2.8.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@atls-ui-generators/icons", [\
       ["npm:0.0.2", {\
         "packageLocation": "../.yarn/berry/cache/@atls-ui-generators-icons-npm-0.0.2-712d65b27b-9.zip/node_modules/@atls-ui-generators/icons/",\
@@ -2939,6 +2955,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@ui-button-virtual-2b4e42eb58/1/ui/button/",\
         "packageDependencies": [\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
+          ["@atls-ui-generators/button", "npm:0.0.10"],\
           ["@atls-ui-parts/button", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#npm:0.0.10"],\
           ["@emotion/is-prop-valid", "npm:1.2.1"],\
           ["@emotion/react", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:11.11.0"],\
@@ -2964,6 +2981,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./ui/button/",\
         "packageDependencies": [\
           ["@ui/button", "workspace:ui/button"],\
+          ["@atls-ui-generators/button", "npm:0.0.10"],\
           ["@atls-ui-parts/button", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#npm:0.0.10"],\
           ["@emotion/is-prop-valid", "npm:1.2.1"],\
           ["@emotion/react", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:11.11.0"],\
