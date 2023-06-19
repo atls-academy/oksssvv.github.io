@@ -47,6 +47,6 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
       </Row>
     </Row>
     <Layout flexBasis={[28, 48]} />
-    <Divider weight={divider} backgroundColor='white' />
+    <Divider weight={divider} backgroundColor='background.ghorsWhite' />
   </Column>
 )

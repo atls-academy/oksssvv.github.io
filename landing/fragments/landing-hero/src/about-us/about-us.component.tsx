@@ -33,7 +33,7 @@ export const AboutUs = () => (
       </Box>
     </Box>
     <Layout flexBasis={[24, 48]} />
-    <Divider weight={1} backgroundColor='white' />
+    <Divider weight={1} backgroundColor='background.ghorsWhite' />
     <Layout flexBasis={[24, 48]} />
     <Box width={[335, 640]} display='inline'>
       <Text color='white' fontSize={['medium', 'regular']} lineHeight='medium'>

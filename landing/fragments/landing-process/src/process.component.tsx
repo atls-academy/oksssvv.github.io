@@ -10,6 +10,7 @@ import { Box }                 from '@ui/layout'
 import { Column }              from '@ui/layout'
 import { Row }                 from '@ui/layout'
 import { Text }                from '@ui/text'
+import { Space }               from '@ui/text'
 
 export const Process = () => (
   <Row justifyContent='center'>
@@ -22,17 +23,59 @@ export const Process = () => (
           fontSize={['small', 'medium']}
           lineHeight='small'
           textTransform='uppercase'
+          opacity={0.5}
         >
           <FormattedMessage id='/' defaultMessage='Процесс создания' />
         </Text>
       </Box>
       <Layout flexBasis={[16, 24]} />
-      <Box width={[335, 850]}>
-        <Text color='white' fontSize={['enlarged', 'large']} textAlign='center'>
-          <FormattedMessage
-            id='/'
-            defaultMessage='Любой процесс перестаёт быть сложным, когда знаешь как он протекает'
-          />
+      <Box display={['none', 'inline']}>
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='Любой процесс перестаёт' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='быть' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='сложным,' />
+        </Text>
+      </Box>
+      <Box display={['none', 'inline']}>
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='когда' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='знаешь' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='как он протекает' />
+        </Text>
+      </Box>
+      <Box display={['inline', 'none']}>
+        <Text color='white' fontSize='enlarged'>
+          <FormattedMessage id='/' defaultMessage='Любой процесс перестает' />
+        </Text>
+      </Box>
+      <Box display={['inline', 'none']}>
+        <Text color='white' fontSize='enlarged' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='быть' />
+        </Text>
+        <Space count={2} />
+        <Text color='white' fontSize='enlarged'>
+          <FormattedMessage id='/' defaultMessage='сложным, когда' />
+        </Text>
+        <Space count={2} />
+        <Text color='white' fontSize='enlarged' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='знаешь' />
+        </Text>
+      </Box>
+      <Box display={['inline', 'none']}>
+        <Text color='white' fontSize='enlarged'>
+          <FormattedMessage id='/' defaultMessage='как он протекает' />
         </Text>
       </Box>
       <Layout flexBasis={[24, 50]} />

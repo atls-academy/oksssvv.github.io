@@ -12,7 +12,7 @@ import { KitWorkspace } from './technology'
 export const RunLine = () => (
   <Column>
     <Layout flexBasis={[32, 64]} />
-    <Divider weight={1} backgroundColor='white' />
+    <Divider weight={1} backgroundColor='background.ghorsWhite' />
     <Layout flexBasis={[36, 64]} />
     <Row overflow='hidden'>
       <Line technology={KitWebDev} font='primary' />
@@ -22,7 +22,7 @@ export const RunLine = () => (
       <Line technology={KitWorkspace} font='gella' />
     </Row>
     <Layout flexBasis={[36, 64]} />
-    <Divider weight={1} backgroundColor='white' />
+    <Divider weight={1} backgroundColor='background.ghorsWhite' />
     <Layout flexBasis={[32, 64]} />
   </Column>
 )

@@ -43,7 +43,7 @@ export const Courses = () => (
         </Box>
       </Row>
       <Layout flexBasis={[40, 80]} />
-      <Divider weight={1} backgroundColor='black' />
+      <Divider weight={1} backgroundColor='background.primary' />
       <Layout flexBasis={[40, 80]} />
       <Box flexDirection={['column', 'row']}>
         <Box width={[335, 710]} display='inline' flexShrink='0'>
