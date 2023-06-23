@@ -41,7 +41,10 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description 
             {description}
           </Text>
         </Box>
-        <Layout flexBasis={[64, 0]} />
+        <Layout flexBasis={[70, 0]} />
+        <Box display={['flex', 'none']} justifyContent='center'>
+          <PlugIcon width={64} height={64} />
+        </Box>
       </Box>
       <Layout flexBasis={[16, 32]} flexShrink='0' />
     </Column>
