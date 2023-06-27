@@ -8,7 +8,7 @@ import { AboutUs }     from './about-us'
 import { SocialLinks } from './social-links'
 
 export const Hero = () => (
-  <Column>
+  <Column height={952}>
     <Layout flexBasis={[80, 403]} />
     <Box flexDirection={['column', 'row']} justifyContent='center' alignItems={['center', 'end']}>
       <Layout flexBasis={[20, 230]} flexShrink='0' />

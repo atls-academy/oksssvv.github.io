@@ -16,7 +16,7 @@ import { Item }             from './item'
 export const Navigation = () => {
   const intl = useIntl()
   return (
-    <Column>
+    <Column height={128}>
       <Layout flexBasis={[22, 35]} />
       <Row justifyContent='center'>
         <Layout flexBasis={[0, 40]} flexShrink='0' />

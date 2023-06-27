@@ -11,7 +11,7 @@ import { NextLink }     from '@ui/link'
 
 export const SocialLinks = () => (
   <>
-    <Column display={['none', 'flex']}>
+    <Column display={['none', 'flex']} justifyContent='end'>
       <Button size='smallSizeSmallPadding' variant='ghost'>
         <NextLink path='/'>
           <TelegramIcon width={18} height={15} />
