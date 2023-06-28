@@ -9,16 +9,16 @@ import { Questions }  from '@landing/questions-fragment'
 import { RunLine }    from '@landing/runline-fragment'
 import { Steps }      from '@landing/steps-fragment'
 import { Background } from '@ui/background'
-import { Layer }      from '@ui/layer'
+import { Parallax }   from '@ui/parallax'
 
 const IndexPage = () => (
   <>
     <Background variant='accent'>
-      <Layer heightSizes={[1800, 1100]}>
+      <Parallax heightSizes={[1800, 1100]}>
         <Navigation />
         <Hero />
         <Info />
-      </Layer>
+      </Parallax>
     </Background>
     <Courses />
     <Background variant='purple'>
