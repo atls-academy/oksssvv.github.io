@@ -9,7 +9,7 @@ import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
 export const AboutUs = () => (
-  <Column width={[335, 1460]} flexShrink='0'>
+  <Column height={[225, 499]} width={[335, 1460]} flexShrink='0'>
     <Box display='inline' width={[335, 1166]}>
       <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
         <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
