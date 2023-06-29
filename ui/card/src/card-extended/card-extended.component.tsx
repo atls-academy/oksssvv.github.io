@@ -15,14 +15,14 @@ export const CardExtended: FC<CardExtendedProps> = ({
   description,
   descriptionMobile,
 }) => (
-  <Box width={[335, 1160]} flexShrink='0' backgroundColor='background.lightPurple'>
-    <Layout flexBasis={[16, 42]} flexShrink='0' />
+  <Box width={[335, 1160]} backgroundColor='background.lightPurple'>
+    <Layout flexBasis={[16, 42]} />
     <Column>
       <Layout flexBasis={[16, 42]} />
       <Box
         width={[80, 104]}
         height={[27, 38]}
-        flexShrink='0'
+       
         alignItems='center'
         justifyContent='center'
         backgroundColor='white'
@@ -36,18 +36,18 @@ export const CardExtended: FC<CardExtendedProps> = ({
         <Text fontSize={['enlarged', 'large']}>{title}</Text>
       </Box>
       <Layout flexBasis={[12, 16]} />
-      <Box display={['none', 'flex']} width={693} flexShrink='0'>
+      <Box display={['none', 'flex']} width={693}>
         <Text fontSize='regular' lineHeight='medium' color='text.secondary'>
           {description}
         </Text>
       </Box>
-      <Box display={['flex', 'none']} width={295} flexShrink='0'>
+      <Box display={['flex', 'none']} width={295}>
         <Text fontSize='medium' lineHeight='large' color='text.secondary'>
           {descriptionMobile}
         </Text>
       </Box>
       <Layout flexBasis={[16, 40]} />
     </Column>
-    <Layout flexBasis={[16, 40]} flexShrink='0' />
+    <Layout flexBasis={[16, 40]} />
   </Box>
 )

@@ -15,16 +15,16 @@ import { Cards }            from './cards'
 
 export const Courses = () => (
   <Row justifyContent='center'>
-    <Layout flexBasis={[20, 230]} flexShrink='0' />
-    <Column width={['335px', '1610px']} flexShrink='0'>
+    <Layout flexBasis={[20, 230]}  />
+    <Column width={['335px', '1610px']} >
       <Layout flexBasis={[64, 160]} />
       <Row>
-        <Box width={[335, 868]} flexShrink='0'>
-          <Text fontSize={['large', 'huge']} letterSpacing='-0.009em'>
+        <Box width={[335, 880]} >
+          <Text fontSize={['large', 'huge']} >
             <FormattedMessage id='/' defaultMessage='Курсы и материалы' />
           </Text>
         </Box>
-        <Layout flexBasis={[596]} />
+        <Layout flexBasis={[464]} />
         <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
           <Button
             variant='primary'
@@ -46,7 +46,7 @@ export const Courses = () => (
       <Divider weight={1} backgroundColor='background.primary' />
       <Layout flexBasis={[40, 80]} />
       <Box flexDirection={['column', 'row']}>
-        <Box width={[335, 710]} display='inline' flexShrink='0'>
+        <Box width={[335, 710]} display='inline' >
           <Text fontSize={['regular', 'normal']} lineHeight='medium'>
             <FormattedMessage id='/' defaultMessage='Являясь серым кардиналом,' />
           </Text>
@@ -74,7 +74,7 @@ export const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[20, 341]} />
-        <Box width={[335, 559]} display='inline' flexShrink='0'>
+        <Box width={[335, 559]} display='inline' >
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
             <FormattedMessage
               id='/'
@@ -94,7 +94,7 @@ export const Courses = () => (
       <Layout flexBasis={[40, 80]} />
       <Cards />
       <Layout flexBasis={[20, 160]} />
-      <Box width={335} display={['flex', 'none']} flexShrink='0'>
+      <Box width={335} display={['flex', 'none']} flexShrink='0' >
         <Button
           variant='primary'
           size='bigSizeNormalPadding'
@@ -112,6 +112,6 @@ export const Courses = () => (
       </Box>
       <Layout flexBasis={[64, 0]} />
     </Column>
-    <Layout flexBasis={[20, 80]} flexShrink='0' />
+    <Layout flexBasis={[20, 80]}  />
   </Row>
 )

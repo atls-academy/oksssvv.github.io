@@ -14,7 +14,7 @@ import { Space }               from '@ui/text'
 
 export const Process = () => (
   <Row justifyContent='center'>
-    <Layout flexBasis={[0, 492]} flexShrink='0' />
+    <Layout flexBasis={[0, 492]} />
     <Column alignItems='center'>
       <Layout flexBasis={[24, 160]} />
       <Box justifyContent='center'>
@@ -90,7 +90,7 @@ export const Process = () => (
 
         <Layout flexBasis={[12, 16]} />
         <Box width='100%' justifyContent='center'>
-          <Layout flexBasis={[28, 0]} flexShrink='0' />
+          <Layout flexBasis={[28, 0]} />
           <Text
             color='white'
             fontSize={['little', 'middle']}
@@ -102,7 +102,7 @@ export const Process = () => (
               defaultMessage='Формирование системы базовых фрагментов и компонентов'
             />
           </Text>
-          <Layout flexBasis={[28, 0]} flexShrink='0' />
+          <Layout flexBasis={[28, 0]} />
         </Box>
         <Layout flexBasis={[12, 16]} />
 
@@ -113,6 +113,6 @@ export const Process = () => (
 
       <Layout flexBasis={[64, 160]} />
     </Column>
-    <Layout flexBasis={[0, 492]} flexShrink='0' />
+    <Layout flexBasis={[0, 492]} />
   </Row>
 )

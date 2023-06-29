@@ -13,7 +13,7 @@ export const Steps = () => {
   const intl = useIntl()
   return (
     <Row justifyContent='center'>
-      <Layout flexBasis={[20, 80]} flexShrink='0' />
+      <Layout flexBasis={[20, 80]}/>
       <Column width={[335, 1760]}>
         <Layout flexBasis={[36, 112]} />
         <Item
@@ -45,7 +45,7 @@ export const Steps = () => {
         </Box>
         <Layout flexBasis={[0, 112]} />
       </Column>
-      <Layout flexBasis={[20, 80]} flexShrink='0' />
+      <Layout flexBasis={[20, 80]}/>
     </Row>
   )
 }

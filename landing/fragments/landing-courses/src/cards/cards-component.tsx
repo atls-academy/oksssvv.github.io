@@ -89,7 +89,7 @@ const Cards = () => {
             })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
           />
-          <Layout flexBasis={40} flexShrink='0' />
+          <Layout flexBasis={40}  />
           <CardShort
             category={intl.formatMessage({
               id: '/',
@@ -99,7 +99,7 @@ const Cards = () => {
           />
         </Box>
       </Column>
-      <Layout flexBasis={[0, 40]} flexShrink='0' />
+      <Layout flexBasis={[0, 40]}  />
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({

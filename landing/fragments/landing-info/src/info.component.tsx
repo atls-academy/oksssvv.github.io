@@ -11,9 +11,9 @@ import { Sphere }           from './sphere'
 
 export const Info = () => (
   <Row height={[428, 670]} justifyContent='center'>
-    <Layout flexBasis={[20, 230]} flexShrink='0' />
+    <Layout flexBasis={[20, 230]} />
     <Column height={[300, 590]}>
-      <Layout flexBasis={[64, 160]} flexShrink='0' />
+      <Layout flexBasis={[64, 160]}  />
       <Column width={[335, 1460]}>
         <Box display={['none', 'inline']}>
           <Text display='inline' color='text.white' fontSize='great' lineHeight='medium'>
@@ -75,8 +75,8 @@ export const Info = () => (
           <Sphere />
         </Box>
       </Column>
-      <Layout flexBasis={[64, 160]} flexShrink='0' />
+      <Layout flexBasis={[64, 160]} />
     </Column>
-    <Layout flexBasis={[20, 230]} flexShrink='0' />
+    <Layout flexBasis={[20, 230]} />
   </Row>
 )

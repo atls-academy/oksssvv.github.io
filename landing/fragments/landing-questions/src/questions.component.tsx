@@ -18,11 +18,11 @@ export const Questions = () => {
 
   return (
     <Row justifyContent='center'>
-      <Layout flexBasis={[16, 230]} flexShrink='0' />
+      <Layout flexBasis={[16, 230]} />
       <Column width={[343, 1610]}>
         <Layout flexBasis={[80, 160]} />
         <Row>
-          <Box width={[335, 915]} flexShrink='0'>
+          <Box width={[335, 915]} >
             <Text fontSize={['normal', 'huge']} lineHeight={['regular', 'medium']}>
               <FormattedMessage id='/' defaultMessage='Вопросы и ответы' />
             </Text>
@@ -66,7 +66,7 @@ export const Questions = () => {
         </Box>
         <Layout flexBasis={[80, 160]} />
       </Column>
-      <Layout flexBasis={[16, 80]} flexShrink='0' />
+      <Layout flexBasis={[16, 80]} />
     </Row>
   )
 }
