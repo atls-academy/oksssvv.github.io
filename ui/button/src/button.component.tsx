@@ -33,6 +33,7 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, 
       containerWidth={props.containerWidth}
       containerHeight={props.containerHeight}
       containerColor={props.containerColor}
+      containerRadius={props.containerRadius}
     />
   </ButtonElement>
 ))

@@ -123,6 +123,7 @@ const Cards = () => {
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
+            containerRadius={16}
             fill
           >
             <Text fontSize='regular' lineHeight='regular' color='text.white'>

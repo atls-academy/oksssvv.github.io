@@ -37,6 +37,7 @@ export const Questions = () => {
               containerWidth={48}
               containerHeight={48}
               containerColor='rgba(255, 255, 255, 1)'
+              containerRadius={16}
               fill
             >
               <Text fontSize='regular' color='text.white'>
@@ -57,6 +58,7 @@ export const Questions = () => {
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
+            containerRadius={8}
             fill
           >
             <Text fontSize='regular' color='text.white'>

@@ -26,6 +26,7 @@ export const AboutUs = () => (
         justifyContent='center'
         alignItems='center'
         backgroundColor='background.ghost'
+        borderRadius={24}
       >
         <Text color='white' fontSize={['major', 'big']} lineHeight={['medium', 'normal']}>
           <FormattedMessage id='/' defaultMessage='IT' />

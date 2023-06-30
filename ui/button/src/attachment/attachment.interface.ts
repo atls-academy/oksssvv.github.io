@@ -3,4 +3,5 @@ export interface AttachmentProps {
   containerWidth?: number
   containerHeight?: number
   containerColor?: string
+  containerRadius?: number
 }

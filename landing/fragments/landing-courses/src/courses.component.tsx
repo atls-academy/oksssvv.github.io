@@ -34,6 +34,7 @@ export const Courses = () => (
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
+            containerRadius={16}
             fill
           >
             <Text fontSize={['middle', 'regular']} color='text.white'>
@@ -103,6 +104,7 @@ export const Courses = () => (
           containerWidth={48}
           containerHeight={48}
           containerColor='rgba(255, 255, 255, 1)'
+          containerRadius={8}
           fill
         >
           <Text fontSize='regular' lineHeight='regular' color='text.white'>

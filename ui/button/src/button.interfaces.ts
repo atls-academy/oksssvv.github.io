@@ -17,4 +17,5 @@ export interface ButtonProps extends BaseButtonProps {
   containerWidth?: number
   containerHeight?: number
   containerColor?: string
+  containerRadius?: number
 }

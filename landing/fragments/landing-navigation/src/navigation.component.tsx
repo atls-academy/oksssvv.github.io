@@ -41,6 +41,7 @@ export const Navigation = () => {
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
+            containerRadius={12}
             fill
           >
             <Text color='white' fontSize='regular' lineHeight='small'>
