@@ -9,7 +9,7 @@ import { Questions }  from '@landing/questions-fragment'
 import { RunLine }    from '@landing/runline-fragment'
 import { Steps }      from '@landing/steps-fragment'
 import { Background } from '@ui/background'
-import { Column }      from '@ui/layout'
+import { Column }     from '@ui/layout'
 import { Parallax }   from '@ui/parallax'
 
 const IndexPage = () => (
