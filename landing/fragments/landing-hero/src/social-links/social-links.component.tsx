@@ -36,13 +36,13 @@ export const SocialLinks = () => (
           <TelegramIcon width={15} height={12} />
         </NextLink>
       </Button>
-      <Layout flexBasis={12}  />
+      <Layout flexBasis={12} />
       <Button size='smallSizeBigPadding' variant='ghost'>
         <NextLink path='/'>
           <GitHubIcon width={15} height={14} />
         </NextLink>
       </Button>
-      <Layout flexBasis={12}/>
+      <Layout flexBasis={12} />
       <Button size='smallSizeBigPadding' variant='ghost'>
         <NextLink path='/'>
           <EmailIcon width={15} height={11} />

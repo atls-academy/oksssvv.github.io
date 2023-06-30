@@ -22,8 +22,8 @@ export const Questions = () => {
       <Column width={[343, 1610]}>
         <Layout flexBasis={[80, 160]} />
         <Row>
-          <Box width={[335, 915]} >
-            <Text fontSize={['normal', 'huge']} lineHeight={['regular', 'medium']}>
+          <Box width={[335, 915]}>
+            <Text fontSize={['normal', 'huge']} lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Вопросы и ответы' />
             </Text>
           </Box>

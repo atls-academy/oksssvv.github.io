@@ -13,7 +13,7 @@ export const Hero = () => (
     <Box flexDirection={['column', 'row']} justifyContent='center' alignItems={['center', 'end']}>
       <Layout flexBasis={[20, 230]} />
       <AboutUs />
-      <Layout flexBasis={[24, 134]}  />
+      <Layout flexBasis={[24, 134]} />
       <SocialLinks />
       <Layout flexBasis={[0, 40]} />
     </Box>

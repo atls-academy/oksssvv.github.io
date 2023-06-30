@@ -13,7 +13,7 @@ export const Steps = () => {
   const intl = useIntl()
   return (
     <Row justifyContent='center'>
-      <Layout flexBasis={[20, 80]}/>
+      <Layout flexBasis={[20, 80]} />
       <Column width={[335, 1760]}>
         <Layout flexBasis={[36, 112]} />
         <Item
@@ -40,12 +40,12 @@ export const Steps = () => {
           quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в проект' })}
         />
-        <Box display={['none', 'flex']} position='absolute' marginLeft='640px' marginTop='320px'>
-          <PlugIcon width={400} height={400} />
-        </Box>
         <Layout flexBasis={[0, 112]} />
       </Column>
-      <Layout flexBasis={[20, 80]}/>
+      <Box display={['none', 'flex']} position='absolute' marginTop={325}>
+        <PlugIcon width={400} height={400} />
+      </Box>
+      <Layout flexBasis={[20, 80]} />
     </Row>
   )
 }

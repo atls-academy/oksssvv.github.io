@@ -28,7 +28,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
           </Text>
         </Box>
       </Column>
-      <Layout flexBasis={[12, 32]}  />
+      <Layout flexBasis={[12, 32]} />
       <Row flexDirection={['column', 'row']} alignItems='center'>
         <Box width={[288, 420]}>
           <Text color='white' fontSize={['enlarged', 'large']}>
@@ -36,7 +36,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
           </Text>
         </Box>
         <Layout flexBasis={[8, 700]} />
-        <Box width={[288, 560]} >
+        <Box width={[288, 560]}>
           <Text color='white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
             <FormattedMessage
               id='/'

@@ -10,7 +10,7 @@ import { Space }            from '@ui/text'
 
 export const AboutUs = () => (
   <Column height={[225, 499]} width={[335, 1460]}>
-    <Box display='inline' width={[335, 1166]}>
+    <Box display='inline' minWidth={[335, 920]} maxWidth={[335, 1166]}>
       <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
         <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
       </Text>

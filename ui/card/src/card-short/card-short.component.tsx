@@ -9,8 +9,8 @@ import { Text }           from '@ui/text'
 import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ category, title }) => (
-  <Box width={[260, 560]} backgroundColor='background.lightPurple'>
-    <Layout flexBasis={[16, 32]}/>
+  <Box maxWidth={[260, 560]} backgroundColor='background.lightPurple'>
+    <Layout flexBasis={[16, 32]} />
     <Column>
       <Layout flexBasis={[16, 32]} />
       <Box
@@ -30,6 +30,6 @@ export const CardShort: FC<CardShortProps> = ({ category, title }) => (
       </Box>
       <Layout flexBasis={[16, 32]} />
     </Column>
-    <Layout flexBasis={[16, 32]}/>
+    <Layout flexBasis={[16, 32]} />
   </Box>
 )

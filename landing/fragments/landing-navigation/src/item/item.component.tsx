@@ -8,7 +8,7 @@ import { Text }      from '@ui/text'
 import { ItemProps } from './item.interfaces'
 
 export const Item: FC<ItemProps> = ({ title, path }) => (
-  <Box width={200} height={29} justifyContent='center'  borderBottom='light'>
+  <Box width={200} height={29} justifyContent='center' borderBottom='light'>
     <NextLink path={path}>
       <Text
         fontSize='standard'
