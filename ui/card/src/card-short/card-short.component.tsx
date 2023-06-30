@@ -19,6 +19,7 @@ export const CardShort: FC<CardShortProps> = ({ category, title }) => (
         alignItems='center'
         justifyContent='center'
         backgroundColor='white'
+        borderRadius={8}
       >
         <Text fontSize={['small', 'medium']} textTransform='uppercase'>
           {category}

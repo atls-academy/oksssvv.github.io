@@ -112,7 +112,7 @@ export const Courses = () => (
           </Text>
         </Button>
       </Box>
-      <Layout flexBasis={[64, 0]} />
+      <Layout flexBasis={[100, 80]} />
     </Column>
     <Layout flexBasis={[20, 80]} />
   </Row>

@@ -14,9 +14,9 @@ import { Parallax }   from '@ui/parallax'
 
 const IndexPage = () => (
   <>
-    <Background variant='accent'>
+    <Background variant='accent' position='absolute' zIndex={0} width='100%'>
       <Column display={['none', 'flex']} justifyContent='center'>
-        <Parallax heightSizes={[1800, 1400]}>
+        <Parallax heightSizes={[1800, 1200]}>
           <Navigation />
           <Hero />
           <Info />
@@ -28,13 +28,38 @@ const IndexPage = () => (
         <Info />
       </Column>
     </Background>
-    <Courses />
-    <Background variant='purple'>
+    <Background
+      variant='white'
+      borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+      position='absolute'
+      zIndex={1}
+      top={[890, 1670]}
+      width='100%'
+    >
+      <Courses />
+    </Background>
+    <Background
+      variant='purple'
+      borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+      position='absolute'
+      zIndex={2}
+      top={[2600, 3690]}
+      width='100%'
+    >
       <Steps />
       <RunLine />
       <Process />
     </Background>
-    <Questions />
+    <Background
+      variant='white'
+      borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+      position='absolute'
+      zIndex={3}
+      top={[4200, 6400]}
+      width='100%'
+    >
+      <Questions />
+    </Background>
   </>
 )
 

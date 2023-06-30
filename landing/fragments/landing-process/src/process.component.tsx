@@ -111,7 +111,7 @@ export const Process = () => (
         </Button>
       </Box>
 
-      <Layout flexBasis={[64, 160]} />
+      <Layout flexBasis={[100, 240]} />
     </Column>
     <Layout flexBasis={[0, 492]} />
   </Row>

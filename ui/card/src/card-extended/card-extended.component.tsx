@@ -25,6 +25,7 @@ export const CardExtended: FC<CardExtendedProps> = ({
         alignItems='center'
         justifyContent='center'
         backgroundColor='white'
+        borderRadius={8}
       >
         <Text fontSize={['small', 'medium']} textTransform='uppercase'>
           {category}
