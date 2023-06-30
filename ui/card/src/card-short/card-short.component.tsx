@@ -9,7 +9,7 @@ import { Text }           from '@ui/text'
 import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ category, title }) => (
-  <Box maxWidth={[260, 560]} backgroundColor='background.lightPurple'>
+  <Box maxWidth={[260, 560]} backgroundColor='background.lightPurple' borderRadius={[16, 24]}>
     <Layout flexBasis={[16, 32]} />
     <Column>
       <Layout flexBasis={[16, 32]} />

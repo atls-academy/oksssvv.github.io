@@ -15,7 +15,7 @@ export const CardExtended: FC<CardExtendedProps> = ({
   description,
   descriptionMobile,
 }) => (
-  <Box maxWidth={[335, 1160]} backgroundColor='background.lightPurple'>
+  <Box maxWidth={[335, 1160]} backgroundColor='background.lightPurple' borderRadius={[16, 24]}>
     <Layout flexBasis={[16, 42]} />
     <Column>
       <Layout flexBasis={[16, 42]} />

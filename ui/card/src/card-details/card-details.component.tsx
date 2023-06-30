@@ -10,7 +10,7 @@ import { Text }             from '@ui/text'
 import { CardDetailsProps } from './card-details.interfaces'
 
 export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description }) => (
-  <Box maxWidth={[335, 410]} backgroundColor='background.lightGray'>
+  <Box maxWidth={[335, 410]} backgroundColor='background.lightGray' borderRadius={[16, 24]}>
     <Layout flexBasis={[16, 32]} />
     <Column>
       <Layout flexBasis={[16, 32]} />
