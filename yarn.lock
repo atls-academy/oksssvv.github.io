@@ -1083,6 +1083,7 @@ __metadata:
     "@types/react": "npm:18.2.6"
     "@types/react-dom": "npm:18.2.4"
     "@ui/background": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/parallax": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
