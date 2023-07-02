@@ -18,7 +18,7 @@ const Cards = () => {
   const intl = useIntl()
   return (
     <Box flexDirection={['column', 'row']}>
-      <Column order={[1, 0]} width={[335, 1160]}>
+      <Column order={[1, 0]} maxWidth={[335, 1160]}>
         <CardExtended
           category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
           gap={[148, 214]}
@@ -89,7 +89,7 @@ const Cards = () => {
             })}
             title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
           />
-          <Layout flexBasis={40} flexShrink='0' />
+          <Layout flexBasis={40} />
           <CardShort
             category={intl.formatMessage({
               id: '/',
@@ -99,7 +99,7 @@ const Cards = () => {
           />
         </Box>
       </Column>
-      <Layout flexBasis={[0, 40]} flexShrink='0' />
+      <Layout flexBasis={[0, 40]} />
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({
@@ -125,7 +125,7 @@ const Cards = () => {
             containerColor='rgba(255, 255, 255, 1)'
             fill
           >
-            <Text fontSize='regular' lineHeight='regular'>
+            <Text fontSize='regular' lineHeight='regular' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />
             </Text>
           </Button>

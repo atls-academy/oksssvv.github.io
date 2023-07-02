@@ -18,12 +18,12 @@ export const Questions = () => {
 
   return (
     <Row justifyContent='center'>
-      <Layout flexBasis={[16, 230]} flexShrink='0' />
+      <Layout flexBasis={[16, 230]} />
       <Column width={[343, 1610]}>
         <Layout flexBasis={[80, 160]} />
         <Row>
-          <Box width={[335, 915]} flexShrink='0'>
-            <Text fontSize={['normal', 'huge']} lineHeight={['regular', 'medium']}>
+          <Box width={[335, 915]}>
+            <Text fontSize={['normal', 'huge']} lineHeight='regular'>
               <FormattedMessage id='/' defaultMessage='Вопросы и ответы' />
             </Text>
           </Box>
@@ -39,7 +39,7 @@ export const Questions = () => {
               containerColor='rgba(255, 255, 255, 1)'
               fill
             >
-              <Text fontSize='regular'>
+              <Text fontSize='regular' color='text.white'>
                 <FormattedMessage id='/' defaultMessage='Задать вопрос' />
               </Text>
             </Button>
@@ -48,25 +48,25 @@ export const Questions = () => {
         <Layout flexBasis={[60, 80]} />
         {items}
         <Layout flexBasis={[60, 0]} />
-        <Box width={247} display={['flex', 'none']} flexShrink='0'>
+        <Box width={343} display={['flex', 'none']} flexShrink='0'>
           <Button
             variant='primary'
             size='bigSizeNormalPadding'
-            gap='9%'
+            gap='39%'
             icon={<EnvelopeIcon width={12} height={10} />}
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
             fill
           >
-            <Text fontSize='regular'>
+            <Text fontSize='regular' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Задать вопрос' />
             </Text>
           </Button>
         </Box>
         <Layout flexBasis={[80, 160]} />
       </Column>
-      <Layout flexBasis={[16, 80]} flexShrink='0' />
+      <Layout flexBasis={[16, 80]} />
     </Row>
   )
 }

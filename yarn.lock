@@ -156,6 +156,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-generators/button@npm:0.0.10":
+  version: 0.0.10
+  resolution: "@atls-ui-generators/button@npm:0.0.10"
+  dependencies:
+    "@atls-ui-generators/utils": "npm:0.0.4"
+    "@atls/config-prettier": "npm:^0.0.5"
+    "@atls/prettier-plugin": "npm:^0.0.5"
+    "@babel/standalone": "npm:^7.19.5"
+    camelcase: "npm:^6.3.0"
+    commander: "npm:^9.4.1"
+    prettier: "npm:^2.5.1"
+  bin:
+    generate-styles: dist/generator.js
+  checksum: c41c461a7c9b32d429c688b4ec18e0f2c80aeb12db39c481d503ec809e4efe3fc5b822ec9807a6678d699b060628214034703ff380bbe08c798d677fcfa84613
+  languageName: node
+  linkType: hard
+
 "@atls-ui-generators/icons@npm:0.0.2":
   version: 0.0.2
   resolution: "@atls-ui-generators/icons@npm:0.0.2"
@@ -690,6 +707,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^0.8.2":
+  version: 0.8.8
+  resolution: "@emotion/is-prop-valid@npm:0.8.8"
+  dependencies:
+    "@emotion/memoize": "npm:0.7.4"
+  checksum: 2709fd849da334055e4bb29724647af73209a3e7f274ff3ad24d55e244747ade89daf4526bf541837559adb271f70ad26c60d311f51c4bdcc8728e6b14eb3d18
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@emotion/memoize@npm:0.7.4"
+  checksum: 6ea6add503898a3ffa90d549c7d841ba31652a37fd12c1517574d7aebcfa7735583489ff0678e28626e33c34f701cb1e9ced71dd4684cb8d43efc054f11bcaff
+  languageName: node
+  linkType: hard
+
 "@emotion/memoize@npm:^0.8.1":
   version: 0.8.1
   resolution: "@emotion/memoize@npm:0.8.1"
@@ -1050,6 +1083,8 @@ __metadata:
     "@types/react": "npm:18.2.6"
     "@types/react-dom": "npm:18.2.4"
     "@ui/background": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/parallax": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
   peerDependencies:
@@ -1864,6 +1899,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
   dependencies:
+    "@atls-ui-generators/button": "npm:0.0.10"
     "@atls-ui-parts/button": "npm:0.0.10"
     "@emotion/is-prop-valid": "npm:1.2.1"
     "@emotion/react": "npm:11.11.0"
@@ -1919,7 +1955,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
+"@ui/layout@wiorkspace:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -1969,6 +2005,20 @@ __metadata:
     react: "*"
     react-dom: "*"
     styled-system: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/parallax@workspace:0.0.1, @ui/parallax@workspace:ui/parallax":
+  version: 0.0.0-use.local
+  resolution: "@ui/parallax@workspace:ui/parallax"
+  dependencies:
+    "@ui/layout": "wiorkspace:0.0.1"
+    framer-motion: "npm:10.12.17"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
@@ -4933,6 +4983,27 @@ __metadata:
   version: 0.2.0
   resolution: "forwarded@npm:0.2.0"
   checksum: d1d18e065b310fb44e3190497119b810db59da95a8ac0ba186e94385484c72e189e9a5da404a209886fdcfaacc1efcb066e7d90c4281dfd7e3ce3ccd18a8dd32
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:10.12.17":
+  version: 10.12.17
+  resolution: "framer-motion@npm:10.12.17"
+  dependencies:
+    "@emotion/is-prop-valid": "npm:^0.8.2"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: f3ca72e14c85001d542d1596bab616745b318a47a40e8edf8d6b10a92d1be5223cc0edbcb589907e309cd9ea18b9e91c72d04ba3f2dc049c88d84581d72a8c66
   languageName: node
   linkType: hard
 

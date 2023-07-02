@@ -10,10 +10,11 @@ import { Box }                 from '@ui/layout'
 import { Column }              from '@ui/layout'
 import { Row }                 from '@ui/layout'
 import { Text }                from '@ui/text'
+import { Space }               from '@ui/text'
 
 export const Process = () => (
   <Row justifyContent='center'>
-    <Layout flexBasis={[0, 492]} flexShrink='0' />
+    <Layout flexBasis={[0, 492]} />
     <Column alignItems='center'>
       <Layout flexBasis={[24, 160]} />
       <Box justifyContent='center'>
@@ -22,17 +23,59 @@ export const Process = () => (
           fontSize={['small', 'medium']}
           lineHeight='small'
           textTransform='uppercase'
+          opacity={0.5}
         >
           <FormattedMessage id='/' defaultMessage='Процесс создания' />
         </Text>
       </Box>
       <Layout flexBasis={[16, 24]} />
-      <Box width={[335, 850]}>
-        <Text color='white' fontSize={['enlarged', 'large']} textAlign='center'>
-          <FormattedMessage
-            id='/'
-            defaultMessage='Любой процесс перестаёт быть сложным, когда знаешь как он протекает'
-          />
+      <Box display={['none', 'inline']}>
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='Любой процесс перестаёт' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='быть' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='сложным,' />
+        </Text>
+      </Box>
+      <Box display={['none', 'inline']}>
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='когда' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='знаешь' />
+        </Text>
+        <Space count={3} />
+        <Text color='white' fontSize='large'>
+          <FormattedMessage id='/' defaultMessage='как он протекает' />
+        </Text>
+      </Box>
+      <Box display={['inline', 'none']}>
+        <Text color='white' fontSize='enlarged'>
+          <FormattedMessage id='/' defaultMessage='Любой процесс перестает' />
+        </Text>
+      </Box>
+      <Box display={['inline', 'none']}>
+        <Text color='white' fontSize='enlarged' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='быть' />
+        </Text>
+        <Space count={2} />
+        <Text color='white' fontSize='enlarged'>
+          <FormattedMessage id='/' defaultMessage='сложным, когда' />
+        </Text>
+        <Space count={2} />
+        <Text color='white' fontSize='enlarged' opacity={0.5}>
+          <FormattedMessage id='/' defaultMessage='знаешь' />
+        </Text>
+      </Box>
+      <Box display={['inline', 'none']}>
+        <Text color='white' fontSize='enlarged'>
+          <FormattedMessage id='/' defaultMessage='как он протекает' />
         </Text>
       </Box>
       <Layout flexBasis={[24, 50]} />
@@ -41,13 +84,13 @@ export const Process = () => (
       </Box>
       <Layout flexBasis={[26, 32]} />
       <Box width={[335, 960]} height={[64]} alignItems='center'>
-        <Button size='smallSize'>
+        <Button size='smallSize' variant='ghost'>
           <SmallArrowLeftIcon />
         </Button>
 
         <Layout flexBasis={[12, 16]} />
         <Box width='100%' justifyContent='center'>
-          <Layout flexBasis={[28, 0]} flexShrink='0' />
+          <Layout flexBasis={[28, 0]} />
           <Text
             color='white'
             fontSize={['little', 'middle']}
@@ -59,17 +102,17 @@ export const Process = () => (
               defaultMessage='Формирование системы базовых фрагментов и компонентов'
             />
           </Text>
-          <Layout flexBasis={[28, 0]} flexShrink='0' />
+          <Layout flexBasis={[28, 0]} />
         </Box>
         <Layout flexBasis={[12, 16]} />
 
-        <Button size='smallSize'>
+        <Button size='smallSize' variant='ghost'>
           <SmallArrowRightIcon />
         </Button>
       </Box>
 
       <Layout flexBasis={[64, 160]} />
     </Column>
-    <Layout flexBasis={[0, 492]} flexShrink='0' />
+    <Layout flexBasis={[0, 492]} />
   </Row>
 )

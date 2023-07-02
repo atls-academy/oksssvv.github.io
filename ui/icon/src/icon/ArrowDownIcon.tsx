@@ -18,7 +18,7 @@ export const ArrowDownIcon = (props: IconProps) => {
     >
       <path
         d='M13 1L7 7L1 1'
-        stroke='black'
+        stroke='rgba(58, 55, 93, 1)'
         strokeWidth={1.75}
         strokeLinecap='round'
         strokeLinejoin='round'

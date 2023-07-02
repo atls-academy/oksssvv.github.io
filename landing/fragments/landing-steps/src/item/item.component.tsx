@@ -16,20 +16,27 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
     <Layout flexBasis={[28, 48]} />
     <Row>
       <Column justifyContent='center' alignItems={['start', 'center']}>
-        <Layout flexBasis={[5, 20]} />
-        <Text fontSize={['standart', 'enlarged']} color='white'>
-          {quantity}
-        </Text>
+        <Box
+          width={[35, 64]}
+          height={[35, 64]}
+          justifyContent='center'
+          alignItems='center'
+          backgroundColor='background.ghost'
+        >
+          <Text fontSize={['standart', 'enlarged']} color='white'>
+            {quantity}
+          </Text>
+        </Box>
       </Column>
-      <Layout flexBasis={[12, 32]} flexShrink='0' />
+      <Layout flexBasis={[12, 32]} />
       <Row flexDirection={['column', 'row']} alignItems='center'>
-        <Box width={[288, 420]} flexShrink='0'>
+        <Box width={[288, 420]}>
           <Text color='white' fontSize={['enlarged', 'large']}>
             {title}
           </Text>
         </Box>
-        <Layout flexBasis={[8, 700]} flexShrink='0' />
-        <Box width={[288, 560]} flexShrink='0'>
+        <Layout flexBasis={[8, 700]} />
+        <Box width={[288, 560]}>
           <Text color='white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
             <FormattedMessage
               id='/'
@@ -40,6 +47,6 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
       </Row>
     </Row>
     <Layout flexBasis={[28, 48]} />
-    <Divider weight={divider} backgroundColor='white' />
+    <Divider weight={divider} backgroundColor='background.ghorsWhite' />
   </Column>
 )
