@@ -14,7 +14,7 @@ import { Parallax }   from '@ui/parallax'
 
 const IndexPage = () => (
   <>
-    <Background variant='accent' position='absolute' zIndex={0} width='100%'>
+    <Background variant='purpleGradient' position='absolute' zIndex={0} width='100%'>
       <Column display={['none', 'flex']} justifyContent='center'>
         <Parallax heightSizes={[1800, 1200]}>
           <Navigation />

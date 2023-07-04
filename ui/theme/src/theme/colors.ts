@@ -7,8 +7,6 @@ export const colors = {
   },
   background: {
     white: 'rgba(255, 255, 255, 1)',
-    lightPurple: 'rgba(244, 242, 255, 1)',
-    lightGray: 'rgba(0, 0, 0, 0.03)',
     ghost: 'rgba(255, 255, 255, 0.08)',
     ghostGray: 'rgba(27, 26, 51, 0.15)',
     ghorsWhite: 'rgba(255, 255, 255, 0.25)',

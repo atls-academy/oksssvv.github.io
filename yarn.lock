@@ -1924,6 +1924,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/card@workspace:ui/card"
   dependencies:
+    "@ui/background": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
