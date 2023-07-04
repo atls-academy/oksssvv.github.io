@@ -7,7 +7,8 @@
     "@ui/background": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
-    "@ui/text": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1",
+    "@ui/utils": "workspace:0.0.1"
   },
   "devDependencies": {
     "react": "18.2.0"

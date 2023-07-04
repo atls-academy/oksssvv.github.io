@@ -4,6 +4,7 @@ export const colors = {
     accent: 'rgba(77, 60, 242, 1)',
     primary: 'rgba(58, 55, 93, 1)',
     secondary: 'rgba(58, 55, 93, 0.75)',
+    ghost: 'rgba(255, 255, 255, 0.4)',
   },
   background: {
     white: 'rgba(255, 255, 255, 1)',
