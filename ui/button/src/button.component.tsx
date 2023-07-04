@@ -7,6 +7,8 @@ import { FC }               from 'react'
 import { forwardRef }       from 'react'
 
 import { Layout }           from '@ui/layout'
+import { useHover }         from '@ui/utils'
+import { usePressed }       from '@ui/utils'
 
 import { IconAttachment }   from './attachment'
 import { ButtonProps }      from './button.interfaces'
@@ -24,16 +26,28 @@ export const ButtonElement = styled('button', { shouldForwardProp })(
   appearanceStyles
 )
 
-export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, ref) => (
-  <ButtonElement {...props} ref={ref}>
-    <Content divider={8}>{children}</Content>
-    <Layout flexBasis={gap} flexShrink='0' />
-    <IconAttachment
-      icon={props.icon}
-      containerWidth={props.containerWidth}
-      containerHeight={props.containerHeight}
-      containerColor={props.containerColor}
-      containerRadius={props.containerRadius}
-    />
-  </ButtonElement>
-))
+export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, ref) => {
+  const [hover, hoverProps] = useHover()
+  const [pressed, pressedProps] = usePressed()
+
+  return (
+    <ButtonElement
+      hover={hover}
+      pressed={pressed}
+      ref={ref}
+      {...props}
+      {...hoverProps}
+      {...pressedProps}
+    >
+      <Content divider={8}>{children}</Content>
+      <Layout flexBasis={gap} flexShrink='0' />
+      <IconAttachment
+        icon={props.icon}
+        containerWidth={props.containerWidth}
+        containerHeight={props.containerHeight}
+        containerColor={props.containerColor}
+        containerRadius={props.containerRadius}
+      />
+    </ButtonElement>
+  )
+})

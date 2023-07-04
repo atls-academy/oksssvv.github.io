@@ -100,6 +100,10 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "@ui/theme",\
       "reference": "workspace:ui/theme"\
+    },\
+    {\
+      "name": "@ui/utils",\
+      "reference": "workspace:ui/utils"\
     }\
   ],\
   "enableTopLevelFallback": true,\
@@ -127,6 +131,7 @@ const RAW_RUNTIME_STATE =
     ["@ui/slider", ["virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/slider", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/slider", "workspace:ui/slider"]],\
     ["@ui/text", ["virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text", "virtual:9fb0f00ea0954f0698a600be70c04dd3df07b4ffaef9caf28a15273b3d61f9084e33f7274e467dc489a97c94127ece9f1fd433e36ab2c34c5d78b3c8ec848a86#workspace:ui/text", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/text", "virtual:f67293c14af49905138f080ae75c1b5edf900a907334f41a48f0d7f915a93e85c5760f261375b7f8d3278e8f973f6c35315a4fc8d2df8a241e63f2fe6945f5ac#workspace:ui/text", "workspace:ui/text"]],\
     ["@ui/theme", ["virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#workspace:ui/theme", "workspace:ui/theme"]],\
+    ["@ui/utils", ["virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/utils", "workspace:ui/utils"]],\
     ["template", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -3016,6 +3021,7 @@ const RAW_RUNTIME_STATE =
           ["@types/styled-system", "npm:5.1.15"],\
           ["@types/styled-tools", null],\
           ["@ui/layout", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/layout"],\
+          ["@ui/utils", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/utils"],\
           ["react", "npm:18.2.0"],\
           ["styled-system", "npm:5.1.5"],\
           ["styled-tools", "npm:1.7.2"]\
@@ -3040,6 +3046,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:17.0.39"],\
           ["@types/styled-system", "npm:5.1.15"],\
           ["@ui/layout", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/layout"],\
+          ["@ui/utils", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/utils"],\
           ["react", "npm:18.2.0"],\
           ["styled-system", "npm:5.1.5"],\
           ["styled-tools", "npm:1.7.2"]\
@@ -3676,6 +3683,29 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:17.0.39"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:18.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@ui/utils", [\
+      ["virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/utils", {\
+        "packageLocation": "./.yarn/__virtual__/@ui-utils-virtual-a7423bc782/1/ui/utils/",\
+        "packageDependencies": [\
+          ["@ui/utils", "virtual:2b4e42eb588a70d68f06ecc092066092656b5c21257fc340b500b3da9b21831cb80ee1d3a5c53cbffcac537f4bfbdb3aedfca88a59c852381e0ed7f2f16b3c4f#workspace:ui/utils"],\
+          ["@types/react", "npm:17.0.39"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["workspace:ui/utils", {\
+        "packageLocation": "./ui/utils/",\
+        "packageDependencies": [\
+          ["@ui/utils", "workspace:ui/utils"],\
+          ["react", "npm:18.2.0"]\
         ],\
         "linkType": "SOFT"\
       }]\

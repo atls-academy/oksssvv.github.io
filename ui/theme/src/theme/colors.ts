@@ -20,27 +20,27 @@ export const colors = {
         background: 'rgba(58, 55, 93, 1)',
       },
       hover: {
-        background: 'rgba(58, 55, 93, 1)',
+        background: 'rgba(88, 83, 140, 1)',
       },
       pressed: {
-        background: 'rgba(58, 55, 93, 1)',
+        background: 'rgba(114, 108, 182, 1)',
       },
       disabled: {
-        background: 'rgba(58, 55, 93, 1)',
+        background: 'rgba(58, 55, 93, 0.25)',
       },
     },
     ghost: {
       default: {
-        background: 'rgba(255, 255, 255, 0.2)',
+        background: 'rgba(255, 255, 255, 0.20)',
       },
       hover: {
-        background: 'rgba(255, 255, 255, 0.2)',
+        background: 'rgba(255, 255, 255, 0.35)',
       },
       pressed: {
-        background: 'rgba(255, 255, 255, 0.2)',
+        background: 'rgba(255, 255, 255, 0.50)',
       },
       disabled: {
-        background: 'rgba(255, 255, 255, 0.2)',
+        background: 'rgba(255, 255, 255, 0.10)',
       },
     },
   },
