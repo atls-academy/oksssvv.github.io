@@ -1,5 +1,6 @@
 export * from './ArrowDownIcon'
 export * from './ArrowRightIcon'
+export * from './ArrowUpIcon'
 export * from './EmailIcon'
 export * from './EnvelopeIcon'
 export * from './GitHubIcon'

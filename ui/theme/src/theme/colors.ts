@@ -5,6 +5,8 @@ export const colors = {
     primary: 'rgba(58, 55, 93, 1)',
     secondary: 'rgba(58, 55, 93, 0.75)',
     ghost: 'rgba(255, 255, 255, 0.4)',
+    black: 'rgba(0,0,0,1)',
+    gray: 'rgba(0, 0, 0, 0.4)',
   },
   background: {
     white: 'rgba(255, 255, 255, 1)',
@@ -12,6 +14,7 @@ export const colors = {
     ghostGray: 'rgba(27, 26, 51, 0.15)',
     ghorsWhite: 'rgba(255, 255, 255, 0.25)',
     primary: 'rgba(27, 26, 51, 0.15)',
+    black: 'rgba(0,0,0,1)',
   },
   button: {
     primary: {

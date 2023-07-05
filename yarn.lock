@@ -1115,6 +1115,7 @@ __metadata:
   resolution: "@landing/navigation-fragment@workspace:landing/fragments/landing-navigation"
   dependencies:
     "@ui/button": "workspace:0.0.1"
+    "@ui/drawer": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace: 0.0.1"
@@ -1944,6 +1945,32 @@ __metadata:
     react: "npm:18.2.0"
   peerDependencies:
     react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/drawer@workspace:0.0.1, @ui/drawer@workspace:ui/drawer":
+  version: 0.0.0-use.local
+  resolution: "@ui/drawer@workspace:ui/drawer"
+  dependencies:
+    "@emotion/react": "npm:11.11.0"
+    "@emotion/styled": "npm:11.11.0"
+    "@landing/navigation-fragment": "workspace:0.0.1"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/card": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/logo": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    framer-motion: "npm:10.12.12"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
+    styled-system: "npm:5.1.5"
+  peerDependencies:
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 
@@ -4998,6 +5025,27 @@ __metadata:
   version: 0.2.0
   resolution: "forwarded@npm:0.2.0"
   checksum: d1d18e065b310fb44e3190497119b810db59da95a8ac0ba186e94385484c72e189e9a5da404a209886fdcfaacc1efcb066e7d90c4281dfd7e3ce3ccd18a8dd32
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:10.12.12":
+  version: 10.12.12
+  resolution: "framer-motion@npm:10.12.12"
+  dependencies:
+    "@emotion/is-prop-valid": "npm:^0.8.2"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 5a16063834c62a143c2d312b72668472a1aa77918ccff4846d1de6adf0cc6542f9580e3da76b9c68ae51b7bb53a4e04b90400d50d80dbd2f1f0d7b4d432885bd
   languageName: node
   linkType: hard
 
