@@ -14,15 +14,11 @@
     "framer-motion": "10.12.12"
   },
   "devDependencies": {
-    "@emotion/react": "11.11.0",
-    "@emotion/styled": "11.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-intl": "6.4.2",
-    "styled-system": "5.1.5"
+    "react-intl": "6.4.2"
   },
   "peerDependencies": {
-    "@emotion/styled": "*",
     "react": "*",
     "react-dom": "*",
     "react-intl": "*"

@@ -1,22 +1,21 @@
 {
-  "name": "@landing/questions-fragment",
+  "name": "@ui/accordion",
   "version": "0.0.1",
   "main": "src/index.ts",
-  "dependencies": {
-    "@ui/accordion": "workspace:0.0.1",
-    "@ui/button": "workspace:0.0.1",
-    "@ui/divider": "wirkspace:0.0.1",
+  "devDependencies": {
+    "@landing/questions-fragment": "workspace:0.0.1",
+    "@ui/divider": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
-    "@ui/utils": "workspace:0.0.1"
-  },
-  "devDependencies": {
+    "framer-motion": "10.12.18",
     "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-intl": "6.4.2"
   },
   "peerDependencies": {
     "react": "*",
+    "react-dom": "*",
     "react-intl": "*"
   }
 }

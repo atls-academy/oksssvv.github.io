@@ -1150,11 +1150,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/questions-fragment@workspace:landing/fragments/landing-questions"
   dependencies:
+    "@ui/accordion": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "wirkspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -1879,6 +1881,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ui/accordion@workspace:0.0.1, @ui/accordion@workspace:ui/accordion":
+  version: 0.0.0-use.local
+  resolution: "@ui/accordion@workspace:ui/accordion"
+  dependencies:
+    "@landing/questions-fragment": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    framer-motion: "npm:10.12.18"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/background@workspace:0.0.1, @ui/background@workspace:ui/background, @ui/background@workspce:0.0.1":
   version: 0.0.0-use.local
   resolution: "@ui/background@workspace:ui/background"
@@ -1952,8 +1974,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/drawer@workspace:ui/drawer"
   dependencies:
-    "@emotion/react": "npm:11.11.0"
-    "@emotion/styled": "npm:11.11.0"
     "@landing/navigation-fragment": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/card": "workspace:0.0.1"
@@ -1965,9 +1985,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-intl: "npm:6.4.2"
-    styled-system: "npm:5.1.5"
   peerDependencies:
-    "@emotion/styled": "*"
     react: "*"
     react-dom: "*"
     react-intl: "*"
@@ -5067,6 +5085,27 @@ __metadata:
     react-dom:
       optional: true
   checksum: f3ca72e14c85001d542d1596bab616745b318a47a40e8edf8d6b10a92d1be5223cc0edbcb589907e309cd9ea18b9e91c72d04ba3f2dc049c88d84581d72a8c66
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:10.12.18":
+  version: 10.12.18
+  resolution: "framer-motion@npm:10.12.18"
+  dependencies:
+    "@emotion/is-prop-valid": "npm:^0.8.2"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 7f9be2a4edf0b0b86dabdca23f0fcbe160eb6bc783bdeba0cb4336678dc17de58854c21ebef8c0132615a809252c76ad99d816cb1b2cb59692bbf3b22ee09039
   languageName: node
   linkType: hard
 
