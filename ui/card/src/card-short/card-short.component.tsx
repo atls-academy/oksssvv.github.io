@@ -6,20 +6,16 @@ import { Box }            from '@ui/layout'
 import { Column }         from '@ui/layout'
 import { Layout }         from '@ui/layout'
 import { Text }           from '@ui/text'
-import { useHover }       from '@ui/utils'
 
 import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ category, title }) => {
-  const [hover, hoverProps] = useHover()
 
   return (
     <Box
       maxWidth={[260, 560]}
       borderRadius={[16, 24]}
       overflow='hidden'
-      {...hoverProps}
-      boxShadow={hover ? '0px 0px 30px 4px rgba(123, 84, 233, 0.20)' : '0'}
     >
       <Background variant='lightPurpleRadial' width='100%' display='flex'>
         <Layout flexBasis={[16, 32]} />

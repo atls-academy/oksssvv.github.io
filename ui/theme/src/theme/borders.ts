@@ -5,4 +5,5 @@ export const borders = {
   gray: '1px solid rgba(0, 0, 0, 0.4)',
   black: '1px solid rgba(0, 0, 0, 1)',
   lightPrimary: '1px solid rgba(58, 55, 93, 0.2)',
+  ghostGray: '1px solid rgba(255, 255, 255, 0.13)'
 }
