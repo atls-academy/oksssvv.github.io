@@ -10,6 +10,13 @@ const shapeNormalSizeNormalPaddingStyles = createShapeStyles({
   rounding: prop('theme.radii.medium') as unknown as number,
 })
 
+const shapeNormalSizeSmallPaddingStyles = createShapeStyles({
+  size: 40,
+  paddingLeft: 12,
+  paddingRight: 6,
+  rounding: prop('theme.radii.normal') as unknown as number,
+})
+
 const shapeBigSizeNormalPaddingStyles = createShapeStyles({
   size: 72,
   paddingLeft: 24,
@@ -44,4 +51,5 @@ export const shapeStyles = switchProp(prop('size'), {
   smallSize: shapeSmallSizeStyles,
   smallSizeSmallPadding: shapeSmallSizeSmallPaddingStyles,
   smallSizeBigPadding: shapeSmallSizeBigPaddingStyles,
+  normalSizeSmallPaddingStyles: shapeNormalSizeSmallPaddingStyles,
 })

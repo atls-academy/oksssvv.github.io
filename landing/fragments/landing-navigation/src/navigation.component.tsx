@@ -52,7 +52,26 @@ export const Navigation = () => {
               fill
               onClick={() => setVisible(true)}
             >
-              <Text color='white' fontSize='regular' lineHeight='small'>
+              <Text color='white' fontSize='regular'>
+                <FormattedMessage id='/' defaultMessage='Курсы' />
+              </Text>
+            </Button>
+          </Box>
+          <Layout display={['flex', 'none']} flexBasis={195} />
+          <Box width={100} display={['flex', 'none']} alignItems='center' flexShrink='0'>
+            <Button
+              variant='ghost'
+              size='normalSizeSmallPaddingStyles'
+              gap='12%'
+              icon={<ArrowDownIcon width={9} height={4.5} />}
+              containerWidth={28}
+              containerHeight={28}
+              containerColor='rgba(255, 255, 255, 1)'
+              containerRadius={5}
+              fill
+              onClick={() => setVisible(true)}
+            >
+              <Text color='white' fontSize='medium'>
                 <FormattedMessage id='/' defaultMessage='Курсы' />
               </Text>
             </Button>

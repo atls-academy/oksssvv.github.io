@@ -5,7 +5,7 @@ import { CardExtended } from '@ui/card'
 import { Layout }       from '@ui/layout'
 import { Row }          from '@ui/layout'
 
-export const Card = (gap) => {
+export const CardDesktop = (gap) => {
   const intl = useIntl()
   return (
     <Row>
