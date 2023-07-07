@@ -19,10 +19,13 @@ export const Accordion = () => {
   return (
     <Column>
       {items.map((_, index) => (
-        <motion.div onClick={() => setSelected(selected === index ? null : index)}>
+        <motion.div
+          onClick={() => setSelected(selected === index ? null : index)}
+          key={`item-${index}`} /*eslint-disable-line */
+        >
           <Box alignItems='center'>
             <motion.div>{selected === index ? <SmallMinusIcon /> : <SmallPlusIcon />}</motion.div>
-            <Item key={`item-${index}`} /> {/*eslint-disable-line */}
+            <Item />
           </Box>
           <AnimatePresence>
             {selected === index && (
