@@ -10,10 +10,21 @@ import { RunLine }    from '@landing/runline-fragment'
 import { Steps }      from '@landing/steps-fragment'
 import { Background } from '@ui/background'
 import { Column }     from '@ui/layout'
+import { Navbar }     from '@ui/navbar'
 import { Parallax }   from '@ui/parallax'
+
+const Sections = [
+  { index: 0, section: 'Academy', name: '' },
+  { index: 1, section: 'Курсы', name: 'SectionCourses' },
+  { index: 2, section: 'Ученики', name: '' },
+  { index: 3, section: 'Обучение', name: 'SectionSteps' },
+  { index: 4, section: 'Стипендия', name: '' },
+  { index: 5, section: 'FAQ', name: 'SectionQuestion' },
+]
 
 const IndexPage = () => (
   <>
+    <Navbar section={Sections} />
     <Background variant='purpleGradient' position='absolute' zIndex={0} width='100%'>
       <Column display={['none', 'flex']} justifyContent='center'>
         <Parallax heightSizes={[1800, 1200]}>

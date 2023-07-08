@@ -8,6 +8,7 @@ export const colors = {
     black: 'rgba(0,0,0,1)',
     gray: 'rgba(0, 0, 0, 0.4)',
     blueDark: 'rgba(27, 26, 51, 1)',
+    light: 'rgba(255, 255, 255, 0.60)',
   },
   background: {
     white: 'rgba(255, 255, 255, 1)',
@@ -17,6 +18,8 @@ export const colors = {
     primary: 'rgba(27, 26, 51, 0.15)',
     black: 'rgba(0,0,0,1)',
     ghostPrimary: 'rgba(58, 55, 93, 0.25)',
+    ghostPurple: 'rgba(123, 84, 233, 0.20)',
+    lightGray: 'rgba(58, 55, 94, 0.15)',
   },
   button: {
     primary: {

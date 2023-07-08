@@ -1085,6 +1085,7 @@ __metadata:
     "@types/react-dom": "npm:18.2.4"
     "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/navbar": "wiorkspace:0.0.1"
     "@ui/parallax": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -2062,6 +2063,22 @@ __metadata:
     react: "*"
     react-dom: "*"
     styled-system: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/navbar@wiorkspace:0.0.1, @ui/navbar@workspace:ui/navbar":
+  version: 0.0.0-use.local
+  resolution: "@ui/navbar@workspace:ui/navbar"
+  dependencies:
+    "@ui/button": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 
