@@ -1016,7 +1016,7 @@ __metadata:
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
-    "@ui/slider": "workspace:0.0.1"
+    "@ui/swiper": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
@@ -1134,9 +1134,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
+    "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
@@ -2010,7 +2012,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@wiorkspace:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
+"@ui/layout@npm:0.0.1, @ui/layout@wiorkspace:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -2080,6 +2082,20 @@ __metadata:
 "@ui/slider@workspace:0.0.1, @ui/slider@workspace:ui/slider":
   version: 0.0.0-use.local
   resolution: "@ui/slider@workspace:ui/slider"
+  dependencies:
+    "@ui/layout": "npm:0.0.1"
+    framer-motion: "npm:10.12.18"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/swiper@workspace:0.0.1, @ui/swiper@workspace:ui/swiper":
+  version: 0.0.0-use.local
+  resolution: "@ui/swiper@workspace:ui/swiper"
   dependencies:
     "@atls-ui-parts/swiper": "npm:0.0.3"
     "@emotion/css": "npm:11.11.0"

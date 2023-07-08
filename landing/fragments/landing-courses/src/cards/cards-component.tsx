@@ -10,8 +10,8 @@ import { ScrollIcon }       from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
-import { Swiper }           from '@ui/slider'
-import { SwiperSlide }      from '@ui/slider'
+import { Swiper }           from '@ui/swiper'
+import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 
 const Cards = () => {

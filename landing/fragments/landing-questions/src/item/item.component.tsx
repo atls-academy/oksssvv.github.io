@@ -15,13 +15,14 @@ export const Item = () => {
     <Column {...hoverProps}>
       <Layout flexBasis={[16, 40]} />
       <Row alignItems='center'>
-        <Layout flexBasis={[0, 26]} />
-        <Box width={[303, 740]} order={[0, 1]}>
+        <Layout flexBasis={26} />
+        <Box width={[310, 740]}>
           <Text
             cursor='pointer'
             fontSize={['regular', 'normal']}
             lineHeight='medium'
             color={hover ? 'text.accent' : 'text.primary'}
+            whiteSpace='nowrap'
           >
             <FormattedMessage id='/' defaultMessage='Подойдёт ли мне профессия?' />
           </Text>

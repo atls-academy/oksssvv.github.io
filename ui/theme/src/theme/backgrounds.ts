@@ -8,4 +8,8 @@ export const backgrounds = {
     'radial-gradient(115.15% 26.33% at 80.52% 39.27%, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(50% 50.00% at 50% 50.00%, rgba(36, 0, 254, 0.00) 63.70%, rgba(36, 0, 254, 0.02) 100%), linear-gradient(147deg, #F4F2FF 0%, #F4F3FF 40.37%, #E1E2FF 93.75%)',
   grayGradient:
     'linear-gradient(0deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), rgba(255, 255, 255, 0.08)',
+  radialGray:
+    'radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(19, 24, 31, 0.75)',
+  lightGray:
+    'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.08)',
 }

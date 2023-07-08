@@ -36,7 +36,7 @@ export const Accordion = () => {
                 transition={{ duration: 0.2, easeIn: 1 }}
               >
                 <Box maxWidth={784} height={58}>
-                  <Text fontSize='standard' lineHeight='large'>
+                  <Text fontSize={['medium', 'standard']} lineHeight='large'>
                     <FormattedMessage
                       id='/'
                       defaultMessage='Как это сделать подскажет Наставник или сотрудник поддержки. Ещё при таком переходе произойдёт зачет некоторых темам по дисциплинам.'
