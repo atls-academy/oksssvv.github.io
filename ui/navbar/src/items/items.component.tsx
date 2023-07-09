@@ -1,4 +1,5 @@
 import React        from 'react'
+import { Link }      from 'react-scroll'
 import { useState } from 'react'
 
 import { Box }      from '@ui/layout'
@@ -11,15 +12,17 @@ export const Items = ({ section }) => {
 
   return section.map((el) => (
     <Column key={el.index}>
-      <Box height={15} onClick={() => setSelected(el.index)}>
-        <Text
-          cursor='pointer'
-          fontSize='medium'
-          color={selected === el.index ? 'text.white' : 'text.light'}
-        >
-          {el.section}
-        </Text>
-      </Box>
+      <Link to={el.name}>
+        <Box height={15} onClick={() => setSelected(el.index)}>
+          <Text
+            cursor='pointer'
+            fontSize='medium'
+            color={selected === el.index ? 'text.white' : 'text.light'}
+          >
+            {el.section}
+          </Text>
+        </Box>
+      </Link>
       <Layout flexBasis={el.index > 4 ? 0 : 20} />
       <Box
         display={selected === el.index ? 'flex' : 'none'}

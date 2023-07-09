@@ -4071,7 +4071,8 @@ const RAW_RUNTIME_STATE =
           ["@ui/text", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/text"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:18.2.0"],\
-          ["react-intl", null]\
+          ["react-intl", null],\
+          ["react-scroll", "virtual:74ca00672e7124759b1734eccd7394bb5e5bb37713be03ef77aac4d545edcbc07a39d002a7e2410359a3bd3cb3cef7be97db6681910ad6896d044a752af9bd01#npm:1.8.9"]\
         ],\
         "packagePeers": [\
           "@types/react-dom",\
@@ -4095,7 +4096,8 @@ const RAW_RUNTIME_STATE =
           ["@ui/text", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/text"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:18.2.0"],\
-          ["react-intl", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:6.4.2"]\
+          ["react-intl", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:6.4.2"],\
+          ["react-scroll", "virtual:74ca00672e7124759b1734eccd7394bb5e5bb37713be03ef77aac4d545edcbc07a39d002a7e2410359a3bd3cb3cef7be97db6681910ad6896d044a752af9bd01#npm:1.8.9"]\
         ],\
         "packagePeers": [\
           "@types/react-dom",\
@@ -4115,7 +4117,8 @@ const RAW_RUNTIME_STATE =
           ["@ui/layout", "virtual:7e85d3df39f2500aa80c3e36fa7993a062b7a9387ffac8ca6d0abda25d96b50b3cdaece8e8e2e3339a1e1ee962a8457af03804f5312d68975a8ad9dd382e2a7b#workspace:ui/layout"],\
           ["@ui/text", "virtual:f67293c14af49905138f080ae75c1b5edf900a907334f41a48f0d7f915a93e85c5760f261375b7f8d3278e8f973f6c35315a4fc8d2df8a241e63f2fe6945f5ac#workspace:ui/text"],\
           ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:500c1b2554b9653500750ad0264ff83faca3841a98df1910043ad21b7cebe0f368236a68a3f2ff4d6b03356344ecd728233700f2272b6ec73cab736b84d3c766#npm:18.2.0"]\
+          ["react-dom", "virtual:500c1b2554b9653500750ad0264ff83faca3841a98df1910043ad21b7cebe0f368236a68a3f2ff4d6b03356344ecd728233700f2272b6ec73cab736b84d3c766#npm:18.2.0"],\
+          ["react-scroll", "virtual:7f8fe95925cd46101340c879a4a3ad993cf536a15d052ce57234fd93d4d6356860f1d4bec91e6f097070949e9839cba5bfaaff879a35d7b3c1184ff50f55fb04#npm:1.8.9"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -10447,6 +10450,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lodash.throttle", [\
+      ["npm:4.1.1", {\
+        "packageLocation": "../.yarn/berry/cache/lodash.throttle-npm-4.1.1-856641af92-9.zip/node_modules/lodash.throttle/",\
+        "packageDependencies": [\
+          ["lodash.throttle", "npm:4.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lodash.union", [\
       ["npm:4.6.0", {\
         "packageLocation": "../.yarn/berry/cache/lodash.union-npm-4.6.0-8c9e2d9292-9.zip/node_modules/lodash.union/",\
@@ -12406,6 +12418,53 @@ const RAW_RUNTIME_STATE =
         ],\
         "packagePeers": [\
           "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-scroll", [\
+      ["npm:1.8.9", {\
+        "packageLocation": "../.yarn/berry/cache/react-scroll-npm-1.8.9-f47b5ae322-9.zip/node_modules/react-scroll/",\
+        "packageDependencies": [\
+          ["react-scroll", "npm:1.8.9"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:74ca00672e7124759b1734eccd7394bb5e5bb37713be03ef77aac4d545edcbc07a39d002a7e2410359a3bd3cb3cef7be97db6681910ad6896d044a752af9bd01#npm:1.8.9", {\
+        "packageLocation": "./.yarn/__virtual__/react-scroll-virtual-8f3f5aa120/2/.yarn/berry/cache/react-scroll-npm-1.8.9-f47b5ae322-9.zip/node_modules/react-scroll/",\
+        "packageDependencies": [\
+          ["react-scroll", "virtual:74ca00672e7124759b1734eccd7394bb5e5bb37713be03ef77aac4d545edcbc07a39d002a7e2410359a3bd3cb3cef7be97db6681910ad6896d044a752af9bd01#npm:1.8.9"],\
+          ["@types/react", "npm:17.0.39"],\
+          ["@types/react-dom", "npm:18.2.4"],\
+          ["lodash.throttle", "npm:4.1.1"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:7f8fe95925cd46101340c879a4a3ad993cf536a15d052ce57234fd93d4d6356860f1d4bec91e6f097070949e9839cba5bfaaff879a35d7b3c1184ff50f55fb04#npm:1.8.9", {\
+        "packageLocation": "./.yarn/__virtual__/react-scroll-virtual-4d3eb15850/2/.yarn/berry/cache/react-scroll-npm-1.8.9-f47b5ae322-9.zip/node_modules/react-scroll/",\
+        "packageDependencies": [\
+          ["react-scroll", "virtual:7f8fe95925cd46101340c879a4a3ad993cf536a15d052ce57234fd93d4d6356860f1d4bec91e6f097070949e9839cba5bfaaff879a35d7b3c1184ff50f55fb04#npm:1.8.9"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["lodash.throttle", "npm:4.1.1"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:500c1b2554b9653500750ad0264ff83faca3841a98df1910043ad21b7cebe0f368236a68a3f2ff4d6b03356344ecd728233700f2272b6ec73cab736b84d3c766#npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
           "react"\
         ],\
         "linkType": "HARD"\

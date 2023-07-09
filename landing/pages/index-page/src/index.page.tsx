@@ -14,18 +14,18 @@ import { Navbar }     from '@ui/navbar'
 import { Parallax }   from '@ui/parallax'
 
 const Sections = [
-  { index: 0, section: 'Academy', name: '' },
+  { index: 0, section: 'Academy', name: 'SectionHero' },
   { index: 1, section: 'Курсы', name: 'SectionCourses' },
   { index: 2, section: 'Ученики', name: '' },
   { index: 3, section: 'Обучение', name: 'SectionSteps' },
   { index: 4, section: 'Стипендия', name: '' },
-  { index: 5, section: 'FAQ', name: 'SectionQuestion' },
+  { index: 5, section: 'FAQ', name: 'SectionQuestions' },
 ]
 
 const IndexPage = () => (
   <>
     <Navbar section={Sections} />
-    <Background variant='purpleGradient' position='absolute' zIndex={0} width='100%'>
+    <Background id='SectionHero' variant='purpleGradient' position='absolute' width='100%'>
       <Column display={['none', 'flex']} justifyContent='center'>
         <Parallax heightSizes={[1800, 1200]}>
           <Navigation />
@@ -40,6 +40,7 @@ const IndexPage = () => (
       </Column>
     </Background>
     <Background
+      id='SectionCourses'
       variant='white'
       borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
       position='absolute'
@@ -50,6 +51,7 @@ const IndexPage = () => (
       <Courses />
     </Background>
     <Background
+      id='SectionSteps'
       variant='purple'
       borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
       position='absolute'
@@ -62,6 +64,7 @@ const IndexPage = () => (
       <Process />
     </Background>
     <Background
+      id='SectionQuestions'
       variant='white'
       borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
       position='absolute'

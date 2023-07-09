@@ -2075,6 +2075,7 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-scroll: "npm:1.8.9"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -6982,6 +6983,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.throttle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.throttle@npm:4.1.1"
+  checksum: 798dd59dd44b99c274f214698bf4aa8c337264ce843654399e6b610333c6fb67e3a0467c96c149fa0a8b5a22f16d811b66313575e52c6705eb999333f505c079
+  languageName: node
+  linkType: hard
+
 "lodash.union@npm:~4.6.0":
   version: 4.6.0
   resolution: "lodash.union@npm:4.6.0"
@@ -8304,7 +8312,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -8595,6 +8603,19 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
   checksum: 6afc7bc37899ff5cfec336b6b9dd70e5e76840e903c6e95e49257b6e335df9459e0a952338a09ed10035d4ad403200839dd58e42ff152be30bfe92ce6104a574
+  languageName: node
+  linkType: hard
+
+"react-scroll@npm:1.8.9":
+  version: 1.8.9
+  resolution: "react-scroll@npm:1.8.9"
+  dependencies:
+    lodash.throttle: "npm:^4.1.1"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 908205744608b41a7ba9f1d7471830a12137fa9575f263df1f7d9e20eb4a682f8a7a0b62eca2c3be3f04c1ed183c9cb83a91b947ab472e219813cfc3f9c9fb7a
   languageName: node
   linkType: hard
 
