@@ -6,7 +6,7 @@ import { Layout } from '@ui/layout'
 
 import { Items }  from './items'
 
-export const Navbar = ({ section }) => (
+export const Navbar = ({ sections }) => (
   <Box position='absolute'>
     <Box
       width={138}
@@ -20,7 +20,7 @@ export const Navbar = ({ section }) => (
       <Box backgroundColor='gray' width={2} height={175} />
       <Layout flexBasis={20} />
       <Column>
-        <Items section={section} />
+        <Items sections={sections} />
       </Column>
     </Box>
   </Box>

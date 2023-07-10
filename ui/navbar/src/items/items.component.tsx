@@ -7,19 +7,19 @@ import { Column }   from '@ui/layout'
 import { Layout }   from '@ui/layout'
 import { Text }     from '@ui/text'
 
-export const Items = ({ section }) => {
+export const Items = ({ sections }) => {
   const [selected, setSelected] = useState(false)
 
-  return section.map((el) => (
+  return sections.map((el) => (
     <Column key={el.index}>
-      <Link to={el.name}>
+      <Link to={el.id}>
         <Box height={15} onClick={() => setSelected(el.index)}>
           <Text
             cursor='pointer'
             fontSize='medium'
             color={selected === el.index ? 'text.white' : 'text.light'}
           >
-            {el.section}
+            {el.name}
           </Text>
         </Box>
       </Link>

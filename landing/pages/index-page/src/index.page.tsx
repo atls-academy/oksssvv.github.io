@@ -14,17 +14,17 @@ import { Navbar }     from '@ui/navbar'
 import { Parallax }   from '@ui/parallax'
 
 const Sections = [
-  { index: 0, section: 'Academy', name: 'SectionHero' },
-  { index: 1, section: 'Курсы', name: 'SectionCourses' },
-  { index: 2, section: 'Ученики', name: '' },
-  { index: 3, section: 'Обучение', name: 'SectionSteps' },
-  { index: 4, section: 'Стипендия', name: '' },
-  { index: 5, section: 'FAQ', name: 'SectionQuestions' },
+  { index: 0, name: 'Academy', id: 'SectionHero' },
+  { index: 1, name: 'Курсы', id: 'SectionCourses' },
+  { index: 2, name: 'Ученики', id: '/' },
+  { index: 3, name: 'Обучение', id: 'SectionSteps' },
+  { index: 4, name: 'Стипендия', id: '/' },
+  { index: 5, name: 'FAQ', id: 'SectionQuestions' },
 ]
 
 const IndexPage = () => (
   <>
-    <Navbar section={Sections} />
+    <Navbar sections={Sections} />
     <Background id='SectionHero' variant='purpleGradient' position='absolute' width='100%'>
       <Column display={['none', 'flex']} justifyContent='center'>
         <Parallax heightSizes={[1800, 1200]}>
