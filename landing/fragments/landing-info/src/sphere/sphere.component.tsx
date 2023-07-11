@@ -15,6 +15,7 @@ export const Sphere = () => (
       alignItems='center'
       backgroundColor='background.ghost'
       verticalAlign='sub'
+      borderRadius={12}
     >
       <PlugIcon width={40} height={40} />
     </Box>

@@ -99,10 +99,10 @@ export const Courses = () => (
         <Button
           variant='primary'
           size='bigSizeNormalPadding'
-          gap='34%'
+          gap='40%'
           icon={<ArrowRightIcon width={6} height={12} />}
-          containerWidth={48}
-          containerHeight={48}
+          containerWidth={32}
+          containerHeight={32}
           containerColor='rgba(255, 255, 255, 1)'
           containerRadius={8}
           fill

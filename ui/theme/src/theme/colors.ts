@@ -1,6 +1,5 @@
 export const colors = {
   text: {
-    white: 'rgba(255, 255, 255, 1)',
     accent: 'rgba(77, 60, 242, 1)',
     primary: 'rgba(58, 55, 93, 1)',
     secondary: 'rgba(58, 55, 93, 0.75)',
@@ -8,7 +7,10 @@ export const colors = {
     black: 'rgba(0,0,0,1)',
     gray: 'rgba(0, 0, 0, 0.4)',
     blueDark: 'rgba(27, 26, 51, 1)',
-    light: 'rgba(255, 255, 255, 0.60)',
+    white: 'rgba(255, 255, 255, 1)',
+    purple: 'rgba(123, 84, 233, 1)',
+    lightWhite: 'rgba(255, 255, 255, 0.60)',
+    darkPurple: 'rgba(58, 55, 94, 0.60)',
   },
   background: {
     white: 'rgba(255, 255, 255, 1)',
@@ -19,7 +21,10 @@ export const colors = {
     black: 'rgba(0,0,0,1)',
     ghostPrimary: 'rgba(58, 55, 93, 0.25)',
     ghostPurple: 'rgba(123, 84, 233, 0.20)',
-    lightGray: 'rgba(58, 55, 94, 0.15)',
+    lightGray: 'rgba(123, 84, 233, 0.50)',
+    darkPrimary: 'rgba(58, 55, 94, 0.15)',
+    lightPrimary: 'rgba(123, 84, 233, 0.2)',
+    brightLilac: 'rgba(123, 84, 233, 1)',
   },
   button: {
     primary: {

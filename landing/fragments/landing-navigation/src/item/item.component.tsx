@@ -1,28 +1,17 @@
-import React         from 'react'
-import { FC }        from 'react'
+import React              from 'react'
+import { FC }             from 'react'
 
-import { Box }       from '@ui/layout'
-import { NextLink }  from '@ui/link'
-import { Text }      from '@ui/text'
-import { useHover }  from '@ui/utils'
+import { Box }            from '@ui/layout'
+import { NextLink }       from '@ui/link'
+import { Text }           from '@ui/text'
+import { useHover }       from '@ui/utils'
 
-import { ItemProps } from './item.interfaces'
+import { ItemProps }      from './item.interfaces'
+import { getColorBorder } from './helpers'
+import { getColorText }   from './helpers'
 
 export const Item: FC<ItemProps> = ({ title, path, backColor }) => {
   const [hover, hoverProps] = useHover()
-
-  const variantBorder = () => {
-    if (backColor === 'light') {
-      return hover ? 'black' : 'gray'
-    }
-    return hover ? 'white' : 'ghost'
-  }
-  const variantText = () => {
-    if (backColor === 'light') {
-      return hover ? 'text.black' : 'text.gray'
-    }
-    return hover ? 'text.white' : 'text.ghost'
-  }
 
   return (
     <Box
@@ -30,13 +19,13 @@ export const Item: FC<ItemProps> = ({ title, path, backColor }) => {
       width={200}
       height={29}
       justifyContent='center'
-      borderBottom={variantBorder()}
+      borderBottom={getColorBorder(backColor, hover)}
     >
       <NextLink path={path}>
         <Text
           fontSize='standard'
           lineHeight='small'
-          color={variantText()}
+          color={getColorText(backColor, hover)}
           textTransform='uppercase'
         >
           {title}

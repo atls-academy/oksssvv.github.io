@@ -1201,6 +1201,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@makotot/ghostui@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@makotot/ghostui@npm:2.0.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: 582a2e1c7443e2a1811753412aefefcec4f34c64dd25d4c93f3c21d2c4819cdc2c37a44e28ec18c8ba2e446bcc16358fc9f01916bed227069d18192540c68b05
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:12.3.4":
   version: 12.3.4
   resolution: "@next/env@npm:12.3.4"
@@ -2070,7 +2079,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/navbar@workspace:ui/navbar"
   dependencies:
-    "@ui/button": "workspace:0.0.1"
+    "@makotot/ghostui": "npm:2.0.0"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
@@ -2079,7 +2088,6 @@ __metadata:
   peerDependencies:
     react: "*"
     react-dom: "*"
-    react-intl: "*"
   languageName: unknown
   linkType: soft
 
