@@ -98,8 +98,8 @@ export const Courses = () => (
       <Box width={335} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
-          size='bigSizeNormalPadding'
-          gap='40%'
+          size='SmallSizeNormalPadding'
+          gap='42%'
           icon={<ArrowRightIcon width={6} height={12} />}
           containerWidth={32}
           containerHeight={32}

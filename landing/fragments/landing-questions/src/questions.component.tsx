@@ -46,11 +46,11 @@ export const Questions = () => (
       <Box width={343} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
-          size='bigSizeNormalPadding'
-          gap='39%'
+          size='SmallSizeNormalPadding'
+          gap='45%'
           icon={<EnvelopeIcon width={12} height={10} />}
-          containerWidth={48}
-          containerHeight={48}
+          containerWidth={32}
+          containerHeight={32}
           containerColor='rgba(255, 255, 255, 1)'
           containerRadius={8}
           fill

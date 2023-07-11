@@ -94,7 +94,7 @@ export const Drawer = ({ active, onClose }) => {
               <Button
                 pressed
                 variant='primary'
-                size='normalSizeSmallPaddingStyles'
+                size='normalSizeSmallPadding'
                 gap='12%'
                 icon={<ArrowUpIcon width={9} height={4.5} />}
                 containerWidth={28}
