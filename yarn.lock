@@ -1086,9 +1086,9 @@ __metadata:
     "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/navbar": "wiorkspace:0.0.1"
-    "@ui/parallax": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-scroll-parallax: "npm:3.4.2"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -2022,7 +2022,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@npm:0.0.1, @ui/layout@wiorkspace:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
+"@ui/layout@npm:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -2085,20 +2085,6 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-scroll: "npm:1.8.9"
-  peerDependencies:
-    react: "*"
-    react-dom: "*"
-  languageName: unknown
-  linkType: soft
-
-"@ui/parallax@workspace:0.0.1, @ui/parallax@workspace:ui/parallax":
-  version: 0.0.0-use.local
-  resolution: "@ui/parallax@workspace:ui/parallax"
-  dependencies:
-    "@ui/layout": "wiorkspace:0.0.1"
-    framer-motion: "npm:10.12.17"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -3306,6 +3292,13 @@ __metadata:
   dependencies:
     tweetnacl: "npm:^0.14.3"
   checksum: 26dacae8fcd8926b2d477eea173937e4fd1255a665435f8c827a016d3939cbe9c2382946cbedcce37e3bdb069716f26be26c663598449dbeb2fefb64eb478df4
+  languageName: node
+  linkType: hard
+
+"bezier-easing@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "bezier-easing@npm:2.1.0"
+  checksum: 4214df751c27355016de4ac178abd97c08ec8e2cac0ded2f1234bbcda53d819ec7fac30b14960bbebebe6c40fe359354a42f646b2a5ee347b34146dac37b152b
   languageName: node
   linkType: hard
 
@@ -5112,27 +5105,6 @@ __metadata:
     react-dom:
       optional: true
   checksum: 5a16063834c62a143c2d312b72668472a1aa77918ccff4846d1de6adf0cc6542f9580e3da76b9c68ae51b7bb53a4e04b90400d50d80dbd2f1f0d7b4d432885bd
-  languageName: node
-  linkType: hard
-
-"framer-motion@npm:10.12.17":
-  version: 10.12.17
-  resolution: "framer-motion@npm:10.12.17"
-  dependencies:
-    "@emotion/is-prop-valid": "npm:^0.8.2"
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  dependenciesMeta:
-    "@emotion/is-prop-valid":
-      optional: true
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: f3ca72e14c85001d542d1596bab616745b318a47a40e8edf8d6b10a92d1be5223cc0edbcb589907e309cd9ea18b9e91c72d04ba3f2dc049c88d84581d72a8c66
   languageName: node
   linkType: hard
 
@@ -8098,6 +8070,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parallax-controller@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "parallax-controller@npm:1.7.0"
+  dependencies:
+    bezier-easing: "npm:^2.1.0"
+  checksum: 951f508e49428165f47dbcddefe63b60263ff81da2c82c31887b5cd5e52d70ae5591393f295a09d24856d0fb24c242fc660051a9128d8758ca147d65cc2e6ab6
+  languageName: node
+  linkType: hard
+
 "parallel-transform@npm:^1.1.0":
   version: 1.2.0
   resolution: "parallel-transform@npm:1.2.0"
@@ -8611,6 +8592,18 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
   checksum: 6afc7bc37899ff5cfec336b6b9dd70e5e76840e903c6e95e49257b6e335df9459e0a952338a09ed10035d4ad403200839dd58e42ff152be30bfe92ce6104a574
+  languageName: node
+  linkType: hard
+
+"react-scroll-parallax@npm:3.4.2":
+  version: 3.4.2
+  resolution: "react-scroll-parallax@npm:3.4.2"
+  dependencies:
+    parallax-controller: "npm:^1.7.0"
+  peerDependencies:
+    react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+    react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+  checksum: cce1ae773afef7756c595144cdcc6a6dac14ffb1cfd7d5d4e5a2d8730da3c918698b66004bba4532197535a787d93a4a972a1bec4c8f0f667effb54333b029f9
   languageName: node
   linkType: hard
 
