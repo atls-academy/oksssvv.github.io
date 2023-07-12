@@ -34,6 +34,7 @@ export const Courses = () => (
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
+            containerRadius={16}
             fill
           >
             <Text fontSize={['middle', 'regular']} color='text.white'>
@@ -97,12 +98,13 @@ export const Courses = () => (
       <Box width={335} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
-          size='bigSizeNormalPadding'
-          gap='34%'
+          size='SmallSizeNormalPadding'
+          gap='42%'
           icon={<ArrowRightIcon width={6} height={12} />}
-          containerWidth={48}
-          containerHeight={48}
+          containerWidth={32}
+          containerHeight={32}
           containerColor='rgba(255, 255, 255, 1)'
+          containerRadius={8}
           fill
         >
           <Text fontSize='regular' lineHeight='regular' color='text.white'>
@@ -110,7 +112,7 @@ export const Courses = () => (
           </Text>
         </Button>
       </Box>
-      <Layout flexBasis={[64, 0]} />
+      <Layout flexBasis={[100, 80]} />
     </Column>
     <Layout flexBasis={[20, 80]} />
   </Row>

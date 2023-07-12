@@ -13,6 +13,7 @@
     "@landing/steps-fragment": "workspace:0.0.1",
     "@ui/background": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
+    "@ui/navbar": "wiorkspace:0.0.1",
     "@ui/parallax": "workspace:0.0.1"
   },
   "devDependencies": {

@@ -75,7 +75,7 @@ export const Info = () => (
           <Sphere />
         </Box>
       </Column>
-      <Layout flexBasis={[64, 160]} />
+      <Layout flexBasis={[64, 240]} />
     </Column>
     <Layout flexBasis={[20, 230]} />
   </Row>

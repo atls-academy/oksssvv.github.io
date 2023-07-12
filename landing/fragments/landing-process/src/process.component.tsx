@@ -1,16 +1,14 @@
-import React                   from 'react'
-import { FormattedMessage }    from 'react-intl'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import { Button }              from '@ui/button'
-import { SmallArrowLeftIcon }  from '@ui/icon'
-import { SmallArrowRightIcon } from '@ui/icon'
-import { PlugIcon }            from '@ui/icon'
-import { Layout }              from '@ui/layout'
-import { Box }                 from '@ui/layout'
-import { Column }              from '@ui/layout'
-import { Row }                 from '@ui/layout'
-import { Text }                from '@ui/text'
-import { Space }               from '@ui/text'
+import { Layout }           from '@ui/layout'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { Text }             from '@ui/text'
+import { Space }            from '@ui/text'
+
+import { SliderBlock }      from './slider-block'
 
 export const Process = () => (
   <Row justifyContent='center'>
@@ -79,39 +77,10 @@ export const Process = () => (
         </Text>
       </Box>
       <Layout flexBasis={[24, 50]} />
-      <Box width={[155, 960]} height={[323, 540]} backgroundColor='black'>
-        <PlugIcon width='100%' height='100%' />
-      </Box>
-      <Layout flexBasis={[26, 32]} />
-      <Box width={[335, 960]} height={[64]} alignItems='center'>
-        <Button size='smallSize' variant='ghost'>
-          <SmallArrowLeftIcon />
-        </Button>
 
-        <Layout flexBasis={[12, 16]} />
-        <Box width='100%' justifyContent='center'>
-          <Layout flexBasis={[28, 0]} />
-          <Text
-            color='white'
-            fontSize={['little', 'middle']}
-            lineHeight={['interim', 'large']}
-            textAlign='center'
-          >
-            <FormattedMessage
-              id='/'
-              defaultMessage='Формирование системы базовых фрагментов и компонентов'
-            />
-          </Text>
-          <Layout flexBasis={[28, 0]} />
-        </Box>
-        <Layout flexBasis={[12, 16]} />
+      <SliderBlock />
 
-        <Button size='smallSize' variant='ghost'>
-          <SmallArrowRightIcon />
-        </Button>
-      </Box>
-
-      <Layout flexBasis={[64, 160]} />
+      <Layout flexBasis={[100, 240]} />
     </Column>
     <Layout flexBasis={[0, 492]} />
   </Row>

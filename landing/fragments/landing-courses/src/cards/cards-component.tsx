@@ -10,8 +10,8 @@ import { ScrollIcon }       from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
-import { Swiper }           from '@ui/slider'
-import { SwiperSlide }      from '@ui/slider'
+import { Swiper }           from '@ui/swiper'
+import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 
 const Cards = () => {
@@ -123,6 +123,7 @@ const Cards = () => {
             containerWidth={48}
             containerHeight={48}
             containerColor='rgba(255, 255, 255, 1)'
+            containerRadius={16}
             fill
           >
             <Text fontSize='regular' lineHeight='regular' color='text.white'>
