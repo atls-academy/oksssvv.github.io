@@ -58,7 +58,7 @@ const IndexPage = () => {
       <Background
         ref={sectionRefs[3]}
         id='Обучение'
-        variant='purple'
+        variant='purpleBendLine'
         backgroundSize={['600px,100%, 100%', '100%,100%']}
         backgroundRepeat='no-repeat'
         backgroundPosition={['-200px 1200px, 0 235px', '0 220px,0 1860px']}

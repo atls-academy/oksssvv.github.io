@@ -32,7 +32,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
       </Column>
       <Layout flexBasis={[12, 32]} />
       <Row flexDirection={['column', 'row']} alignItems='center'>
-        <Box width={[288, 420]}>
+        <Box width={[288, 426]}>
           <Text color='white' fontSize={['enlarged', 'large']}>
             {title}
           </Text>

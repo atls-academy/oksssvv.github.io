@@ -1,13 +1,13 @@
-import React        from 'react'
-import { useIntl }  from 'react-intl'
+import React       from 'react'
+import { useIntl } from 'react-intl'
 
-import { PlugIcon } from '@ui/icon'
-import { Layout }   from '@ui/layout'
-import { Column }   from '@ui/layout'
-import { Row }      from '@ui/layout'
-import { Box }      from '@ui/layout'
+import { Image }   from '@ui/image'
+import { Layout }  from '@ui/layout'
+import { Column }  from '@ui/layout'
+import { Row }     from '@ui/layout'
+import { Box }     from '@ui/layout'
 
-import { Item }     from './item'
+import { Item }    from './item'
 
 export const Steps = () => {
   const intl = useIntl()
@@ -42,8 +42,8 @@ export const Steps = () => {
         />
         <Layout flexBasis={[0, 112]} />
       </Column>
-      <Box display={['none', 'flex']} position='absolute' marginTop={325}>
-        <PlugIcon width={400} height={400} />
+      <Box display={['none', 'flex']} position='absolute' marginTop={340} marginLeft={-20}>
+        <Image src='/cubes.png' width={400} />
       </Box>
       <Layout flexBasis={[20, 80]} />
     </Row>

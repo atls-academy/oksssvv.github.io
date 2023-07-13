@@ -1,6 +1,6 @@
 import React     from 'react'
 
-import { Image }  from '@ui/image'
+import { Image } from '@ui/image'
 import { Box }   from '@ui/layout'
 import { Space } from '@ui/text'
 
