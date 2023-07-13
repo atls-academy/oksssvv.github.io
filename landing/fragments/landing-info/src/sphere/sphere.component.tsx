@@ -1,8 +1,8 @@
-import React        from 'react'
+import React     from 'react'
 
-import { PlugIcon } from '@ui/icon'
-import { Box }      from '@ui/layout'
-import { Space }    from '@ui/text'
+import { Image }  from '@ui/image'
+import { Box }   from '@ui/layout'
+import { Space } from '@ui/text'
 
 export const Sphere = () => (
   <>
@@ -17,7 +17,7 @@ export const Sphere = () => (
       verticalAlign='sub'
       borderRadius={12}
     >
-      <PlugIcon width={40} height={40} />
+      <Image width={40} src='/sphere-white.png' />
     </Box>
     <Space count={3} />
   </>

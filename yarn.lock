@@ -219,6 +219,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-parts/image@npm:0.0.4":
+  version: 0.0.4
+  resolution: "@atls-ui-parts/image@npm:0.0.4"
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+  checksum: ea6c4ef122152a5a3e8662c14e371e0bd7e049e31715686bb0a05a9cd0942b78d8086b13a6ce8c698ce186edda2c81696e19b6aa97eb7a17186803053a930d81
+  languageName: node
+  linkType: hard
+
 "@atls-ui-parts/layout@npm:0.0.7":
   version: 0.0.7
   resolution: "@atls-ui-parts/layout@npm:0.0.7"
@@ -1101,6 +1112,7 @@ __metadata:
   resolution: "@landing/info-fragment@workspace:landing/fragments/landing-info"
   dependencies:
     "@ui/icon": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
@@ -2019,6 +2031,24 @@ __metadata:
     react: "npm:18.2.0"
   peerDependencies:
     react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/image@workspace:0.0.1, @ui/image@workspace:ui/image":
+  version: 0.0.0-use.local
+  resolution: "@ui/image@workspace:ui/image"
+  dependencies:
+    "@atls-ui-parts/image": "npm:0.0.4"
+    "@emotion/react": "npm:11.11.0"
+    "@emotion/styled": "npm:11.11.0"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    styled-system: "npm:5.1.5"
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
