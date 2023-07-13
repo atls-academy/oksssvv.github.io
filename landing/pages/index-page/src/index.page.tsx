@@ -43,8 +43,11 @@ const IndexPage = () => {
       <Background
         ref={sectionRefs[1]}
         id='Курсы'
-        variant='white'
-        borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+        variant='whiteBendLine'
+        backgroundSize={['800px,100%', '100%,100%']}
+        backgroundRepeat='no-repeat'
+        backgroundPosition={['0 370px', '0 700px']}
+        borderRadius={['', '']}
         position='absolute'
         zIndex={1}
         top={[910, 1670]}
@@ -56,6 +59,9 @@ const IndexPage = () => {
         ref={sectionRefs[3]}
         id='Обучение'
         variant='purple'
+        backgroundSize={['600px,100%, 100%', '100%,100%']}
+        backgroundRepeat='no-repeat'
+        backgroundPosition={['-200px 1200px, 0 235px', '0 220px,0 1860px']}
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={2}
@@ -69,7 +75,10 @@ const IndexPage = () => {
       <Background
         ref={sectionRefs[5]}
         id='FAQ'
-        variant='white'
+        variant='whiteBendLine'
+        backgroundSize={['800px, 100%', '100%,100%']}
+        backgroundRepeat='no-repeat'
+        backgroundPosition={['-190px 200px', '0 220px']}
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={3}

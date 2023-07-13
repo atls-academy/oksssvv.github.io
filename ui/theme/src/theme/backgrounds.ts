@@ -2,8 +2,8 @@ export const backgrounds = {
   gray: 'rgba(102, 102, 102, 1)',
   purpleGradient:
     'linear-gradient(180deg, #3D24EC 0%, rgba(61, 36, 236, 0.00) 100%), radial-gradient(151.52% 72.21% at 100.00% 100.00%, #3909F6 0%, rgba(104, 82, 255, 0.00) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.11) 100%), linear-gradient(161deg, #6F57FF 0%, #4C58FF 100%)',
-  purple: 'rgba(39, 37, 59, 1)',
-  white: 'rgba(255, 255, 255, 1)',
+  purple: 'url("/bend-line.png"),url("/bend-line.png"),rgba(39, 37, 59, 1)',
+  whiteBendLine: 'url("/bend-line.png"), rgba(255, 255, 255, 1)',
   lightPurpleRadial:
     'radial-gradient(115.15% 26.33% at 80.52% 39.27%, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(50% 50.00% at 50% 50.00%, rgba(36, 0, 254, 0.00) 63.70%, rgba(36, 0, 254, 0.02) 100%), linear-gradient(147deg, #F4F2FF 0%, #F4F3FF 40.37%, #E1E2FF 93.75%)',
   grayGradient:

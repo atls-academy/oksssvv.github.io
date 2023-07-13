@@ -2,11 +2,11 @@ import React                from 'react'
 import { FC }               from 'react'
 
 import { Background }       from '@ui/background'
-import { PlugIcon }         from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
+import {Image} from '@ui/image'
 
 import { CardDetailsProps } from './card-details.interfaces'
 
@@ -23,7 +23,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description 
         </Box>
         <Layout flexBasis={[0, 74]} />
         <Box display={['none', 'flex']} justifyContent='center'>
-          <PlugIcon width={240} height={240} />
+        <Image src='/sphere-white.png' width={240} />
         </Box>
         <Layout flexBasis={[16, 62]} />
         <Box height={[64, 116]} flexDirection={['row', 'column']} alignItems={['center', 'start']}>
@@ -40,7 +40,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description 
           </Box>
           <Layout flexBasis={[70, 0]} />
           <Box display={['flex', 'none']} justifyContent='center'>
-            <PlugIcon width={64} height={64} />
+            <Image src='/sphere-white.png' width={64} />
           </Box>
         </Box>
         <Layout flexBasis={[16, 32]} />
