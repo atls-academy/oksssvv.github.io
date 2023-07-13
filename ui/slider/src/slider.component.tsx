@@ -8,7 +8,7 @@ import { Box }         from '@ui/layout'
 
 import { SliderProps } from './slider.interfaces'
 
-export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images }) => {
+export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }) => {
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -19,7 +19,13 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images }) => {
   })
 
   return (
-    <Box width='100%' justifyContent='center' alignItems='center' overflow='hidden'>
+    <Box
+      width='100%'
+      justifyContent='center'
+      alignItems='center'
+      overflow='hidden'
+      display={display}
+    >
       <motion.img
         key={index}
         src={images[index]}

@@ -5,13 +5,16 @@ import { Background }          from '@ui/background'
 import { Button }              from '@ui/button'
 import { SmallArrowLeftIcon }  from '@ui/icon'
 import { SmallArrowRightIcon } from '@ui/icon'
+import { Image }               from '@ui/image'
 import { Layout }              from '@ui/layout'
 import { Box }                 from '@ui/layout'
+import { Column }              from '@ui/layout'
 import { Slider }              from '@ui/slider'
 import { TimeLine }            from '@ui/slider'
 import { Text }                from '@ui/text'
 
-import { sliderImages }        from './slider-block.images'
+import { sliderImagesDesktop } from './slider-block.images'
+import { sliderImagesMobile }  from './slider-block.images'
 
 export const SliderBlock = () => (
   <>
@@ -25,16 +28,31 @@ export const SliderBlock = () => (
       borderRadius={[20, 24]}
     >
       <Background
-        width={[137, 936]}
-        height={[307, 516]}
+        width={[148, 936]}
+        height={[315, 516]}
         display='flex'
         variant='radialGray'
         position='absolute'
-        top={[9, 12]}
-        left={[9, 12]}
-        borderRadius={[12]}
+        top={[1, 12]}
+        left={[1, 12]}
+        borderRadius={[15, 12]}
       >
-        <Slider images={sliderImages} widthImg='80%' heightImg='100%' />
+        <Column>
+          <Image src='/toolbar.png' display={['none', 'flex']} />
+          <Image src='/mobilePanel.png' display={['flex', 'none']} />
+          <Slider
+            images={sliderImagesDesktop}
+            widthImg='80%'
+            heightImg='100%'
+            display={['none', 'flex']}
+          />
+          <Slider
+            images={sliderImagesMobile}
+            widthImg='80%'
+            heightImg='100%'
+            display={['flex', 'none']}
+          />
+        </Column>
       </Background>
     </Background>
 

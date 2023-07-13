@@ -2109,6 +2109,7 @@ const RAW_RUNTIME_STATE =
           ["@ui/background", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/background"],\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
           ["@ui/icon", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/icon"],\
+          ["@ui/image", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/image"],\
           ["@ui/layout", "virtual:a7423bc7824a4417433e7505530ac12ae1b8f33174260162f085d25529ba9b2d3fa54dc54868d66140c716be9fa8c75b382c356d3d60ad7e970ea7e33e22ade7#workspace:ui/layout"],\
           ["@ui/slider", "virtual:392d4a83eb19aac8e8989aaf737ff5eab74dd03e9a9f472fad7700d1d252e1f0428fe9a8e609833088ab5b49324e7319655169c77086935b727be357a95d8cda#workspace:ui/slider"],\
           ["@ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text"],\
@@ -2131,6 +2132,7 @@ const RAW_RUNTIME_STATE =
           ["@ui/background", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/background"],\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
           ["@ui/icon", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/icon"],\
+          ["@ui/image", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/image"],\
           ["@ui/layout", "virtual:a7423bc7824a4417433e7505530ac12ae1b8f33174260162f085d25529ba9b2d3fa54dc54868d66140c716be9fa8c75b382c356d3d60ad7e970ea7e33e22ade7#workspace:ui/layout"],\
           ["@ui/slider", "virtual:392d4a83eb19aac8e8989aaf737ff5eab74dd03e9a9f472fad7700d1d252e1f0428fe9a8e609833088ab5b49324e7319655169c77086935b727be357a95d8cda#workspace:ui/slider"],\
           ["@ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text"],\
@@ -2152,6 +2154,7 @@ const RAW_RUNTIME_STATE =
           ["@ui/background", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/background"],\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
           ["@ui/icon", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/icon"],\
+          ["@ui/image", "virtual:32371ff79c9df4552b762b0a472e6496d9669b329721550c15be270bb5683d39539abb60f2308d5d15fb3a67f15c224dff6fbad5599921681fb77769942751b5#workspace:ui/image"],\
           ["@ui/layout", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/layout"],\
           ["@ui/slider", "virtual:6c8057716bab140315218ef4d3321a4fedfc92527a2b4ef931e78dd433e15480166a0f4fdc5bb87401be52cd3c767ca6ec86fa93fb43fb410798415c5b30360e#workspace:ui/slider"],\
           ["@ui/text", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/text"],\
