@@ -118,7 +118,7 @@ const Cards = () => {
           <Button
             variant='primary'
             size='bigSizeNormalPadding'
-            gap='29%'
+            gap={121}
             icon={<ScrollIcon width={12} height={18} />}
             containerWidth={48}
             containerHeight={48}

@@ -43,7 +43,7 @@ export const Navigation = () => {
             <Button
               variant='ghost'
               size='normalSizeNormalPadding'
-              gap='14%'
+              gap={20}
               icon={<ArrowDownIcon width={12} height={6} />}
               containerWidth={48}
               containerHeight={48}
@@ -62,7 +62,7 @@ export const Navigation = () => {
             <Button
               variant='ghost'
               size='normalSizeSmallPadding'
-              gap='12%'
+              gap={12}
               icon={<ArrowDownIcon width={9} height={4.5} />}
               containerWidth={28}
               containerHeight={28}

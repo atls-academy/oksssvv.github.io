@@ -29,7 +29,7 @@ export const Courses = () => (
           <Button
             variant='primary'
             size='bigSizeNormalPadding'
-            gap='9%'
+            gap={24}
             icon={<ArrowRightIcon width={6} height={12} />}
             containerWidth={48}
             containerHeight={48}
@@ -99,7 +99,7 @@ export const Courses = () => (
         <Button
           variant='primary'
           size='SmallSizeNormalPadding'
-          gap='42%'
+          gap={155}
           icon={<ArrowRightIcon width={6} height={12} />}
           containerWidth={32}
           containerHeight={32}
@@ -107,7 +107,7 @@ export const Courses = () => (
           containerRadius={8}
           fill
         >
-          <Text fontSize='regular' lineHeight='regular' color='text.white'>
+          <Text fontSize='middle' lineHeight='regular' color='text.white'>
             <FormattedMessage id='/' defaultMessage='Все материалы' />
           </Text>
         </Button>

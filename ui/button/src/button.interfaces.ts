@@ -14,7 +14,7 @@ export type ButtonSize =
 export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
   size?: ButtonSize
-  gap?: number | string
+  gap?: number
   icon?: any
   containerWidth?: number
   containerHeight?: number
