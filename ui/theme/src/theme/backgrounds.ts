@@ -12,4 +12,5 @@ export const backgrounds = {
     'radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(19, 24, 31, 0.75)',
   lightGray:
     'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.08)',
+  decorativeSymbol: 'url("/symbol.png"),url("/triangular-element.png")',
 }
