@@ -28,10 +28,10 @@ export const Questions = () => (
             size='bigSizeNormalPadding'
             gap={24}
             icon={<EnvelopeIcon width={12} height={10} />}
-            containerWidth={48}
-            containerHeight={48}
-            containerColor='rgba(255, 255, 255, 1)'
-            containerRadius={16}
+            valueWidth={48}
+            valueHeight={48}
+            valueBackground='rgba(255, 255, 255, 1)'
+            valueRadius={16}
             fill
           >
             <Text fontSize='regular' color='text.white'>
@@ -49,10 +49,10 @@ export const Questions = () => (
           size='SmallSizeNormalPadding'
           gap={163}
           icon={<EnvelopeIcon width={12} height={10} />}
-          containerWidth={32}
-          containerHeight={32}
-          containerColor='rgba(255, 255, 255, 1)'
-          containerRadius={8}
+          valueWidth={32}
+          valueHeight={32}
+          valueBackground='rgba(255, 255, 255, 1)'
+          valueRadius={8}
           fill
         >
           <Text fontSize='middle' color='text.white'>
