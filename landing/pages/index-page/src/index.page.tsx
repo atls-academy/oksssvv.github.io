@@ -47,7 +47,7 @@ const IndexPage = () => {
         backgroundSize={['800px,100%', '100%,100%']}
         backgroundRepeat='no-repeat'
         backgroundPosition={['0 370px', '0 700px']}
-        borderRadius={['', '']}
+        borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={1}
         top={[910, 1670]}
@@ -65,7 +65,7 @@ const IndexPage = () => {
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={2}
-        top={[2600, 3690]}
+        top={[2600, 3720]}
         width='100%'
       >
         <Steps />
