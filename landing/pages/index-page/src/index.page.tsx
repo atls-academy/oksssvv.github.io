@@ -23,7 +23,7 @@ const IndexPage = () => {
       <Background
         ref={sectionRefs[0]}
         id='Academy'
-        variant='purpleGradient'
+        optionBackground='purpleGradient'
         position='absolute'
         width='100%'
       >
@@ -35,8 +35,8 @@ const IndexPage = () => {
       </Background>
       <Background
         ref={sectionRefs[1]}
-        id='Курсы'
-        variant='white'
+        id='Courses'
+        optionBackground='white'
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={1}
@@ -47,8 +47,8 @@ const IndexPage = () => {
       </Background>
       <Background
         ref={sectionRefs[3]}
-        id='Обучение'
-        variant='purple'
+        id='Education'
+        optionBackground='purple'
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={2}
@@ -62,7 +62,7 @@ const IndexPage = () => {
       <Background
         ref={sectionRefs[5]}
         id='FAQ'
-        variant='white'
+        optionBackground='white'
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={3}

@@ -45,10 +45,10 @@ export const Navigation = () => {
               size='normalSizeNormalPadding'
               gap={20}
               icon={<ArrowDownIcon width={12} height={6} />}
-              valueWidth={48}
-              valueHeight={48}
-              valueBackground='rgba(255, 255, 255, 1)'
-              valueRadius={12}
+              valueWidthIcon={48}
+              valueHeightIcon={48}
+              valueBackgroundIcon='rgba(255, 255, 255, 1)'
+              valueRadiusIcon={12}
               fill
               onClick={() => setVisible(true)}
             >
@@ -64,10 +64,10 @@ export const Navigation = () => {
               size='normalSizeSmallPadding'
               gap={12}
               icon={<ArrowDownIcon width={9} height={4.5} />}
-              valueWidth={28}
-              valueHeight={28}
-              valueBackground='rgba(255, 255, 255, 1)'
-              valueRadius={5}
+              valueWidthIcon={28}
+              valueHeightIcon={28}
+              valueBackgroundIcon='rgba(255, 255, 255, 1)'
+              valueRadiusIcon={5}
               fill
               onClick={() => setVisible(true)}
             >

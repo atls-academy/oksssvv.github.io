@@ -31,10 +31,10 @@ export const Courses = () => (
             size='bigSizeNormalPadding'
             gap={24}
             icon={<ArrowRightIcon width={6} height={12} />}
-            valueWidth={48}
-            valueHeight={48}
-            valueBackground='rgba(255, 255, 255, 1)'
-            valueRadius={16}
+            valueWidthIcon={48}
+            valueHeightIcon={48}
+            valueBackgroundIcon='rgba(255, 255, 255, 1)'
+            valueRadiusIcon={16}
             fill
           >
             <Text fontSize={['middle', 'regular']} color='text.white'>
@@ -98,13 +98,13 @@ export const Courses = () => (
       <Box width={335} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
-          size='SmallSizeNormalPadding'
+          size='smallSizeNormalPadding'
           gap={155}
           icon={<ArrowRightIcon width={6} height={12} />}
-          valueWidth={32}
-          valueHeight={32}
-          valueBackground='rgba(255, 255, 255, 1)'
-          valueRadius={8}
+          valueWidthIcon={32}
+          valueHeightIcon={32}
+          valueBackgroundIcon='rgba(255, 255, 255, 1)'
+          valueRadiusIcon={8}
           fill
         >
           <Text fontSize='middle' lineHeight='regular' color='text.white'>

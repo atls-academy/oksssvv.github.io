@@ -34,8 +34,8 @@ export const Navbar = ({ sectionRefs }) => (
             height={180}
           />
           {sections.map((element) => (
-            <Column key={element.name} marginLeft={20}>
-              <Link to={element.name} spy smooth duration={1000} style={{ marginTop: -5 }}>
+            <Column key={element.index} marginLeft={20}>
+              <Link to={element.id} spy smooth duration={1000} style={{ marginTop: -5 }}>
                 <Text
                   fontSize='medium'
                   cursor='pointer'

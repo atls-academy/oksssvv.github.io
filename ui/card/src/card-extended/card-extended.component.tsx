@@ -27,7 +27,7 @@ export const CardExtended: FC<CardExtendedProps> = ({
       {...hoverProps}
       boxShadow={hover ? '0px 0px 30px 4px rgba(123, 84, 233, 0.20)' : '0'}
     >
-      <Background variant='lightPurpleRadial' width='100%' display='flex'>
+      <Background optionBackground='lightPurpleRadial' width='100%' display='flex'>
         <Layout flexBasis={[16, 42]} />
         <Column>
           <Layout flexBasis={[16, 42]} />

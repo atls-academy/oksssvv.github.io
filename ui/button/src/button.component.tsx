@@ -43,10 +43,10 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, 
       <Layout flexBasis={gap} />
       <IconAttachment
         icon={props.icon}
-        valueWidth={props.valueWidth}
-        valueHeight={props.valueHeight}
-        valueBackground={props.valueBackground}
-        valueRadius={props.valueRadius}
+        valueWidthIcon={props.valueWidthIcon}
+        valueHeightIcon={props.valueHeightIcon}
+        valueBackgroundIcon={props.valueBackgroundIcon}
+        valueRadiusIcon={props.valueRadiusIcon}
       />
     </ButtonElement>
   )

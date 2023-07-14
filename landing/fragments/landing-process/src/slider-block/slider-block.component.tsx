@@ -19,7 +19,7 @@ export const SliderBlock = () => (
       display='flex'
       width={[155, 960]}
       height={[323, 540]}
-      variant='lightGray'
+      optionBackground='lightGray'
       position='relative'
       border='ghostGray'
       borderRadius={[20, 24]}
@@ -28,7 +28,7 @@ export const SliderBlock = () => (
         width={[137, 936]}
         height={[307, 516]}
         display='flex'
-        variant='radialGray'
+        optionBackground='radialGray'
         position='absolute'
         top={[9, 12]}
         left={[9, 12]}
