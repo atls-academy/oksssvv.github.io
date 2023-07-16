@@ -122,8 +122,8 @@ const Cards = () => {
             icon={<ScrollIcon width={12} height={18} />}
             valueWidthIcon={48}
             valueHeightIcon={48}
-            valueBackgroundIcon='rgba(255, 255, 255, 1)'
-            valueRadiusIcon={16}
+            valueBackgroundIcon='background.white'
+            valueRadiusIcon='medium'
             fill
           >
             <Text fontSize='regular' lineHeight='regular' color='text.white'>

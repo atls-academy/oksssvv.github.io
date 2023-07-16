@@ -3,5 +3,5 @@ export interface AttachmentProps {
   valueWidthIcon?: number
   valueHeightIcon?: number
   valueBackgroundIcon?: string
-  valueRadiusIcon?: number
+  valueRadiusIcon?: string
 }

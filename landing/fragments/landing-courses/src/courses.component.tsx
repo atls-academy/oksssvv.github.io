@@ -33,8 +33,8 @@ export const Courses = () => (
             icon={<ArrowRightIcon width={6} height={12} />}
             valueWidthIcon={48}
             valueHeightIcon={48}
-            valueBackgroundIcon='rgba(255, 255, 255, 1)'
-            valueRadiusIcon={16}
+            valueBackgroundIcon='background.white'
+            valueRadiusIcon='medium'
             fill
           >
             <Text fontSize={['middle', 'regular']} color='text.white'>
@@ -103,8 +103,8 @@ export const Courses = () => (
           icon={<ArrowRightIcon width={6} height={12} />}
           valueWidthIcon={32}
           valueHeightIcon={32}
-          valueBackgroundIcon='rgba(255, 255, 255, 1)'
-          valueRadiusIcon={8}
+          valueBackgroundIcon='background.white'
+          valueRadiusIcon='little'
           fill
         >
           <Text fontSize='middle' lineHeight='regular' color='text.white'>

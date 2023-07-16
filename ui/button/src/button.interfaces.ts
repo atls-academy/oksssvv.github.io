@@ -19,5 +19,5 @@ export interface ButtonProps extends BaseButtonProps {
   valueWidthIcon?: number
   valueHeightIcon?: number
   valueBackgroundIcon?: string
-  valueRadiusIcon?: number
+  valueRadiusIcon?: string
 }

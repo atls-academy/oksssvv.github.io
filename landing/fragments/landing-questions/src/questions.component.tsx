@@ -30,8 +30,8 @@ export const Questions = () => (
             icon={<EnvelopeIcon width={12} height={10} />}
             valueWidthIcon={48}
             valueHeightIcon={48}
-            valueBackgroundIcon='rgba(255, 255, 255, 1)'
-            valueRadiusIcon={16}
+            valueBackgroundIcon='background.white'
+            valueRadiusIcon='medium'
             fill
           >
             <Text fontSize='regular' color='text.white'>
@@ -51,8 +51,8 @@ export const Questions = () => (
           icon={<EnvelopeIcon width={12} height={10} />}
           valueWidthIcon={32}
           valueHeightIcon={32}
-          valueBackgroundIcon='rgba(255, 255, 255, 1)'
-          valueRadiusIcon={8}
+          valueBackgroundIcon='background.white'
+          valueRadiusIcon='little'
           fill
         >
           <Text fontSize='middle' color='text.white'>
