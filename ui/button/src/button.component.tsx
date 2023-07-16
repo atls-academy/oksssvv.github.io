@@ -40,7 +40,7 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, gap, ...props }, 
       {...pressedProps}
     >
       <Content divider={8}>{children}</Content>
-      <Layout flexBasis={gap} flexShrink='0' />
+      <Layout flexBasis={gap} />
       <IconAttachment
         icon={props.icon}
         containerWidth={props.containerWidth}

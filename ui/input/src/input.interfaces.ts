@@ -1,13 +1,13 @@
 import { InputProps as BaseInputProps } from '@atls-ui-parts/input'
 
 export type InputSize = 'standard' | 'normal'
-export type InputVariant = 'primary' | 'ghost'
+export type InputVariant = 'ordinary'
 
 export interface InputProps extends BaseInputProps {
   size?: InputSize
-  color?: InputVariant
+  variant?: InputVariant
   textarea?: boolean
-  textAlign?: string
   gap?: number
   attachmentIcon?: object
+  filled?: boolean | undefined | string
 }

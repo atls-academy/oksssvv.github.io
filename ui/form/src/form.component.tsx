@@ -1,44 +1,95 @@
-import React        from 'react'
-import { useState } from 'react'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
+import { useState }         from 'react'
 
-import { Input }    from '@ui/input'
-import { Column }   from '@ui/layout'
-import { Layout }   from '@ui/layout'
+import { Button }           from '@ui/button'
+import { ArrowRightIcon }   from '@ui/icon'
+import { SuccessIcon }      from '@ui/icon'
+import { Input }            from '@ui/input'
+import { Column }           from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Box }              from '@ui/layout'
+import { Text }             from '@ui/text'
+import { Space }            from '@ui/text'
 
 export const Form = () => {
   const [name, setName] = useState<string>('')
   const [phone, setPhone] = useState<string>('')
   const [question, setQuestion] = useState<string>('')
-  // const [nameError, setNameError] = useState<boolean>(false)
-  // const [phoneError, setPhoneError] = useState<boolean>(false)
-  // const [questionError, setQuestionError] = useState<boolean>(false)
-  // const [success, setSuccess] = useState<boolean | null>(null)
-
+  const [visible, setVisible] = useState(false)
+  const [sendForm, setSendForm] = useState(false)
   return (
-    <Column width='100%'>
-      <Input
-        value={question}
-        onChange={setQuestion}
-        // error={questionError}
-        placeholder='Сообщение'
-        maxLength={500}
-        textarea
-      />
-      <Layout flexBasis={12} />
-      <Input
-        value={name}
-        onChange={setName}
-        // error={nameError}
-        placeholder='Имя'
-      />
-      <Layout flexBasis={12} />
-      <Input
-        value={phone}
-        onChange={setPhone}
-        // error={phoneError}
-        placeholder='Телефон'
-      />
-      <Layout flexBasis={24} />
-    </Column>
+    <>
+      <Column display={sendForm ? 'none' : 'flex'}>
+        <Input
+          value={question}
+          onChange={setQuestion}
+          placeholder='Сообщение'
+          maxLength={500}
+          textarea
+          filled={Boolean(question)}
+          onClick={() => setVisible(true)}
+        />
+        <Layout flexBasis={12} display={visible ? 'flex' : 'none'} />
+        <Box display={visible ? 'flex' : 'none'}>
+          <Input value={name} onChange={setName} placeholder='Имя' filled={Boolean(name)} />
+        </Box>
+        <Layout flexBasis={12} />
+        <Box display={visible ? 'flex' : 'none'}>
+          <Input value={phone} onChange={setPhone} placeholder='Телефон' filled={Boolean(phone)} />
+        </Box>
+        <Layout flexBasis={24} />
+        <Box width={335} flexShrink='0'>
+          <Button
+            onClick={() => setSendForm(true)}
+            variant='primary'
+            size='bigSizeNormalPadding'
+            gap={39}
+            icon={<ArrowRightIcon width={6} height={12} />}
+            containerWidth={48}
+            containerHeight={48}
+            containerRadius={16}
+            containerColor='background.white'
+            fill
+            disabled={!name || !phone || !question}
+          >
+            <Text fontSize='regular' color='text.white'>
+              <FormattedMessage id='/' defaultMessage='Отправить сообщение' />
+            </Text>
+          </Button>
+        </Box>
+        <Layout flexBasis={24} />
+        <Box display={name && phone && question ? 'inline' : 'none'}>
+          <Text display='inline' fontSize='medium' color='text.darkPurple'>
+            <FormattedMessage
+              id='/'
+              defaultMessage='Нажимая на кнопку «Оставить заявку», вы принимаете'
+            />
+          </Text>
+          <Space />
+          <Text
+            display='inline'
+            fontSize='medium'
+            color='text.darkPurple'
+            style={{ textDecoration: 'underline' }}
+          >
+            <FormattedMessage
+              id='/'
+              defaultMessage='«Соглашение об обработке персональных данных»'
+            />
+          </Text>
+        </Box>
+      </Column>
+      <Box display={sendForm ? 'flex' : 'none'} alignItems='center' flexDirection='column'>
+        <SuccessIcon width={48} height={48} />
+        <Layout flexBasis={24} />
+        <Text textAlign='center' fontSize='regular'>
+          <FormattedMessage
+            id='/'
+            defaultMessage='Мы получили твой вопрос, вернёмся с ответом asap.'
+          />
+        </Text>
+      </Box>
+    </>
   )
 }

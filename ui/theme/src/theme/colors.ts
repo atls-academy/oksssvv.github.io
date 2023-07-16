@@ -1,4 +1,21 @@
 export const colors = {
+  input: {
+    ordinary: {
+      default: {
+        border: 'rgba(58, 55, 94, 0.15)',
+      },
+      hover: {
+        border: 'rgba(123, 84, 233, 0.5)',
+      },
+      focus: {
+        border: 'rgba(123, 84, 233, 1)',
+      },
+      filled: {
+        border: 'rgba(27, 26, 51, 1)',
+      },
+    },
+  },
+
   text: {
     accent: 'rgba(77, 60, 242, 1)',
     primary: 'rgba(58, 55, 93, 1)',

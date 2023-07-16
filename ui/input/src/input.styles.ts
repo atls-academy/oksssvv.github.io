@@ -27,6 +27,30 @@ const normalSizeStyles = createShapeStyles({
   paddingRight: 4,
 })
 
+export const ordinaryDefaultStyles = createAppearanceStyles({
+  borderColor: prop('theme.colors.input.ordinary.default.border'),
+  fontColor: '',
+  backgroundColor: '',
+})
+
+export const ordinaryHoverStyles = createAppearanceStyles({
+  borderColor: prop('theme.colors.input.ordinary.hover.border'),
+  fontColor: '',
+  backgroundColor: '',
+})
+
+export const ordinaryFocusStyles = createAppearanceStyles({
+  borderColor: prop('theme.colors.input.ordinary.focus.border'),
+  fontColor: '',
+  backgroundColor: '',
+})
+
+export const ordinaryFilledStyles = createAppearanceStyles({
+  borderColor: prop('theme.colors.input.ordinary.filled.border'),
+  fontColor: '',
+  backgroundColor: '',
+})
+
 export const textareaStyles: styleFn = ifProp(prop('textarea', false), {
   paddingLeft: 24,
   paddingRight: 24,
@@ -35,12 +59,19 @@ export const textareaStyles: styleFn = ifProp(prop('textarea', false), {
   minHeight: 148,
 })
 
-export const baseStyles = createBaseStyles()
-export const appearanceStyles = createAppearanceStyles({
-  fontColor: 'black',
-  backgroundColor: 'white',
-  borderColor: '#DADEED',
+export const appearanceStyles = switchProp(prop('variant', 'ordinary'), {
+  ordinary: ifProp(
+    prop('filled', false),
+    ordinaryFilledStyles,
+    ifProp(
+      prop('focus', false),
+      ordinaryFocusStyles,
+      ifProp(prop('hover', false), ordinaryHoverStyles, ordinaryDefaultStyles)
+    )
+  ),
 })
+
+export const baseStyles = createBaseStyles()
 
 export const shapeStyles = switchProp(prop('size', 'standard'), {
   standard: standardSizeStyles,
