@@ -7,6 +7,9 @@ import React                        from 'react'
 import { ForwardRefRenderFunction } from 'react'
 import { forwardRef }               from 'react'
 
+import { Layout }                   from '@ui/layout'
+
+import { IconAttachment }           from './attachment'
 import { InputProps }               from './input.interfaces'
 import { baseStyles }               from './input.styles'
 import { shapeStyles }              from './input.styles'
@@ -24,6 +27,8 @@ export const InputWithoutRef: ForwardRefRenderFunction<HTMLInputElement, InputPr
 
   return (
     <InputElement {...props} size={size} {...(textarea && containerProps)} textarea={textarea}>
+      <IconAttachment attachmentIcon={props.attachmentIcon} />
+      <Layout flexBasis={props.gap} />
       <RawInput
         ref={ref}
         {...props}

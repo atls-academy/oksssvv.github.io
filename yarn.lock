@@ -1080,6 +1080,7 @@ __metadata:
     "@emotion/react": "npm:11.11.0"
     "@emotion/styled": "npm:11.11.0"
     "@landing/index-page": "workspace:0.0.1"
+    "@landing/library-page": "workspace:0.0.1"
     "@types/express": "npm:4.17.17"
     "@types/node": "npm:18"
     "@types/react": "npm:18.2.6"
@@ -1153,6 +1154,57 @@ __metadata:
     react-intl: "npm:6.4.2"
   peerDependencies:
     react: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/library-fragment@workspace:0.0.1, @landing/library-fragment@workspace:landing/fragments/landing-library":
+  version: 0.0.0-use.local
+  resolution: "@landing/library-fragment@workspace:landing/fragments/landing-library"
+  dependencies:
+    "@ui/button": "workspace:0.0.1"
+    "@ui/card": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/drawer": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/input": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace: 0.0.1"
+    "@ui/logo": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    react: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
+  peerDependencies:
+    react: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/library-page@workspace:0.0.1, @landing/library-page@workspace:landing/pages/library-page":
+  version: 0.0.0-use.local
+  resolution: "@landing/library-page@workspace:landing/pages/library-page"
+  dependencies:
+    "@landing/courses-fragment": "worksace:0.0.1"
+    "@landing/hero-fragment": "workspace:0.0.1"
+    "@landing/info-fragment": "workspace:0.0.1"
+    "@landing/library-fragment": "workspace:0.0.1"
+    "@landing/navigation-fragment": "workspace:0.0.1"
+    "@landing/process-fragment": "wiorkspace:0.0.1"
+    "@landing/questions-fragment": "workspace:0.0.1"
+    "@landing/runline-fragment": "workspace:0.0.1"
+    "@landing/steps-fragment": "workspace:0.0.1"
+    "@types/react": "npm:18.2.6"
+    "@types/react-dom": "npm:18.2.4"
+    "@ui/background": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/navbar": "wiorkspace:0.0.1"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-scroll-parallax: "npm:3.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -2032,8 +2084,10 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
   peerDependencies:
     react: "*"
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 
@@ -2133,6 +2187,7 @@ __metadata:
     "@emotion/styled": "npm:11.11.0"
     "@types/react": "npm:18.0.14"
     "@types/styled-system": "npm:5.1.15"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"

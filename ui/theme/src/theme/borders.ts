@@ -7,4 +7,5 @@ export const borders = {
   lightPrimary: '1px solid rgba(58, 55, 93, 0.2)',
   ghostGray: '1px solid rgba(255, 255, 255, 0.13)',
   lightGray: '1px solid rgba(27, 26, 51, 0.15)',
+  ghostPrimary: '1px solid rgba(58, 55, 94, 0.6)',
 }

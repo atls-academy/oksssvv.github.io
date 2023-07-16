@@ -11,6 +11,7 @@ export const colors = {
     purple: 'rgba(123, 84, 233, 1)',
     lightWhite: 'rgba(255, 255, 255, 0.60)',
     darkPurple: 'rgba(58, 55, 94, 0.60)',
+    grayPrimary: 'rgba(58, 55, 94, 0.6)',
   },
   background: {
     white: 'rgba(255, 255, 255, 1)',
@@ -25,6 +26,7 @@ export const colors = {
     darkPrimary: 'rgba(58, 55, 94, 0.15)',
     lightPrimary: 'rgba(123, 84, 233, 0.2)',
     brightLilac: 'rgba(123, 84, 233, 1)',
+    ghostLight: 'rgba(255, 255, 255, 0.2)',
   },
   button: {
     primary: {

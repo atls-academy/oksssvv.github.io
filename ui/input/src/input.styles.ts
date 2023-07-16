@@ -17,6 +17,16 @@ const standardSizeStyles = createShapeStyles({
   paddingRight: 12,
 })
 
+const normalSizeStyles = createShapeStyles({
+  fontFamily: 'Helvetica',
+  fontWeight: 400,
+  size: 56,
+  fontSize: 16,
+  rounding: 16,
+  paddingLeft: 12,
+  paddingRight: 4,
+})
+
 export const textareaStyles: styleFn = ifProp(prop('textarea', false), {
   paddingLeft: 24,
   paddingRight: 24,
@@ -34,4 +44,5 @@ export const appearanceStyles = createAppearanceStyles({
 
 export const shapeStyles = switchProp(prop('size', 'standard'), {
   standard: standardSizeStyles,
+  normal: normalSizeStyles,
 })

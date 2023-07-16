@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@landing/index-page": "workspace:0.0.1",
+    "@landing/library-page": "workspace:0.0.1",
     "@types/express": "4.17.17",
     "@types/node": "18",
     "@types/react": "18.2.6",
