@@ -1061,6 +1061,7 @@ __metadata:
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace:0.0.1"
     "@ui/swiper": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"

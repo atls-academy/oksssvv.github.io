@@ -3,15 +3,23 @@ export const colors = {
     ordinary: {
       default: {
         border: 'rgba(58, 55, 94, 0.15)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
       },
       hover: {
         border: 'rgba(123, 84, 233, 0.5)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
       },
       focus: {
         border: 'rgba(123, 84, 233, 1)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
       },
       filled: {
         border: 'rgba(27, 26, 51, 1)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
       },
     },
   },

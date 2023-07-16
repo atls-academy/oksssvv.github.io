@@ -29,26 +29,26 @@ const normalSizeStyles = createShapeStyles({
 
 export const ordinaryDefaultStyles = createAppearanceStyles({
   borderColor: prop('theme.colors.input.ordinary.default.border'),
-  fontColor: '',
-  backgroundColor: '',
+  fontColor: prop('theme.colors.input.ordinary.default.font'),
+  backgroundColor: prop('theme.colors.input.ordinary.default.background'),
 })
 
 export const ordinaryHoverStyles = createAppearanceStyles({
   borderColor: prop('theme.colors.input.ordinary.hover.border'),
-  fontColor: '',
-  backgroundColor: '',
+  fontColor: prop('theme.colors.input.ordinary.hover.font'),
+  backgroundColor: prop('theme.colors.input.ordinary.hover.background'),
 })
 
 export const ordinaryFocusStyles = createAppearanceStyles({
   borderColor: prop('theme.colors.input.ordinary.focus.border'),
-  fontColor: '',
-  backgroundColor: '',
+  fontColor: prop('theme.colors.input.ordinary.focus.font'),
+  backgroundColor: prop('theme.colors.input.ordinary.focus.background'),
 })
 
 export const ordinaryFilledStyles = createAppearanceStyles({
   borderColor: prop('theme.colors.input.ordinary.filled.border'),
-  fontColor: '',
-  backgroundColor: '',
+  fontColor: prop('theme.colors.input.ordinary.filled.font'),
+  backgroundColor: prop('theme.colors.input.ordinary.filled.background'),
 })
 
 export const textareaStyles: styleFn = ifProp(prop('textarea', false), {

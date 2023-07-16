@@ -8,6 +8,7 @@ import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
+import { NextLink }          from '@ui/link'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
@@ -25,23 +26,25 @@ export const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[464]} />
-        <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
-          <Button
-            variant='primary'
-            size='bigSizeNormalPadding'
-            gap={24}
-            icon={<ArrowRightIcon width={6} height={12} />}
-            widthIcon={48}
-            heightIcon={48}
-            backgroundIcon='background.white'
-            radiusIcon='medium'
-            fill
-          >
-            <Text fontSize={['middle', 'regular']} color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Все материалы' />
-            </Text>
-          </Button>
-        </Box>
+        <NextLink path='/library'>
+          <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
+            <Button
+              variant='primary'
+              size='bigSizeNormalPadding'
+              gap={24}
+              icon={<ArrowRightIcon width={6} height={12} />}
+              widthIcon={48}
+              heightIcon={48}
+              backgroundIcon='background.white'
+              radiusIcon='medium'
+              fill
+            >
+              <Text fontSize={['middle', 'regular']} color='text.white'>
+                <FormattedMessage id='/' defaultMessage='Все материалы' />
+              </Text>
+            </Button>
+          </Box>
+        </NextLink>
       </Row>
       <Layout flexBasis={[40, 80]} />
       <Divider weight={1} backgroundColor='background.primary' />
