@@ -120,10 +120,10 @@ const Cards = () => {
             size='bigSizeNormalPadding'
             gap={121}
             icon={<ScrollIcon width={12} height={18} />}
-            valueWidthIcon={48}
-            valueHeightIcon={48}
-            valueBackgroundIcon='background.white'
-            valueRadiusIcon='medium'
+            widthIcon={48}
+            heightIcon={48}
+            backgroundIcon='background.white'
+            radiusIcon='medium'
             fill
           >
             <Text fontSize='regular' lineHeight='regular' color='text.white'>

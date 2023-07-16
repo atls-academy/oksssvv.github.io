@@ -31,10 +31,10 @@ export const Courses = () => (
             size='bigSizeNormalPadding'
             gap={24}
             icon={<ArrowRightIcon width={6} height={12} />}
-            valueWidthIcon={48}
-            valueHeightIcon={48}
-            valueBackgroundIcon='background.white'
-            valueRadiusIcon='medium'
+            widthIcon={48}
+            heightIcon={48}
+            backgroundIcon='background.white'
+            radiusIcon='medium'
             fill
           >
             <Text fontSize={['middle', 'regular']} color='text.white'>
@@ -101,10 +101,10 @@ export const Courses = () => (
           size='smallSizeNormalPadding'
           gap={155}
           icon={<ArrowRightIcon width={6} height={12} />}
-          valueWidthIcon={32}
-          valueHeightIcon={32}
-          valueBackgroundIcon='background.white'
-          valueRadiusIcon='little'
+          widthIcon={32}
+          heightIcon={32}
+          backgroundIcon='background.white'
+          radiusIcon='little'
           fill
         >
           <Text fontSize='middle' lineHeight='regular' color='text.white'>

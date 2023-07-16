@@ -77,10 +77,10 @@ export const Drawer = ({ active, onClose }) => {
                 size='normalSizeNormalPadding'
                 gap={20}
                 icon={<ArrowUpIcon width={12} height={6} />}
-                valueWidthIcon={48}
-                valueHeightIcon={48}
-                valueBackgroundIcon='background.white'
-                valueRadiusIcon='normal'
+                widthIcon={48}
+                heightIcon={48}
+                backgroundIcon='background.white'
+                radiusIcon='normal'
                 fill
                 onClick={onClose}
               >
@@ -95,10 +95,10 @@ export const Drawer = ({ active, onClose }) => {
                 size='normalSizeSmallPadding'
                 gap={12}
                 icon={<ArrowUpIcon width={9} height={4.5} />}
-                valueWidthIcon={28}
-                valueHeightIcon={28}
-                valueBackgroundIcon='background.white'
-                valueRadiusIcon='micro'
+                widthIcon={28}
+                heightIcon={28}
+                backgroundIcon='background.white'
+                radiusIcon='micro'
                 fill
                 onClick={onClose}
               >
