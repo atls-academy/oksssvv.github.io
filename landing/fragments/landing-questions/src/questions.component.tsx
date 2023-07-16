@@ -11,14 +11,14 @@ import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import { Window }           from './modal'
+import { Feedback }         from './feedback'
 
 export const Questions = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
 
   return (
     <Row justifyContent='center'>
-      <Window open={modalOpen} onClose={() => setModalOpen(false)} />
+      <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
       <Layout flexBasis={[16, 230]} />
       <Column width={[343, 1610]}>
         <Layout flexBasis={[80, 160]} />

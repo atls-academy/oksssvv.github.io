@@ -9,9 +9,9 @@ import { Column }           from '@ui/layout'
 import { Modal }            from '@ui/modal'
 import { Text }             from '@ui/text'
 
-export const Window = ({ open, onClose }) => (
+export const Feedback = ({ open, onClose }) => (
   <Modal open={open} onClose={onClose}>
-    <Background variant='purpleGradient' position='absolute' top='20%' borderRadius={24}>
+    <Background backgroundColor='purpleGradient' position='absolute' top='20%' borderRadius={24}>
       <Column width={375}>
         <Layout flexBasis={30} />
         <Box>

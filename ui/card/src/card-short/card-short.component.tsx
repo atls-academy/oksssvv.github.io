@@ -11,7 +11,7 @@ import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ category, title }) => (
   <Box maxWidth={[260, 560]} borderRadius={[16, 24]} overflow='hidden'>
-    <Background variant='lightPurpleRadial' width='100%' display='flex'>
+    <Background backgroundColor='lightPurpleRadial' width='100%' display='flex'>
       <Layout flexBasis={[16, 32]} />
       <Column>
         <Layout flexBasis={[16, 32]} />
