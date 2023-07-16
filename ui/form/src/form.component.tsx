@@ -46,10 +46,10 @@ export const Form = () => {
             size='bigSizeNormalPadding'
             gap={39}
             icon={<ArrowRightIcon width={6} height={12} />}
-            containerWidth={48}
-            containerHeight={48}
-            containerRadius={16}
-            containerColor='background.white'
+            widthIcon={48}
+            heightIcon={48}
+            radiusIcon='medium'
+            backgroundIcon='background.white'
             fill
             disabled={!name || !phone || !question}
           >

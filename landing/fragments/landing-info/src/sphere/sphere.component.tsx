@@ -15,7 +15,7 @@ export const Sphere = () => (
       alignItems='center'
       backgroundColor='background.ghost'
       verticalAlign='sub'
-      borderRadius={12}
+      borderRadius='normal'
     >
       <Image width={40} src='/sphere-white.png' />
     </Box>

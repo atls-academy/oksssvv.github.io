@@ -43,12 +43,12 @@ export const Navigation = () => {
             <Button
               variant='ghost'
               size='normalSizeNormalPadding'
-              gap='14%'
+              gap={20}
               icon={<ArrowDownIcon width={12} height={6} />}
-              containerWidth={48}
-              containerHeight={48}
-              containerColor='rgba(255, 255, 255, 1)'
-              containerRadius={12}
+              widthIcon={48}
+              heightIcon={48}
+              backgroundIcon='background.white'
+              radiusIcon='normal'
               fill
               onClick={() => setVisible(true)}
             >
@@ -62,12 +62,12 @@ export const Navigation = () => {
             <Button
               variant='ghost'
               size='normalSizeSmallPadding'
-              gap='12%'
+              gap={12}
               icon={<ArrowDownIcon width={9} height={4.5} />}
-              containerWidth={28}
-              containerHeight={28}
-              containerColor='rgba(255, 255, 255, 1)'
-              containerRadius={5}
+              widthIcon={28}
+              heightIcon={28}
+              backgroundIcon='background.white'
+              radiusIcon='micro'
               fill
               onClick={() => setVisible(true)}
             >

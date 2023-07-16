@@ -42,7 +42,7 @@ const IndexPage = () => {
       </Background>
       <Background
         ref={sectionRefs[1]}
-        id='Курсы'
+        id='Courses'
         backgroundColor='whiteBendLine'
         backgroundSize={['800px,100%', '100%,100%']}
         backgroundRepeat='no-repeat'
@@ -57,7 +57,7 @@ const IndexPage = () => {
       </Background>
       <Background
         ref={sectionRefs[3]}
-        id='Обучение'
+        id='Education'
         backgroundColor='purpleBendLine'
         backgroundSize={['600px,100%, 100%', '100%,100%']}
         backgroundRepeat='no-repeat'

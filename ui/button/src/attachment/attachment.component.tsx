@@ -7,16 +7,16 @@ import { AttachmentProps } from './attachment.interface'
 
 const IconAttachment: FC<AttachmentProps> = ({
   icon,
-  containerWidth,
-  containerHeight,
-  containerColor,
-  containerRadius,
+  widthIcon,
+  heightIcon,
+  backgroundIcon,
+  radiusIcon,
 }) => (
   <Box
-    width={containerWidth}
-    height={containerHeight}
-    backgroundColor={containerColor}
-    borderRadius={containerRadius}
+    width={widthIcon}
+    height={heightIcon}
+    backgroundColor={backgroundIcon}
+    borderRadius={radiusIcon}
     justifyContent='center'
     alignItems='center'
     flexShrink='0'

@@ -73,15 +73,14 @@ export const Drawer = ({ active, onClose }) => {
             </Row>
             <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
               <Button
-                pressed
                 variant='primary'
                 size='normalSizeNormalPadding'
-                gap='14%'
+                gap={20}
                 icon={<ArrowUpIcon width={12} height={6} />}
-                containerWidth={48}
-                containerHeight={48}
-                containerColor='rgba(255, 255, 255, 1)'
-                containerRadius={12}
+                widthIcon={48}
+                heightIcon={48}
+                backgroundIcon='background.white'
+                radiusIcon='normal'
                 fill
                 onClick={onClose}
               >
@@ -92,15 +91,14 @@ export const Drawer = ({ active, onClose }) => {
             </Box>
             <Box width={100} display={['flex', 'none']} alignItems='center' flexShrink='0'>
               <Button
-                pressed
                 variant='primary'
                 size='normalSizeSmallPadding'
-                gap='12%'
+                gap={12}
                 icon={<ArrowUpIcon width={9} height={4.5} />}
-                containerWidth={28}
-                containerHeight={28}
-                containerColor='rgba(255, 255, 255, 1)'
-                containerRadius={5}
+                widthIcon={28}
+                heightIcon={28}
+                backgroundIcon='background.white'
+                radiusIcon='micro'
                 fill
                 onClick={onClose}
               >

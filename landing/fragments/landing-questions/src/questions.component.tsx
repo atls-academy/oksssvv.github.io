@@ -33,12 +33,12 @@ export const Questions = () => {
             <Button
               variant='primary'
               size='bigSizeNormalPadding'
-              gap='9%'
+              gap={24}
               icon={<EnvelopeIcon width={12} height={10} />}
-              containerWidth={48}
-              containerHeight={48}
-              containerColor='rgba(255, 255, 255, 1)'
-              containerRadius={16}
+              widthIcon={48}
+              heightIcon={48}
+              backgroundIcon='background.white'
+              radiusIcon='medium'
               fill
               onClick={() => setModalOpen(true)}
             >
@@ -51,19 +51,19 @@ export const Questions = () => {
         <Layout flexBasis={[60, 80]} />
         <Accordion />
         <Layout flexBasis={[60, 0]} />
-        <Box width={343} display={['flex', 'none']} flexShrink='0'>
+        <Box width={335} display={['flex', 'none']} flexShrink='0'>
           <Button
             variant='primary'
-            size='SmallSizeNormalPadding'
-            gap='45%'
+            size='smallSizeNormalPadding'
+            gap={163}
             icon={<EnvelopeIcon width={12} height={10} />}
-            containerWidth={32}
-            containerHeight={32}
-            containerColor='rgba(255, 255, 255, 1)'
-            containerRadius={8}
+            widthIcon={32}
+            heightIcon={32}
+            backgroundIcon='background.white'
+            radiusIcon='little'
             fill
           >
-            <Text fontSize='regular' color='text.white'>
+            <Text fontSize='middle' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Задать вопрос' />
             </Text>
           </Button>

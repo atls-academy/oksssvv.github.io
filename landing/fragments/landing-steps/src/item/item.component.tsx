@@ -23,7 +23,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
           alignItems='center'
           backgroundColor='background.ghost'
           border='ghostGray'
-          borderRadius={[12, 20]}
+          borderRadius={['normal', 'large']}
         >
           <Text fontSize={['standart', 'enlarged']} color='white'>
             {quantity}
