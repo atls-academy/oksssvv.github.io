@@ -10,7 +10,8 @@
     "@atls-ui-generators/button": "0.0.10",
     "@atls-ui-parts/button": "0.0.10",
     "@emotion/is-prop-valid": "1.2.1",
-    "@ui/layout": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1",
+    "@ui/utils": "workspace:0.0.1"
   },
   "devDependencies": {
     "@emotion/react": "11.11.0",

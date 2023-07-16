@@ -10,8 +10,8 @@ import { ScrollIcon }       from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
-import { Swiper }           from '@ui/slider'
-import { SwiperSlide }      from '@ui/slider'
+import { Swiper }           from '@ui/swiper'
+import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 
 const Cards = () => {
@@ -118,11 +118,12 @@ const Cards = () => {
           <Button
             variant='primary'
             size='bigSizeNormalPadding'
-            gap='29%'
+            gap={121}
             icon={<ScrollIcon width={12} height={18} />}
-            containerWidth={48}
-            containerHeight={48}
-            containerColor='rgba(255, 255, 255, 1)'
+            widthIcon={48}
+            heightIcon={48}
+            backgroundIcon='background.white'
+            radiusIcon='medium'
             fill
           >
             <Text fontSize='regular' lineHeight='regular' color='text.white'>

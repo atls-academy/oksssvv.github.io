@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
+    "@ui/background": "workspce:0.0.1",
     "@ui/button": "workspace:0.0.1",
     "@ui/card": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
-    "@ui/slider": "workspace:0.0.1",
+    "@ui/swiper": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1"
   },
   "devDependencies": {

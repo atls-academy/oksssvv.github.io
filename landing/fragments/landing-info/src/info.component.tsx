@@ -10,7 +10,7 @@ import { Text }             from '@ui/text'
 import { Sphere }           from './sphere'
 
 export const Info = () => (
-  <Row height={[428, 670]} justifyContent='center'>
+  <Row height={[450, 670]} justifyContent='center'>
     <Layout flexBasis={[20, 230]} />
     <Column height={[300, 590]}>
       <Layout flexBasis={[64, 160]} flexShrink={[0, 1]} />
@@ -75,7 +75,7 @@ export const Info = () => (
           <Sphere />
         </Box>
       </Column>
-      <Layout flexBasis={[64, 160]} />
+      <Layout flexBasis={[64, 240]} />
     </Column>
     <Layout flexBasis={[20, 230]} />
   </Row>

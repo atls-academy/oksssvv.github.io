@@ -22,6 +22,8 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
           justifyContent='center'
           alignItems='center'
           backgroundColor='background.ghost'
+          border='ghostGray'
+          borderRadius={['normal', 'large']}
         >
           <Text fontSize={['standart', 'enlarged']} color='white'>
             {quantity}

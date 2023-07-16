@@ -13,7 +13,8 @@
     "@landing/steps-fragment": "workspace:0.0.1",
     "@ui/background": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
-    "@ui/parallax": "workspace:0.0.1"
+    "@ui/navbar": "wiorkspace:0.0.1",
+    "react-scroll-parallax": "3.4.2"
   },
   "devDependencies": {
     "@types/react": "18.2.6",

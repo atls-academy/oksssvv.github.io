@@ -1010,12 +1010,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/courses-fragment@workspace:landing/fragments/landing-courses"
   dependencies:
+    "@ui/background": "workspce:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/card": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
-    "@ui/slider": "workspace:0.0.1"
+    "@ui/swiper": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
@@ -1084,9 +1085,10 @@ __metadata:
     "@types/react-dom": "npm:18.2.4"
     "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
-    "@ui/parallax": "workspace:0.0.1"
+    "@ui/navbar": "wiorkspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-scroll-parallax: "npm:3.4.2"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -1114,11 +1116,13 @@ __metadata:
   resolution: "@landing/navigation-fragment@workspace:landing/fragments/landing-navigation"
   dependencies:
     "@ui/button": "workspace:0.0.1"
+    "@ui/drawer": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace: 0.0.1"
     "@ui/logo": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -1131,9 +1135,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
+    "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
@@ -1147,11 +1153,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/questions-fragment@workspace:landing/fragments/landing-questions"
   dependencies:
+    "@ui/accordion": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "wirkspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -1164,9 +1172,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/runline-fragment@workspace:landing/fragments/landing-runline"
   dependencies:
+    "@emotion/react": "npm:11.11.0"
+    "@emotion/styled": "npm:11.11.0"
     "@ui/divider": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    framer-motion: "npm:10.12.18"
     react: "npm:18.2.0"
   peerDependencies:
     react: "*"
@@ -1188,6 +1200,15 @@ __metadata:
     react-intl: "*"
   languageName: unknown
   linkType: soft
+
+"@makotot/ghostui@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@makotot/ghostui@npm:2.0.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: 582a2e1c7443e2a1811753412aefefcec4f34c64dd25d4c93f3c21d2c4819cdc2c37a44e28ec18c8ba2e446bcc16358fc9f01916bed227069d18192540c68b05
+  languageName: node
+  linkType: hard
 
 "@next/env@npm:12.3.4":
   version: 12.3.4
@@ -1876,7 +1897,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ui/background@workspace:0.0.1, @ui/background@workspace:ui/background":
+"@ui/accordion@workspace:0.0.1, @ui/accordion@workspace:ui/accordion":
+  version: 0.0.0-use.local
+  resolution: "@ui/accordion@workspace:ui/accordion"
+  dependencies:
+    "@landing/questions-fragment": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    framer-motion: "npm:10.12.18"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/background@workspace:0.0.1, @ui/background@workspace:ui/background, @ui/background@workspce:0.0.1":
   version: 0.0.0-use.local
   resolution: "@ui/background@workspace:ui/background"
   dependencies:
@@ -1907,6 +1948,7 @@ __metadata:
     "@types/react": "npm:18.2.6"
     "@types/styled-system": "npm:5.1.15"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     styled-system: "npm:5.1.5"
     styled-tools: "npm:1.7.2"
@@ -1922,9 +1964,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/card@workspace:ui/card"
   dependencies:
+    "@ui/background": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
   peerDependencies:
     react: "*"
@@ -1942,6 +1987,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ui/drawer@workspace:0.0.1, @ui/drawer@workspace:ui/drawer":
+  version: 0.0.0-use.local
+  resolution: "@ui/drawer@workspace:ui/drawer"
+  dependencies:
+    "@landing/navigation-fragment": "workspace:0.0.1"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/card": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/logo": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    framer-motion: "npm:10.12.12"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/icon@workspace:0.0.1, @ui/icon@workspace:ui/icon":
   version: 0.0.0-use.local
   resolution: "@ui/icon@workspace:ui/icon"
@@ -1955,7 +2022,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@wiorkspace:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
+"@ui/layout@npm:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -2008,14 +2075,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/parallax@workspace:0.0.1, @ui/parallax@workspace:ui/parallax":
+"@ui/navbar@wiorkspace:0.0.1, @ui/navbar@workspace:ui/navbar":
   version: 0.0.0-use.local
-  resolution: "@ui/parallax@workspace:ui/parallax"
+  resolution: "@ui/navbar@workspace:ui/navbar"
   dependencies:
-    "@ui/layout": "wiorkspace:0.0.1"
-    framer-motion: "npm:10.12.17"
+    "@makotot/ghostui": "npm:2.0.0"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-scroll: "npm:1.8.9"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -2025,6 +2094,20 @@ __metadata:
 "@ui/slider@workspace:0.0.1, @ui/slider@workspace:ui/slider":
   version: 0.0.0-use.local
   resolution: "@ui/slider@workspace:ui/slider"
+  dependencies:
+    "@ui/layout": "npm:0.0.1"
+    framer-motion: "npm:10.12.18"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/swiper@workspace:0.0.1, @ui/swiper@workspace:ui/swiper":
+  version: 0.0.0-use.local
+  resolution: "@ui/swiper@workspace:ui/swiper"
   dependencies:
     "@atls-ui-parts/swiper": "npm:0.0.3"
     "@emotion/css": "npm:11.11.0"
@@ -2066,6 +2149,17 @@ __metadata:
     "@emotion/styled": "*"
     react: "*"
     react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/utils@workspace:0.0.1, @ui/utils@workspace:ui/utils":
+  version: 0.0.0-use.local
+  resolution: "@ui/utils@workspace:ui/utils"
+  dependencies:
+    "@ui/layout": "workspace:0.0.1"
+    react: "npm:18.2.0"
+  peerDependencies:
+    react: "*"
   languageName: unknown
   linkType: soft
 
@@ -3198,6 +3292,13 @@ __metadata:
   dependencies:
     tweetnacl: "npm:^0.14.3"
   checksum: 26dacae8fcd8926b2d477eea173937e4fd1255a665435f8c827a016d3939cbe9c2382946cbedcce37e3bdb069716f26be26c663598449dbeb2fefb64eb478df4
+  languageName: node
+  linkType: hard
+
+"bezier-easing@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "bezier-easing@npm:2.1.0"
+  checksum: 4214df751c27355016de4ac178abd97c08ec8e2cac0ded2f1234bbcda53d819ec7fac30b14960bbebebe6c40fe359354a42f646b2a5ee347b34146dac37b152b
   languageName: node
   linkType: hard
 
@@ -4986,9 +5087,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:10.12.17":
-  version: 10.12.17
-  resolution: "framer-motion@npm:10.12.17"
+"framer-motion@npm:10.12.12":
+  version: 10.12.12
+  resolution: "framer-motion@npm:10.12.12"
   dependencies:
     "@emotion/is-prop-valid": "npm:^0.8.2"
     tslib: "npm:^2.4.0"
@@ -5003,7 +5104,28 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: f3ca72e14c85001d542d1596bab616745b318a47a40e8edf8d6b10a92d1be5223cc0edbcb589907e309cd9ea18b9e91c72d04ba3f2dc049c88d84581d72a8c66
+  checksum: 5a16063834c62a143c2d312b72668472a1aa77918ccff4846d1de6adf0cc6542f9580e3da76b9c68ae51b7bb53a4e04b90400d50d80dbd2f1f0d7b4d432885bd
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:10.12.18":
+  version: 10.12.18
+  resolution: "framer-motion@npm:10.12.18"
+  dependencies:
+    "@emotion/is-prop-valid": "npm:^0.8.2"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 7f9be2a4edf0b0b86dabdca23f0fcbe160eb6bc783bdeba0cb4336678dc17de58854c21ebef8c0132615a809252c76ad99d816cb1b2cb59692bbf3b22ee09039
   languageName: node
   linkType: hard
 
@@ -6841,6 +6963,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.throttle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.throttle@npm:4.1.1"
+  checksum: 798dd59dd44b99c274f214698bf4aa8c337264ce843654399e6b610333c6fb67e3a0467c96c149fa0a8b5a22f16d811b66313575e52c6705eb999333f505c079
+  languageName: node
+  linkType: hard
+
 "lodash.union@npm:~4.6.0":
   version: 4.6.0
   resolution: "lodash.union@npm:4.6.0"
@@ -7941,6 +8070,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parallax-controller@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "parallax-controller@npm:1.7.0"
+  dependencies:
+    bezier-easing: "npm:^2.1.0"
+  checksum: 951f508e49428165f47dbcddefe63b60263ff81da2c82c31887b5cd5e52d70ae5591393f295a09d24856d0fb24c242fc660051a9128d8758ca147d65cc2e6ab6
+  languageName: node
+  linkType: hard
+
 "parallel-transform@npm:^1.1.0":
   version: 1.2.0
   resolution: "parallel-transform@npm:1.2.0"
@@ -8163,7 +8301,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -8454,6 +8592,31 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
   checksum: 6afc7bc37899ff5cfec336b6b9dd70e5e76840e903c6e95e49257b6e335df9459e0a952338a09ed10035d4ad403200839dd58e42ff152be30bfe92ce6104a574
+  languageName: node
+  linkType: hard
+
+"react-scroll-parallax@npm:3.4.2":
+  version: 3.4.2
+  resolution: "react-scroll-parallax@npm:3.4.2"
+  dependencies:
+    parallax-controller: "npm:^1.7.0"
+  peerDependencies:
+    react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+    react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+  checksum: cce1ae773afef7756c595144cdcc6a6dac14ffb1cfd7d5d4e5a2d8730da3c918698b66004bba4532197535a787d93a4a972a1bec4c8f0f667effb54333b029f9
+  languageName: node
+  linkType: hard
+
+"react-scroll@npm:1.8.9":
+  version: 1.8.9
+  resolution: "react-scroll@npm:1.8.9"
+  dependencies:
+    lodash.throttle: "npm:^4.1.1"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 908205744608b41a7ba9f1d7471830a12137fa9575f263df1f7d9e20eb4a682f8a7a0b62eca2c3be3f04c1ed183c9cb83a91b947ab472e219813cfc3f9c9fb7a
   languageName: node
   linkType: hard
 

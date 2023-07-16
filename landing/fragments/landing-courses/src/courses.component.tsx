@@ -29,11 +29,12 @@ export const Courses = () => (
           <Button
             variant='primary'
             size='bigSizeNormalPadding'
-            gap='9%'
+            gap={24}
             icon={<ArrowRightIcon width={6} height={12} />}
-            containerWidth={48}
-            containerHeight={48}
-            containerColor='rgba(255, 255, 255, 1)'
+            widthIcon={48}
+            heightIcon={48}
+            backgroundIcon='background.white'
+            radiusIcon='medium'
             fill
           >
             <Text fontSize={['middle', 'regular']} color='text.white'>
@@ -97,20 +98,21 @@ export const Courses = () => (
       <Box width={335} display={['flex', 'none']} flexShrink='0'>
         <Button
           variant='primary'
-          size='bigSizeNormalPadding'
-          gap='34%'
+          size='smallSizeNormalPadding'
+          gap={155}
           icon={<ArrowRightIcon width={6} height={12} />}
-          containerWidth={48}
-          containerHeight={48}
-          containerColor='rgba(255, 255, 255, 1)'
+          widthIcon={32}
+          heightIcon={32}
+          backgroundIcon='background.white'
+          radiusIcon='little'
           fill
         >
-          <Text fontSize='regular' lineHeight='regular' color='text.white'>
+          <Text fontSize='middle' lineHeight='regular' color='text.white'>
             <FormattedMessage id='/' defaultMessage='Все материалы' />
           </Text>
         </Button>
       </Box>
-      <Layout flexBasis={[64, 0]} />
+      <Layout flexBasis={[100, 80]} />
     </Column>
     <Layout flexBasis={[20, 80]} />
   </Row>

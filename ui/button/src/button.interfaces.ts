@@ -8,13 +8,16 @@ export type ButtonSize =
   | 'smallSize'
   | 'smallSizeSmallPadding'
   | 'smallSizeBigPadding'
+  | 'normalSizeSmallPadding'
+  | 'smallSizeNormalPadding'
 
 export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
   size?: ButtonSize
-  gap?: number | string
+  gap?: number
   icon?: any
-  containerWidth?: number
-  containerHeight?: number
-  containerColor?: string
+  widthIcon?: number
+  heightIcon?: number
+  backgroundIcon?: string
+  radiusIcon?: string
 }
