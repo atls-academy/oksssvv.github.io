@@ -62,6 +62,7 @@ export const Questions = () => {
             backgroundIcon='background.white'
             radiusIcon='little'
             fill
+            onClick={() => setModalOpen(true)}
           >
             <Text fontSize='middle' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Задать вопрос' />

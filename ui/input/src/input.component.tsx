@@ -11,7 +11,8 @@ import { Layout }                   from '@ui/layout'
 import { useHover }                 from '@ui/utils'
 import { useFocus }                 from '@ui/utils'
 
-import { IconAttachment }           from './attachment'
+import { ButtonAttachment }         from './attachment/attachment-button'
+import { IconAttachment }           from './attachment/attachment-icon'
 import { InputProps }               from './input.interfaces'
 import { baseStyles }               from './input.styles'
 import { shapeStyles }              from './input.styles'
@@ -50,6 +51,11 @@ export const InputWithoutRef: ForwardRefRenderFunction<HTMLInputElement, InputPr
         {...props}
         {...(textarea && rawInputProps)}
         style={{ resize: 'none', width: '100%', height: '100%' }}
+      />
+      <ButtonAttachment
+        attachmentButton={props.attachmentButton}
+        backgroundButton={props.backgroundButton}
+        textButton={props.textButton}
       />
     </InputElement>
   )

@@ -10,4 +10,7 @@ export interface InputProps extends BaseInputProps {
   gap?: number
   attachmentIcon?: object
   filled?: boolean | undefined | string
+  attachmentButton?: boolean
+  backgroundButton?: any
+  textButton?: string
 }

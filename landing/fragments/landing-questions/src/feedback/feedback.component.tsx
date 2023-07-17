@@ -17,6 +17,7 @@ export const Feedback = ({ open, onClose }) => (
         backgroundPosition='-110px -325px,-180px -15px'
         backgroundSize='650px , 600px'
         backgroundRepeat='no-repeat'
+        borderRadius={24}
       >
         <Column width={375}>
           <Layout flexBasis={30} />

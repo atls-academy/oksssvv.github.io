@@ -52,6 +52,12 @@ const appearanceGhostDisabledStyles = createAppearanceStyles({
   borderColor: prop('theme.colors.button.ghost.disabled.border'),
 })
 
+const accentDefaultStyles = createAppearanceStyles({
+  backgroundColor: prop('theme.colors.button.accent.default.background'),
+  borderColor: prop('theme.colors.button.accent.default.border'),
+  fontColor: prop('theme.colors.button.accent.default.font'),
+})
+
 const appearanceStyles = switchProp(prop('variant', 'primary'), {
   primary: ifProp(
     prop('disabled', false),
@@ -71,6 +77,7 @@ const appearanceStyles = switchProp(prop('variant', 'primary'), {
       ifProp(prop('hover', false), appearanceGhostHoverStyles, appearanceGhostDefaultStyles)
     )
   ),
+  accent: accentDefaultStyles,
 })
 
 export { appearanceStyles }

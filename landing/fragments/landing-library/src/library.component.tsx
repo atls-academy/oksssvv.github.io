@@ -22,27 +22,31 @@ export const Library = () => {
 
   return (
     <Row>
-      <Layout flexBasis={230} />
+      <Layout flexBasis={[20, 230]} />
       <Column>
-        <Layout flexBasis={200} />
-        <Box maxWidth={1460}>
-          <Text color='text.white' fontSize='huge'>
+        <Layout flexBasis={[80, 200]} />
+        <Box maxWidth={[335, 1460]}>
+          <Text color='text.white' fontSize={['major', 'huge']} lineHeight={['medium', 'small']}>
             <FormattedMessage id='/' defaultMessage='Наша библиотека' />
           </Text>
         </Box>
-        <Layout flexBasis={48} />
+        <Layout flexBasis={[24, 48]} />
         <Divider weight={1} backgroundColor='background.ghostLight' />
-        <Layout flexBasis={48} />
-        <Box width={600}>
-          <Text color='text.white' fontSize='enlarged'>
+        <Layout flexBasis={[24, 48]} />
+        <Box width={[335, 600]}>
+          <Text
+            color='text.white'
+            fontSize={['medium', 'enlarged']}
+            lineHeight={['medium', 'small']}
+          >
             <FormattedMessage
               id='/'
               defaultMessage='Здесь собраны материалы и статьи, которые пригодятся в процессе обучения. Сюда стоит пойти за ответом на любой возникший вопрос.'
             />
           </Text>
         </Box>
-        <Layout flexBasis={48} />
-        <Box width={600}>
+        <Layout flexBasis={[24, 48]} />
+        <Box width={[335, 600]}>
           <Input
             value={searchQuery}
             onChange={setSerchQuery}
@@ -50,27 +54,31 @@ export const Library = () => {
             size='normal'
             attachmentIcon={<SearchIcon />}
             gap={12}
+            attachmentButton={Boolean(searchQuery)}
+            textButton='Искать'
+            backgroundButton='accent'
           />
         </Box>
-        <Layout flexBasis={240} />
+        <Layout flexBasis={[120, 240]} />
         <Box
           backgroundColor='background.white'
           position='absolute'
-          top={900}
+          top={[450, 900]}
           left={0}
-          borderRadius='80px 80px 0px 0px'
+          borderRadius={['32px 32px 0px 0px', '80px 80px 0px 0px']}
           width='100%'
+          justifyContent='center'
         >
-          <Layout flexBasis={230} />
-          <Column width={1460}>
-            <Layout flexBasis={160} />
+          <Layout flexBasis={[20, 230]} />
+          <Column width={[335, 1460]}>
+            <Layout flexBasis={[64, 160]} />
             {increaseCardsMaterial}
-            <Layout flexBasis={240} />
+            <Layout flexBasis={[144, 240]} />
           </Column>
-          <Layout flexBasis={230} />
+          <Layout flexBasis={[20, 230]} />
         </Box>
       </Column>
-      <Layout flexBasis={230} />
+      <Layout flexBasis={[0, 230]} />
     </Row>
   )
 }

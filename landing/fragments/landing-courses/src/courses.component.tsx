@@ -8,7 +8,7 @@ import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
-import { NextLink }          from '@ui/link'
+import { NextLink }         from '@ui/link'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
@@ -98,23 +98,25 @@ export const Courses = () => (
       <Layout flexBasis={[40, 80]} />
       <Cards />
       <Layout flexBasis={[20, 160]} />
-      <Box width={335} display={['flex', 'none']} flexShrink='0'>
-        <Button
-          variant='primary'
-          size='smallSizeNormalPadding'
-          gap={155}
-          icon={<ArrowRightIcon width={6} height={12} />}
-          widthIcon={32}
-          heightIcon={32}
-          backgroundIcon='background.white'
-          radiusIcon='little'
-          fill
-        >
-          <Text fontSize='middle' lineHeight='regular' color='text.white'>
-            <FormattedMessage id='/' defaultMessage='Все материалы' />
-          </Text>
-        </Button>
-      </Box>
+      <NextLink path='/library'>
+        <Box width={335} display={['flex', 'none']} flexShrink='0'>
+          <Button
+            variant='primary'
+            size='smallSizeNormalPadding'
+            gap={155}
+            icon={<ArrowRightIcon width={6} height={12} />}
+            widthIcon={32}
+            heightIcon={32}
+            backgroundIcon='background.white'
+            radiusIcon='little'
+            fill
+          >
+            <Text fontSize='middle' lineHeight='regular' color='text.white'>
+              <FormattedMessage id='/' defaultMessage='Все материалы' />
+            </Text>
+          </Button>
+        </Box>
+      </NextLink>
       <Layout flexBasis={[100, 80]} />
     </Column>
     <Layout flexBasis={[20, 80]} />

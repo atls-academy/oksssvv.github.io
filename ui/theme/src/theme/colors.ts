@@ -39,6 +39,7 @@ export const colors = {
     grayPrimary: 'rgba(58, 55, 94, 0.6)',
   },
   background: {
+    accent: 'rgba(77, 60, 242, 1)',
     white: 'rgba(255, 255, 255, 1)',
     ghost: 'rgba(255, 255, 255, 0.08)',
     ghostGray: 'rgba(27, 26, 51, 0.15)',
@@ -81,6 +82,9 @@ export const colors = {
       disabled: {
         background: 'rgba(255, 255, 255, 0.10)',
       },
+    },
+    accent: {
+      default: { background: 'rgba(77, 60, 242, 1)' },
     },
   },
 }

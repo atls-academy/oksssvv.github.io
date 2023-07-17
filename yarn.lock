@@ -2191,10 +2191,13 @@ __metadata:
     "@emotion/styled": "npm:11.11.0"
     "@types/react": "npm:18.0.14"
     "@types/styled-system": "npm:5.1.15"
+    "@ui/button": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
     styled-system: "npm:5.1.5"
     styled-tools: "npm:1.7.2"
   peerDependencies:
@@ -2202,6 +2205,7 @@ __metadata:
     "@emotion/styled": "*"
     react: "*"
     react-dom: "*"
+    react-intl: "*"
     styled-system: "*"
     styled-tools: "*"
   languageName: unknown
