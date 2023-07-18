@@ -22,7 +22,7 @@ export const CardExtended: FC<CardExtendedProps> = ({
   return (
     <Box
       maxWidth={[335, 1160]}
-      borderRadius={[16, 24]}
+      borderRadius={['medium', 'big']}
       overflow='hidden'
       {...hoverProps}
       boxShadow={hover ? '0px 0px 30px 4px rgba(123, 84, 233, 0.20)' : '0'}
@@ -37,7 +37,7 @@ export const CardExtended: FC<CardExtendedProps> = ({
             alignItems='center'
             justifyContent='center'
             backgroundColor='white'
-            borderRadius={8}
+            borderRadius='little'
           >
             <Text fontSize={['small', 'medium']} textTransform='uppercase'>
               {category}

@@ -34,8 +34,7 @@ export const Drawer = ({ active, onClose }) => {
         <Box
           height={[495, 600]}
           backgroundColor='background.white'
-          borderBottomLeftRadius={[24, 40]}
-          borderBottomRightRadius={[24, 40]}
+          borderRadius={['normalBottom', 'bigBottom']}
           flexDirection='column'
           alignItems='center'
         >

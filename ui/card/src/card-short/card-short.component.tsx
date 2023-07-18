@@ -10,7 +10,7 @@ import { Text }           from '@ui/text'
 import { CardShortProps } from './card-short.interfaces'
 
 export const CardShort: FC<CardShortProps> = ({ category, title }) => (
-  <Box maxWidth={[260, 560]} borderRadius={[16, 24]} overflow='hidden'>
+  <Box maxWidth={[260, 560]} borderRadius={['medium', 'big']} overflow='hidden'>
     <Background backgroundColor='lightPurpleRadial' width='100%' display='flex'>
       <Layout flexBasis={[16, 32]} />
       <Column>
@@ -21,7 +21,7 @@ export const CardShort: FC<CardShortProps> = ({ category, title }) => (
           alignItems='center'
           justifyContent='center'
           backgroundColor='white'
-          borderRadius={8}
+          borderRadius='little'
         >
           <Text fontSize={['small', 'medium']} textTransform='uppercase'>
             {category}

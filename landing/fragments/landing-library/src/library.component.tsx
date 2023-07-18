@@ -58,7 +58,7 @@ export const Library = () => {
           position='absolute'
           top={[450, 900]}
           left={0}
-          borderRadius={['32px 32px 0px 0px', '80px 80px 0px 0px']}
+          borderRadius={['massiveTop', 'hugeTop']}
           width='100%'
           justifyContent='center'
         >

@@ -47,7 +47,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
         backgroundColor='lightGray'
         position='relative'
         border='ghostGray'
-        borderRadius={[20, 24]}
+        borderRadius={['large', 'big']}
       >
         <Background
           width={[148, 936]}
@@ -57,7 +57,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
           position='absolute'
           top={[1, 12]}
           left={[1, 12]}
-          borderRadius={[15, 12]}
+          borderRadius={['regular', 'normal']}
         >
           <Box width='100%' justifyContent='center' alignItems='center' flexDirection='column'>
             <Image src='/toolbar.png' display={['none', 'flex']} />
@@ -90,7 +90,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
           alignItems='center'
           height={64}
           border='ghostGray'
-          borderRadius={12}
+          borderRadius='normal'
         >
           <Layout flexBasis={[28, 0]} />
           <Box justifyContent='center' width={[175, 700]}>
@@ -108,9 +108,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
             <motion.div
               style={{
                 height: '5px',
-                width: '0',
                 backgroundColor: 'white',
-                marginTop: '0',
                 transform: 'translate(0%, 100%)',
               }}
               animate={{ width: '100%' }}

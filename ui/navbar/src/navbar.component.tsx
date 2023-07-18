@@ -52,7 +52,7 @@ export const Navbar = ({ sectionRefs }) => (
                 position='absolute'
                 width={8}
                 height={8}
-                borderRadius={10}
+                borderRadius='small'
                 backgroundColor={getColorDotBackground(currentElementIndexInViewport)}
                 left={-3.5}
               />

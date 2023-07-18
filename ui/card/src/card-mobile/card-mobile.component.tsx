@@ -17,7 +17,7 @@ export const CardMobile: FC<CardMobileProps> = ({ category, title, divider, widt
       alignItems='center'
       justifyContent='center'
       border='lightPrimary'
-      borderRadius={8}
+      borderRadius='little'
     >
       <Text fontSize='little' textTransform='uppercase' color='text.blueDark'>
         {category}
