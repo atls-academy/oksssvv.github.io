@@ -25,7 +25,7 @@ export const Questions = () => {
         <Row>
           <Box width={[335, 915]}>
             <Text fontSize={['normal', 'huge']} lineHeight='regular'>
-              <FormattedMessage id='/' defaultMessage='Вопросы и ответы' />
+              <FormattedMessage id='questions.questions-and-answel' />
             </Text>
           </Box>
           <Layout flexBasis={[0, 555]} />
@@ -43,7 +43,7 @@ export const Questions = () => {
               onClick={() => setModalOpen(true)}
             >
               <Text fontSize='regular' color='text.white'>
-                <FormattedMessage id='/' defaultMessage='Задать вопрос' />
+                <FormattedMessage id='questions.ask-question' />
               </Text>
             </Button>
           </Box>
@@ -65,7 +65,7 @@ export const Questions = () => {
             onClick={() => setModalOpen(true)}
           >
             <Text fontSize='middle' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Задать вопрос' />
+              <FormattedMessage id='questions.ask-question' />
             </Text>
           </Button>
         </Box>

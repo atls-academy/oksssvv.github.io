@@ -1,6 +1,5 @@
 import React                     from 'react'
 import { FC }                    from 'react'
-import { FormattedMessage }      from 'react-intl'
 
 import { Button }                from '@ui/button'
 import { Box }                   from '@ui/layout'
@@ -21,7 +20,7 @@ export const ButtonAttachment: FC<AttachmentButtonProps> = ({
   >
     <Button size='smallSizeSamePadding' variant={backgroundButton}>
       <Text fontSize='middle' color='text.white'>
-        <FormattedMessage id='/' defaultMessage={textButton} />
+        {textButton}
       </Text>
     </Button>
   </Box>

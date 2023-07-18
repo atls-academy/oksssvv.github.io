@@ -17,29 +17,14 @@ export const Steps = () => {
       <Column width={[335, 1760]}>
         <Layout flexBasis={[36, 112]} />
         <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '1' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в команду' })}
+          quantity={1}
+          title={intl.formatMessage({ id: 'steps.integration-in-team' })}
           divider={1}
         />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '2' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Создание среды' })}
-          divider={1}
-        />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '3' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Изучение технологий' })}
-          divider={1}
-        />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '4' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Практика изученого' })}
-          divider={1}
-        />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в проект' })}
-        />
+        <Item quantity={2} title={intl.formatMessage({ id: 'steps.create' })} divider={1} />
+        <Item quantity={3} title={intl.formatMessage({ id: 'steps.studying' })} divider={1} />
+        <Item quantity={4} title={intl.formatMessage({ id: 'steps.practice' })} divider={1} />
+        <Item quantity={5} title={intl.formatMessage({ id: 'steps.integration-in-project' })} />
         <Layout flexBasis={[0, 112]} />
       </Column>
       <Box display={['none', 'flex']} position='absolute' marginTop={340} marginLeft={-20}>

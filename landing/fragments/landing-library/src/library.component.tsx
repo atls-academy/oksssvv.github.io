@@ -27,22 +27,15 @@ export const Library = () => {
         <Layout flexBasis={[80, 200]} />
         <Box maxWidth={[335, 1460]}>
           <Text color='text.white' fontSize={['major', 'huge']} lineHeight={['medium', 'small']}>
-            <FormattedMessage id='/' defaultMessage='Наша библиотека' />
+            <FormattedMessage id='library.our-library' />
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />
         <Divider weight={1} backgroundColor='background.ghostLight' />
         <Layout flexBasis={[24, 48]} />
         <Box width={[335, 600]}>
-          <Text
-            color='text.white'
-            fontSize={['medium', 'enlarged']}
-            lineHeight={['medium', 'small']}
-          >
-            <FormattedMessage
-              id='/'
-              defaultMessage='Здесь собраны материалы и статьи, которые пригодятся в процессе обучения. Сюда стоит пойти за ответом на любой возникший вопрос.'
-            />
+          <Text color='text.white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
+            <FormattedMessage id='library.here-are-collected-materials-and-articles' />
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />

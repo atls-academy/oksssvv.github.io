@@ -23,57 +23,57 @@ export const Process = () => (
           textTransform='uppercase'
           opacity={0.5}
         >
-          <FormattedMessage id='/' defaultMessage='Процесс создания' />
+          <FormattedMessage id='process.process-create' />
         </Text>
       </Box>
       <Layout flexBasis={[16, 24]} />
       <Box display={['none', 'inline']}>
         <Text color='white' fontSize='large'>
-          <FormattedMessage id='/' defaultMessage='Любой процесс перестаёт' />
+          <FormattedMessage id='propcess.any-process-stops' />
         </Text>
         <Space count={3} />
         <Text color='white' fontSize='large' opacity={0.5}>
-          <FormattedMessage id='/' defaultMessage='быть' />
+          <FormattedMessage id='propcess.be' />
         </Text>
         <Space count={3} />
         <Text color='white' fontSize='large'>
-          <FormattedMessage id='/' defaultMessage='сложным,' />
+          <FormattedMessage id='propcess.hard' />
         </Text>
       </Box>
       <Box display={['none', 'inline']}>
         <Text color='white' fontSize='large'>
-          <FormattedMessage id='/' defaultMessage='когда' />
+          <FormattedMessage id='propcess.when' />
         </Text>
         <Space count={3} />
         <Text color='white' fontSize='large' opacity={0.5}>
-          <FormattedMessage id='/' defaultMessage='знаешь' />
+          <FormattedMessage id='propcess.know' />
         </Text>
         <Space count={3} />
         <Text color='white' fontSize='large'>
-          <FormattedMessage id='/' defaultMessage='как он протекает' />
+          <FormattedMessage id='propcess.how-going' />
         </Text>
       </Box>
       <Box display={['inline', 'none']}>
         <Text color='white' fontSize='enlarged'>
-          <FormattedMessage id='/' defaultMessage='Любой процесс перестает' />
+          <FormattedMessage id='propcess.any-process-stops' />
         </Text>
       </Box>
       <Box display={['inline', 'none']}>
         <Text color='white' fontSize='enlarged' opacity={0.5}>
-          <FormattedMessage id='/' defaultMessage='быть' />
+          <FormattedMessage id='propcess.be' />
         </Text>
         <Space count={2} />
         <Text color='white' fontSize='enlarged'>
-          <FormattedMessage id='/' defaultMessage='сложным, когда' />
+          <FormattedMessage id='process.hard-when' />
         </Text>
         <Space count={2} />
         <Text color='white' fontSize='enlarged' opacity={0.5}>
-          <FormattedMessage id='/' defaultMessage='знаешь' />
+          <FormattedMessage id='propcess.know' />
         </Text>
       </Box>
       <Box display={['inline', 'none']}>
         <Text color='white' fontSize='enlarged'>
-          <FormattedMessage id='/' defaultMessage='как он протекает' />
+          <FormattedMessage id='propcess.how-going' />
         </Text>
       </Box>
       <Layout flexBasis={[24, 50]} />

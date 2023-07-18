@@ -54,17 +54,14 @@ export const Form = () => {
             disabled={!name || !phone || !question}
           >
             <Text fontSize='regular' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Отправить сообщение' />
+              <FormattedMessage id='questions.from.send-message' />
             </Text>
           </Button>
         </Box>
         <Layout flexBasis={24} />
         <Box display={name && phone && question ? 'inline' : 'none'}>
           <Text display='inline' fontSize='medium' color='text.darkPurple'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Нажимая на кнопку «Оставить заявку», вы принимаете'
-            />
+            <FormattedMessage id='questions.form.pushing-the-button' />
           </Text>
           <Space />
           <Text
@@ -73,10 +70,7 @@ export const Form = () => {
             color='text.darkPurple'
             style={{ textDecoration: 'underline' }}
           >
-            <FormattedMessage
-              id='/'
-              defaultMessage='«Соглашение об обработке персональных данных»'
-            />
+            <FormattedMessage id='questions.form.processing-agreement' />
           </Text>
         </Box>
       </Column>
@@ -84,10 +78,7 @@ export const Form = () => {
         <SuccessIcon width={48} height={48} />
         <Layout flexBasis={24} />
         <Text textAlign='center' fontSize='regular'>
-          <FormattedMessage
-            id='/'
-            defaultMessage='Мы получили твой вопрос, вернёмся с ответом asap.'
-          />
+          <FormattedMessage id='questions.form.we-got-your-question' />
         </Text>
       </Box>
     </>

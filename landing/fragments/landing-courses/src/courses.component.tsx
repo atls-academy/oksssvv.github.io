@@ -22,7 +22,7 @@ export const Courses = () => (
       <Row>
         <Box width={[335, 880]}>
           <Text fontSize={['large', 'huge']} lineHeight='regular'>
-            <FormattedMessage id='/' defaultMessage='Курсы и материалы' />
+            <FormattedMessage id='courses.courses-and-materials' />
           </Text>
         </Box>
         <Layout flexBasis={[464]} />
@@ -40,7 +40,7 @@ export const Courses = () => (
               fill
             >
               <Text fontSize={['middle', 'regular']} color='text.white'>
-                <FormattedMessage id='/' defaultMessage='Все материалы' />
+                <FormattedMessage id='courses.all-materials' />
               </Text>
             </Button>
           </Box>
@@ -52,46 +52,43 @@ export const Courses = () => (
       <Box flexDirection={['column', 'row']}>
         <Box maxWidth={[335, 710]} display='inline'>
           <Text fontSize={['regular', 'normal']} lineHeight='medium'>
-            <FormattedMessage id='/' defaultMessage='Являясь серым кардиналом,' />
+            <FormattedMessage id='courses.being-a-cardinal' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='Atlantis' />
+            <FormattedMessage id='courses.atlantis' defaultMessage='Atlantis' />
             <Space count={1} />
           </Text>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage id='/' defaultMessage='имеет влияние на' />
+            <FormattedMessage id='courses.has-an-impact' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='сферу IT' />
+            <FormattedMessage id='courses.it-sphere' defaultMessage='сферу IT' />
           </Text>
           <Box display={['none', 'inline']}>
             <Space count={2} />
           </Box>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage id='/' defaultMessage='и неограниченные возможности в' />
+            <FormattedMessage id='courses.unlimited-possibilities' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='применении навыков.' />
+            <FormattedMessage id='courses.application-skills' />
           </Text>
         </Box>
         <Layout flexBasis={[20, 341]} />
         <Box maxWidth={[335, 559]} display='inline'>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Эффективность обучения заметно вырастает благодаря'
-            />
+            <FormattedMessage id='courses.learning-efficiency-grows' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='практике' />
+            <FormattedMessage id='courses.practice' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage id='/' defaultMessage='на существующих проектах. ' />
+            <FormattedMessage id='courses.on-existing-projects' />
           </Text>
         </Box>
       </Box>
@@ -112,7 +109,7 @@ export const Courses = () => (
             fill
           >
             <Text fontSize='middle' lineHeight='regular' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Все материалы' />
+              <FormattedMessage id='courses.all-materials' />
             </Text>
           </Button>
         </Box>

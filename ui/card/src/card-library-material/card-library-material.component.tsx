@@ -50,12 +50,8 @@ export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) 
           </Box>
           <Layout flexBasis={20} />
           <Box maxWidth={600}>
-            <Text color='text.grayPrimary' fontSize='middle' lineHeight={['large', 'small']}>
-              <FormattedMessage
-                id='/'
-                defaultMessage='Комплексный учебный материал, разработанный для студентов и всех, кто интересуется сферой дизайна,
-      созданием веб-интерфейсов и применением математики в процессе проектирования.'
-              />
+            <Text color='text.grayPrimary' fontSize='middle' lineHeight='large'>
+              <FormattedMessage id='library.comprehensive-study-material-designed-for-students' />
             </Text>
           </Box>
           <Layout flexBasis={32} />

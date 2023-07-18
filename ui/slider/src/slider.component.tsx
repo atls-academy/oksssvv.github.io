@@ -100,10 +100,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
               lineHeight={['interim', 'large']}
               textAlign='center'
             >
-              <FormattedMessage
-                id='/'
-                defaultMessage='Формирование системы базовых фрагментов и компонентов'
-              />
+              <FormattedMessage id='process.slider.formation-of-system-of-basic-fragments' />
             </Text>
           </Box>
 

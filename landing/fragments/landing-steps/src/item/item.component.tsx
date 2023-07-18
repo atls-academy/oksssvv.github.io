@@ -40,10 +40,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
         <Layout flexBasis={[8, 700]} />
         <Box width={[288, 560]}>
           <Text color='white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Являясь серым кардиналом, Atlantis имеет влияние на сферу IT и неограниченные.'
-            />
+            <FormattedMessage id='steps.being-cardinal' />
           </Text>
         </Box>
       </Row>

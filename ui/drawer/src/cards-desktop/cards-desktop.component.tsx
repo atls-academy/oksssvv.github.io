@@ -10,18 +10,14 @@ export const CardDesktop = (gap) => {
   return (
     <Row>
       <CardExtended
-        category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+        category={intl.formatMessage({ id: 'courses.card.education' })}
         gap={[148, 214]}
-        title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
+        title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
         description={intl.formatMessage({
-          id: '/',
-          defaultMessage:
-            'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
+          id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
         })}
         descriptionMobile={intl.formatMessage({
-          id: '/',
-          defaultMessage:
-            'Вы изучите фундаментальные знания в ИТ и прокачаетесь в программирование. Получите востребованную профессию и возможность открыть бизнес.',
+          id: 'courses.card.mobile.you-will-learn-fundamental-knowledge-in-IT',
         })}
       />
       <Layout flexBasis={gap} />

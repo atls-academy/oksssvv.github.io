@@ -20,34 +20,26 @@ const Cards = () => {
     <Box flexDirection={['column', 'row']}>
       <Column order={[1, 0]} maxWidth={[335, 1160]}>
         <CardExtended
-          category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+          category={intl.formatMessage({ id: 'courses.card.education' })}
           gap={[148, 214]}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
+          title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
           description={intl.formatMessage({
-            id: '/',
-            defaultMessage:
-              'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
+            id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
           })}
           descriptionMobile={intl.formatMessage({
-            id: '/',
-            defaultMessage:
-              'Вы изучите фундаментальные знания в ИТ и прокачаетесь в программирование. Получите востребованную профессию и возможность открыть бизнес.',
+            id: 'courses.card.mobile.you-will-learn-fundamental-knowledge-in-IT',
           })}
         />
         <Layout flexBasis={[20, 40]} />
         <CardExtended
-          category={intl.formatMessage({ id: '/', defaultMessage: 'Мини-курс' })}
+          category={intl.formatMessage({ id: 'courses.card.mini-cours' })}
           gap={[93, 54]}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Основы разработки' })}
+          title={intl.formatMessage({ id: 'courses.card.basics-development' })}
           description={intl.formatMessage({
-            id: '/',
-            defaultMessage:
-              'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
+            id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
           })}
           descriptionMobile={intl.formatMessage({
-            id: '/',
-            defaultMessage:
-              'Вы изучите фундаментальные знания в ИТ и прокачаетесь в программирование. Получите востребованную профессию и возможность открыть бизнес.',
+            id: 'courses.card.mobile.you-will-learn-fundamental-knowledge-in-IT',
           })}
         />
         <Layout flexBasis={[20, 40]} />
@@ -61,22 +53,19 @@ const Cards = () => {
             <SwiperSlide>
               <CardShort
                 category={intl.formatMessage({
-                  id: '/',
-                  defaultMessage: 'Учебный материал',
+                  id: 'courses.card.education-material',
                 })}
                 title={intl.formatMessage({
-                  id: '/',
-                  defaultMessage: 'Как использовать библиотеки',
+                  id: 'courses.card.use-library',
                 })}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardShort
                 category={intl.formatMessage({
-                  id: '/',
-                  defaultMessage: 'Учебный материал',
+                  id: 'courses.card.education-material',
                 })}
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
+                title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
               />
             </SwiperSlide>
           </Swiper>
@@ -84,18 +73,16 @@ const Cards = () => {
         <Box display={['none', 'flex']}>
           <CardShort
             category={intl.formatMessage({
-              id: '/',
-              defaultMessage: 'Учебный материал',
+              id: 'courses.card.education-material',
             })}
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Как использовать библиотеки' })}
+            title={intl.formatMessage({ id: 'courses.card.use-library' })}
           />
           <Layout flexBasis={40} />
           <CardShort
             category={intl.formatMessage({
-              id: '/',
-              defaultMessage: 'Учебный материал',
+              id: 'courses.card.education-material',
             })}
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Дизайн, Figma, Математика' })}
+            title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
           />
         </Box>
       </Column>
@@ -103,14 +90,11 @@ const Cards = () => {
       <Column order={[0, 1]}>
         <CardDetails
           info={intl.formatMessage({
-            id: '/',
-            defaultMessage:
-              'Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.',
+            id: 'courses.card.you-learn-fundamental-knowledge-field-it',
           })}
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
+          quantity={5}
           description={intl.formatMessage({
-            id: '/',
-            defaultMessage: 'студентов обучаются в одной практической группе',
+            id: 'courses.card.student-education-one-group',
           })}
         />
         <Layout flexBasis={[0, 20]} />
@@ -127,7 +111,7 @@ const Cards = () => {
             fill
           >
             <Text fontSize='regular' lineHeight='regular' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Процесс поступления' />
+              <FormattedMessage id='courses.button.process' />
             </Text>
           </Button>
         </Box>

@@ -49,25 +49,25 @@ export const Drawer = ({ active, onClose }) => {
             <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })}
+                title={intl.formatMessage({ id: 'navigation.academy' })}
                 path='/'
               />
               <Layout flexBasis={20} />
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })}
+                title={intl.formatMessage({ id: 'navigation.courses' })}
                 path='/'
               />
               <Layout flexBasis={20} />
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+                title={intl.formatMessage({ id: 'navigation.education' })}
                 path='/'
               />
               <Layout flexBasis={20} />
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })}
+                title={intl.formatMessage({ id: 'navigation.faq' })}
                 path='/'
               />
             </Row>
@@ -85,7 +85,7 @@ export const Drawer = ({ active, onClose }) => {
                 onClick={onClose}
               >
                 <Text color='white' fontSize='regular' lineHeight='small'>
-                  <FormattedMessage id='/' defaultMessage='Курсы' />
+                  <FormattedMessage id='navigation.courses' />
                 </Text>
               </Button>
             </Box>
@@ -103,7 +103,7 @@ export const Drawer = ({ active, onClose }) => {
                 onClick={onClose}
               >
                 <Text color='white' fontSize='medium'>
-                  <FormattedMessage id='/' defaultMessage='Курсы' />
+                  <FormattedMessage id='navigation.courses' />
                 </Text>
               </Button>
             </Box>
