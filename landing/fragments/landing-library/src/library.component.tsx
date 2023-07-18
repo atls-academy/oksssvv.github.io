@@ -1,6 +1,7 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useState }         from 'react'
+import { useIntl }          from 'react-intl'
 
 import { Divider }          from '@ui/divider'
 import { SearchIcon }       from '@ui/icon'
@@ -19,6 +20,7 @@ export const Library = () => {
   ))
 
   const [searchQuery, setSerchQuery] = useState('')
+  const intl = useIntl()
 
   return (
     <Row>
@@ -43,7 +45,7 @@ export const Library = () => {
           <Input
             value={searchQuery}
             onChange={setSerchQuery}
-            placeholder='Введите ваш запрос'
+            placeholder={intl.formatMessage({ id: 'library.input.placeholder.enter-your-request' })}
             size='normal'
             attachmentIcon={<SearchIcon />}
             gap={12}

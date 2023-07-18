@@ -18,14 +18,14 @@ export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) 
   const [hover, hoverProps] = useHover()
   const [pressed, pressedProps] = usePressed()
 
-  const colors = () => {
+  const getColor = () => {
     if (pressed) {
-      return 'rgba(114, 108, 182, 1)'
+      return 'lightPurple'
     }
     if (hover) {
-      return 'rgba(77, 60, 242, 1)'
+      return 'lilac'
     }
-    return 'rgba(27, 26, 51, 1)'
+    return 'darkPurple'
   }
 
   return (
@@ -36,7 +36,7 @@ export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) 
           <Layout flexBasis={32} />
           <Box width={[335, 785]}>
             <Text
-              color={colors()}
+              color={getColor()}
               fontSize={['large', 'solid']}
               lineHeight={['normal', 'small']}
               cursor='pointer'
@@ -58,7 +58,7 @@ export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) 
         </Column>
         <Layout flexBasis={619} />
         <Box alignItems='center' display={['none', 'flex']}>
-          <ArrowRightIcon color={colors()} width={21} height={42} />
+          <ArrowRightIcon color={getColor()} width={21} height={42} />
         </Box>
       </Row>
     </Column>
