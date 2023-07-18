@@ -1234,10 +1234,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
-    "@ui/background": "workspace:0.0.1"
-    "@ui/button": "workspace:0.0.1"
-    "@ui/icon": "workspace:0.0.1"
-    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
@@ -2211,7 +2207,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@npm:0.0.1, @ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
+"@ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -2307,13 +2303,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/slider@workspace:ui/slider"
   dependencies:
-    "@ui/layout": "npm:0.0.1"
+    "@ui/background": "workspace:0.0.1"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
     framer-motion: "npm:10.12.18"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
   peerDependencies:
     react: "*"
     react-dom: "*"
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 
