@@ -45,10 +45,10 @@ export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) 
             </Text>
           </Box>
           <Layout flexBasis={20} />
-          <Box maxWidth={['335', '530']} display='inline'>
+          <Box maxWidth={['335', '530']} flexWrap='wrap'>
             {props.technology}
           </Box>
-          <Layout flexBasis={20} />
+          <Layout flexBasis={8} />
           <Box maxWidth={600}>
             <Text color='text.grayPrimary' fontSize='middle' lineHeight='large'>
               <FormattedMessage id='library.comprehensive-study-material-designed-for-students' />
