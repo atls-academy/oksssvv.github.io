@@ -45,9 +45,9 @@ export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) 
             </Text>
           </Box>
           <Layout flexBasis={20} />
-          <Box maxWidth={['335', '530']} flexWrap='wrap'>
+          <Row maxWidth={['335', '530']} flexWrap='wrap'>
             {props.technology}
-          </Box>
+          </Row>
           <Layout flexBasis={8} />
           <Box maxWidth={600}>
             <Text color='text.grayPrimary' fontSize='middle' lineHeight='large'>
