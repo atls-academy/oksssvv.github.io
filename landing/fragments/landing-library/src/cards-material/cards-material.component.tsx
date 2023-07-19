@@ -17,21 +17,19 @@ export const CardsMaterial = (divider) => (
         key={item.index} /*eslint-disable-line */
         title={item.name}
         technology={materialTechnology.map((element) => (
-          <Box>
-            <Column key={element.index}>
-              <Box
-                border='ghostPrimary'
-                borderRadius='little'
-                padding='microYSmallX'
-                marginRight='micro'
-              >
-                <Text color='text.blueDark' fontSize='little' textTransform='uppercase'>
-                  {element.name}
-                </Text>
-              </Box>
-              <Layout flexBasis={12} />
-            </Column>
-          </Box>
+          <Column key={element.index}>
+            <Box
+              border='ghostPrimary'
+              borderRadius='little'
+              padding='microYSmallX'
+              marginRight='micro'
+            >
+              <Text color='text.blueDark' fontSize='little' textTransform='uppercase'>
+                {element.name}
+              </Text>
+            </Box>
+            <Layout flexBasis={12} />
+          </Column>
         ))}
       />
     ))}
