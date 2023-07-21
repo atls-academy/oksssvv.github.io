@@ -14,8 +14,8 @@ export const Steps = () => {
   return (
     <Row justifyContent='center'>
       <Layout flexBasis={[20, 80]} />
-      <Column width={[335, 1760]}>
-        <Layout flexBasis={[36, 112]} />
+      <Column width={{ _: 335, standard: 1760, wide: 2100, ultra: 2600 }}>
+        <Layout flexBasis={{ _: 36, standard: 112, ultra: 310 }} />
         <Item
           quantity={intl.formatMessage({ id: '/', defaultMessage: '1' })}
           title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в команду' })}
@@ -42,8 +42,13 @@ export const Steps = () => {
         />
         <Layout flexBasis={[0, 112]} />
       </Column>
-      <Box display={['none', 'flex']} position='absolute' marginTop={340} marginLeft={-20}>
-        <Image src='/cubes.png' width={400} />
+      <Box
+        display={['none', 'flex']}
+        position='absolute'
+        marginTop={{ standard: 340, wide: 70, ultra: 255 }}
+        marginLeft={-20}
+      >
+        <Image src='/cubes.png' width={{ standard: 400, wide: 880, ultra: 1100 }} />
       </Box>
       <Layout flexBasis={[20, 80]} />
     </Row>

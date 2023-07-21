@@ -20,15 +20,18 @@ export const Questions = () => {
     <Row justifyContent='center'>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
       <Layout flexBasis={[16, 230]} />
-      <Column width={[343, 1610]}>
+      <Column width={{ _: 343, standard: 1610, wide: 2250, ultra: 2600 }}>
         <Layout flexBasis={[80, 160]} />
         <Row>
-          <Box width={[335, 915]}>
-            <Text fontSize={['normal', 'huge']} lineHeight='regular'>
+          <Box width={{ _: 335, standard: 915, wide: 915, ultra: 1372 }}>
+            <Text
+              fontSize={{ _: 'normal', standard: 'huge', wide: 'huge', ultra: 'super' }}
+              lineHeight='regular'
+            >
               <FormattedMessage id='/' defaultMessage='Вопросы и ответы' />
             </Text>
           </Box>
-          <Layout flexBasis={[0, 555]} />
+          <Layout flexBasis={{ _: 0, standard: 555, wide: 1088, ultra: 1000 }} />
           <Box width={247} display={['none', 'flex']} alignItems='center' flexShrink='0'>
             <Button
               variant='primary'

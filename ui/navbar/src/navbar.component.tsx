@@ -15,11 +15,11 @@ import { getColorDotBackground }  from './helpers'
 
 export const Navbar = ({ sectionRefs }) => (
   <Box
-    display={['none', 'flex']}
+    display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
     position='fixed'
     height={210}
     width={138}
-    top={540}
+    top={{ standard: 540, wide: 420 }}
     left={40}
     zIndex={5}
     flexDirection='column'

@@ -10,20 +10,30 @@ import { Text }             from '@ui/text'
 import { Sphere }           from './sphere'
 
 export const Info = () => (
-  <Row height={[450, 670]} justifyContent='center'>
-    <Layout flexBasis={[20, 230]} />
+  <Row height={{ _: 450, standard: 710, wide: 800, ultra: 900 }} justifyContent='center'>
+    <Layout flexBasis={{ _: 20, standard: 230, wide: 230, ultra: 620 }} />
     <Column height={[300, 590]}>
       <Layout flexBasis={[64, 160]} flexShrink={[0, 1]} />
-      <Column maxWidth={[335, 1460]}>
+      <Column width={{ _: 335, standard: 1460, wide: 1460, ultra: 2190 }}>
         <Box display={['none', 'inline']}>
-          <Text display='inline' color='text.white' fontSize='great' lineHeight='medium'>
+          <Text
+            display='inline'
+            color='text.white'
+            fontSize={{ standard: 'great', ultra: 'massive' }}
+            lineHeight='medium'
+          >
             <FormattedMessage
               id='/'
               defaultMessage='Digital становится всё более многолюдным, востребованность по направлениям при этом не снижается'
             />
           </Text>
           <Sphere />
-          <Text display='inline' color='text.white' fontSize='great' lineHeight='medium'>
+          <Text
+            display='inline'
+            color='text.white'
+            fontSize={{ standard: 'great', ultra: 'massive' }}
+            lineHeight='medium'
+          >
             <FormattedMessage
               id='/'
               defaultMessage='Но специалистов, готовых нести ответсвенность за свои решения по прежднему мало'
@@ -53,12 +63,12 @@ export const Info = () => (
           <Text
             display={['none', 'inline']}
             color='text.white'
-            fontSize='great'
+            fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
             <FormattedMessage
               id='/'
-              defaultMessage='Atlantis Academy формирует инженеров и архитекторов, а не программистов и дизайнеров'
+              defaultMessage='Atlantis Academy обучает и формирует инженеров и архитекторов, а не программистов и дизайнеров'
             />
           </Text>
           <Box display={['inline', 'none']}>
@@ -77,6 +87,6 @@ export const Info = () => (
       </Column>
       <Layout flexBasis={[64, 240]} />
     </Column>
-    <Layout flexBasis={[20, 230]} />
+    <Layout flexBasis={{ _: 20, standard: 230, wide: 860, ultra: 1300 }} />
   </Row>
 )

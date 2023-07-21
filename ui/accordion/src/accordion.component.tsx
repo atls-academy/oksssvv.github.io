@@ -17,7 +17,7 @@ export const Accordion = () => {
   const items = Array.from({ length: 6 })
 
   return (
-    <Column>
+    <Column width='100%' height={{ wide: 445 }} flexWrap='wrap'>
       {items.map((_, index) => (
         <motion.div
           onClick={() => setSelected(selected === index ? null : index)}
@@ -27,6 +27,7 @@ export const Accordion = () => {
             <motion.div>{selected === index ? <SmallMinusIcon /> : <SmallPlusIcon />}</motion.div>
             <Item />
           </Box>
+
           <AnimatePresence>
             {selected === index && (
               <motion.div
@@ -35,8 +36,11 @@ export const Accordion = () => {
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.2, easeIn: 1 }}
               >
-                <Box maxWidth={784} height={58}>
-                  <Text fontSize={['medium', 'standard']} lineHeight='large'>
+                <Box maxWidth={{ standard: 784, wide: 900 }} height={{ standard: 58, wide: 129 }}>
+                  <Text
+                    fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: '' }}
+                    lineHeight='large'
+                  >
                     <FormattedMessage
                       id='/'
                       defaultMessage='Как это сделать подскажет Наставник или сотрудник поддержки. Ещё при таком переходе произойдёт зачет некоторых темам по дисциплинам.'
@@ -46,7 +50,11 @@ export const Accordion = () => {
               </motion.div>
             )}
           </AnimatePresence>
-          <Divider backgroundColor='background.ghostGray' weight={index < 5 ? 1 : undefined} />
+          <Divider
+            width={{ _: 335, standard: 1610, wide: 1000, ultra: 1180 }}
+            backgroundColor='background.ghostGray'
+            weight={index < 5 ? 1 : undefined}
+          />
         </motion.div>
       ))}
     </Column>

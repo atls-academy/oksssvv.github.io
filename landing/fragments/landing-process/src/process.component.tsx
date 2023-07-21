@@ -28,28 +28,28 @@ export const Process = () => (
       </Box>
       <Layout flexBasis={[16, 24]} />
       <Box display={['none', 'inline']}>
-        <Text color='white' fontSize='large'>
+        <Text color='white' fontSize={{ standard: 'large', wide: 'mega', ultra: '' }}>
           <FormattedMessage id='/' defaultMessage='Любой процесс перестаёт' />
         </Text>
         <Space count={3} />
-        <Text color='white' fontSize='large' opacity={0.5}>
+        <Text color='white' fontSize={{ standard: 'large', wide: 'mega', ultra: '' }} opacity={0.5}>
           <FormattedMessage id='/' defaultMessage='быть' />
         </Text>
         <Space count={3} />
-        <Text color='white' fontSize='large'>
+        <Text color='white' fontSize={{ standard: 'large', wide: 'mega', ultra: '' }}>
           <FormattedMessage id='/' defaultMessage='сложным,' />
         </Text>
       </Box>
       <Box display={['none', 'inline']}>
-        <Text color='white' fontSize='large'>
+        <Text color='white' fontSize={{ standard: 'large', wide: 'mega', ultra: '' }}>
           <FormattedMessage id='/' defaultMessage='когда' />
         </Text>
         <Space count={3} />
-        <Text color='white' fontSize='large' opacity={0.5}>
+        <Text color='white' fontSize={{ standard: 'large', wide: 'mega', ultra: '' }} opacity={0.5}>
           <FormattedMessage id='/' defaultMessage='знаешь' />
         </Text>
         <Space count={3} />
-        <Text color='white' fontSize='large'>
+        <Text color='white' fontSize={{ standard: 'large', wide: 'mega', ultra: '' }}>
           <FormattedMessage id='/' defaultMessage='как он протекает' />
         </Text>
       </Box>
@@ -80,7 +80,7 @@ export const Process = () => (
 
       <SliderBlock />
 
-      <Layout flexBasis={[100, 240]} />
+      <Layout flexBasis={{ _: 100, standard: 240, wide: 300, ultra: 430 }} />
     </Column>
     <Layout flexBasis={[0, 492]} />
   </Row>

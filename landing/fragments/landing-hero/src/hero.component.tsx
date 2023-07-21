@@ -8,15 +8,20 @@ import { AboutUs }     from './about-us'
 import { SocialLinks } from './social-links'
 
 export const Hero = () => (
-  <Column height={[414, 952]}>
-    <Layout flexBasis={[80, 403]} />
-    <Box flexDirection={['column', 'row']} justifyContent='center' alignItems={['center', 'end']}>
-      <Layout flexBasis={[20, 230]} />
+  <Column>
+    <Layout flexBasis={{ _: 80, standard: 403, wide: 256, ultra: 428 }} />
+    <Box
+      flexDirection={['column', 'row']}
+      justifyContent='center'
+      alignItems={['center', 'end']}
+      position='relative'
+    >
+      <Layout flexBasis={{ _: 20, standard: 230, wide: 230, ultra: 620 }} />
       <AboutUs />
       <Layout flexBasis={[24, 134]} />
       <SocialLinks />
-      <Layout flexBasis={[0, 40]} />
+      <Layout flexBasis={{ _: 0, standard: 40, wide: 720, ultra: 1160 }} />
     </Box>
-    <Layout flexBasis={[20, 50]} />
+    <Layout flexBasis={[20, 0]} />
   </Column>
 )

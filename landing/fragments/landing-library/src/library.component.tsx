@@ -22,11 +22,15 @@ export const Library = () => {
 
   return (
     <Row>
-      <Layout flexBasis={[20, 230, 300, 400]} />
+      <Layout flexBasis={[20, 230]} />
       <Column>
         <Layout flexBasis={[80, 200]} />
         <Box maxWidth={[335, 1460]}>
-          <Text color='text.white' fontSize={[20, 50, 100, 120]} lineHeight={['medium', 'small']}>
+          <Text
+            color='text.white'
+            fontSize={['medium', 'enlarged']}
+            lineHeight={['medium', 'small']}
+          >
             <FormattedMessage id='/' defaultMessage='Наша библиотека' />
           </Text>
         </Box>

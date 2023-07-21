@@ -27,7 +27,12 @@ export const Courses = () => (
         </Box>
         <Layout flexBasis={[464]} />
         <NextLink path='/library'>
-          <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
+          <Box
+            width={254}
+            alignItems='center'
+            display={{ _: 'none', standard: 'flex', wide: 'none', ultra: 'none' }}
+            flexShrink='0'
+          >
             <Button
               variant='primary'
               size='bigSizeNormalPadding'

@@ -16,9 +16,10 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
     <Layout flexBasis={[28, 48]} />
     <Row>
       <Column justifyContent='center' alignItems={['start', 'center']}>
+        <Layout flexBasis={{ ultra: 10 }} />
         <Box
-          width={[35, 64]}
-          height={[35, 64]}
+          width={{ _: 35, standard: 64, ultra: 76 }}
+          height={{ _: 35, standard: 64, ultra: 76 }}
           justifyContent='center'
           alignItems='center'
           backgroundColor='background.ghost'
@@ -32,14 +33,21 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
       </Column>
       <Layout flexBasis={[12, 32]} />
       <Row flexDirection={['column', 'row']} alignItems='center'>
-        <Box width={[288, 426]}>
-          <Text color='white' fontSize={['enlarged', 'large']}>
+        <Box width={{ _: 288, standard: 426, wide: 426, ultra: 630 }}>
+          <Text
+            color='white'
+            fontSize={{ _: 'enlarged', standard: 'large', wide: 'large', ultra: 'enormous' }}
+          >
             {title}
           </Text>
         </Box>
-        <Layout flexBasis={[8, 700]} />
-        <Box width={[288, 560]}>
-          <Text color='white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
+        <Layout flexBasis={{ _: 8, standard: 700, wide: 1060, ultra: 1100 }} />
+        <Box width={{ _: 288, standard: 560, wide: 560, ultra: 750 }}>
+          <Text
+            color='white'
+            fontSize={{ _: 'medium', standard: 'enlarged', wide: 'enlarged', ultra: 'normalize' }}
+            lineHeight='medium'
+          >
             <FormattedMessage
               id='/'
               defaultMessage='Являясь серым кардиналом, Atlantis имеет влияние на сферу IT и неограниченные.'

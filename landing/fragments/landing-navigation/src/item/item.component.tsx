@@ -22,14 +22,14 @@ export const Item: FC<ItemProps> = ({ title, path, backColor }) => {
   return (
     <Box
       {...hoverProps}
-      width={200}
-      height={29}
+      width={{ standard: 200, ultra: 300 }}
+      height={{ standard: 29, ultra: 43 }}
       justifyContent='center'
       borderBottom={getColorBorder()}
     >
       <NextLink path={path}>
         <Text
-          fontSize='standard'
+          fontSize={{ standard: 'standard', ultra: 'major' }}
           lineHeight='small'
           color={getColorText()}
           textTransform='uppercase'

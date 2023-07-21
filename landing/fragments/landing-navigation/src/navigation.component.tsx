@@ -23,22 +23,29 @@ export const Navigation = () => {
   return (
     <>
       <Drawer active={visible} onClose={() => setVisible(false)} />
-      <Column height={[80, 128]}>
-        <Layout flexBasis={[22, 35]} />
-        <Row justifyContent='center'>
-          <Layout flexBasis={[0, 40]} />
-          <Box width={[40, 56]}>
+      <Column alignItems='center' height={[80, 128]}>
+        <Layout flexBasis={{ _: 22, standard: 35, wide: 10, ultra: 0 }} />
+        <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2800 }}>
+          <Layout flexBasis={{ _: 20, standard: 40 }} />
+          <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
             <Logo fill='white' />
           </Box>
-          <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
+          <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
+          <Row
+            display={['none', 'flex']}
+            justifyContent='center'
+            alignItems='center'
+            width={{ ultra: 1290 }}
+          >
             <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })} path='/' />
-            <Layout flexBasis={20} />
+            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
             <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} path='/' />
-            <Layout flexBasis={20} />
+            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
             <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })} path='/' />
-            <Layout flexBasis={20} />
+            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
             <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
           </Row>
+          <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
           <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
             <Button
               variant='ghost'
@@ -57,7 +64,6 @@ export const Navigation = () => {
               </Text>
             </Button>
           </Box>
-          <Layout display={['flex', 'none']} flexBasis={195} />
           <Box width={100} display={['flex', 'none']} alignItems='center' flexShrink='0'>
             <Button
               variant='ghost'
@@ -76,7 +82,7 @@ export const Navigation = () => {
               </Text>
             </Button>
           </Box>
-          <Layout flexBasis={[0, 40]} />
+          <Layout flexBasis={{ _: 0, standard: 40 }} />
         </Row>
         <Layout flexBasis={[22, 35]} />
       </Column>

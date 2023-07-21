@@ -9,26 +9,45 @@ import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
 export const AboutUs = () => (
-  <Column height={[225, 499]} width={[335, 1460]}>
-    <Box display='inline' minWidth={[335, 920]} maxWidth={[335, 1166]}>
-      <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
+  <Column
+    height={{ _: 225, standard: 500, wide: 500, ultra: 750 }}
+    width={{ _: 335, standard: 1460, wide: 1460, ultra: 2190 }}
+  >
+    <Box
+      display='inline'
+      minWidth={[335, 920]}
+      maxWidth={{ _: 335, standard: 1166, wide: 1166, ultra: 1750 }}
+    >
+      <Text
+        color='white'
+        fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
+        lineHeight={['medium', 'normal']}
+      >
         <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
       </Text>
-      <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
+      <Text
+        color='white'
+        fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
+        lineHeight={['medium', 'normal']}
+      >
         <FormattedMessage id='/' defaultMessage='для революции в' />
       </Text>
       <Space count={4} />
 
       <Box
         display='inline-flex'
-        width={[49, 134]}
-        height={[39, 116]}
+        width={{ _: 49, standard: 134, wide: 134, ultra: 200 }}
+        height={{ _: 39, standard: 116, wide: 116, ultra: 144 }}
         justifyContent='center'
         alignItems='center'
         backgroundColor='background.ghost'
-        borderRadius={['small', 'big']}
+        borderRadius={{ _: 'small', standard: 'big', wide: 'big', ultra: 'mega' }}
       >
-        <Text color='white' fontSize={['major', 'big']} lineHeight={['medium', 'normal']}>
+        <Text
+          color='white'
+          fontSize={{ _: 'major', standard: 'big', wide: 'big', ultra: 'largest' }}
+          lineHeight={['medium', 'normal']}
+        >
           <FormattedMessage id='/' defaultMessage='IT' />
         </Text>
       </Box>
@@ -36,14 +55,18 @@ export const AboutUs = () => (
     <Layout flexBasis={[24, 48]} />
     <Divider weight={1} backgroundColor='background.ghorsWhite' />
     <Layout flexBasis={[24, 48]} />
-    <Box width={[335, 640]} display='inline'>
-      <Text color='white' fontSize={['medium', 'regular']} lineHeight='medium'>
+    <Box width={{ _: 335, standard: 640, wide: 640, ultra: 960 }} display='inline'>
+      <Text
+        color='white'
+        fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
+        lineHeight='medium'
+      >
         <FormattedMessage id='/' defaultMessage='Мы не учим программированию и дизайну,' />
       </Text>
       <Space count={2} />
       <Text
         color='white'
-        fontSize={['medium', 'regular']}
+        fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
         lineHeight='medium'
         letterSpacing={['-0.008em', '0']}
         display={['flex', 'inline']}

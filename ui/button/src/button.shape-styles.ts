@@ -3,6 +3,13 @@ import { createShapeStyles } from '@atls-ui-parts/button'
 import { prop }              from 'styled-tools'
 import { switchProp }        from 'styled-tools'
 
+const bigSizeBigPaddingStyles = createShapeStyles({
+  size: 84,
+  // paddingLeft: 24,
+  // paddingRight: 8,
+  rounding: prop('theme.radii.big') as unknown as number,
+})
+
 const normalSizeNormalPaddingStyles = createShapeStyles({
   size: 64,
   paddingLeft: 24,
@@ -68,4 +75,5 @@ export const shapeStyles = switchProp(prop('size'), {
   normalSizeSmallPadding: normalSizeSmallPaddingStyles,
   smallSizeNormalPadding: smallSizeNormalPaddingStyles,
   smallSizeSamePadding: smallSizeSamePaddingStyles,
+  bigSizeBigPadding: bigSizeBigPaddingStyles,
 })

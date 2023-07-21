@@ -42,16 +42,16 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
     <Column display={display} alignItems='center'>
       <Background
         display='flex'
-        width={[155, 960]}
-        height={[323, 540]}
+        width={{ _: 155, standard: 960, wide: 1280, ultra: 1300 }}
+        height={{ _: 323, standard: 540, wide: 720, ultra: 731 }}
         backgroundColor='lightGray'
         position='relative'
         border='ghostGray'
         borderRadius={[20, 24]}
       >
         <Background
-          width={[148, 936]}
-          height={[315, 516]}
+          width={{ _: 148, standard: 936, wide: 1255, ultra: 1267 }}
+          height={{ _: 315, standard: 516, wide: 698, ultra: 698 }}
           display='flex'
           backgroundColor='radialGray'
           position='absolute'
@@ -60,7 +60,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
           borderRadius={[15, 12]}
         >
           <Box width='100%' justifyContent='center' alignItems='center' flexDirection='column'>
-            <Image src='/toolbar.png' display={['none', 'flex']} />
+            <Image src='/toolbar.png' display={['none', 'flex']} width='100%' />
             <Image src='/mobilePanel.png' display={['flex', 'none']} />
             <motion.img
               key={index}
@@ -76,7 +76,11 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
       </Background>
 
       <Layout flexBasis={[26, 32]} />
-      <Box width={[335, 960]} height={[64]} alignItems='center'>
+      <Box
+        width={{ _: 335, standard: 960, wide: 1280, ultra: 1300 }}
+        height={{ _: 64, standard: 64, wide: 85, ultra: 86 }}
+        alignItems='center'
+      >
         <Button size='smallSize' variant='ghost' onClick={leftClick}>
           <SmallArrowLeftIcon />
         </Button>
