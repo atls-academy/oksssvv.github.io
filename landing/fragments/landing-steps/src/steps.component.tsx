@@ -17,36 +17,20 @@ export const Steps = () => {
       <Column width={{ _: 335, standard: 1760, wide: 2100, ultra: 2600 }}>
         <Layout flexBasis={{ _: 36, standard: 112, ultra: 310 }} />
         <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '1' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в команду' })}
+          quantity={1}
+          title={intl.formatMessage({ id: 'steps.integration-in-team' })}
           divider={1}
         />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '2' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Создание среды' })}
-          divider={1}
-        />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '3' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Изучение технологий' })}
-          divider={1}
-        />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '4' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Практика изученого' })}
-          divider={1}
-        />
-        <Item
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
-          title={intl.formatMessage({ id: '/', defaultMessage: 'Интеграция в проект' })}
-        />
+        <Item quantity={2} title={intl.formatMessage({ id: 'steps.create' })} divider={1} />
+        <Item quantity={3} title={intl.formatMessage({ id: 'steps.studying' })} divider={1} />
+        <Item quantity={4} title={intl.formatMessage({ id: 'steps.practice' })} divider={1} />
+        <Item quantity={5} title={intl.formatMessage({ id: 'steps.integration-in-project' })} />
         <Layout flexBasis={[0, 112]} />
       </Column>
       <Box
         display={['none', 'flex']}
         position='absolute'
-        marginTop={{ standard: 340, wide: 70, ultra: 255 }}
-        marginLeft={-20}
+        top={{ standard: 340, wide: 70, ultra: 255 }}
       >
         <Image src='/cubes.png' width={{ standard: 400, wide: 880, ultra: 1100 }} />
       </Box>

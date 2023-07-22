@@ -1,6 +1,7 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useState }         from 'react'
+import { useIntl }          from 'react-intl'
 
 import { Divider }          from '@ui/divider'
 import { SearchIcon }       from '@ui/icon'
@@ -19,6 +20,7 @@ export const Library = () => {
   ))
 
   const [searchQuery, setSerchQuery] = useState('')
+  const intl = useIntl()
 
   return (
     <Row justifyContent='center'>
@@ -27,7 +29,7 @@ export const Library = () => {
         <Layout flexBasis={[80, 200]} />
         <Box width={[225, 1460]}>
           <Text color='text.white' fontSize={['major', 'huge']} lineHeight={['medium', 'small']}>
-            <FormattedMessage id='/' defaultMessage='Наша библиотека' />
+            <FormattedMessage id='library.our-library' />
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />
@@ -35,10 +37,7 @@ export const Library = () => {
         <Layout flexBasis={[24, 48]} />
         <Box width={[335, 600]}>
           <Text color='text.white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Здесь собраны материалы и статьи, которые пригодятся в процессе обучения. Сюда стоит пойти за ответом на любой возникший вопрос.'
-            />
+            <FormattedMessage id='library.here-are-collected-materials-and-articles' />
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />
@@ -46,7 +45,7 @@ export const Library = () => {
           <Input
             value={searchQuery}
             onChange={setSerchQuery}
-            placeholder='Введите ваш запрос'
+            placeholder={intl.formatMessage({ id: 'library.input.placeholder.enter-your-request' })}
             size='normal'
             attachmentIcon={<SearchIcon />}
             gap={12}
@@ -61,7 +60,7 @@ export const Library = () => {
           position='absolute'
           top={[450, 900]}
           left={0}
-          borderRadius={['32px 32px 0px 0px', '80px 80px 0px 0px']}
+          borderRadius={['massiveTop', 'hugeTop']}
           width='100%'
           justifyContent='center'
         >

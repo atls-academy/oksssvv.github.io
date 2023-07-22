@@ -9,20 +9,20 @@ export const CardsMobile = () => {
   return (
     <>
       <CardMobile
-        category={intl.formatMessage({ id: '/', defaultMessage: 'Базовый' })}
-        title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
+        category={intl.formatMessage({ id: 'navigation.card.base' })}
+        title={intl.formatMessage({ id: 'navigation.card.frontend-engineer' })}
         widthContainer={87}
         divider={1}
       />
       <CardMobile
-        category={intl.formatMessage({ id: '/', defaultMessage: 'Продвинутый' })}
-        title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
+        category={intl.formatMessage({ id: 'navigation.card.advanced' })}
+        title={intl.formatMessage({ id: 'navigation.card.frontend-engineer' })}
         widthContainer={122}
         divider={1}
       />
       <CardMobile
-        category={intl.formatMessage({ id: '/', defaultMessage: 'Базовый' })}
-        title={intl.formatMessage({ id: '/', defaultMessage: 'Backend Engineer' })}
+        category={intl.formatMessage({ id: 'navigation.card.base' })}
+        title={intl.formatMessage({ id: 'navigation.card.backend-engineer' })}
         widthContainer={87}
         divider={0}
       />

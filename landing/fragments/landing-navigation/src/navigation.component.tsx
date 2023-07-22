@@ -37,16 +37,13 @@ export const Navigation = () => {
             alignItems='center'
             width={{ ultra: 1290 }}
           >
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })} path='/' />
+            <Item title={intl.formatMessage({ id: 'navigation.academy' })} path='Academy' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} path='Courses' />
+            <Item title={intl.formatMessage({ id: 'navigation.courses' })} path='Courses' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item
-              title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
-              path='Education'
-            />
+            <Item title={intl.formatMessage({ id: 'navigation.education' })} path='Education' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='FAQ' />
+            <Item title={intl.formatMessage({ id: 'navigation.faq' })} path='FAQ' />
           </Row>
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
           <Box
@@ -68,7 +65,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='regular'>
-                <FormattedMessage id='/' defaultMessage='Курсы' />
+                <FormattedMessage id='navigation.courses' />
               </Text>
             </Button>
           </Box>
@@ -86,7 +83,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='medium'>
-                <FormattedMessage id='/' defaultMessage='Курсы' />
+                <FormattedMessage id='navigation.courses' />
               </Text>
             </Button>
           </Box>
@@ -109,7 +106,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='averaged'>
-                <FormattedMessage id='/' defaultMessage='Курсы' />
+                <FormattedMessage id='navigation.courses' />
               </Text>
             </Button>
           </Box>

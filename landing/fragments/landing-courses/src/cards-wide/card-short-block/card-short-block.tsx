@@ -11,10 +11,7 @@ export const CardShortBlock = ({ gap, title }) => {
     <>
       <Column>
         <CardShort
-          category={intl.formatMessage({
-            id: '/',
-            defaultMessage: 'Учебный материал',
-          })}
+          category={intl.formatMessage({ id: 'courses.card.education-material' })}
           title={title}
         />
         <Layout flexBasis={40} />

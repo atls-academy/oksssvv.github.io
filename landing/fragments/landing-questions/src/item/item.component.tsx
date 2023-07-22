@@ -24,7 +24,7 @@ export const Item = () => {
             color={hover ? 'text.accent' : 'text.primary'}
             whiteSpace='nowrap'
           >
-            <FormattedMessage id='/' defaultMessage='Подойдёт ли мне профессия?' />
+            <FormattedMessage id='questions.profession-right-for-me' />
           </Text>
         </Box>
         <Layout flexBasis={[26, 0]} />

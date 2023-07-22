@@ -26,6 +26,8 @@ const bigSizeBigPaddingStyles = createShapeStyles({
 
 const bigSizeBigRadiiStyles = createShapeStyles({
   size: 84,
+  paddingLeft: 27.5,
+  paddingRight: 27.5,
   rounding: prop('theme.radii.big') as unknown as number,
 })
 

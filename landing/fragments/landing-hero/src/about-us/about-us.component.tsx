@@ -11,13 +11,13 @@ import { Space }            from '@ui/text'
 export const AboutUs = () => (
   <Column height={{ _: 225, standard: 500, wide: 500, ultra: 750 }}>
     <Box flexWrap='wrap' width={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}>
-      <Box width={{ ultra: 1750 }}>
+      <Box width={{ standard: 1166, ultra: 1750 }}>
         <Text
           color='white'
           fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
           lineHeight={['medium', 'normal']}
         >
-          <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
+          <FormattedMessage id='hero.train-professionals' />
         </Text>
       </Box>
       <Text
@@ -25,7 +25,7 @@ export const AboutUs = () => (
         fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
         lineHeight={['medium', 'normal']}
       >
-        <FormattedMessage id='/' defaultMessage='для революции в' />
+        <FormattedMessage id='hero.for-revolution-in' />
       </Text>
       <Space count={4} />
 
@@ -43,7 +43,7 @@ export const AboutUs = () => (
           fontSize={{ _: 'major', standard: 'big', wide: 'big', ultra: 'largest' }}
           lineHeight={['medium', 'normal']}
         >
-          <FormattedMessage id='/' defaultMessage='IT' />
+          <FormattedMessage id='hero.it' />
         </Text>
       </Box>
     </Box>
@@ -56,7 +56,7 @@ export const AboutUs = () => (
         fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
         lineHeight='medium'
       >
-        <FormattedMessage id='/' defaultMessage='Мы не учим программированию и дизайну,' />
+        <FormattedMessage id='hero.we-not-teach-programming' />
       </Text>
       <Space count={2} />
       <Text
@@ -66,10 +66,7 @@ export const AboutUs = () => (
         letterSpacing={['-0.008em', '0']}
         display={['flex', 'inline']}
       >
-        <FormattedMessage
-          id='/'
-          defaultMessage='мы учим мышлению, способному реализовывывать невозможные идеи.'
-        />
+        <FormattedMessage id='hero.we-teach-thinking' />
       </Text>
     </Box>
   </Column>

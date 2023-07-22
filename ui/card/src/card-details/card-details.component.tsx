@@ -14,7 +14,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description 
   <Background
     height={{ wide: 660, ultra: 840 }}
     backgroundColor='grayGradient'
-    borderRadius={[16, 24]}
+    borderRadius={['medium', 'big']}
     border='lightGray'
   >
     <Box width={{ _: 335, standard: 410, ultra: 470 }}>
@@ -35,7 +35,7 @@ export const CardDetails: FC<CardDetailsProps> = ({ info, quantity, description 
         </Box>
         <Layout flexBasis={[16, 68]} />
         <Box
-          width={{ ultra: 346 }}
+          width={{ _: 303, standard: 346, ultra: 346 }}
           height={[64, 116]}
           flexDirection={['row', 'column']}
           alignItems={['center', 'start']}

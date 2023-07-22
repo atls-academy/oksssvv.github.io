@@ -1,5 +1,5 @@
 export interface CardDetailsProps {
   info: string
-  quantity: string
+  quantity: number
   description: string
 }

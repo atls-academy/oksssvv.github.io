@@ -34,7 +34,7 @@ export const Navbar = ({ sectionRefs }) => (
             height={180}
           />
           {sections.map((element) => (
-            <Column key={element.index} marginLeft={20}>
+            <Column key={element.index} marginLeft='regular'>
               <Link to={element.id} spy smooth duration={1000} style={{ marginTop: -5 }}>
                 <Text
                   fontSize='medium'
@@ -52,7 +52,7 @@ export const Navbar = ({ sectionRefs }) => (
                 position='absolute'
                 width={8}
                 height={8}
-                borderRadius={10}
+                borderRadius='small'
                 backgroundColor={getColorDotBackground(currentElementIndexInViewport)}
                 left={-3.5}
               />

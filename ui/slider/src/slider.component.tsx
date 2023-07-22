@@ -47,7 +47,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
         backgroundColor='lightGray'
         position='relative'
         border='ghostGray'
-        borderRadius={[20, 24]}
+        borderRadius={['large', 'big']}
       >
         <Background
           width={{ _: 148, standard: 936, wide: 1255, ultra: 1267 }}
@@ -57,7 +57,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
           position='absolute'
           top={[1, 12]}
           left={[1, 12]}
-          borderRadius={[15, 12]}
+          borderRadius={['regular', 'normal']}
         >
           <Box width='100%' justifyContent='center' alignItems='center' flexDirection='column'>
             <Image src='/toolbar.png' display={['none', 'flex']} width='100%' />
@@ -111,10 +111,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
               lineHeight={['interim', 'large']}
               textAlign='center'
             >
-              <FormattedMessage
-                id='/'
-                defaultMessage='Формирование системы базовых фрагментов и компонентов'
-              />
+              <FormattedMessage id='process.slider.formation-of-system-of-basic-fragments' />
             </Text>
           </Box>
 
@@ -127,9 +124,7 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
             <motion.div
               style={{
                 height: '5px',
-                width: '0',
                 backgroundColor: 'white',
-                marginTop: '0',
                 transform: 'translate(0%, 100%)',
               }}
               animate={{ width: '100%' }}

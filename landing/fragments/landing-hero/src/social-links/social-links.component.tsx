@@ -17,25 +17,24 @@ export const SocialLinks = () => (
       position='absolute'
       top={990}
       right={620}
-      width={84}
     >
-      <Button size='bigSizeBigRadii' variant='ghost'>
-        <NextLink path='/'>
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='bigSizeBigRadii' variant='ghost'>
           <TelegramIcon width={27} height={27} />
-        </NextLink>
-      </Button>
-      <Layout flexBasis={24} />
-      <Button size='bigSizeBigRadii' variant='ghost'>
-        <NextLink path='/'>
+        </Button>{' '}
+      </NextLink>
+      <Layout flexBasis={24} />{' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='bigSizeBigRadii' variant='ghost'>
           <GitHubIcon width={27} height={27} />
-        </NextLink>
-      </Button>
-      <Layout flexBasis={24} />
-      <Button size='bigSizeBigRadii' variant='ghost'>
-        <NextLink path='/'>
+        </Button>{' '}
+      </NextLink>
+      <Layout flexBasis={24} />{' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='bigSizeBigRadii' variant='ghost'>
           <EmailIcon width={27} height={27} />
-        </NextLink>
-      </Button>
+        </Button>{' '}
+      </NextLink>
     </Box>
     <Box
       flexDirection='column'
@@ -45,42 +44,43 @@ export const SocialLinks = () => (
       right={{ wide: 40 }}
       justifyContent='end'
     >
-      <Button size='smallSizeSmallPadding' variant='ghost'>
-        <NextLink path='/'>
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='smallSizeSmallPadding' variant='ghost'>
           <TelegramIcon width={18} height={15} />
-        </NextLink>
-      </Button>
-      <Layout flexBasis={16} />
-      <Button size='smallSizeSmallPadding' variant='ghost'>
-        <NextLink path='/'>
+        </Button>
+      </NextLink>
+      <Layout flexBasis={16} />{' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='smallSizeSmallPadding' variant='ghost'>
           <GitHubIcon width={18} height={17} />
-        </NextLink>
-      </Button>
-      <Layout flexBasis={16} />
-      <Button size='smallSizeSmallPadding' variant='ghost'>
-        <NextLink path='/'>
+        </Button>{' '}
+      </NextLink>
+      <Layout flexBasis={16} />{' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='smallSizeSmallPadding' variant='ghost'>
           <EmailIcon width={18} height={14} />
-        </NextLink>
-      </Button>
+        </Button>{' '}
+      </NextLink>
     </Box>
     <Row display={['flex', 'none']} justifyContent='center'>
-      <Button size='smallSizeBigPadding' variant='ghost'>
-        <NextLink path='/'>
+      {' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='smallSizeBigPadding' variant='ghost'>
           <TelegramIcon width={15} height={12} />
-        </NextLink>
-      </Button>
-      <Layout flexBasis={12} />
-      <Button size='smallSizeBigPadding' variant='ghost'>
-        <NextLink path='/'>
+        </Button>{' '}
+      </NextLink>
+      <Layout flexBasis={12} />{' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='smallSizeBigPadding' variant='ghost'>
           <GitHubIcon width={15} height={14} />
-        </NextLink>
-      </Button>
-      <Layout flexBasis={12} />
-      <Button size='smallSizeBigPadding' variant='ghost'>
-        <NextLink path='/'>
+        </Button>{' '}
+      </NextLink>
+      <Layout flexBasis={12} />{' '}
+      <NextLink path='https://github.com/atls-academy'>
+        <Button size='smallSizeBigPadding' variant='ghost'>
           <EmailIcon width={15} height={11} />
-        </NextLink>
-      </Button>
+        </Button>{' '}
+      </NextLink>
     </Row>
   </>
 )

@@ -22,10 +22,7 @@ export const Info = () => (
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            <FormattedMessage
-              id='/'
-              defaultMessage='Digital становится всё более многолюдным, востребованность по направлениям при этом не снижается'
-            />
+            <FormattedMessage id='info.desktop.digital-is-becoming-more-and-more-crowded' />
           </Text>
           <Sphere />
           <Text
@@ -34,28 +31,19 @@ export const Info = () => (
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            <FormattedMessage
-              id='/'
-              defaultMessage='Но специалистов, готовых нести ответсвенность за свои решения по прежднему мало'
-            />
+            <FormattedMessage id='info.desktop.but-there-are-still-few-specialists' />
           </Text>
           <Sphere />
         </Box>
         <Box display={['inline', 'none']} width={320}>
           <Text color='text.white' fontSize='regular' lineHeight='interim'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Digital становится всё более многолюдным, востребованность по направлениям при этом '
-            />
+            <FormattedMessage id='info.mobile.digital-is-becoming-more-and-more-crowded' />
           </Text>
           <Text color='text.white' fontSize='regular' lineHeight='interim'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='не снижается. Но специалистов, готовых нести ответсвенность'
-            />
+            <FormattedMessage id='info.mobile.does-not-decrease-but-specialists' />
           </Text>
           <Text color='text.white' fontSize='regular' lineHeight='interim'>
-            <FormattedMessage id='/' defaultMessage='за свои решения по-прежнему мало.' />
+            <FormattedMessage id='info.mobile.for-their-decisions-is-still-not-enough' />
           </Text>
         </Box>
         <Layout flexBasis={[24, 40]} />
@@ -66,20 +54,14 @@ export const Info = () => (
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            <FormattedMessage
-              id='/'
-              defaultMessage='Atlantis Academy обучает и формирует инженеров и архитекторов, а не программистов и дизайнеров'
-            />
+            <FormattedMessage id='info.desktop.atlantis-academy-trains-engineers' />
           </Text>
           <Box display={['inline', 'none']}>
             <Text color='text.white' fontSize='regular' lineHeight='interim'>
-              <FormattedMessage
-                id='/'
-                defaultMessage='Atlantis Academy формирует инженеров и архитекторов,'
-              />
+              <FormattedMessage id='info.mobile.atlantis-academy-trains-engineers' />
             </Text>
             <Text color='text.white' fontSize='regular' lineHeight='interim'>
-              <FormattedMessage id='/' defaultMessage='а не программистов и дизайнеров.' />
+              <FormattedMessage id='info.mobile.not-programmers-and-designers' />
             </Text>
           </Box>
           <Sphere />

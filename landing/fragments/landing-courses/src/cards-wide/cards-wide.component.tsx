@@ -1,5 +1,6 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
+import { Link }             from 'react-scroll'
 import { useIntl }          from 'react-intl'
 
 import { Background }       from '@ui/background'
@@ -34,25 +35,21 @@ export const CardsWide = () => {
         <Box width={{ wide: 1790, ultra: 2090 }}>
           <CardExtended
             srcImage='/waves.png'
-            category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+            category={intl.formatMessage({ id: 'courses.card.education' })}
             gap={{ wide: 356, ultra: 222 }}
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
+            title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
             description={intl.formatMessage({
-              id: '/',
-              defaultMessage:
-                'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
+              id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
             })}
           />
           <Layout flexBasis={40} />
           <CardExtended
             srcImage='/waves.png'
-            category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+            category={intl.formatMessage({ id: 'courses.card.mini-cours' })}
             gap={{ wide: 356, ultra: 222 }}
-            title={intl.formatMessage({ id: '/', defaultMessage: 'Frontend Engineer' })}
+            title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
             description={intl.formatMessage({
-              id: '/',
-              defaultMessage:
-                'Вы изучите фундаментальные знания в ИТ и прокачаетесь  в направлении программирования. Получите востребованную профессию и возможность открыть бизнес в сфере информационных технологий',
+              id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
             })}
           />
         </Box>
@@ -72,7 +69,7 @@ export const CardsWide = () => {
               <Column>
                 <Layout flexBasis={232} />
                 <Text fontSize='large' color='text.white'>
-                  <FormattedMessage id='/' defaultMessage='Все материалы' />
+                  <FormattedMessage id='courses.all-materials' />
                 </Text>
               </Column>
             </Background>
@@ -82,52 +79,49 @@ export const CardsWide = () => {
       <Layout flexBasis={40} />
       <Column>
         <CardDetails
-          info={intl.formatMessage({
-            id: '/',
-            defaultMessage:
-              'Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.',
-          })}
-          quantity={intl.formatMessage({ id: '/', defaultMessage: '5' })}
-          description={intl.formatMessage({
-            id: '/',
-            defaultMessage: 'студентов обучаются в одной практической группе',
-          })}
+          info={intl.formatMessage({ id: 'courses.card.you-learn-fundamental-knowledge-field-it' })}
+          quantity={5}
+          description={intl.formatMessage({ id: 'courses.card.student-education-one-group' })}
         />
         <Layout flexBasis={20} />
-        <Box display={{ wide: 'flex', ultra: 'none' }} width={[410]} flexShrink='0'>
-          <Button
-            variant='primary'
-            size='bigSizeNormalPadding'
-            gap={121}
-            icon={<ScrollIcon width={12} height={18} />}
-            widthIcon={48}
-            heightIcon={48}
-            backgroundIcon='background.white'
-            radiusIcon='medium'
-            fill
-          >
-            <Text fontSize='regular' lineHeight='regular' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Процесс поступления' />
-            </Text>
-          </Button>
-        </Box>
-        <Box display={{ wide: 'none', ultra: 'flex' }} width={[470]} flexShrink='0'>
-          <Button
-            variant='primary'
-            size='largeSizeNormalPadding'
-            gap={54}
-            icon={<ScrollIcon width={18} height={27} />}
-            widthIcon={72}
-            heightIcon={72}
-            backgroundIcon='background.white'
-            radiusIcon='big'
-            fill
-          >
-            <Text fontSize='major' lineHeight='regular' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Процесс поступления' />
-            </Text>
-          </Button>
-        </Box>
+        <Link to='Education' spy smooth duration={1000}>
+          <Box display={{ wide: 'flex', ultra: 'none' }} width={[410]} flexShrink='0'>
+            <Button
+              variant='primary'
+              size='bigSizeNormalPadding'
+              gap={121}
+              icon={<ScrollIcon width={12} height={18} />}
+              widthIcon={48}
+              heightIcon={48}
+              backgroundIcon='background.white'
+              radiusIcon='medium'
+              fill
+            >
+              <Text fontSize='regular' lineHeight='regular' color='text.white'>
+                <FormattedMessage id='courses.button.process' />
+              </Text>
+            </Button>
+          </Box>
+        </Link>
+        <Link to='Education' spy smooth duration={1000}>
+          <Box display={{ wide: 'none', ultra: 'flex' }} width={[470]} flexShrink='0'>
+            <Button
+              variant='primary'
+              size='largeSizeNormalPadding'
+              gap={54}
+              icon={<ScrollIcon width={18} height={27} />}
+              widthIcon={72}
+              heightIcon={72}
+              backgroundIcon='background.white'
+              radiusIcon='big'
+              fill
+            >
+              <Text fontSize='major' lineHeight='regular' color='text.white'>
+                <FormattedMessage id='courses.button.process' />
+              </Text>
+            </Button>
+          </Box>
+        </Link>
       </Column>
     </Row>
   )

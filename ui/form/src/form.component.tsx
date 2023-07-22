@@ -1,6 +1,7 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useState }         from 'react'
+import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
 import { ArrowRightIcon }   from '@ui/icon'
@@ -18,13 +19,14 @@ export const Form = () => {
   const [question, setQuestion] = useState<string>('')
   const [visible, setVisible] = useState(false)
   const [sendForm, setSendForm] = useState(false)
+  const intl = useIntl()
   return (
     <>
       <Column display={sendForm ? 'none' : 'flex'}>
         <Input
           value={question}
           onChange={setQuestion}
-          placeholder='Сообщение'
+          placeholder={intl.formatMessage({ id: 'questions.form.input.placeholder.message' })}
           maxLength={500}
           textarea
           filled={Boolean(question)}
@@ -32,11 +34,21 @@ export const Form = () => {
         />
         <Layout flexBasis={12} display={visible ? 'flex' : 'none'} />
         <Box display={visible ? 'flex' : 'none'}>
-          <Input value={name} onChange={setName} placeholder='Имя' filled={Boolean(name)} />
+          <Input
+            value={name}
+            onChange={setName}
+            placeholder={intl.formatMessage({ id: 'questions.form.input.placeholder.name' })}
+            filled={Boolean(name)}
+          />
         </Box>
         <Layout flexBasis={12} />
         <Box display={visible ? 'flex' : 'none'}>
-          <Input value={phone} onChange={setPhone} placeholder='Телефон' filled={Boolean(phone)} />
+          <Input
+            value={phone}
+            onChange={setPhone}
+            placeholder={intl.formatMessage({ id: 'questions.form.input.placeholder.phone' })}
+            filled={Boolean(phone)}
+          />
         </Box>
         <Layout flexBasis={24} />
         <Box width={335} flexShrink='0'>
@@ -54,17 +66,14 @@ export const Form = () => {
             disabled={!name || !phone || !question}
           >
             <Text fontSize='regular' color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Отправить сообщение' />
+              <FormattedMessage id='questions.from.send-message' />
             </Text>
           </Button>
         </Box>
         <Layout flexBasis={24} />
         <Box display={name && phone && question ? 'inline' : 'none'}>
           <Text display='inline' fontSize='medium' color='text.darkPurple'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Нажимая на кнопку «Оставить заявку», вы принимаете'
-            />
+            <FormattedMessage id='questions.form.pushing-the-button' />
           </Text>
           <Space />
           <Text
@@ -73,10 +82,7 @@ export const Form = () => {
             color='text.darkPurple'
             style={{ textDecoration: 'underline' }}
           >
-            <FormattedMessage
-              id='/'
-              defaultMessage='«Соглашение об обработке персональных данных»'
-            />
+            <FormattedMessage id='questions.form.processing-agreement' />
           </Text>
         </Box>
       </Column>
@@ -84,10 +90,7 @@ export const Form = () => {
         <SuccessIcon width={48} height={48} />
         <Layout flexBasis={24} />
         <Text textAlign='center' fontSize='regular'>
-          <FormattedMessage
-            id='/'
-            defaultMessage='Мы получили твой вопрос, вернёмся с ответом asap.'
-          />
+          <FormattedMessage id='questions.form.we-got-your-question' />
         </Text>
       </Box>
     </>

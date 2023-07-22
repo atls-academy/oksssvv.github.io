@@ -12,7 +12,7 @@ import { CardShortProps } from './card-short.interfaces'
 export const CardShort: FC<CardShortProps> = ({ category, title }) => (
   <Box
     width={{ _: 260, standard: 560, wide: 572, ultra: 670 }}
-    borderRadius={[16, 24]}
+    borderRadius={['medium', 'big']}
     overflow='hidden'
   >
     <Background backgroundColor='lightPurpleRadial' width='100%' display='flex'>
@@ -25,7 +25,7 @@ export const CardShort: FC<CardShortProps> = ({ category, title }) => (
           alignItems='center'
           justifyContent='center'
           backgroundColor='white'
-          borderRadius={8}
+          borderRadius='little'
         >
           <Text
             fontSize={{ _: 'small', standard: 'medium', ultra: 'regular' }}

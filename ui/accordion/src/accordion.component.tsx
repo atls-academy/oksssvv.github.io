@@ -47,10 +47,7 @@ export const Accordion = ({ screen }) => {
                     fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: 'major' }}
                     lineHeight='large'
                   >
-                    <FormattedMessage
-                      id='/'
-                      defaultMessage='Как это сделать подскажет Наставник или сотрудник поддержки. Ещё при таком переходе произойдёт зачет некоторых темам по дисциплинам.'
-                    />
+                    <FormattedMessage id='questions.accordion.how-do-it' />
                   </Text>
                 </Box>
               </motion.div>

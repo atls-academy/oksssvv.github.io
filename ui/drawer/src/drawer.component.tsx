@@ -34,8 +34,7 @@ export const Drawer = ({ active, onClose }) => {
         <Box
           height={{ _: 495, standard: 610, ultra: 640 }}
           backgroundColor='background.white'
-          borderBottomLeftRadius={[24, 40]}
-          borderBottomRightRadius={[24, 40]}
+          borderRadius={['normalBottom', 'bigBottom']}
           flexDirection='column'
           alignItems='center'
         >
@@ -54,25 +53,25 @@ export const Drawer = ({ active, onClose }) => {
             >
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })}
-                path='/'
+                title={intl.formatMessage({ id: 'navigation.academy' })}
+                path='Academy'
               />
               <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })}
+                title={intl.formatMessage({ id: 'navigation.courses' })}
                 path='Courses'
               />
               <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+                title={intl.formatMessage({ id: 'navigation.education' })}
                 path='Education'
               />
               <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
               <Item
                 backColor='light'
-                title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })}
+                title={intl.formatMessage({ id: 'navigation.faq' })}
                 path='FAQ'
               />
             </Row>
@@ -96,7 +95,7 @@ export const Drawer = ({ active, onClose }) => {
                 onClick={onClose}
               >
                 <Text color='white' fontSize='averaged'>
-                  <FormattedMessage id='/' defaultMessage='Курсы' />
+                  <FormattedMessage id='navigation.courses' />
                 </Text>
               </Button>
             </Box>
@@ -119,7 +118,7 @@ export const Drawer = ({ active, onClose }) => {
                 onClick={onClose}
               >
                 <Text color='white' fontSize='regular' lineHeight='small'>
-                  <FormattedMessage id='/' defaultMessage='Курсы' />
+                  <FormattedMessage id='navigation.courses' />
                 </Text>
               </Button>
             </Box>
@@ -137,7 +136,7 @@ export const Drawer = ({ active, onClose }) => {
                 onClick={onClose}
               >
                 <Text color='white' fontSize='medium'>
-                  <FormattedMessage id='/' defaultMessage='Курсы' />
+                  <FormattedMessage id='navigation.courses' />
                 </Text>
               </Button>
             </Box>

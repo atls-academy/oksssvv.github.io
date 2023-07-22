@@ -1,4 +1,7 @@
 export const colors = {
+  lilac: 'rgba(77, 60, 242, 1)',
+  lightPurple: 'rgba(114, 108, 182, 1)',
+  darkPurple: 'rgba(27, 26, 51, 1)',
   input: {
     ordinary: {
       default: {

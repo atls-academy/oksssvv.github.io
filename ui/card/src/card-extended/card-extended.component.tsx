@@ -24,11 +24,12 @@ export const CardExtended: FC<CardExtendedProps> = ({
   return (
     <Box
       width={{ _: 335, standard: 1160, wide: 879, ultra: 1025 }}
-      borderRadius={[16, 24]}
+      borderRadius={['medium', 'big']}
       overflow='hidden'
       {...hoverProps}
       position='relative'
-      boxShadow={hover ? '0px 0px 30px 4px rgba(123, 84, 233, 0.20)' : '0'}
+      boxShadow={hover ? 'normalBlurDarkPurple' : ''}
+      cursor='pointer'
     >
       <Background backgroundColor='lightPurpleRadial' width='100%' display='flex'>
         <Layout flexBasis={[16, 40]} />
@@ -40,7 +41,7 @@ export const CardExtended: FC<CardExtendedProps> = ({
             alignItems='center'
             justifyContent='center'
             backgroundColor='white'
-            borderRadius={8}
+            borderRadius='little'
           >
             <Text
               fontSize={{ _: 'small', standard: 'medium', ultra: 'regular' }}

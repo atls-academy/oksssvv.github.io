@@ -48,10 +48,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
             fontSize={{ _: 'medium', standard: 'enlarged', wide: 'enlarged', ultra: 'normalize' }}
             lineHeight='medium'
           >
-            <FormattedMessage
-              id='/'
-              defaultMessage='Являясь серым кардиналом, Atlantis имеет влияние на сферу IT и неограниченные.'
-            />
+            <FormattedMessage id='steps.being-cardinal' />
           </Text>
         </Box>
       </Row>

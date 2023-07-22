@@ -57,7 +57,7 @@ const IndexPage = () => {
         backgroundSize={['100%,100%', '100%,100%']}
         backgroundRepeat='no-repeat'
         backgroundPosition={['0 370px', '0 700px']}
-        borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+        borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={1}
         top={{ _: 920, standard: 1670, wide: 1550, ultra: 2100 }}
@@ -82,17 +82,17 @@ const IndexPage = () => {
           wide: '300px 1560px,0 110px,-540px 1450px ,0,0',
           ultra: '920px 1850px,0 350px,0 2300px ,0,0',
         }}
-        borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+        borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={2}
         top={{ _: 2600, standard: 3720, ultra: 4360 }}
         width='100%'
       >
-        <Parallax translateY={[-17, 10]}>
-          <Steps />
-          <RunLine />
-          <Process />
-        </Parallax>
+        {/* <Parallax translateY={[-17, 10]}> */}
+        <Steps />
+        <RunLine />
+        <Process />
+        {/* </Parallax> */}
       </Background>
       <Background
         ref={sectionRefs[5]}
@@ -101,7 +101,7 @@ const IndexPage = () => {
         backgroundSize={['100%, 100%', '100%,100%']}
         backgroundRepeat='no-repeat'
         backgroundPosition={['0 200px', '0 220px']}
-        borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
+        borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={3}
         top={{ _: 4200, standard: 6400, wide: 6650, ultra: 7750 }}
