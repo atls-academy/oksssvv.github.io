@@ -25,8 +25,8 @@ export const Navigation = () => {
       <Drawer active={visible} onClose={() => setVisible(false)} />
       <Column alignItems='center' height={[80, 128]}>
         <Layout flexBasis={{ _: 22, standard: 35, wide: 10, ultra: 0 }} />
-        <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2800 }}>
-          <Layout flexBasis={{ _: 20, standard: 40 }} />
+        <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2600 }}>
+          <Layout flexBasis={{ _: 20, standard: 40, ultra: 0 }} />
           <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
             <Logo fill='white' />
           </Box>
@@ -46,7 +46,12 @@ export const Navigation = () => {
             <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
           </Row>
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
-          <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+          <Box
+            width={163}
+            display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
+            alignItems='center'
+            flexShrink='0'
+          >
             <Button
               variant='ghost'
               size='normalSizeNormalPadding'
@@ -82,7 +87,30 @@ export const Navigation = () => {
               </Text>
             </Button>
           </Box>
-          <Layout flexBasis={{ _: 0, standard: 40 }} />
+          <Box
+            width={203}
+            display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
+            alignItems='center'
+            flexShrink='0'
+          >
+            <Button
+              variant='ghost'
+              size='bigSizeBigPadding'
+              gap={30}
+              icon={<ArrowDownIcon width={18} height={9} />}
+              widthIcon={60}
+              heightIcon={60}
+              backgroundIcon='background.white'
+              radiusIcon='massive'
+              fill
+              onClick={() => setVisible(true)}
+            >
+              <Text color='white' fontSize='averaged'>
+                <FormattedMessage id='/' defaultMessage='Курсы' />
+              </Text>
+            </Button>
+          </Box>
+          <Layout flexBasis={{ _: 0, standard: 40, ultra: 0 }} />
         </Row>
         <Layout flexBasis={[22, 35]} />
       </Column>

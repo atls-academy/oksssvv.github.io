@@ -38,7 +38,7 @@ export const Accordion = () => {
               >
                 <Box maxWidth={{ standard: 784, wide: 900 }} height={{ standard: 58, wide: 129 }}>
                   <Text
-                    fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: '' }}
+                    fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: 'major' }}
                     lineHeight='large'
                   >
                     <FormattedMessage

@@ -87,6 +87,6 @@ export const Info = () => (
       </Column>
       <Layout flexBasis={[64, 240]} />
     </Column>
-    <Layout flexBasis={{ _: 20, standard: 230, wide: 860, ultra: 1300 }} />
+    <Layout flexBasis={{ _: 20, standard: 230, wide: 860, ultra: 1030 }} />
   </Row>
 )

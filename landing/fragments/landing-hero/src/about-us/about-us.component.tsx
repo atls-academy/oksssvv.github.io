@@ -11,7 +11,7 @@ import { Space }            from '@ui/text'
 export const AboutUs = () => (
   <Column
     height={{ _: 225, standard: 500, wide: 500, ultra: 750 }}
-    width={{ _: 335, standard: 1460, wide: 1460, ultra: 2190 }}
+    width={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}
   >
     <Box
       display='inline'

@@ -32,7 +32,7 @@ export const Drawer = ({ active, onClose }) => {
         transition={{ duration: 0.9 }}
       >
         <Box
-          height={[495, 610]}
+          height={{ _: 495, standard: 610, ultra: 640 }}
           backgroundColor='background.white'
           borderBottomLeftRadius={[24, 40]}
           borderBottomRightRadius={[24, 40]}
@@ -40,8 +40,8 @@ export const Drawer = ({ active, onClose }) => {
           alignItems='center'
         >
           <Layout flexBasis={[22, 35]} />
-          <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2800 }}>
-            <Layout flexBasis={{ _: 20, standard: 40 }} />
+          <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2600 }}>
+            <Layout flexBasis={{ _: 20, standard: 40, ultra: 0 }} />
             <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
               <Logo fill='rgba(58, 55, 93, 1)' />
             </Box>
@@ -77,7 +77,35 @@ export const Drawer = ({ active, onClose }) => {
               />
             </Row>
             <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
-            <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+            <Box
+              width={203}
+              display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
+              alignItems='center'
+              flexShrink='0'
+            >
+              <Button
+                variant='primary'
+                size='bigSizeBigPadding'
+                gap={30}
+                icon={<ArrowUpIcon width={18} height={9} />}
+                widthIcon={60}
+                heightIcon={60}
+                backgroundIcon='background.white'
+                radiusIcon='massive'
+                fill
+                onClick={onClose}
+              >
+                <Text color='white' fontSize='averaged'>
+                  <FormattedMessage id='/' defaultMessage='Курсы' />
+                </Text>
+              </Button>
+            </Box>
+            <Box
+              width={163}
+              display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
+              alignItems='center'
+              flexShrink='0'
+            >
               <Button
                 variant='primary'
                 size='normalSizeNormalPadding'
@@ -116,7 +144,7 @@ export const Drawer = ({ active, onClose }) => {
             <Layout flexBasis={{ _: 0, standard: 40 }} />
           </Row>
           <Layout flexBasis={[78, 50]} />
-          <Row display={['none', 'flex']} height={430} maxWidth={1840}>
+          <Row display={['none', 'flex']} height={430} maxWidth={1840} justifyContent='center'>
             {cards}
           </Row>
           <Column display={['flex', 'none']} height={337} maxWidth={335}>

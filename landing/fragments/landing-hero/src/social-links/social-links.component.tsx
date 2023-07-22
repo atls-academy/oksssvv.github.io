@@ -15,23 +15,23 @@ export const SocialLinks = () => (
       flexDirection='column'
       display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
       position='absolute'
-      bottom={-525}
-      right={800}
+      top={990}
+      right={620}
       width={84}
     >
-      <Button size='bigSizeBigPadding' variant='ghost'>
+      <Button size='bigSizeBigRadii' variant='ghost'>
         <NextLink path='/'>
           <TelegramIcon width={27} height={27} />
         </NextLink>
       </Button>
       <Layout flexBasis={24} />
-      <Button size='bigSizeBigPadding' variant='ghost'>
+      <Button size='bigSizeBigRadii' variant='ghost'>
         <NextLink path='/'>
           <GitHubIcon width={27} height={27} />
         </NextLink>
       </Button>
       <Layout flexBasis={24} />
-      <Button size='bigSizeBigPadding' variant='ghost'>
+      <Button size='bigSizeBigRadii' variant='ghost'>
         <NextLink path='/'>
           <EmailIcon width={27} height={27} />
         </NextLink>

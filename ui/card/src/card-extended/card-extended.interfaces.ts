@@ -1,7 +1,8 @@
 export interface CardExtendedProps {
   category?: string
-  gap?: number[] | number
+  gap?: any
   title: string
   description?: string
   descriptionMobile?: string
+  srcImage?: string
 }

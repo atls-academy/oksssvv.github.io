@@ -14,10 +14,13 @@ import { Swiper }           from '@ui/swiper'
 import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 
-const Cards = () => {
+export const CardsStandard = () => {
   const intl = useIntl()
   return (
-    <Box flexDirection={['column', 'row']}>
+    <Box
+      display={{ _: 'flex', standard: 'flex', wide: 'none', ultra: 'none' }}
+      flexDirection={['column', 'row']}
+    >
       <Column order={[1, 0]} maxWidth={[335, 1160]}>
         <CardExtended
           category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
@@ -136,5 +139,3 @@ const Cards = () => {
     </Box>
   )
 }
-
-export { Cards }

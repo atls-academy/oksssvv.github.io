@@ -3,12 +3,12 @@ import { useIntl }      from 'react-intl'
 
 import { CardExtended } from '@ui/card'
 import { Layout }       from '@ui/layout'
-import { Row }          from '@ui/layout'
+import { Box }          from '@ui/layout'
 
 export const CardDesktop = (gap) => {
   const intl = useIntl()
   return (
-    <Row>
+    <Box width={593}>
       <CardExtended
         category={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
         gap={[148, 214]}
@@ -25,6 +25,6 @@ export const CardDesktop = (gap) => {
         })}
       />
       <Layout flexBasis={gap} />
-    </Row>
+    </Box>
   )
 }

@@ -85,7 +85,7 @@ const IndexPage = () => {
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={2}
-        top={[2600, 3720]}
+        top={{ _: 2600, standard: 3720, ultra: 4360 }}
         width='100%'
       >
         <Steps />
@@ -102,7 +102,7 @@ const IndexPage = () => {
         borderRadius={['32px 32px 0 0', '80px 80px 0 0']}
         position='absolute'
         zIndex={3}
-        top={{ _: 4200, standard: 6400, wide: 6650, ultra: 7200 }}
+        top={{ _: 4200, standard: 6400, wide: 6650, ultra: 7750 }}
         width='100%'
       >
         <Questions />

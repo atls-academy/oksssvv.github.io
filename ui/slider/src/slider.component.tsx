@@ -77,14 +77,21 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
 
       <Layout flexBasis={[26, 32]} />
       <Box
-        width={{ _: 335, standard: 960, wide: 1280, ultra: 1300 }}
+        width={{ _: 335, standard: 960, wide: 1280, ultra: 1310 }}
         height={{ _: 64, standard: 64, wide: 85, ultra: 86 }}
         alignItems='center'
       >
-        <Button size='smallSize' variant='ghost' onClick={leftClick}>
-          <SmallArrowLeftIcon />
-        </Button>
-        <Layout flexBasis={[12, 16]} />
+        <Box display={{ _: 'flex', standard: 'flex', wide: 'flex', ultra: 'none' }}>
+          <Button size='smallSize' variant='ghost' onClick={leftClick}>
+            <SmallArrowLeftIcon />
+          </Button>
+        </Box>
+        <Box display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}>
+          <Button size='bigSizeNormalRadii' variant='ghost' onClick={rightClick}>
+            <SmallArrowLeftIcon />
+          </Button>
+        </Box>
+        <Layout flexBasis={{ _: 12, standard: 16, ultra: 22 }} />
         <Box
           position='relative'
           overflow='hidden'
@@ -92,15 +99,15 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
           width='100%'
           justifyContent='center'
           alignItems='center'
-          height={64}
+          height={{ _: 64, standard: 64, ultra: 86 }}
           border='ghostGray'
-          borderRadius={12}
+          borderRadius={{ _: 'normal', standard: 'normal', ultra: 'medium' }}
         >
           <Layout flexBasis={[28, 0]} />
           <Box justifyContent='center' width={[175, 700]}>
             <Text
               color='white'
-              fontSize={['little', 'middle']}
+              fontSize={{ _: 'little', standard: 'middle', ultra: 'averaged' }}
               lineHeight={['interim', 'large']}
               textAlign='center'
             >
@@ -111,7 +118,12 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
             </Text>
           </Box>
 
-          <Box width='100%' justifyContent='center' position='absolute' top={55}>
+          <Box
+            width='100%'
+            justifyContent='center'
+            position='absolute'
+            top={{ _: 55, standard: 55, ultra: 75 }}
+          >
             <motion.div
               style={{
                 height: '5px',
@@ -128,10 +140,17 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
 
           <Layout flexBasis={[28, 0]} />
         </Box>
-        <Layout flexBasis={[12, 16]} />
-        <Button size='smallSize' variant='ghost' onClick={rightClick}>
-          <SmallArrowRightIcon />
-        </Button>
+        <Layout flexBasis={{ _: 12, standard: 16, ultra: 22 }} />
+        <Box display={{ _: 'flex', standard: 'flex', wide: 'flex', ultra: 'none' }}>
+          <Button size='smallSize' variant='ghost' onClick={rightClick}>
+            <SmallArrowRightIcon />
+          </Button>
+        </Box>
+        <Box display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}>
+          <Button size='bigSizeNormalRadii' variant='ghost' onClick={rightClick}>
+            <SmallArrowRightIcon />
+          </Button>
+        </Box>
       </Box>
     </Column>
   )

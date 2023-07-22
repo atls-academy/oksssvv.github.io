@@ -20,7 +20,7 @@ export const Hero = () => (
       <AboutUs />
       <Layout flexBasis={[24, 134]} />
       <SocialLinks />
-      <Layout flexBasis={{ _: 0, standard: 40, wide: 720, ultra: 1160 }} />
+      <Layout flexBasis={{ _: 0, standard: 40, wide: 720, ultra: 1030 }} />
     </Box>
     <Layout flexBasis={[20, 0]} />
   </Column>
