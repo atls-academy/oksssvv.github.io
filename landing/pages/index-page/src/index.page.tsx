@@ -88,9 +88,11 @@ const IndexPage = () => {
         top={{ _: 2600, standard: 3720, ultra: 4360 }}
         width='100%'
       >
-        <Steps />
-        <RunLine />
-        <Process />
+        <Parallax translateY={[-17, 10]}>
+          <Steps />
+          <RunLine />
+          <Process />
+        </Parallax>
       </Background>
       <Background
         ref={sectionRefs[5]}
