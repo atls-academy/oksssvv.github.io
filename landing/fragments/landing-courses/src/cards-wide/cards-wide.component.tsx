@@ -8,6 +8,7 @@ import { Button }           from '@ui/button'
 import { CardDetails }      from '@ui/card'
 import { CardExtended }     from '@ui/card'
 import { ScrollIcon }       from '@ui/icon'
+import { ArrowPointerIcon } from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
@@ -58,19 +59,22 @@ export const CardsWide = () => {
           {CardsShortBlock}
           <NextLink path='/library'>
             <Background
-              display='flex'
               width={{ wide: 572, ultra: 670 }}
               height={{ wide: 320, ultra: 326 }}
               backgroundColor={hover ? 'lilacGradient' : 'purpleGradient'}
               borderRadius='big'
               {...hoverProps}
             >
-              <Layout flexBasis={40} />
               <Column>
-                <Layout flexBasis={232} />
-                <Text fontSize='large' color='text.white'>
-                  <FormattedMessage id='courses.all-materials' />
-                </Text>
+                <Layout flexBasis={{ wide: 232, ultra: 207 }} />
+                <Row alignItems='center'>
+                  <Layout flexBasis={{ wide: 40, ultra: 40 }} />
+                  <Text fontSize={{ wide: 'large', ultra: 'enormous' }} color='text.white'>
+                    <FormattedMessage id='courses.all-materials' />
+                  </Text>
+                  <Layout flexBasis={{ wide: 15, ultra: 20 }} />
+                  <ArrowPointerIcon width={50} height={50} />
+                </Row>
               </Column>
             </Background>
           </NextLink>
