@@ -1,5 +1,7 @@
 export const backgrounds = {
   gray: 'rgba(102, 102, 102, 1)',
+  lilacGradient:
+    'radial-gradient(50% 50.00% at 50% 50.00%, rgba(36, 0, 254, 0.00) 63.70%, rgba(36, 0, 254, 0.20) 100%), #6F57FF',
   purpleGradient:
     'linear-gradient(180deg, #3D24EC 0%, rgba(61, 36, 236, 0.00) 100%), radial-gradient(151.52% 72.21% at 100.00% 100.00%, #3909F6 0%, rgba(104, 82, 255, 0.00) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.11) 100%), linear-gradient(161deg, #6F57FF 0%, #4C58FF 100%)',
   purpleBendLine:

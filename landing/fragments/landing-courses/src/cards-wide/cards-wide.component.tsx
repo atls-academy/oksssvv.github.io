@@ -13,10 +13,12 @@ import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { NextLink }         from '@ui/link'
 import { Text }             from '@ui/text'
+import { useHover }         from '@ui/utils'
 
 import { CardShortBlock }   from './card-short-block'
 
 export const CardsWide = () => {
+  const [hover, hoverProps] = useHover()
   const intl = useIntl()
   const CardsShortBlock = Array.from({ length: 5 }).map((_, index) => (
     <CardShortBlock
@@ -62,8 +64,9 @@ export const CardsWide = () => {
               display='flex'
               width={{ wide: 572, ultra: 670 }}
               height={{ wide: 320, ultra: 326 }}
-              backgroundColor='purpleGradient'
+              backgroundColor={hover ? 'lilacGradient' : 'purpleGradient'}
               borderRadius='big'
+              {...hoverProps}
             >
               <Layout flexBasis={40} />
               <Column>
@@ -112,7 +115,7 @@ export const CardsWide = () => {
           <Button
             variant='primary'
             size='largeSizeNormalPadding'
-            gap={121}
+            gap={54}
             icon={<ScrollIcon width={18} height={27} />}
             widthIcon={72}
             heightIcon={72}
@@ -120,7 +123,7 @@ export const CardsWide = () => {
             radiusIcon='big'
             fill
           >
-            <Text fontSize='regular' lineHeight='regular' color='text.white'>
+            <Text fontSize='major' lineHeight='regular' color='text.white'>
               <FormattedMessage id='/' defaultMessage='Процесс поступления' />
             </Text>
           </Button>

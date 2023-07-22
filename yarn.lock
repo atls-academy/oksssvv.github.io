@@ -1064,6 +1064,7 @@ __metadata:
     "@ui/link": "workspace:0.0.1"
     "@ui/swiper": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:

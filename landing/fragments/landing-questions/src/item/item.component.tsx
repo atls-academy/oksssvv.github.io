@@ -16,7 +16,7 @@ export const Item = () => {
       <Layout flexBasis={[16, 40]} />
       <Row alignItems='center'>
         <Layout flexBasis={26} />
-        <Box width={{ _: 310, standard: 740, wide: 1100, ultra: 1500 }}>
+        <Box width={{ _: 310, standard: 740, wide: 1000, ultra: 1200 }}>
           <Text
             cursor='pointer'
             fontSize={{ _: 'regular', standard: 'normal', wide: 'secondary', ultra: 'secondary' }}

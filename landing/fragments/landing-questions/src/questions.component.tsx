@@ -12,6 +12,7 @@ import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
 import { Feedback }         from './feedback'
+import { WideAccordion }    from './wide-accordion'
 
 export const Questions = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
@@ -32,7 +33,12 @@ export const Questions = () => {
             </Text>
           </Box>
           <Layout flexBasis={{ _: 0, standard: 555, wide: 1088, ultra: 1000 }} />
-          <Box width={247} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+          <Box
+            width={247}
+            display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
+            alignItems='center'
+            flexShrink='0'
+          >
             <Button
               variant='primary'
               size='bigSizeNormalPadding'
@@ -50,9 +56,35 @@ export const Questions = () => {
               </Text>
             </Button>
           </Box>
+          <Box
+            width={371}
+            display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
+            alignItems='center'
+            flexShrink='0'
+          >
+            <Button
+              variant='primary'
+              size='largeSizeNormalPadding'
+              gap={24}
+              icon={<EnvelopeIcon width={18} height={15} />}
+              widthIcon={72}
+              heightIcon={72}
+              backgroundIcon='background.white'
+              radiusIcon='big'
+              fill
+              onClick={() => setModalOpen(true)}
+            >
+              <Text fontSize='major' color='text.white'>
+                <FormattedMessage id='/' defaultMessage='Задать вопрос' />
+              </Text>
+            </Button>
+          </Box>
         </Row>
         <Layout flexBasis={[60, 80]} />
-        <Accordion />
+        <Box display={{ _: 'flex', standard: 'flex', wide: 'none', ultra: 'none' }}>
+          <Accordion screen='standard' />
+        </Box>
+        <WideAccordion />
         <Layout flexBasis={[60, 0]} />
         <Box width={335} display={['flex', 'none']} flexShrink='0'>
           <Button
@@ -72,7 +104,7 @@ export const Questions = () => {
             </Text>
           </Button>
         </Box>
-        <Layout flexBasis={[80, 160]} />
+        <Layout flexBasis={{ _: 80, standard: 160, wide: 200, ultra: 200 }} />
       </Column>
       <Layout flexBasis={[16, 80]} />
     </Row>
