@@ -61,19 +61,19 @@ export const Drawer = ({ active, onClose }) => {
               <Item
                 backColor='light'
                 title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })}
-                path='/'
+                path='Courses'
               />
               <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
               <Item
                 backColor='light'
                 title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
-                path='/'
+                path='Education'
               />
               <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
               <Item
                 backColor='light'
                 title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })}
-                path='/'
+                path='FAQ'
               />
             </Row>
             <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />

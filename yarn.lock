@@ -1224,9 +1224,12 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
     react-intl: "npm:6.4.2"
+    react-scroll: "npm:1.8.9"
   peerDependencies:
     react: "*"
+    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft

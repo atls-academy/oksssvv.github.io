@@ -1,8 +1,8 @@
 import React         from 'react'
 import { FC }        from 'react'
+import { Link }      from 'react-scroll'
 
 import { Box }       from '@ui/layout'
-import { NextLink }  from '@ui/link'
 import { Text }      from '@ui/text'
 import { useHover }  from '@ui/utils'
 
@@ -27,16 +27,17 @@ export const Item: FC<ItemProps> = ({ title, path, backColor }) => {
       justifyContent='center'
       borderBottom={getColorBorder()}
     >
-      <NextLink path={path}>
+      <Link to={path} spy smooth duration={1000}>
         <Text
           fontSize={{ standard: 'standard', ultra: 'major' }}
           lineHeight='small'
           color={getColorText()}
           textTransform='uppercase'
+          cursor='pointer'
         >
           {title}
         </Text>
-      </NextLink>
+      </Link>
     </Box>
   )
 }

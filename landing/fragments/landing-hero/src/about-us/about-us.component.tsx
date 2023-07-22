@@ -9,22 +9,17 @@ import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
 export const AboutUs = () => (
-  <Column
-    height={{ _: 225, standard: 500, wide: 500, ultra: 750 }}
-    width={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}
-  >
-    <Box
-      display='inline'
-      minWidth={[335, 920]}
-      maxWidth={{ _: 335, standard: 1166, wide: 1166, ultra: 1750 }}
-    >
-      <Text
-        color='white'
-        fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
-        lineHeight={['medium', 'normal']}
-      >
-        <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
-      </Text>
+  <Column height={{ _: 225, standard: 500, wide: 500, ultra: 750 }}>
+    <Box flexWrap='wrap' width={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}>
+      <Box width={{ ultra: 1750 }}>
+        <Text
+          color='white'
+          fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
+          lineHeight={['medium', 'normal']}
+        >
+          <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
+        </Text>
+      </Box>
       <Text
         color='white'
         fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}

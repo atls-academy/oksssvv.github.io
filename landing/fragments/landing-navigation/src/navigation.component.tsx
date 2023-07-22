@@ -39,11 +39,14 @@ export const Navigation = () => {
           >
             <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })} path='/' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} path='/' />
+            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} path='Courses' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })} path='/' />
+            <Item
+              title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })}
+              path='Education'
+            />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
+            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='FAQ' />
           </Row>
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
           <Box
