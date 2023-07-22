@@ -88,11 +88,11 @@ const IndexPage = () => {
         top={{ _: 2600, standard: 3720, ultra: 4360 }}
         width='100%'
       >
-        {/* <Parallax translateY={[-17, 10]}> */}
         <Steps />
         <RunLine />
-        <Process />
-        {/* </Parallax> */}
+        <Parallax translateY={[-15, 12]}>
+          <Process />
+        </Parallax>
       </Background>
       <Background
         ref={sectionRefs[5]}
@@ -104,7 +104,7 @@ const IndexPage = () => {
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={3}
-        top={{ _: 4200, standard: 6400, wide: 6650, ultra: 7750 }}
+        top={{ _: 4200, standard: 6300, wide: 6600, ultra: 7700 }}
         width='100%'
       >
         <Questions />
