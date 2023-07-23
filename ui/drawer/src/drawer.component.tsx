@@ -32,7 +32,7 @@ export const Drawer = ({ active, onClose }) => {
         transition={{ duration: 0.9 }}
       >
         <Box
-          height={{ _: 495, standard: 610, ultra: 640 }}
+          height={{ _: 495, standard: 610, ultra: 760 }}
           backgroundColor='background.white'
           borderRadius={['normalBottom', 'bigBottom']}
           flexDirection='column'
@@ -44,7 +44,7 @@ export const Drawer = ({ active, onClose }) => {
             <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
               <Logo fill='rgba(58, 55, 93, 1)' />
             </Box>
-            <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
+            <Layout flexBasis={{ standard: 400, wide: 715, ultra: 510 }} />
             <Row
               display={['none', 'flex']}
               justifyContent='center'
@@ -75,7 +75,7 @@ export const Drawer = ({ active, onClose }) => {
                 path='FAQ'
               />
             </Row>
-            <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
+            <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 510 }} />
             <Box
               width={203}
               display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
@@ -140,10 +140,15 @@ export const Drawer = ({ active, onClose }) => {
                 </Text>
               </Button>
             </Box>
-            <Layout flexBasis={{ _: 0, standard: 40 }} />
+            <Layout flexBasis={{ _: 0, standard: 40, ultra: 0 }} />
           </Row>
           <Layout flexBasis={[78, 50]} />
-          <Row display={['none', 'flex']} height={430} maxWidth={1840} justifyContent='center'>
+          <Row
+            display={['none', 'flex']}
+            height={{ standard: 430, ultra: 550 }}
+            maxWidth={1840}
+            justifyContent='center'
+          >
             {cards}
           </Row>
           <Column display={['flex', 'none']} height={337} maxWidth={335}>

@@ -25,7 +25,7 @@ export const Navigation = () => {
       <Drawer active={visible} onClose={() => setVisible(false)} />
       <Column alignItems='center' height={[80, 128]}>
         <Layout flexBasis={{ _: 22, standard: 35, wide: 10, ultra: 0 }} />
-        <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2600 }}>
+        <Row width={{ _: 375, standard: '100%', wide: 2560, ultra: 2600 }}>
           <Layout flexBasis={{ _: 20, standard: 40, ultra: 0 }} />
           <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
             <Logo fill='white' />

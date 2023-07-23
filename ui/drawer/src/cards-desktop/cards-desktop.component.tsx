@@ -8,7 +8,7 @@ import { Box }          from '@ui/layout'
 export const CardDesktop = (gap) => {
   const intl = useIntl()
   return (
-    <Box width={593}>
+    <Box width={{ standard: 593, ultra: 870 }}>
       <CardExtended
         category={intl.formatMessage({ id: 'courses.card.education' })}
         gap={[148, 214]}
