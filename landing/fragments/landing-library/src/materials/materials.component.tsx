@@ -8,7 +8,7 @@ import { Text }         from '@ui/text'
 
 import { Headlines }    from './data'
 import { Technologies } from './data'
-import { Item }          from './item'
+import { Item }         from './item'
 
 export const Materials = (divider) => (
   <>

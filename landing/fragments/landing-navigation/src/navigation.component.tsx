@@ -4,7 +4,6 @@ import { useState }         from 'react'
 import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
-import { Drawer }           from '@ui/drawer'
 import { ArrowDownIcon }    from '@ui/icon'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
@@ -13,6 +12,7 @@ import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
 
+import { DrawerContainer }  from './drawer'
 import { Item }             from './item'
 
 export const Navigation = () => {
@@ -22,7 +22,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <Drawer active={visible} onClose={() => setVisible(false)} />
+      <DrawerContainer active={visible} onClose={() => setVisible(false)} />
       <Column height={[80, 128]}>
         <Layout flexBasis={[22, 35]} />
         <Row justifyContent='center'>
