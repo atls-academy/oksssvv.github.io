@@ -1,4 +1,4 @@
-export const materialTechnology = [
+export const Technologies = [
   { index: 0, name: 'NodeJS' },
   { index: 1, name: 'TypeScript' },
   { index: 2, name: 'NestJS' },

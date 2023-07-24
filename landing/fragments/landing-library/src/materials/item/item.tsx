@@ -1,20 +1,17 @@
-import React                        from 'react'
-import { FC }                       from 'react'
-import { FormattedMessage }         from 'react-intl'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import { Divider }                  from '@ui/divider'
-import { ArrowRightIcon }           from '@ui/icon'
-import { Box }                      from '@ui/layout'
-import { Column }                   from '@ui/layout'
-import { Layout }                   from '@ui/layout'
-import { Row }                      from '@ui/layout'
-import { Text }                     from '@ui/text'
-import { useHover }                 from '@ui/utils'
-import { usePressed }               from '@ui/utils'
+import { Divider }          from '@ui/divider'
+import { ArrowRightIcon }   from '@ui/icon'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Text }             from '@ui/text'
+import { useHover }         from '@ui/utils'
+import { usePressed }       from '@ui/utils'
 
-import { CardLibraryMaterialProps } from './card-library-material.interfaces'
-
-export const CardLibraryMaterial: FC<CardLibraryMaterialProps> = ({ ...props }) => {
+export const Item = ({ ...props }) => {
   const [hover, hoverProps] = useHover()
   const [pressed, pressedProps] = usePressed()
 
