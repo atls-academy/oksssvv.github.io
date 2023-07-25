@@ -10,7 +10,7 @@ import { Text }    from '@ui/text'
 export const CardsMobile = () => {
   const intl = useIntl()
 
-  const Card = ({ widthCategory, nameCategory, title, divider, gap }) => (
+  const Card = ({ widthCategory, сategory, title, divider, gap }) => (
     <>
       <Box
         width={widthCategory}
@@ -21,7 +21,7 @@ export const CardsMobile = () => {
         alignItems='center'
       >
         <Text color='darkPurple' textTransform='uppercase' fontSize='little'>
-          {nameCategory}
+          {сategory}
         </Text>
       </Box>
       <Layout flexBasis={8} />
@@ -41,7 +41,7 @@ export const CardsMobile = () => {
           // eslint-disable-next-line
           key={index}
           widthCategory={index === 1 ? 122 : 87}
-          nameCategory={
+          сategory={
             index === 1
               ? intl.formatMessage({ id: 'navigation.card.advanced' })
               : intl.formatMessage({ id: 'navigation.card.base' })

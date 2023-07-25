@@ -30,7 +30,7 @@ export const Card: FC<CardProps> = ({ ...props }) => {
             <Column>
               <Layout flexBasis={[8, 12]} />
               <Text fontSize={['small', 'medium']} textTransform='uppercase'>
-                {props.nameCategory}
+                {props.сategory}
               </Text>
               <Layout flexBasis={[8, 12]} />
             </Column>

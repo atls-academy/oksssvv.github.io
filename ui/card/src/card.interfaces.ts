@@ -1,6 +1,6 @@
 export interface CardProps {
   widthCategory?: number | number[]
-  nameCategory?: string
+  сategory?: string
   gap?: number | number[]
   widthContent?: number | number[]
   title?: string

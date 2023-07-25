@@ -13,7 +13,7 @@ export const CardsDesktop = () => {
     <Box width={610}>
       <Card
         widthCategory={[80, 104]}
-        nameCategory={intl.formatMessage({ id: 'courses.card.education' })}
+        сategory={intl.formatMessage({ id: 'courses.card.education' })}
         gap={[104, 214]}
         widthContent={[303, 513]}
         title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}

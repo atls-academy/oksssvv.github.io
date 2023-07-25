@@ -21,7 +21,7 @@ export const Cards = () => {
       <Column order={[1, 0]} width='100%'>
         <Card
           widthCategory={[80, 104]}
-          nameCategory={intl.formatMessage({ id: 'courses.card.education' })}
+          сategory={intl.formatMessage({ id: 'courses.card.education' })}
           gap={[104, 214]}
           widthContent={[303, 694]}
           title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
@@ -32,7 +32,7 @@ export const Cards = () => {
         <Layout flexBasis={[20, 40]} />
         <Card
           widthCategory={[87, 112]}
-          nameCategory={intl.formatMessage({ id: 'courses.card.mini-cours' })}
+          сategory={intl.formatMessage({ id: 'courses.card.mini-cours' })}
           gap={[49, 56]}
           widthContent={[303, 694]}
           title={intl.formatMessage({ id: 'courses.card.basics-development' })}
@@ -44,14 +44,14 @@ export const Cards = () => {
         <Box display={['none', 'flex']} width='100%'>
           <Card
             widthCategory={180}
-            nameCategory={intl.formatMessage({ id: 'courses.card.education-material' })}
+            сategory={intl.formatMessage({ id: 'courses.card.education-material' })}
             gap={110}
             title={intl.formatMessage({ id: 'courses.card.use-library' })}
           />
           <Layout flexBasis={40} />
           <Card
             widthCategory={180}
-            nameCategory={intl.formatMessage({ id: 'courses.card.education-material' })}
+            сategory={intl.formatMessage({ id: 'courses.card.education-material' })}
             gap={110}
             title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
           />
@@ -67,7 +67,7 @@ export const Cards = () => {
             <SwiperSlide>
               <Card
                 widthCategory={135}
-                nameCategory={intl.formatMessage({
+                сategory={intl.formatMessage({
                   id: 'courses.card.education-material',
                 })}
                 gap={62}
@@ -80,7 +80,7 @@ export const Cards = () => {
             <SwiperSlide>
               <Card
                 widthCategory={135}
-                nameCategory={intl.formatMessage({
+                сategory={intl.formatMessage({
                   id: 'courses.card.education-material',
                 })}
                 gap={62}
