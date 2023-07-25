@@ -26,8 +26,9 @@ export const Courses = () => (
           </Text>
         </Box>
         <Layout flexBasis={[464]} />
-        <NextLink path='/library'>
-          <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
+
+        <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
+          <NextLink path='/library' width='100%'>
             <Button
               variant='primary'
               size='bigSizeNormalPadding'
@@ -43,8 +44,8 @@ export const Courses = () => (
                 <FormattedMessage id='courses.all-materials' />
               </Text>
             </Button>
-          </Box>
-        </NextLink>
+          </NextLink>
+        </Box>
       </Row>
       <Layout flexBasis={[40, 80]} />
       <Divider weight={1} backgroundColor='background.primary' />
@@ -95,8 +96,9 @@ export const Courses = () => (
       <Layout flexBasis={[40, 80]} />
       <Cards />
       <Layout flexBasis={[20, 160]} />
-      <NextLink path='/library'>
-        <Box width={335} display={['flex', 'none']} flexShrink='0'>
+
+      <Box width={335} display={['flex', 'none']} flexShrink='0'>
+        <NextLink path='/library' width='100%'>
           <Button
             variant='primary'
             size='smallSizeNormalPadding'
@@ -112,8 +114,9 @@ export const Courses = () => (
               <FormattedMessage id='courses.all-materials' />
             </Text>
           </Button>
-        </Box>
-      </NextLink>
+        </NextLink>
+      </Box>
+
       <Layout flexBasis={[100, 80]} />
     </Column>
     <Layout flexBasis={[20, 80]} />
