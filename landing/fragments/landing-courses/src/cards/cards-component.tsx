@@ -122,7 +122,7 @@ export const Cards = () => {
             >
               <Box>
                 <Text fontSize={['solid', 'massive']} lineHeight='small' color='text.accent'>
-                  5
+                  {intl.formatMessage({ id: 'courses.card.five' })}
                 </Text>
               </Box>
               <Layout flexBasis={[12, 8]} />
