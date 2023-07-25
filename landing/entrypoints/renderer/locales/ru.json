@@ -72,6 +72,9 @@
   "questions.form.input.placeholder.phone": "Телефон",
   "library.our-library": "Наша библиотека",
   "library.here-are-collected-materials-and-articles": "Здесь собраны материалы и статьи, которые пригодятся в процессе обучения. Сюда стоит пойти за ответом на любой возникший вопрос.",
+  "library.title.design-figma-math": "Дизайн, Figma, Математика",
+  "library.title.how-use-libraries": "Как использовать библиотеки",
+  "library.hexagonal-architecture": "Гексагональная архитектура, понимание аггрегатов",
   "library.comprehensive-study-material-designed-for-students": "Комплексный учебный материал, разработанный для студентов и всех, кто интересуется сферой дизайна, созданием веб-интерфейсов и применением математики в процессе проектирования.",
   "library.input.placeholder.enter-your-request": "Введите ваш запрос"
 }
