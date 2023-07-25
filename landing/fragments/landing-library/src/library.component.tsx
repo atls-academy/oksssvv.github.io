@@ -50,7 +50,7 @@ export const Library = () => {
             attachmentIcon={<SearchIcon />}
             gap={12}
             attachmentButton={Boolean(searchQuery)}
-            textButton='Искать'
+            textButton={intl.formatMessage({ id: 'library.input.text-button.search' })}
             backgroundButton='accent'
           />
         </Box>
