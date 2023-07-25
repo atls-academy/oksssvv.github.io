@@ -1,5 +1,5 @@
 import React            from 'react'
-import { useIntl }       from 'react-intl'
+import { useIntl }      from 'react-intl'
 
 import { Divider }      from '@ui/divider'
 import { Box }          from '@ui/layout'
