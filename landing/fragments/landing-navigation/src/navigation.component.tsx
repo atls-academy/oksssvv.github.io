@@ -4,7 +4,6 @@ import { useState }         from 'react'
 import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
-import { Drawer }           from '@ui/drawer'
 import { ArrowDownIcon }    from '@ui/icon'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
@@ -13,6 +12,7 @@ import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
 
+import { DrawerContainer }  from './drawer'
 import { Item }             from './item'
 
 export const Navigation = () => {
@@ -22,7 +22,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <Drawer active={visible} onClose={() => setVisible(false)} />
+      <DrawerContainer active={visible} onClose={() => setVisible(false)} />
       <Column height={[80, 128]}>
         <Layout flexBasis={[22, 35]} />
         <Row justifyContent='center'>
@@ -31,13 +31,13 @@ export const Navigation = () => {
             <Logo fill='white' />
           </Box>
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Academy' })} path='/' />
+            <Item title={intl.formatMessage({ id: 'navigation.academy' })} path='/' />
             <Layout flexBasis={20} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Курсы' })} path='/' />
+            <Item title={intl.formatMessage({ id: 'navigation.courses' })} path='/' />
             <Layout flexBasis={20} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'Обучение' })} path='/' />
+            <Item title={intl.formatMessage({ id: 'navigation.education' })} path='/' />
             <Layout flexBasis={20} />
-            <Item title={intl.formatMessage({ id: '/', defaultMessage: 'FAQ' })} path='/' />
+            <Item title={intl.formatMessage({ id: 'navigation.faq' })} path='/' />
           </Row>
           <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
             <Button
@@ -53,7 +53,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='regular'>
-                <FormattedMessage id='/' defaultMessage='Курсы' />
+                <FormattedMessage id='navigation.courses' />
               </Text>
             </Button>
           </Box>
@@ -72,7 +72,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='medium'>
-                <FormattedMessage id='/' defaultMessage='Курсы' />
+                <FormattedMessage id='navigation.courses' />
               </Text>
             </Button>
           </Box>

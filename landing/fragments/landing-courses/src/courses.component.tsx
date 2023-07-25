@@ -8,6 +8,7 @@ import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
+import { NextLink }         from '@ui/link'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
@@ -21,26 +22,29 @@ export const Courses = () => (
       <Row>
         <Box width={[335, 880]}>
           <Text fontSize={['large', 'huge']} lineHeight='regular'>
-            <FormattedMessage id='/' defaultMessage='Курсы и материалы' />
+            <FormattedMessage id='courses.courses-and-materials' />
           </Text>
         </Box>
         <Layout flexBasis={[464]} />
+
         <Box width={254} alignItems='center' display={['none', 'flex']} flexShrink='0'>
-          <Button
-            variant='primary'
-            size='bigSizeNormalPadding'
-            gap={24}
-            icon={<ArrowRightIcon width={6} height={12} />}
-            widthIcon={48}
-            heightIcon={48}
-            backgroundIcon='background.white'
-            radiusIcon='medium'
-            fill
-          >
-            <Text fontSize={['middle', 'regular']} color='text.white'>
-              <FormattedMessage id='/' defaultMessage='Все материалы' />
-            </Text>
-          </Button>
+          <NextLink path='/library' width='100%'>
+            <Button
+              variant='primary'
+              size='bigSizeNormalPadding'
+              gap={24}
+              icon={<ArrowRightIcon width={6} height={12} />}
+              widthIcon={48}
+              heightIcon={48}
+              backgroundIcon='background.white'
+              radiusIcon='medium'
+              fill
+            >
+              <Text fontSize={['middle', 'regular']} color='text.white'>
+                <FormattedMessage id='courses.all-materials' />
+              </Text>
+            </Button>
+          </NextLink>
         </Box>
       </Row>
       <Layout flexBasis={[40, 80]} />
@@ -49,69 +53,70 @@ export const Courses = () => (
       <Box flexDirection={['column', 'row']}>
         <Box maxWidth={[335, 710]} display='inline'>
           <Text fontSize={['regular', 'normal']} lineHeight='medium'>
-            <FormattedMessage id='/' defaultMessage='Являясь серым кардиналом,' />
+            <FormattedMessage id='courses.being-a-cardinal' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='Atlantis' />
+            <FormattedMessage id='courses.atlantis' defaultMessage='Atlantis' />
             <Space count={1} />
           </Text>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage id='/' defaultMessage='имеет влияние на' />
+            <FormattedMessage id='courses.has-an-impact' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='сферу IT' />
+            <FormattedMessage id='courses.it-sphere' defaultMessage='сферу IT' />
           </Text>
           <Box display={['none', 'inline']}>
             <Space count={2} />
           </Box>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage id='/' defaultMessage='и неограниченные возможности в' />
+            <FormattedMessage id='courses.unlimited-possibilities' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='применении навыков.' />
+            <FormattedMessage id='courses.application-skills' />
           </Text>
         </Box>
         <Layout flexBasis={[20, 341]} />
         <Box maxWidth={[335, 559]} display='inline'>
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage
-              id='/'
-              defaultMessage='Эффективность обучения заметно вырастает благодаря'
-            />
+            <FormattedMessage id='courses.learning-efficiency-grows' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' color='text.accent'>
-            <FormattedMessage id='/' defaultMessage='практике' />
+            <FormattedMessage id='courses.practice' />
           </Text>
           <Space count={2} />
           <Text fontSize={['regular', 'normal']} lineHeight='medium' display='inline'>
-            <FormattedMessage id='/' defaultMessage='на существующих проектах. ' />
+            <FormattedMessage id='courses.on-existing-projects' />
           </Text>
         </Box>
       </Box>
       <Layout flexBasis={[40, 80]} />
       <Cards />
       <Layout flexBasis={[20, 160]} />
+
       <Box width={335} display={['flex', 'none']} flexShrink='0'>
-        <Button
-          variant='primary'
-          size='smallSizeNormalPadding'
-          gap={155}
-          icon={<ArrowRightIcon width={6} height={12} />}
-          widthIcon={32}
-          heightIcon={32}
-          backgroundIcon='background.white'
-          radiusIcon='little'
-          fill
-        >
-          <Text fontSize='middle' lineHeight='regular' color='text.white'>
-            <FormattedMessage id='/' defaultMessage='Все материалы' />
-          </Text>
-        </Button>
+        <NextLink path='/library' width='100%'>
+          <Button
+            variant='primary'
+            size='smallSizeNormalPadding'
+            gap={155}
+            icon={<ArrowRightIcon width={6} height={12} />}
+            widthIcon={32}
+            heightIcon={32}
+            backgroundIcon='background.white'
+            radiusIcon='little'
+            fill
+          >
+            <Text fontSize='middle' lineHeight='regular' color='text.white'>
+              <FormattedMessage id='courses.all-materials' />
+            </Text>
+          </Button>
+        </NextLink>
       </Box>
+
       <Layout flexBasis={[100, 80]} />
     </Column>
     <Layout flexBasis={[20, 80]} />

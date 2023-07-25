@@ -6,8 +6,8 @@ import { border }     from 'styled-system'
 import { layout }     from 'styled-system'
 
 const Background = styled.div(
-  ({ theme, optionBackground }) => ({
-    background: optionBackground ? theme.backgrounds[optionBackground] : 'none',
+  ({ theme, backgroundColor }) => ({
+    background: backgroundColor ? theme.backgrounds[backgroundColor] : 'none',
   }),
   background,
   layout,

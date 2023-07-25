@@ -1,5 +1,5 @@
 export interface ItemProps {
-  quantity?: string
+  quantity?: number
   title?: string
   divider?: number
 }

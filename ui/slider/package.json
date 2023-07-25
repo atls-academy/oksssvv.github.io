@@ -2,16 +2,21 @@
   "name": "@ui/slider",
   "version": "0.0.1",
   "main": "src/index.ts",
-  "dependencies": {
-    "@ui/layout": "0.0.1",
-    "framer-motion": "10.12.18"
-  },
   "devDependencies": {
+    "@ui/background": "workspace:0.0.1",
+    "@ui/button": "workspace:0.0.1",
+    "@ui/icon": "workspace:0.0.1",
+    "@ui/image": "workspace:0.0.1",
+    "@ui/layout": "workspace:0.0.1",
+    "@ui/text": "workspace:0.0.1",
+    "framer-motion": "10.12.18",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-intl": "6.4.2"
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "react-intl": "*"
   }
 }

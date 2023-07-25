@@ -1,4 +1,32 @@
 export const colors = {
+  lilac: 'rgba(77, 60, 242, 1)',
+  lightPurple: 'rgba(114, 108, 182, 1)',
+  darkPurple: 'rgba(27, 26, 51, 1)',
+  input: {
+    ordinary: {
+      default: {
+        border: 'rgba(58, 55, 94, 0.15)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
+      },
+      hover: {
+        border: 'rgba(123, 84, 233, 0.5)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
+      },
+      focus: {
+        border: 'rgba(123, 84, 233, 1)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
+      },
+      filled: {
+        border: 'rgba(27, 26, 51, 1)',
+        font: 'rgba(27, 26, 51, 1)',
+        background: 'rgba(255, 255, 255, 1)',
+      },
+    },
+  },
+
   text: {
     accent: 'rgba(77, 60, 242, 1)',
     primary: 'rgba(58, 55, 93, 1)',
@@ -11,8 +39,10 @@ export const colors = {
     purple: 'rgba(123, 84, 233, 1)',
     lightWhite: 'rgba(255, 255, 255, 0.60)',
     darkPurple: 'rgba(58, 55, 94, 0.60)',
+    grayPrimary: 'rgba(58, 55, 94, 0.6)',
   },
   background: {
+    accent: 'rgba(77, 60, 242, 1)',
     white: 'rgba(255, 255, 255, 1)',
     ghost: 'rgba(255, 255, 255, 0.08)',
     ghostGray: 'rgba(27, 26, 51, 0.15)',
@@ -25,6 +55,7 @@ export const colors = {
     darkPrimary: 'rgba(58, 55, 94, 0.15)',
     lightPrimary: 'rgba(123, 84, 233, 0.2)',
     brightLilac: 'rgba(123, 84, 233, 1)',
+    ghostLight: 'rgba(255, 255, 255, 0.2)',
   },
   button: {
     primary: {
@@ -54,6 +85,9 @@ export const colors = {
       disabled: {
         background: 'rgba(255, 255, 255, 0.10)',
       },
+    },
+    accent: {
+      default: { background: 'rgba(77, 60, 242, 1)' },
     },
   },
 }

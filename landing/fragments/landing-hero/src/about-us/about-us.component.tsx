@@ -12,10 +12,10 @@ export const AboutUs = () => (
   <Column height={[225, 499]} width={[335, 1460]}>
     <Box display='inline' minWidth={[335, 920]} maxWidth={[335, 1166]}>
       <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
-        <FormattedMessage id='/' defaultMessage='Обучаем профессионалов' />
+        <FormattedMessage id='hero.train-professionals' />
       </Text>
       <Text color='white' fontSize={['major', 'huge']} lineHeight={['medium', 'normal']}>
-        <FormattedMessage id='/' defaultMessage='для революции в' />
+        <FormattedMessage id='hero.for-revolution-in' />
       </Text>
       <Space count={4} />
 
@@ -29,7 +29,7 @@ export const AboutUs = () => (
         borderRadius={['small', 'big']}
       >
         <Text color='white' fontSize={['major', 'big']} lineHeight={['medium', 'normal']}>
-          <FormattedMessage id='/' defaultMessage='IT' />
+          <FormattedMessage id='hero.it' />
         </Text>
       </Box>
     </Box>
@@ -38,7 +38,7 @@ export const AboutUs = () => (
     <Layout flexBasis={[24, 48]} />
     <Box width={[335, 640]} display='inline'>
       <Text color='white' fontSize={['medium', 'regular']} lineHeight='medium'>
-        <FormattedMessage id='/' defaultMessage='Мы не учим программированию и дизайну,' />
+        <FormattedMessage id='hero.we-not-teach-programming' />
       </Text>
       <Space count={2} />
       <Text
@@ -48,10 +48,7 @@ export const AboutUs = () => (
         letterSpacing={['-0.008em', '0']}
         display={['flex', 'inline']}
       >
-        <FormattedMessage
-          id='/'
-          defaultMessage='мы учим мышлению, способному реализовывывать невозможные идеи.'
-        />
+        <FormattedMessage id='hero.we-teach-thinking' />
       </Text>
     </Box>
   </Column>
