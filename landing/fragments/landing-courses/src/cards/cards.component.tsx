@@ -18,7 +18,8 @@ import { Swiper }           from '@ui/swiper'
 import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 import { useHover }         from '@ui/utils'
-import {WideScreenCards} from './wideScreen'
+
+import { WideScreenCards }  from './wideScreen'
 
 export const Cards = () => {
   const intl = useIntl()
@@ -33,7 +34,7 @@ export const Cards = () => {
           width='100%'
         >
           <Card
-            widthCategory={{_:80, standard:104, ultra:148}}
+            widthCategory={{ _: 80, standard: 104, ultra: 148 }}
             сategory={intl.formatMessage({ id: 'courses.card.education' })}
             gap={{ _: 104, standard: 214, wide: 356, ultra: 222 }}
             waves
@@ -45,7 +46,7 @@ export const Cards = () => {
           />
           <Layout flexBasis={[20, 40]} flexShrink='0' />
           <Card
-            widthCategory={{_:87, standard:112, ultra:160}}
+            widthCategory={{ _: 87, standard: 112, ultra: 160 }}
             сategory={intl.formatMessage({ id: 'courses.card.mini-cours' })}
             gap={{ _: 49, standard: 56, wide: 356, ultra: 222 }}
             waves
@@ -73,7 +74,7 @@ export const Cards = () => {
           />
         </Box>
         <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }} flexWrap='wrap'>
-          <WideScreenCards/>
+          <WideScreenCards />
           <NextLink path='/library'>
             <Background
               width={{ wide: 572, ultra: 668 }}
