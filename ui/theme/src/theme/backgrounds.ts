@@ -1,5 +1,5 @@
 export const backgrounds = {
-  gray: 'rgba(102, 102, 102, 1)',
+  waves: 'url("/waves.png")',
   lilacGradient:
     'radial-gradient(50% 50.00% at 50% 50.00%, rgba(36, 0, 254, 0.00) 63.70%, rgba(36, 0, 254, 0.20) 100%), #6F57FF',
   purpleGradient:

@@ -8,6 +8,7 @@
     "@ui/card": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
+    "@ui/image": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
     "@ui/link": "workspace:0.0.1",
     "@ui/swiper": "workspace:0.0.1",

@@ -8,7 +8,7 @@ import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
-import { SliderBlock }      from './slider-block'
+import { SliderContainer }  from './slider'
 
 export const Process = () => (
   <Row justifyContent='center'>
@@ -20,6 +20,7 @@ export const Process = () => (
           color='white'
           fontSize={['small', 'medium']}
           lineHeight='small'
+          э
           textTransform='uppercase'
           opacity={0.5}
         >
@@ -78,7 +79,7 @@ export const Process = () => (
       </Box>
       <Layout flexBasis={[24, 50]} />
 
-      <SliderBlock />
+      <SliderContainer />
 
       <Layout flexBasis={{ _: 100, standard: 240, wide: 300, ultra: 430 }} />
     </Column>

@@ -4,7 +4,6 @@ import { useState }         from 'react'
 import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
-import { Drawer }           from '@ui/drawer'
 import { ArrowDownIcon }    from '@ui/icon'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
@@ -13,6 +12,7 @@ import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
 
+import { DrawerContainer }  from './drawer'
 import { Item }             from './item'
 
 export const Navigation = () => {
@@ -22,21 +22,16 @@ export const Navigation = () => {
 
   return (
     <>
-      <Drawer active={visible} onClose={() => setVisible(false)} />
+      <DrawerContainer active={visible} onClose={() => setVisible(false)} />
       <Column alignItems='center' height={[80, 128]}>
         <Layout flexBasis={{ _: 22, standard: 35, wide: 10, ultra: 0 }} />
-        <Row width={{ _: 375, standard: '100%', wide: 2560, ultra: 2600 }}>
-          <Layout flexBasis={{ _: 20, standard: 40, ultra: 0 }} />
+        <Row width='100%'>
+          <Layout flexBasis={{ _: 20, standard: 40, ultra: 600 }} />
           <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
             <Logo fill='white' />
           </Box>
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
-          <Row
-            display={['none', 'flex']}
-            justifyContent='center'
-            alignItems='center'
-            width={{ ultra: 1290 }}
-          >
+          <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
             <Item title={intl.formatMessage({ id: 'navigation.academy' })} path='Academy' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
             <Item title={intl.formatMessage({ id: 'navigation.courses' })} path='Courses' />
@@ -110,7 +105,7 @@ export const Navigation = () => {
               </Text>
             </Button>
           </Box>
-          <Layout flexBasis={{ _: 0, standard: 40, ultra: 0 }} />
+          <Layout flexBasis={{ _: 0, standard: 40, ultra: 600 }} />
         </Row>
         <Layout flexBasis={[22, 35]} />
       </Column>

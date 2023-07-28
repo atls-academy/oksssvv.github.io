@@ -1060,6 +1060,7 @@ __metadata:
     "@ui/card": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace:0.0.1"
     "@ui/swiper": "workspace:0.0.1"
@@ -1217,6 +1218,8 @@ __metadata:
   resolution: "@landing/navigation-fragment@workspace:landing/fragments/landing-navigation"
   dependencies:
     "@ui/button": "workspace:0.0.1"
+    "@ui/card": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
     "@ui/drawer": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -2079,8 +2082,6 @@ __metadata:
   resolution: "@ui/card@workspace:ui/card"
   dependencies:
     "@ui/background": "workspace:0.0.1"
-    "@ui/divider": "workspace:0.0.1"
-    "@ui/icon": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"

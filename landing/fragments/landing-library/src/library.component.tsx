@@ -12,11 +12,11 @@ import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
 
-import { CardsMaterial }    from './cards-material'
+import { Materials }        from './materials'
 
 export const Library = () => {
-  const increaseCardsMaterial = Array.from({ length: 3 }).map((_, index) => (
-    <CardsMaterial divider={index > 1 ? 1 : 0} key={index} /> /*eslint-disable-line */
+  const materialsIncrease = Array.from({ length: 3 }).map((_, index) => (
+    <Materials divider={index > 1 ? 1 : 0} key={index} /> /*eslint-disable-line */
   ))
 
   const [searchQuery, setSerchQuery] = useState('')
@@ -67,7 +67,7 @@ export const Library = () => {
           <Layout flexBasis={[20, 230]} />
           <Column width={[335, 1460]}>
             <Layout flexBasis={[64, 160]} />
-            {increaseCardsMaterial}
+            {materialsIncrease}
             <Layout flexBasis={[144, 240]} />
           </Column>
           <Layout flexBasis={[20, 230]} />

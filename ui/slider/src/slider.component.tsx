@@ -17,7 +17,7 @@ import { Text }                from '@ui/text'
 
 import { SliderProps }         from './slider.interfaces'
 
-export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }) => {
+export const Slider: FC<SliderProps> = ({ images, display }) => {
   const [index, setIndex] = useState(0)
   const [animation, setAnimation] = useState(0)
 
@@ -43,34 +43,41 @@ export const Slider: FC<SliderProps> = ({ widthImg, heightImg, images, display }
       <Background
         display='flex'
         width={{ _: 155, standard: 960, wide: 1280, ultra: 1300 }}
-        height={{ _: 323, standard: 540, wide: 720, ultra: 731 }}
+        height={{ _: 323, standard: 540, wide: 720, ultra: 730 }}
         backgroundColor='lightGray'
         position='relative'
         border='ghostGray'
         borderRadius={['large', 'big']}
       >
         <Background
-          width={{ _: 148, standard: 936, wide: 1255, ultra: 1267 }}
-          height={{ _: 315, standard: 516, wide: 698, ultra: 698 }}
+          width={{ _: 148, standard: 936, wide: 1255, ultra: 1280 }}
+          height={{ _: 317, standard: 516, wide: 695, ultra: 708 }}
           display='flex'
           backgroundColor='radialGray'
           position='absolute'
-          top={[1, 12]}
-          left={[1, 12]}
-          borderRadius={['regular', 'normal']}
+          top={[3, 12]}
+          left={[3, 12]}
+          borderRadius={{ _: 'regular', standard: 'normal', ultra: 'regular' }}
         >
-          <Box width='100%' justifyContent='center' alignItems='center' flexDirection='column'>
+          <Box width='100%' alignItems='center' flexDirection='column' position='relative'>
             <Image src='/toolbar.png' display={['none', 'flex']} width='100%' />
             <Image src='/mobilePanel.png' display={['flex', 'none']} />
-            <motion.img
-              key={index}
-              src={images[index]}
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              width={widthImg}
-              height={heightImg}
-            />
+            <Box
+              width={{ _: 140, standard: 750, wide: 960, ultra: 1000 }}
+              justifyContent='center'
+              position='absolute'
+              top={[-5, -15]}
+            >
+              <motion.img
+                key={index}
+                src={images[index]}
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                width='100%'
+                height='100%'
+              />
+            </Box>
           </Box>
         </Background>
       </Background>

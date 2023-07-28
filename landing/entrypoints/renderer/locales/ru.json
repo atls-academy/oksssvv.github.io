@@ -41,6 +41,7 @@
   "courses.card.use-library": "Как использовать библиотеки",
   "courses.card.design-figma-math": "Дизайн, Figma, Математика",
   "courses.card.you-learn-fundamental-knowledge-field-it": "Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.",
+  "courses.card.five": "5",
   "courses.card.student-education-one-group": "студентов обучаются в одной практической группе",
   "courses.button.process": "Процесс поступления",
   "steps.integration-in-team": "Интеграция в команду",
@@ -72,6 +73,9 @@
   "questions.form.input.placeholder.phone": "Телефон",
   "library.our-library": "Наша библиотека",
   "library.here-are-collected-materials-and-articles": "Здесь собраны материалы и статьи, которые пригодятся в процессе обучения. Сюда стоит пойти за ответом на любой возникший вопрос.",
+  "library.title.design-figma-math": "Дизайн, Figma, Математика",
+  "library.title.how-use-libraries": "Как использовать библиотеки",
+  "library.hexagonal-architecture": "Гексагональная архитектура, понимание аггрегатов",
   "library.comprehensive-study-material-designed-for-students": "Комплексный учебный материал, разработанный для студентов и всех, кто интересуется сферой дизайна, созданием веб-интерфейсов и применением математики в процессе проектирования.",
   "library.input.placeholder.enter-your-request": "Введите ваш запрос",
   "library.input.text-button.search": "Искать"
