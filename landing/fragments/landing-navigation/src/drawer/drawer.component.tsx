@@ -19,10 +19,10 @@ import { CardsMobile }      from './cards'
 export const DrawerContainer = ({ active, onClose }) => {
   const intl = useIntl()
   return (
-    <Drawer heightDrawer={[495, 610]} active={active}>
+    <Drawer heightDrawer={{ _: 495, standard: 610, ultra: 720 }} active={active}>
       <Layout flexBasis={[22, 35]} />
-      <Row width={{ _: 375, standard: 1920, wide: 2560, ultra: 2600 }}>
-        <Layout flexBasis={{ _: 20, standard: 40, ultra: 0 }} />
+      <Row width='100%'>
+        <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
         <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
           <Logo fill='rgba(58, 55, 93, 1)' />
         </Box>
@@ -118,10 +118,14 @@ export const DrawerContainer = ({ active, onClose }) => {
             </Text>
           </Button>
         </Box>
-        <Layout flexBasis={{ _: 0, standard: 40, ultra: 0 }} />
+        <Layout flexBasis={{ _: 0, standard: 40, ultra: 620 }} />
       </Row>
       <Layout flexBasis={[78, 50]} />
-      <Row display={['none', 'flex']} height={430} maxWidth={1840}>
+      <Row
+        display={['none', 'flex']}
+        height={{ standard: 430, ultra: 500 }}
+        maxWidth={{ standard: 1840, ultra: 2600 }}
+      >
         <CardsDesktop />
       </Row>
       <Column display={['flex', 'none']} height={337} maxWidth={335}>
