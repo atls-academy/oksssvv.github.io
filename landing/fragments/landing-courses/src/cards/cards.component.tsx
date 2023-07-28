@@ -27,7 +27,7 @@ export const Cards = () => {
 
   return (
     <Box flexDirection={['column', 'row']}>
-      <Column width='100%'>
+      <Column width='100%' order={[1, 0]}>
         <Box
           flexDirection={{ _: 'column', standard: 'column', wide: 'row', ultra: 'row' }}
           order={[1, 0]}
@@ -56,8 +56,9 @@ export const Cards = () => {
               id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
             })}
           />
+          <Layout flexBasis={[20, 0]} />
         </Box>
-        <Layout flexBasis={[20, 40]} />
+        <Layout flexBasis={[0, 40]} />
         <Box display={{ _: 'none', standard: 'flex', wide: 'none', ultra: 'none' }} width='100%'>
           <Card
             widthCategory={180}
@@ -98,7 +99,7 @@ export const Cards = () => {
           </NextLink>
         </Row>
       </Column>
-      <Box display={['flex', 'none']}>
+      <Box display={['flex', 'none']} order={[1, 0]}>
         <Swiper spaceBetween={20} slidesPerView={1.2} slidesOffsetAfter={1} className='CardSlider'>
           <SwiperSlide>
             <Card
