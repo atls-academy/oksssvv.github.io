@@ -147,7 +147,7 @@ const RAW_RUNTIME_STATE =
   "fallbackExclusionList": [\
     ["@landing/courses-fragment", ["virtual:09e125a7dbc99b48dbd8b6d8e8ecfabc4199e657267e2eacea44267006e849cacafe5bb631c40c7ca29ca9de5eb91410e8e961ae61edd55b7a34ddaff952bf2c#workspace:landing/fragments/landing-courses", "virtual:af8e08d5724fa11a7c42869daecd78d967634cfcc1099bdc00ae6a138169113af2b4a746872c371a1c3a22c3346287141f1fcb9f8a0c53ca7e663ee3d385bc4b#workspace:landing/fragments/landing-courses", "workspace:landing/fragments/landing-courses"]],\
     ["@landing/entrypoint-renderer", ["workspace:landing/entrypoints/renderer"]],\
-    ["@landing/hero-fragment", ["virtual:09e125a7dbc99b48dbd8b6d8e8ecfabc4199e657267e2eacea44267006e849cacafe5bb631c40c7ca29ca9de5eb91410e8e961ae61edd55b7a34ddaff952bf2c#workspace:landing/fragments/landing-hero", "virtual:af8e08d5724fa11a7c42869daecd78d967634cfcc1099bdc00ae6a138169113af2b4a746872c371a1c3a22c3346287141f1fcb9f8a0c53ca7e663ee3d385bc4b#workspace:landing/fragments/landing-hero", "workspace:landing/fragments/landing-hero"]],\
+    ["@landing/hero-fragment", ["virtual:08fcb96de8d8818bbbc8cf7b525221ff2556b5d68174027da7ad38efcb999d6aeb9ecf07f3a98f1cb901739ee01525b86f6e941c11a2e93ac0c1ff4b4414a5a5#workspace:landing/fragments/landing-hero", "virtual:09e125a7dbc99b48dbd8b6d8e8ecfabc4199e657267e2eacea44267006e849cacafe5bb631c40c7ca29ca9de5eb91410e8e961ae61edd55b7a34ddaff952bf2c#workspace:landing/fragments/landing-hero", "virtual:af8e08d5724fa11a7c42869daecd78d967634cfcc1099bdc00ae6a138169113af2b4a746872c371a1c3a22c3346287141f1fcb9f8a0c53ca7e663ee3d385bc4b#workspace:landing/fragments/landing-hero", "virtual:fe208367cff5567f2d7dd71b72cb9343340568eda25b803a4094ee07244489d491a2eaea3a44d67830e301687a14f84aa19b09f089e52c03584e5d2018063cc6#workspace:landing/fragments/landing-hero", "workspace:landing/fragments/landing-hero"]],\
     ["@landing/index-page", ["virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#workspace:landing/pages/index-page", "workspace:landing/pages/index-page"]],\
     ["@landing/info-fragment", ["virtual:09e125a7dbc99b48dbd8b6d8e8ecfabc4199e657267e2eacea44267006e849cacafe5bb631c40c7ca29ca9de5eb91410e8e961ae61edd55b7a34ddaff952bf2c#workspace:landing/fragments/landing-info", "virtual:af8e08d5724fa11a7c42869daecd78d967634cfcc1099bdc00ae6a138169113af2b4a746872c371a1c3a22c3346287141f1fcb9f8a0c53ca7e663ee3d385bc4b#workspace:landing/fragments/landing-info", "workspace:landing/fragments/landing-info"]],\
     ["@landing/library-fragment", ["virtual:3b4abc5befb2b9ffb9c78f35551980bbdc5754f82e10792718aacf0482f2a9c84e83e4bb55444e57a07c774d2eeec9f350f05465f56bfcde747ff68c63725fe8#workspace:landing/fragments/landing-library", "virtual:d6706d5e5d1fc0fe6befd6a9108aebb713ac3effb51a560bd6038e0208359e302fb498dcff42c4c667d6afa19869d11cb4b37fd31245767fbb46d02ab8e468df#workspace:landing/fragments/landing-library", "workspace:landing/fragments/landing-library"]],\
@@ -1980,6 +1980,29 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@landing/hero-fragment", [\
+      ["virtual:08fcb96de8d8818bbbc8cf7b525221ff2556b5d68174027da7ad38efcb999d6aeb9ecf07f3a98f1cb901739ee01525b86f6e941c11a2e93ac0c1ff4b4414a5a5#workspace:landing/fragments/landing-hero", {\
+        "packageLocation": "./.yarn/__virtual__/@landing-hero-fragment-virtual-88b1fde08e/1/landing/fragments/landing-hero/",\
+        "packageDependencies": [\
+          ["@landing/hero-fragment", "virtual:08fcb96de8d8818bbbc8cf7b525221ff2556b5d68174027da7ad38efcb999d6aeb9ecf07f3a98f1cb901739ee01525b86f6e941c11a2e93ac0c1ff4b4414a5a5#workspace:landing/fragments/landing-hero"],\
+          ["@types/react", "npm:17.0.39"],\
+          ["@types/react-intl", null],\
+          ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
+          ["@ui/divider", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/divider"],\
+          ["@ui/icon", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/icon"],\
+          ["@ui/layout", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/layout"],\
+          ["@ui/link", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/link"],\
+          ["@ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text"],\
+          ["react", "npm:18.2.0"],\
+          ["react-intl", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#npm:6.4.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-intl",\
+          "@types/react",\
+          "react-intl",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["virtual:09e125a7dbc99b48dbd8b6d8e8ecfabc4199e657267e2eacea44267006e849cacafe5bb631c40c7ca29ca9de5eb91410e8e961ae61edd55b7a34ddaff952bf2c#workspace:landing/fragments/landing-hero", {\
         "packageLocation": "./.yarn/__virtual__/@landing-hero-fragment-virtual-cfc64ba0e2/1/landing/fragments/landing-hero/",\
         "packageDependencies": [\
@@ -2016,6 +2039,29 @@ const RAW_RUNTIME_STATE =
           ["@ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text"],\
           ["react", "npm:18.2.0"],\
           ["react-intl", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:6.4.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-intl",\
+          "@types/react",\
+          "react-intl",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:fe208367cff5567f2d7dd71b72cb9343340568eda25b803a4094ee07244489d491a2eaea3a44d67830e301687a14f84aa19b09f089e52c03584e5d2018063cc6#workspace:landing/fragments/landing-hero", {\
+        "packageLocation": "./.yarn/__virtual__/@landing-hero-fragment-virtual-d28dc0a164/1/landing/fragments/landing-hero/",\
+        "packageDependencies": [\
+          ["@landing/hero-fragment", "virtual:fe208367cff5567f2d7dd71b72cb9343340568eda25b803a4094ee07244489d491a2eaea3a44d67830e301687a14f84aa19b09f089e52c03584e5d2018063cc6#workspace:landing/fragments/landing-hero"],\
+          ["@types/react", null],\
+          ["@types/react-intl", null],\
+          ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
+          ["@ui/divider", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/divider"],\
+          ["@ui/icon", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/icon"],\
+          ["@ui/layout", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/layout"],\
+          ["@ui/link", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/link"],\
+          ["@ui/text", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/text"],\
+          ["react", "npm:18.2.0"],\
+          ["react-intl", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#npm:6.4.2"]\
         ],\
         "packagePeers": [\
           "@types/react-intl",\
@@ -2104,6 +2150,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@landing-info-fragment-virtual-08fcb96de8/1/landing/fragments/landing-info/",\
         "packageDependencies": [\
           ["@landing/info-fragment", "virtual:09e125a7dbc99b48dbd8b6d8e8ecfabc4199e657267e2eacea44267006e849cacafe5bb631c40c7ca29ca9de5eb91410e8e961ae61edd55b7a34ddaff952bf2c#workspace:landing/fragments/landing-info"],\
+          ["@landing/hero-fragment", "virtual:08fcb96de8d8818bbbc8cf7b525221ff2556b5d68174027da7ad38efcb999d6aeb9ecf07f3a98f1cb901739ee01525b86f6e941c11a2e93ac0c1ff4b4414a5a5#workspace:landing/fragments/landing-hero"],\
           ["@types/react", "npm:17.0.39"],\
           ["@types/react-intl", null],\
           ["@ui/icon", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/icon"],\
@@ -2124,6 +2171,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@landing-info-fragment-virtual-d26dcfcb4c/1/landing/fragments/landing-info/",\
         "packageDependencies": [\
           ["@landing/info-fragment", "virtual:af8e08d5724fa11a7c42869daecd78d967634cfcc1099bdc00ae6a138169113af2b4a746872c371a1c3a22c3346287141f1fcb9f8a0c53ca7e663ee3d385bc4b#workspace:landing/fragments/landing-info"],\
+          ["@landing/hero-fragment", "virtual:af8e08d5724fa11a7c42869daecd78d967634cfcc1099bdc00ae6a138169113af2b4a746872c371a1c3a22c3346287141f1fcb9f8a0c53ca7e663ee3d385bc4b#workspace:landing/fragments/landing-hero"],\
           ["@types/react", "npm:17.0.39"],\
           ["@types/react-intl", null],\
           ["@ui/icon", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/icon"],\
@@ -2145,6 +2193,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./landing/fragments/landing-info/",\
         "packageDependencies": [\
           ["@landing/info-fragment", "workspace:landing/fragments/landing-info"],\
+          ["@landing/hero-fragment", "virtual:fe208367cff5567f2d7dd71b72cb9343340568eda25b803a4094ee07244489d491a2eaea3a44d67830e301687a14f84aa19b09f089e52c03584e5d2018063cc6#workspace:landing/fragments/landing-hero"],\
           ["@ui/icon", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/icon"],\
           ["@ui/image", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/image"],\
           ["@ui/layout", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/layout"],\

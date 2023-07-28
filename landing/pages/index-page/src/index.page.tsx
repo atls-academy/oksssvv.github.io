@@ -60,7 +60,7 @@ const IndexPage = () => {
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={1}
-        top={{ _: 920, standard: 1670, wide: 1550, ultra: 2100 }}
+        top={{ _: 900, standard: 1670, wide: 1550, ultra: 2100 }}
         width='100%'
       >
         <Courses />

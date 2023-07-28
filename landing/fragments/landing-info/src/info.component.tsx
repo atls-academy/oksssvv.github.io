@@ -1,6 +1,7 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
+import { SocialLinks }      from '@landing/hero-fragment'
 import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Layout }           from '@ui/layout'
@@ -69,6 +70,15 @@ export const Info = () => (
       </Column>
       <Layout flexBasis={[64, 240]} />
     </Column>
-    <Layout flexBasis={{ _: 20, standard: 230, wide: 860, ultra: 1030 }} />
+    <Layout flexBasis={{ wide: 774, ultra: 326 }} />
+    <Column display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'none' }}>
+      <Layout flexBasis={230} />
+      <SocialLinks buttonSize='smallSizeSmallPadding' iconWidth={18} iconHeight={15} gap={16} />
+    </Column>
+    <Column display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}>
+      <Layout flexBasis={210} />
+      <SocialLinks buttonSize='bigSizeBigRadii' iconWidth={27} iconHeight={27} gap={24} />
+    </Column>
+    <Layout flexBasis={{ _: 0, standard: 210, wide: 25, ultra: 600 }} />
   </Row>
 )
