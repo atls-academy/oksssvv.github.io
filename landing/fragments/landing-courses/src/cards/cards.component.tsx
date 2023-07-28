@@ -14,8 +14,6 @@ import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { NextLink }         from '@ui/link'
-import { Swiper }           from '@ui/swiper'
-import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 import { useHover }         from '@ui/utils'
 
@@ -99,34 +97,6 @@ export const Cards = () => {
           </NextLink>
         </Row>
       </Column>
-      <Box display={['flex', 'none']} order={[1, 0]}>
-        <Swiper spaceBetween={20} slidesPerView={1.2} slidesOffsetAfter={1} className='CardSlider'>
-          <SwiperSlide>
-            <Card
-              widthCategory={135}
-              сategory={intl.formatMessage({
-                id: 'courses.card.education-material',
-              })}
-              gap={62}
-              widthContent={220}
-              title={intl.formatMessage({
-                id: 'courses.card.use-library',
-              })}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              widthCategory={135}
-              сategory={intl.formatMessage({
-                id: 'courses.card.education-material',
-              })}
-              gap={62}
-              widthContent={220}
-              title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
-            />
-          </SwiperSlide>
-        </Swiper>
-      </Box>
 
       <Layout flexBasis={[0, 40]} />
       <Column order={[0, 1]}>
@@ -191,28 +161,30 @@ export const Cards = () => {
           <Layout flexBasis={[16, 32]} />
         </Background>
         <Layout flexBasis={[0, 20]} />
-        <Box
-          width={[410]}
-          display={{ _: 'none', standard: 'flex', ultra: 'none' }}
-          alignItems='center'
-          flexShrink='0'
-        >
-          <Button
-            variant='primary'
-            size='bigSizeNormalPadding'
-            gap={121}
-            icon={<ScrollIcon width={12} height={18} />}
-            widthIcon={48}
-            heightIcon={48}
-            backgroundIcon='background.white'
-            radiusIcon='medium'
-            fill
+        <Link to='Education' spy smooth duration={1000}>
+          <Box
+            width={[410]}
+            display={{ _: 'none', standard: 'flex', ultra: 'none' }}
+            alignItems='center'
+            flexShrink='0'
           >
-            <Text fontSize='regular' lineHeight='regular' color='text.white'>
-              <FormattedMessage id='courses.button.process' />
-            </Text>
-          </Button>
-        </Box>
+            <Button
+              variant='primary'
+              size='bigSizeNormalPadding'
+              gap={121}
+              icon={<ScrollIcon width={12} height={18} />}
+              widthIcon={48}
+              heightIcon={48}
+              backgroundIcon='background.white'
+              radiusIcon='medium'
+              fill
+            >
+              <Text fontSize='regular' lineHeight='regular' color='text.white'>
+                <FormattedMessage id='courses.button.process' />
+              </Text>
+            </Button>
+          </Box>
+        </Link>
         <Link to='Education' spy smooth duration={1000}>
           <Box
             display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
