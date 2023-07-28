@@ -18,37 +18,11 @@ import { Swiper }           from '@ui/swiper'
 import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 import { useHover }         from '@ui/utils'
+import {WideScreenCards} from './wideScreen'
 
 export const Cards = () => {
   const intl = useIntl()
   const [hover, hoverProps] = useHover()
-
-  const Short = ({ title, margin }) => (
-    <>
-      <Column width={{ wide: 570, ultra: 668 }}>
-        <Card
-          widthCategory={250}
-          сategory={intl.formatMessage({ id: 'courses.card.education-material' })}
-          gap={45}
-          title={title}
-        />
-        <Layout flexBasis={40} />
-      </Column>
-      <Layout flexBasis={margin} />
-    </>
-  )
-
-  const CardsBlock = Array.from({ length: 5 }).map((_, index) => (
-    <Short
-      key={index} /*eslint-disable-line */
-      title={
-        index < 3
-          ? intl.formatMessage({ id: 'courses.card.use-library' })
-          : intl.formatMessage({ id: 'courses.card.design-figma-math' })
-      }
-      margin={index === 2 ? 0 : 40}
-    />
-  ))
 
   return (
     <Box flexDirection={['column', 'row']}>
@@ -59,7 +33,7 @@ export const Cards = () => {
           width='100%'
         >
           <Card
-            widthCategory={[80, 104, 148]}
+            widthCategory={{_:80, standard:104, ultra:148}}
             сategory={intl.formatMessage({ id: 'courses.card.education' })}
             gap={{ _: 104, standard: 214, wide: 356, ultra: 222 }}
             waves
@@ -71,7 +45,7 @@ export const Cards = () => {
           />
           <Layout flexBasis={[20, 40]} flexShrink='0' />
           <Card
-            widthCategory={[87, 112, 160]}
+            widthCategory={{_:87, standard:112, ultra:160}}
             сategory={intl.formatMessage({ id: 'courses.card.mini-cours' })}
             gap={{ _: 49, standard: 56, wide: 356, ultra: 222 }}
             waves
@@ -99,7 +73,7 @@ export const Cards = () => {
           />
         </Box>
         <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }} flexWrap='wrap'>
-          {CardsBlock}
+          <WideScreenCards/>
           <NextLink path='/library'>
             <Background
               width={{ wide: 572, ultra: 668 }}
