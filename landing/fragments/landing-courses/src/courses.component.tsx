@@ -4,6 +4,7 @@ import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
 import { Card }             from '@ui/card'
+import { Condition }        from '@ui/condition'
 import { Divider }          from '@ui/divider'
 import { ArrowRightIcon }   from '@ui/icon'
 import { Box }              from '@ui/layout'
@@ -15,11 +16,13 @@ import { Swiper }           from '@ui/swiper'
 import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
+import { useWindow }        from '@ui/utils'
 
 import { Cards }            from './cards'
 
 export const Courses = () => {
   const intl = useIntl()
+  const { isMobile } = useWindow()
   return (
     <>
       <Row justifyContent='center'>
@@ -148,66 +151,69 @@ export const Courses = () => {
         </Column>
         <Layout flexBasis={{ _: 20, standard: 80, ultra: 620 }} />
       </Row>
-      <Box overflow='hidden' display={['flex', 'none']} justifyContent='center'>
-        <Layout flexBasis={20} flexShrink='0' />
-        <Column>
-          <Box display={['flex', 'none']} width={360}>
-            <Swiper
-              spaceBetween={20}
-              slidesPerView={1.35}
-              slidesOffsetAfter={22}
-              className='CardSlider'
-            >
-              <SwiperSlide>
-                <Card
-                  widthCategory={135}
-                  сategory={intl.formatMessage({
-                    id: 'courses.card.education-material',
-                  })}
-                  gap={62}
-                  widthContent={220}
-                  title={intl.formatMessage({
-                    id: 'courses.card.use-library',
-                  })}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Card
-                  widthCategory={135}
-                  сategory={intl.formatMessage({
-                    id: 'courses.card.education-material',
-                  })}
-                  gap={62}
-                  widthContent={220}
-                  title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
-                />
-              </SwiperSlide>
-            </Swiper>
-          </Box>
 
-          <Layout flexBasis={40} />
-
-          <Box width={335} display={['flex', 'none']} flexShrink='0'>
-            <NextLink path='/library' width='100%'>
-              <Button
-                variant='primary'
-                size='smallSizeNormalPadding'
-                gap={155}
-                icon={<ArrowRightIcon width={6} height={12} />}
-                widthIcon={32}
-                heightIcon={32}
-                backgroundIcon='background.white'
-                radiusIcon='little'
-                fill
+      <Condition match={isMobile}>
+        <Box overflow='hidden' justifyContent='center'>
+          <Layout flexBasis={20} flexShrink='0' />
+          <Column>
+            <Box width={354}>
+              <Swiper
+                spaceBetween={20}
+                slidesPerView={1.35}
+                slidesOffsetAfter={24}
+                className='CardSlider'
               >
-                <Text fontSize='middle' lineHeight='regular' color='text.white'>
-                  <FormattedMessage id='courses.all-materials' />
-                </Text>
-              </Button>
-            </NextLink>
-          </Box>
-        </Column>
-      </Box>
+                <SwiperSlide>
+                  <Card
+                    widthCategory={135}
+                    сategory={intl.formatMessage({
+                      id: 'courses.card.education-material',
+                    })}
+                    gap={62}
+                    widthContent={220}
+                    title={intl.formatMessage({
+                      id: 'courses.card.use-library',
+                    })}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Card
+                    widthCategory={135}
+                    сategory={intl.formatMessage({
+                      id: 'courses.card.education-material',
+                    })}
+                    gap={62}
+                    widthContent={220}
+                    title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </Box>
+
+            <Layout flexBasis={40} />
+
+            <Box width={335} flexShrink='0'>
+              <NextLink path='/library' width='100%'>
+                <Button
+                  variant='primary'
+                  size='smallSizeNormalPadding'
+                  gap={155}
+                  icon={<ArrowRightIcon width={6} height={12} />}
+                  widthIcon={32}
+                  heightIcon={32}
+                  backgroundIcon='background.white'
+                  radiusIcon='little'
+                  fill
+                >
+                  <Text fontSize='middle' lineHeight='regular' color='text.white'>
+                    <FormattedMessage id='courses.all-materials' />
+                  </Text>
+                </Button>
+              </NextLink>
+            </Box>
+          </Column>
+        </Box>
+      </Condition>
     </>
   )
 }

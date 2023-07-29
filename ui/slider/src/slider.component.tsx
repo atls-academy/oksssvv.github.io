@@ -7,6 +7,7 @@ import { useState }            from 'react'
 
 import { Background }          from '@ui/background'
 import { Button }              from '@ui/button'
+import { Condition }           from '@ui/condition'
 import { SmallArrowLeftIcon }  from '@ui/icon'
 import { SmallArrowRightIcon } from '@ui/icon'
 import { Image }               from '@ui/image'
@@ -14,10 +15,12 @@ import { Layout }              from '@ui/layout'
 import { Column }              from '@ui/layout'
 import { Box }                 from '@ui/layout'
 import { Text }                from '@ui/text'
+import { useWindow }           from '@ui/utils'
 
 import { SliderProps }         from './slider.interfaces'
 
 export const Slider: FC<SliderProps> = ({ images, display }) => {
+  const { isMobile, isDesktop } = useWindow()
   const [index, setIndex] = useState(0)
   const [animation, setAnimation] = useState(0)
 
@@ -60,8 +63,12 @@ export const Slider: FC<SliderProps> = ({ images, display }) => {
           borderRadius={{ _: 'regular', standard: 'normal', ultra: 'regular' }}
         >
           <Box width='100%' alignItems='center' flexDirection='column' position='relative'>
-            <Image src='/toolbar.png' display={['none', 'flex']} width='100%' />
-            <Image src='/mobilePanel.png' display={['flex', 'none']} />
+            <Condition match={isDesktop}>
+              <Image src='/toolbar.png' width='100%' />
+            </Condition>
+            <Condition match={isMobile}>
+              <Image src='/mobilePanel.png' />
+            </Condition>
             <Box
               width={{ _: 140, standard: 750, wide: 960, ultra: 1000 }}
               justifyContent='center'

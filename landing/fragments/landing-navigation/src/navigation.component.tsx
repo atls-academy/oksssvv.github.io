@@ -4,6 +4,7 @@ import { useState }         from 'react'
 import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
+import { Condition }        from '@ui/condition'
 import { ArrowDownIcon }    from '@ui/icon'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
@@ -11,13 +12,14 @@ import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Logo }             from '@ui/logo'
 import { Text }             from '@ui/text'
+import { useWindow }        from '@ui/utils'
 
 import { DrawerContainer }  from './drawer'
 import { Item }             from './item'
 
 export const Navigation = () => {
   const intl = useIntl()
-
+  const { isMobile, isDesktop } = useWindow()
   const [visible, setVisible] = useState(false)
 
   return (
@@ -31,15 +33,17 @@ export const Navigation = () => {
             <Logo fill='white' />
           </Box>
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
-          <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
-            <Item title={intl.formatMessage({ id: 'navigation.academy' })} path='Academy' />
-            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: 'navigation.courses' })} path='Courses' />
-            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: 'navigation.education' })} path='Education' />
-            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: 'navigation.faq' })} path='FAQ' />
-          </Row>
+          <Condition match={isDesktop}>
+            <Row justifyContent='center' alignItems='center' width={1290}>
+              <Item title={intl.formatMessage({ id: 'navigation.academy' })} path='Academy' />
+              <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+              <Item title={intl.formatMessage({ id: 'navigation.courses' })} path='Courses' />
+              <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+              <Item title={intl.formatMessage({ id: 'navigation.education' })} path='Education' />
+              <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+              <Item title={intl.formatMessage({ id: 'navigation.faq' })} path='FAQ' />
+            </Row>
+          </Condition>
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
           <Box
             width={163}
@@ -64,24 +68,26 @@ export const Navigation = () => {
               </Text>
             </Button>
           </Box>
-          <Box width={100} display={['flex', 'none']} alignItems='center' flexShrink='0'>
-            <Button
-              variant='ghost'
-              size='normalSizeSmallPadding'
-              gap={12}
-              icon={<ArrowDownIcon width={9} height={4.5} />}
-              widthIcon={28}
-              heightIcon={28}
-              backgroundIcon='background.white'
-              radiusIcon='micro'
-              fill
-              onClick={() => setVisible(true)}
-            >
-              <Text color='white' fontSize='medium'>
-                <FormattedMessage id='navigation.courses' />
-              </Text>
-            </Button>
-          </Box>
+          <Condition match={isMobile}>
+            <Box width={100} alignItems='center' flexShrink='0'>
+              <Button
+                variant='ghost'
+                size='normalSizeSmallPadding'
+                gap={12}
+                icon={<ArrowDownIcon width={9} height={4.5} />}
+                widthIcon={28}
+                heightIcon={28}
+                backgroundIcon='background.white'
+                radiusIcon='micro'
+                fill
+                onClick={() => setVisible(true)}
+              >
+                <Text color='white' fontSize='medium'>
+                  <FormattedMessage id='navigation.courses' />
+                </Text>
+              </Button>
+            </Box>
+          </Condition>
           <Box
             width={203}
             display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
