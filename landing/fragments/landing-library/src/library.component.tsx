@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl'
 import { useState }         from 'react'
 import { useIntl }          from 'react-intl'
 
+import { Button }           from '@ui/button'
 import { Divider }          from '@ui/divider'
 import { SearchIcon }       from '@ui/icon'
 import { Input }            from '@ui/input'
@@ -21,6 +22,15 @@ export const Library = () => {
 
   const [searchQuery, setSerchQuery] = useState('')
   const intl = useIntl()
+  const SearchButton = (
+    <Box width={102} flexShrink='0'>
+      <Button variant='accent' size='smallSizeSamePadding'>
+        <Text color='text.white' fontSize='middle'>
+          {intl.formatMessage({ id: 'library.input.text-button.search' })}
+        </Text>
+      </Button>
+    </Box>
+  )
 
   return (
     <Row justifyContent='center'>
@@ -48,12 +58,11 @@ export const Library = () => {
             placeholder={intl.formatMessage({ id: 'library.input.placeholder.enter-your-request' })}
             size='normal'
             attachmentIcon={<SearchIcon />}
+            addon={searchQuery ? SearchButton : null}
             gap={12}
-            attachmentButton={Boolean(searchQuery)}
-            textButton={intl.formatMessage({ id: 'library.input.text-button.search' })}
-            backgroundButton='accent'
           />
         </Box>
+
         <Layout flexBasis={[120, 440]} />
         <Box
           backgroundColor='background.white'

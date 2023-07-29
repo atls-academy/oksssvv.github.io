@@ -68,6 +68,7 @@ export const Info = () => {
                 <FormattedMessage id='info.mobile.for-their-decisions-is-still-not-enough' />
               </Text>
             </Box>
+            <Layout flexBasis={20} />
             <Box display='inline'>
               <Text color='text.white' fontSize='regular' lineHeight='interim'>
                 <FormattedMessage id='info.mobile.atlantis-academy-trains-engineers' />

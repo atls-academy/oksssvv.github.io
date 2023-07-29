@@ -11,7 +11,6 @@ import { Layout }                   from '@ui/layout'
 import { useHover }                 from '@ui/utils'
 import { useFocus }                 from '@ui/utils'
 
-import { ButtonAttachment }         from './attachment/attachment-button'
 import { IconAttachment }           from './attachment/attachment-icon'
 import { InputProps }               from './input.interfaces'
 import { baseStyles }               from './input.styles'
@@ -22,7 +21,7 @@ import { textareaStyles }           from './input.styles'
 export const InputElement = styled.div(baseStyles, shapeStyles, appearanceStyles, textareaStyles)
 
 export const InputWithoutRef: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { size, value, filled, disabled, onChange, textarea, ...props },
+  { addon, size, value, filled, disabled, onChange, textarea, ...props },
   ref
 ) => {
   const changeValue = useChangeValue(disabled, onChange)
@@ -52,11 +51,7 @@ export const InputWithoutRef: ForwardRefRenderFunction<HTMLInputElement, InputPr
         {...(textarea && rawInputProps)}
         style={{ resize: 'none', width: '100%', height: '100%' }}
       />
-      <ButtonAttachment
-        attachmentButton={props.attachmentButton}
-        backgroundButton={props.backgroundButton}
-        textButton={props.textButton}
-      />
+      {addon}
     </InputElement>
   )
 }
