@@ -4,7 +4,6 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@landing/questions-fragment": "workspace:0.0.1",
-    "@ui/condition": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",

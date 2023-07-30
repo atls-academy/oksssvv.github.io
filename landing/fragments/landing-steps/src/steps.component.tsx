@@ -1,19 +1,16 @@
-import React         from 'react'
-import { useIntl }   from 'react-intl'
+import React       from 'react'
+import { useIntl } from 'react-intl'
 
-import { Condition } from '@ui/condition'
-import { Image }     from '@ui/image'
-import { Layout }    from '@ui/layout'
-import { Column }    from '@ui/layout'
-import { Row }       from '@ui/layout'
-import { Box }       from '@ui/layout'
-import { useWindow } from '@ui/utils'
+import { Image }   from '@ui/image'
+import { Layout }  from '@ui/layout'
+import { Column }  from '@ui/layout'
+import { Row }     from '@ui/layout'
+import { Box }     from '@ui/layout'
 
-import { Item }      from './item'
+import { Item }    from './item'
 
 export const Steps = () => {
   const intl = useIntl()
-  const { isDesktop } = useWindow()
   return (
     <Row justifyContent='center'>
       <Layout flexBasis={[20, 80]} />
@@ -30,11 +27,15 @@ export const Steps = () => {
         <Item quantity={5} title={intl.formatMessage({ id: 'steps.integration-in-project' })} />
         <Layout flexBasis={[0, 112]} />
       </Column>
-      <Condition match={isDesktop}>
-        <Box position='absolute' top={{ standard: 340, wide: 70, ultra: 255 }}>
-          <Image src='/cubes.png' width={{ standard: 400, wide: 880, ultra: 1100 }} />
-        </Box>
-      </Condition>
+
+      <Box
+        display={['none', 'flex']}
+        position='absolute'
+        top={{ standard: 340, wide: 70, ultra: 255 }}
+      >
+        <Image src='/cubes.png' width={{ standard: 400, wide: 880, ultra: 1100 }} />
+      </Box>
+
       <Layout flexBasis={[20, 80]} />
     </Row>
   )

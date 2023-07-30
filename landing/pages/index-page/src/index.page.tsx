@@ -91,7 +91,7 @@ const IndexPage = () => {
       >
         <Steps />
         <RunLine />
-        <Parallax translateY={[-15, 12]}>
+        <Parallax translateY={[-12, 12]}>
           <Process />
         </Parallax>
       </Background>

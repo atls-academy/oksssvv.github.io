@@ -5,19 +5,17 @@ import { motion }           from 'framer-motion'
 import { useState }         from 'react'
 
 import { Item }             from '@landing/questions-fragment'
-import { Condition }        from '@ui/condition'
 import { Divider }          from '@ui/divider'
 import { SmallMinusIcon }   from '@ui/icon'
 import { SmallPlusIcon }    from '@ui/icon'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
-import { useWindow }        from '@ui/utils'
 
 export const Accordion = ({ screen }) => {
   const [selected, setSelected] = useState<number | null>(null)
   const items = () => (screen === 'wide' ? Array.from({ length: 3 }) : Array.from({ length: 6 }))
-  const { isMobile, isDesktop } = useWindow()
+
   return (
     <Column width='100%'>
       {items().map((_, index) => (
@@ -25,31 +23,27 @@ export const Accordion = ({ screen }) => {
           onClick={() => setSelected(selected === index ? null : index)}
           key={`item-${index}`} /*eslint-disable-line */
         >
-          <Condition match={isDesktop}>
-            <Box alignItems='center'>
-              <motion.div>
-                {selected === index ? (
-                  <SmallMinusIcon width={22} height={22} />
-                ) : (
-                  <SmallPlusIcon width={22} height={22} />
-                )}
-              </motion.div>
-              <Item />
-            </Box>
-          </Condition>
+          <Box display={['none', 'flex']} alignItems='center'>
+            <motion.div>
+              {selected === index ? (
+                <SmallMinusIcon width={22} height={22} />
+              ) : (
+                <SmallPlusIcon width={22} height={22} />
+              )}
+            </motion.div>
+            <Item />
+          </Box>
 
-          <Condition match={isMobile}>
-            <Box alignItems='center'>
-              <Item />
-              <motion.div>
-                {selected === index ? (
-                  <SmallMinusIcon width={12} height={12} />
-                ) : (
-                  <SmallPlusIcon width={12} height={12} />
-                )}
-              </motion.div>
-            </Box>
-          </Condition>
+          <Box display={['flex', 'none']} alignItems='center'>
+            <Item />
+            <motion.div>
+              {selected === index ? (
+                <SmallMinusIcon width={12} height={12} />
+              ) : (
+                <SmallPlusIcon width={12} height={12} />
+              )}
+            </motion.div>
+          </Box>
 
           <AnimatePresence>
             {selected === index && (

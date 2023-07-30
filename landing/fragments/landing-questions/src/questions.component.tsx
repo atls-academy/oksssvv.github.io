@@ -4,21 +4,18 @@ import { useState }         from 'react'
 
 import { Accordion }        from '@ui/accordion'
 import { Button }           from '@ui/button'
-import { Condition }        from '@ui/condition'
 import { EnvelopeIcon }     from '@ui/icon'
 import { Layout }           from '@ui/layout'
 import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
-import { useWindow }        from '@ui/utils'
 
 import { Feedback }         from './feedback'
 import { WideAccordion }    from './wide-accordion'
 
 export const Questions = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
-  const { isMobile } = useWindow()
   return (
     <Row>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
@@ -88,26 +85,24 @@ export const Questions = () => {
         </Box>
         <WideAccordion />
         <Layout flexBasis={[60, 0]} />
-        <Condition match={isMobile}>
-          <Box width={335} flexShrink='0'>
-            <Button
-              variant='primary'
-              size='smallSizeNormalPadding'
-              gap={163}
-              icon={<EnvelopeIcon width={12} height={10} />}
-              widthIcon={32}
-              heightIcon={32}
-              backgroundIcon='background.white'
-              radiusIcon='little'
-              fill
-              onClick={() => setModalOpen(true)}
-            >
-              <Text fontSize='middle' color='text.white'>
-                <FormattedMessage id='questions.ask-question' />
-              </Text>
-            </Button>
-          </Box>
-        </Condition>
+        <Box display={['flex', 'none']} width={335} flexShrink='0'>
+          <Button
+            variant='primary'
+            size='smallSizeNormalPadding'
+            gap={163}
+            icon={<EnvelopeIcon width={12} height={10} />}
+            widthIcon={32}
+            heightIcon={32}
+            backgroundIcon='background.white'
+            radiusIcon='little'
+            fill
+            onClick={() => setModalOpen(true)}
+          >
+            <Text fontSize='middle' color='text.white'>
+              <FormattedMessage id='questions.ask-question' />
+            </Text>
+          </Button>
+        </Box>
         <Layout flexBasis={{ _: 80, standard: 160, wide: 200, ultra: 300 }} />
       </Column>
       <Layout flexBasis={{ _: 16, standard: 80, ultra: 545 }} />

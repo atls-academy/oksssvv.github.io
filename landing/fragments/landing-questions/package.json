@@ -6,7 +6,6 @@
     "@ui/accordion": "workspace:0.0.1",
     "@ui/background": "workspace:0.0.1",
     "@ui/button": "workspace:0.0.1",
-    "@ui/condition": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/form": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
