@@ -24,7 +24,7 @@ export const DrawerContainer = ({ active, onClose }) => {
   return (
     <Drawer heightDrawer={{ _: 495, standard: 610, ultra: 720 }} active={active}>
       <Layout flexBasis={[22, 35]} />
-      <Row width='100%'>
+      <Row width='100%' justifyContent='center'>
         <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
         <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
           <Logo fill='rgba(58, 55, 93, 1)' />
@@ -124,7 +124,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             </Button>
           </Box>
         </Condition>
-        <Layout flexBasis={{ _: 0, standard: 40, ultra: 620 }} />
+        <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
       </Row>
       <Layout flexBasis={[78, 50]} />
       <Condition match={isDesktop}>

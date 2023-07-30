@@ -16,7 +16,11 @@ export const Hero = () => (
     <Layout flexBasis={{ _: 20, standard: 230, wide: 230, ultra: 620 }} />
     <Column>
       <Layout flexBasis={{ _: 80, standard: 403, wide: 256, ultra: 428 }} />
-      <Box flexWrap='wrap' width={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}>
+      <Box
+        flexWrap='wrap'
+        maxWidth={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}
+        flexGrow='1'
+      >
         <Box width={{ standard: 1166, ultra: 1750 }}>
           <Text
             color='white'

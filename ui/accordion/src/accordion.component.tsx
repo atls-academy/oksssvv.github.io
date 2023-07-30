@@ -10,7 +10,6 @@ import { Divider }          from '@ui/divider'
 import { SmallMinusIcon }   from '@ui/icon'
 import { SmallPlusIcon }    from '@ui/icon'
 import { Box }              from '@ui/layout'
-import { Layout }           from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
 import { useWindow }        from '@ui/utils'
@@ -20,7 +19,7 @@ export const Accordion = ({ screen }) => {
   const items = () => (screen === 'wide' ? Array.from({ length: 3 }) : Array.from({ length: 6 }))
   const { isMobile, isDesktop } = useWindow()
   return (
-    <Column>
+    <Column width='100%'>
       {items().map((_, index) => (
         <motion.div
           onClick={() => setSelected(selected === index ? null : index)}
@@ -61,7 +60,6 @@ export const Accordion = ({ screen }) => {
                 transition={{ duration: 0.2, easeIn: 1 }}
               >
                 <Box maxWidth={{ _: 325, standard: 784, wide: 900 }}>
-                  <Layout flexBasis={[45, 0]} />
                   <Text
                     fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: 'major' }}
                     lineHeight='large'
@@ -72,11 +70,7 @@ export const Accordion = ({ screen }) => {
               </motion.div>
             )}
           </AnimatePresence>
-          <Divider
-            width={{ _: 335, standard: 1610, wide: 1000, ultra: 1180 }}
-            backgroundColor='background.ghostGray'
-            weight={index < 5 ? 1 : undefined}
-          />
+          <Divider backgroundColor='background.ghostGray' weight={index < 5 ? 1 : undefined} />
         </motion.div>
       ))}
     </Column>

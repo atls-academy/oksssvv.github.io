@@ -20,12 +20,12 @@ export const Questions = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
   const { isMobile } = useWindow()
   return (
-    <Row justifyContent='center'>
+    <Row>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
-      <Layout flexBasis={[16, 230]} />
-      <Column width={{ _: 343, standard: 1610, wide: 2250, ultra: 2600 }}>
+      <Layout flexBasis={{ _: 16, standard: 230, ultra: 695 }} />
+      <Column width='100%' alignItems={['center', 'stretch']}>
         <Layout flexBasis={[80, 160]} />
-        <Row>
+        <Row justifyContent={['center', 'start']}>
           <Box width={{ _: 335, standard: 915, wide: 915, ultra: 1372 }}>
             <Text
               fontSize={{ _: 'normal', standard: 'huge', wide: 'huge', ultra: 'super' }}
@@ -108,9 +108,9 @@ export const Questions = () => {
             </Button>
           </Box>
         </Condition>
-        <Layout flexBasis={{ _: 80, standard: 160, wide: 200, ultra: 200 }} />
+        <Layout flexBasis={{ _: 80, standard: 160, wide: 200, ultra: 300 }} />
       </Column>
-      <Layout flexBasis={[16, 80]} />
+      <Layout flexBasis={{ _: 16, standard: 80, ultra: 545 }} />
     </Row>
   )
 }

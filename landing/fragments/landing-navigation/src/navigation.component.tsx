@@ -29,7 +29,7 @@ export const Navigation = () => {
         <Layout flexBasis={{ _: 22, standard: 35, wide: 10, ultra: 0 }} />
         <Row width='100%' justifyContent='center'>
           <Layout flexBasis={{ _: 20, standard: 40, ultra: 600 }} />
-          <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
+          <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }} flexShrink='0'>
             <Logo fill='white' />
           </Box>
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />

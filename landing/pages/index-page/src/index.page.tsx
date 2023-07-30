@@ -26,6 +26,7 @@ const IndexPage = () => {
         backgroundColor='purpleGradient'
         position='absolute'
         width='100%'
+        height={{ standard: 2000, ultra: 2300 }}
       >
         <Background
           backgroundColor='decorativeSymbol'
@@ -60,7 +61,7 @@ const IndexPage = () => {
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={1}
-        top={{ _: 900, standard: 1670, wide: 1550, ultra: 2100 }}
+        top={{ _: 890, standard: 1770, wide: 1450, ultra: 2160 }}
         width='100%'
       >
         <Courses />
@@ -104,7 +105,7 @@ const IndexPage = () => {
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={3}
-        top={{ _: 4200, standard: 6300, wide: 6600, ultra: 7700 }}
+        top={{ _: 4200, standard: 6380, wide: 6600, ultra: 7700 }}
         width='100%'
       >
         <Questions />

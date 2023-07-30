@@ -13,7 +13,7 @@ export const useWindow = () => {
   }, [])
 
   return {
-    isMobile: windowWidth < 1920,
-    isDesktop: windowWidth >= 1920,
+    isMobile: windowWidth < 1280,
+    isDesktop: windowWidth >= 1280,
   }
 }

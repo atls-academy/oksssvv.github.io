@@ -15,7 +15,7 @@ export const Item = () => {
     <Column {...hoverProps}>
       <Layout flexBasis={[16, 40]} />
       <Row alignItems='center'>
-        <Layout flexBasis={26} />
+        <Layout flexBasis={[0, 26]} />
         <Box width={{ _: 310, standard: 740, wide: 1000, ultra: 1200 }}>
           <Text
             cursor='pointer'

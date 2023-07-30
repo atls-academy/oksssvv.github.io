@@ -37,7 +37,7 @@ export const Library = () => {
       <Layout flexBasis={[20, 230]} />
       <Column>
         <Layout flexBasis={[80, 200]} />
-        <Box width={[225, 1460]}>
+        <Box maxWidth={[225, 1460]}>
           <Text color='text.white' fontSize={['major', 'huge']} lineHeight={['medium', 'small']}>
             <FormattedMessage id='library.our-library' />
           </Text>
@@ -82,7 +82,7 @@ export const Library = () => {
           <Layout flexBasis={[20, 230]} />
         </Box>
       </Column>
-      <Layout flexBasis={[20, 230]} />
+      <Layout flexBasis={[20, 880]} />
     </Row>
   )
 }
