@@ -12,24 +12,32 @@ import { Row }              from '@ui/layout'
 import { Text }             from '@ui/text'
 
 import { Feedback }         from './feedback'
+import { WideAccordion }    from './wide-accordion'
 
 export const Questions = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
-
   return (
-    <Row justifyContent='center'>
+    <Row>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
-      <Layout flexBasis={[16, 230]} />
-      <Column width={[343, 1610]}>
+      <Layout flexBasis={{ _: 16, standard: 230, ultra: 695 }} />
+      <Column width='100%' alignItems={['center', 'stretch']}>
         <Layout flexBasis={[80, 160]} />
-        <Row>
-          <Box width={[335, 915]}>
-            <Text fontSize={['normal', 'huge']} lineHeight='regular'>
+        <Row justifyContent={['center', 'start']}>
+          <Box width={{ _: 335, standard: 915, wide: 915, ultra: 1372 }}>
+            <Text
+              fontSize={{ _: 'normal', standard: 'huge', wide: 'huge', ultra: 'super' }}
+              lineHeight='regular'
+            >
               <FormattedMessage id='questions.questions-and-answel' />
             </Text>
           </Box>
-          <Layout flexBasis={[0, 555]} />
-          <Box width={247} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+          <Layout flexBasis={{ _: 0, standard: 555, wide: 1088, ultra: 1000 }} />
+          <Box
+            width={247}
+            display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
+            alignItems='center'
+            flexShrink='0'
+          >
             <Button
               variant='primary'
               size='bigSizeNormalPadding'
@@ -47,11 +55,37 @@ export const Questions = () => {
               </Text>
             </Button>
           </Box>
+          <Box
+            width={371}
+            display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
+            alignItems='center'
+            flexShrink='0'
+          >
+            <Button
+              variant='primary'
+              size='largeSizeNormalPadding'
+              gap={52}
+              icon={<EnvelopeIcon width={18} height={15} />}
+              widthIcon={72}
+              heightIcon={72}
+              backgroundIcon='background.white'
+              radiusIcon='big'
+              fill
+              onClick={() => setModalOpen(true)}
+            >
+              <Text fontSize='major' color='text.white'>
+                <FormattedMessage id='questions.ask-question' />
+              </Text>
+            </Button>
+          </Box>
         </Row>
         <Layout flexBasis={[60, 80]} />
-        <Accordion />
+        <Box display={{ _: 'flex', standard: 'flex', wide: 'none', ultra: 'none' }}>
+          <Accordion screen='standard' />
+        </Box>
+        <WideAccordion />
         <Layout flexBasis={[60, 0]} />
-        <Box width={335} display={['flex', 'none']} flexShrink='0'>
+        <Box display={['flex', 'none']} width={335} flexShrink='0'>
           <Button
             variant='primary'
             size='smallSizeNormalPadding'
@@ -69,9 +103,9 @@ export const Questions = () => {
             </Text>
           </Button>
         </Box>
-        <Layout flexBasis={[80, 160]} />
+        <Layout flexBasis={{ _: 80, standard: 160, wide: 200, ultra: 300 }} />
       </Column>
-      <Layout flexBasis={[16, 80]} />
+      <Layout flexBasis={{ _: 16, standard: 80, ultra: 545 }} />
     </Row>
   )
 }

@@ -19,36 +19,71 @@ import { CardsMobile }      from './cards'
 export const DrawerContainer = ({ active, onClose }) => {
   const intl = useIntl()
   return (
-    <Drawer heightDrawer={[495, 610]} active={active}>
+    <Drawer heightDrawer={{ _: 495, standard: 610, ultra: 720 }} active={active}>
       <Layout flexBasis={[22, 35]} />
-      <Row>
-        <Layout flexBasis={[20, 40]} />
-        <Box width={[40, 56]}>
+      <Row width='100%' justifyContent='center'>
+        <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
+        <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
           <Logo fill='rgba(58, 55, 93, 1)' />
         </Box>
-        <Layout display={['flex', 'none']} flexBasis={195} />
-        <Row display={['none', 'flex']} justifyContent='center' alignItems='center'>
+        <Layout flexBasis={{ standard: 400, wide: 715, ultra: 510 }} />
+
+        <Row
+          display={['none', 'flex']}
+          justifyContent='center'
+          alignItems='center'
+          width={{ ultra: 1290 }}
+        >
           <Item
             backColor='light'
             title={intl.formatMessage({ id: 'navigation.academy' })}
-            path='/'
+            path='Academy'
           />
-          <Layout flexBasis={20} />
+          <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
           <Item
             backColor='light'
             title={intl.formatMessage({ id: 'navigation.courses' })}
-            path='/'
+            path='Courses'
           />
-          <Layout flexBasis={20} />
+          <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
           <Item
             backColor='light'
             title={intl.formatMessage({ id: 'navigation.education' })}
-            path='/'
+            path='Education'
           />
-          <Layout flexBasis={20} />
-          <Item backColor='light' title={intl.formatMessage({ id: 'navigation.faq' })} path='/' />
+          <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+          <Item backColor='light' title={intl.formatMessage({ id: 'navigation.faq' })} path='FAQ' />
         </Row>
-        <Box width={163} display={['none', 'flex']} alignItems='center' flexShrink='0'>
+        <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 510 }} />
+        <Box
+          width={203}
+          display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
+          alignItems='center'
+          flexShrink='0'
+        >
+          <Button
+            variant='primary'
+            size='bigSizeBigPadding'
+            gap={30}
+            icon={<ArrowUpIcon width={18} height={9} />}
+            widthIcon={60}
+            heightIcon={60}
+            backgroundIcon='background.white'
+            radiusIcon='massive'
+            fill
+            onClick={onClose}
+          >
+            <Text color='white' fontSize='averaged'>
+              <FormattedMessage id='navigation.courses' />
+            </Text>
+          </Button>
+        </Box>
+        <Box
+          width={163}
+          display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
+          alignItems='center'
+          flexShrink='0'
+        >
           <Button
             variant='primary'
             size='normalSizeNormalPadding'
@@ -66,7 +101,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             </Text>
           </Button>
         </Box>
-        <Box width={100} display={['flex', 'none']} alignItems='center' flexShrink='0'>
+        <Box display={['flex', 'none']} width={100} alignItems='center' flexShrink='0'>
           <Button
             variant='primary'
             size='normalSizeSmallPadding'
@@ -84,10 +119,15 @@ export const DrawerContainer = ({ active, onClose }) => {
             </Text>
           </Button>
         </Box>
-        <Layout flexBasis={[20, 40]} />
+        <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
       </Row>
       <Layout flexBasis={[78, 50]} />
-      <Row display={['none', 'flex']} height={430} maxWidth={1840}>
+
+      <Row
+        display={['none', 'flex']}
+        height={{ standard: 430, ultra: 500 }}
+        maxWidth={{ standard: 1840, ultra: 2600 }}
+      >
         <CardsDesktop />
       </Row>
       <Column display={['flex', 'none']} height={337} maxWidth={335}>

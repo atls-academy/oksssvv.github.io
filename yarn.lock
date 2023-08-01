@@ -1065,8 +1065,10 @@ __metadata:
     "@ui/link": "workspace:0.0.1"
     "@ui/swiper": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
+    react-scroll: "npm:1.8.9"
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -1109,6 +1111,7 @@ __metadata:
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -1148,10 +1151,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/info-fragment@workspace:landing/fragments/landing-info"
   dependencies:
+    "@landing/hero-fragment": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -1226,9 +1231,12 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
     react-intl: "npm:6.4.2"
+    react-scroll: "npm:1.8.9"
   peerDependencies:
     react: "*"
+    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1240,6 +1248,7 @@ __metadata:
     "@ui/layout": "workspace:0.0.1"
     "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -1296,6 +1305,7 @@ __metadata:
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
@@ -2018,6 +2028,7 @@ __metadata:
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     framer-motion: "npm:10.12.18"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -2077,6 +2088,7 @@ __metadata:
   resolution: "@ui/card@workspace:ui/card"
   dependencies:
     "@ui/background": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
@@ -2307,6 +2319,7 @@ __metadata:
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
     framer-motion: "npm:10.12.18"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"

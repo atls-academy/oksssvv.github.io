@@ -2,7 +2,7 @@
   "name": "@landing/courses-fragment",
   "version": "0.0.1",
   "main": "src/index.ts",
-  "dependencies": {
+  "devDependencies": {
     "@ui/background": "workspce:0.0.1",
     "@ui/button": "workspace:0.0.1",
     "@ui/card": "workspace:0.0.1",
@@ -12,11 +12,11 @@
     "@ui/layout": "workspace:0.0.1",
     "@ui/link": "workspace:0.0.1",
     "@ui/swiper": "workspace:0.0.1",
-    "@ui/text": "workspace:0.0.1"
-  },
-  "devDependencies": {
+    "@ui/text": "workspace:0.0.1",
+    "@ui/utils": "workspace:0.0.1",
     "react": "18.2.0",
-    "react-intl": "6.4.2"
+    "react-intl": "6.4.2",
+    "react-scroll": "1.8.9"
   },
   "peerDependencies": {
     "react": "*",

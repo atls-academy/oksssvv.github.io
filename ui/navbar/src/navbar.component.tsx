@@ -15,11 +15,11 @@ import { getColorDotBackground }  from './helpers'
 
 export const Navbar = ({ sectionRefs }) => (
   <Box
-    display={['none', 'flex']}
+    display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'none' }}
     position='fixed'
     height={210}
     width={138}
-    top={540}
+    top={{ standard: 540, wide: 420 }}
     left={40}
     zIndex={5}
     flexDirection='column'
@@ -34,7 +34,7 @@ export const Navbar = ({ sectionRefs }) => (
             height={180}
           />
           {sections.map((element) => (
-            <Column key={element.index} marginLeft={20}>
+            <Column key={element.index} marginLeft='regular'>
               <Link to={element.id} spy smooth duration={1000} style={{ marginTop: -5 }}>
                 <Text
                   fontSize='medium'

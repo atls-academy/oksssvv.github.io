@@ -9,6 +9,7 @@
     "@ui/image": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
+    "@ui/utils": "workspace:0.0.1",
     "framer-motion": "10.12.18",
     "react": "18.2.0",
     "react-dom": "18.2.0",

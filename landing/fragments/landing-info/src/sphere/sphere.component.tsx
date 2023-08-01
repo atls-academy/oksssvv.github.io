@@ -9,15 +9,15 @@ export const Sphere = () => (
     <Space count={3} />
     <Box
       display={['none', 'inline-flex']}
-      width={76}
-      height={52}
+      width={{ standard: 76, ultra: 114 }}
+      height={{ standard: 52, ultra: 78 }}
       justifyContent='center'
       alignItems='center'
       backgroundColor='background.ghost'
       verticalAlign='sub'
-      borderRadius='normal'
+      borderRadius={{ standard: 'normal', ultra: 'massive' }}
     >
-      <Image width={40} src='/sphere-white.png' />
+      <Image width={{ standard: 40, ultra: 60 }} src='/sphere-white.png' />
     </Box>
     <Space count={3} />
   </>

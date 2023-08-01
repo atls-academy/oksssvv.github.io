@@ -12,31 +12,52 @@ import { Box }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
 
-export const Accordion = () => {
+export const Accordion = ({ screen }) => {
   const [selected, setSelected] = useState<number | null>(null)
-  const items = Array.from({ length: 6 })
+  const items = () => (screen === 'wide' ? Array.from({ length: 3 }) : Array.from({ length: 6 }))
 
   return (
-    <Column>
-      {items.map((_, index) => (
+    <Column width='100%'>
+      {items().map((_, index) => (
         <motion.div
           onClick={() => setSelected(selected === index ? null : index)}
           key={`item-${index}`} /*eslint-disable-line */
         >
-          <Box alignItems='center'>
-            <motion.div>{selected === index ? <SmallMinusIcon /> : <SmallPlusIcon />}</motion.div>
+          <Box display={['none', 'flex']} alignItems='center'>
+            <motion.div>
+              {selected === index ? (
+                <SmallMinusIcon width={22} height={22} />
+              ) : (
+                <SmallPlusIcon width={22} height={22} />
+              )}
+            </motion.div>
             <Item />
           </Box>
+
+          <Box display={['flex', 'none']} alignItems='center'>
+            <Item />
+            <motion.div>
+              {selected === index ? (
+                <SmallMinusIcon width={12} height={12} />
+              ) : (
+                <SmallPlusIcon width={12} height={12} />
+              )}
+            </motion.div>
+          </Box>
+
           <AnimatePresence>
             {selected === index && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 100 }}
+                animate={{ opacity: 1, height: screen === 'wide' ? 200 : 105 }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.2, easeIn: 1 }}
               >
-                <Box maxWidth={784} height={58}>
-                  <Text fontSize={['medium', 'standard']} lineHeight='large'>
+                <Box maxWidth={{ _: 325, standard: 784, wide: 900 }}>
+                  <Text
+                    fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: 'major' }}
+                    lineHeight='large'
+                  >
                     <FormattedMessage id='questions.accordion.how-do-it' />
                   </Text>
                 </Box>

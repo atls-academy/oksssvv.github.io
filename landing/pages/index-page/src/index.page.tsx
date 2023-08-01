@@ -26,12 +26,23 @@ const IndexPage = () => {
         backgroundColor='purpleGradient'
         position='absolute'
         width='100%'
+        height={{ standard: 2000, ultra: 2300 }}
       >
         <Background
           backgroundColor='decorativeSymbol'
-          backgroundSize={['650px 570px, 0', '1700px 1500px, 1920px 626px']}
+          backgroundSize={{
+            _: '650px 570px, 0',
+            standard: '1700px 1500px, 1920px 626px',
+            wide: '2500px,120%',
+            ultra: '3900px,100%',
+          }}
           backgroundRepeat='no-repeat'
-          backgroundPosition={['-115px -150px', '400px -410px, 0 250px']}
+          backgroundPosition={{
+            _: '-115px -150px',
+            standard: '400px -410px, 0 250px',
+            wide: '400px -650px,-300px 360px',
+            ultra: '600px -1300px,-300px 550px',
+          }}
         >
           <Parallax translateY={[-9, 15]}>
             <Navigation />
@@ -44,13 +55,13 @@ const IndexPage = () => {
         ref={sectionRefs[1]}
         id='Courses'
         backgroundColor='whiteBendLine'
-        backgroundSize={['800px,100%', '100%,100%']}
+        backgroundSize={['100%,100%', '100%,100%']}
         backgroundRepeat='no-repeat'
         backgroundPosition={['0 370px', '0 700px']}
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={1}
-        top={[910, 1670]}
+        top={{ _: 890, standard: 1770, wide: 1450, ultra: 2160 }}
         width='100%'
       >
         <Courses />
@@ -59,30 +70,42 @@ const IndexPage = () => {
         ref={sectionRefs[3]}
         id='Education'
         backgroundColor='purpleBendLine'
-        backgroundSize={['600px,100%, 100%', '100%,100%']}
+        backgroundSize={{
+          _: '0,0,0,100%,100%, 100%',
+          standard: '1400px 1000px,0,0,100%,100%',
+          wide: '2000px 1300px,150%,140%,0,0',
+          ultra: '2200px 1500px,100%,100%,0,0',
+        }}
         backgroundRepeat='no-repeat'
-        backgroundPosition={['-200px 1200px, 0 235px', '0 220px,0 1860px']}
+        backgroundPosition={{
+          _: '0,0,0,0 1200px, 0 235px',
+          standard: '200px 1600px,0,0,0 220px,0 1860px',
+          wide: '300px 1560px,0 110px,-540px 1450px ,0,0',
+          ultra: '920px 1850px,0 350px,0 2300px ,0,0',
+        }}
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={2}
-        top={[2600, 3720]}
+        top={{ _: 2600, standard: 3720, ultra: 4360 }}
         width='100%'
       >
         <Steps />
         <RunLine />
-        <Process />
+        <Parallax translateY={[-12, 12]}>
+          <Process />
+        </Parallax>
       </Background>
       <Background
         ref={sectionRefs[5]}
         id='FAQ'
         backgroundColor='whiteBendLine'
-        backgroundSize={['800px, 100%', '100%,100%']}
+        backgroundSize={['100%, 100%', '100%,100%']}
         backgroundRepeat='no-repeat'
-        backgroundPosition={['-190px 200px', '0 220px']}
+        backgroundPosition={['0 200px', '0 220px']}
         borderRadius={['massiveTop', 'hugeTop']}
         position='absolute'
         zIndex={3}
-        top={[4200, 6400]}
+        top={{ _: 4200, standard: 6380, wide: 6600, ultra: 7700 }}
         width='100%'
       >
         <Questions />

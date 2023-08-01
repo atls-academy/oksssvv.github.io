@@ -2,7 +2,7 @@
   "name": "@landing/questions-fragment",
   "version": "0.0.1",
   "main": "src/index.ts",
-  "dependencies": {
+  "devDependencies": {
     "@ui/accordion": "workspace:0.0.1",
     "@ui/background": "workspace:0.0.1",
     "@ui/button": "workspace:0.0.1",
@@ -12,9 +12,7 @@
     "@ui/layout": "workspace:0.0.1",
     "@ui/modal": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
-    "@ui/utils": "workspace:0.0.1"
-  },
-  "devDependencies": {
+    "@ui/utils": "workspace:0.0.1",
     "react": "18.2.0",
     "react-intl": "6.4.2"
   },

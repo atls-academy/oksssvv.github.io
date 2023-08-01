@@ -1,8 +1,9 @@
 export interface CardProps {
-  widthCategory?: number | number[]
+  widthCategory?: object | number | number[]
   сategory?: string
-  gap?: number | number[]
-  widthContent?: number | number[]
+  gap?: object | number | number[]
+  image?: string
+  widthContent?: object | number | number[]
   title?: string
   description?: string
 }

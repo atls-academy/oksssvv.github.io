@@ -2,6 +2,7 @@ import React          from 'react'
 import { FC }         from 'react'
 
 import { Background } from '@ui/background'
+import { Image }      from '@ui/image'
 import { Box }        from '@ui/layout'
 import { Column }     from '@ui/layout'
 import { Layout }     from '@ui/layout'
@@ -19,31 +20,56 @@ export const Card: FC<CardProps> = ({ ...props }) => {
       {...hoverProps}
       borderRadius={['medium', 'big']}
       overflow='hidden'
-      boxShadow={hover ? '0px 0px 30px 4px rgba(123, 84, 233, 0.20)' : '0'}
+      boxShadow={hover ? 'normalBlurDarkPurple' : ''}
+      position='relative'
     >
+      {props.image ? (
+        <Image
+          src={props.image}
+          position='absolute'
+          right={34}
+          top={40}
+          display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}
+        />
+      ) : (
+        ''
+      )}
       <Background backgroundColor='lightPurpleRadial' display='flex' width='100%'>
         <Layout flexBasis={[16, 40]} />
-        <Column>
+        <Column width='100%'>
           <Layout flexBasis={[16, 40]} />
-          <Box borderRadius='little' backgroundColor='white' width={props.widthCategory}>
-            <Layout flexBasis={[8, 12]} />
+          <Box
+            backgroundColor='white'
+            width={props.widthCategory}
+            borderRadius={{ _: 'little', standard: 'little', ultra: 'normal' }}
+          >
+            <Layout flexBasis={{ _: 8, standard: 12, ultra: 18 }} />
             <Column>
-              <Layout flexBasis={[8, 12]} />
-              <Text fontSize={['small', 'medium']} textTransform='uppercase'>
+              <Layout flexBasis={{ _: 8, standard: 12, ultra: 18 }} />
+              <Text
+                fontSize={{ _: 'small', standard: 'medium', ultra: 'regular' }}
+                textTransform='uppercase'
+              >
                 {props.сategory}
               </Text>
-              <Layout flexBasis={[8, 12]} />
+              <Layout flexBasis={{ _: 8, standard: 12, ultra: 18 }} />
             </Column>
-            <Layout flexBasis={[8, 12]} />
+
+            <Layout flexBasis={{ _: 8, standard: 12, ultra: 18 }} />
           </Box>
           <Layout flexBasis={props.gap} />
           <Box flexDirection='column' maxWidth={props.widthContent}>
             <Box>
-              <Text fontSize={['enlarged', 'large']}>{props.title}</Text>
+              <Text fontSize={{ _: 'enlarged', standard: 'large', ultra: 'enormous' }}>
+                {props.title}
+              </Text>
             </Box>
             <Layout flexBasis={props.description ? [12, 16] : 0} />
             <Box display={props.description ? 'flex' : 'none'}>
-              <Text fontSize={['medium', 'regular']} lineHeight='medium'>
+              <Text
+                fontSize={{ _: 'medium', standard: 'regular', ultra: 'mid' }}
+                lineHeight='medium'
+              >
                 {props.description}
               </Text>
             </Box>
