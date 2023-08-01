@@ -15,8 +15,6 @@ export const Card: FC<CardProps> = ({ ...props }) => {
   const [hover, hoverProps] = useHover()
 
   return (
-    // <Background backgroundColor='waves' backgroundPosition='500px 100px' backgroundRepeat='no-repeat' display={{_:'none',standard:'none',wide:'flex',ultra:'flex'}} width='100%'>
-
     <Box
       width='100%'
       {...hoverProps}
@@ -25,9 +23,9 @@ export const Card: FC<CardProps> = ({ ...props }) => {
       boxShadow={hover ? 'normalBlurDarkPurple' : ''}
       position='relative'
     >
-      {props.waves ? (
+      {props.image ? (
         <Image
-          src='/waves.png'
+          src={props.image}
           position='absolute'
           right={34}
           top={40}
@@ -59,7 +57,6 @@ export const Card: FC<CardProps> = ({ ...props }) => {
 
             <Layout flexBasis={{ _: 8, standard: 12, ultra: 18 }} />
           </Box>
-
           <Layout flexBasis={props.gap} />
           <Box flexDirection='column' maxWidth={props.widthContent}>
             <Box>
@@ -82,6 +79,5 @@ export const Card: FC<CardProps> = ({ ...props }) => {
         <Layout flexBasis={[16, 40]} />
       </Background>
     </Box>
-    // </Background>
   )
 }

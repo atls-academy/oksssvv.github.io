@@ -35,7 +35,7 @@ export const Cards = () => {
             widthCategory={{ _: 80, standard: 104, ultra: 148 }}
             сategory={intl.formatMessage({ id: 'courses.card.education' })}
             gap={{ _: 104, standard: 214, wide: 356, ultra: 222 }}
-            waves
+            image='/waves.png'
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
             title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
             description={intl.formatMessage({
@@ -47,7 +47,7 @@ export const Cards = () => {
             widthCategory={{ _: 87, standard: 112, ultra: 160 }}
             сategory={intl.formatMessage({ id: 'courses.card.mini-cours' })}
             gap={{ _: 49, standard: 56, wide: 356, ultra: 222 }}
-            waves
+            image='/waves.png'
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
             title={intl.formatMessage({ id: 'courses.card.basics-development' })}
             description={intl.formatMessage({
