@@ -9,10 +9,12 @@
     "start": "yarn next start src"
   },
   "dependencies": {
+    "@apollo/client": "3.7.17",
     "@emotion/css": "11.11.0",
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
     "express": "4.17.1",
+    "graphql": "16.7.1",
     "next": "12.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -20,6 +22,7 @@
     "styled-system": "5.1.5"
   },
   "devDependencies": {
+    "@globals/data": "workspace:0.0.1",
     "@landing/index-page": "workspace:0.0.1",
     "@landing/library-page": "workspace:0.0.1",
     "@types/express": "4.17.17",
