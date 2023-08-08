@@ -26,7 +26,7 @@ export const Form = () => {
         <Input
           value={question}
           onChange={setQuestion}
-          placeholder={intl.formatMessage({ id: 'questions.form.input.placeholder.message' })}
+          placeholder={intl.formatMessage({ id: 'faq.form.input.placeholder.message' })}
           maxLength={500}
           textarea
           filled={Boolean(question)}
@@ -37,7 +37,7 @@ export const Form = () => {
           <Input
             value={name}
             onChange={setName}
-            placeholder={intl.formatMessage({ id: 'questions.form.input.placeholder.name' })}
+            placeholder={intl.formatMessage({ id: 'faq.form.input.placeholder.name' })}
             filled={Boolean(name)}
           />
         </Box>
@@ -46,7 +46,7 @@ export const Form = () => {
           <Input
             value={phone}
             onChange={setPhone}
-            placeholder={intl.formatMessage({ id: 'questions.form.input.placeholder.phone' })}
+            placeholder={intl.formatMessage({ id: 'faq.form.input.placeholder.phone' })}
             filled={Boolean(phone)}
           />
         </Box>
@@ -66,14 +66,14 @@ export const Form = () => {
             disabled={!name || !phone || !question}
           >
             <Text fontSize='regular' color='text.white'>
-              <FormattedMessage id='questions.from.send-message' />
+              <FormattedMessage id='faq.from.send-message' />
             </Text>
           </Button>
         </Box>
         <Layout flexBasis={24} />
         <Box display={name && phone && question ? 'inline' : 'none'}>
           <Text display='inline' fontSize='medium' color='text.darkPurple'>
-            <FormattedMessage id='questions.form.pushing-the-button' />
+            <FormattedMessage id='faq.form.pushing-the-button' />
           </Text>
           <Space />
           <Text
@@ -82,7 +82,7 @@ export const Form = () => {
             color='text.darkPurple'
             style={{ textDecoration: 'underline' }}
           >
-            <FormattedMessage id='questions.form.processing-agreement' />
+            <FormattedMessage id='faq.form.processing-agreement' />
           </Text>
         </Box>
       </Column>
@@ -90,7 +90,7 @@ export const Form = () => {
         <SuccessIcon width={48} height={48} />
         <Layout flexBasis={24} />
         <Text textAlign='center' fontSize='regular'>
-          <FormattedMessage id='questions.form.we-got-your-question' />
+          <FormattedMessage id='faq.form.we-got-your-question' />
         </Text>
       </Box>
     </>

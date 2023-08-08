@@ -1,21 +1,21 @@
-import React                from 'react'
-import { AnimatePresence }  from 'framer-motion'
-import { FormattedMessage } from 'react-intl'
-import { motion }           from 'framer-motion'
-import { useState }         from 'react'
+import React               from 'react'
+import { AnimatePresence } from 'framer-motion'
+import { motion }          from 'framer-motion'
+import { useState }        from 'react'
 
-import { Item }             from '@landing/questions-fragment'
-import { Divider }          from '@ui/divider'
-import { SmallMinusIcon }   from '@ui/icon'
-import { SmallPlusIcon }    from '@ui/icon'
-import { Box }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Text }             from '@ui/text'
+import { Item }            from '@landing/faq-fragment'
+import { Divider }         from '@ui/divider'
+import { SmallMinusIcon }  from '@ui/icon'
+import { SmallPlusIcon }   from '@ui/icon'
+import { Box }             from '@ui/layout'
+import { Column }          from '@ui/layout'
+import { Text }            from '@ui/text'
+import { useFaq }          from '@landing/faq-fragment'
 
 export const Accordion = ({ screen }) => {
   const [selected, setSelected] = useState<number | null>(null)
   const items = () => (screen === 'wide' ? Array.from({ length: 3 }) : Array.from({ length: 6 }))
-
+  const answer = useFaq()
   return (
     <Column width='100%'>
       {items().map((_, index) => (
@@ -58,7 +58,7 @@ export const Accordion = ({ screen }) => {
                     fontSize={{ _: 'medium', standard: 'standard', wide: 'major', ultra: 'major' }}
                     lineHeight='large'
                   >
-                    <FormattedMessage id='questions.accordion.how-do-it' />
+                    {answer?.data?.allFAQ.nodes[0].faq.answer}
                   </Text>
                 </Box>
               </motion.div>

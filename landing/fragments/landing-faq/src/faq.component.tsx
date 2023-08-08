@@ -13,9 +13,13 @@ import { Text }             from '@ui/text'
 
 import { Feedback }         from './feedback'
 import { WideAccordion }    from './wide-accordion'
+import { useFaq }           from './data'
 
-export const Questions = () => {
+export const Faq = () => {
+  const faq = useFaq()
+
   const [modalOpen, setModalOpen] = useState<boolean>(false)
+
   return (
     <Row>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
@@ -28,7 +32,9 @@ export const Questions = () => {
               fontSize={{ _: 'normal', standard: 'huge', wide: 'huge', ultra: 'super' }}
               lineHeight='regular'
             >
-              <FormattedMessage id='questions.questions-and-answel' />
+              {faq?.data?.section.sections.title.charAt(0).toUpperCase() + // eslint-disable-line
+                // eslint-disable-next-line
+                faq?.data?.section.sections.title.slice(1)}
             </Text>
           </Box>
           <Layout flexBasis={{ _: 0, standard: 555, wide: 1088, ultra: 1000 }} />
@@ -51,7 +57,7 @@ export const Questions = () => {
               onClick={() => setModalOpen(true)}
             >
               <Text fontSize='regular' color='text.white'>
-                <FormattedMessage id='questions.ask-question' />
+                <FormattedMessage id='faq.ask-question' />
               </Text>
             </Button>
           </Box>
@@ -74,7 +80,7 @@ export const Questions = () => {
               onClick={() => setModalOpen(true)}
             >
               <Text fontSize='major' color='text.white'>
-                <FormattedMessage id='questions.ask-question' />
+                <FormattedMessage id='faq.ask-question' />
               </Text>
             </Button>
           </Box>
@@ -99,7 +105,7 @@ export const Questions = () => {
             onClick={() => setModalOpen(true)}
           >
             <Text fontSize='middle' color='text.white'>
-              <FormattedMessage id='questions.ask-question' />
+              <FormattedMessage id='faq.ask-question' />
             </Text>
           </Button>
         </Box>

@@ -1,15 +1,17 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
+import React        from 'react'
 
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Text }             from '@ui/text'
-import { useHover }         from '@ui/utils'
+import { Layout }   from '@ui/layout'
+import { Box }      from '@ui/layout'
+import { Column }   from '@ui/layout'
+import { Row }      from '@ui/layout'
+import { Text }     from '@ui/text'
+import { useHover } from '@ui/utils'
+
+import { useFaq }   from '../data'
 
 export const Item = () => {
   const [hover, hoverProps] = useHover()
+  const question = useFaq()
 
   return (
     <Column {...hoverProps}>
@@ -24,7 +26,7 @@ export const Item = () => {
             color={hover ? 'text.accent' : 'text.primary'}
             whiteSpace='nowrap'
           >
-            <FormattedMessage id='questions.profession-right-for-me' />
+            {question.data?.allFAQ.nodes[0].faq.question}
           </Text>
         </Box>
         <Layout flexBasis={[26, 0]} />

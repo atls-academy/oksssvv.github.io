@@ -4,11 +4,11 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import { useRef }           from 'react'
 
 import { Courses }          from '@landing/courses-fragment'
+import { Faq }              from '@landing/faq-fragment'
 import { Hero }             from '@landing/hero-fragment'
 import { Info }             from '@landing/info-fragment'
 import { Navigation }       from '@landing/navigation-fragment'
 import { Process }          from '@landing/process-fragment'
-import { Questions }        from '@landing/questions-fragment'
 import { RunLine }          from '@landing/runline-fragment'
 import { Steps }            from '@landing/steps-fragment'
 import { Background }       from '@ui/background'
@@ -108,7 +108,7 @@ const IndexPage = () => {
         top={{ _: 4200, standard: 6380, wide: 6600, ultra: 7700 }}
         width='100%'
       >
-        <Questions />
+        <Faq />
       </Background>
     </ParallaxProvider>
   )

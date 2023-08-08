@@ -24,7 +24,7 @@ export const Feedback = ({ open, onClose }) => (
           <Box>
             <Layout flexBasis={30} />
             <Text fontSize='large' color='text.white'>
-              <FormattedMessage id='questions.ask-us-question' />
+              <FormattedMessage id='faq.ask-us-question' />
             </Text>
             <Layout flexBasis={50} />
           </Box>

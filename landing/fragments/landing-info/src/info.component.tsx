@@ -26,7 +26,7 @@ export const Info = () => {
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            {info?.split('.').slice(0, 1, 2)}
+            {info?.data?.section.content.split('.').slice(0, 1, 2)}
           </Text>
           <Sphere />
           <Text
@@ -35,7 +35,7 @@ export const Info = () => {
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            {info?.split('.').slice(1, 2)}
+            {info?.data?.section.content.split('.').slice(1, 2)}
           </Text>
           <Sphere />
         </Box>
@@ -47,20 +47,20 @@ export const Info = () => {
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            {info?.split('.').slice(2)}
+            {info?.data?.section.content.split('.').slice(2)}
           </Text>
           <Sphere />
         </Box>
 
         <Box display={['flex', 'none']}>
           <Text color='text.white' fontSize='regular' lineHeight='interim'>
-            {info?.split('.').slice(0, 2)}
+            {info?.data?.section.content.split('.').slice(0, 2)}
           </Text>
         </Box>
         <Layout flexBasis={20} />
         <Box display={['flex', 'none']}>
           <Text color='text.white' fontSize='regular' lineHeight='interim'>
-            {info?.split('.').slice(2)}
+            {info?.data?.section.content.split('.').slice(2)}
           </Text>
         </Box>
 

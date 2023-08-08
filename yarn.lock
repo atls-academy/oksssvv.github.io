@@ -1163,6 +1163,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@landing/faq-fragment@workspace:0.0.1, @landing/faq-fragment@workspace:landing/fragments/landing-faq":
+  version: 0.0.0-use.local
+  resolution: "@landing/faq-fragment@workspace:landing/fragments/landing-faq"
+  dependencies:
+    "@apollo/client": "npm:3.7.17"
+    "@ui/accordion": "workspace:0.0.1"
+    "@ui/background": "workspace:0.0.1"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/form": "workspace:0.0.1"
+    "@ui/icon": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/modal": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    graphql: "npm:16.7.1"
+    react: "npm:18.2.0"
+    react-intl: "npm:6.4.2"
+  peerDependencies:
+    "@apollo/client": "*"
+    react: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "@landing/hero-fragment@workspace:0.0.1, @landing/hero-fragment@workspace:landing/fragments/landing-hero":
   version: 0.0.0-use.local
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
@@ -1188,11 +1213,11 @@ __metadata:
   dependencies:
     "@apollo/client": "npm:3.7.17"
     "@landing/courses-fragment": "worksace:0.0.1"
+    "@landing/faq-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@landing/info-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
     "@landing/process-fragment": "wiorkspace:0.0.1"
-    "@landing/questions-fragment": "workspace:0.0.1"
     "@landing/runline-fragment": "workspace:0.0.1"
     "@landing/steps-fragment": "workspace:0.0.1"
     "@types/react": "npm:18.2.6"
@@ -1262,12 +1287,12 @@ __metadata:
   resolution: "@landing/library-page@workspace:landing/pages/library-page"
   dependencies:
     "@landing/courses-fragment": "worksace:0.0.1"
+    "@landing/faq-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@landing/info-fragment": "workspace:0.0.1"
     "@landing/library-fragment": "workspace:0.0.1"
     "@landing/navigation-fragment": "workspace:0.0.1"
     "@landing/process-fragment": "wiorkspace:0.0.1"
-    "@landing/questions-fragment": "workspace:0.0.1"
     "@landing/runline-fragment": "workspace:0.0.1"
     "@landing/steps-fragment": "workspace:0.0.1"
     "@types/react": "npm:18.2.6"
@@ -1316,28 +1341,6 @@ __metadata:
   dependencies:
     "@ui/layout": "workspace:0.0.1"
     "@ui/slider": "workspace:0.0.1"
-    "@ui/text": "workspace:0.0.1"
-    "@ui/utils": "workspace:0.0.1"
-    react: "npm:18.2.0"
-    react-intl: "npm:6.4.2"
-  peerDependencies:
-    react: "*"
-    react-intl: "*"
-  languageName: unknown
-  linkType: soft
-
-"@landing/questions-fragment@workspace:0.0.1, @landing/questions-fragment@workspace:landing/fragments/landing-questions":
-  version: 0.0.0-use.local
-  resolution: "@landing/questions-fragment@workspace:landing/fragments/landing-questions"
-  dependencies:
-    "@ui/accordion": "workspace:0.0.1"
-    "@ui/background": "workspace:0.0.1"
-    "@ui/button": "workspace:0.0.1"
-    "@ui/divider": "workspace:0.0.1"
-    "@ui/form": "workspace:0.0.1"
-    "@ui/icon": "workspace:0.0.1"
-    "@ui/layout": "workspace:0.0.1"
-    "@ui/modal": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: "npm:18.2.0"
@@ -2092,17 +2095,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/accordion@workspace:ui/accordion"
   dependencies:
-    "@landing/questions-fragment": "workspace:0.0.1"
+    "@apollo/client": "npm:3.7.17"
+    "@landing/faq-fragment": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     framer-motion: "npm:10.12.18"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-dom: "*"
     react-intl: "*"
