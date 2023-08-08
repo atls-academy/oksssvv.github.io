@@ -1019,7 +1019,7 @@ __metadata:
     graphql: "npm:16.7.1"
     react: "npm:18.2.0"
   peerDependencies:
-    apollo-client: "*"
+    "@apollo/client": "*"
     react: "*"
   languageName: unknown
   linkType: soft
@@ -1186,6 +1186,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
     "@landing/courses-fragment": "worksace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@landing/info-fragment": "workspace:0.0.1"
@@ -1199,10 +1200,12 @@ __metadata:
     "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/navbar": "wiorkspace:0.0.1"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-scroll-parallax: "npm:3.4.2"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-dom: "*"
     react-intl: "*"
@@ -1213,15 +1216,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/info-fragment@workspace:landing/fragments/landing-info"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
+    "@globals/data": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-intl: "*"
   languageName: unknown
