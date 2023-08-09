@@ -18,8 +18,11 @@ import { Text }             from '@ui/text'
 import { useHover }         from '@ui/utils'
 
 import { WideScreenCards }  from './wideScreen'
+import { useCourses }       from '../data'
 
 export const Cards = () => {
+  const card = useCourses()
+
   const intl = useIntl()
   const [hover, hoverProps] = useHover()
 
@@ -33,11 +36,11 @@ export const Cards = () => {
         >
           <Card
             widthCategory={{ _: 80, standard: 104, ultra: 148 }}
-            сategory={intl.formatMessage({ id: 'courses.card.education' })}
+            сategory={card?.data?.courses.nodes[3].course.label[0].title}
             gap={{ _: 104, standard: 214, wide: 356, ultra: 222 }}
             image='/waves.png'
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
-            title={intl.formatMessage({ id: 'courses.card.frontend-engineer' })}
+            title={card?.data?.courses.nodes[3].course.title}
             description={intl.formatMessage({
               id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
             })}
@@ -45,11 +48,11 @@ export const Cards = () => {
           <Layout flexBasis={[20, 40]} flexShrink='0' />
           <Card
             widthCategory={{ _: 87, standard: 112, ultra: 160 }}
-            сategory={intl.formatMessage({ id: 'courses.card.mini-cours' })}
+            сategory={card?.data?.courses.nodes[2].course.label[0].title}
             gap={{ _: 49, standard: 56, wide: 356, ultra: 222 }}
             image='/waves.png'
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
-            title={intl.formatMessage({ id: 'courses.card.basics-development' })}
+            title={card?.data?.courses.nodes[2].course.title}
             description={intl.formatMessage({
               id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
             })}
@@ -60,16 +63,16 @@ export const Cards = () => {
         <Box display={{ _: 'none', standard: 'flex', wide: 'none', ultra: 'none' }} width='100%'>
           <Card
             widthCategory={180}
-            сategory={intl.formatMessage({ id: 'courses.card.education-material' })}
+            сategory={card?.data?.courses.nodes[1].course.label[0].title}
             gap={110}
-            title={intl.formatMessage({ id: 'courses.card.use-library' })}
+            title={card?.data?.courses.nodes[1].course.title}
           />
           <Layout flexBasis={40} flexShrink='0' />
           <Card
             widthCategory={180}
-            сategory={intl.formatMessage({ id: 'courses.card.education-material' })}
+            сategory={card?.data?.courses.nodes[0].course.label[0].title}
             gap={110}
-            title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
+            title={card?.data?.courses.nodes[0].course.title}
           />
         </Box>
         <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }} flexWrap='wrap'>
