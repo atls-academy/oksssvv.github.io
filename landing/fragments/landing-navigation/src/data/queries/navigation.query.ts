@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client'
 
 export const GET_NAVIGATION = gql`
-  query Info {
+  query Navigation {
     allNavigation {
       nodes {
         navigation {
