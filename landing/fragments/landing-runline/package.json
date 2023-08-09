@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "devDependencies": {
+    "@apollo/client": "3.7.17",
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
     "@ui/divider": "workspace:0.0.1",
@@ -10,9 +11,11 @@
     "@ui/text": "workspace:0.0.1",
     "@ui/utils": "workspace:0.0.1",
     "framer-motion": "10.12.18",
+    "graphql": "16.7.1",
     "react": "18.2.0"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
     "react": "*"
   }
 }

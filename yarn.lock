@@ -1361,6 +1361,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/runline-fragment@workspace:landing/fragments/landing-runline"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
     "@emotion/react": "npm:11.11.0"
     "@emotion/styled": "npm:11.11.0"
     "@ui/divider": "workspace:0.0.1"
@@ -1368,8 +1369,10 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     framer-motion: "npm:10.12.18"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
   languageName: unknown
   linkType: soft

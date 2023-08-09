@@ -6,23 +6,33 @@ import { Column }       from '@ui/layout'
 import { Row }          from '@ui/layout'
 
 import { Line }         from './line'
-import { KitWebDev }    from './technology'
 import { KitWorkspace } from './technology'
+import { useRunline }   from './data'
 
-export const RunLine = () => (
-  <Column>
-    <Layout flexBasis={[32, 64]} />
-    <Divider weight={1} backgroundColor='background.ghorsWhite' />
-    <Layout flexBasis={[36, 64]} />
-    <Row overflow='hidden'>
-      <Line technology={KitWebDev} font='primary' />
-    </Row>
-    <Layout flexBasis={[36, 64]} />
-    <Row overflow='hidden'>
-      <Line technology={KitWorkspace} font='gella' />
-    </Row>
-    <Layout flexBasis={[36, 64]} />
-    <Divider weight={1} backgroundColor='background.ghorsWhite' />
-    <Layout flexBasis={[32, 64]} />
-  </Column>
-)
+export const RunLine = () => {
+  const runline = useRunline()
+
+  return (
+    <Column>
+      <Layout flexBasis={[32, 64]} />
+      <Divider weight={1} backgroundColor='background.ghorsWhite' />
+      <Layout flexBasis={[36, 64]} />
+      <Row overflow='hidden'>
+        <Line
+          technology={runline?.data?.skills.nodes.map((el, index: number) => ({
+            index,
+            title: el.title,
+          }))}
+          font='primary'
+        />
+      </Row>
+      <Layout flexBasis={[36, 64]} />
+      <Row overflow='hidden'>
+        <Line technology={KitWorkspace} font='gella' />
+      </Row>
+      <Layout flexBasis={[36, 64]} />
+      <Divider weight={1} backgroundColor='background.ghorsWhite' />
+      <Layout flexBasis={[32, 64]} />
+    </Column>
+  )
+}
