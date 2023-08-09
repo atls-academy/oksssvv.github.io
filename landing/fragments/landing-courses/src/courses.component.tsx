@@ -17,8 +17,10 @@ import { Text }             from '@ui/text'
 import { Space }            from '@ui/text'
 
 import { Cards }            from './cards'
+import { useCourses }       from './data'
 
 export const Courses = () => {
+  const courses = useCourses()
   const intl = useIntl()
   return (
     <>
@@ -32,7 +34,7 @@ export const Courses = () => {
                 fontSize={{ _: 'large', standard: 'huge', ultra: 'super' }}
                 lineHeight='regular'
               >
-                <FormattedMessage id='courses.courses-and-materials' />
+                {courses?.data?.sections.nodes[4].sections.title}
               </Text>
             </Box>
             <Layout flexBasis={[464]} />
@@ -66,12 +68,16 @@ export const Courses = () => {
           <Divider weight={1} backgroundColor='background.primary' />
           <Layout flexBasis={[40, 80]} />
           <Box flexDirection={['column', 'row']}>
-            <Box maxWidth={{ _: 335, standard: 710, ultra: 1065 }} display='inline'>
+            <Box maxWidth={{ _: 335, standard: 710, ultra: 1065 }} display='inline' flexWrap='wrap'>
               <Text
                 fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
                 lineHeight='medium'
               >
-                <FormattedMessage id='courses.being-a-cardinal' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[0]
+                  .split(' ')
+                  .slice(0, 3)
+                  .join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -79,15 +85,23 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                <FormattedMessage id='courses.atlantis' />
-                <Space count={1} />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[0]
+                  .split(' ')
+                  .slice(3, 4)
+                  .join(' ')}
               </Text>
+              <Space count={2} />
               <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
                 display='inline'
+                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
+                lineHeight='medium'
               >
-                <FormattedMessage id='courses.has-an-impact' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[0]
+                  .split(' ')
+                  .slice(4, 7)
+                  .join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -95,17 +109,25 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                <FormattedMessage id='courses.atlantis' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[0]
+                  .split(' ')
+                  .slice(7, 9)
+                  .join(' ')}
               </Text>
               <Box display={['none', 'inline']}>
                 <Space count={2} />
               </Box>
               <Text
+                display='inline'
                 fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
                 lineHeight='medium'
-                display='inline'
               >
-                <FormattedMessage id='courses.unlimited-possibilities' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[0]
+                  .split(' ')
+                  .slice(9, 13)
+                  .join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -113,7 +135,11 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                <FormattedMessage id='courses.application-skills' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[0]
+                  .split(' ')
+                  .slice(13, 15)
+                  .join(' ')}
               </Text>
             </Box>
             <Layout flexBasis={{ _: 20, standard: 341, wide: 980, ultra: 696 }} />
@@ -123,7 +149,11 @@ export const Courses = () => {
                 lineHeight='medium'
                 display='inline'
               >
-                <FormattedMessage id='courses.learning-efficiency-grows' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[1]
+                  .split(' ')
+                  .slice(0, 5)
+                  .join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -131,7 +161,11 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                <FormattedMessage id='courses.practice' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[1]
+                  .split(' ')
+                  .slice(5, 6)
+                  .join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -139,7 +173,11 @@ export const Courses = () => {
                 lineHeight='medium'
                 display='inline'
               >
-                <FormattedMessage id='courses.on-existing-projects' />
+                {courses?.data?.sections.nodes[4].content
+                  .split('.')[1]
+                  .split(' ')
+                  .slice(6, 9)
+                  .join(' ')}
               </Text>
             </Box>
           </Box>
@@ -148,7 +186,6 @@ export const Courses = () => {
         </Column>
         <Layout flexBasis={{ _: 20, standard: 80, ultra: 620 }} />
       </Row>
-
       <Box display={['flex', 'none']} overflow='hidden' justifyContent='center'>
         <Layout flexBasis={20} flexShrink='0' />
         <Column>
