@@ -1,7 +1,6 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useState }         from 'react'
-import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
 import { ArrowDownIcon }    from '@ui/icon'
@@ -14,10 +13,11 @@ import { Text }             from '@ui/text'
 
 import { DrawerContainer }  from './drawer'
 import { Item }             from './item'
+import { useNavigation }    from './data'
 
 export const Navigation = () => {
-  const intl = useIntl()
   const [visible, setVisible] = useState(false)
+  const linkName = useNavigation()
 
   return (
     <>
@@ -32,13 +32,13 @@ export const Navigation = () => {
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
 
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
-            <Item title={intl.formatMessage({ id: 'navigation.academy' })} path='Academy' />
+            <Item title={linkName.data?.allNavigation.nodes[3].title} path='Academy' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: 'navigation.courses' })} path='Courses' />
+            <Item title={linkName.data?.allNavigation.nodes[2].title} path='Courses' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: 'navigation.education' })} path='Education' />
+            <Item title={linkName.data?.allNavigation.nodes[1].title} path='Education' />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={intl.formatMessage({ id: 'navigation.faq' })} path='FAQ' />
+            <Item title={linkName.data?.allNavigation.nodes[0].title} path='FAQ' />
           </Row>
 
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
