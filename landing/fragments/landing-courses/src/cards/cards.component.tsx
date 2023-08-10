@@ -38,7 +38,7 @@ export const Cards = () => {
             widthCategory={{ _: 80, standard: 104, ultra: 148 }}
             сategory={card?.data?.courses.nodes[3].course.label[0].title}
             gap={{ _: 104, standard: 214, wide: 356, ultra: 222 }}
-            image='/waves.png'
+            image={card?.data?.courses.nodes[3].course.image.sourceUrl}
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
             title={card?.data?.courses.nodes[3].course.title}
             description={card?.data?.courses.nodes[3].course.description}
@@ -48,7 +48,7 @@ export const Cards = () => {
             widthCategory={{ _: 87, standard: 112, ultra: 160 }}
             сategory={card?.data?.courses.nodes[2].course.label[0].title}
             gap={{ _: 49, standard: 56, wide: 356, ultra: 222 }}
-            image='/waves.png'
+            image={card?.data?.courses.nodes[2].course.image.sourceUrl}
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
             title={card?.data?.courses.nodes[2].course.title}
             description={card?.data?.courses.nodes[2].course.description}

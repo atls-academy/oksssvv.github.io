@@ -4,14 +4,18 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "devDependencies": {
+    "@apollo/client": "3.7.17",
+    "@landing/navigation-fragment": "workspace:0.0.1",
     "@makotot/ghostui": "2.0.0",
     "@ui/layout": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
+    "graphql": "16.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scroll": "1.8.9"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
     "react": "*",
     "react-dom": "*"
   }

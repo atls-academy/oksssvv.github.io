@@ -2384,13 +2384,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/navbar@workspace:ui/navbar"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
+    "@landing/navigation-fragment": "workspace:0.0.1"
     "@makotot/ghostui": "npm:2.0.0"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-scroll: "npm:1.8.9"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown

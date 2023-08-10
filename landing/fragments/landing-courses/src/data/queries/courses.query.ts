@@ -7,6 +7,9 @@ export const GET_COURSES = gql`
         course {
           title
           description
+          image {
+            sourceUrl
+          }
           label {
             ... on Label {
               title
