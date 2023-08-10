@@ -41,9 +41,7 @@ export const Cards = () => {
             image='/waves.png'
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
             title={card?.data?.courses.nodes[3].course.title}
-            description={intl.formatMessage({
-              id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
-            })}
+            description={card?.data?.courses.nodes[3].course.description}
           />
           <Layout flexBasis={[20, 40]} flexShrink='0' />
           <Card
@@ -53,9 +51,7 @@ export const Cards = () => {
             image='/waves.png'
             widthContent={{ _: 303, standard: 694, ultra: 945 }}
             title={card?.data?.courses.nodes[2].course.title}
-            description={intl.formatMessage({
-              id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
-            })}
+            description={card?.data?.courses.nodes[2].course.description}
           />
           <Layout flexBasis={[20, 0]} />
         </Box>
