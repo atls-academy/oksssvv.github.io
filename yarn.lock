@@ -1348,13 +1348,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
     "@ui/layout": "workspace:0.0.1"
     "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-intl: "*"
   languageName: unknown

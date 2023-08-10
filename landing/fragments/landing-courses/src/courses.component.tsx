@@ -22,6 +22,9 @@ import { useCourses }       from './data'
 export const Courses = () => {
   const courses = useCourses()
   const intl = useIntl()
+  const atlantisInfo = courses?.data?.sections.nodes[4].content.split('.')[0].split(' ')
+  const educationInfo = courses?.data?.sections.nodes[4].content.split('.')[1].split(' ')
+
   return (
     <>
       <Row justifyContent='center'>
@@ -73,11 +76,7 @@ export const Courses = () => {
                 fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
                 lineHeight='medium'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[0]
-                  .split(' ')
-                  .slice(0, 3)
-                  .join(' ')}
+                {atlantisInfo?.slice(0, 3).join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -85,11 +84,7 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[0]
-                  .split(' ')
-                  .slice(3, 4)
-                  .join(' ')}
+                {atlantisInfo?.slice(3, 4).join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -97,11 +92,7 @@ export const Courses = () => {
                 fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
                 lineHeight='medium'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[0]
-                  .split(' ')
-                  .slice(4, 7)
-                  .join(' ')}
+                {atlantisInfo?.slice(4, 7).join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -109,11 +100,7 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[0]
-                  .split(' ')
-                  .slice(7, 9)
-                  .join(' ')}
+                {atlantisInfo?.slice(7, 9).join(' ')}
               </Text>
               <Box display={['none', 'inline']}>
                 <Space count={2} />
@@ -123,11 +110,7 @@ export const Courses = () => {
                 fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
                 lineHeight='medium'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[0]
-                  .split(' ')
-                  .slice(9, 13)
-                  .join(' ')}
+                {atlantisInfo?.slice(9, 13).join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -135,11 +118,7 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[0]
-                  .split(' ')
-                  .slice(13, 15)
-                  .join(' ')}
+                {atlantisInfo?.slice(13, 15).join(' ')}
               </Text>
             </Box>
             <Layout flexBasis={{ _: 20, standard: 341, wide: 980, ultra: 696 }} />
@@ -149,11 +128,7 @@ export const Courses = () => {
                 lineHeight='medium'
                 display='inline'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[1]
-                  .split(' ')
-                  .slice(0, 5)
-                  .join(' ')}
+                {educationInfo?.slice(0, 5).join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -161,11 +136,7 @@ export const Courses = () => {
                 lineHeight='medium'
                 color='text.accent'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[1]
-                  .split(' ')
-                  .slice(5, 6)
-                  .join(' ')}
+                {educationInfo?.slice(5, 6).join(' ')}
               </Text>
               <Space count={2} />
               <Text
@@ -173,11 +144,7 @@ export const Courses = () => {
                 lineHeight='medium'
                 display='inline'
               >
-                {courses?.data?.sections.nodes[4].content
-                  .split('.')[1]
-                  .split(' ')
-                  .slice(6, 9)
-                  .join(' ')}
+                {educationInfo?.slice(6, 9).join(' ')}
               </Text>
             </Box>
           </Box>
