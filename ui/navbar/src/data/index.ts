@@ -1,1 +1,1 @@
-export * from './data-sections'
+export * from './queries'

@@ -15,14 +15,14 @@ import { Background }       from '@ui/background'
 import { Navbar }           from '@ui/navbar'
 
 const IndexPage = () => {
-  const sectionRefs = Array.from({ length: 6 }, () => useRef(null)) // eslint-disable-line
+  const sectionRefs = Array.from({ length: 4 }, () => useRef(null)) // eslint-disable-line
 
   return (
     <ParallaxProvider>
       <Navbar sectionRefs={sectionRefs} />
       <Background
-        ref={sectionRefs[0]}
-        id='Academy'
+        ref={sectionRefs[3]}
+        id='cG9zdDoyMjE='
         backgroundColor='purpleGradient'
         position='absolute'
         width='100%'
@@ -52,8 +52,8 @@ const IndexPage = () => {
         </Background>
       </Background>
       <Background
-        ref={sectionRefs[1]}
-        id='Courses'
+        ref={sectionRefs[2]}
+        id='cG9zdDoyMjI='
         backgroundColor='whiteBendLine'
         backgroundSize={['100%,100%', '100%,100%']}
         backgroundRepeat='no-repeat'
@@ -67,8 +67,8 @@ const IndexPage = () => {
         <Courses />
       </Background>
       <Background
-        ref={sectionRefs[3]}
-        id='Education'
+        ref={sectionRefs[1]}
+        id='cG9zdDoyMjQ='
         backgroundColor='purpleBendLine'
         backgroundSize={{
           _: '0,0,0,100%,100%, 100%',
@@ -96,8 +96,8 @@ const IndexPage = () => {
         </Parallax>
       </Background>
       <Background
-        ref={sectionRefs[5]}
-        id='FAQ'
+        ref={sectionRefs[0]}
+        id='cG9zdDoyMjU='
         backgroundColor='whiteBendLine'
         backgroundSize={['100%, 100%', '100%,100%']}
         backgroundRepeat='no-repeat'

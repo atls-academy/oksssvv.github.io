@@ -1,4 +1,4 @@
 export const getColorDotBackground = (currentElementIndexInViewport) =>
-  currentElementIndexInViewport === 1 || currentElementIndexInViewport === 5
+  currentElementIndexInViewport === 0 || currentElementIndexInViewport === 2
     ? 'background.brightLilac'
     : 'background.white'
