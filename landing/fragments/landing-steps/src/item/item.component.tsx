@@ -1,17 +1,16 @@
-import React                from 'react'
-import { FC }               from 'react'
-import { FormattedMessage } from 'react-intl'
+import React         from 'react'
+import { FC }        from 'react'
 
-import { Divider }          from '@ui/divider'
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Text }             from '@ui/text'
+import { Divider }   from '@ui/divider'
+import { Layout }    from '@ui/layout'
+import { Box }       from '@ui/layout'
+import { Column }    from '@ui/layout'
+import { Row }       from '@ui/layout'
+import { Text }      from '@ui/text'
 
-import { ItemProps }        from './item.interfaces'
+import { ItemProps } from './item.interfaces'
 
-export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
+export const Item: FC<ItemProps> = ({ ...props }) => (
   <Column>
     <Layout flexBasis={[28, 48]} />
     <Row>
@@ -27,7 +26,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
           borderRadius={['normal', 'large']}
         >
           <Text fontSize={['standart', 'enlarged']} color='white'>
-            {quantity}
+            {props.quantity}
           </Text>
         </Box>
       </Column>
@@ -38,7 +37,7 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
             color='white'
             fontSize={{ _: 'enlarged', standard: 'large', wide: 'large', ultra: 'enormous' }}
           >
-            {title}
+            {props.title}
           </Text>
         </Box>
         <Layout flexBasis={{ _: 8, standard: 700, wide: 1060, ultra: 1100 }} />
@@ -48,12 +47,12 @@ export const Item: FC<ItemProps> = ({ quantity, title, divider }) => (
             fontSize={{ _: 'medium', standard: 'enlarged', wide: 'enlarged', ultra: 'normalize' }}
             lineHeight='medium'
           >
-            <FormattedMessage id='steps.being-cardinal' />
+            {props.description}
           </Text>
         </Box>
       </Row>
     </Row>
     <Layout flexBasis={[28, 48]} />
-    <Divider weight={divider} backgroundColor='background.ghorsWhite' />
+    <Divider weight={props.divider} backgroundColor='background.ghorsWhite' />
   </Column>
 )
