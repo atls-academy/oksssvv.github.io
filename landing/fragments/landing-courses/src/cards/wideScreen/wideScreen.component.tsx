@@ -11,7 +11,7 @@ export const WideScreenCards = () => {
 
   const CardContainer = ({ title, indent }) => (
     <>
-      <Column width={{ wide: 570, ultra: 668 }}>
+      <Column width={{ wide: 570, ultra: 668 }} height={370}>
         <Card
           widthCategory={{ wide: 180, ultra: 250 }}
           сategory={card?.data?.courses.nodes[1].course.label[0].title}
