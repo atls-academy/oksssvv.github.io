@@ -15,7 +15,10 @@ export const GET_PROCESS = gql`
       nodes {
         slider {
           text
-          image {
+          imageDesktop {
+            sourceUrl
+          }
+          imageMobile {
             sourceUrl
           }
         }
