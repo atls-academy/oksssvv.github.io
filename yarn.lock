@@ -1349,6 +1349,7 @@ __metadata:
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
     "@apollo/client": "npm:3.7.17"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"

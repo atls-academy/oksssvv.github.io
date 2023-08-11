@@ -10,5 +10,16 @@ export const GET_PROCESS = gql`
         }
       }
     }
+
+    slides {
+      nodes {
+        slider {
+          text
+          image {
+            sourceUrl
+          }
+        }
+      }
+    }
   }
 `

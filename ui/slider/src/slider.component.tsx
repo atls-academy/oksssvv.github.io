@@ -1,6 +1,5 @@
 import React                   from 'react'
 import { FC }                  from 'react'
-import { FormattedMessage }    from 'react-intl'
 import { motion }              from 'framer-motion'
 import { useEffect }           from 'react'
 import { useState }            from 'react'
@@ -17,29 +16,29 @@ import { Text }                from '@ui/text'
 
 import { SliderProps }         from './slider.interfaces'
 
-export const Slider: FC<SliderProps> = ({ images, display }) => {
+export const Slider: FC<SliderProps> = ({ ...props }) => {
   const [index, setIndex] = useState(0)
   const [animation, setAnimation] = useState(0)
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIndex((index + 1) % images.length)
+      setIndex((index + 1) % props.images.length)
     }, 10000)
     return () => clearTimeout(timer)
   })
 
   const leftClick = () => {
-    setIndex((index - 1 + images.length) % images.length)
+    setIndex((index - 1 + props.images.length) % props.images.length)
     setAnimation(animation + 1)
   }
 
   const rightClick = () => {
-    setIndex((index + 1) % images.length)
+    setIndex((index + 1) % props.images.length)
     setAnimation(animation + 1)
   }
 
   return (
-    <Column display={display} alignItems='center'>
+    <Column display={props.display} alignItems='center'>
       <Background
         display='flex'
         width={{ _: 155, standard: 960, wide: 1280, ultra: 1300 }}
@@ -74,7 +73,7 @@ export const Slider: FC<SliderProps> = ({ images, display }) => {
             >
               <motion.img
                 key={index}
-                src={images[index]}
+                src={props.images[index]}
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
@@ -122,7 +121,7 @@ export const Slider: FC<SliderProps> = ({ images, display }) => {
               lineHeight={['interim', 'large']}
               textAlign='center'
             >
-              <FormattedMessage id='process.slider.formation-of-system-of-basic-fragments' />
+              {props.description}
             </Text>
           </Box>
 

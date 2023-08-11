@@ -47,7 +47,7 @@ export const Info = () => {
             fontSize={{ standard: 'great', ultra: 'massive' }}
             lineHeight='medium'
           >
-            {info?.data?.section.content.split('.').slice(2)}
+            {info?.data?.section.content.split('.').slice(2, 3)}
           </Text>
           <Sphere />
         </Box>
@@ -60,7 +60,7 @@ export const Info = () => {
         <Layout flexBasis={20} />
         <Box display={['flex', 'none']}>
           <Text color='text.white' fontSize='regular' lineHeight='interim'>
-            {info?.data?.section.content.split('.').slice(2)}
+            {info?.data?.section.content.split('.').slice(2, 3)}
           </Text>
         </Box>
 

@@ -1,20 +1,18 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
+import React           from 'react'
 
-import { Divider }          from '@ui/divider'
-import { Box }              from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Layout }           from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Text }             from '@ui/text'
-import { Space }            from '@ui/text'
+import { Divider }     from '@ui/divider'
+import { Box }         from '@ui/layout'
+import { Row }         from '@ui/layout'
+import { Layout }      from '@ui/layout'
+import { Column }      from '@ui/layout'
+import { Text }        from '@ui/text'
+import { Space }       from '@ui/text'
 
-import { SocialLinks }      from './social-links'
-import { useHero }          from './data'
+import { SocialLinks } from './social-links'
+import { useHero }     from './data'
 
 export const Hero = () => {
-  const title = useHero()
-
+  const hero = useHero()
   return (
     <Row justifyContent='center'>
       <Layout flexBasis={{ _: 20, standard: 230, wide: 230, ultra: 620 }} />
@@ -31,7 +29,7 @@ export const Hero = () => {
               fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
               lineHeight={['medium', 'normal']}
             >
-              {title?.data?.sections.nodes[5].sections.title.split(' ').slice(0, -1).join(' ')}
+              {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(0, -1).join(' ')}
             </Text>
             <Box
               flexShrink='0'
@@ -49,7 +47,7 @@ export const Hero = () => {
                 lineHeight={['medium', 'normal']}
                 textTransform='uppercase'
               >
-                {title?.data?.sections.nodes[5].sections.title.split(' ').slice(5)}
+                {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(5)}
               </Text>
             </Box>
           </Box>
@@ -63,7 +61,15 @@ export const Hero = () => {
             fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
             lineHeight='medium'
           >
-            <FormattedMessage id='hero.we-not-teach-programming' />
+            {hero?.data?.sections.nodes[5].content.split('.').slice(3, 4)}
+          </Text>
+
+          <Text
+            color='white'
+            fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
+            lineHeight='medium'
+          >
+            {/* <FormattedMessage id='hero.we-not-teach-programming' /> */}
           </Text>
           <Space count={2} />
           <Text
@@ -73,7 +79,7 @@ export const Hero = () => {
             letterSpacing={['-0.008em', '0']}
             display={['flex', 'inline']}
           >
-            <FormattedMessage id='hero.we-teach-thinking' />
+            {/* <FormattedMessage id='hero.we-teach-thinking' /> */}
           </Text>
         </Box>
         <Layout flexBasis={[20, 0]} />
