@@ -44,7 +44,7 @@ const IndexPage = () => {
             ultra: '600px -1300px,-300px 550px',
           }}
         >
-          <Parallax translateY={[-9, 15]}>
+          <Parallax translateY={[-8, 12]}>
             <Navigation />
             <Hero />
             <Info />
@@ -91,7 +91,7 @@ const IndexPage = () => {
       >
         <Steps />
         <RunLine />
-        <Parallax translateY={[-12, 12]}>
+        <Parallax translateY={[-12, 10]}>
           <Process />
         </Parallax>
       </Background>

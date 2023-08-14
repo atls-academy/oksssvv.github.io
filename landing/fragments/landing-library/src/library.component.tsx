@@ -12,10 +12,12 @@ import { Box }              from '@ui/layout'
 import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Text }             from '@ui/text'
+import { useFocus }         from '@ui/utils'
 
 import { Materials }        from './materials'
 
 export const Library = () => {
+  const [focus, focusProps] = useFocus()
   const materialsIncrease = Array.from({ length: 3 }).map((_, index) => (
     <Materials divider={index > 1 ? 1 : 0} key={index} /> /*eslint-disable-line */
   ))
@@ -51,7 +53,13 @@ export const Library = () => {
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />
-        <Box width={[335, 600]}>
+        <Box
+          flexShrink='0'
+          width={[335, 600]}
+          boxShadow={focus ? 'normalBlue' : ''}
+          {...focusProps}
+          borderRadius='regular'
+        >
           <Input
             value={searchQuery}
             onChange={setSerchQuery}
