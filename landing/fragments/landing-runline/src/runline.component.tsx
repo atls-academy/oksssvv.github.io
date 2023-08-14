@@ -1,13 +1,12 @@
-import React            from 'react'
+import React          from 'react'
 
-import { Divider }      from '@ui/divider'
-import { Layout }       from '@ui/layout'
-import { Column }       from '@ui/layout'
-import { Row }          from '@ui/layout'
+import { Divider }    from '@ui/divider'
+import { Layout }     from '@ui/layout'
+import { Column }     from '@ui/layout'
+import { Row }        from '@ui/layout'
 
-import { Line }         from './line'
-import { KitWorkspace } from './technology'
-import { useRunline }   from './data'
+import { Line }       from './line'
+import { useRunline } from './data'
 
 export const RunLine = () => {
   const runline = useRunline()
@@ -19,16 +18,20 @@ export const RunLine = () => {
       <Layout flexBasis={[36, 64]} />
       <Row overflow='hidden'>
         <Line
-          technology={runline?.data?.skills.nodes.map((el, index: number) => ({
-            index,
-            title: el.title,
-          }))}
+          technology={runline?.data?.skills.nodes
+            .slice(3)
+            .map((el, index) => ({ index, title: el.title }))}
           font='primary'
         />
       </Row>
       <Layout flexBasis={[36, 64]} />
       <Row overflow='hidden'>
-        <Line technology={KitWorkspace} font='gella' />
+        <Line
+          technology={runline?.data?.skills.nodes
+            .slice(0, 3)
+            .map((el, index) => ({ index, title: el.title }))}
+          font='gella'
+        />
       </Row>
       <Layout flexBasis={[36, 64]} />
       <Divider weight={1} backgroundColor='background.ghorsWhite' />

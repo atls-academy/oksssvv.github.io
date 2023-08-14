@@ -1,4 +1,4 @@
 export const getColorLineBackground = (currentElementIndexInViewport) =>
-  currentElementIndexInViewport === 1 || currentElementIndexInViewport === 5
+  currentElementIndexInViewport === 2 || currentElementIndexInViewport === 0
     ? 'background.darkPrimary'
     : 'background.lightPrimary'

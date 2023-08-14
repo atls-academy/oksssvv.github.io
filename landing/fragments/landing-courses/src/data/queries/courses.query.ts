@@ -6,6 +6,10 @@ export const GET_COURSES = gql`
       nodes {
         course {
           title
+          description
+          image {
+            sourceUrl
+          }
           label {
             ... on Label {
               title

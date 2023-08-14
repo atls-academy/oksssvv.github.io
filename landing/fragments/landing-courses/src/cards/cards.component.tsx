@@ -20,61 +20,66 @@ import { useHover }         from '@ui/utils'
 import { WideScreenCards }  from './wideScreen'
 import { useCourses }       from '../data'
 
+const getGap = (index) =>
+  ({
+    0: { _: 104, standard: 214, wide: 356, ultra: 222 },
+    1: { _: 49, standard: 56, wide: 356, ultra: 222 },
+  }[index] || 110)
+
+const getWidthCategory = (index) =>
+  ({
+    0: { _: 80, standard: 104, ultra: 148 },
+    1: { _: 87, standard: 112, ultra: 160 },
+  }[index] || 180)
+
 export const Cards = () => {
   const card = useCourses()
-
   const intl = useIntl()
   const [hover, hoverProps] = useHover()
 
+  const getCards = card?.data?.courses.nodes.map((element) => ({
+    label: element.course.label[0].title,
+    title: element.course.title,
+    description: element.course.description,
+    image: element.course.image?.sourceUrl,
+  }))
+
+  const reversedCards = getCards?.reverse()
+
   return (
     <Box flexDirection={['column', 'row']}>
-      <Column width='100%' order={[1, 0]}>
-        <Box
-          flexDirection={{ _: 'column', standard: 'column', wide: 'row', ultra: 'row' }}
-          order={[1, 0]}
-          width='100%'
-        >
-          <Card
-            widthCategory={{ _: 80, standard: 104, ultra: 148 }}
-            сategory={card?.data?.courses.nodes[3].course.label[0].title}
-            gap={{ _: 104, standard: 214, wide: 356, ultra: 222 }}
-            image='/waves.png'
-            widthContent={{ _: 303, standard: 694, ultra: 945 }}
-            title={card?.data?.courses.nodes[3].course.title}
-            description={intl.formatMessage({
-              id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
-            })}
-          />
-          <Layout flexBasis={[20, 40]} flexShrink='0' />
-          <Card
-            widthCategory={{ _: 87, standard: 112, ultra: 160 }}
-            сategory={card?.data?.courses.nodes[2].course.label[0].title}
-            gap={{ _: 49, standard: 56, wide: 356, ultra: 222 }}
-            image='/waves.png'
-            widthContent={{ _: 303, standard: 694, ultra: 945 }}
-            title={card?.data?.courses.nodes[2].course.title}
-            description={intl.formatMessage({
-              id: 'courses.card.desktop.you-will-learn-fundamental-knowledge-in-IT',
-            })}
-          />
-          <Layout flexBasis={[20, 0]} />
-        </Box>
-        <Layout flexBasis={[0, 40]} />
-        <Box display={{ _: 'none', standard: 'flex', wide: 'none', ultra: 'none' }} width='100%'>
-          <Card
-            widthCategory={180}
-            сategory={card?.data?.courses.nodes[1].course.label[0].title}
-            gap={110}
-            title={card?.data?.courses.nodes[1].course.title}
-          />
-          <Layout flexBasis={40} flexShrink='0' />
-          <Card
-            widthCategory={180}
-            сategory={card?.data?.courses.nodes[0].course.label[0].title}
-            gap={110}
-            title={card?.data?.courses.nodes[0].course.title}
-          />
-        </Box>
+      <Row order={[1, 0]} flexWrap='wrap'>
+        {reversedCards?.map((element, index) => (
+          <Box
+            display={
+              index > 1 ? { _: 'none', standard: 'flex', wide: 'none', ultra: 'none' } : 'flex'
+            }
+            flexGrow='1'
+            flexShrink='1'
+            // eslint-disable-next-line
+            key={index}
+          >
+            <Column width={index < 2 ? '100%' : 560} flexGrow='1' flexShrink='1'>
+              <Card
+                widthCategory={getWidthCategory(index)}
+                сategory={element.label}
+                image={element.image}
+                gap={getGap(index)}
+                widthContent={{ _: 303, standard: 694, ultra: 945 }}
+                title={element.title}
+                description={element.description}
+              />
+              <Layout flexBasis={{ _: 20, standard: 40 }} />
+            </Column>
+            <Layout
+              flexBasis={index === reversedCards.length - 1 || index === 0 || index === 1 ? 0 : 40}
+            />
+            <Layout
+              flexBasis={index === 1 ? 0 : 40}
+              display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}
+            />
+          </Box>
+        ))}
         <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }} flexWrap='wrap'>
           <WideScreenCards />
           <NextLink path='/library'>
@@ -99,7 +104,7 @@ export const Cards = () => {
             </Background>
           </NextLink>
         </Row>
-      </Column>
+      </Row>
 
       <Layout flexBasis={[0, 40]} />
       <Column order={[0, 1]}>

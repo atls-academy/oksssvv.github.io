@@ -20,6 +20,8 @@ export const Faq = () => {
 
   const [modalOpen, setModalOpen] = useState<boolean>(false)
 
+  const title = faq?.data?.section.sections.title
+
   return (
     <Row>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
@@ -32,9 +34,7 @@ export const Faq = () => {
               fontSize={{ _: 'normal', standard: 'huge', wide: 'huge', ultra: 'super' }}
               lineHeight='regular'
             >
-              {faq?.data?.section.sections.title.charAt(0).toUpperCase() + // eslint-disable-line
-                // eslint-disable-next-line
-                faq?.data?.section.sections.title.slice(1)}
+              {title ? title.charAt(0).toUpperCase() + title.slice(1) : ''}
             </Text>
           </Box>
           <Layout flexBasis={{ _: 0, standard: 555, wide: 1088, ultra: 1000 }} />

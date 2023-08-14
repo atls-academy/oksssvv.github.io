@@ -1348,13 +1348,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-process"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/slider": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-intl: "*"
   languageName: unknown
@@ -1384,15 +1388,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/steps-fragment@workspace:landing/fragments/landing-steps"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
+    graphql: "npm:^16.7.1"
     react: "npm:18.2.0"
     react-intl: "npm:6.4.2"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-intl: "*"
   languageName: unknown
@@ -2384,13 +2391,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/navbar@workspace:ui/navbar"
   dependencies:
+    "@apollo/client": "npm:3.7.17"
+    "@landing/navigation-fragment": "workspace:0.0.1"
     "@makotot/ghostui": "npm:2.0.0"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    graphql: "npm:16.7.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-scroll: "npm:1.8.9"
   peerDependencies:
+    "@apollo/client": "*"
     react: "*"
     react-dom: "*"
   languageName: unknown
@@ -6007,7 +6018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:16.7.1":
+"graphql@npm:16.7.1, graphql@npm:^16.7.1":
   version: 16.7.1
   resolution: "graphql@npm:16.7.1"
   checksum: f391ef321598b62771b9a8e0c8bb7fae200648bdf1a5b1dec567a71d06a262d6da250aba814f36631fe8eae51fb24ab86dfca5acd1162527b2d9503218e7ea2d

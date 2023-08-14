@@ -25,6 +25,7 @@ export const Card: FC<CardProps> = ({ ...props }) => {
     >
       {props.image ? (
         <Image
+          style={{ filter: '' }}
           src={props.image}
           position='absolute'
           right={34}
