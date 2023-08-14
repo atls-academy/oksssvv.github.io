@@ -6,7 +6,6 @@ import { Row }         from '@ui/layout'
 import { Layout }      from '@ui/layout'
 import { Column }      from '@ui/layout'
 import { Text }        from '@ui/text'
-import { Space }       from '@ui/text'
 
 import { SocialLinks } from './social-links'
 import { useHero }     from './data'
@@ -16,42 +15,37 @@ export const Hero = () => {
   return (
     <Row justifyContent='center'>
       <Layout flexBasis={{ _: 20, standard: 230, wide: 230, ultra: 620 }} />
-      <Column>
+      <Column width={{ _: 335, standard: 1460, ultra: 2190 }}>
         <Layout flexBasis={{ _: 80, standard: 403, wide: 256, ultra: 428 }} />
-        <Box
-          flexWrap='wrap'
-          width={{ _: 335, standard: 1460, wide: 1460, ultra: 2060 }}
-          flexShrink='0'
-        >
-          <Box width={{ _: 280, standard: 930, ultra: 1400 }} alignItems='end'>
+        <Box width={{ _: 280, standard: 930, ultra: 1400 }} alignItems='end'>
+          <Text
+            color='white'
+            fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
+            lineHeight={['medium', 'normal']}
+          >
+            {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(0, -1).join(' ')}
+          </Text>
+          <Box
+            flexShrink='0'
+            display='flex'
+            width={{ _: 49, standard: 134, wide: 134, ultra: 200 }}
+            height={{ _: 39, standard: 116, wide: 116, ultra: 144 }}
+            justifyContent='center'
+            alignItems='center'
+            backgroundColor='background.ghost'
+            borderRadius={{ _: 'small', standard: 'big', wide: 'big', ultra: 'mega' }}
+          >
             <Text
               color='white'
-              fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
+              fontSize={{ _: 'major', standard: 'big', wide: 'big', ultra: 'largest' }}
               lineHeight={['medium', 'normal']}
+              textTransform='uppercase'
             >
-              {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(0, -1).join(' ')}
+              {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(5)}
             </Text>
-            <Box
-              flexShrink='0'
-              display='flex'
-              width={{ _: 49, standard: 134, wide: 134, ultra: 200 }}
-              height={{ _: 39, standard: 116, wide: 116, ultra: 144 }}
-              justifyContent='center'
-              alignItems='center'
-              backgroundColor='background.ghost'
-              borderRadius={{ _: 'small', standard: 'big', wide: 'big', ultra: 'mega' }}
-            >
-              <Text
-                color='white'
-                fontSize={{ _: 'major', standard: 'big', wide: 'big', ultra: 'largest' }}
-                lineHeight={['medium', 'normal']}
-                textTransform='uppercase'
-              >
-                {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(5)}
-              </Text>
-            </Box>
           </Box>
         </Box>
+
         <Layout flexBasis={[24, 48]} />
         <Divider weight={1} backgroundColor='background.ghorsWhite' />
         <Layout flexBasis={[24, 48]} />
@@ -62,24 +56,6 @@ export const Hero = () => {
             lineHeight='medium'
           >
             {hero?.data?.sections.nodes[5].content.split('.').slice(3, 4)}
-          </Text>
-
-          <Text
-            color='white'
-            fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
-            lineHeight='medium'
-          >
-            {/* <FormattedMessage id='hero.we-not-teach-programming' /> */}
-          </Text>
-          <Space count={2} />
-          <Text
-            color='white'
-            fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
-            lineHeight='medium'
-            letterSpacing={['-0.008em', '0']}
-            display={['flex', 'inline']}
-          >
-            {/* <FormattedMessage id='hero.we-teach-thinking' /> */}
           </Text>
         </Box>
         <Layout flexBasis={[20, 0]} />

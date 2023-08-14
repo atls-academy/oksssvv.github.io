@@ -18,7 +18,11 @@ import { useNavigation }    from './data'
 export const Navigation = () => {
   const [visible, setVisible] = useState(false)
   const linkName = useNavigation()
-
+  const getLinks = linkName?.data?.allNavigation.nodes.map((el) => ({
+    title: el.title,
+    path: el.id,
+  }))
+  const reversedLinks = getLinks?.reverse()
   return (
     <>
       <DrawerContainer active={visible} onClose={() => setVisible(false)} />
@@ -32,13 +36,15 @@ export const Navigation = () => {
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
 
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
-            <Item title={linkName.data?.allNavigation.nodes[3].title} path='Academy' />
-            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={linkName.data?.allNavigation.nodes[2].title} path='Courses' />
-            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={linkName.data?.allNavigation.nodes[1].title} path='Education' />
-            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={linkName.data?.allNavigation.nodes[0].title} path='FAQ' />
+            {reversedLinks?.map((el, index) => (
+              // eslint-disable-next-line
+              <Box key={index}>
+                <Item title={el.title} path={el.path} />
+                <Layout
+                  flexBasis={index === reversedLinks.length - 1 ? 0 : { standsrd: 20, ultra: 30 }}
+                />
+              </Box>
+            ))}
           </Row>
 
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />

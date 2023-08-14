@@ -10,7 +10,7 @@ export const CardsDesktop = () => {
   const intl = useIntl()
 
   const Cards = () => (
-    <Box width={{ standard: 610, ultra: 860 }}>
+    <Box width={{ standard: '100%', ultra: '100%' }}>
       <Card
         widthCategory={{ standard: 104, ultra: 150 }}
         сategory={intl.formatMessage({ id: 'courses.card.education' })}
@@ -28,8 +28,9 @@ export const CardsDesktop = () => {
       {Array.from({ length: 3 }).map((_, index) => (
         // eslint-disable-next-line
         <Row key={index}>
+          <Layout flexBasis={40} />
           <Cards />
-          <Layout flexBasis={index < 2 ? 30 : 0} />
+          <Layout flexBasis={index === 2 ? 40 : 0} />
         </Row>
       ))}
     </>

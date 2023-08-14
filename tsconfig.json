@@ -1,4 +1,4 @@
-  {
+{
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
 
@@ -35,7 +35,7 @@
 
     "jsx": "react",
 
-    "outDir": "./dist",
+    "outDir": "./dist"
   },
   "exclude": [
     "integration",
@@ -45,6 +45,6 @@
     "src/**/*.story.ts",
     "src/**/*.stories.ts",
     "**/*/dist/**/*.d.ts",
-    "integration/**/*.test.ts",
-  ],
+    "integration/**/*.test.ts"
+  ]
 }
