@@ -25,6 +25,7 @@ export const Card: FC<CardProps> = ({ ...props }) => {
     >
       {props.image ? (
         <Image
+          zIndex={0}
           style={{ filter: '' }}
           src={props.image}
           position='absolute'
@@ -66,7 +67,7 @@ export const Card: FC<CardProps> = ({ ...props }) => {
               </Text>
             </Box>
             <Layout flexBasis={props.description ? [12, 16] : 0} />
-            <Box display={props.description ? 'flex' : 'none'}>
+            <Box display={props.description ? 'flex' : 'none'} zIndex={1}>
               <Text
                 fontSize={{ _: 'medium', standard: 'regular', ultra: 'mid' }}
                 lineHeight='medium'
