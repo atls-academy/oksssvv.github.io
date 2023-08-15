@@ -30,7 +30,7 @@ export const Card: FC<CardProps> = ({ ...props }) => {
           position='absolute'
           right={34}
           top={40}
-          display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}
+          display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'flex' }}
         />
       ) : (
         ''
