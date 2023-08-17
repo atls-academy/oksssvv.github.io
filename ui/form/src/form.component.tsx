@@ -1,32 +1,34 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
-import { useState }         from 'react'
-import { useIntl }          from 'react-intl'
+import React              from 'react'
+import { useState }       from 'react'
 
-import { Button }           from '@ui/button'
-import { ArrowRightIcon }   from '@ui/icon'
-import { SuccessIcon }      from '@ui/icon'
-import { Input }            from '@ui/input'
-import { Column }           from '@ui/layout'
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Text }             from '@ui/text'
-import { Space }            from '@ui/text'
+import { Button }         from '@ui/button'
+import { ArrowRightIcon } from '@ui/icon'
+import { SuccessIcon }    from '@ui/icon'
+import { Input }          from '@ui/input'
+import { Column }         from '@ui/layout'
+import { Layout }         from '@ui/layout'
+import { Box }            from '@ui/layout'
+import { Text }           from '@ui/text'
+import { Space }          from '@ui/text'
+
+import { useForm }        from './data'
 
 export const Form = () => {
+  const form = useForm()
+
   const [name, setName] = useState<string>('')
   const [phone, setPhone] = useState<string>('')
   const [question, setQuestion] = useState<string>('')
   const [visible, setVisible] = useState(false)
   const [sendForm, setSendForm] = useState(false)
-  const intl = useIntl()
+
   return (
     <>
       <Column display={sendForm ? 'none' : 'flex'}>
         <Input
           value={question}
           onChange={setQuestion}
-          placeholder={intl.formatMessage({ id: 'faq.form.input.placeholder.message' })}
+          placeholder={form?.data?.allForms.nodes[6].forms.text}
           maxLength={500}
           textarea
           filled={Boolean(question)}
@@ -37,7 +39,7 @@ export const Form = () => {
           <Input
             value={name}
             onChange={setName}
-            placeholder={intl.formatMessage({ id: 'faq.form.input.placeholder.name' })}
+            placeholder={form?.data?.allForms.nodes[5].forms.text}
             filled={Boolean(name)}
           />
         </Box>
@@ -46,7 +48,7 @@ export const Form = () => {
           <Input
             value={phone}
             onChange={setPhone}
-            placeholder={intl.formatMessage({ id: 'faq.form.input.placeholder.phone' })}
+            placeholder={form?.data?.allForms.nodes[4].forms.text}
             filled={Boolean(phone)}
           />
         </Box>
@@ -66,14 +68,14 @@ export const Form = () => {
             disabled={!name || !phone || !question}
           >
             <Text fontSize='regular' color='text.white'>
-              <FormattedMessage id='faq.from.send-message' />
+              {form?.data?.allForms.nodes[3].forms.text}
             </Text>
           </Button>
         </Box>
         <Layout flexBasis={24} />
         <Box display={name && phone && question ? 'inline' : 'none'}>
           <Text display='inline' fontSize='medium' color='text.darkPurple'>
-            <FormattedMessage id='faq.form.pushing-the-button' />
+            {form?.data?.allForms.nodes[2].forms.text}
           </Text>
           <Space />
           <Text
@@ -82,7 +84,7 @@ export const Form = () => {
             color='text.darkPurple'
             style={{ textDecoration: 'underline' }}
           >
-            <FormattedMessage id='faq.form.processing-agreement' />
+            {form?.data?.allForms.nodes[1].forms.text}
           </Text>
         </Box>
       </Column>
@@ -90,7 +92,7 @@ export const Form = () => {
         <SuccessIcon width={48} height={48} />
         <Layout flexBasis={24} />
         <Text textAlign='center' fontSize='regular'>
-          <FormattedMessage id='faq.form.we-got-your-question' />
+          {form?.data?.allForms.nodes[0].forms.text}
         </Text>
       </Box>
     </>
