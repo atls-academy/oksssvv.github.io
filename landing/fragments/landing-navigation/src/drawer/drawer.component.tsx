@@ -43,8 +43,7 @@ export const DrawerContainer = ({ active, onClose }) => {
           width={{ ultra: 1290 }}
         >
           {reversedLinks?.map((el, index) => (
-            // eslint-disable-next-line
-            <Box key={index}>
+            <Box key={el.title}>
               <Item backColor='light' title={el.title} path={el.path} />
               <Layout
                 flexBasis={index === reversedLinks.length - 1 ? 0 : { standsrd: 20, ultra: 30 }}

@@ -45,8 +45,7 @@ export const Navbar = ({ sectionRefs }) => {
               height={165}
             />
             {reverseLinks?.map((element, index) => (
-              // eslint-disable-next-line
-              <Column key={index} marginLeft='regular'>
+              <Column key={element.name} marginLeft='regular'>
                 <Link to={element.id} spy smooth duration={1000} style={{ marginTop: -5 }}>
                   <Text
                     fontSize='medium'

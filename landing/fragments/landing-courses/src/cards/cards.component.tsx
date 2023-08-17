@@ -34,8 +34,7 @@ export const Cards = () => {
               index > 1 ? { _: 'none', standard: 'flex', wide: 'none', ultra: 'none' } : 'flex'
             }
             flexGrow='1'
-            // eslint-disable-next-line
-            key={index}
+            key={element.title}
           >
             <Column width={index < 2 ? '100%' : 560} flexGrow='1'>
               <Card

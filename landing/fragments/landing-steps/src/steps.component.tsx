@@ -26,8 +26,7 @@ export const Steps = () => {
 
         {getSteps?.map((el, index) => (
           <Item
-            // eslint-disable-next-line
-            key={index}
+            key={el.title}
             quantity={el.quantity}
             title={el.title}
             description={el.description}

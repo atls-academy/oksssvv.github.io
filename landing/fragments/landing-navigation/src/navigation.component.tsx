@@ -37,8 +37,7 @@ export const Navigation = () => {
 
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
             {reversedLinks?.map((el, index) => (
-              // eslint-disable-next-line
-              <Box key={index}>
+              <Box key={el.title}>
                 <Item title={el.title} path={el.path} />
                 <Layout
                   flexBasis={index === reversedLinks.length - 1 ? 0 : { standsrd: 20, ultra: 30 }}
