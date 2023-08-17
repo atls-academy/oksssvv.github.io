@@ -27,5 +27,18 @@ export const GET_COURSES = gql`
         }
       }
     }
+    courseBy(id: "cG9zdDoyNzk=") {
+      content
+      course {
+        title
+        description
+      }
+    }
+    navigationBy(id: "cG9zdDoyODM=") {
+      navigation {
+        linkName
+      }
+      title
+    }
   }
 `

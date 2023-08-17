@@ -1,7 +1,6 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { Link }             from 'react-scroll'
-import { useIntl }          from 'react-intl'
 
 import { Background }       from '@ui/background'
 import { Button }           from '@ui/button'
@@ -12,8 +11,10 @@ import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { Text }             from '@ui/text'
 
+import { useCourses }       from '../../data'
+
 export const Details = () => {
-  const intl = useIntl()
+  const details = useCourses()
 
   return (
     <Column order={[0, 1]}>
@@ -33,9 +34,7 @@ export const Details = () => {
               fontSize={{ _: 'medium', standard: 'middle', ultra: 'enlarged' }}
               lineHeight={['medium', 'large']}
             >
-              {intl.formatMessage({
-                id: 'courses.card.you-learn-fundamental-knowledge-field-it',
-              })}
+              {details?.data?.courseBy.course.description}
             </Text>
           </Box>
           <Layout flexBasis={{ _: 0, standard: 74, ultra: 68 }} />
@@ -54,7 +53,7 @@ export const Details = () => {
                 lineHeight='small'
                 color='text.accent'
               >
-                {intl.formatMessage({ id: 'courses.card.five' })}
+                {details?.data?.courseBy.course.title}
               </Text>
             </Box>
             <Layout flexBasis={[12, 8]} />
@@ -63,9 +62,7 @@ export const Details = () => {
                 fontSize={{ _: 'little', standard: 'medium', ultra: 'regular' }}
                 lineHeight={['interim', 'large']}
               >
-                {intl.formatMessage({
-                  id: 'courses.card.student-education-one-group',
-                })}
+                {details?.data?.courseBy.content}
               </Text>
             </Box>
             <Layout flexBasis={[70, 0]} />
@@ -78,7 +75,7 @@ export const Details = () => {
         <Layout flexBasis={[16, 32]} />
       </Background>
       <Layout flexBasis={[0, 20]} />
-      <Link to='Education' spy smooth duration={1000}>
+      <Link to='cG9zdDoyMjQ=' spy smooth duration={1000}>
         <Box
           width={[410]}
           display={{ _: 'none', standard: 'flex', ultra: 'none' }}
@@ -102,7 +99,7 @@ export const Details = () => {
           </Button>
         </Box>
       </Link>
-      <Link to='Education' spy smooth duration={1000}>
+      <Link to='cG9zdDoyMjQ=' spy smooth duration={1000}>
         <Box
           display={{ _: 'none', standard: 'none', wide: 'none', ultra: 'flex' }}
           width={[470]}
