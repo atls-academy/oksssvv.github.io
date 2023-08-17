@@ -24,11 +24,10 @@ export const Cards = () => {
   }))
 
   const reversedCards = getCards?.reverse()
-
   return (
     <Box flexDirection={['column', 'row']}>
       <Row order={[1, 0]} flexWrap='wrap'>
-        {reversedCards?.map((element, index) => (
+        {reversedCards?.slice(0, 4).map((element, index) => (
           <Box
             display={
               index > 1 ? { _: 'none', standard: 'flex', wide: 'none', ultra: 'none' } : 'flex'
@@ -49,7 +48,7 @@ export const Cards = () => {
               <Layout flexBasis={{ _: 20, standard: 40 }} />
             </Column>
             <Layout
-              flexBasis={index === reversedCards.length - 1 || index === 0 || index === 1 ? 0 : 40}
+              flexBasis={index === reversedCards.length - 2 || index === 0 || index === 1 ? 0 : 40}
             />
             <Layout
               flexBasis={index === 1 ? 0 : 40}

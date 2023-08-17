@@ -16,7 +16,7 @@ import { getColorDotBackground }  from './helpers'
 export const Navbar = ({ sectionRefs }) => {
   const navigation = useNavbar()
 
-  const getLinks = navigation?.data?.allNavigation.nodes.map((el, index) => ({
+  const getLinks = navigation?.data?.allNavigation.nodes.slice(2).map((el, index) => ({
     index,
     name: el.title,
     id: el.id,

@@ -8,7 +8,6 @@ import { useCourses } from '../../data'
 
 export const WideScreenCards = () => {
   const card = useCourses()
-
   const CardContainer = ({ title, indent }) => (
     <>
       <Column width={{ wide: 570, ultra: 668 }} height={370}>
@@ -31,8 +30,8 @@ export const WideScreenCards = () => {
           key={index} /*eslint-disable-line */
           title={
             index < 3
-              ? card?.data?.courses.nodes[1].course.title
-              : card?.data?.courses.nodes[0].course.title
+              ? card?.data?.courses.nodes[2].course.title
+              : card?.data?.courses.nodes[1].course.title
           }
           indent={index === 2 ? 0 : 40}
         />

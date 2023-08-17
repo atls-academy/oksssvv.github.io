@@ -1,4 +1,4 @@
-import { useQuery }  from '@apollo/client'
+import { useQuery } from '@apollo/client'
 
 import { GET_FORM } from './form.query'
 

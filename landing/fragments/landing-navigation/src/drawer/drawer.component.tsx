@@ -16,14 +16,8 @@ import { CardsMobile }   from './cards'
 import { useNavigation } from '../data'
 
 export const DrawerContainer = ({ active, onClose }) => {
-  const linkName = useNavigation()
-
-  const getLinks = linkName?.data?.allNavigation.nodes.map((el) => ({
-    title: el.title,
-    path: el.id,
-  }))
-
-  const reversedLinks = getLinks?.reverse()
+  const title = useNavigation()
+  const getLinks = title?.data?.allNavigation.nodes
 
   return (
     <Drawer heightDrawer={{ _: 495, standard: 610, ultra: 720 }} active={active}>
@@ -34,21 +28,19 @@ export const DrawerContainer = ({ active, onClose }) => {
           <Logo fill='rgba(58, 55, 93, 1)' />
         </Box>
         <Layout flexBasis={{ standard: 400, wide: 715, ultra: 510 }} />
-
         <Row
           display={['none', 'flex']}
           justifyContent='center'
           alignItems='center'
           width={{ ultra: 1290 }}
         >
-          {reversedLinks?.map((el, index) => (
-            <Box key={el.title}>
-              <Item backColor='light' title={el.title} path={el.path} />
-              <Layout
-                flexBasis={index === reversedLinks.length - 1 ? 0 : { standsrd: 20, ultra: 30 }}
-              />
-            </Box>
-          ))}
+          <Item backColor='light' title={getLinks?.[5]?.title} path={getLinks?.[5]?.id} />
+          <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+          <Item backColor='light' title={getLinks?.[4]?.title} path={getLinks?.[4]?.id} />
+          <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+          <Item backColor='light' title={getLinks?.[3]?.title} path={getLinks?.[3]?.id} />
+          <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+          <Item backColor='light' title={getLinks?.[2]?.title} path={getLinks?.[2]?.id} />
         </Row>
         <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 510 }} />
         <Box
@@ -70,7 +62,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='averaged'>
-              {linkName?.data?.allNavigation.nodes[4].title}
+              {title?.data?.allNavigation.nodes[4].title}
             </Text>
           </Button>
         </Box>
@@ -93,7 +85,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='regular' lineHeight='small'>
-              {linkName?.data?.allNavigation.nodes[4].title}
+              {title?.data?.allNavigation.nodes[4].title}
             </Text>
           </Button>
         </Box>
@@ -111,7 +103,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='medium'>
-              {linkName?.data?.allNavigation.nodes[4].title}
+              {title?.data?.allNavigation.nodes[4].title}
             </Text>
           </Button>
         </Box>

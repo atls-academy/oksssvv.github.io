@@ -16,12 +16,9 @@ import { useNavigation }   from './data'
 
 export const Navigation = () => {
   const [visible, setVisible] = useState(false)
-  const linkName = useNavigation()
-  const getLinks = linkName?.data?.allNavigation.nodes.map((el) => ({
-    title: el.title,
-    path: el.id,
-  }))
-  const reversedLinks = getLinks?.reverse()
+  const title = useNavigation()
+  const getLinks = title?.data?.allNavigation.nodes
+
   return (
     <>
       <DrawerContainer active={visible} onClose={() => setVisible(false)} />
@@ -33,18 +30,15 @@ export const Navigation = () => {
             <Logo fill='white' />
           </Box>
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
-
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
-            {reversedLinks?.map((el, index) => (
-              <Box key={el.title}>
-                <Item title={el.title} path={el.path} />
-                <Layout
-                  flexBasis={index === reversedLinks.length - 1 ? 0 : { standsrd: 20, ultra: 30 }}
-                />
-              </Box>
-            ))}
+            <Item title={getLinks?.[5]?.title} path={getLinks?.[5]?.id} />
+            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+            <Item title={getLinks?.[4]?.title} path={getLinks?.[4]?.id} />
+            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+            <Item title={getLinks?.[3]?.title} path={getLinks?.[3]?.id} />
+            <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
+            <Item title={getLinks?.[2]?.title} path={getLinks?.[2]?.id} />
           </Row>
-
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
           <Box
             width={163}
@@ -65,7 +59,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='regular'>
-                {linkName?.data?.allNavigation.nodes[4].title}
+                {title?.data?.allNavigation.nodes[4].title}
               </Text>
             </Button>
           </Box>
@@ -83,7 +77,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='medium'>
-                {linkName?.data?.allNavigation.nodes[4].title}
+                {title?.data?.allNavigation.nodes[4].title}
               </Text>
             </Button>
           </Box>
@@ -106,7 +100,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='averaged'>
-                {linkName?.data?.allNavigation.nodes[4].title}
+                {title?.data?.allNavigation.nodes[4].title}
               </Text>
             </Button>
           </Box>
