@@ -15,5 +15,8 @@ export const GET_FAQ = gql`
         }
       }
     }
+    navigationBy(id: "cG9zdDoyODQ=") {
+      title
+    }
   }
 `

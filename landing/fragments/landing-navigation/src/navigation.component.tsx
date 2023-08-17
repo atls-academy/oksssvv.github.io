@@ -1,19 +1,18 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
-import { useState }         from 'react'
+import React               from 'react'
+import { useState }        from 'react'
 
-import { Button }           from '@ui/button'
-import { ArrowDownIcon }    from '@ui/icon'
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Logo }             from '@ui/logo'
-import { Text }             from '@ui/text'
+import { Button }          from '@ui/button'
+import { ArrowDownIcon }   from '@ui/icon'
+import { Layout }          from '@ui/layout'
+import { Box }             from '@ui/layout'
+import { Row }             from '@ui/layout'
+import { Column }          from '@ui/layout'
+import { Logo }            from '@ui/logo'
+import { Text }            from '@ui/text'
 
-import { DrawerContainer }  from './drawer'
-import { Item }             from './item'
-import { useNavigation }    from './data'
+import { DrawerContainer } from './drawer'
+import { Item }            from './item'
+import { useNavigation }   from './data'
 
 export const Navigation = () => {
   const [visible, setVisible] = useState(false)
@@ -66,7 +65,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='regular'>
-                <FormattedMessage id='navigation.courses' />
+                {linkName?.data?.allNavigation.nodes[4].title}
               </Text>
             </Button>
           </Box>
@@ -84,7 +83,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='medium'>
-                <FormattedMessage id='navigation.courses' />
+                {linkName?.data?.allNavigation.nodes[4].title}
               </Text>
             </Button>
           </Box>
@@ -107,7 +106,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='averaged'>
-                <FormattedMessage id='navigation.courses' />
+                {linkName?.data?.allNavigation.nodes[4].title}
               </Text>
             </Button>
           </Box>

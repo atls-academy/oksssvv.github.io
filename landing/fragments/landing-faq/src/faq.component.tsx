@@ -1,19 +1,18 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
-import { useState }         from 'react'
+import React             from 'react'
+import { useState }      from 'react'
 
-import { Accordion }        from '@ui/accordion'
-import { Button }           from '@ui/button'
-import { EnvelopeIcon }     from '@ui/icon'
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Text }             from '@ui/text'
+import { Accordion }     from '@ui/accordion'
+import { Button }        from '@ui/button'
+import { EnvelopeIcon }  from '@ui/icon'
+import { Layout }        from '@ui/layout'
+import { Box }           from '@ui/layout'
+import { Column }        from '@ui/layout'
+import { Row }           from '@ui/layout'
+import { Text }          from '@ui/text'
 
-import { Feedback }         from './feedback'
-import { WideAccordion }    from './wide-accordion'
-import { useFaq }           from './data'
+import { Feedback }      from './feedback'
+import { WideAccordion } from './wide-accordion'
+import { useFaq }        from './data'
 
 export const Faq = () => {
   const faq = useFaq()
@@ -57,7 +56,7 @@ export const Faq = () => {
               onClick={() => setModalOpen(true)}
             >
               <Text fontSize='regular' color='text.white'>
-                <FormattedMessage id='faq.ask-question' />
+                {faq?.data?.navigationBy.title}
               </Text>
             </Button>
           </Box>
@@ -80,7 +79,7 @@ export const Faq = () => {
               onClick={() => setModalOpen(true)}
             >
               <Text fontSize='major' color='text.white'>
-                <FormattedMessage id='faq.ask-question' />
+                {faq?.data?.navigationBy.title}
               </Text>
             </Button>
           </Box>
@@ -105,7 +104,7 @@ export const Faq = () => {
             onClick={() => setModalOpen(true)}
           >
             <Text fontSize='middle' color='text.white'>
-              <FormattedMessage id='faq.ask-question' />
+              {faq?.data?.navigationBy.title}
             </Text>
           </Button>
         </Box>

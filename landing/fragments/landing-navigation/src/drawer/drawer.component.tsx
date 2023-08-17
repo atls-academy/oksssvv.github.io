@@ -1,20 +1,19 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
+import React             from 'react'
 
-import { Item }             from '@landing/navigation-fragment'
-import { Button }           from '@ui/button'
-import { Drawer }           from '@ui/drawer'
-import { ArrowUpIcon }      from '@ui/icon'
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Logo }             from '@ui/logo'
-import { Text }             from '@ui/text'
+import { Item }          from '@landing/navigation-fragment'
+import { Button }        from '@ui/button'
+import { Drawer }        from '@ui/drawer'
+import { ArrowUpIcon }   from '@ui/icon'
+import { Layout }        from '@ui/layout'
+import { Box }           from '@ui/layout'
+import { Row }           from '@ui/layout'
+import { Column }        from '@ui/layout'
+import { Logo }          from '@ui/logo'
+import { Text }          from '@ui/text'
 
-import { CardsDesktop }     from './cards'
-import { CardsMobile }      from './cards'
-import { useNavigation }    from '../data'
+import { CardsDesktop }  from './cards'
+import { CardsMobile }   from './cards'
+import { useNavigation } from '../data'
 
 export const DrawerContainer = ({ active, onClose }) => {
   const linkName = useNavigation()
@@ -71,7 +70,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='averaged'>
-              <FormattedMessage id='navigation.courses' />
+              {linkName?.data?.allNavigation.nodes[4].title}
             </Text>
           </Button>
         </Box>
@@ -94,7 +93,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='regular' lineHeight='small'>
-              <FormattedMessage id='navigation.courses' />
+              {linkName?.data?.allNavigation.nodes[4].title}
             </Text>
           </Button>
         </Box>
@@ -112,7 +111,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='medium'>
-              <FormattedMessage id='navigation.courses' />
+              {linkName?.data?.allNavigation.nodes[4].title}
             </Text>
           </Button>
         </Box>
