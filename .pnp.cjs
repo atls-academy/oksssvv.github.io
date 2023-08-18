@@ -3136,6 +3136,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@landing-library-fragment-virtual-d8c87c87c7/1/landing/fragments/landing-library/",\
         "packageDependencies": [\
           ["@landing/library-fragment", "virtual:3b4abc5befb2b9ffb9c78f35551980bbdc5754f82e10792718aacf0482f2a9c84e83e4bb55444e57a07c774d2eeec9f350f05465f56bfcde747ff68c63725fe8#workspace:landing/fragments/landing-library"],\
+          ["@apollo/client", "virtual:1316d36633829be6354e561810872ec53a43dc7a57268e30eb85ea5e6e26a369bdc804223946860286f2674907cfb7cdccd2925497c501d929cb5bfce4de34cf#npm:3.7.17"],\
+          ["@types/apollo__client", null],\
           ["@types/react", "npm:17.0.39"],\
           ["@types/react-intl", null],\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
@@ -3149,10 +3151,12 @@ const RAW_RUNTIME_STATE =
           ["@ui/logo", "virtual:81cd9bad712fa3adf0c5e4e09a61026756b83c0dc737a79ea6007b880ce8ecf6070a84f8b731ddffd64af934e205e1edf0b930a75e31fe9149d66e5acd8ddaab#workspace:ui/logo"],\
           ["@ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text"],\
           ["@ui/utils", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/utils"],\
+          ["graphql", "npm:16.7.1"],\
           ["react", "npm:18.2.0"],\
           ["react-intl", "virtual:c625937c1babeadfe00185a6c13dfea2387c245fff1ce30a5e3452bed8a4e9e9faab39d76da88fc6f6756e3f283c0eeb5e56dccb21fde52a5abaac99bd4201a5#npm:6.4.2"]\
         ],\
         "packagePeers": [\
+          "@types/apollo__client",\
           "@types/react-intl",\
           "@types/react",\
           "react"\
@@ -3163,6 +3167,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@landing-library-fragment-virtual-81cd9bad71/1/landing/fragments/landing-library/",\
         "packageDependencies": [\
           ["@landing/library-fragment", "virtual:d6706d5e5d1fc0fe6befd6a9108aebb713ac3effb51a560bd6038e0208359e302fb498dcff42c4c667d6afa19869d11cb4b37fd31245767fbb46d02ab8e468df#workspace:landing/fragments/landing-library"],\
+          ["@apollo/client", "virtual:1316d36633829be6354e561810872ec53a43dc7a57268e30eb85ea5e6e26a369bdc804223946860286f2674907cfb7cdccd2925497c501d929cb5bfce4de34cf#npm:3.7.17"],\
+          ["@types/apollo__client", null],\
           ["@types/react", "npm:17.0.39"],\
           ["@types/react-intl", null],\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
@@ -3176,10 +3182,12 @@ const RAW_RUNTIME_STATE =
           ["@ui/logo", "virtual:81cd9bad712fa3adf0c5e4e09a61026756b83c0dc737a79ea6007b880ce8ecf6070a84f8b731ddffd64af934e205e1edf0b930a75e31fe9149d66e5acd8ddaab#workspace:ui/logo"],\
           ["@ui/text", "virtual:6c2114bac5f2cc2d93279b8542dde3ad87813a22de529906ad55b45d3ef8f02dccfeb0fab656737e81fd1b61fcc54d99511072490dabb1d218a8f5ba6131b822#workspace:ui/text"],\
           ["@ui/utils", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/utils"],\
+          ["graphql", "npm:16.7.1"],\
           ["react", "npm:18.2.0"],\
           ["react-intl", "virtual:828de9c055a7ec3d0ac18b78f827a9f75a070d471be6ecb89a51dfce91caae6d5480e3af03ddfc1982ac00de495c2b373ee781679da253af0c6a7046e3f40cad#npm:6.4.2"]\
         ],\
         "packagePeers": [\
+          "@types/apollo__client",\
           "@types/react-intl",\
           "@types/react",\
           "react-intl",\
@@ -3191,6 +3199,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./landing/fragments/landing-library/",\
         "packageDependencies": [\
           ["@landing/library-fragment", "workspace:landing/fragments/landing-library"],\
+          ["@apollo/client", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#npm:3.7.17"],\
           ["@ui/button", "virtual:ae7c6b2232dd411a6f3dd478d1d08b85886b600bed5ccf6cc0012721830e66f227b2c01228308e758174d5533f7621a3b5a0c6ae77ee3782b9af30fb3b598b93#workspace:ui/button"],\
           ["@ui/card", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/card"],\
           ["@ui/divider", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/divider"],\
@@ -3202,6 +3211,7 @@ const RAW_RUNTIME_STATE =
           ["@ui/logo", "virtual:93603d7b8ac634ad9759b0a7081d1c794b9daec5fe3deb321ecb0d1679944edff3685a06925c86ce58d2f46a0cdc2b5edfa921e977384947492562bbbbf38e3c#workspace:ui/logo"],\
           ["@ui/text", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/text"],\
           ["@ui/utils", "virtual:56d99e181a81430c3e67c3c58dfcb22c646fbba38f2a3f8329a8661404c67e22830e21e8c6c2faaf5a8d0900b3dfdf6f98fea08136c0fc9012828cbd6f7ce700#workspace:ui/utils"],\
+          ["graphql", "npm:16.7.1"],\
           ["react", "npm:18.2.0"],\
           ["react-intl", "virtual:c625937c1babeadfe00185a6c13dfea2387c245fff1ce30a5e3452bed8a4e9e9faab39d76da88fc6f6756e3f283c0eeb5e56dccb21fde52a5abaac99bd4201a5#npm:6.4.2"]\
         ],\

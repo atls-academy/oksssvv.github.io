@@ -1,45 +1,38 @@
-import React            from 'react'
-import { useIntl }      from 'react-intl'
+import React          from 'react'
 
-import { Divider }      from '@ui/divider'
-import { Box }          from '@ui/layout'
-import { Column }       from '@ui/layout'
-import { Layout }       from '@ui/layout'
-import { Text }         from '@ui/text'
+import { Box }        from '@ui/layout'
+import { Column }     from '@ui/layout'
+import { Layout }     from '@ui/layout'
+import { Text }       from '@ui/text'
 
-import { Technologies } from './data'
-import { Item }         from './item'
+import { Item }       from './item'
+import { useLibrary } from '../data'
 
-export const Materials = (divider) => {
-  const intl = useIntl()
-  const technology = Technologies.map((item) => (
-    <Column key={item.index}>
-      <Box border='ghostPrimary' borderRadius='little' padding='microYSmallX' marginRight='micro'>
-        <Text color='text.blueDark' fontSize='little' textTransform='uppercase'>
-          {item.name}
-        </Text>
-      </Box>
-      <Layout flexBasis={12} />
-    </Column>
-  ))
+export const Materials = () => {
+  const material = useLibrary()
 
-  return (
-    <>
+  return material?.data?.allTutorials.nodes
+    .map((element) => (
       <Item
-        title={intl.formatMessage({ id: 'library.title.design-figma-math' })}
-        technology={technology}
+        key={element.title}
+        title={element.title}
+        technology={element.learningMaterials.skills.map((skills) => (
+          <Column key={skills.title}>
+            <Box
+              border='ghostPrimary'
+              borderRadius='little'
+              padding='microYSmallX'
+              marginRight='micro'
+            >
+              <Text color='text.blueDark' fontSize='little' textTransform='uppercase'>
+                {skills.title}
+              </Text>
+            </Box>
+            <Layout flexBasis={12} />
+          </Column>
+        ))}
+        description={element.learningMaterials.description}
       />
-      <Divider weight={divider} backgroundColor='background.ghostGray' />
-      <Item
-        title={intl.formatMessage({ id: 'library.title.how-use-libraries' })}
-        technology={technology}
-      />
-      <Divider weight={divider} backgroundColor='background.ghostGray' />
-      <Item
-        title={intl.formatMessage({ id: 'library.hexagonal-architecture' })}
-        technology={technology}
-      />
-      <Divider weight={divider} backgroundColor='background.ghostGray' />
-    </>
-  )
+    ))
+    .reverse()
 }

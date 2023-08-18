@@ -1,15 +1,14 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
+import React              from 'react'
 
-import { Divider }          from '@ui/divider'
-import { ArrowRightIcon }   from '@ui/icon'
-import { Box }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Layout }           from '@ui/layout'
-import { Text }             from '@ui/text'
-import { useHover }         from '@ui/utils'
-import { usePressed }       from '@ui/utils'
+import { Divider }        from '@ui/divider'
+import { ArrowRightIcon } from '@ui/icon'
+import { Box }            from '@ui/layout'
+import { Column }         from '@ui/layout'
+import { Row }            from '@ui/layout'
+import { Layout }         from '@ui/layout'
+import { Text }           from '@ui/text'
+import { useHover }       from '@ui/utils'
+import { usePressed }     from '@ui/utils'
 
 export const Item = ({ ...props }) => {
   const [hover, hoverProps] = useHover()
@@ -48,7 +47,7 @@ export const Item = ({ ...props }) => {
           <Layout flexBasis={8} />
           <Box maxWidth={600}>
             <Text color='text.grayPrimary' fontSize='middle' lineHeight='large'>
-              <FormattedMessage id='library.comprehensive-study-material-designed-for-students' />
+              {props.description}
             </Text>
           </Box>
           <Layout flexBasis={32} />

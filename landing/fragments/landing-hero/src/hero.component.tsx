@@ -23,7 +23,7 @@ export const Hero = () => {
             fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
             lineHeight={['medium', 'normal']}
           >
-            {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(0, -1).join(' ')}
+            {hero?.data?.sections.nodes[6].sections.title.split(' ').slice(0, -1).join(' ')}
           </Text>
           <Box
             flexShrink='0'
@@ -41,7 +41,7 @@ export const Hero = () => {
               lineHeight={['medium', 'normal']}
               textTransform='uppercase'
             >
-              {hero?.data?.sections.nodes[5].sections.title.split(' ').slice(5)}
+              {hero?.data?.sections.nodes[6].sections.title.split(' ').slice(5)}
             </Text>
           </Box>
         </Box>

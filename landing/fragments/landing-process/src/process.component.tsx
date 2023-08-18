@@ -13,7 +13,7 @@ import { useProcess }      from './data'
 export const Process = () => {
   const process = useProcess()
 
-  const title = process?.data?.sections.nodes[1].content.split(' ')
+  const title = process?.data?.sections.nodes[2].content.split(' ')
 
   return (
     <Row justifyContent='center'>

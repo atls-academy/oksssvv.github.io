@@ -22,8 +22,8 @@ import { useCourses }       from './data'
 export const Courses = () => {
   const courses = useCourses()
   const intl = useIntl()
-  const atlantisInfo = courses?.data?.sections.nodes[4].content.split('.')[0].split(' ')
-  const educationInfo = courses?.data?.sections.nodes[4].content.split('.')[1].split(' ')
+  const atlantisInfo = courses?.data?.sections.nodes[5].content.split('.')[0].split(' ')
+  const educationInfo = courses?.data?.sections.nodes[5].content.split('.')[1].split(' ')
 
   return (
     <>

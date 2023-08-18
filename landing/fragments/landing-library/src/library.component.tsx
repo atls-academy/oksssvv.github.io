@@ -1,7 +1,6 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useState }         from 'react'
-import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
 import { Divider }          from '@ui/divider'
@@ -15,24 +14,26 @@ import { Text }             from '@ui/text'
 import { useFocus }         from '@ui/utils'
 
 import { Materials }        from './materials'
+import { useLibrary }       from './data'
 
 export const Library = () => {
   const [focus, focusProps] = useFocus()
-  const materialsIncrease = Array.from({ length: 3 }).map((_, index) => (
-    <Materials divider={index > 1 ? 1 : 0} key={index} /> /*eslint-disable-line */
-  ))
-
   const [searchQuery, setSerchQuery] = useState('')
-  const intl = useIntl()
+  const library = useLibrary()
+
   const SearchButton = (
     <Box width={102} flexShrink='0'>
       <Button variant='accent' size='smallSizeSamePadding'>
         <Text color='text.white' fontSize='middle'>
-          {intl.formatMessage({ id: 'library.input.text-button.search' })}
+          <FormattedMessage id='library.input.text-button.search' />
         </Text>
       </Button>
     </Box>
   )
+
+  const materialsTriple = Array.from({ length: 3 }).map((_, index) => (
+    <Materials key={index} /> /*eslint-disable-line */
+  ))
 
   return (
     <Row justifyContent='center'>
@@ -41,7 +42,7 @@ export const Library = () => {
         <Layout flexBasis={[80, 200]} />
         <Box maxWidth={[225, 1460]}>
           <Text color='text.white' fontSize={['major', 'huge']} lineHeight={['medium', 'small']}>
-            <FormattedMessage id='library.our-library' />
+            {library?.data?.sections.nodes[0].sections.title}
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />
@@ -49,7 +50,7 @@ export const Library = () => {
         <Layout flexBasis={[24, 48]} />
         <Box width={[335, 600]}>
           <Text color='text.white' fontSize={['medium', 'enlarged']} lineHeight='medium'>
-            <FormattedMessage id='library.here-are-collected-materials-and-articles' />
+            {library?.data?.sections.nodes[0].content.split('\n\n\n').slice(0, 1)}
           </Text>
         </Box>
         <Layout flexBasis={[24, 48]} />
@@ -63,14 +64,13 @@ export const Library = () => {
           <Input
             value={searchQuery}
             onChange={setSerchQuery}
-            placeholder={intl.formatMessage({ id: 'library.input.placeholder.enter-your-request' })}
+            placeholder={library?.data?.sections.nodes[0].content.split('\n\n\n').slice(1)}
             size='normal'
             attachmentIcon={<SearchIcon />}
             addon={searchQuery ? SearchButton : null}
             gap={12}
           />
         </Box>
-
         <Layout flexBasis={[120, 440]} />
         <Box
           backgroundColor='background.white'
@@ -84,7 +84,8 @@ export const Library = () => {
           <Layout flexBasis={[20, 230]} />
           <Column width={[335, 1460]}>
             <Layout flexBasis={[64, 160]} />
-            {materialsIncrease}
+            {materialsTriple}
+            <Divider weight={1} backgroundColor='background.ghostGray' />
             <Layout flexBasis={[144, 240]} />
           </Column>
           <Layout flexBasis={[20, 230]} />
