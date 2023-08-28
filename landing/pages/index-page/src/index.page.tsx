@@ -21,7 +21,7 @@ const IndexPage = () => {
     <ParallaxProvider>
       <Navbar sectionRefs={sectionRefs} />
       <Background
-        ref={sectionRefs[3]}
+        ref={sectionRefs[0]}
         id='cG9zdDoyMjE='
         backgroundColor='purpleGradient'
         position='absolute'
@@ -52,7 +52,7 @@ const IndexPage = () => {
         </Background>
       </Background>
       <Background
-        ref={sectionRefs[2]}
+        ref={sectionRefs[1]}
         id='cG9zdDoyMjI='
         backgroundColor='whiteBendLine'
         backgroundSize={['100%,100%', '100%,100%']}
@@ -67,7 +67,7 @@ const IndexPage = () => {
         <Courses />
       </Background>
       <Background
-        ref={sectionRefs[1]}
+        ref={sectionRefs[2]}
         id='cG9zdDoyMjQ='
         backgroundColor='purpleBendLine'
         backgroundSize={{
@@ -96,7 +96,7 @@ const IndexPage = () => {
         </Parallax>
       </Background>
       <Background
-        ref={sectionRefs[0]}
+        ref={sectionRefs[3]}
         id='cG9zdDoyMjU='
         backgroundColor='whiteBendLine'
         backgroundSize={['100%, 100%', '100%,100%']}
