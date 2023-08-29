@@ -2119,6 +2119,7 @@ __metadata:
   dependencies:
     "@apollo/client": "npm:3.7.17"
     "@landing/faq-fragment": "workspace:0.0.1"
+    "@ui/condition": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icon": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -2185,6 +2186,7 @@ __metadata:
   resolution: "@ui/card@workspace:ui/card"
   dependencies:
     "@ui/background": "workspace:0.0.1"
+    "@ui/condition": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
@@ -2194,6 +2196,12 @@ __metadata:
   peerDependencies:
     react: "*"
     react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/condition@workspace:0.0.1, @ui/condition@workspace:ui/condition":
+  version: 0.0.0-use.local
+  resolution: "@ui/condition@workspace:ui/condition"
   languageName: unknown
   linkType: soft
 

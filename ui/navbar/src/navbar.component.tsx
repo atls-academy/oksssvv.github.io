@@ -4,7 +4,7 @@ import React            from 'react'
 
 import { Box }          from '@ui/layout'
 
-import { Item }          from './item'
+import { Item }         from './item'
 import { useNavbar }    from './data'
 import { getColorLine } from './helpers'
 

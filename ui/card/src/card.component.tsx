@@ -1,18 +1,21 @@
-import React          from 'react'
-import { FC }         from 'react'
+import React           from 'react'
+import { FC }          from 'react'
 
-import { Background } from '@ui/background'
-import { Image }      from '@ui/image'
-import { Box }        from '@ui/layout'
-import { Column }     from '@ui/layout'
-import { Layout }     from '@ui/layout'
-import { Text }       from '@ui/text'
-import { useHover }   from '@ui/utils'
+import { Background }  from '@ui/background'
+import { Condition }   from '@ui/condition'
+import { Image }       from '@ui/image'
+import { Box }         from '@ui/layout'
+import { Column }      from '@ui/layout'
+import { Layout }      from '@ui/layout'
+import { Text }        from '@ui/text'
+import { useHover }    from '@ui/utils'
+import { useViewport } from '@ui/utils'
 
-import { CardProps }  from './card.interfaces'
+import { CardProps }   from './card.interfaces'
 
 export const Card: FC<CardProps> = ({ ...props }) => {
   const [hover, hoverProps] = useHover()
+  const { desktop } = useViewport()
 
   return (
     <Box
@@ -23,7 +26,7 @@ export const Card: FC<CardProps> = ({ ...props }) => {
       boxShadow={hover ? 'normalBlurDarkPurple' : ''}
       position='relative'
     >
-      {props.image ? (
+      <Condition match={desktop}>
         <Image
           zIndex={0}
           style={{ filter: '' }}
@@ -31,11 +34,8 @@ export const Card: FC<CardProps> = ({ ...props }) => {
           position='absolute'
           right={34}
           top={40}
-          display={{ _: 'none', standard: 'flex', wide: 'flex', ultra: 'flex' }}
         />
-      ) : (
-        ''
-      )}
+      </Condition>
       <Background backgroundColor='lightPurpleRadial' display='flex' width='100%'>
         <Layout flexBasis={[16, 40]} />
         <Column width='100%'>

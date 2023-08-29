@@ -37,7 +37,7 @@ export const Courses = () => {
                 fontSize={{ _: 'large', standard: 'huge', ultra: 'super' }}
                 lineHeight='regular'
               >
-                {courses?.data?.sections.nodes[4].sections.title}
+                {courses?.data?.sections.nodes[5].sections.title}
               </Text>
             </Box>
             <Layout flexBasis={[464]} />

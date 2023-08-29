@@ -11,6 +11,7 @@ import { Row }           from '@ui/layout'
 import { Text }          from '@ui/text'
 
 import { Feedback }      from './feedback'
+import { Item }          from './item'
 import { WideAccordion } from './wide-accordion'
 import { useFaq }        from './data'
 
@@ -86,7 +87,11 @@ export const Faq = () => {
         </Row>
         <Layout flexBasis={[60, 80]} />
         <Box display={{ _: 'flex', standard: 'flex', wide: 'none', ultra: 'none' }}>
-          <Accordion screen='standard' />
+          <Accordion
+            screen='standard'
+            item={<Item />}
+            answer={faq?.data?.allFAQ.nodes[0].faq.answer}
+          />
         </Box>
         <WideAccordion />
         <Layout flexBasis={[60, 0]} />

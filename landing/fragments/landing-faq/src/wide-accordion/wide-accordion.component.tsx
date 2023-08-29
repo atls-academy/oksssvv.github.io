@@ -4,10 +4,16 @@ import { Accordion } from '@ui/accordion'
 import { Layout }    from '@ui/layout'
 import { Row }       from '@ui/layout'
 
-export const WideAccordion = () => (
-  <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}>
-    <Accordion screen='wide' />
-    <Layout flexBasis={200} />
-    <Accordion screen='wide' />
-  </Row>
-)
+import { Item }      from '../item'
+import { useFaq }    from '../data'
+
+export const WideAccordion = () => {
+  const faq = useFaq()
+  return (
+    <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}>
+      <Accordion screen='wide' item={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
+      <Layout flexBasis={200} />
+      <Accordion screen='wide' item={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
+    </Row>
+  )
+}
