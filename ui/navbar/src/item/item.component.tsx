@@ -8,17 +8,18 @@ import { Text }         from '@ui/text'
 
 import { getColorText } from '../helpers'
 import { getColorDot }  from '../helpers'
+import { getTitle }     from '../helpers'
 
 export const Item = ({ id, title, selected, index }) => (
   <Column marginLeft='regular'>
-    <Link to={id} spy smooth duration={1000} style={{ marginTop: -5 }}>
+    <Link to={id? id : ''} spy smooth duration={1000} style={{ marginTop: -5 }}>
       <Text
         fontSize='medium'
         cursor='pointer'
         color={getColorText(selected, index)}
         style={{ transition: '0.5s' }}
       >
-        {title}
+        {getTitle(title, index)}
       </Text>
     </Link>
     <Layout flexBasis={20} />
