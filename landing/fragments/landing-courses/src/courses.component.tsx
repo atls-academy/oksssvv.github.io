@@ -22,8 +22,13 @@ import { useCourses }       from './data'
 export const Courses = () => {
   const courses = useCourses()
   const intl = useIntl()
-  const atlantisInfo = courses?.data?.sections.nodes[5].content.split('.')[0].split(' ')
-  const educationInfo = courses?.data?.sections.nodes[5].content.split('.')[1].split(' ')
+
+  const getId = (id) => courses?.data?.sections.nodes.find((obj) => obj.id === id)
+
+  const content = getId('cG9zdDoyMjc=')?.content
+
+  const atlantisInfo = content?.split('.')[0].split(' ')
+  const educationInfo = content?.split('.')[1].split(' ')
 
   return (
     <>
@@ -37,7 +42,7 @@ export const Courses = () => {
                 fontSize={{ _: 'large', standard: 'huge', ultra: 'super' }}
                 lineHeight='regular'
               >
-                {courses?.data?.sections.nodes[5].sections.title}
+                {getId('cG9zdDoyMjc=')?.sections?.title}
               </Text>
             </Box>
             <Layout flexBasis={[464]} />

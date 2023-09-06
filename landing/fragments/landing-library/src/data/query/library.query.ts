@@ -4,6 +4,7 @@ export const GET_LIBRARY = gql`
   query Library {
     sections {
       nodes {
+        id
         sections {
           title
           navigationName

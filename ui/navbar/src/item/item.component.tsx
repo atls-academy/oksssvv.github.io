@@ -12,7 +12,7 @@ import { getTitle }     from '../helpers'
 
 export const Item = ({ id, title, selected, index }) => (
   <Column marginLeft='regular'>
-    <Link to={id? id : ''} spy smooth duration={1000} style={{ marginTop: -5 }}>
+    <Link to={id} spy smooth duration={1000} style={{ marginTop: -5 }}>
       <Text
         fontSize='medium'
         cursor='pointer'

@@ -22,13 +22,15 @@ export const Form = () => {
   const [visible, setVisible] = useState(false)
   const [sendForm, setSendForm] = useState(false)
 
+  const getText = (id) => form?.data?.allForms.nodes.find((obj) => obj.id === id)?.forms.text
+
   return (
     <>
       <Column display={sendForm ? 'none' : 'flex'}>
         <Input
           value={question}
           onChange={setQuestion}
-          placeholder={form?.data?.allForms.nodes[6].forms.text}
+          placeholder={getText('cG9zdDoyOTM=')}
           maxLength={500}
           textarea
           filled={Boolean(question)}
@@ -39,7 +41,7 @@ export const Form = () => {
           <Input
             value={name}
             onChange={setName}
-            placeholder={form?.data?.allForms.nodes[5].forms.text}
+            placeholder={getText('cG9zdDoyOTQ=')}
             filled={Boolean(name)}
           />
         </Box>
@@ -48,7 +50,7 @@ export const Form = () => {
           <Input
             value={phone}
             onChange={setPhone}
-            placeholder={form?.data?.allForms.nodes[4].forms.text}
+            placeholder={getText('cG9zdDoyOTU=')}
             filled={Boolean(phone)}
           />
         </Box>
@@ -68,14 +70,14 @@ export const Form = () => {
             disabled={!name || !phone || !question}
           >
             <Text fontSize='regular' color='text.white'>
-              {form?.data?.allForms.nodes[3].forms.text}
+              {getText('cG9zdDoyOTY=')}
             </Text>
           </Button>
         </Box>
         <Layout flexBasis={24} />
         <Box display={name && phone && question ? 'inline' : 'none'}>
           <Text display='inline' fontSize='medium' color='text.darkPurple'>
-            {form?.data?.allForms.nodes[2].forms.text}
+            {getText('cG9zdDoyOTg=')}
           </Text>
           <Space />
           <Text
@@ -84,7 +86,7 @@ export const Form = () => {
             color='text.darkPurple'
             style={{ textDecoration: 'underline' }}
           >
-            {form?.data?.allForms.nodes[1].forms.text}
+            {getText('cG9zdDoyOTk=')}
           </Text>
         </Box>
       </Column>
@@ -92,7 +94,7 @@ export const Form = () => {
         <SuccessIcon width={48} height={48} />
         <Layout flexBasis={24} />
         <Text textAlign='center' fontSize='regular'>
-          {form?.data?.allForms.nodes[0].forms.text}
+          {getText('cG9zdDozMDA=')}
         </Text>
       </Box>
     </>

@@ -16,8 +16,12 @@ import { useNavigation }   from './data'
 
 export const Navigation = () => {
   const [visible, setVisible] = useState(false)
+
   const title = useNavigation()
-  const getLinks = title?.data?.allNavigation.nodes
+
+  const getId = (id) => title?.data?.allNavigation.nodes.find((obj) => obj.id === id)
+
+  const courses = getId('cG9zdDoyMjI=')?.title
 
   return (
     <>
@@ -31,13 +35,13 @@ export const Navigation = () => {
           </Box>
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>
-            <Item title={getLinks?.[5]?.title} path={getLinks?.[5]?.id} />
+            <Item title={getId('cG9zdDoyMjE=')?.title} path={getId('cG9zdDoyMjE=')?.id} />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={getLinks?.[4]?.title} path={getLinks?.[4]?.id} />
+            <Item title={getId('cG9zdDoyMjI=')?.title} path={getId('cG9zdDoyMjI=')?.id} />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={getLinks?.[3]?.title} path={getLinks?.[3]?.id} />
+            <Item title={getId('cG9zdDoyMjQ=')?.title} path={getId('cG9zdDoyMjQ=')?.id} />
             <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-            <Item title={getLinks?.[2]?.title} path={getLinks?.[2]?.id} />
+            <Item title={getId('cG9zdDoyMjU=')?.title} path={getId('cG9zdDoyMjU=')?.id} />
           </Row>
           <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 500 }} />
           <Box
@@ -59,7 +63,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='regular'>
-                {title?.data?.allNavigation.nodes[4].title}
+                {courses}
               </Text>
             </Button>
           </Box>
@@ -77,7 +81,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='medium'>
-                {title?.data?.allNavigation.nodes[4].title}
+                {courses}
               </Text>
             </Button>
           </Box>
@@ -100,7 +104,7 @@ export const Navigation = () => {
               onClick={() => setVisible(true)}
             >
               <Text color='white' fontSize='averaged'>
-                {title?.data?.allNavigation.nodes[4].title}
+                {courses}
               </Text>
             </Button>
           </Box>

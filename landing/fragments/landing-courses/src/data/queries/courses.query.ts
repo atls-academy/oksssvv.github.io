@@ -20,6 +20,7 @@ export const GET_COURSES = gql`
     }
     sections {
       nodes {
+        id
         content
         title
         sections {

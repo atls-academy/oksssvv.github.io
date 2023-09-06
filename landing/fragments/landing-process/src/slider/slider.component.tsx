@@ -9,10 +9,14 @@ import { useProcess } from '../data'
 export const SliderContainer = () => {
   const process = useProcess()
 
-  const getText = process?.data?.slides.nodes[0].slider.text
+  const getId = (id) => process?.data?.slides.nodes.find((obj) => obj.id === id)
 
-  const desktopSlide = process?.data?.slides.nodes[0].slider.imageDesktop.sourceUrl
-  const mobileSlide = process?.data?.slides.nodes[0].slider.imageMobile.sourceUrl
+  const useId = getId('cG9zdDoyNjI=')
+
+  const getText = useId?.slider.text
+
+  const desktopSlide = useId?.slider.imageDesktop.sourceUrl
+  const mobileSlide = useId?.slider.imageMobile.sourceUrl
 
   const desktopSlides = [desktopSlide, desktopSlide]
   const mobileSlides = [mobileSlide, mobileSlide]

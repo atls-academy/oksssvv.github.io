@@ -4,6 +4,7 @@ export const GET_FORM = gql`
   query Form {
     allForms {
       nodes {
+        id
         forms {
           text
         }

@@ -11,7 +11,8 @@ import { getColorLine } from './helpers'
 export const Navbar = ({ sectionRefs }) => {
   const navigation = useNavbar()
 
-  const element = navigation?.data?.allNavigation.nodes
+  const getId = (id) => navigation?.data?.allNavigation.nodes.find((obj) => obj.id === id)
+  const idCollection = ['cG9zdDoyMjE=', 'cG9zdDoyMjI=', 'cG9zdDoyMjQ=', 'cG9zdDoyMjU=']
 
   return (
     <Box
@@ -33,10 +34,15 @@ export const Navbar = ({ sectionRefs }) => {
               width={2}
               height={165}
             />
-            <Item index={0} id={element?.[5]?.id} title={element?.[5]?.title} selected={active} />
-            <Item index={1} id={element?.[4]?.id} title={element?.[4]?.title} selected={active} />
-            <Item index={2} id={element?.[3]?.id} title={element?.[3]?.title} selected={active} />
-            <Item index={3} id={element?.[2]?.id} title={element?.[2]?.title} selected={active} />
+            {idCollection.map((id, index) => (
+              <Item
+                key={id}
+                index={index}
+                id={getId(id)?.id}
+                title={getId(id)?.title}
+                selected={active}
+              />
+            ))}
           </>
         )}
       </Scrollspy>

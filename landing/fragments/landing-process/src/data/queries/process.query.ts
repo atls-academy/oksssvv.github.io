@@ -13,6 +13,7 @@ export const GET_PROCESS = gql`
 
     slides {
       nodes {
+        id
         slider {
           text
           imageDesktop {

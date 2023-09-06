@@ -17,7 +17,10 @@ import { useNavigation } from '../data'
 
 export const DrawerContainer = ({ active, onClose }) => {
   const title = useNavigation()
-  const getLinks = title?.data?.allNavigation.nodes
+
+  const getId = (id) => title?.data?.allNavigation.nodes.find((obj) => obj.id === id)
+
+  const courses = getId('cG9zdDoyMjI=')?.title
 
   return (
     <Drawer heightDrawer={{ _: 495, standard: 610, ultra: 720 }} active={active}>
@@ -34,13 +37,29 @@ export const DrawerContainer = ({ active, onClose }) => {
           alignItems='center'
           width={{ ultra: 1290 }}
         >
-          <Item backColor='light' title={getLinks?.[5]?.title} path={getLinks?.[5]?.id} />
+          <Item
+            backColor='light'
+            title={getId('cG9zdDoyMjE=')?.title}
+            path={getId('cG9zdDoyMjE=')?.id}
+          />
           <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-          <Item backColor='light' title={getLinks?.[4]?.title} path={getLinks?.[4]?.id} />
+          <Item
+            backColor='light'
+            title={getId('cG9zdDoyMjI=')?.title}
+            path={getId('cG9zdDoyMjI=')?.id}
+          />
           <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-          <Item backColor='light' title={getLinks?.[3]?.title} path={getLinks?.[3]?.id} />
+          <Item
+            backColor='light'
+            title={getId('cG9zdDoyMjQ=')?.title}
+            path={getId('cG9zdDoyMjQ=')?.id}
+          />
           <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-          <Item backColor='light' title={getLinks?.[2]?.title} path={getLinks?.[2]?.id} />
+          <Item
+            backColor='light'
+            title={getId('cG9zdDoyMjU=')?.title}
+            path={getId('cG9zdDoyMjU=')?.id}
+          />
         </Row>
         <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 510 }} />
         <Box
@@ -62,7 +81,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='averaged'>
-              {title?.data?.allNavigation.nodes[4].title}
+              {courses}
             </Text>
           </Button>
         </Box>
@@ -85,7 +104,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='regular' lineHeight='small'>
-              {title?.data?.allNavigation.nodes[4].title}
+              {courses}
             </Text>
           </Button>
         </Box>
@@ -103,7 +122,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='medium'>
-              {title?.data?.allNavigation.nodes[4].title}
+              {courses}
             </Text>
           </Button>
         </Box>
