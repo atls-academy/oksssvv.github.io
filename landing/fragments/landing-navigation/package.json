@@ -6,6 +6,7 @@
     "@apollo/client": "3.7.17",
     "@ui/button": "workspace:0.0.1",
     "@ui/card": "workspace:0.0.1",
+    "@ui/condition": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/drawer": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
@@ -14,7 +15,6 @@
     "@ui/logo": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
     "@ui/utils": "workspace:0.0.1",
-    "graphql": "16.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intl": "6.4.2",
@@ -22,6 +22,7 @@
   },
   "peerDependencies": {
     "@apollo/client": "*",
+    "graphql": "*",
     "react": "*",
     "react-dom": "*",
     "react-intl": "*"

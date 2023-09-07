@@ -1,11 +1,13 @@
-import React        from 'react'
-import { motion }   from 'framer-motion'
+import React           from 'react'
+import { FC }          from 'react'
+import { motion }      from 'framer-motion'
 
-import { Box }      from '@ui/layout'
+import { Box }         from '@ui/layout'
 
-import { Renderer } from './renderer'
+import { DrawerProps } from './drawer.interfaces'
+import { Renderer }    from './renderer'
 
-export const Drawer = ({ active, children, heightDrawer }) => (
+export const Drawer: FC<DrawerProps> = ({ active, children, heightDrawer }) => (
   <Renderer active={active}>
     <motion.div
       style={{ position: 'fixed', top: '-100%', width: '100%', zIndex: 5 }}

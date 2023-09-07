@@ -58,7 +58,7 @@ export const Library = () => {
             placeholder={getId('cG9zdDozMDE=')?.content.split('\n\n\n').slice(1)}
             size='normal'
             attachmentIcon={<SearchIcon />}
-            addon={searchQuery ? Search : null}
+            addon={searchQuery ? <Search /> : undefined}
             gap={12}
           />
         </Box>

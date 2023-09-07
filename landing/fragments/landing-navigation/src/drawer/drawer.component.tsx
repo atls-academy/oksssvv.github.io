@@ -1,4 +1,5 @@
 import React             from 'react'
+import { FC }            from 'react'
 
 import { Item }          from '@landing/navigation-fragment'
 import { Button }        from '@ui/button'
@@ -13,9 +14,10 @@ import { Text }          from '@ui/text'
 
 import { CardsDesktop }  from './cards'
 import { CardsMobile }   from './cards'
+import { DrawerProps }   from './drawer.interfaces'
 import { useNavigation } from '../data'
 
-export const DrawerContainer = ({ active, onClose }) => {
+export const DrawerContainer: FC<DrawerProps> = ({ active, onClose }) => {
   const title = useNavigation()
 
   const getId = (id) => title?.data?.allNavigation.nodes.find((obj) => obj.id === id)
@@ -28,7 +30,7 @@ export const DrawerContainer = ({ active, onClose }) => {
       <Row width='100%' justifyContent='center'>
         <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
         <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }} flexShrink='0'>
-          <Logo fill='rgba(58, 55, 93, 1)' />
+          <Logo color='rgba(58, 55, 93, 1)' />
         </Box>
         <Layout flexBasis={{ standard: 400, wide: 715, ultra: 510 }} />
         <Row

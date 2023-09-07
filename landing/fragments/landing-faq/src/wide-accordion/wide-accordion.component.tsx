@@ -11,9 +11,9 @@ export const WideAccordion = () => {
   const faq = useFaq()
   return (
     <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}>
-      <Accordion screen='wide' item={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
+      <Accordion screen='wide' question={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
       <Layout flexBasis={200} />
-      <Accordion screen='wide' item={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
+      <Accordion screen='wide' question={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
     </Row>
   )
 }

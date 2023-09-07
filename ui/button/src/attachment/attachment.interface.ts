@@ -1,5 +1,5 @@
 export interface AttachmentProps {
-  icon?: any
+  icon?: JSX.Element
   widthIcon?: number
   heightIcon?: number
   backgroundIcon?: string

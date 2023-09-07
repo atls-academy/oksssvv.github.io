@@ -1,1 +1,1 @@
-export * from './condition.component'
+export * from '@atls-ui-parts/condition'

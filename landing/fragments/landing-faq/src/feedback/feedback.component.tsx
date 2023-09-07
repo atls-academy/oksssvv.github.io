@@ -1,21 +1,29 @@
-import React          from 'react'
+import React             from 'react'
+import { FC }            from 'react'
 
-import { Background } from '@ui/background'
-import { Form }       from '@ui/form'
-import { Layout }     from '@ui/layout'
-import { Box }        from '@ui/layout'
-import { Column }     from '@ui/layout'
-import { Modal }      from '@ui/modal'
-import { Text }       from '@ui/text'
+import { Background }    from '@ui/background'
+import { Form }          from '@ui/form'
+import { Layout }        from '@ui/layout'
+import { Box }           from '@ui/layout'
+import { Column }        from '@ui/layout'
+import { Modal }         from '@ui/modal'
+import { Text }          from '@ui/text'
 
-import { useFaq }     from '../data'
+import { FeedbackProps } from './feedback.interfaces'
+import { useFaq }        from '../data'
 
-export const Feedback = ({ open, onClose }) => {
+export const Feedback: FC<FeedbackProps> = ({ open, onClose }) => {
   const title = useFaq()
 
   return (
     <Modal open={open} onClose={onClose}>
-      <Background backgroundColor='purpleGradient' position='absolute' top='20%' borderRadius='big'>
+      <Background
+        backgroundColor='purpleGradient'
+        position='absolute'
+        top='20%'
+        left='45%'
+        borderRadius='big'
+      >
         <Background
           backgroundColor='decorativeSymbol'
           backgroundPosition='-110px -325px,-180px -15px'

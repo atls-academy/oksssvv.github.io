@@ -27,19 +27,17 @@ export const Item: FC<ItemProps> = ({ title, path, backColor }) => {
       justifyContent='center'
       borderBottom={getColorBorder()}
     >
-      {path && (
-        <Link to={path} spy smooth duration={1000}>
-          <Text
-            fontSize={{ standard: 'standard', ultra: 'major' }}
-            lineHeight='small'
-            color={getColorText()}
-            textTransform='uppercase'
-            cursor='pointer'
-          >
-            {title}
-          </Text>
-        </Link>
-      )}
+      <Link to={path || ''} spy smooth duration={1000}>
+        <Text
+          fontSize={{ standard: 'standard', ultra: 'major' }}
+          lineHeight='small'
+          color={getColorText()}
+          textTransform='uppercase'
+          cursor='pointer'
+        >
+          {title}
+        </Text>
+      </Link>
     </Box>
   )
 }

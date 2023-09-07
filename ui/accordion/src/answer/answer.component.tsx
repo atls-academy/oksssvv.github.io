@@ -1,11 +1,14 @@
 import React               from 'react'
 import { AnimatePresence } from 'framer-motion'
+import { FC }              from 'react'
 import { motion }          from 'framer-motion'
 
 import { Box }             from '@ui/layout'
 import { Text }            from '@ui/text'
 
-export const Answer = ({ index, answer, screen, selected }) => (
+import { AnswerProps }     from './answer.interfaces'
+
+export const Answer: FC<AnswerProps> = ({ index, answer, screen, selected }) => (
   <AnimatePresence>
     {selected === index && (
       <motion.div

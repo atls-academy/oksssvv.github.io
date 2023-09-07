@@ -31,7 +31,7 @@ export const Navigation = () => {
         <Row width='100%' justifyContent='center'>
           <Layout flexBasis={{ _: 20, standard: 40, ultra: 600 }} />
           <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }} flexShrink='0'>
-            <Logo fill='white' />
+            <Logo color='white' />
           </Box>
           <Layout flexBasis={{ standard: 400, wide: 715, ultra: 500 }} />
           <Row display={['none', 'flex']} justifyContent='center' alignItems='center' width={1290}>

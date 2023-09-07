@@ -35,13 +35,7 @@ export const Navbar = ({ sectionRefs }) => {
               height={165}
             />
             {idCollection.map((id, index) => (
-              <Item
-                key={id}
-                index={index}
-                id={getId(id)?.id}
-                title={getId(id)?.title}
-                selected={active}
-              />
+              <Item key={id} index={index} id={id} title={getId(id)?.title} selected={active} />
             ))}
           </>
         )}

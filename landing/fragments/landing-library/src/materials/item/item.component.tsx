@@ -1,4 +1,5 @@
 import React              from 'react'
+import { FC }             from 'react'
 
 import { Divider }        from '@ui/divider'
 import { ArrowRightIcon } from '@ui/icon'
@@ -10,7 +11,9 @@ import { Text }           from '@ui/text'
 import { useHover }       from '@ui/utils'
 import { usePressed }     from '@ui/utils'
 
-export const Item = ({ ...props }) => {
+import { ItemProps }      from './item.interfaces'
+
+export const Item: FC<ItemProps> = ({ ...props }) => {
   const [hover, hoverProps] = useHover()
   const [pressed, pressedProps] = usePressed()
 

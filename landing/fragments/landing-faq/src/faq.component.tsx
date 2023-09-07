@@ -89,7 +89,7 @@ export const Faq = () => {
         <Box display={{ _: 'flex', standard: 'flex', wide: 'none', ultra: 'none' }}>
           <Accordion
             screen='standard'
-            item={<Item />}
+            question={<Item />}
             answer={faq?.data?.allFAQ.nodes[0].faq.answer}
           />
         </Box>

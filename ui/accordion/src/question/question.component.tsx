@@ -1,11 +1,14 @@
 import React              from 'react'
+import { FC }             from 'react'
 import { motion }         from 'framer-motion'
 
 import { SmallMinusIcon } from '@ui/icon'
 import { SmallPlusIcon }  from '@ui/icon'
 import { Box }            from '@ui/layout'
 
-export const Question = ({ selected, width, height, index, item }) => (
+import { QuestionProps }  from './question.interfaces'
+
+export const Question: FC<QuestionProps> = ({ selected, width, height, index, question }) => (
   <Box alignItems='center'>
     <motion.div>
       {selected === index ? (
@@ -14,6 +17,6 @@ export const Question = ({ selected, width, height, index, item }) => (
         <SmallPlusIcon width={width} height={height} />
       )}
     </motion.div>
-    {item}
+    {question}
   </Box>
 )
