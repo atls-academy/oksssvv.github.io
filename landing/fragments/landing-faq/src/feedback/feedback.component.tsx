@@ -17,13 +17,7 @@ export const Feedback: FC<FeedbackProps> = ({ open, onClose }) => {
 
   return (
     <Modal open={open} onClose={onClose}>
-      <Background
-        backgroundColor='purpleGradient'
-        position='absolute'
-        top='20%'
-        left='45%'
-        borderRadius='big'
-      >
+      <Background backgroundColor='purpleGradient' borderRadius='big'>
         <Background
           backgroundColor='decorativeSymbol'
           backgroundPosition='-110px -325px,-180px -15px'
