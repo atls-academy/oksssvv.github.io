@@ -9,11 +9,13 @@ import { useFaq }    from '../data'
 
 export const WideAccordion = () => {
   const faq = useFaq()
+
+  const answer = faq?.data?.allFAQ.nodes.find((obj) => obj.id === 'cG9zdDoyMDA=').faq.answer
   return (
     <Row display={{ _: 'none', standard: 'none', wide: 'flex', ultra: 'flex' }}>
-      <Accordion screen='wide' question={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
+      <Accordion screen='wide' question={<Item />} answer={answer} />
       <Layout flexBasis={200} />
-      <Accordion screen='wide' question={<Item />} answer={faq?.data?.allFAQ.nodes[0].faq.answer} />
+      <Accordion screen='wide' question={<Item />} answer={answer} />
     </Row>
   )
 }

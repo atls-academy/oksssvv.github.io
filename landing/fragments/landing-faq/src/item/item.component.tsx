@@ -11,7 +11,9 @@ import { useFaq }   from '../data'
 
 export const Item = () => {
   const [hover, hoverProps] = useHover()
-  const question = useFaq()
+  const faq = useFaq()
+
+  const question = faq?.data?.allFAQ.nodes.find((obj) => obj.id === 'cG9zdDoyMDA=').faq.question
 
   return (
     <Column {...hoverProps}>
@@ -26,7 +28,7 @@ export const Item = () => {
             color={hover ? 'text.accent' : 'text.primary'}
             whiteSpace='nowrap'
           >
-            {question.data?.allFAQ.nodes[0].faq.question}
+            {question}
           </Text>
         </Box>
         <Layout flexBasis={[26, 0]} />

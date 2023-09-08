@@ -1,9 +1,7 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
-import { useIntl }          from 'react-intl'
 
 import { Button }           from '@ui/button'
-import { Card }             from '@ui/card'
 import { Divider }          from '@ui/divider'
 import { ArrowRightIcon }   from '@ui/icon'
 import { Box }              from '@ui/layout'
@@ -11,24 +9,18 @@ import { Row }              from '@ui/layout'
 import { Column }           from '@ui/layout'
 import { Layout }           from '@ui/layout'
 import { NextLink }         from '@ui/link'
-import { Swiper }           from '@ui/swiper'
-import { SwiperSlide }      from '@ui/swiper'
 import { Text }             from '@ui/text'
-import { Space }            from '@ui/text'
 
+import { About }            from './about'
 import { Cards }            from './cards'
+import { MobileSwiper }     from './cards'
 import { useCourses }       from './data'
 
 export const Courses = () => {
   const courses = useCourses()
-  const intl = useIntl()
 
-  const getId = (id) => courses?.data?.sections.nodes.find((obj) => obj.id === id)
-
-  const content = getId('cG9zdDoyMjc=')?.content
-
-  const atlantisInfo = content?.split('.')[0].split(' ')
-  const educationInfo = content?.split('.')[1].split(' ')
+  const title = courses?.data?.sections.nodes.find((obj) => obj.id === 'cG9zdDoyMjc=')?.sections
+    .title
 
   return (
     <>
@@ -42,7 +34,7 @@ export const Courses = () => {
                 fontSize={{ _: 'large', standard: 'huge', ultra: 'super' }}
                 lineHeight='regular'
               >
-                {getId('cG9zdDoyMjc=')?.sections?.title}
+                {title}
               </Text>
             </Box>
             <Layout flexBasis={[464]} />
@@ -75,84 +67,7 @@ export const Courses = () => {
           <Layout flexBasis={[40, 80]} />
           <Divider weight={1} backgroundColor='background.primary' />
           <Layout flexBasis={[40, 80]} />
-          <Box flexDirection={['column', 'row']}>
-            <Box maxWidth={{ _: 335, standard: 710, ultra: 1065 }} display='inline' flexWrap='wrap'>
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-              >
-                {atlantisInfo?.slice(0, 3).join(' ')}
-              </Text>
-              <Space count={2} />
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-                color='text.accent'
-              >
-                {atlantisInfo?.slice(3, 4).join(' ')}
-              </Text>
-              <Space count={2} />
-              <Text
-                display='inline'
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-              >
-                {atlantisInfo?.slice(4, 7).join(' ')}
-              </Text>
-              <Space count={2} />
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-                color='text.accent'
-              >
-                {atlantisInfo?.slice(7, 9).join(' ')}
-              </Text>
-              <Box display={['none', 'inline']}>
-                <Space count={2} />
-              </Box>
-              <Text
-                display='inline'
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-              >
-                {atlantisInfo?.slice(9, 13).join(' ')}
-              </Text>
-              <Space count={2} />
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-                color='text.accent'
-              >
-                {atlantisInfo?.slice(13, 15).join(' ')}
-              </Text>
-            </Box>
-            <Layout flexBasis={{ _: 20, standard: 341, wide: 980, ultra: 696 }} />
-            <Box maxWidth={{ _: 335, standard: 559, ultra: 838 }} display='inline'>
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-                display='inline'
-              >
-                {educationInfo?.slice(0, 5).join(' ')}
-              </Text>
-              <Space count={2} />
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-                color='text.accent'
-              >
-                {educationInfo?.slice(5, 6).join(' ')}
-              </Text>
-              <Space count={2} />
-              <Text
-                fontSize={{ _: 'regular', standard: 'normal', ultra: 'secondary' }}
-                lineHeight='medium'
-                display='inline'
-              >
-                {educationInfo?.slice(6, 9).join(' ')}
-              </Text>
-            </Box>
-          </Box>
+          <About />
           <Layout flexBasis={[40, 80]} />
           <Cards />
         </Column>
@@ -161,42 +76,8 @@ export const Courses = () => {
       <Box display={['flex', 'none']} overflow='hidden' justifyContent='center'>
         <Layout flexBasis={20} flexShrink='0' />
         <Column>
-          <Box width={354}>
-            <Swiper
-              spaceBetween={20}
-              slidesPerView={1.35}
-              slidesOffsetAfter={24}
-              className='CardSlider'
-            >
-              <SwiperSlide>
-                <Card
-                  widthCategory={135}
-                  сategory={intl.formatMessage({
-                    id: 'courses.card.education-material',
-                  })}
-                  gap={62}
-                  widthContent={220}
-                  title={intl.formatMessage({
-                    id: 'courses.card.use-library',
-                  })}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Card
-                  widthCategory={135}
-                  сategory={intl.formatMessage({
-                    id: 'courses.card.education-material',
-                  })}
-                  gap={62}
-                  widthContent={220}
-                  title={intl.formatMessage({ id: 'courses.card.design-figma-math' })}
-                />
-              </SwiperSlide>
-            </Swiper>
-          </Box>
-
+          <MobileSwiper />
           <Layout flexBasis={40} />
-
           <Box width={335} flexShrink='0'>
             <NextLink path='/library' width='100%'>
               <Button

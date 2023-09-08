@@ -9,6 +9,7 @@ export const GET_FAQ = gql`
     }
     allFAQ {
       nodes {
+        id
         faq {
           answer
           question

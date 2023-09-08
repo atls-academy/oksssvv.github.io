@@ -13,7 +13,11 @@ import { useProcess }      from './data'
 export const Process = () => {
   const process = useProcess()
 
-  const title = process?.data?.sections.nodes[2].content.split(' ')
+  const getId = (id) => process?.data?.sections.nodes.find((obj) => obj.id === id)
+
+  const createProcess = getId('cG9zdDoyMzA=')?.sections.title
+
+  const title = getId('cG9zdDoyMzA=')?.content.split(' ')
 
   return (
     <Row justifyContent='center'>
@@ -28,7 +32,7 @@ export const Process = () => {
             textTransform='uppercase'
             opacity={0.5}
           >
-            {process?.data?.sections.nodes[1].sections.title}
+            {createProcess}
           </Text>
         </Box>
         <Layout flexBasis={[16, 24]} />

@@ -4,6 +4,7 @@ export const GET_COURSES = gql`
   query Courses {
     courses {
       nodes {
+        id
         course {
           title
           description

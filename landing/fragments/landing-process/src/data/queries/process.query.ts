@@ -4,6 +4,7 @@ export const GET_PROCESS = gql`
   query Process {
     sections {
       nodes {
+        id
         content
         sections {
           title

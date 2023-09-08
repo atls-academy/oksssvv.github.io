@@ -22,6 +22,8 @@ export const Faq = () => {
 
   const title = faq?.data?.section.sections.title
 
+  const answer = faq?.data?.allFAQ.nodes.find((obj) => obj.id === 'cG9zdDoyMDA=').faq.answer
+
   return (
     <Row>
       <Feedback open={modalOpen} onClose={() => setModalOpen(false)} />
@@ -87,11 +89,7 @@ export const Faq = () => {
         </Row>
         <Layout flexBasis={[60, 80]} />
         <Box display={{ _: 'flex', standard: 'flex', wide: 'none', ultra: 'none' }}>
-          <Accordion
-            screen='standard'
-            question={<Item />}
-            answer={faq?.data?.allFAQ.nodes[0].faq.answer}
-          />
+          <Accordion screen='standard' question={<Item />} answer={answer} />
         </Box>
         <WideAccordion />
         <Layout flexBasis={[60, 0]} />

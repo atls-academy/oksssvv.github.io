@@ -4,6 +4,7 @@ export const GET_HERO = gql`
   query Hero {
     sections {
       nodes {
+        id
         content
         sections {
           title

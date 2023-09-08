@@ -12,6 +12,12 @@ import { useHero }     from './data'
 
 export const Hero = () => {
   const hero = useHero()
+  const getId = (id) => hero?.data?.sections.nodes.find((obj) => obj.id === id)
+
+  const slogan = getId('cG9zdDoyMjY=')?.sections.title.split(' ')
+
+  const description = getId('cG9zdDoyMjY=')?.content.split('.').slice(3, 4)
+
   return (
     <Row justifyContent='center'>
       <Layout flexBasis={{ _: 20, standard: 230, wide: 230, ultra: 620 }} />
@@ -23,7 +29,7 @@ export const Hero = () => {
             fontSize={{ _: 'major', standard: 'huge', wide: 'huge', ultra: 'super' }}
             lineHeight={['medium', 'normal']}
           >
-            {hero?.data?.sections.nodes[6].sections.title.split(' ').slice(0, -1).join(' ')}
+            {slogan?.slice(0, -1).join(' ')}
           </Text>
           <Box
             flexShrink='0'
@@ -41,7 +47,7 @@ export const Hero = () => {
               lineHeight={['medium', 'normal']}
               textTransform='uppercase'
             >
-              {hero?.data?.sections.nodes[6].sections.title.split(' ').slice(5)}
+              {slogan?.slice(5)}
             </Text>
           </Box>
         </Box>
@@ -55,7 +61,7 @@ export const Hero = () => {
             fontSize={{ _: 'medium', standard: 'regular', wide: 'regular', ultra: 'mid' }}
             lineHeight='medium'
           >
-            {hero?.data?.sections.nodes[5].content.split('.').slice(3, 4)}
+            {description}
           </Text>
         </Box>
         <Layout flexBasis={[20, 0]} />
