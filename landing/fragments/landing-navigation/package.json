@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "devDependencies": {
+    "@apollo/client": "3.7.17",
     "@ui/button": "workspace:0.0.1",
     "@ui/card": "workspace:0.0.1",
+    "@ui/condition": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/drawer": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
@@ -19,6 +21,8 @@
     "react-scroll": "1.8.9"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
+    "graphql": "*",
     "react": "*",
     "react-dom": "*",
     "react-intl": "*"

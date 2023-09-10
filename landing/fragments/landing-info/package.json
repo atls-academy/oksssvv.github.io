@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "devDependencies": {
+    "@apollo/client": "3.7.17",
+    "@globals/data": "workspace:0.0.1",
     "@landing/hero-fragment": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
     "@ui/image": "workspace:0.0.1",
@@ -13,6 +15,8 @@
     "react-intl": "6.4.2"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
+    "graphql": "*",
     "react": "*",
     "react-intl": "*"
   }

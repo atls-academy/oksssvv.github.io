@@ -1,33 +1,38 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
-import { useIntl }          from 'react-intl'
+import React             from 'react'
+import { FC }            from 'react'
 
-import { Item }             from '@landing/navigation-fragment'
-import { Button }           from '@ui/button'
-import { Drawer }           from '@ui/drawer'
-import { ArrowUpIcon }      from '@ui/icon'
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Logo }             from '@ui/logo'
-import { Text }             from '@ui/text'
+import { Item }          from '@landing/navigation-fragment'
+import { Button }        from '@ui/button'
+import { Drawer }        from '@ui/drawer'
+import { ArrowUpIcon }   from '@ui/icon'
+import { Layout }        from '@ui/layout'
+import { Box }           from '@ui/layout'
+import { Row }           from '@ui/layout'
+import { Column }        from '@ui/layout'
+import { Logo }          from '@ui/logo'
+import { Text }          from '@ui/text'
 
-import { CardsDesktop }     from './cards'
-import { CardsMobile }      from './cards'
+import { CardsDesktop }  from './cards'
+import { CardsMobile }   from './cards'
+import { DrawerProps }   from './drawer.interfaces'
+import { useNavigation } from '../data'
 
-export const DrawerContainer = ({ active, onClose }) => {
-  const intl = useIntl()
+export const DrawerContainer: FC<DrawerProps> = ({ active, onClose }) => {
+  const title = useNavigation()
+
+  const getId = (id) => title?.data?.allNavigation.nodes.find((obj) => obj.id === id)
+
+  const courses = getId('cG9zdDoyMjI=')?.title
+
   return (
     <Drawer heightDrawer={{ _: 495, standard: 610, ultra: 720 }} active={active}>
       <Layout flexBasis={[22, 35]} />
       <Row width='100%' justifyContent='center'>
         <Layout flexBasis={{ _: 20, standard: 40, ultra: 620 }} />
-        <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }}>
-          <Logo fill='rgba(58, 55, 93, 1)' />
+        <Box width={{ _: 40, standard: 56, wide: 56, ultra: 84 }} flexShrink='0'>
+          <Logo color='rgba(58, 55, 93, 1)' />
         </Box>
         <Layout flexBasis={{ standard: 400, wide: 715, ultra: 510 }} />
-
         <Row
           display={['none', 'flex']}
           justifyContent='center'
@@ -36,23 +41,27 @@ export const DrawerContainer = ({ active, onClose }) => {
         >
           <Item
             backColor='light'
-            title={intl.formatMessage({ id: 'navigation.academy' })}
-            path='Academy'
+            title={getId('cG9zdDoyMjE=')?.title}
+            path={getId('cG9zdDoyMjE=')?.id}
           />
           <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
           <Item
             backColor='light'
-            title={intl.formatMessage({ id: 'navigation.courses' })}
-            path='Courses'
+            title={getId('cG9zdDoyMjI=')?.title}
+            path={getId('cG9zdDoyMjI=')?.id}
           />
           <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
           <Item
             backColor='light'
-            title={intl.formatMessage({ id: 'navigation.education' })}
-            path='Education'
+            title={getId('cG9zdDoyMjQ=')?.title}
+            path={getId('cG9zdDoyMjQ=')?.id}
           />
           <Layout flexBasis={{ standsrd: 20, ultra: 30 }} />
-          <Item backColor='light' title={intl.formatMessage({ id: 'navigation.faq' })} path='FAQ' />
+          <Item
+            backColor='light'
+            title={getId('cG9zdDoyMjU=')?.title}
+            path={getId('cG9zdDoyMjU=')?.id}
+          />
         </Row>
         <Layout flexBasis={{ _: 195, standard: 400, wide: 715, ultra: 510 }} />
         <Box
@@ -74,7 +83,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='averaged'>
-              <FormattedMessage id='navigation.courses' />
+              {courses}
             </Text>
           </Button>
         </Box>
@@ -97,7 +106,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='regular' lineHeight='small'>
-              <FormattedMessage id='navigation.courses' />
+              {courses}
             </Text>
           </Button>
         </Box>
@@ -105,7 +114,7 @@ export const DrawerContainer = ({ active, onClose }) => {
           <Button
             variant='primary'
             size='normalSizeSmallPadding'
-            gap={12}
+            gap={10}
             icon={<ArrowUpIcon width={9} height={4.5} />}
             widthIcon={28}
             heightIcon={28}
@@ -115,7 +124,7 @@ export const DrawerContainer = ({ active, onClose }) => {
             onClick={onClose}
           >
             <Text color='white' fontSize='medium'>
-              <FormattedMessage id='navigation.courses' />
+              {courses}
             </Text>
           </Button>
         </Box>
@@ -126,7 +135,7 @@ export const DrawerContainer = ({ active, onClose }) => {
       <Row
         display={['none', 'flex']}
         height={{ standard: 430, ultra: 500 }}
-        maxWidth={{ standard: 1840, ultra: 2600 }}
+        maxWidth={{ ultra: 2600 }}
       >
         <CardsDesktop />
       </Row>

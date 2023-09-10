@@ -4,11 +4,11 @@ export type InputSize = 'standard' | 'normal'
 export type InputVariant = 'ordinary'
 
 export interface InputProps extends BaseInputProps {
-  addon?: any
+  addon?: JSX.Element
   size?: InputSize
   variant?: InputVariant
   textarea?: boolean
   gap?: number
-  attachmentIcon?: object
+  attachmentIcon?: JSX.Element
   filled?: boolean | undefined | string
 }

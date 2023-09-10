@@ -27,7 +27,7 @@ export const Item: FC<ItemProps> = ({ title, path, backColor }) => {
       justifyContent='center'
       borderBottom={getColorBorder()}
     >
-      <Link to={path} spy smooth duration={1000}>
+      <Link to={path || ''} spy smooth duration={1000}>
         <Text
           fontSize={{ standard: 'standard', ultra: 'major' }}
           lineHeight='small'

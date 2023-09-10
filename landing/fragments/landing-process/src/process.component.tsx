@@ -1,88 +1,98 @@
-import React                from 'react'
-import { FormattedMessage } from 'react-intl'
+import React               from 'react'
 
-import { Layout }           from '@ui/layout'
-import { Box }              from '@ui/layout'
-import { Column }           from '@ui/layout'
-import { Row }              from '@ui/layout'
-import { Text }             from '@ui/text'
-import { Space }            from '@ui/text'
+import { Layout }          from '@ui/layout'
+import { Box }             from '@ui/layout'
+import { Column }          from '@ui/layout'
+import { Row }             from '@ui/layout'
+import { Text }            from '@ui/text'
+import { Space }           from '@ui/text'
 
-import { SliderContainer }  from './slider'
+import { SliderContainer } from './slider'
+import { useProcess }      from './data'
 
-export const Process = () => (
-  <Row justifyContent='center'>
-    <Layout flexBasis={[0, 492]} />
-    <Column alignItems='center'>
-      <Layout flexBasis={[24, 160]} />
-      <Box justifyContent='center'>
-        <Text
-          color='white'
-          fontSize={['small', 'medium']}
-          lineHeight='small'
-          textTransform='uppercase'
-          opacity={0.5}
-        >
-          <FormattedMessage id='process.process-create' />
-        </Text>
-      </Box>
-      <Layout flexBasis={[16, 24]} />
+export const Process = () => {
+  const process = useProcess()
 
-      <Box display={['none', 'flex']}>
-        <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
-          <FormattedMessage id='propcess.any-process-stops' />
-        </Text>
-        <Space count={3} />
-        <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }} opacity={0.5}>
-          <FormattedMessage id='propcess.be' />
-        </Text>
-        <Space count={3} />
-        <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
-          <FormattedMessage id='propcess.hard' />
-        </Text>
-      </Box>
-      <Box display={['none', 'flex']} justifyContent='center'>
-        <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
-          <FormattedMessage id='propcess.when' />
-        </Text>
-        <Space count={3} />
-        <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }} opacity={0.5}>
-          <FormattedMessage id='propcess.know' />
-        </Text>
-        <Space count={3} />
-        <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
-          <FormattedMessage id='propcess.how-going' />
-        </Text>
-      </Box>
+  const getId = (id) => process?.data?.sections.nodes.find((obj) => obj.id === id)
 
-      <Box display={['flex', 'none']} justifyContent='center'>
-        <Text color='white' fontSize='enlarged'>
-          <FormattedMessage id='propcess.any-process-stops' />
-        </Text>
-      </Box>
-      <Box display={['flex', 'none']} justifyContent='center'>
-        <Text color='white' fontSize='enlarged' opacity={0.5}>
-          <FormattedMessage id='propcess.be' />
-        </Text>
-        <Space count={2} />
-        <Text color='white' fontSize='enlarged'>
-          <FormattedMessage id='process.hard-when' />
-        </Text>
-        <Space count={2} />
-        <Text color='white' fontSize='enlarged' opacity={0.5}>
-          <FormattedMessage id='propcess.know' />
-        </Text>
-      </Box>
-      <Box display={['flex', 'none']} justifyContent='center'>
-        <Text color='white' fontSize='enlarged'>
-          <FormattedMessage id='propcess.how-going' />
-        </Text>
-      </Box>
+  const createProcess = getId('cG9zdDoyMzA=')?.sections.title
 
-      <Layout flexBasis={[24, 50]} />
-      <SliderContainer />
-      <Layout flexBasis={{ _: 100, standard: 240, wide: 300, ultra: 430 }} />
-    </Column>
-    <Layout flexBasis={[0, 492]} />
-  </Row>
-)
+  const title = getId('cG9zdDoyMzA=')?.content.split(' ')
+
+  return (
+    <Row justifyContent='center'>
+      <Layout flexBasis={[0, 492]} />
+      <Column alignItems='center'>
+        <Layout flexBasis={[24, 160]} />
+        <Box justifyContent='center'>
+          <Text
+            color='white'
+            fontSize={['small', 'medium']}
+            lineHeight='small'
+            textTransform='uppercase'
+            opacity={0.5}
+          >
+            {createProcess}
+          </Text>
+        </Box>
+        <Layout flexBasis={[16, 24]} />
+
+        <Box display={['none', 'flex']}>
+          <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
+            {title?.slice(0, 3).join(' ')}
+          </Text>
+          <Space count={3} />
+          <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }} opacity={0.5}>
+            {title?.slice(3, 4)}
+          </Text>
+          <Space count={3} />
+          <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
+            {title?.slice(4, 5)}
+          </Text>
+        </Box>
+        <Box display={['none', 'flex']} justifyContent='center'>
+          <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
+            {title?.slice(5, 6)}
+          </Text>
+          <Space count={3} />
+          <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }} opacity={0.5}>
+            {title?.slice(6, 7)}
+          </Text>
+          <Space count={3} />
+          <Text color='white' fontSize={{ standard: 'large', wide: 'mega' }}>
+            {title?.slice(7, 10).join(' ')}
+          </Text>
+        </Box>
+
+        <Box display={['flex', 'none']} justifyContent='center'>
+          <Text color='white' fontSize='enlarged'>
+            {title?.slice(0, 3).join(' ')}
+          </Text>
+        </Box>
+        <Box display={['flex', 'none']} justifyContent='center'>
+          <Text color='white' fontSize='enlarged' opacity={0.5}>
+            {title?.slice(3, 4)}
+          </Text>
+          <Space count={2} />
+          <Text color='white' fontSize='enlarged'>
+            {title?.slice(4, 6).join(' ')}
+          </Text>
+          <Space count={2} />
+          <Text color='white' fontSize='enlarged' opacity={0.5}>
+            {title?.slice(6, 7)}
+          </Text>
+        </Box>
+        <Box display={['flex', 'none']} justifyContent='center'>
+          <Text color='white' fontSize='enlarged'>
+            {title?.slice(7, 10).join(' ')}
+          </Text>
+        </Box>
+
+        <Layout flexBasis={[24, 50]} />
+        <SliderContainer />
+        <Layout flexBasis={{ _: 100, standard: 240, wide: 300, ultra: 430 }} />
+      </Column>
+      <Layout flexBasis={[0, 492]} />
+    </Row>
+  )
+}

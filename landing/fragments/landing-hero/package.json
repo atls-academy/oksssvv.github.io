@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "devDependencies": {
+    "@apollo/client": "3.7.17",
     "@ui/button": "workspace:0.0.1",
     "@ui/divider": "workspace:0.0.1",
     "@ui/icon": "workspace:0.0.1",
@@ -14,6 +15,8 @@
     "react-intl": "6.4.2"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
+    "graphql": "*",
     "react": "*",
     "react-intl": "*"
   }

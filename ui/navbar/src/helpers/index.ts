@@ -1,3 +1,4 @@
-export * from './get-color'
-export * from './get-color-dot-background'
-export * from './get-color-line-background'
+export * from './get-color-text'
+export * from './get-color-dot'
+export * from './get-color-line'
+export * from './get-title'

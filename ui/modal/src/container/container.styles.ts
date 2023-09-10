@@ -9,4 +9,5 @@ export const baseContainerStyles: CSSObject = {
   left: 0,
   display: 'flex',
   justifyContent: 'center',
+  alignItems: 'center',
 }

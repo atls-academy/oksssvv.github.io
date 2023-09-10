@@ -20,7 +20,7 @@ export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
   size?: ButtonSize
   gap?: number
-  icon?: object
+  icon?: JSX.Element
   widthIcon?: number
   heightIcon?: number
   backgroundIcon?: string

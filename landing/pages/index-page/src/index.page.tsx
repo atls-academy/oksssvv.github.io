@@ -4,25 +4,25 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import { useRef }           from 'react'
 
 import { Courses }          from '@landing/courses-fragment'
+import { Faq }              from '@landing/faq-fragment'
 import { Hero }             from '@landing/hero-fragment'
 import { Info }             from '@landing/info-fragment'
 import { Navigation }       from '@landing/navigation-fragment'
 import { Process }          from '@landing/process-fragment'
-import { Questions }        from '@landing/questions-fragment'
 import { RunLine }          from '@landing/runline-fragment'
 import { Steps }            from '@landing/steps-fragment'
 import { Background }       from '@ui/background'
 import { Navbar }           from '@ui/navbar'
 
 const IndexPage = () => {
-  const sectionRefs = Array.from({ length: 6 }, () => useRef(null)) // eslint-disable-line
+  const sectionRefs = Array.from({ length: 4 }, () => useRef(null)) // eslint-disable-line
 
   return (
     <ParallaxProvider>
       <Navbar sectionRefs={sectionRefs} />
       <Background
         ref={sectionRefs[0]}
-        id='Academy'
+        id='cG9zdDoyMjE='
         backgroundColor='purpleGradient'
         position='absolute'
         width='100%'
@@ -44,7 +44,7 @@ const IndexPage = () => {
             ultra: '600px -1300px,-300px 550px',
           }}
         >
-          <Parallax translateY={[-9, 15]}>
+          <Parallax translateY={[-8, 12]}>
             <Navigation />
             <Hero />
             <Info />
@@ -53,7 +53,7 @@ const IndexPage = () => {
       </Background>
       <Background
         ref={sectionRefs[1]}
-        id='Courses'
+        id='cG9zdDoyMjI='
         backgroundColor='whiteBendLine'
         backgroundSize={['100%,100%', '100%,100%']}
         backgroundRepeat='no-repeat'
@@ -67,8 +67,8 @@ const IndexPage = () => {
         <Courses />
       </Background>
       <Background
-        ref={sectionRefs[3]}
-        id='Education'
+        ref={sectionRefs[2]}
+        id='cG9zdDoyMjQ='
         backgroundColor='purpleBendLine'
         backgroundSize={{
           _: '0,0,0,100%,100%, 100%',
@@ -91,13 +91,13 @@ const IndexPage = () => {
       >
         <Steps />
         <RunLine />
-        <Parallax translateY={[-12, 12]}>
+        <Parallax translateY={[-12, 10]}>
           <Process />
         </Parallax>
       </Background>
       <Background
-        ref={sectionRefs[5]}
-        id='FAQ'
+        ref={sectionRefs[3]}
+        id='cG9zdDoyMjU='
         backgroundColor='whiteBendLine'
         backgroundSize={['100%, 100%', '100%,100%']}
         backgroundRepeat='no-repeat'
@@ -108,7 +108,7 @@ const IndexPage = () => {
         top={{ _: 4200, standard: 6380, wide: 6600, ultra: 7700 }}
         width='100%'
       >
-        <Questions />
+        <Faq />
       </Background>
     </ParallaxProvider>
   )

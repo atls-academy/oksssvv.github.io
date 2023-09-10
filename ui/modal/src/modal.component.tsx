@@ -1,30 +1,25 @@
-import { Portal }            from '@atls-ui-parts/portal'
+import { Portal }          from '@atls-ui-parts/portal'
 
-import React                 from 'react'
-import { AnimatePresence }   from 'framer-motion'
-import { FunctionComponent } from 'react'
-import { PropsWithChildren } from 'react'
-import { ReactElement }      from 'react'
+import React               from 'react'
+import { AnimatePresence } from 'framer-motion'
+import { FC }              from 'react'
 
-import { Backdrop }          from './backdrop'
-import { Container }         from './container'
-import { ModalProps }        from './modal.interfaces'
+import { Condition }       from '@ui/condition'
 
-const Modal: FunctionComponent<PropsWithChildren<ModalProps>> = ({ children, open, onClose }) => {
-  let content: ReactElement | null = null
+import { Backdrop }        from './backdrop'
+import { Container }       from './container'
+import { ModalProps }      from './modal.interfaces'
 
-  if (open) {
-    content = (
+export const Modal: FC<ModalProps> = ({ children, open, onClose }) => {
+  const content = (
+    <Condition match={open}>
       <Portal>
         <Container>
           <Backdrop onClick={onClose} />
           {children}
         </Container>
       </Portal>
-    )
-  }
-
+    </Condition>
+  )
   return <AnimatePresence>{content}</AnimatePresence>
 }
-
-export { Modal }

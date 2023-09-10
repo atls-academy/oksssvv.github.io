@@ -4,6 +4,8 @@
   "license": "BSD-3-Clause",
   "main": "src/index.ts",
   "devDependencies": {
+    "@apollo/client": "3.7.17",
+    "@landing/navigation-fragment": "workspace:0.0.1",
     "@makotot/ghostui": "2.0.0",
     "@ui/layout": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
@@ -12,6 +14,8 @@
     "react-scroll": "1.8.9"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
+    "graphql": "*",
     "react": "*",
     "react-dom": "*"
   }
